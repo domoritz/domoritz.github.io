@@ -1,0 +1,40 @@
+footer {
+  padding: $spacing-unit 0;
+
+  font-size: $small-font-size;
+
+  background-color: $footer-background;
+  color: #fff;
+
+  a {
+    color: darken(#fff, 5%);;
+    &:hover {
+      color: darken(#fff, 10%);
+      text-decoration: none;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .footer-col {
+    flex: 1;
+    padding: $spacing-unit/2 0;
+  }
+  .site-desc {
+    flex: 4;
+  }
+}
+
+@include media-query($on-laptop) {
+  footer .container {
+    .site-desc {
+      flex: 1 100%;
+    }
+  }
+}

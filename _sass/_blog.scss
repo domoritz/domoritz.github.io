@@ -1,9 +1,32 @@
 .post-list {
-  margin-left: 0;
-  list-style: none;
+  .year {
+    font-size: 1.4em;
+    font-weight: normal;
+    position: relative;
+    top: -1px;
+    float: left;
+    border: none;
+    margin: 0;
+  }
 
-  > li {
+  .post-block {
+    margin-left: 90px;
+    padding-left: 60px;
     margin-bottom: $spacing-unit;
+    position: relative;
+
+    .post-meta {
+      font-size: 0.8em;
+      position: absolute;
+      left: 0;
+      top: 0.1em;
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin: 0;
+      font-weight: normal;
+    }
   }
 }
 
@@ -15,4 +38,39 @@
 .post-link {
   display: block;
   font-size: 24px;
+}
+
+
+
+/**
+ * Post page.
+ */
+
+.post-header {
+  margin: 1.5*$spacing-unit 0;
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin-bottom: 0.5em;
+  }
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 0;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-subtite {
+  font-size: 1.2em;
+}
+
+.post-sharing {
+  margin-top: 1.5 * $spacing-unit;
 }

@@ -3,11 +3,6 @@ layout: post
 title: "Meteo-was"
 description: "Namen für Steine aus dem Weltall"
 date: 2013-02-19 17:03
-comments: true
-categories:
-tags:
--  NASA
--  Meteorit
 ---
 
 Vor einer Woche ist in Russland ein [Meteor eingeschlagen](http://www.bbc.co.uk/news/world-europe-21468116). Nahezu Zeitgleich ist der Asteroid 2012 DA14 [an der Erde vorbeigerauscht](http://www.bbc.co.uk/news/science-environment-21442863) und kam uns dabei näher, als es geostationäre Satelliten sind. Die NASA versichert uns, dass diese beiden Ereignisse vollkommen unabhängig sind.
@@ -17,7 +12,7 @@ Vor einer Woche ist in Russland ein [Meteor eingeschlagen](http://www.bbc.co.uk/
 
 Was mich aber viel mehr erstaunt hat, sind die unterschiedlichen Bezeichnungen für die Steine die vom Himmel fallen. Bisher hatte ich angenommen, dass es da nur Meteoriten und Asteroiden gibt.
 
-# Was ist also nun der Unterschied zwischen all diesen Dingen?
+## Was ist also nun der Unterschied zwischen all diesen Dingen?
 
 **Asteroid:** Alles, was kleiner als ein Planet ist und die Sonne umrundet. Pluto ist übrigens keiner, weil er ein [Zwergplanet](https://de.wikipedia.org/wiki/Zwergplanet) ist.
 

@@ -7,7 +7,7 @@ permalink: /projects/
 {:.no_toc}
 
 <span class="lead">
-An incomplete list of things that I have worked on. You can find most of the stuff I do on my [GitHub profile](https://github.com/domoritz).
+An incomplete list of things that I have worked on. You can find most of the stuff on [GitHub](https://github.com/domoritz).
 </span>
 
 * TOC
@@ -15,23 +15,40 @@ An incomplete list of things that I have worked on. You can find most of the stu
 
 ## Research
 
-### Vega, Vega-Lite, Voyager, Polestar and others
-
-{.foo}
-![Vega-Lite]({{site.baseurl}}/images/vega-lite.png)
-*Vega-Lite*
+### Vega stack
 
 With the Interactive Data Lab, we have build the [Vega stack](https://vega.github.io/) and a number of tools for data exploration based on it.
 
+#### Vega-Lite
+
+<amp-img
+  src="{{site.baseurl}}/images/vega-lite.png"
+  height="603" width="1500"
+  layout="responsive"
+  alt="Vega-Lite examples">
+</amp-img>
+
+#### Polestar and Voyager
+
+
+
 #### ipyvega
-
-
 
 ### Myria
 
-[Myria](http://myria.cs.washington.edu/) is a distributed Big Data management system in the cloud which is being developed in the [Database group](http://db.cs.washington.edu/) at the [University of Washington](hppt://uw.edu/).
+[Myria](http://myria.cs.washington.edu/) is a distributed Big Data management system in the cloud which is being developed in the [Database group](http://db.cs.washington.edu/) at the [University of Washington](http://uw.edu/).
 
 ## Jobs
+
+### Data Search at Google Research
+
+During my internship with Google Research in Mountain View, I worked on the UX for Goods. The system is described in [this paper](http://research.google.com/pubs/pub45390.html).
+
+### Production System Monitoring at Google
+
+During my internship at Google in NYC during the summer of 2014, I implemented a new out of core join and aggregation operators for a large-scale time series database. The system processes production monitoring data from various systems at Google.
+
+Not much about this system is public but there is a [talk from John Banning about the system](https://vimeo.com/173607638).
 
 ### CKAN at the Open Knowledge foundation
 
@@ -42,10 +59,6 @@ It is a powerful data management system that makes data accessible – by provid
 Development happens on [GitHub](https://github.com/ckan/ckan).
 
 I also developed and contributed to many other tools related to CKAN like [messytables](https://github.com/okfn/messytables) and the [datapusher](https://github.com/ckan/datapusher).
-
-### Data Search at Google Research
-
-### Production System Monitoring at Google
 
 ## School
 
@@ -71,7 +84,7 @@ A chrome extension that shows the latest image from the Himawari 8 weather satel
 
 ### Game of Life
 
-I implemented Conway's Game of Life in Python, Go, Rust, and C#.
+I implemented Conway's Game of Life in Python, Go, Rust, and C#. All projects are on [GitHub](https://github.com/search?q=user%3Adomoritz+gameoflife).
 
 ### Leaflet plugins
 

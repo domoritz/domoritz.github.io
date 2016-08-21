@@ -2,7 +2,7 @@
 layout: post
 title: "Code retreats improve coding abilities"
 description: "Game of Life in Python and Go"
-date: 2014-09-29 18:55:44 +0200
+date: 2014-09-29 18:55:44 -5:00
 comments: true
 categories: Programming
 tags:

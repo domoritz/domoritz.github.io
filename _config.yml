@@ -1,7 +1,7 @@
 # Site settings
 title: Dominik Moritz
 author: Dominik Moritz
-email: domoritz@gmail.com
+email: domoritz@cs.washington.edu
 description: > # this means to ignore newlines until "baseurl:"
   Homepage from Dominik Moritz. PhD student in Computer
   Science and Engineering at the Univeristy of Washington.
@@ -14,6 +14,9 @@ permalink: /blog/:year/:month/:title.html
 
 # Google Analytics
 google_analytics_tracking_id: UA-3992453-11
+
+sass:
+  style: compressed
 
 gems:
   - jekyll-sitemap

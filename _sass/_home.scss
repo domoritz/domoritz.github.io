@@ -1,0 +1,34 @@
+.home-columns {
+  display: flex;
+  flex-direction: row;
+
+  .intro {
+    flex: 1;
+  }
+
+  .mugshot {
+    width: 220px;
+    margin-left: $spacing-unit;
+    margin-bottom: $spacing-unit;
+
+    amp-img {
+      border-radius: 6px;
+    }
+  }
+}
+
+@include media-query($on-palm) {
+  .home-columns {
+    flex-direction: column;
+    align-items: center;
+
+    .intro {
+      order: 2;
+    }
+    .mugshot {
+      order: 1;
+      margin-left: 0;
+    }
+  }
+}
+

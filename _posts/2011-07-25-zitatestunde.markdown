@@ -12,4 +12,4 @@ tags:
 
 > Be nice to nerds. Chances are you'll end up working for one.
 
-- Bill Gates
+Bill Gates

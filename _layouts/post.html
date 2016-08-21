@@ -1,4 +1,23 @@
 ---
-layout: page
+layout: default
 ---
-{{ content }}
+
+<section class="container post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}<p class="post-subtitle">{{ page.description }}</p>{% endif %}
+    <p class="post-meta">
+      {{ page.date | date: "%b %-d, %Y" }}
+      {% if page.author %} • {{ page.author }}{% endif %}
+      {% if page.meta %} • {{ page.meta }}{% endif %}
+      </p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  <section class="post-sharing">
+    Share this post on <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter"></i>Twitter</a>
+  </section>
+</section>

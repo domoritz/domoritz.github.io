@@ -1,4 +1,38 @@
 /**
+ * Basic styling
+ */
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  min-width: 480px;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $text-color;
+  background-color: $background-color;
+  text-rendering: optimizeLegibility;
+
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/**
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -8,42 +42,149 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-html, body {
-  width: 100%;
-  min-height: 100vh;
-}
 
-body {
-  font-family: $base-font-family;
-  box-sizing: border-box;
-  line-height: 1.5;
-  color: $text-color;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-blockquote {
-  padding: 0 15px;
-  color: #777;
-  border-left: 4px solid #ddd;
-  margin: 0;
-}
-
-dt {
-  font-weight: bold;
-  color: #777;
-}
-
-dd {
-  margin-bottom: 10px;
-}
 
 /**
  * Set `margin-bottom` to maintain vertycal rhythm
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure {
-    margin-bottom: 15px;
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        opacity: .8;
+        text-decoration: underline;
+    }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  padding: 2px 4px;
+  background-color: $grey-color-light;
+  border-radius: 3px;
+  border: 1px solid darken($grey-color-light, 15%);
+}
+
+code {
+  color: #c7254e;
+  padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/**
+ * Text styling
+ */
+strong, b {
+  font-weight: bold;
+}
+
+
+/**
+ * Iframe
+ */
+iframe {
+  border: none;
+}
+
+
+/**
+ * Media queries
+ */
+@include media-query($on-palm) {
+  .page-content {
+    font-size: 0.9em;
+  }
 }

@@ -2,24 +2,24 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   100%;  // 16px by default
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
+$content-width:    800px;
 
-$text-color:       #373a3c;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-$link-color:       #4682B4;
+$text-color:        #373a3c;
+$background-color:  #fdfdfd;
+$brand-color:       #0A656C;
+$link-color:        #4682B4;
+$header-background: #E6E6E6;
+$footer-background: #303030;
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: #f8f8f8;
 $grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -33,19 +33,21 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "style",
+        "syntax-highlighting",
+        "layout",
         "nav",
-        "headers",
+        "footer",
+        "headings",
+        "home",
         "publications",
         "projects",
-        "blog",
-        "syntax-highlighting"
+        "blog"
 ;
