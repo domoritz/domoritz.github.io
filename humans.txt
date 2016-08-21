@@ -1,0 +1,15 @@
+/* TEAM */
+	Author/Theme: Dominik Moritz
+	Twitter: @domoritz
+	From: Berlin, Germany
+
+/* THANKS */
+	Theme inspiration: Max Ogden
+	Twitter: @maxogden
+	From: Oakland, CA, USA
+
+/* SITE */
+	Language: English / German
+	Doctype: HTML5
+	IDE: Sublime Text, VIM, VSCode
+	Software: Jekyll

@@ -1,0 +1,30 @@
+---
+comments: true
+date: 2011-01-23 10:03:41
+layout: post
+title: InformatiCup 2011
+description: 
+wordpress_id: 1474
+tags:
+- Algorithm
+- ATM
+- HPI
+- informatiCup
+- Wettbewerb
+---
+
+Nach knapp drei Monaten Arbeit ist es vollbracht. Zusammen mit zwei Kommilitonen (Kai und [Matthias](http://blog.matthiasspringer.de)) und einem Studenten von der FH Regensburg habe ich am informatiCup der Gesellschaft für Informatik teilgenommen. Wir haben uns für die Aufgabe "ATM" entschieden, bei der es darum ging, in einer gegebenen Stadt, die aus verschieden gewichteten Stadtteilen besteht, Geldautomaten so zu verteilen, dass wir eine möglichst hohe Gewichtung erreichen. Das Gewicht errechnet sich aus der jeweils von einem Automaten abgedeckten Fläche, die kreisförmig ist und einen festen Radius hat und dem Gewicht der überdeckten Stadtteile. Es ist nicht erlaubt, dass sich Automaten überdecken.
+
+![Visualisierung der Gewichtung](https://lh4.googleusercontent.com/-ozEXW5aKgIo/UR90LJDDsaI/AAAAAAAABtE/-E_wPAqTtwg/s600/hatfield.png)
+
+Um das Problem (welches wahrscheinlich NP-Hart ist) zu lösen, haben wir verschiedene Algorithmen verwendet, die wir in zwei Gruppen aufgeteilt haben. Diese beiden Gruppen waren Eröffnungsalgorithmen und Optimierungsalgorithmen. Die Eröffnungsalgorithmen sollten erst einmal  eine möglichst gute Anfangsaufstellung finden, die dann verbessert werden kann. Dafür haben wir den [Greedyalgorithmus](http://de.wikipedia.org/wiki/Greedy-Algorithmus) und die Erstellung verteilter Positionen ohne Determinismus (weithin bekannt als Zufall) verwendet. Für die Optimierung haben wir dann mit [simulierter Abkühlung](http://de.wikipedia.org/wiki/Simulierte_Abk%C3%BChlung) und [Tabusuche](http://de.wikipedia.org/wiki/Tabusuche) verwendet. Unsere Algorithemen sind sehr effektiv, schnell, präzise, flexibel und liefern sehr gute Ergebnisse. Wir waren manchmal selber erstaunt, welche Lösungen gefunden wurden.
+
+Das Programm inklusive der Algorithmen und der Oberfläche haben wir in Java geschrieben. Das Programm, alle Quellen und Beispielrechnungen gibt's hier:
+
+[Programm und Quellen](http://www.dmoritz.bplaced.de/wordpress/wp-content/uploads/2011/01/informaticup.zip) (available in English and German)
+
+[Aufgabenblatt](http://www.dmoritz.bplaced.de/wordpress/wp-content/uploads/2011/01/InfCup2011_Aufgabe3.pdf)
+
+[Dokumentation](http://www.dmoritz.bplaced.de/wordpress/wp-content/uploads/2011/01/doku.pdf)
+
+**UPDATE**: Gerade kam die E-mail rein, dass wir nach Bonn eingeladen wurden. Zur entscheidenden Endauswahl! Damit sind wir unter den besten 6 Teams. Und das, obwohl wir erst im 1. Semester sind. Wahnsinn... Überraschend...

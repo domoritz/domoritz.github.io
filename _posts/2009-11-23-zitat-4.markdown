@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2009-11-23 23:41:36
+layout: post
+slug: zitat-4
+title: Zitat
+wordpress_id: 703
+categories: Quotes
+---
+
+> I would love to change the world, but they won't give me the source code
+

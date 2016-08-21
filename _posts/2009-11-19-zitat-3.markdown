@@ -1,0 +1,13 @@
+---
+comments: true
+date: 2009-11-19 17:49:54
+layout: post
+slug: zitat-3
+title: Zitat
+wordpress_id: 699
+categories: Quotes
+---
+
+> Die zukünftige Realität ist noch viel kränker, als die gegenwärtig gedachte Realität der Zukunft.
+
+Marcel und ich

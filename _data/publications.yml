@@ -1,0 +1,107 @@
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  year: 2017
+  authors:
+    - Arvind Satyanarayan
+    - Dominik Moritz
+    - Kanit Wongsuphasawat
+    - Jeffrey Heer
+  venue: Infovis 2016
+  venue_url: http://ieeevis.org/
+  link: http://idl.cs.washington.edu/papers/vega-lite
+  pdf: http://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf
+  video: https://vimeo.com/177767802
+  project: https://vega.github.io/vega-lite/
+  awards:
+    - Best Paper
+
+- title: "SQLShare: Results from a Multi-Year SQL-as-a-Service Experiment"
+  year: 2016
+  authors:
+    - Shrainik Jain
+    - Dominik Moritz
+    - Bill Howe
+    - Ed Lazowska
+  venue: SIGMOD 2016
+  venue_url: http://sigmod2016.org/
+
+- title: "Towards A General-Purpose Query Language for Visualization Recommendation"
+  year: 2016
+  authors:
+    - Kanit Wongsuphasawat
+    - Dominik Moritz
+    - Anushka Anand
+    - Jock Mackinlay
+    - Bill Howe
+    - Jeffrey Heer
+  venue: HILDA at SIGMOD 2016
+  venue_url: http://www.hilda.io/
+
+- title: "High Variety Cloud Databases"
+  year: 2016
+  authors:
+    - Shrainik Jain
+    - Dominik Moritz
+    - Bill Howe
+  venue: ICDE 2016
+
+- title: Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web
+  year: 2015
+  authors:
+    - Dominik Moritz
+    - Jeffrey Heer
+    - Bill Howe
+  venue: The 1st Workshop on Data Systems for Interactive Analysis
+  venue_url: http://www.interactive-analysis.org/
+  pdf: http://www.interactive-analysis.org/papers/2015/moritz.pdf
+
+- title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
+  year: 2015
+  authors:
+    - Kanit Wongsuphasawat
+    - Dominik Moritz
+    - Anushka Anand
+    - Jock Mackinlay
+    - Bill Howe
+    - Jeffrey Heer
+  url: Infovis 2015
+  venue_url: http://ieeevis.org/
+  link: https://idl.cs.washington.edu/papers/voyager
+  project: https://vega.github.io/
+  pdf: https://idl.cs.washington.edu/files/2015-Voyager-InfoVis.pdf
+  video: https://vimeo.com/135417594
+  awards:
+    - Invited to be presented at SIGGRAPH 2016
+
+- title: "Perfopticon: Visual Query Analysis for Distributed Databases"
+  year: 2015
+  authors:
+    - Dominik Moritz
+    - Daniel Halperin
+    - Bill Howe
+    - Jeffrey Heer
+  venue: Eurovis 2015
+  venue_url: http://www.eurovis2015.it/
+  link: https://idl.cs.washington.edu/papers/perfopticon
+  pdf: https://idl.cs.washington.edu/files/2015-Perfopticon-EuroVis.pdf
+
+- title: Demonstration of the Myria Big Data Management Service
+  year: 2014
+  abstract: Demo paper about the [Myria system](http://myria.cs.washington.edu/).
+  venue: SIGMOD 2014
+  venue_url: http://www.sigmod2014.org/
+
+- title: Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
+  year: 2013
+  abstract: Publication of algorithms that I developed for my bachelor thesis.
+  authors:
+    - Sebastian Schmechel
+    - Jonas Trümper
+    - Dominik Moritz
+    - Jürgen Döllner
+  venue: Proceedings of the 5th International Conference on Information Visualization Theory and Applications (IVAPP 2014)
+  venue_url: http://www.ivapp.visigrapp.org/.
+  link: https://hpi.de/de/computer-graphics-systems/publications/year/2014/102334/STMD2014.html
+
+- title: Algorithms for the Visualization of Software System Evolution
+  year: 2013
+  abstract: My bachelor thesis. Not published due to non disclosure agreement.

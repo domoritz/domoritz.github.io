@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+# Hi, I am Dominik Moritz,
+
+<span class="lead">
+I'm a Computer Science PhD student at the [University of Washington (UW)](http://www.washington.edu/) in Seattle in the department of [Computer Science & Engineering (CSE)](http://www.cs.washington.edu/). I am advised by [Bill Howe](http://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/), the [iSchool](https://ischool.uw.edu/), and the [Database Group](http://db.cs.washington.edu/) and [Jeffrey Heer](http://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations. If you're interested in my research, have a look at my [publications](/publications).
+</span>
+
+During my first year at UW, I was fortunate to get supported from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). Until 2013, I studied IT-Systems Engineering at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I also worked on [CKAN](http://www.ckan.org) with the [Open Knowledge Foundation](http://www.okfn.org), Google, Google Research, and Microsoft Research. You can find details in my [CV](/dominik_moritz_cv.pdf).
+
+<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+
+* **Email:** &#100;&#111;&#109;&#111;&#114;&#105;&#116;&#122;&#91;&#97;&#116;&#93;&#99;&#115;&#46;&#119;&#97;&#115;&#104;&#105;&#110;&#103;&#116;&#111;&#110;&#46;&#101;&#100;&#117;
+* **Office:** [CSE](http://www.washington.edu/maps/?q=cse) 486
+
+Feel free to follow me on:
+
+* <i class="fa fa-twitter fa-lg"></i> [Twitter](https://twitter.com/domoritz)
+* <i class="fa fa-github fa-lg"></i> [Github](https://github.com/domoritz)
+* <i class="fa fa-facebook-square fa-lg"></i> [Facebook](https://www.facebook.com/moritz.dominik)
+* <i class="fa fa-linkedin fa-lg"></i> [Linkedn](https://www.linkedin.com/pub/dominik-moritz/24/b81/409)
+* <i class="fa fa-google-plus fa-lg"></i> [Google+](https://plus.google.com/110111947282446666823)

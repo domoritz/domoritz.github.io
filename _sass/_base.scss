@@ -1,0 +1,49 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: $base-font-family;
+  box-sizing: border-box;
+  line-height: 1.5;
+  color: $text-color;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+  color: #777;
+}
+
+dd {
+  margin-bottom: 10px;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertycal rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+    margin-bottom: 15px;
+}
