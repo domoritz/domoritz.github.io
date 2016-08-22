@@ -12,6 +12,7 @@ twitter_username: domoritz
 github_username:  domoritz
 permalink: /blog/:year/:month/:title.html
 logo: images/dominik.jpg
+baseurl: /website
 
 # Google Analytics
 google_analytics_tracking_id: UA-3992453-11
