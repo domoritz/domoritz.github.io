@@ -11,7 +11,7 @@ permalink: /blog/
   {% for post in site.posts %}
     {% assign currentdate = post.date | date: "%Y" %}
     {% if currentdate != date %}
-      <h2 class="year">{{ currentdate }}</h2>
+      <h2 id="y{{ currentdate }}" class="year">{{ currentdate }}</h2>
       {% assign date = currentdate %}
     {% endif %}
 

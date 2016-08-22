@@ -22,6 +22,8 @@
     - Bill Howe
     - Ed Lazowska
   venue: SIGMOD 2016
+  link: https://uwescience.github.io/sqlshare/
+  pdf: https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf
   venue_url: http://sigmod2016.org/
 
 - title: "Towards A General-Purpose Query Language for Visualization Recommendation"
@@ -34,6 +36,7 @@
     - Bill Howe
     - Jeffrey Heer
   venue: HILDA at SIGMOD 2016
+  pdf: /files/2016-Compassql-HILDA.pdf
   venue_url: http://www.hilda.io/
 
 - title: "High Variety Cloud Databases"
@@ -42,10 +45,12 @@
     - Shrainik Jain
     - Dominik Moritz
     - Bill Howe
+  pdf: https://uwescience.github.io/sqlshare/pdfs/ICDE16_research_5.pdf
   venue: ICDE 2016
 
 - title: Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web
   year: 2015
+  abstract: Overview paper about possible performance optimizations for interactive visualizations in client-server systems.
   authors:
     - Dominik Moritz
     - Jeffrey Heer
@@ -74,6 +79,7 @@
 
 - title: "Perfopticon: Visual Query Analysis for Distributed Databases"
   year: 2015
+  abstract: Visual performance debugging for queries in distributed database systems.
   authors:
     - Dominik Moritz
     - Daniel Halperin
@@ -88,6 +94,7 @@
   year: 2014
   abstract: Demo paper about the [Myria system](http://myria.cs.washington.edu/).
   venue: SIGMOD 2014
+  pdf: http://www.halper.in/pubs/halperin_myria_sigmod14_demo.pdf
   venue_url: http://www.sigmod2014.org/
 
 - title: Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
@@ -99,7 +106,8 @@
     - Dominik Moritz
     - Jürgen Döllner
   venue: Proceedings of the 5th International Conference on Information Visualization Theory and Applications (IVAPP 2014)
-  venue_url: http://www.ivapp.visigrapp.org/.
+  venue_url: http://www.ivapp.visigrapp.org/
+  pdf: https://hpi.de/fileadmin/user_upload/fachgebiete/doellner/publications/2014/STMD2014/Visualization_of_Varying_Hierarchies_by_Stable_Layout_of_Voronoi_Treemaps.pdf
   link: https://hpi.de/de/computer-graphics-systems/publications/year/2014/102334/STMD2014.html
 
 - title: Algorithms for the Visualization of Software System Evolution

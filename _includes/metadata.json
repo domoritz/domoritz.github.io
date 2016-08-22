@@ -8,11 +8,11 @@
   "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}",
   "author": {
     "@type": "Person",
-    "name": "{{ site.name }}"
+    "name": "{{ site.author }}"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "{{ site.title }}",
+    "name": "{{ site.author }}",
     "logo": {
       "@type": "ImageObject",
       "url": "{{ site.logo | prepend: site.baseurl | prepend: site.url }}",

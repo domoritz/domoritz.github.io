@@ -1,14 +1,11 @@
 ---
 layout: page
 permalink: /projects/
+title: Projects
 ---
 
-# Projects
-{:.no_toc}
-
-<span class="lead">
+{:.lead}
 An incomplete list of things that I have worked on. You can find most of the stuff on [GitHub](https://github.com/domoritz).
-</span>
 
 * TOC
 {:toc}
@@ -21,6 +18,8 @@ With the Interactive Data Lab, we have build the [Vega stack](https://vega.githu
 
 #### Vega-Lite
 
+I am the co-author of [Vega-Lite](https://vega.github.io/vega-lite/), a high-level visualization grammar. It provides a concise JSON syntax for supporting rapid generation of visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.
+
 <amp-img
   src="{{site.baseurl}}/images/vega-lite.png"
   height="603" width="1500"
@@ -30,9 +29,11 @@ With the Interactive Data Lab, we have build the [Vega stack](https://vega.githu
 
 #### Polestar and Voyager
 
-
+We built the data exploration tools [Polestar](https://github.com/vega/polestar) and [Voyager](https://github.com/vega/voyager) on top of Vega-Lite. We have [written a paper about these systems]({{site.base_url}}/publications/#voyager-exploratory-analysis-via-faceted-browsing-of-visualization-recommendations).
 
 #### ipyvega
+
+IPython/Jupyter notebook module for Vega and Vega-Lite. The code is on [GitHub](https://github.com/vega/ipyvega).
 
 ### Myria
 
@@ -64,11 +65,35 @@ I also developed and contributed to many other tools related to CKAN like [messy
 
 ### Text detection with neural networks
 
+For a class project, I extracted 500k labeled images of figures from roughly 1M papers. For each image I created a mask that shows where the text in the image is. I then used the images to train a neural network that would find text in images. The project is on [GitHub](https://github.com/domoritz/label_generator).
+
+<div class="small-image">
+<amp-img
+  src="{{site.baseurl}}/images/text-detection.png"
+  height="504" width="684"
+  layout="responsive"
+  alt="Text detection output">
+</amp-img>
+</div>
+
 ### Space Clean Up
 
-### Singing VHDL
+A bomberman clone written in Squeak Smalltalk. Code is on [GitHub](https://github.com/matthias-springer/space-cleanup).
+
+<amp-img
+  src="{{site.baseurl}}/images/scu.jpg"
+  height="1028" width="1920"
+  layout="responsive"
+  alt="Space Clean Up Screenshot">
+</amp-img>
+
+### Singing VHDL board
+
+Together with another student at HPI, I built a music player in VHDL. The code as well as schematics to print the board are on [GitHub](https://github.com/domoritz/S76D). I wrote a short [blog post about the project]({% post_url 2012-03-27-singing_vhdl_board %}).
 
 ### The glass is half full
+
+In this class project I write about the application of an optimistic approach to concurrency control schemes. You can find the paper [here]({{site.base_url}}/files/2012-the_glass_is_half_full.pdf).
 
 ### SoSat
 
@@ -76,11 +101,28 @@ A SAT solver that uses different statistical optimization algorithms to solve SA
 
 [github.com/domoritz/SoSAT](https://github.com/domoritz/SoSAT)
 
+### Tagshot
+
+Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub]() and I wrote a [blog post about it]({% post_url 2012-03-17-tagshot-und-andere-projekte %}).
+
+<amp-youtube data-videoid="nB3fcDLNk8g"
+  layout="responsive"
+  width="560" height="315">
+</amp-youtube>
+
+
 ## Side projects
 
 ### Himawari 8
 
 A chrome extension that shows the latest image from the Himawari 8 weather satellite when you open a new tab. The code is on [Github](https://github.com/domoritz/himawari-8-chrome) and you can install the extension from the [Chrome web store](https://chrome.google.com/webstore/detail/himawari-8-satellite-new/llelgapflianaapmnpncgakfjhfhnojm).
+
+<amp-img
+  src="{{site.baseurl}}/images/himawari.png"
+  height="800" width="1280"
+  layout="responsive"
+  alt="Himawari Chrome Extension">
+</amp-img>
 
 ### Game of Life
 
@@ -88,19 +130,27 @@ I implemented Conway's Game of Life in Python, Go, Rust, and C#. All projects ar
 
 ### Leaflet plugins
 
+Leaflet is an open source JavaScript library for mobile friendly interactive maps. I used it for various projects and also wrote a few extensions.
+
 #### LocateControl
 
-A simple control to find your current location on a leaflet map.
+A simple control to find your current location on a leaflet map. Very popular and used on [the OpenStreetMap home page](http://osm.org/).
 
-[github.com/domoritz/leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol)
+The code is at [github.com/domoritz/leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol).
 
 
 #### MaskCanvas
 
 Visualize coverage on a leaflet map. The data is store in a quad-tree to make queries to the data super fast.
 
-[github.com/domoritz/leaflet-maskcanvas](https://github.com/domoritz/leaflet-maskcanvas)
+The code is at [github.com/domoritz/leaflet-maskcanvas](https://github.com/domoritz/leaflet-maskcanvas). I used it to visualize [public transit coverage around Berlin](http://domoritz.github.com/vbb-coverage/).
 
+<amp-img
+  src="{{site.baseurl}}/images/vbb.png"
+  height="639" width="1000"
+  layout="responsive"
+  alt="Public transit coverage around Berlin">
+</amp-img>
 
 #### Heatmap layer
 
@@ -108,3 +158,19 @@ For this project I combined the MaskCanvas layer and `heatmap.js` from my friend
 
 [www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html](http://www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html)
 
+#### Informaticup 2011: optimal ATM placement
+
+[Blog post about our entry]({% post_url 2011-01-23-informaticup-2011 %}).
+
+<div class="small-image">
+<amp-img
+  src="{{site.baseurl}}/images/info2011.png"
+  height="385" width="600"
+  layout="responsive"
+  alt="Visualization of optimal ATM placement">
+</amp-img>
+</div>
+
+#### Informaticup 2012: Shopping tour optimizer
+
+[Blog post about our entry]({% post_url 2012-03-17-shoppingtour-optimizer %}).

@@ -43,16 +43,18 @@ h6 {
  */
 .anchor {
   display: inline-block;
-  margin-left: -22px;
-  width: 22px;
+  margin-left: -26px;
+  width: 26px;
   outline: 0;
+  font-size: 0.8em;
+  opacity: 0;
 }
 
-h2 .octicon-link, h3 .octicon-link, h4 .octicon-link, h5 .octicon-link, h6 .octicon-link {
-  vertical-align: middle;
-  visibility: hidden;
-}
-
-h2:hover .anchor .octicon-link, h3:hover .anchor .octicon-link, h4:hover .anchor .octicon-link, h5:hover .anchor .octicon-link, h6:hover .anchor .octicon-link {
-  visibility: visible;
+h2, h3, h4, h5, h6 {
+  &:hover {
+    .anchor {
+      opacity: 0.8;
+      transition: opacity .08s ease-in;
+    }
+  }
 }

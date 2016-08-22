@@ -3,10 +3,6 @@ layout: post
 title: The London 4D experience
 description: Über meine zwei Monate in London
 date: 2012-12-15 23:52
-comments: true
-tags:
-  - London
-  - 4D
 ---
 
 Lange ist es her, dass ich hier im Blog mal wieder etwas von mir gegeben habe. Die gute Nachricht, dass ich noch lebe, ist damit raus. Dafür, dass ich hier im Blog nichts geschrieben habe, habe ich auf [Twitter](http://twitter.com/doobly_doo) kurze Infos von mir gegeben und auch auf Github einiges an Code produziert.
