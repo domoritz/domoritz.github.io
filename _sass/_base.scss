@@ -4,7 +4,6 @@
 html, body {
   width: 100%;
   min-height: 100vh;
-  min-width: 480px;
 }
 
 html {
@@ -185,6 +184,6 @@ iframe {
  */
 @include media-query($on-palm) {
   .page-content {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 }

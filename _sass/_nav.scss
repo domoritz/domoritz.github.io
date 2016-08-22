@@ -69,6 +69,11 @@ nav {
   }
 
   nav {
+    a {
+      i.fa {
+        display: none;
+      }
+    }
     .spacer {
       display: none;
     }
