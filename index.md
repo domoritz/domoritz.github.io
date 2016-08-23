@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Hi, I am Dominik Moritz,
+# Hi, I am Dominik Moritz
 
 <div class="home-columns" markdown="1">
 <div class="intro" markdown="1">

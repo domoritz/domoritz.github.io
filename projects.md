@@ -5,7 +5,7 @@ title: Projects
 ---
 
 {:.lead}
-An incomplete list of things that I have worked on. You can find most of the stuff on [GitHub](https://github.com/domoritz).
+An incomplete list of projects that I have worked on. You can find most of them on [GitHub](https://github.com/domoritz).
 
 * TOC
 {:toc}
@@ -14,7 +14,7 @@ An incomplete list of things that I have worked on. You can find most of the stu
 
 ### Vega stack
 
-With the Interactive Data Lab, we have build the [Vega stack](https://vega.github.io/) and a number of tools for data exploration based on it.
+With the Interactive Data Lab, we created the [Vega stack](https://vega.github.io/) and a number of tools for data exploration based on it.
 
 #### Vega-Lite
 
