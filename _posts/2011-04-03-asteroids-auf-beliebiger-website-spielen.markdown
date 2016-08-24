@@ -11,7 +11,7 @@ tags:
 
 Für alle, sie gerne mal eine website zerstören, kann ich dieses kleine Javascript Stückchen empfehlen. Einfach auf einer beliebigen Seite in die URL-Leiste oder die Javascriptkonsole kopieren und bestätigen und los gehts. Viel Spaß.
 
-```javascript
+```js
 javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://erkie.github.com/asteroids.min.js';void(0);
 ```
 
