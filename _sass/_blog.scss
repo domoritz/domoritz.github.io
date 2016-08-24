@@ -31,7 +31,7 @@
     }
 
     h3 {
-      font-size: 1.4em;
+      font-size: 1.3em;
       margin: 0;
       font-weight: normal;
 
@@ -104,7 +104,22 @@
 }
 
 .post-sharing {
-  margin-top: 1.5 * $spacing-unit;
+  margin-top: 3 * $spacing-unit;
+}
+
+.blog-links {
+  margin: $spacing-unit auto 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  a, .spacer {
+    margin: 0 $spacing-unit;
+  }
+
+  @include media-query($on-laptop) {
+    width: 100%;
+  }
 }
 
 .page-search {

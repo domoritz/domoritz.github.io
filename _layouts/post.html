@@ -20,4 +20,23 @@ layout: default
   <section class="post-sharing">
     Share this post on <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter"></i>Twitter</a>
   </section>
+
+  <div class="blog-links">
+  {% if page.previous.url %}
+    <a href="{{site.baseurl}}{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
+      <i class="fa fa-lg fa-chevron-left"></i>
+      <span>{{ page.previous.title }}</span>
+    </a>
+  {% else %}
+    <span class="spacer"></span>
+  {% endif %}
+  {% if page.next.url %}
+    <a href="{{site.baseurl}}{{page.next.url}}" title="Next Post: {{page.Next.title}}">
+      <span>{{ page.next.title }}</span>
+      <i class="fa fa-lg fa-chevron-right"></i>
+    </a>
+  {% else %}
+    <span class="spacer"></span>
+  {% endif %}
+  </div>
 </section>

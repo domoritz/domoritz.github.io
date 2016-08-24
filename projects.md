@@ -24,7 +24,7 @@ I am the co-author of [Vega-Lite](https://vega.github.io/vega-lite/), a high-lev
 
 #### Polestar and Voyager
 
-We built the data exploration tools [Polestar](https://github.com/vega/polestar) and [Voyager](https://github.com/vega/voyager) on top of Vega-Lite. We have [written a paper about these systems]({{site.base_url}}/publications/#voyager-exploratory-analysis-via-faceted-browsing-of-visualization-recommendations).
+We built the data exploration tools [Polestar](https://github.com/vega/polestar) and [Voyager](https://github.com/vega/voyager) on top of Vega-Lite. We have [written a paper about these systems]({{site.baseurl}}/publications/#voyager-exploratory-analysis-via-faceted-browsing-of-visualization-recommendations).
 
 #### ipyvega
 
@@ -73,11 +73,11 @@ A bomberman clone written in Squeak Smalltalk. Code is on [GitHub](https://githu
 
 ### Singing VHDL board
 
-Together with another student at HPI, I built a music player in VHDL. The code as well as schematics to print the board are on [GitHub](https://github.com/domoritz/S76D). I wrote a short [blog post about the project]({% post_url 2012-03-27-singing_vhdl_board %}).
+Together with another student at HPI, I built a music player in VHDL. The code as well as schematics to print the board are on [GitHub](https://github.com/domoritz/S76D). I wrote a short [blog post about the project]({{site.baseurl}}{% post_url 2012-03-27-singing_vhdl_board %}).
 
 ### The glass is half full
 
-In this class project I write about how we can use an optimistic approach to concurrency control. You can find the paper [here]({{site.base_url}}/files/2012-the_glass_is_half_full.pdf).
+In this class project I write about how we can use an optimistic approach to concurrency control. You can find the paper [here]({{site.baseurl}}/files/2012-the_glass_is_half_full.pdf).
 
 ### SoSat
 
@@ -87,7 +87,7 @@ A SAT solver that uses different statistical optimization algorithms to solve SA
 
 ### Tagshot
 
-Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub]() and I wrote a [blog post about it]({% post_url 2012-03-17-tagshot-und-andere-projekte %}).
+Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub]() and I wrote a [blog post about it]({{site.baseurl}}{% post_url 2012-03-17-tagshot-und-andere-projekte %}).
 
 {:.video}
 <iframe width="640" height="360" src="https://www.youtube.com/embed/nB3fcDLNk8g" frameborder="0" allowfullscreen></iframe>
@@ -128,12 +128,11 @@ The code is at [github.com/domoritz/leaflet-maskcanvas](https://github.com/domor
 #### Heatmap layer
 
 For this project I combined the MaskCanvas layer and `heatmap.js` from my friend [Patrick](http://www.patrick-wied.at).
-
-[www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html](http://www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html)
+You can learn more about it at [patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html](http://www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html)
 
 #### Informaticup 2011: optimal ATM placement
 
-[Blog post about our entry]({% post_url 2011-01-23-informaticup-2011 %}).
+[Blog post about our entry]({{site.baseurl}}{% post_url 2011-01-23-informaticup-2011 %}).
 
 {:.small-image}
 ![Visualization of optimal ATM placement]({{site.baseurl}}/images/hatfield.png)
@@ -141,4 +140,6 @@ For this project I combined the MaskCanvas layer and `heatmap.js` from my friend
 
 #### Informaticup 2012: Shopping tour optimizer
 
-[Blog post about our entry]({% post_url 2012-03-17-shoppingtour-optimizer %}).
+[Blog post about our entry]({{site.baseurl}}{% post_url 2012-03-17-shoppingtour-optimizer %}).
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HSMU7a_TlgI" frameborder="0" allowfullscreen></iframe>
