@@ -45,20 +45,31 @@ nav {
 
 @include media-query($on-laptop) {
   nav {
+    &.container {
+      // reduce padding by 8 pixels so that content is aligned
+      padding: 0 ($spacing-unit - 8);
+    }
+
     line-height: 42px;
     justify-content: center;
 
     a {
-      padding: 0 0.8em;
+      padding: 0 8px;
     }
 
     .site-title {
       flex: 0 1 100%;
-
       padding: 0;
-      margin: 0.5em 0 0 0;
+      margin: .5em 0 0 8px;
       font-size: 1.6em;
-      text-align: center;
+    }
+  }
+}
+
+@include media-query($on-laptop) {
+  nav {
+    a {
+      padding: 0 .5em;
     }
   }
 }
@@ -69,16 +80,15 @@ nav {
   }
 
   nav {
-    a {
-      i.fa {
-        display: none;
-      }
-    }
+
     .spacer {
       display: none;
     }
     .external {
       flex: 0 1 100%;
+    }
+    .site-title {
+      text-align: center;
     }
   }
 }

@@ -7,6 +7,10 @@
     float: left;
     border: none;
     margin: 0;
+
+    @include media-query($on-palm) {
+      float: none;
+    }
   }
 
   .post-block {
@@ -20,6 +24,10 @@
       position: absolute;
       left: 0;
       top: 0.1em;
+
+      .meta-year {
+        visibility: hidden;
+      }
     }
 
     h3 {
@@ -32,7 +40,27 @@
       }
     }
   }
+
+  @include media-query($on-palm) {
+    .year {
+      font-size: 1.75em;
+      margin-top: 1.5em;
+    }
+    .post-block {
+      margin: 0;
+      padding: 0;
+      .post-meta {
+        position: relative;
+        left: 0;
+
+        .meta-year {
+          visibility: visible;
+        }
+      }
+    }
+  }
 }
+
 
 .post-meta {
   font-size: $small-font-size;
@@ -67,7 +95,7 @@
   margin-bottom: 0;
 
   @include media-query($on-laptop) {
-      font-size: 36px;
+    font-size: 36px;
   }
 }
 
@@ -77,4 +105,31 @@
 
 .post-sharing {
   margin-top: 1.5 * $spacing-unit;
+}
+
+.page-search {
+  margin-bottom: 1em;
+  fieldset {
+    border: none;
+    padding: 0;
+
+    input[type=text] {
+      font-size: .8em;
+      width: 300px;
+      padding: 0.6em;
+      box-sizing: border-box;
+      border: 1px solid #c9c9c9;
+      border-radius: 2px;
+    }
+
+    button {
+      position: relative;
+      right: 38px;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 6px;
+    }
+  }
 }

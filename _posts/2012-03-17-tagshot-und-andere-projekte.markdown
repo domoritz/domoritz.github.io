@@ -41,4 +41,3 @@ Das Projektrepo (Git) und die Projektorganisation (Redmine) sind zur Zeit noch a
 Auf Youtube gibt es kleines Demovideo, dass die wichtigsten Grundfunktionen zeigt.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nB3fcDLNk8g" frameborder="0" allowfullscreen></iframe>
-

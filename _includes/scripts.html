@@ -1,20 +1,4 @@
-<amp-analytics type="googleanalytics" id="analytics1">
-<script type="application/json">
-{
-  "vars": {
-    "account": "{{ site.google_analytics_tracking_id }}"
-  },
-  "triggers": {
-    "trackPageview": {
-      "on": "visible",
-      "request": "pageview"
-    }
-  }
-}
-</script>
-</amp-analytics>
-
-<script async>
+<script>
   function trim(str) {
     return str.replace(/^\s+|\s+$/g, '');
   }
@@ -23,4 +7,14 @@
     var title = h.innerHTML;
     h.innerHTML = '<a href="#' + name + '" class="anchor"><i class="fa fa-hashtag"></i></a>' + trim(title);
   });
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{{ site.google_analytics_tracking_id }}', 'auto');
+  ga('send', 'pageview');
 </script>

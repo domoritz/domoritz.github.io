@@ -18,4 +18,4 @@ Ein Zitat von dem Abend: von John Engelbert: _Does anyone here has a cigarette?_
 
 > Studying kills.
 
-![Johnossi](https://lh4.googleusercontent.com/-gtT8GXeHVIw/UR7MTUAcfRI/AAAAAAAABsk/9-D6C_SgJtk/s500/IMAG0039.jpg)
+![Johnossi]({{site.baseurl}}/images/johnossi.jpg)

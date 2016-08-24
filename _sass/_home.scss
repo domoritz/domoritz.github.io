@@ -8,10 +8,10 @@
 
   .mugshot {
     width: 220px;
+    height: 220px;
     margin-left: $spacing-unit;
     margin-bottom: $spacing-unit;
-
-    amp-img {
+    img {
       border-radius: 6px;
     }
   }

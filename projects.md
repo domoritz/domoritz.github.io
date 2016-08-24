@@ -20,12 +20,7 @@ With the Interactive Data Lab, we created the [Vega stack](https://vega.github.i
 
 I am the co-author of [Vega-Lite](https://vega.github.io/vega-lite/), a high-level visualization grammar. It provides a concise JSON syntax for supporting rapid generation of visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.
 
-<amp-img
-  src="{{site.baseurl}}/images/vega-lite.png"
-  height="603" width="1500"
-  layout="responsive"
-  alt="Vega-Lite examples">
-</amp-img>
+![Vega-Lite examples]({{site.baseurl}}/images/vega-lite.png)
 
 #### Polestar and Voyager
 
@@ -67,25 +62,14 @@ I also developed and contributed to many other tools related to CKAN like [messy
 
 For a class project, I extracted 500k labeled images of figures from roughly 1M papers. For each image I created a mask that shows where the text in the image is. I then used the images to train a neural network that would find text in images. The project is on [GitHub](https://github.com/domoritz/label_generator).
 
-<div class="small-image">
-<amp-img
-  src="{{site.baseurl}}/images/text-detection.png"
-  height="504" width="684"
-  layout="responsive"
-  alt="Text detection output">
-</amp-img>
-</div>
+{:.small-image}
+![Text detection output]({{site.baseurl}}/images/text-detection.png)
 
 ### Space Clean Up
 
 A bomberman clone written in Squeak Smalltalk. Code is on [GitHub](https://github.com/matthias-springer/space-cleanup).
 
-<amp-img
-  src="{{site.baseurl}}/images/scu.jpg"
-  height="1028" width="1920"
-  layout="responsive"
-  alt="Space Clean Up Screenshot">
-</amp-img>
+![Space Clean Up Screenshot]({{site.baseurl}}/images/scu.jpg)
 
 ### Singing VHDL board
 
@@ -93,11 +77,11 @@ Together with another student at HPI, I built a music player in VHDL. The code a
 
 ### The glass is half full
 
-In this class project I write about the application of an optimistic approach to concurrency control schemes. You can find the paper [here]({{site.base_url}}/files/2012-the_glass_is_half_full.pdf).
+In this class project I write about how we can use an optimistic approach to concurrency control. You can find the paper [here]({{site.base_url}}/files/2012-the_glass_is_half_full.pdf).
 
 ### SoSat
 
-A SAT solver that uses different statistical optimization algorithms to solve SAT problems encoded in the DIMACS format. This solver is written in Python and uses [Numpy](http://www.numpy.org/) to speed up calculations. The two main algorithms in this solver are an *ant colony optimization algorithm* and a *genetic algorithm*. To support these algorithms, there are some preprocessing algorithms.
+A SAT solver that uses different statistical optimization algorithms to solve SAT problems encoded in the DIMACS format. This solver is written in Python and uses [Numpy](http://www.numpy.org/) to speed up calculations. The two main algorithms in this solver are an *ant colony optimization algorithm* and a *genetic algorithm*. To support these algorithms, there are some pre-processing algorithms.
 
 [github.com/domoritz/SoSAT](https://github.com/domoritz/SoSAT)
 
@@ -105,10 +89,8 @@ A SAT solver that uses different statistical optimization algorithms to solve SA
 
 Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub]() and I wrote a [blog post about it]({% post_url 2012-03-17-tagshot-und-andere-projekte %}).
 
-<amp-youtube data-videoid="nB3fcDLNk8g"
-  layout="responsive"
-  width="560" height="315">
-</amp-youtube>
+{:.video}
+<iframe width="640" height="360" src="https://www.youtube.com/embed/nB3fcDLNk8g" frameborder="0" allowfullscreen></iframe>
 
 
 ## Side projects
@@ -117,12 +99,7 @@ Tagshot is a photo management tool in the browser. We designed and developed as 
 
 A chrome extension that shows the latest image from the Himawari 8 weather satellite when you open a new tab. The code is on [Github](https://github.com/domoritz/himawari-8-chrome) and you can install the extension from the [Chrome web store](https://chrome.google.com/webstore/detail/himawari-8-satellite-new/llelgapflianaapmnpncgakfjhfhnojm).
 
-<amp-img
-  src="{{site.baseurl}}/images/himawari.png"
-  height="800" width="1280"
-  layout="responsive"
-  alt="Himawari Chrome Extension">
-</amp-img>
+![Himawari Chrome Extension]({{site.baseurl}}/images/himawari.png)
 
 ### Game of Life
 
@@ -145,12 +122,8 @@ Visualize coverage on a leaflet map. The data is store in a quad-tree to make qu
 
 The code is at [github.com/domoritz/leaflet-maskcanvas](https://github.com/domoritz/leaflet-maskcanvas). I used it to visualize [public transit coverage around Berlin](http://domoritz.github.com/vbb-coverage/).
 
-<amp-img
-  src="{{site.baseurl}}/images/vbb.png"
-  height="639" width="1000"
-  layout="responsive"
-  alt="Public transit coverage around Berlin">
-</amp-img>
+
+![Public transit coverage around Berlin]({{site.baseurl}}/images/vbb.png)
 
 #### Heatmap layer
 
@@ -162,14 +135,9 @@ For this project I combined the MaskCanvas layer and `heatmap.js` from my friend
 
 [Blog post about our entry]({% post_url 2011-01-23-informaticup-2011 %}).
 
-<div class="small-image">
-<amp-img
-  src="{{site.baseurl}}/images/info2011.png"
-  height="385" width="600"
-  layout="responsive"
-  alt="Visualization of optimal ATM placement">
-</amp-img>
-</div>
+{:.small-image}
+![Visualization of optimal ATM placement]({{site.baseurl}}/images/hatfield.png)
+
 
 #### Informaticup 2012: Shopping tour optimizer
 

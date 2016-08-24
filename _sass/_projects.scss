@@ -1,4 +1,16 @@
 .small-image {
-  width: 75%;
-  min-width: 450px;  // the minimum content width
+  text-align: center;
+  img {
+    width: 75%;
+    @include media-query($on-palm) {
+      width: 100%;
+    }
+  }
+}
+
+.video {
+  text-align: center;
+  iframe {
+    max-width: 100%;
+  }
 }

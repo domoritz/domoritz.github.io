@@ -28,12 +28,7 @@ footer {
   }
   .site-desc {
     flex: 4;
-  }
-}
-
-@include media-query($on-laptop) {
-  footer .container {
-    .site-desc {
+    @include media-query($on-laptop) {
       flex: 1 100%;
     }
   }
