@@ -10,6 +10,8 @@ nav {
     padding: 0 0.8em;
     display: inline-block;
     text-decoration: none;
+    font-size: 1.1em;
+
     &:last-child {
       padding-right: 0;
     }
@@ -34,8 +36,8 @@ nav {
   }
 
   .site-title {
-    font-weight: bold;
-    font-size: 1.4em;
+    font-weight: 500;
+    font-size: 1.5em;
     margin-top: -4px;
     padding: 0;
     margin-right: $spacing-unit;

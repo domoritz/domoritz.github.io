@@ -4,14 +4,10 @@ footer {
   font-size: $small-font-size;
 
   background-color: $footer-background;
-  color: #fff;
+  color: darken(#fff, 10%);;
 
   a {
-    color: darken(#fff, 5%);;
-    &:hover {
-      color: darken(#fff, 10%);
-      text-decoration: none;
-    }
+    color: #fff;
   }
 
   .container {

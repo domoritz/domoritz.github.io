@@ -137,27 +137,27 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-  padding: 2px 4px;
-  background-color: $grey-color-light;
-  border-radius: 3px;
-  border: 1px solid darken($grey-color-light, 15%);
-}
 
 code {
+  padding: 2px 4px;
   color: #c7254e;
-  padding: 1px 5px;
+  background-color: #f9f2f4;
+  border-radius: 4px;
 }
 
 pre {
     padding: 8px 12px;
     overflow-x: scroll;
 
+    background-color: $grey-color-light;
+    border-radius: 3px;
+    border: 1px solid darken($grey-color-light, 15%);
+
     > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
+      background: none;
+      border: 0;
+      padding-right: 0;
+      padding-left: 0;
     }
 }
 
@@ -177,19 +177,4 @@ strong, b {
 iframe {
   border: none;
   max-width: 100%;
-}
-
-
-/**
- * Media queries
- */
-@include media-query($on-laptop) {
-  .page-content {
-    font-size: 0.9em;
-  }
-}
-@include media-query($on-palm) {
-  .page-content {
-    font-size: 0.85em;
-  }
 }
