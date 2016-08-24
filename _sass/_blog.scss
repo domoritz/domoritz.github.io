@@ -108,17 +108,18 @@
 }
 
 .blog-links {
-  margin: $spacing-unit auto 0 auto;
+  margin-top: $spacing-unit;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  a, .spacer {
-    margin: 0 $spacing-unit;
-  }
+  flex-wrap: wrap;
 
-  @include media-query($on-laptop) {
-    width: 100%;
+  div {
+    margin: 0.5em;
+    i {
+      color: $grey-color;
+    }
   }
 }
 

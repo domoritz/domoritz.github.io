@@ -7,7 +7,7 @@ nav {
 
   a {
     color: #666;
-    padding: 0 0.8em;
+    padding: 0 0.7em;
     display: inline-block;
     text-decoration: none;
     font-size: 1.1em;
@@ -42,36 +42,35 @@ nav {
     padding: 0;
     margin-right: $spacing-unit;
     flex: 0 0 auto;
+    font-size: 1.6em;
+  }
+}
+
+@include media-query($content-width + 2*$spacing-unit) {
+  nav .external .name {
+    display: none;
   }
 }
 
 @include media-query($on-laptop) {
   nav {
     &.container {
+      // 13 px is just right to not move title
       // reduce padding by 8 pixels so that content is aligned
-      padding: 0 ($spacing-unit - 8);
+      padding: 13px ($spacing-unit - 10);
     }
 
     line-height: 42px;
     justify-content: center;
 
     a {
-      padding: 0 8px;
+      padding: 0 10px;
     }
 
     .site-title {
       flex: 0 1 100%;
       padding: 0;
-      margin: .5em 0 0 8px;
-      font-size: 1.6em;
-    }
-  }
-}
-
-@include media-query($on-laptop) {
-  nav {
-    a {
-      padding: 0 .5em;
+      margin-left: 10px;
     }
   }
 }

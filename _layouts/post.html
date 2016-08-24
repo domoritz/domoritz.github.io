@@ -23,18 +23,18 @@ layout: default
 
   <div class="blog-links">
   {% if page.previous.url %}
-    <a href="{{site.baseurl}}{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
-      <i class="fa fa-lg fa-chevron-left"></i>
-      <span>{{ page.previous.title }}</span>
-    </a>
+    <div>
+      <i class="fa fa-md fa-chevron-left"></i>
+      <a href="{{site.baseurl}}{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">{{ page.previous.title }}</a>
+    </div>
   {% else %}
     <span class="spacer"></span>
   {% endif %}
   {% if page.next.url %}
-    <a href="{{site.baseurl}}{{page.next.url}}" title="Next Post: {{page.Next.title}}">
-      <span>{{ page.next.title }}</span>
-      <i class="fa fa-lg fa-chevron-right"></i>
-    </a>
+    <div>
+      <a href="{{site.baseurl}}{{page.next.url}}" title="Next Post: {{page.Next.title}}">{{ page.next.title }}</a>
+      <i class="fa fa-md fa-chevron-right"></i>
+    </div>
   {% else %}
     <span class="spacer"></span>
   {% endif %}

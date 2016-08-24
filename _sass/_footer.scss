@@ -19,11 +19,11 @@ footer {
   }
 
   .footer-col {
-    flex: 1;
     padding: $spacing-unit/2 0;
   }
   .site-desc {
-    flex: 4;
+    width: 500px;
+
     @include media-query($on-laptop) {
       flex: 1 100%;
     }
