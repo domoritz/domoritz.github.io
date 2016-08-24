@@ -13,7 +13,7 @@ I'm a PhD student at the [University of Washington](http://www.washington.edu/) 
 </div>
 
 {:.mugshot}
-![Image of me]({{site.baseurl}}/images/dominik.jpg)
+<img src="{{site.baseurl}}/images/dominik.webp" onerror="this.onerror=null; this.src='{{site.baseurl}}/images/dominik.jpg'" alt="Image of me">
 
 </div>
 
