@@ -75,7 +75,7 @@
   pdf: https://idl.cs.washington.edu/files/2015-Voyager-InfoVis.pdf
   video: https://vimeo.com/135417594
   awards:
-    - Invited to be presented at SIGGRAPH 2016
+    - Invited to present at SIGGRAPH 2016
 
 - title: "Perfopticon: Visual Query Analysis for Distributed Databases"
   year: 2015
@@ -94,8 +94,24 @@
   year: 2014
   abstract: Demo paper about the [Myria system](http://myria.cs.washington.edu/).
   venue: SIGMOD 2014
+  project: http://myria.cs.washington.edu/
   pdf: http://www.halper.in/pubs/halperin_myria_sigmod14_demo.pdf
   venue_url: http://www.sigmod2014.org/
+  authors:
+    - Daniel Halperin
+    - Victor Teixeira de Almeida
+    - Lee Lee Choo
+    - Shumo Chu
+    - Paraschos Koutris
+    - Dominik Moritz
+    - Jennifer Ortiz
+    - Vaspol Ruamviboonsuk
+    - Jingjing Wang
+    - Andrew Whitaker
+    - Shengliang Xu
+    - Magdalena Balazinska
+    - Bill Howe
+    - Dan Suciu
 
 - title: Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
   year: 2013
