@@ -2,11 +2,13 @@
   function trim(str) {
     return str.replace(/^\s+|\s+$/g, '');
   }
-  document.querySelectorAll("h2, h3, h4, h5, h6").forEach(function(h) {
+  var headers = document.querySelectorAll("h2, h3, h4, h5, h6");
+  for (var i=0; i<headers.length; i++) {
+    var h = headers[i];
     var name = h.getAttribute("id");
     var title = h.innerHTML;
     h.innerHTML = '<a href="#' + name + '" class="anchor"><i class="fa fa-hashtag"></i></a>' + trim(title);
-  });
+  }
 </script>
 
 <script>
