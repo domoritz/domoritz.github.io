@@ -16,7 +16,7 @@ tags:
 
 Nach 6 Monaten warten ist es so weit! Es lebt.
 
-Vor etwas mehr als 6 Monaten habe ich mit einem [Kommilitonen](http://blog.kaifabian.de/) angefangen an einem Musikplayer in VHDL zu arbeiten. Dadurch, dass wir im letzten Semester kaum Zeit gefunden haben, hat sich die Entwicklung etwas verzögert. Nichtsdestotrotz waren wir unheimlich stolz, als wir zum ersten Mal etwas hörten, was eine Melodie sein könnte und nach ein paar Bitoperationen auch richtige Musik hörten.
+Vor etwas mehr als 6 Monaten habe ich mit einem [Kommilitonen](https://www.kaifabian.de/) angefangen an einem Musikplayer in VHDL zu arbeiten. Dadurch, dass wir im letzten Semester kaum Zeit gefunden haben, hat sich die Entwicklung etwas verzögert. Nichtsdestotrotz waren wir unheimlich stolz, als wir zum ersten Mal etwas hörten, was eine Melodie sein könnte und nach ein paar Bitoperationen auch richtige Musik hörten.
 
 Was ist denn nun sooooo toll an dem Player? Naja, einerseits ist alles in VHDL implementiert, das heißt, dass alles in Hardware läuft und wir uns wirklich um jedes Bit kümmern müssen. Andererseits haben wir wirklich alles selber implementieren müssen und konnten nicht auf ein Betriebssystem oder Programmbibliotheken zurückgreifen.
 
