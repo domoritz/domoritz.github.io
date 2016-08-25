@@ -1,22 +1,28 @@
+.page-header {
+  // border-bottom: 1px solid #d7d6ce;
+  background-color: $header-background;
+  // box-shadow: 0px 0px 12px #aaa;
+}
+
 nav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-flow: row wrap;
   line-height: 64px;
   justify-content: space-between;
 
   a {
     color: #666;
-    padding: 0 0.7em;
+    padding: 0 0.6em;
     display: inline-block;
     text-decoration: none;
-    font-size: 1.1em;
 
     &:last-child {
       padding-right: 0;
     }
     &.active {
       font-weight: bold;
+      color: #444;
     }
     &:hover {
       color: black;
@@ -37,12 +43,11 @@ nav {
 
   .site-title {
     font-weight: 500;
-    font-size: 1.5em;
-    margin-top: -4px;
+    margin-top: -2px;
     padding: 0;
     margin-right: $spacing-unit;
     flex: 0 0 auto;
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 }
 
@@ -81,7 +86,6 @@ nav {
   }
 
   nav {
-
     .spacer {
       display: none;
     }
@@ -90,6 +94,10 @@ nav {
     }
     .site-title {
       text-align: center;
+    }
+    // hide icons from internal links
+    &>a .fa {
+      display: none;
     }
   }
 }
