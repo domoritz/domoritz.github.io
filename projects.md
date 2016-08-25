@@ -5,7 +5,7 @@ title: Projects
 ---
 
 {:.lead}
-Here are a few projects I worked on for school, work, or fun. You can find the code for most of them on [GitHub](https://github.com/domoritz).
+Here you can find projects I have worked on for school, work, or fun that you might find interesting. You can find the code for most of them on [GitHub](https://github.com/domoritz).
 
 * TOC
 {:toc}
@@ -75,6 +75,8 @@ A bomberman clone written in Squeak Smalltalk. Code is on [GitHub](https://githu
 
 Together with another student at HPI, I built a music player in VHDL. The code as well as schematics to print the board are on [GitHub](https://github.com/domoritz/S76D). I wrote a short [blog post about the project]({{site.baseurl}}{% post_url 2012-03-27-singing_vhdl_board %}).
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/qsjFVgriZzY" frameborder="0" allowfullscreen></iframe>
+
 ### The glass is half full
 
 In this class project I write about how we can use an optimistic approach to concurrency control. You can find the paper [here]({{site.baseurl}}/files/2012-the_glass_is_half_full.pdf).
@@ -109,11 +111,15 @@ I implemented Conway's Game of Life in Python, Go, Rust, and C#. All projects ar
 
 Leaflet is an open source JavaScript library for mobile friendly interactive maps. I used it for various projects and also wrote a few extensions.
 
+
 #### LocateControl
 
 A simple control to find your current location on a leaflet map. Very popular and used on [the OpenStreetMap home page](http://osm.org/).
 
 The code is at [github.com/domoritz/leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol).
+
+{:.small-image}
+![Leaflet Locate Extension]({{site.baseurl}}/images/locate.png)
 
 
 #### MaskCanvas
@@ -122,7 +128,7 @@ Visualize coverage on a leaflet map. The data is store in a quad-tree to make qu
 
 The code is at [github.com/domoritz/leaflet-maskcanvas](https://github.com/domoritz/leaflet-maskcanvas). I used it to visualize [public transit coverage around Berlin](http://domoritz.github.com/vbb-coverage/).
 
-
+{:.small-image}
 ![Public transit coverage around Berlin]({{site.baseurl}}/images/vbb.png)
 
 #### Heatmap layer
