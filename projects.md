@@ -5,7 +5,7 @@ title: Projects
 ---
 
 {:.lead}
-Here you can find projects I have worked on for school, work, or fun that you might find interesting. You can find the code for most of them on [GitHub](https://github.com/domoritz).
+Here are some projects I have worked on for school, work, or fun that you might find interesting. You can find the code for most of them on [GitHub](https://github.com/domoritz).
 
 * TOC
 {:toc}
