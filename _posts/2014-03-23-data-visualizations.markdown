@@ -13,7 +13,7 @@ During the spring quarter at UW, I took Jeffrey Heer's [data visualization class
 
 In the [first assignment](http://courses.cs.washington.edu/courses/cse512/14wi/a1.html) we had to design a visualization for Burtin's antibiotics dataset. The task was to design a visualization without any knowledge from the class. Here is what I created:
 
-<iframe src="https://domoritz.github.io/vis-a1" width="100%" height="600px"></iframe>
+<iframe src="https://www.domoritz.de/vis-a1/" width="100%" height="600px"></iframe>
 
 I created the static visualization with D3. The code is on [GitHub](https://github.io/domoritz/vis-a1).
 
