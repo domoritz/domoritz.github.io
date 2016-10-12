@@ -1,3 +1,24 @@
+- title: "The Myria Big Data Management and Analytics System and Cloud Service"
+  year: 2017
+  authors:
+    - Jingjing Wang
+    - Tobin Baker
+    - Magdalena Balazinska
+    - Daniel Halperin
+    - Brandon Haynes
+    - Bill Howe
+    - Dylan Hutchison
+    - Shrainik Jain
+    - Ryan Maas
+    - Parmita Mehta
+    - Dominik Moritz
+    - Brandon Myers,
+    - Jennifer Ortiz
+    - Dan Suciu
+    - Andrew Whitaker
+    - Shengliang Xu
+  venue: CIDR 2017
+  velue_url: http://cidrdb.org/cidr2017/
 - title: "Vega-Lite: A Grammar of Interactive Graphics"
   year: 2017
   authors:
