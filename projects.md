@@ -75,6 +75,7 @@ A bomberman clone written in Squeak Smalltalk. Code is on [GitHub](https://githu
 
 Together with another student at HPI, I built a music player in VHDL. The code as well as schematics to print the board are on [GitHub](https://github.com/domoritz/S76D). I wrote a short [blog post about the project]({{site.baseurl}}{% post_url 2012-03-27-singing_vhdl_board %}).
 
+{:.video}
 <iframe width="560" height="315" src="//www.youtube.com/embed/qsjFVgriZzY" frameborder="0" allowfullscreen></iframe>
 
 ### The glass is half full
@@ -148,4 +149,5 @@ You can learn more about it at [patrick-wied.at/static/heatmapjs/example-heatmap
 
 [Blog post about our entry]({{site.baseurl}}{% post_url 2012-03-17-shoppingtour-optimizer %}).
 
+{:.video}
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HSMU7a_TlgI" frameborder="0" allowfullscreen></iframe>

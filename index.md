@@ -8,7 +8,7 @@ layout: page
 <div class="intro" markdown="1">
 
 <span class="lead">
-I'm a PhD student at the [University of Washington](http://www.washington.edu/) in the department of [Computer Science & Engineering (CSE)](http://www.cs.washington.edu/). I am advised by [Bill Howe](http://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/), the [iSchool](https://ischool.uw.edu/), and the [Database Group](http://db.cs.washington.edu/) and [Jeffrey Heer](http://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations. If you're interested in my research, have a look at my [publications](/publications).
+I'm a PhD student at the [University of Washington](http://www.washington.edu/) in the department of [Computer Science & Engineering (CSE)](http://www.cs.washington.edu/). I am advised by [Bill Howe](http://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/), the [iSchool](https://ischool.uw.edu/), and the [Database Group](http://db.cs.washington.edu/) and [Jeff Heer](http://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations. If you're interested in my research, have a look at my [publications](/publications).
 </span>
 </div>
 

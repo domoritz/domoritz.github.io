@@ -21,7 +21,7 @@ nav {
       padding-right: 0;
     }
     &.active {
-      font-weight: bold;
+      font-weight: $bold-font-weight;
       color: #444;
     }
     &:hover {
@@ -42,7 +42,7 @@ nav {
   }
 
   .site-title {
-    font-weight: 500;
+    font-weight: $bold-font-weight;
     margin-top: -2px;
     padding: 0;
     margin-right: $spacing-unit;

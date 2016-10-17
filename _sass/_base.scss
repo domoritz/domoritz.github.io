@@ -18,7 +18,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-weight: 300;
+  font-weight: $base-font-weight;
   color: $text-color;
   background-color: $background-color;
   text-rendering: optimizeLegibility;
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2;
 }
 
 
@@ -59,8 +59,8 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
-    vertical-align: middle;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 
@@ -69,11 +69,11 @@ img {
  * Figures
  */
 figure > img {
-    display: block;
+  display: block;
 }
 
 figcaption {
-    font-size: $small-font-size;
+  font-size: $small-font-size;
 }
 
 
@@ -82,36 +82,27 @@ figcaption {
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+  margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+  > ul,
+  > ol {
+        margin-bottom: 0;
+  }
 }
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-}
-
-
 
 /**
  * Links
  */
 a {
-    color: $link-color;
-    text-decoration: none;
+  color: $link-color;
+  text-decoration: none;
 
-    &:hover {
-        opacity: .8;
-        text-decoration: underline;
-    }
+  &:hover {
+      opacity: .8;
+      text-decoration: underline;
+  }
 }
 
 
@@ -120,16 +111,16 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+  color: $grey-color;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit / 2;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
 
-    > :last-child {
-        margin-bottom: 0;
-    }
+  > :last-child {
+      margin-bottom: 0;
+  }
 }
 
 
@@ -146,19 +137,21 @@ code {
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+  line-height: 1.4;
 
-    background-color: $grey-color-light;
-    border-radius: 3px;
-    border: 1px solid darken($grey-color-light, 15%);
+  padding: 8px 12px;
+  overflow-x: scroll;
 
-    > code {
-      background: none;
-      border: 0;
-      padding-right: 0;
-      padding-left: 0;
-    }
+  background-color: $grey-color-light;
+  border-radius: 3px;
+  border: 1px solid darken($grey-color-light, 15%);
+
+  > code {
+    background: none;
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 
@@ -167,7 +160,7 @@ pre {
  * Text styling
  */
 strong, b {
-  font-weight: bold;
+  font-weight: $bold-font-weight;
 }
 
 

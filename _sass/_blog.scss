@@ -1,7 +1,7 @@
 .post-list {
   .year {
     font-size: 1.4em;
-    font-weight: normal;
+    font-weight: $base-font-weight;
     position: relative;
     top: -1px;
     float: left;
@@ -33,7 +33,7 @@
     h3 {
       font-size: 1.3em;
       margin: 0;
-      font-weight: normal;
+      font-weight: $base-font-weight;
 
       .anchor {
         display: none;
@@ -83,8 +83,9 @@
   h1 {
     margin: 0;
   }
-  p {
-    margin-bottom: 0.5em;
+  .post-subtitle {
+    font-size: 1.2em;
+    margin: 0.6em 0;
   }
 }
 
@@ -97,10 +98,6 @@
   @include media-query($on-laptop) {
     font-size: 36px;
   }
-}
-
-.post-subtite {
-  font-size: 1.2em;
 }
 
 .post-sharing {

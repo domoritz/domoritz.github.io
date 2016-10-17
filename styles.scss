@@ -7,13 +7,14 @@
 $base-font-family: "Roboto", sans-serif;
 $base-font-size:   100%;  // 16px by default
 $base-font-weight: 400;
+$bold-font-weight: 600;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.64;
 
 $spacing-unit:     30px;
 $content-width:    800px;
 
-$text-color:        #373a3c;
+$text-color:        #333;
 $background-color:  #fff;
 $brand-color:       #0A656C;
 $link-color:        #4682B4;
