@@ -16,6 +16,10 @@
     }
   }
 
+  .venue, .venue a {
+    color: $grey-color;
+  }
+
   .awards {
     margin-top: 0.1em;
     font-weight: $bold-font-weight;

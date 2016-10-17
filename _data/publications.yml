@@ -28,6 +28,7 @@
     - Jeffrey Heer
   venue: Infovis 2016
   venue_url: http://ieeevis.org/
+  venue_location: Baltimore, USA
   link: http://idl.cs.washington.edu/papers/vega-lite
   pdf: http://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf
   video: https://vimeo.com/177767802
@@ -43,9 +44,10 @@
     - Bill Howe
     - Ed Lazowska
   venue: SIGMOD 2016
+  venue_location: San Francisco, USA
+  venue_url: http://sigmod2016.org/
   link: https://uwescience.github.io/sqlshare/
   pdf: https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf
-  venue_url: http://sigmod2016.org/
 
 - title: "Towards A General-Purpose Query Language for Visualization Recommendation"
   year: 2016
@@ -57,8 +59,9 @@
     - Bill Howe
     - Jeffrey Heer
   venue: HILDA at SIGMOD 2016
-  pdf: /files/2016-Compassql-HILDA.pdf
+  venue_location: San Francisco, USA
   venue_url: http://www.hilda.io/
+  pdf: /files/2016-Compassql-HILDA.pdf
 
 - title: "High Variety Cloud Databases"
   year: 2016
@@ -91,6 +94,7 @@
     - Jeffrey Heer
   url: Infovis 2015
   venue_url: http://ieeevis.org/
+  venue_location: Chicago, USA
   link: https://idl.cs.washington.edu/papers/voyager
   project: https://vega.github.io/
   pdf: https://idl.cs.washington.edu/files/2015-Voyager-InfoVis.pdf
@@ -108,6 +112,7 @@
     - Jeffrey Heer
   venue: Eurovis 2015
   venue_url: http://www.eurovis2015.it/
+  venue_location: Cagliari, Italy
   link: https://idl.cs.washington.edu/papers/perfopticon
   pdf: https://idl.cs.washington.edu/files/2015-Perfopticon-EuroVis.pdf
 
@@ -115,9 +120,10 @@
   year: 2014
   abstract: Demo paper about the [Myria system](http://myria.cs.washington.edu/).
   venue: SIGMOD 2014
+  venue_url: http://www.sigmod2014.org/
+  venue_location: Snowbird, USA
   project: http://myria.cs.washington.edu/
   pdf: http://www.halper.in/pubs/halperin_myria_sigmod14_demo.pdf
-  venue_url: http://www.sigmod2014.org/
   authors:
     - Daniel Halperin
     - Victor Teixeira de Almeida
