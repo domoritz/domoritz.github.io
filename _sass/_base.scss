@@ -12,16 +12,23 @@ html {
 }
 
 body {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-weight: $base-font-weight;
   color: $text-color;
   background-color: $background-color;
+
   text-rendering: optimizeLegibility;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: auto;
 
   box-sizing: border-box;
   margin: 0;
