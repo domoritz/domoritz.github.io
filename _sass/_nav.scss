@@ -52,8 +52,11 @@ nav {
 }
 
 @include media-query($content-width + 2*$spacing-unit) {
-  nav .external .name {
-    display: none;
+  nav .external {
+    font-size: 1.5em;
+    .name {
+      display: none;
+    }
   }
 }
 
@@ -66,7 +69,7 @@ nav {
     }
 
     line-height: 42px;
-    justify-content: center;
+
 
     a {
       padding: 0 10px;
@@ -86,6 +89,8 @@ nav {
   }
 
   nav {
+    justify-content: space-around;
+
     .spacer {
       display: none;
     }
