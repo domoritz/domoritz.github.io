@@ -71,6 +71,16 @@ img {
 }
 
 
+/**
+ * Hyphenation
+ */
+p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+
 
 /**
  * Figures
