@@ -101,7 +101,19 @@
 }
 
 .post-sharing {
-  margin-top: 3 * $spacing-unit;
+  margin-top: 2 * $spacing-unit;
+
+  .twitter {
+    background-color: #1b95e0;
+    border-radius: 3px;
+    padding: 3px 6px;
+    color: white;
+    font-weight: $bold-font-weight;
+    font-size: 0.8em;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .blog-links {
