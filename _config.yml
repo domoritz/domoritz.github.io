@@ -11,8 +11,6 @@ url: "https://www.domoritz.de" # the base hostname & protocol for your site
 twitter_username: domoritz
 github_username:  domoritz
 permalink: /blog/:year/:month/:title.html
-logo: images/dominik.jpg
-baseurl:
 
 # Google Analytics
 google_analytics_tracking_id: UA-3992453-11
@@ -22,3 +20,4 @@ sass:
 
 gems:
   - jekyll-sitemap
+  - jekyll-feed
