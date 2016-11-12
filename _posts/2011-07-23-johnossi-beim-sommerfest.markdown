@@ -18,4 +18,4 @@ Ein Zitat von dem Abend: von John Engelbert: _Does anyone here has a cigarette?_
 
 > Studying kills.
 
-![Johnossi]({{site.baseurl}}/images/johnossi.jpg)
+![Johnossi]({{ "/images/johnossi.jpg" | relative_url }})

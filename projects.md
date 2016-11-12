@@ -20,11 +20,11 @@ With the Interactive Data Lab, we created the [Vega stack](https://vega.github.i
 
 I am the co-author of [Vega-Lite](https://vega.github.io/vega-lite/), a high-level visualization grammar. It provides a concise JSON syntax for supporting rapid generation of visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.
 
-![Vega-Lite examples]({{site.baseurl}}/images/vega-lite.png)
+![Vega-Lite examples]({{ "/images/vega-lite.png" | relative_url }})
 
 #### Polestar and Voyager
 
-We built the data exploration tools [Polestar](https://github.com/vega/polestar) and [Voyager](https://github.com/vega/voyager) on top of Vega-Lite. We have [written a paper about these systems]({{site.baseurl}}/publications/#voyager-exploratory-analysis-via-faceted-browsing-of-visualization-recommendations).
+We built the data exploration tools [Polestar](https://github.com/vega/polestar) and [Voyager](https://github.com/vega/voyager) on top of Vega-Lite. We have [written a paper about these systems]({{ "/publications/#voyager-exploratory-analysis-via-faceted-browsing-of-visualization-recommendations" | relative_url }}).
 
 #### ipyvega
 
@@ -63,36 +63,36 @@ I also developed and contributed to many other tools related to CKAN like [messy
 For a class project, I extracted 500k labeled images of figures from roughly 1M papers. For each image I created a mask that shows where the text in the image is. I then used the images to train a neural network that would find text in images. The project is on [GitHub](https://github.com/domoritz/label_generator).
 
 {:.small-image}
-![Text detection output]({{site.baseurl}}/images/text-detection.png)
+![Text detection output]({{ "/images/text-detection.png" | relative_url }})
 
 ### Space Clean Up
 
 A bomberman clone written in Squeak Smalltalk. Code is on [GitHub](https://github.com/matthias-springer/space-cleanup).
 
-![Space Clean Up Screenshot]({{site.baseurl}}/images/scu.jpg)
+![Space Clean Up Screenshot]({{ "/images/scu.jpg" | relative_url }})
 
 ### MapLink/Gis.ly
 
 For [Patrick Baudisch's](http://www.patrickbaudisch.com/) [HCI class at HPI](https://hpi.de/baudisch/teaching.html), we had to implement an application that ususally requires large screens on a iPod nano (enough for 4 buttons). We implemented a [GIS]() application that allows users to geo-reference images by simply aligning points. We introduced the concept of an X-Ray layer to enable users on small devices to align points.
 
-You can find more details in the [paper]({{site.baseurl}}/files/2013-MapLink.pdf).
+You can find more details in the [paper]({{ "/files/2013-MapLink.pdf" | relative_url }}).
 
 {:.small-image}
-![MapLink]({{site.baseurl}}/images/maplink.png)
+![MapLink]({{ "/images/maplink.png" | relative_url }})
 
 {:.video}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U9-zceFffSY" frameborder="0" allowfullscreen></iframe>
 
 ### Singing VHDL board
 
-Together with another student at HPI, I built a music player in VHDL. The code as well as schematics to print the board are on [GitHub](https://github.com/domoritz/S76D). I wrote a short [blog post about the project]({{site.baseurl}}{% post_url 2012-03-27-singing_vhdl_board %}).
+Together with another student at HPI, I built a music player in VHDL. The code as well as schematics to print the board are on [GitHub](https://github.com/domoritz/S76D). I wrote a short [blog post about the project]({% post_url 2012-03-27-singing_vhdl_board | relative_url %}).
 
 {:.video}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qsjFVgriZzY" frameborder="0" allowfullscreen></iframe>
 
 ### The glass is half full
 
-In this class project I write about how we can use an optimistic approach to concurrency control. You can find the paper [here]({{site.baseurl}}/files/2012-the_glass_is_half_full.pdf).
+In this class project I write about how we can use an optimistic approach to concurrency control. You can find the paper [here]({{ "/files/2012-the_glass_is_half_full.pdf" | relative_url }}).
 
 ### SoSat
 
@@ -102,7 +102,7 @@ With [Matthias Springer](http://www.matthiasspringer.de/). The code is on [GitHu
 
 ### Tagshot
 
-Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub]() and I wrote a [blog post about it]({{site.baseurl}}{% post_url 2012-03-17-tagshot-und-andere-projekte %}).
+Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub]() and I wrote a [blog post about it]({% post_url 2012-03-17-tagshot-und-andere-projekte | relative_url %}).
 
 {:.video}
 <iframe width="640" height="360" src="https://www.youtube.com/embed/nB3fcDLNk8g" frameborder="0" allowfullscreen></iframe>
@@ -114,7 +114,7 @@ Tagshot is a photo management tool in the browser. We designed and developed as 
 
 A chrome extension that shows the latest image from the Himawari 8 weather satellite when you open a new tab. The code is on [Github](https://github.com/domoritz/himawari-8-chrome) and you can install the extension from the [Chrome web store](https://chrome.google.com/webstore/detail/himawari-8-satellite-new/llelgapflianaapmnpncgakfjhfhnojm).
 
-![Himawari Chrome Extension]({{site.baseurl}}/images/himawari.png)
+![Himawari Chrome Extension]({{ "/images/himawari.png" | relative_url }})
 
 ### Game of Life
 
@@ -132,7 +132,7 @@ A simple control to find your current location on a leaflet map. Very popular an
 The code is at [github.com/domoritz/leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol).
 
 {:.small-image}
-![Leaflet Locate Extension]({{site.baseurl}}/images/locate.png)
+![Leaflet Locate Extension]({{ "/images/locate.png" | relative_url }})
 
 
 #### MaskCanvas
@@ -142,7 +142,7 @@ Visualize coverage on a leaflet map. The data is store in a quad-tree to make qu
 The code is at [github.com/domoritz/leaflet-maskcanvas](https://github.com/domoritz/leaflet-maskcanvas). I used it to visualize [public transit coverage around Berlin](http://domoritz.github.com/vbb-coverage/).
 
 {:.small-image}
-![Public transit coverage around Berlin]({{site.baseurl}}/images/vbb.png)
+![Public transit coverage around Berlin]({{ "/images/vbb.png" | relative_url }})
 
 #### Heatmap layer
 
@@ -151,15 +151,15 @@ You can learn more about it at [patrick-wied.at/static/heatmapjs/example-heatmap
 
 #### Informaticup 2011: Optimal ATM placement
 
-[Blog post about our entry]({{site.baseurl}}{% post_url 2011-01-23-informaticup-2011 %}).
+[Blog post about our entry]({% post_url 2011-01-23-informaticup-2011 | relative_url %}).
 
 {:.small-image}
-![Visualization of optimal ATM placement]({{site.baseurl}}/images/hatfield.png)
+![Visualization of optimal ATM placement]({{ "/images/hatfield.png" | relative_url }})
 
 
 #### Informaticup 2012: Shopping tour optimizer
 
-[Blog post about our entry]({{site.baseurl}}{% post_url 2012-03-17-shoppingtour-optimizer %}).
+[Blog post about our entry]({% post_url 2012-03-17-shoppingtour-optimizer | relative_url %}).
 
 {:.video}
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HSMU7a_TlgI" frameborder="0" allowfullscreen></iframe>

@@ -8,16 +8,16 @@ layout: page
 <div class="intro" markdown="1">
 
 <span class="lead">
-I'm a PhD student at the [University of Washington](http://www.washington.edu/) in the department of [Computer Science & Engineering (CSE)](http://www.cs.washington.edu/). I am advised by [Bill Howe](http://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/), the [iSchool](https://ischool.uw.edu/), and the [Database Group](http://db.cs.washington.edu/) and [Jeff Heer](http://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations. If you're interested in my research, have a look at my [publications](/publications).
+I'm a PhD student at the [University of Washington](http://www.washington.edu/) in the department of [Computer Science & Engineering (CSE)](http://www.cs.washington.edu/). I am advised by [Bill Howe](http://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/), the [iSchool](https://ischool.uw.edu/), and the [Database Group](http://db.cs.washington.edu/) and [Jeff Heer](http://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations. If you're interested in my research, have a look at my [publications]({{ "/publications" | relative_url }}).
 </span>
 </div>
 
 {:.mugshot}
-<img src="{{site.baseurl}}/images/dominik.webp" onerror="this.onerror=null; this.src='{{site.baseurl}}/images/dominik.jpg'" alt="Image of me">
+<img src="{{ '/images/dominik.webp' | absolute_url }}" onerror="this.onerror=null; this.src='{{ '/images/dominik.jpg' | absolute_url }}'" alt="Image of me">
 
 </div>
 
-During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). Until 2013, I studied IT-Systems Engineering at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), Google, [Google Research](https://research.google.com/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). More details are in my [CV]({{ site.baseurl }}/files/dominik_moritz_cv.pdf).
+During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). Until 2013, I studied IT-Systems Engineering at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), Google, [Google Research](https://research.google.com/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). More details are in my [CV]({{ "/files/dominik_moritz_cv.pdf" | relative_url }}).
 
 * **Email:** <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 * **Office:** [Paul G. Allen Center (CSE)](http://www.washington.edu/maps/?q=cse) Room [486](https://norfolk.cs.washington.edu/directory/index.php?prev_floor=4&show_room=CSE486)

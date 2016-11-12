@@ -18,21 +18,21 @@ layout: default
   </article>
 
   <section class="post-sharing">
-    <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share this post on Twitter"><i class="fa fa-twitter"></i> Tweet</a>
+    <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share this post on Twitter"><i class="fa fa-twitter"></i> Tweet</a>
   </section>
 
   <div class="blog-links">
   {% if page.previous.url %}
     <div>
       <i class="fa fa-md fa-chevron-left"></i>
-      <a href="{{site.baseurl}}{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">{{ page.previous.title }}</a>
+      <a href="{{ page.previous.url | relative_url }}" title="Previous Post: {{ page.previous.title }}">{{ page.previous.title }}</a>
     </div>
   {% else %}
     <span class="spacer"></span>
   {% endif %}
   {% if page.next.url %}
     <div>
-      <a href="{{site.baseurl}}{{page.next.url}}" title="Next Post: {{page.Next.title}}">{{ page.next.title }}</a>
+      <a href="{{page.next.url | relative_url}}" title="Next Post: {{page.Next.title}}">{{ page.next.title }}</a>
       <i class="fa fa-md fa-chevron-right"></i>
     </div>
   {% else %}

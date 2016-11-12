@@ -7,7 +7,7 @@ permalink: /blog/
 
 {% include search.html %}
 
-<p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | absolute_url }}">via RSS</a></p>
 
 <div class="post-list">
   {% for post in site.posts %}
@@ -19,7 +19,7 @@ permalink: /blog/
 
     <div class="post-block">
       <h3>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h3>
       <span class="post-meta" title="{{ post.date | date: "%b %-d Y" }}">{{ post.date | date: "%b %-d" }} <span class="meta-year">{{ currentdate }}</span></span>
       {% if post.description %}<p class="post-subtitle">{{ post.description }}</p>{% endif %}
