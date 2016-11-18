@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/domoritz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.domoritz.de
+  * I am domoritz (https://keybase.io/domoritz) on keybase.
+  * I have a public key ASAJGx2jml7Mvdjd-wJ7HvYUxb6cRMtAlXUGzl2Ja0c3tAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018a9f32d3827e89d6d80b90bb6315af3b15bb895cb432852570f144de5cbd92d30a",
+            "host": "keybase.io",
+            "kid": "0120091b1da39a5eccbdd8ddfb027b1ef614c5be9c44cb40957506ce5d896b4737b40a",
+            "uid": "f9721498d77cbad77348db7cf0ffaf19",
+            "username": "domoritz"
+        },
+        "service": {
+            "hostname": "www.domoritz.de",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1479512872,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1479512829,
+        "hash": "6df6583a29805dee6eb0f5bd92a84561483e4a41509bbc21b4c5ddae2daaca1a2cce2dd61633f52ca692534cc22700431a380e62b2adc6e7559fb6ec5dfb953f",
+        "seqno": 724288
+    },
+    "prev": "4c1c13932fec91c9ae1d839ab99ada0e7467f87d206554155deee09864cd8b79",
+    "seqno": 27,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgCRsdo5pezL3Y3fsCex72FMW+nETLQJV1Bs5diWtHN7QKp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxOGE5ZjMyZDM4MjdlODlkNmQ4MGI5MGJiNjMxNWFmM2IxNWJiODk1Y2I0MzI4NTI1NzBmMTQ0ZGU1Y2JkOTJkMzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDkxYjFkYTM5YTVlY2NiZGQ4ZGRmYjAyN2IxZWY2MTRjNWJlOWM0NGNiNDA5NTc1MDZjZTVkODk2YjQ3MzdiNDBhIiwidWlkIjoiZjk3MjE0OThkNzdjYmFkNzczNDhkYjdjZjBmZmFmMTkiLCJ1c2VybmFtZSI6ImRvbW9yaXR6In0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJ3d3cuZG9tb3JpdHouZGUiLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ3OTUxMjg3MiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDc5NTEyODI5LCJoYXNoIjoiNmRmNjU4M2EyOTgwNWRlZTZlYjBmNWJkOTJhODQ1NjE0ODNlNGE0MTUwOWJiYzIxYjRjNWRkYWUyZGFhY2ExYTJjY2UyZGQ2MTYzM2Y1MmNhNjkyNTM0Y2MyMjcwMDQzMWEzODBlNjJiMmFkYzZlNzU1OWZiNmVjNWRmYjk1M2YiLCJzZXFubyI6NzI0Mjg4fSwicHJldiI6IjRjMWMxMzkzMmZlYzkxYzlhZTFkODM5YWI5OWFkYTBlNzQ2N2Y4N2QyMDY1NTQxNTVkZWVlMDk4NjRjZDhiNzkiLCJzZXFubyI6MjcsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAhyAodoBxoawTq3Y4d7LMd8sFwHmfgCLEHXwdRMq3isu/Pr/tbBZliMvFD58d8T5sietvUZY1+Ms+T5/SwLa+BKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBMKx3rBrG5SgwQYyUrnUNaa6lT2ytdaCVceYblgL19Co3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/domoritz
+
+==================================================================
