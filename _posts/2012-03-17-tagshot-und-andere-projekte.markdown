@@ -18,7 +18,7 @@ Das Programm habe ich mit vier Kommilitonen im Rahmen eines Studienseminars erst
 
 Wir haben das Tool bei uns am HPI bereits in Benutzung und haben etwa 10.000 Bilder in der Datenbank. Dabei ist beim Suchen keine Verzögerung spürbar.
 
-Ein wenig zur Technik. Das Backend ist in [Ruby on Rails](http://rubyonrails.org/) geschrieben und sucht nach Bildern in einem bestimmten Verzeichnis. Die Metadaten der Bilder werden in eine Datenbank geschrieben (bei uns [postgreSQL](http://www.postgresql.org/)) und Thumbnails erzeugt. Das Frontend ist eine einzige Seite, auf der mit JavaScript die Website dynamisch aufgebaut wird. Auch die gesamte Navigation findet auf einer Seite statt. Als Grundframework für das Frontend haben wir [Backbone.js](http://documentcloud.github.com/backbone/) benutzt.
+Ein wenig zur Technik. Das Backend ist in [Ruby on Rails](http://rubyonrails.org/) geschrieben und sucht nach Bildern in einem bestimmten Verzeichnis. Die Metadaten der Bilder werden in eine Datenbank geschrieben (bei uns [postgreSQL](http://www.postgresql.org/)) und Thumbnails erzeugt. Das Frontend ist eine einzige Seite, auf der mit JavaScript die Website dynamisch aufgebaut wird. Auch die gesamte Navigation findet auf einer Seite statt. Als Grundframework für das Frontend haben wir [Backbone.js](http://backbonejs.org/) benutzt.
 
 Coole Features von Tagshot sind:
 
