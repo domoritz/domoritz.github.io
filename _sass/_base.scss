@@ -72,7 +72,7 @@ img {
 
 
 /**
- * Hyphenation
+ * Hyphenation and paragraph styles
  */
 p {
   -webkit-hyphens: auto;
@@ -147,23 +147,24 @@ blockquote {
  */
 
 code {
-  padding: 2px 4px;
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 4px;
+  color: #c35;
+  font-family: Consolas,monospace;
 }
 
 pre {
-  line-height: 1.4;
-
-  padding: 8px 12px;
-  overflow-x: scroll;
-
   background-color: $grey-color-light;
-  border-radius: 3px;
-  border: 1px solid darken($grey-color-light, 15%);
+  border-left: 0.25rem solid #c35;
+  margin-bottom: 0.6rem;
+  margin-top: 0.2rem;
+  overflow-x: auto;
+  padding: 1rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  font-size: 0.9em;
+  line-height: 1.4rem;
 
   > code {
+    color: $text-color;
     background: none;
     border: 0;
     padding-right: 0;

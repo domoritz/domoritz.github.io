@@ -17,6 +17,25 @@
   }
 }
 
+.index-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 4rem 10% 0 10%;
+  li {
+    display: flex;
+    a {
+      padding: 0.4em;
+      color: $text-color;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 @include media-query($on-palm) {
   .home-columns {
     flex-direction: column;
@@ -29,6 +48,10 @@
       order: 1;
       margin-left: 0;
     }
+  }
+
+  .index-links {
+    margin: 4rem 0 0 0;
   }
 }
 

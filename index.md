@@ -22,10 +22,9 @@ During my first year at UW, I received support from the [Fulbright program](http
 * **Email:** <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 * **Office:** [Paul G. Allen Center (CSE)](http://www.washington.edu/maps/?q=cse) Room [486](https://norfolk.cs.washington.edu/directory/index.php?prev_floor=4&show_room=CSE486)
 
-Feel free to follow me on:
-
-* <i class="fa fa-twitter fa-lg"></i> [Twitter](https://twitter.com/domoritz)
-* <i class="fa fa-github fa-lg"></i> [Github](https://github.com/domoritz)
-* <i class="fa fa-facebook-square fa-lg"></i> [Facebook](https://www.facebook.com/moritz.dominik)
-* <i class="fa fa-linkedin fa-lg"></i> [Linkedn](https://www.linkedin.com/pub/dominik-moritz/24/b81/409)
-* <i class="fa fa-google-plus fa-lg"></i> [Google+](https://plus.google.com/110111947282446666823)
+{:.index-links}
+* [<i class="fa fa-twitter fa-lg"></i> Twitter](https://twitter.com/domoritz)
+* [<i class="fa fa-github fa-lg"></i> Github](https://github.com/domoritz)
+* [<i class="fa fa-facebook-square fa-lg"></i> Facebook](https://www.facebook.com/moritz.dominik)
+* [<i class="fa fa-linkedin fa-lg"></i> LinkedIn](https://www.linkedin.com/pub/dominik-moritz/24/b81/409)
+* [<i class="fa fa-google-plus fa-lg"></i> Google+](https://plus.google.com/110111947282446666823)

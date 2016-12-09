@@ -8,7 +8,7 @@ $base-font-family: "Roboto", sans-serif;
 $base-font-size:   100%;  // 16px by default
 $base-font-weight: 400;
 $bold-font-weight: 600;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size:  0.9em;
 $base-line-height: 1.64;
 
 $spacing-unit:     30px;
@@ -19,7 +19,8 @@ $background-color:  #fff;
 $brand-color:       #0A656C;
 $link-color:        #4682B4;
 $header-background: #ececec;
-$footer-background: #303030;
+$footer-background: #234;
+$footer-text:       darken(#fff, 10%);
 
 $grey-color:       #828282;
 $grey-color-light: #f8f8f8;
