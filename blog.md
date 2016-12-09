@@ -1,9 +1,8 @@
 ---
 layout: page
 permalink: /blog/
+title: Blog posts
 ---
-
-# Blog posts
 
 {% include search.html %}
 
