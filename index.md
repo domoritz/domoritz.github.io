@@ -1,5 +1,6 @@
 ---
 layout: page
+title:
 ---
 
 # Hi, I am Dominik Moritz
