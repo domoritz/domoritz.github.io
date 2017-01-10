@@ -20,3 +20,5 @@ Da wir in diesem Jahr ziemlich viel mit der Uni beschäftigt waren, haben wir da
 Wir nutzen für die Lösung des Problems zwei Algorithmen. Einerseits benutzten wir einen genetischen Algorithmus, welcher schnell zu einer guten Lösung kommt. Diese ist jedoch nicht notwendigerweise optimal. Um eine optimale Lösung zu finden, wird das Problem als Answer Set Programming Problem kodiert und dann von Clasp gelöst.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HSMU7a_TlgI" frameborder="0" allowfullscreen></iframe>
+
+Code is [auf GitHub](https://github.com/domoritz/informaticup-2012).
