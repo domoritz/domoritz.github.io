@@ -21,4 +21,6 @@ Um das Problem (welches wahrscheinlich NP-Hart ist) zu lösen, haben wir verschi
 
 Das Programm inklusive der Algorithmen und der Oberfläche haben wir in Java geschrieben. Das Programm, alle Quellen und Beispielrechnungen gibt's [auf der Website der GI](http://informaticup.gi.de/informaticup/rueckblickearchiv/informaticup-2011.html).
 
+Unser Code und Beispiele sind auf [GitHub](https://github.com/domoritz/informaticup-2011). 
+
 **UPDATE**: Gerade kam die E-mail rein, dass wir nach Bonn eingeladen wurden. Zur entscheidenden Endauswahl! Damit sind wir unter den besten 6 Teams. Und das, obwohl wir erst im 1. Semester sind. Wahnsinn... Überraschend...
