@@ -1,3 +1,35 @@
+- title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
+  year: 2017
+  authors:
+    - Dominik Moritz
+    - Danyel Fisher
+    - Bolin Ding
+    - Chi Wang
+  venue: CHI 2017
+  venue_location: Denver, CO, USA
+  venue_url: https://chi2017.acm.org/
+  tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
+
+- title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
+  year: 2017
+  authors:
+    - Kanit Wongsuphasawat
+    - Zening Qu
+    - Dominik Moritz
+    - Riley Chang
+    - Felix Ouk
+    - Anushka Anand
+    - Jock Mackinlay
+    - Bill Howe
+    - Jeffrey Heer
+  venue: CHI 2017
+  venue_location: Denver, CO, USA
+  venue_url: https://chi2017.acm.org/
+  pdf: https://idl.cs.washington.edu/files/2017-Voyager2-CHI.pdf
+  video: https://vimeo.com/199084718
+  link: https://idl.cs.washington.edu/papers/voyager2
+  tweet: Voyager 2 blends manual and automated chart specification.
+
 - title: "The Myria Big Data Management and Analytics System and Cloud Service"
   year: 2017
   authors:
@@ -20,6 +52,9 @@
   venue: CIDR 2017
   venue_location: Chaminade, CA, USA
   venue_url: http://cidrdb.org/cidr2017/
+  pdf: http://cidrdb.org/cidr2017/papers/p37-wang-cidr17.pdf
+  tweet: Myria is a distributed DB for data science.
+
 - title: "Vega-Lite: A Grammar of Interactive Graphics"
   year: 2017
   authors:
@@ -33,9 +68,10 @@
   link: http://idl.cs.washington.edu/papers/vega-lite
   pdf: http://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf
   video: https://vimeo.com/177767802
-  project: https://vega.github.io/vega-lite/
+  link: https://vega.github.io/vega-lite/
   awards:
     - Best Paper Award
+  tweet: Vega-Lite is a declarative language for visualization and interaction.
 
 - title: "SQLShare: Results from a Multi-Year SQL-as-a-Service Experiment"
   year: 2016
@@ -49,6 +85,7 @@
   venue_url: http://sigmod2016.org/
   link: https://uwescience.github.io/sqlshare/
   pdf: https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf
+  tweet: Data analysts can use SQL to analyze data; if the system supports complex queries.
 
 - title: "Towards A General-Purpose Query Language for Visualization Recommendation"
   year: 2016
@@ -63,6 +100,7 @@
   venue_location: San Francisco, USA
   venue_url: http://www.hilda.io/
   pdf: /files/2016-Compassql-HILDA.pdf
+  tweet: CompassQL is a query language for visualization recommendation.
 
 - title: "High Variety Cloud Databases"
   year: 2016
@@ -75,7 +113,6 @@
 
 - title: Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web
   year: 2015
-  abstract: Overview paper about possible performance optimizations for interactive visualizations in client-server systems.
   authors:
     - Dominik Moritz
     - Jeffrey Heer
@@ -83,6 +120,7 @@
   venue: The 1st Workshop on Data Systems for Interactive Analysis
   venue_url: http://www.interactive-analysis.org/
   pdf: http://www.interactive-analysis.org/papers/2015/moritz.pdf
+  tweet: Interactive visualizations in client-server systems can have reduced latency.
 
 - title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
   year: 2015
@@ -97,15 +135,15 @@
   venue_url: http://ieeevis.org/
   venue_location: Chicago, USA
   link: https://idl.cs.washington.edu/papers/voyager
-  project: https://vega.github.io/
+  link: https://vega.github.io/
   pdf: https://idl.cs.washington.edu/files/2015-Voyager-InfoVis.pdf
   video: https://vimeo.com/135417594
   awards:
     - Invited to SIGGRAPH 2016
+  tweet: Visualization recommendation promotes breadth and prevents early fixation.
 
 - title: "Perfopticon: Visual Query Analysis for Distributed Databases"
   year: 2015
-  abstract: Visual performance debugging for queries in distributed database systems.
   authors:
     - Dominik Moritz
     - Daniel Halperin
@@ -116,14 +154,15 @@
   venue_location: Cagliari, Italy
   link: https://idl.cs.washington.edu/papers/perfopticon
   pdf: https://idl.cs.washington.edu/files/2015-Perfopticon-EuroVis.pdf
+  tweet: Visual performance debugging for queries in distributed database systems.
 
 - title: Demonstration of the Myria Big Data Management Service
   year: 2014
-  abstract: Demo paper about the [Myria system](http://myria.cs.washington.edu/).
+  description: Demo paper about the [Myria system](http://myria.cs.washington.edu/).
   venue: SIGMOD 2014
   venue_url: http://www.sigmod2014.org/
   venue_location: Snowbird, USA
-  project: http://myria.cs.washington.edu/
+  link: http://myria.cs.washington.edu/
   pdf: http://www.halper.in/pubs/halperin_myria_sigmod14_demo.pdf
   authors:
     - Daniel Halperin
@@ -143,7 +182,7 @@
 
 - title: Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
   year: 2013
-  abstract: Publication of algorithms that I developed for my bachelor thesis.
+  description: Publication of algorithms that I developed for my bachelor thesis.
   authors:
     - Sebastian Schmechel
     - Jonas Trümper
@@ -153,7 +192,8 @@
   venue_url: http://www.ivapp.visigrapp.org/
   pdf: https://hpi.de/fileadmin/user_upload/fachgebiete/doellner/publications/2014/STMD2014/Visualization_of_Varying_Hierarchies_by_Stable_Layout_of_Voronoi_Treemaps.pdf
   link: https://hpi.de/de/computer-graphics-systems/publications/year/2014/102334/STMD2014.html
+  tweet: Use Voronoi tesselation for stable treemaps.
 
 - title: Algorithms for the Visualization of Software System Evolution
   year: 2013
-  abstract: My bachelor thesis. Not published due to non disclosure agreement.
+  description: My bachelor thesis. Not published due to non disclosure agreement.

@@ -8,6 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Interested in Data Visualization and Databases.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.domoritz.de" # the base hostname & protocol for your site
+production_url: "https://www.domoritz.de"
 twitter_username: domoritz
 github_username:  domoritz
 permalink: /blog/:year/:month/:title.html

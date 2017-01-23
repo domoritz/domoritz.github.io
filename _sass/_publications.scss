@@ -25,6 +25,21 @@
     font-weight: $bold-font-weight;
   }
 
+  .tweet {
+    &:hover {
+      text-decoration: none;
+
+      .message {
+        text-decoration: underline;
+      }
+    }
+    .message {
+      font-size: 0.9em;
+      font-style: italic;
+      color: $grey-color;
+    }
+  }
+
   .extra-links {
     margin-top: 1em;
 

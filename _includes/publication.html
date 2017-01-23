@@ -19,11 +19,18 @@
     </div>
   {% endif %}
 
-  {% if pub.abstract %}
-    <p class="abstract">
-      {{ pub.abstract | markdownify }}
+  {% if pub.description %}
+    <p class="description">
+      {{ pub.description | markdownify }}
     </p>
   {% endif %}
+
+  {% if pub.tweet %}
+    <a href="https://twitter.com/intent/tweet?text={{ pub.tweet }}&url={{ site.production_url }}/publications/%23{{ pub.title | slugify }}&via=domoritz&related=domoritz" class="tweet" target="_blank" rel="noopener">
+      <i class="fa fa-twitter"></i> <span class="message">{{ pub.tweet }}</span>
+    </a>
+  {% endif %}
+
   {% if pub.awards %}
     <div class="awards">
       {% for award in pub.awards %}{{ award }}{% unless forloop.last %}, {% endunless %}
