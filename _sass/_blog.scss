@@ -156,3 +156,77 @@
     }
   }
 }
+
+/* Images */
+
+.half {
+  max-width: $content-width / 2;
+}
+
+.third {
+  max-width: $content-width / 3;
+}
+
+.two-thirds {
+  max-width: $content-width / 3 * 2;
+}
+
+.right {
+  float: right;
+
+  &.half, &.third, &.two-thirds {
+    margin-left: $spacing-unit;
+  }
+}
+
+.left {
+  float: left;
+
+  &.half, &.third, &.two-thirds {
+    margin-right: $spacing-unit;
+  }
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clearfix {
+  clear: both;
+  display: block;
+}
+
+.flex-rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: -$spacing-unit;
+
+  figure {
+    display: block;
+    margin-right: $spacing-unit;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@include media-query($on-palm) {
+  .flex-rows {
+    flex-direction: column;
+    margin-right: 0;
+    figure {
+      margin-right: 0;
+    }
+  }
+
+  // on small devices, let's not float images
+  figure.left, figure.right {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

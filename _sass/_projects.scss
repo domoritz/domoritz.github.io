@@ -1,13 +1,3 @@
-.small-image {
-  text-align: center;
-  img {
-    width: 75%;
-    @include media-query($on-palm) {
-      width: 100%;
-    }
-  }
-}
-
 iframe.video {
   margin: 0 auto;
   display: block;

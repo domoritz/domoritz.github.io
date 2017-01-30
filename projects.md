@@ -20,7 +20,7 @@ With the Interactive Data Lab, we created the [Vega stack](https://vega.github.i
 
 I am the co-author of [Vega-Lite](https://vega.github.io/vega-lite/), a high-level visualization grammar. It provides a concise JSON syntax for supporting rapid generation of visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.
 
-![Vega-Lite examples]({{ "/images/vega-lite.png" | relative_url }})
+{% include image.html name="vega-lite.png" caption="Vega-Lite examples." %}
 
 #### Polestar and Voyager
 
@@ -62,14 +62,14 @@ I also developed and contributed to many other tools related to CKAN like [messy
 
 For a class project, I extracted 500k labeled images of figures from roughly 1M papers. For each image I created a mask that shows where the text in the image is. I then used the images to train a neural network that would find text in images. The project is on [GitHub](https://github.com/domoritz/label_generator).
 
-{:.small-image}
-![Text detection output]({{ "/images/text-detection.png" | relative_url }})
+{:.center.two-thirds}
+{% include image.html name="text-detection.png" caption="Text detection output." %}
 
 ### Space Clean Up
 
 A bomberman clone written in Squeak Smalltalk. Code is on [GitHub](https://github.com/matthias-springer/space-cleanup).
 
-![Space Clean Up Screenshot]({{ "/images/scu.jpg" | relative_url }})
+{% include image.html name="scu.jpg" caption="Screenshot of SPace Clean Up." %}
 
 ### MapLink/Gis.ly
 
@@ -77,8 +77,8 @@ For [Patrick Baudisch's](http://www.patrickbaudisch.com/) [HCI class at HPI](htt
 
 You can find more details in the [paper]({{ "/files/2013-MapLink.pdf" | relative_url }}).
 
-{:.small-image}
-![MapLink]({{ "/images/maplink.png" | relative_url }})
+{:.center.half}
+{% include image.html name="maplink.png" caption="MapLink." %}
 
 {:.video}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U9-zceFffSY" frameborder="0" allowfullscreen></iframe>
@@ -114,7 +114,8 @@ Tagshot is a photo management tool in the browser. We designed and developed as 
 
 A chrome extension that shows the latest image from the Himawari 8 weather satellite when you open a new tab. The code is on [Github](https://github.com/domoritz/himawari-8-chrome) and you can install the extension from the [Chrome web store](https://chrome.google.com/webstore/detail/himawari-8-satellite-new/llelgapflianaapmnpncgakfjhfhnojm).
 
-![Himawari Chrome Extension]({{ "/images/himawari.png" | relative_url }})
+{:.center.two-thirds}
+{% include image.html name="himawari.png" caption="Himawari Chrome extension new tab page." %}
 
 ### Game of Life
 
@@ -131,8 +132,8 @@ A simple control to find your current location on a leaflet map. Very popular an
 
 The code is at [github.com/domoritz/leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol).
 
-{:.small-image}
-![Leaflet Locate Extension]({{ "/images/locate.png" | relative_url }})
+{:.center.two-thirds}
+{% include image.html name="locate.png" caption="Leaflet locate extension." %}
 
 
 #### MaskCanvas
@@ -141,20 +142,22 @@ Visualize coverage on a leaflet map. The data is store in a quad-tree to make qu
 
 The code is at [github.com/domoritz/leaflet-maskcanvas](https://github.com/domoritz/leaflet-maskcanvas). I used it to visualize [public transit coverage around Berlin](http://domoritz.github.com/vbb-coverage/).
 
-{:.small-image}
-![Public transit coverage around Berlin]({{ "/images/vbb.png" | relative_url }})
+{:.center.two-thirds}
+{% include image.html name="vbb.png" caption="Public transit coverage around Berlin." %}
+
 
 #### Heatmap layer
 
 For this project I combined the MaskCanvas layer and `heatmap.js` from my friend [Patrick](http://www.patrick-wied.at).
 You can learn more about it at [patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html](http://www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html)
 
+
 #### Informaticup 2011: Optimal ATM placement
 
 [Blog post about our entry]({% post_url 2011-01-23-informaticup-2011 | relative_url %}).
 
-{:.small-image}
-![Visualization of optimal ATM placement]({{ "/images/hatfield.png" | relative_url }})
+{:.center.two-thirds}
+{% include image.html name="hatfield.png" caption="Visualization of optimal ATM placement." %}
 
 
 #### Informaticup 2012: Shopping tour optimizer
