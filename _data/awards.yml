@@ -1,0 +1,12 @@
+- name: Fulbright Fellowship
+  years: 2013-2014
+  sponsor: Bureau of Educational and Cultural Affairs
+  description: Highly competitive, merit-based grant for international educational exchange for students, scholars, teachers and scientists.
+- name: Studienstiftung des Deutschen Volkes
+  years: 2010-2015
+  sponsor: Studienstiftung des Deutschen Volkes, Bonn
+  description: The German National Academic Foundation grants prestigious scholarships to students with outstanding academic achievements. Merit-based grant for B.Sc. and M.Sc.
+- name: Hasso Plattner Scholarship
+  years: 2010-2015 
+  sponsor: Hasso Plattner Institute, Potsdam
+  description: One-year scholarship awarded to the best graduates of each year.

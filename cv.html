@@ -1,0 +1,263 @@
+---
+permalink: /cv.html
+title: Dominik Moritz - CV
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="application-name" content="{{ site.title }}">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}"/>
+    <link rel="icon" type="image/jpeg" href="{{ '/favicon.jpg' | relative_url }}" sizes="250x250" />
+
+    <title>{{ page.title | escape }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+    <style>
+      body {
+        font-family: "Georgia", serif;
+        font-size: 14px;
+      }
+
+      .container {
+        min-width: 560px;
+      }
+
+      .container > * {
+        margin-left: 135px;
+      }
+
+      .year-container {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+
+      .year-container h3 {
+        flex: 1;
+      }
+
+      .year-container .year {
+        display: block;
+        width: 115px;
+        text-align: right;
+        padding-right: 20px;
+        flex-shrink: 0;
+      }
+
+      .year-container .right {
+        padding-left: 10px;
+        color: #828282;
+        font-size: .9em;
+      }
+
+      h1, h2, h3 {
+        font-weight: 500;
+        border: none;
+        color: #333;
+      }
+
+      h1, h2 {
+        margin: .9em 0 .1em 0;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .columns {
+        display: flex;
+        flex-direction: row;
+      }
+      .columns > div {
+        flex: 1;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
+      .right-align {
+        text-align: right;
+      }
+
+      .muted {
+        color: #828282;
+      }
+
+      .award {
+        color: #b00
+      }
+
+      ul {
+        list-style: none;
+        margin-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-content">
+      <section class="container">
+<h1>Dominik Moritz</h1>
+
+<div class="columns">
+  <div>
+    <p>
+      PhD Student<br/>
+      Computer Science & Engineering<br/>
+      University of Washington, Seattle
+    </p>
+  </div>
+  <div>
+    <p class="right-align">
+      <a href="https://domoritz.de/">https://domoritz.de</a><br/>
+      domoritz@cs.washington.edu<br/>
+      @domoritz
+    </p>
+  </div>
+</div>
+
+<h2>Research Area</h2>
+
+<p>
+My goal is to use a combination of large-scale systems for data analysis and interactive visualizations to support novel insights and fast exploration of multi-dimensional data. I hope to build visualization systems that use statistical analysis, both for driving visualization recommendation and guiding the user's exploration as well as for supporting richer exploratory analysis.
+</p>
+
+<h2>Education</h2>
+
+{% for ed in site.data.education %}
+  <div class="year-container">
+    <span class="year">{{ed.years}}</span>
+    <h3>{{ ed.degree }}, {{ ed.university }}</h3>
+    <span class="right">{{ ed.location }}</span>
+  </div>
+  <p>
+    {% for des in ed.description %}
+      <span>{{ des | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% unless forloop.last %}<br/>{% endunless %}
+    {% endfor %}
+  </p>
+{% endfor %}
+
+<h2>Notable Awards</h2>
+
+{% for award in site.data.awards %}
+  <div class="year-container">
+    <span class="year">{{award.years}}</span>
+    <h3>{{ award.name }}</h3>
+    <span class="right">{{ award.sponsor }}</span>
+  </div>
+  <p>
+    {{ award.description }}
+  </p>
+{% endfor %}
+
+<h2>Publications</h2>
+
+{% for pub in site.data.publications %}
+  {% if pub.venue %}
+    <div class="year-container">
+      <span class="year">{{pub.year}}</span>
+      <h3>{{ pub.title }}</h3>
+    </div>
+    <p class="publication">
+      {% for author in pub.authors %}{% assign data = site.data.people[author] %}{% if data.me %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+      <span class="muted">{{pub.venue}}{% if pub.venue_location%}, {{pub.venue_location}}{% endif %}</span>
+      {% if pub.awards %}<br><strong class="award">{{pub.awards}}</strong>{% endif %}
+    </p>
+  {% endif %}
+{% endfor %}
+
+<h2>Professional and Research Experience</h2>
+
+{% for exp in site.data.experience %}
+  <div class="year-container">
+    <span class="year">{{exp.years}}</span>
+    <h3>{% if exp.company %}{{exp.company}} - {% endif %}{{ exp.title }}</h3>
+    <span class="right">{{ exp.location }}</span>
+  </div>
+  <p>
+    {% if exp.mentors %}
+      Mentors: {% for mentor in exp.mentors %}{{ mentor }}{% unless forloop.last %}, {% endunless %}{% endfor %}<br/>
+    {% endif %}
+    {{ exp.description }}
+    <small class="muted">[{% for skill in exp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}]</small>
+  </p>
+{% endfor %}
+
+
+<h2>Invited Talks</h2>
+
+{% for talk in site.data.talks %}
+  <div class="year-container">
+    <span class="year">{{talk.year}}</span>
+    <h3>{{ talk.title }}</h3>
+  </div>
+  <p>{{ talk.location }}</p>
+{% endfor %}
+
+<h2>Teaching Experience</h2>
+
+{% for teach in site.data.teaching %}
+  <div class="year-container">
+    <span class="year">{{teach.year}}</span>
+    <h3>{{ teach.title }}</h3>
+    <span class="right">{{ teach.location }}</span>
+  </div>
+  <p>
+    {% if teach.professor %}
+      {{ teach.professor }},
+      {{ teach.students }}
+      <br/>
+    {% endif %}
+    {{ teach.description }}
+  </p>
+{% endfor %}
+
+<h2>Mentoring Experience</h2>
+
+{% for mentor in site.data.mentoring %}
+  <div class="year-container">
+    <span class="year">{{mentor.year}}</span>
+    <h3>{{ mentor.title }}</h3>
+    <span class="right">{{ mentor.location }}</span>
+  </div>
+  <p>
+    {{ mentor.description }}
+    {% if mentor.who %}
+      <br/>
+      Mentored: {% for person in mentor.who %}{{ person }}{% unless forloop.last %}, {% endunless %}{% endfor %}<br/>
+    {% endif %}
+  </p>
+{% endfor %}
+
+<h2>Relevant Coursework</h2>
+
+{% for institution in site.data.courses %}
+  <h3>{{ institution.title }}</h3>
+  <div>
+    <ul>
+      {% for course in institution.courses %}<li>{{ course.title }}{% if course.with %}<span class="muted"> ({{course.with}})</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+
+      </section>
+    </div>
+  </body>
+</html>

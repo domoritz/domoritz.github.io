@@ -117,7 +117,7 @@
     - Dominik Moritz
     - Jeffrey Heer
     - Bill Howe
-  venue: The 1st Workshop on Data Systems for Interactive Analysis
+  venue: The 1st Workshop on Data Systems for Interactive Analysis (DSIA) at Vis 2015
   venue_url: http://www.interactive-analysis.org/
   pdf: http://www.interactive-analysis.org/papers/2015/moritz.pdf
   tweet: Interactive visualizations in client-server systems can have reduced latency.

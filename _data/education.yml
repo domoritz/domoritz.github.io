@@ -1,0 +1,21 @@
+- university: University of Washington
+  years: since 2015
+  degree: Ph.D. in Computer Science & Engineering
+  location: Seattle, WA
+  description:
+    - Advised by **Bill Howe** and **Jeffrey Heer**.
+    - Member of the Database Group and the Interactive Data Lab. Research focus on distributed database systems and interactive data visualization.
+- university: University of Washington
+  years: 2013-2015
+  degree: M.Sc. in Computer Science & Engineering
+  location: Seattle, WA
+  description:
+    - Advised by **Bill Howe** and **Jeffrey Heer**.
+- university: Hasso Plattner Institute
+  years: 2010-2013
+  degree: B.Sc. in IT-Systems Engineering
+  location: Potsdam, Germany
+  description:
+    - "Bachelor's thesis: \"Algorithms for the Visualization of Software System Evolution\"."
+    - "GPA: 4.0 (1.0 in German system), highest distinction, rank 1/74"
+    - Advanced classes on database implementation, computational geometry, architecture, and logic.

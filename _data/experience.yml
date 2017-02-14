@@ -1,0 +1,101 @@
+- title: Research Intern
+  years: 2016
+  company: Microsoft Research
+  group: VIBE
+  location: Redmond
+  mentors:
+    - Danyel Fisher
+    - Bolin Ding
+    - Chi Wang
+  description: I developed and user tested a UI for an approximate query processing system.
+  project: Pangloss
+  skills:
+    - Approximate Query Processing
+    - Visualization
+    - UX
+- title: Research Intern
+  years: 2015
+  company: Google Research
+  group: Structured Data Team
+  location: Mountain View
+  mentors:
+    - Sudip Roy
+    - Alon Halevy
+    - Alkis Polyzotis
+    - Natasha Noy
+    - Xiao Yu
+    - Chris Olston
+    - Sitaram Iyer
+  description: I improved the user experience of an internal search engine, worked with the knowledge graph team, and designed a summarization algorithm for search results. I also worked with the Knowledge Graph Team on an exploration of a new graph infrastructure that will enable integrated applications.
+  project: DataSearch
+  skills:
+    - UX
+    - Algorithm design
+    - Large scale systems
+    - Angular
+    - C++
+- title: Engineering Intern
+  years: 2014
+  company: Google
+  location: New York City
+  mentors:
+    - Ben Atkins
+    - Shishi Chen
+    - John Banning
+  description: Developed new algorithms to support complex queries in large scale production monitoring system.
+  project: Monarch
+  skills:
+    - Algorithm design
+    - Large scale software development
+    - Profiling
+    - C++
+- title: Intern and Developer
+  years: 2012-2013
+  company: Open Knowledge Foundation
+  location: London and Berlin
+  mentors:
+    - David Raznick
+    - Rufus Pollock
+    - Adrià Mercader
+    - Sean Hammond
+    - Stefan Wehrmeyer
+  description: Two-month summer internship and subsequent one-year involvement in development and training for CKAN, the most deployed open data portal in the world.
+  project: CKAN
+  skills:
+    - Distributed teams,
+    - Sgile development
+    - Large legacy systems
+    - Python
+    - JavaScript
+- title: Bachelor's Project
+  years: 2012-2013
+  location: Potsdam
+  description: In a team of four students developed a tool to visualize software evolution with 3D Voronoi Treemaps. I focused on the theory and implementation of layout algorithms.
+  skills:
+    - Legacy code
+    - Visualization
+    - Complex algorithms
+    - C++
+- title: Undergraduate Research Assistant
+  years: 2012-2013
+  company: University of Potsdam
+  group: Knowledge Representation and Reasoning Group
+  location: Potsdam
+  mentors:
+    - Benjamin Kaufmann
+    - Torsten Schaub
+    - Martin Gebser
+  description: Worked on theory and implementation of an extension of the Clasp Answer Set Programming solver for pseudo-boolean constraints.
+  project: Clasp Answer Set Solver
+  skills:
+    - Research
+    - Benchmarking
+    - Logic programs
+    - C++
+- title: Google Summer of Code
+  years: 2012
+  location: Remote
+  description: Extend open data platform for information about people.
+  skills:
+    - Open source development
+    - JavaScript
