@@ -16,7 +16,7 @@ I'm a PhD student at the [University of Washington](http://www.washington.edu/) 
 
 </div>
 
-During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). Until 2013, I studied IT-Systems Engineering at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), Google, [Google Research](https://research.google.com/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). More details are in my [CV]({{ "/files/dominik_moritz_cv.pdf" | relative_url }}).
+During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). Until 2013, I studied IT-Systems Engineering at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), Google, [Google Research](https://research.google.com/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). More details are in my [CV]({{ "/cv.html" | relative_url }}).
 
 * **Email:** <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 * **Office:** [Paul G. Allen Center (CSE)](http://www.washington.edu/maps/?q=cse) Room [486](https://norfolk.cs.washington.edu/directory/index.php?prev_floor=4&show_room=CSE486)
