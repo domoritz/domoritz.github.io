@@ -18,4 +18,4 @@ Ein Zitat von dem Abend: von John Engelbert: _Does anyone here has a cigarette?_
 
 > Studying kills.
 
-{% include image.html name="johnossi.jpg" caption="Johnossi auf der Bühne am HPI." %}
+{% include image name="johnossi.jpg" caption="Johnossi auf der Bühne am HPI." %}

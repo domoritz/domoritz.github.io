@@ -19,7 +19,7 @@ I created the static visualization with D3. The code is on [GitHub](https://gith
 
 For the [second assignment](http://courses.cs.washington.edu/courses/cse512/14wi/a2.html), we could choose between different datasets to visualize. I chose the FAA flight data and wanted to answer the question whether airlines overestimate the flight times in order to avoid having bad on-time records. TL;DR, the answer is yes.
 
-{% include image.html name="a2-domoritz.png" alt="Airlines overestimate flight times." %}
+{% include image name="a2-domoritz.png" alt="Airlines overestimate flight times." %}
 
 The data in this plot is based on 1.4GB of flight records for one month each year since 1987. I created the plot with Tableau.
 

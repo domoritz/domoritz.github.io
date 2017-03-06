@@ -25,6 +25,10 @@ title: Dominik Moritz - CV
         font-size: 14px;
       }
 
+      a {
+        color: #000;
+      }
+
       .container {
         min-width: 560px;
       }
@@ -60,7 +64,7 @@ title: Dominik Moritz - CV
         font-size: .9em;
       }
 
-      h1, h2, h3 {
+      h1, h2, h3, h4 {
         font-weight: 500;
         border: none;
         color: #333;
@@ -92,11 +96,17 @@ title: Dominik Moritz - CV
         font-weight: bold;
       }
 
+      h4 {
+        margin: 0;
+        font-size: 1em;
+        font-weight: bold;
+      }
+
       .right-align {
         text-align: right;
       }
 
-      .muted {
+      .muted, .muted a {
         color: #828282;
       }
 
@@ -108,9 +118,36 @@ title: Dominik Moritz - CV
         list-style: none;
         margin-left: 0;
       }
+
+      .back {
+        font-family: sans-serif;
+        width: 100%;
+        padding: 0.4em 1em;
+        background-color: #666;
+        color: #fff;
+      }
+
+      .back a {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .back a:hover {
+        text-decoration: none;
+      }
+
+      @media print {
+        .no-print, .no-print * {
+          display: none !important;
+        }
+      }
     </style>
   </head>
   <body>
+    <div class="no-print back">
+      ◄ <a href="{{ absolute_url }}/">Back to Dominik's Homepage</a>
+    </div>
+
     <div class="page-content">
       <section class="container">
 <h1>Dominik Moritz</h1>
@@ -125,9 +162,9 @@ title: Dominik Moritz - CV
   </div>
   <div>
     <p class="right-align">
-      <a href="https://domoritz.de/">https://domoritz.de</a><br/>
+      <a href="{{ absolute_url }}/">https://domoritz.de</a><br/>
       domoritz@cs.washington.edu<br/>
-      @domoritz
+      <a href="https://twitter.com/domoritz">@domoritz</a>
     </p>
   </div>
 </div>
@@ -175,7 +212,8 @@ My goal is to use a combination of large-scale systems for data analysis and int
       <h3>{{ pub.title }}</h3>
     </div>
     <p class="publication">
-      {% for author in pub.authors %}{% assign data = site.data.people[author] %}{% if data.me %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% for author in pub.authors %}
+        {% include person person=author %}{% unless forloop.last %}, {% endunless %}
       {% endfor %}
       <span class="muted">{{pub.venue}}{% if pub.venue_location%}, {{pub.venue_location}}{% endif %}</span>
       {% if pub.awards %}<br><strong class="award">{{pub.awards}}</strong>{% endif %}
@@ -193,7 +231,9 @@ My goal is to use a combination of large-scale systems for data analysis and int
   </div>
   <p>
     {% if exp.mentors %}
-      Mentors: {% for mentor in exp.mentors %}{{ mentor }}{% unless forloop.last %}, {% endunless %}{% endfor %}<br/>
+      Mentors: {% for mentor in exp.mentors %}
+        {% include person person=mentor %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}<br/>
     {% endif %}
     {{ exp.description }}
     <small class="muted">[{% for skill in exp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}]</small>
@@ -221,7 +261,7 @@ My goal is to use a combination of large-scale systems for data analysis and int
   </div>
   <p>
     {% if teach.professor %}
-      {{ teach.professor }},
+      {% include person person=teach.professor %},
       {{ teach.students }}
       <br/>
     {% endif %}
@@ -241,7 +281,12 @@ My goal is to use a combination of large-scale systems for data analysis and int
     {{ mentor.description }}
     {% if mentor.who %}
       <br/>
-      Mentored: {% for person in mentor.who %}{{ person }}{% unless forloop.last %}, {% endunless %}{% endfor %}<br/>
+      <h4>Mentored:</h4>
+      <ul>
+      {% for person in mentor.who %}
+        <li>{% include person person=person %}{% unless forloop.last %}, {% endunless %}</li>
+      {% endfor %}
+      </ul>
     {% endif %}
   </p>
 {% endfor %}
@@ -252,7 +297,7 @@ My goal is to use a combination of large-scale systems for data analysis and int
   <h3>{{ institution.title }}</h3>
   <div>
     <ul>
-      {% for course in institution.courses %}<li>{{ course.title }}{% if course.with %}<span class="muted"> ({{course.with}})</span>{% endif %}</li>{% endfor %}
+      {% for course in institution.courses %}<li>{{ course.title }}{% if course.with %}<span class="muted"> ({% include person person=course.with %})</span>{% endif %}</li>{% endfor %}
     </ul>
   </div>
 {% endfor %}

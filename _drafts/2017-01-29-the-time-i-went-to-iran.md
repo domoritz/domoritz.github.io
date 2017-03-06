@@ -19,7 +19,7 @@ My visit was during the time of the Persian New Year [Nowruz](https://en.wikiped
 Nowruz is the biggest celebration of the year and many people go on vacation. For me, this meant that many tourist attractions would be more crowded but also public places would be more lively. Besides spending time with family or going on vacation, families and some public places would traditionally have a *Haft-Seen* table with seven things that start with a letter *Seen* (sounds like S).
 
 {:.center.two-thirds}
-{% include image.html name="haft-seen.jpg" caption="Haft-Seen Table with seven things that start with *Seen*." %}
+{% include image name="haft-seen.jpg" caption="Haft-Seen Table with seven things that start with *Seen*." %}
 
 ## People and Places in Tehran
 
@@ -28,12 +28,12 @@ Everyone in Tehran made me feel incredibly welcome. Yes, I am studying in the US
 Spring in Tehran was different from what I expected. Somehow I expected it to be hot and dry but Tehran is high up with the northern part reaching into the Alborz mountains; it actually snowed one day. Besides the climate, I was also impressed by how large the city was. There are about the same number of people in Tehran as in New York City! As you can see in the image below, the city extends as far as we could see that day.
 
 {:.center.two-thirds}
-{% include image.html name="tehran.jpg" caption="Tehran seen from the north." %}
+{% include image name="tehran.jpg" caption="Tehran seen from the north." %}
 
 One of the first things we visited in Tehran was the market at [Tajrish Square](https://en.wikipedia.org/wiki/Tajrish#Tajrish_Bazaar), a place that attracts all senses. There are stands with large heaps of spices, nuts, dried and fresh fruit. Another thing I liked were little wooden boxes made with mother of pearl and beautiful carpets. The market was lively but well organized. Tajrish square was actually one of my favorite places to visit because I like to see places that are part of the everyday life.
 
 {:.center.two-thirds}
-{% include image.html name="tajrish.jpg" caption="A food stand in the market at Tajrish Square." %}
+{% include image name="tajrish.jpg" caption="A food stand in the market at Tajrish Square." %}
 
 Of course, we also visited more touristy places. We went to Golestan Palace, a former royal palace in Tehran. It's a fascinating place with walls covered in mirrors and masterfully ornamented doors. Other places I've visited but don't have the time to talk about are the Sa'd Abad Complex, the national museum of Tehran, the time museum, and some others that I don't recount the names of.
 
@@ -46,30 +46,30 @@ From Tehran I took a plane from the second (smaller) airport in Tehran to Shiraz
 With two friends who were eager to show me the exciting places in Shiraz, I first visited Eram Garden. It is one of the [UNESCO world heritage sites](http://whc.unesco.org/en/statesparties/ir). Besides being a pretty garden, there is also a beautiful house with mirrors and wooden doors that you can see below.
 
 {:.center.two-thirds}
-{% include image.html name="eram.jpg" caption="Eram Garden in Shiraz." %}
+{% include image name="eram.jpg" caption="Eram Garden in Shiraz." %}
 
 Shiraz is also home to Hafez and Saadi, two of the finest poets. I visited their tombs and as you can see below in my picture of Hafez' tomb, so did a lot of other people that day. Hafez and Saadi had a huge influence on Persian culture and literature worldwide. I learned that Goethe, the most well known German poet, was fascinated by their poems and writing.
 
 {:.center.two-thirds}
-{% include image.html name="hafez.jpg" caption="Hafez tomb in Shiraz. We went to see it on a popular day." %}
+{% include image name="hafez.jpg" caption="Hafez tomb in Shiraz. We went to see it on a popular day." %}
 
 A special food that is hard to find outside of Shiraz and loved my Iranian's is Faloodeh. It's a dessert of noodles made from corn starch mixed in a semi-frozen syrup made from sugar and rose water. People usually have it with lime juice. It's very cold and a bit crunchy. We had Faloodeh on the [bazaar](https://en.wikipedia.org/wiki/Vakil_Bazaar) that has beautiful courtyards and a brick vault ceiling.
 
 {:.center.half}
-{% include image.html name="faloodeh.jpg" caption="Faloodeh, a dessert made from starch." %}
+{% include image name="faloodeh.jpg" caption="Faloodeh, a dessert made from starch." %}
 
 Another fascinating thing I've seen in Shiraz is the [Nasir ol Molk Mosque](https://en.wikipedia.org/wiki/Nasir_ol_Molk_Mosque). From the courtyard you can see the most amazing painted arches. Inside, the stained glass submerges the room in a bath of colorful light. The best time to go in the morning but I went there later in the day so the picture below does not quite convey what it can look like.
 
 {:.center.two-thirds}
-{% include image.html name="mosque.jpg" caption="Inside the Nasir ol Molk Mosque." %}
+{% include image name="mosque.jpg" caption="Inside the Nasir ol Molk Mosque." %}
 
 The most amazing thing in Shiraz is actually outside of Shiraz. We had to drive a bit through the desert to get to Takht-e-Jamshid, *the throne of Jamshid* or [Persepolis](https://en.wikipedia.org/wiki/Persepolis). If you haven't heard about it, Persepolis is the capital of the  Achaemenid that existed over 2000 years ago. Most of the main structures were built by Darius I, Xerxes I, and Artaxerxes I; large parts of it into rock. It's hard to even describe all the fascinating things about this place. We have to thank a coincidence that we can see it today: In 330 BC, Alexander the Great attacked Persepolis and destroyed large parts of it. After that, the place was forgotten and was covered by sand until modern times. Only because of that, the place has been unaltered for centuries.
 
 The stone structures as well as the reliefs are simply breathtaking and I am so happy to have seen it. Below are two pictures that show the main site and one of the reliefs.
 
 <div class="flex-rows">
-  {% include image.html name="persepolis.jpg" caption="Main ruins of Persepolis." %}
-  {% include image.html name="persepolis-relief.jpg" caption="Relief in Persepolis depicting Armenians bringing their famous wine to the king." %}
+  {% include image name="persepolis.jpg" caption="Main ruins of Persepolis." %}
+  {% include image name="persepolis-relief.jpg" caption="Relief in Persepolis depicting Armenians bringing their famous wine to the king." %}
 </div>
 
 At Persepolis, there are many depictions of Farvahars, which symbolize good thoughts, good words, and good deeds; the basic principles of [Zoroastrianism](https://en.wikipedia.org/wiki/Zoroastrianism).
@@ -77,14 +77,14 @@ At Persepolis, there are many depictions of Farvahars, which symbolize good thou
 ## Iranian Foods
 
 {:.right.half}
-{% include image.html name="sangak.jpg" caption="Sangak is a flatbread baked on pebble stones." %}
+{% include image name="sangak.jpg" caption="Sangak is a flatbread baked on pebble stones." %}
 
 Besides the many spices and dried fruit (figs and white mulberries), one of my favorite foods was Sangak, a large leavened flatbread that is baked on pebble stones and sprinkled with sesame seeds. The pebbles give the bread characteristic holes. The bread is great with jam or some soft cheese. Of course, it's best when it's fresh. Another thing I really liked was Haleem, a delicious wheat stew.
 
 Most of the main meals in Iran were a combination of flatbread, vegetables, grilled meat, and yogurt seasoned with various spices. What really surprised me, though, where the size of the portions. I'm used to portions that are way too large from the US but in Iran I found that the portions were too much for me even though I was very active.
 
 {:.left.half}
-{% include image.html name="ice-cream-tehran.jpg" caption="Ice cream in Tehran. All signs are in German for some reason." %}
+{% include image name="ice-cream-tehran.jpg" caption="Ice cream in Tehran. All signs are in German for some reason." %}
 
 One evening, we went to get ice cream in Tehran and to my complete surprise, all labels were in German and not a single word was in Farsi. Somehow there seems to be a thing with German's at ice cream in Iran. When I had saffron ice cream in Shiraz (yes, and yes, it's good), it turned out that the owner spoke fluently in German.
 

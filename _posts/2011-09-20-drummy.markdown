@@ -17,7 +17,7 @@ Für genau diesen Zweck habe ich ein Programm geschrieben mit dem Schlagzeug Tab
 
 Drummy habe ich bisher nach Englisch und Deutsch übersetzt. Eine Auflistung der wichtigsten Features gibt es [hier](http://domoritz.github.io/drummy/#features).
 
-{% include image.html url="https://domoritz.github.io/drummy/img/promo.png" %}
+{% include image url="https://domoritz.github.io/drummy/img/promo.png" %}
 
 Das gesamte Projekt inklusive des gesamten Quelltextes gibt es [auf GitHub](https://github.com/domoritz/drummy). Ich habe in den Letzten Tagen noch einmal viel Arbeit in [eine ansehnliche Website zu dem Projekt](http://domoritz.github.com/drummy/) gesteckt. Die Website habe ich von Hand geschrieben, die Bilder mit [Gimp](http://www.gimp.org/) erstellt und alles mit [Boilerplate](http://html5boilerplate.com) gebacken. Ich bin noch nicht ganz fertig und es fehlt beispielsweise noch eine Anständige Doku und ein Tutorial, aber das Grundgerüst steht.
 

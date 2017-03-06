@@ -1,0 +1,1 @@
+{% assign data = site.data.people[include.person] %}{% if data.url %}<a href="{{ data.url }}">{% if data.me %}<strong>{{ include.person }}</strong>{% else %}{{ include.person }}{% endif %}</a>{% else %}{{ include.person }}{% endif %}

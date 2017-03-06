@@ -19,7 +19,7 @@ tags:
 
 Heute war ich am [Institut für Klimafolgenforschung in Potsdam](http://www.pik-potsdam.de/) auf dem Telegrafenberg. Es gab einen Vortragsnachmittag (bis späten Nachmittag) mit drei Interessanten Vorträgen zum Thema Klimawandel und seinen Folgen. Der erste Vortrag drehte sich um die reinen Fakten und ein paar Ausblicke auf die Zukunft des Weltklimas. Der zweite war ein Vortrag, in dem es um die Wiederlegung der Argumente aus dem Buch ["Cool It"](http://www.amazon.de/Cool-Skeptical-Environmentalists-Global-Warming/dp/0307266923) ging. Als letztes ging es um die ökonomischen Folgen des Klimawandels auf die Wirtschaft in Deutschland, Europa und der Welt.
 
-{% include image.html url="http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Lightning_cloud_to_cloud_%28aka%29.jpg/600px-Lightning_cloud_to_cloud_%28aka%29.jpg" %}
+{% include image url="http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Lightning_cloud_to_cloud_%28aka%29.jpg/600px-Lightning_cloud_to_cloud_%28aka%29.jpg" %}
 
 Für mich besonders wichtig waren diese Aussagen:
 
