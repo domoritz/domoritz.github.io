@@ -1,8 +1,13 @@
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: OpenVis Conf, Boston
+  url: https://openvisconf.com/#speakers
+  year: 2017
 - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
   location: Database Seminar, Microsoft Research, Redmond
   year: 2016
 - title: "Vega-Lite: A Declarative Format for Visualization"
   location: Plotcon, New York City
+  url: https://plotcon-2016.plot.ly/schedule
   year: 2016
 - title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
   location: SIGGRAPH, Anaheim
