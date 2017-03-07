@@ -69,7 +69,7 @@ For a class project, I extracted 500k labeled images of figures from roughly 1M 
 
 A bomberman clone written in Squeak Smalltalk. Code is on [GitHub](https://github.com/matthias-springer/space-cleanup).
 
-{% include image name="scu.jpg" caption="Screenshot of SPace Clean Up." %}
+{% include image name="scu.jpg" caption="Screenshot of Space Clean Up." %}
 
 ### MapLink/Gis.ly
 
