@@ -85,7 +85,7 @@ You can find more details in the [paper]({{ "/files/2013-MapLink.pdf" | relative
 
 ### Singing VHDL board
 
-Together with another student at HPI, I built a music player in VHDL. The code as well as schematics to print the board are on [GitHub](https://github.com/domoritz/S76D). I wrote a short [blog post about the project]({% post_url 2012-03-27-singing_vhdl_board | relative_url %}).
+Together with another student at HPI, I built a music player in VHDL. The code as well as schematics to print the board are on [GitHub](https://github.com/domoritz/S76D). I wrote a short [blog post about the project]({% post_url 2012-03-27-singing_vhdl_board %}).
 
 {:.video}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qsjFVgriZzY" frameborder="0" allowfullscreen></iframe>
@@ -102,7 +102,7 @@ With [Matthias Springer](http://www.matthiasspringer.de/). The code is on [GitHu
 
 ### Tagshot
 
-Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub](https://github.com/tagshot/tagshot) and I wrote a [blog post about it]({% post_url 2012-03-17-tagshot-und-andere-projekte | relative_url %}).
+Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub](https://github.com/tagshot/tagshot) and I wrote a [blog post about it]({% post_url 2012-03-17-tagshot-und-andere-projekte %}).
 
 {:.video}
 <iframe width="640" height="360" src="https://www.youtube.com/embed/nB3fcDLNk8g" frameborder="0" allowfullscreen></iframe>
@@ -154,7 +154,7 @@ You can learn more about it at [patrick-wied.at/static/heatmapjs/example-heatmap
 
 #### Informaticup 2011: Optimal ATM placement
 
-[Blog post about our entry]({% post_url 2011-01-23-informaticup-2011 | relative_url %}).
+[Blog post about our entry]({% post_url 2011-01-23-informaticup-2011 %}).
 
 {:.center.two-thirds}
 {% include image name="hatfield.png" caption="Visualization of optimal ATM placement." %}
@@ -162,7 +162,7 @@ You can learn more about it at [patrick-wied.at/static/heatmapjs/example-heatmap
 
 #### Informaticup 2012: Shopping tour optimizer
 
-[Blog post about our entry]({% post_url 2012-03-17-shoppingtour-optimizer | relative_url %}).
+[Blog post about our entry]({% post_url 2012-03-17-shoppingtour-optimizer %}).
 
 {:.video}
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HSMU7a_TlgI" frameborder="0" allowfullscreen></iframe>
