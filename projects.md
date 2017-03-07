@@ -102,7 +102,7 @@ With [Matthias Springer](http://www.matthiasspringer.de/). The code is on [GitHu
 
 ### Tagshot
 
-Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub]() and I wrote a [blog post about it]({% post_url 2012-03-17-tagshot-und-andere-projekte | relative_url %}).
+Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags. The code is on [GitHub](https://github.com/tagshot/tagshot) and I wrote a [blog post about it]({% post_url 2012-03-17-tagshot-und-andere-projekte | relative_url %}).
 
 {:.video}
 <iframe width="640" height="360" src="https://www.youtube.com/embed/nB3fcDLNk8g" frameborder="0" allowfullscreen></iframe>
