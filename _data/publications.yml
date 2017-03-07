@@ -1,3 +1,13 @@
+- title: "Lessons from Pangloss: User Encounters with Uncertainty"
+  year: 2017
+  authors:
+    - Dominik Moritz
+    - Danyel Fisher
+  venue: Designing for Uncertainty in HCI at CHI 2017
+  venue_location: Denver, CO, USA
+  venue_url: http://visualization.ischool.uw.edu/hci_uncertainty/
+  tweet: Tools need to better support analysts who work with approximate data.
+
 - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
   year: 2017
   authors:
