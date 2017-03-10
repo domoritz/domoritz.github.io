@@ -31,7 +31,7 @@ title: Dominik Moritz - CV
       }
 
       .container {
-        min-width: 560px;
+        min-width: 480px;
         max-width: 800px;
       }
 
@@ -84,12 +84,15 @@ title: Dominik Moritz - CV
         font-size: 30px;
       }
 
-      .columns {
+      .header-columns {
         display: flex;
         flex-direction: row;
       }
-      .columns > div {
+      .header-columns > div:first-child {
         flex: 1;
+      }
+      .header-columns > div:last-child {
+        width: 190px;
       }
 
       h3 {
@@ -125,6 +128,7 @@ title: Dominik Moritz - CV
 
       .back {
         font-family: sans-serif;
+        min-width: 480px;  /* same as container */
         width: 100%;
         padding: 0.4em 1em;
         background-color: #666;
@@ -156,7 +160,7 @@ title: Dominik Moritz - CV
       <section class="container">
 <h1>Dominik Moritz</h1>
 
-<div class="columns">
+<div class="header-columns">
   <div>
     <p>
       PhD Student<br/>
