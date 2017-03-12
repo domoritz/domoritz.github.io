@@ -6,6 +6,7 @@
   venue: Designing for Uncertainty in HCI at CHI 2017
   venue_location: Denver, CO, USA
   venue_url: http://visualization.ischool.uw.edu/hci_uncertainty/
+  pdf: /files/2017-Pangloss-Uncertainty.pdf
   tweet: Tools need to better support analysts who work with approximate data.
 
 - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
@@ -18,6 +19,7 @@
   venue: CHI 2017
   venue_location: Denver, CO, USA
   venue_url: https://chi2017.acm.org/
+  pdf: /files/2017-TrustButVerify-CHI.pdf
   tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
 
 - title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
