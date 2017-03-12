@@ -20,6 +20,7 @@
   venue_location: Denver, CO, USA
   venue_url: https://chi2017.acm.org/
   pdf: /files/2017-TrustButVerify-CHI.pdf
+  video: https://www.youtube.com/watch?v=cfdzi92r4sM
   tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
 
 - title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
