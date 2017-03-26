@@ -12,7 +12,7 @@ I'm a PhD student at the [University of Washington](http://www.washington.edu/) 
 </div>
 
 {:.mugshot}
-<img src="{{ '/images/dominik.webp' | absolute_url }}" onerror="this.onerror=null; this.src='{{ '/images/dominik.jpg' | absolute_url }}'" alt="Image of me">
+<img src="{{ '/images/dominik.jpg' | absolute_url }}" alt="Image of me">
 
 </div>
 
