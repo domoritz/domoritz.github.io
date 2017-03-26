@@ -90,8 +90,6 @@ GEM
       jekyll (~> 3.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
-    jekyll-compose (0.5.0)
-      jekyll (>= 3.0.0)
     jekyll-default-layout (0.1.4)
       jekyll (~> 3.0)
     jekyll-feed (0.9.1)
@@ -197,9 +195,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (= 127)
-  jekyll-compose
-  json
+  github-pages
 
 BUNDLED WITH
-   1.13.7
+   1.14.6

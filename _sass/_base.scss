@@ -34,6 +34,9 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+
+  // nicer text underlines
+  text-decoration-skip: ink;
 }
 
 
