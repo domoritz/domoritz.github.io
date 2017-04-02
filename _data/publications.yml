@@ -1,3 +1,13 @@
+- title: "What Users Don't Expect about Exploratory Data Analysis on Approximate Query Processing Systems"
+  year: 2017
+  authors:
+    - Dominik Moritz
+    - Danyel Fisher
+  venue: HILDA at SIGMOD 2017
+  venue_location: Chicago, USA
+  venue_url: http://www.hilda.io/2017
+  tweet: Trasitional exploratory visualization systems fail when the database is approximate.
+
 - title: "Lessons from Pangloss: User Encounters with Uncertainty"
   year: 2017
   authors:
@@ -111,7 +121,7 @@
     - Jeffrey Heer
   venue: HILDA at SIGMOD 2016
   venue_location: San Francisco, USA
-  venue_url: http://www.hilda.io/
+  venue_url: http://www.hilda.io/2016
   pdf: /files/2016-Compassql-HILDA.pdf
   tweet: CompassQL is a query language for visualization recommendation.
 
