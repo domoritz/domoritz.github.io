@@ -108,6 +108,8 @@
   venue_url: http://sigmod2016.org/
   link: https://uwescience.github.io/sqlshare/
   pdf: https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf
+  awards:
+    - SIGMOD Reproducibility Award
   tweet: Data analysts can use SQL to analyze data; if the system supports complex queries.
 
 - title: "Towards A General-Purpose Query Language for Visualization Recommendation"
