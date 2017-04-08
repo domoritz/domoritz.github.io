@@ -6,6 +6,7 @@
   venue: HILDA at SIGMOD 2017
   venue_location: Chicago, USA
   venue_url: http://www.hilda.io/2017
+  doi: 10.1145/3077257.3077258
   tweet: Traditional exploratory visualization systems fail when the database is approximate.
 
 - title: "Lessons from Pangloss: User Encounters with Uncertainty"
@@ -31,6 +32,7 @@
   venue_url: https://chi2017.acm.org/
   pdf: /files/2017-TrustButVerify-CHI.pdf
   video: https://www.youtube.com/watch?v=cfdzi92r4sM
+  doi: 10.1145/3025453.3025456
   tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
 
 - title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
