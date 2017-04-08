@@ -4,8 +4,9 @@
     - Dominik Moritz
     - Danyel Fisher
   venue: HILDA at SIGMOD 2017
-  venue_location: Chicago, USA
+  venue_location: Chicago, IL, USA
   venue_url: http://www.hilda.io/2017
+  pdf: /files/2017-EDAonAQPSystems-HILDA.pdf
   doi: 10.1145/3077257.3077258
   tweet: Traditional exploratory visualization systems fail when the database is approximate.
 
@@ -89,7 +90,7 @@
     - Jeffrey Heer
   venue: Infovis 2016
   venue_url: http://ieeevis.org/
-  venue_location: Baltimore, USA
+  venue_location: Baltimore, MD, USA
   link: http://idl.cs.washington.edu/papers/vega-lite
   pdf: http://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf
   video: https://vimeo.com/177767802
@@ -106,7 +107,7 @@
     - Bill Howe
     - Ed Lazowska
   venue: SIGMOD 2016
-  venue_location: San Francisco, USA
+  venue_location: San Francisco, CA, USA
   venue_url: http://sigmod2016.org/
   link: https://uwescience.github.io/sqlshare/
   pdf: https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf
@@ -124,7 +125,7 @@
     - Bill Howe
     - Jeffrey Heer
   venue: HILDA at SIGMOD 2016
-  venue_location: San Francisco, USA
+  venue_location: San Francisco, CA, USA
   venue_url: http://www.hilda.io/2016
   pdf: /files/2016-Compassql-HILDA.pdf
   tweet: CompassQL is a query language for visualization recommendation.
@@ -160,7 +161,7 @@
     - Jeffrey Heer
   venue: Infovis 2015
   venue_url: http://ieeevis.org/
-  venue_location: Chicago, USA
+  venue_location: Chicago, IL, USA
   link: https://idl.cs.washington.edu/papers/voyager
   link: https://vega.github.io/
   pdf: https://idl.cs.washington.edu/files/2015-Voyager-InfoVis.pdf
@@ -188,7 +189,7 @@
   description: Demo paper about the [Myria system](http://myria.cs.washington.edu/).
   venue: SIGMOD 2014
   venue_url: http://www.sigmod2014.org/
-  venue_location: Snowbird, USA
+  venue_location: Snowbird, UT, USA
   link: http://myria.cs.washington.edu/
   pdf: http://www.halper.in/pubs/halperin_myria_sigmod14_demo.pdf
   authors:
