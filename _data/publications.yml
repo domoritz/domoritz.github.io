@@ -172,7 +172,7 @@
 
 - title: "Perfopticon: Visual Query Analysis for Distributed Databases"
   year: 2015
-  description: Visualization of dataflow and distibuted execution in Myria. Influenced the design of the [Distributed Dask web interface](https://distributed.readthedocs.io/en/latest/web.html).
+  description: Visualization of dataflow and distributed execution in Myria. Influenced the design of the [Distributed Dask web interface](https://distributed.readthedocs.io/en/latest/web.html).
   authors:
     - Dominik Moritz
     - Daniel Halperin
