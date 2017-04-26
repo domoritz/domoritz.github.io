@@ -2,6 +2,7 @@
   location: OpenVis Conf, Boston
   url: https://openvisconf.com/#speakers
   year: 2017
+  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
   location: Database Seminar, Microsoft Research, Redmond
   year: 2016

@@ -75,7 +75,7 @@ A bomberman clone written in Squeak Smalltalk. Code is on [GitHub](https://githu
 
 For [Patrick Baudisch's](http://www.patrickbaudisch.com/) [HCI class at HPI](https://hpi.de/baudisch/teaching.html), we had to implement an application that ususally requires large screens on a iPod nano (enough for 4 buttons). We implemented a [GIS]() application that allows users to geo-reference images by simply aligning points. We introduced the concept of an X-Ray layer to enable users on small devices to align points.
 
-You can find more details in the [paper]({{ "/files/2013-MapLink.pdf" | relative_url }}).
+You can find more details in the [paper]({{ "/papers/2013-MapLink.pdf" | relative_url }}).
 
 {:.center.half}
 {% include image name="maplink.png" caption="MapLink." %}
@@ -92,7 +92,7 @@ Together with another student at HPI, I built a music player in VHDL. The code a
 
 ### The glass is half full
 
-In this class project I write about how we can use an optimistic approach to concurrency control. You can find the paper [here]({{ "/files/2012-the_glass_is_half_full.pdf" | relative_url }}).
+In this class project I write about how we can use an optimistic approach to concurrency control. You can find the paper [here]({{ "/papers/2012-TheGlassIsHalfFull.pdf" | relative_url }}).
 
 ### SoSat
 

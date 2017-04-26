@@ -6,7 +6,7 @@
   venue: HILDA at SIGMOD 2017
   venue_location: Chicago, IL, USA
   venue_url: http://www.hilda.io/2017
-  pdf: /files/2017-EDAonAQPSystems-HILDA.pdf
+  pdf: /papers/2017-EDAonAQPSystems-HILDA.pdf
   doi: 10.1145/3077257.3077258
   tweet: Traditional exploratory visualization systems fail when the database is approximate.
 
@@ -18,7 +18,7 @@
   venue: Designing for Uncertainty in HCI at CHI 2017
   venue_location: Denver, CO, USA
   venue_url: http://visualization.ischool.uw.edu/hci_uncertainty/
-  pdf: /files/2017-Pangloss-Uncertainty.pdf
+  pdf: /papers/2017-Pangloss-Uncertainty.pdf
   tweet: Tools need to better support analysts who work with approximate data.
 
 - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
@@ -31,7 +31,7 @@
   venue: CHI 2017
   venue_location: Denver, CO, USA
   venue_url: https://chi2017.acm.org/
-  pdf: /files/2017-TrustButVerify-CHI.pdf
+  pdf: /papers/2017-TrustButVerify-CHI.pdf
   video: https://www.youtube.com/watch?v=cfdzi92r4sM
   doi: 10.1145/3025453.3025456
   tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
@@ -127,7 +127,7 @@
   venue: HILDA at SIGMOD 2016
   venue_location: San Francisco, CA, USA
   venue_url: http://www.hilda.io/2016
-  pdf: /files/2016-Compassql-HILDA.pdf
+  pdf: /papers/2016-Compassql-HILDA.pdf
   tweet: CompassQL is a query language for visualization recommendation.
 
 - title: "High Variety Cloud Databases"
