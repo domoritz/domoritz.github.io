@@ -42,17 +42,22 @@
     <div class="extra-links">
     {% if pub.link %}
       <a class="link" href="{{ pub.link }}">
-        <i class="fa fa-file"></i> Project
+        <i class="fa fa-file" aria-hidden="true"></i> Project
       </a>
     {% endif %}
     {% if pub.pdf %}
       <a class="video" href="{{ pub.pdf }}">
-        <i class="fa fa-file-pdf-o"></i> Pdf
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Pdf
       </a>
     {% endif %}
     {% if pub.video %}
       <a class="video" href="{{ pub.video }}">
-        <i class="fa fa-tv"></i> Video
+        <i class="fa fa-tv" aria-hidden="true"></i> Video
+      </a>
+    {% endif %}
+    {% if pub.slides %}
+      <a class="video" href="{{ pub.slides }}">
+        <i class="fa fa-window-maximize" aria-hidden="true"></i> Slides
       </a>
     {% endif %}
     </div>

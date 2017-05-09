@@ -33,6 +33,7 @@
   venue_url: https://chi2017.acm.org/
   pdf: /papers/2017-TrustButVerify-CHI.pdf
   video: https://www.youtube.com/watch?v=cfdzi92r4sM
+  slides: /talks/TrustButVerify-CHI-2017.pdf
   doi: 10.1145/3025453.3025456
   tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
 
@@ -95,6 +96,7 @@
   pdf: http://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf
   video: https://vimeo.com/177767802
   link: https://vega.github.io/vega-lite/
+  slides: /talks/VegaLite-InfoVis-2016.pdf
   awards:
     - Best Paper Award
   tweet: Vega-Lite is a declarative language for visualization and interaction.
