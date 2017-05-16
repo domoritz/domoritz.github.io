@@ -9,6 +9,8 @@
   pdf: /papers/2017-EDAonAQPSystems-HILDA.pdf
   slides: /talks/AQP_UX-HILDA-2017.pdf
   doi: 10.1145/3077257.3077258
+  awards:
+    - Distinguished Long Talk
   tweet: Traditional exploratory visualization systems fail when the database is approximate.
 
 - title: "Lessons from Pangloss: User Encounters with Uncertainty"
@@ -115,7 +117,7 @@
   link: https://uwescience.github.io/sqlshare/
   pdf: https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf
   awards:
-    - SIGMOD Reproducibility Award
+    - SIGMOD Most Reproducible Paper Award
   tweet: Data analysts can use SQL to analyze data; if the system supports complex queries.
 
 - title: "Towards A General-Purpose Query Language for Visualization Recommendation"
