@@ -40,14 +40,24 @@
 
   {% if pub.link or pub.pdf or pub.video %}
     <div class="extra-links">
-    {% if pub.link %}
-      <a class="link" href="{{ pub.link }}">
-        <i class="fa fa-file" aria-hidden="true"></i> Project
-      </a>
-    {% endif %}
     {% if pub.pdf %}
       <a class="video" href="{{ pub.pdf }}">
         <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Pdf
+      </a>
+    {% endif %}
+    {% if pub.doi %}
+      <a href="http://www.doi2bib.org/#/doi/{{ pub.doi }}">
+        <i class="fa fa-book" aria-hidden="true"></i> Bibtex
+      </a>
+    {% endif %}
+    {% if pub.short_doi %}
+      <a href="http://doi.org/{{ pub.short_doi }}">
+        <i class="fa fa-anchor" aria-hidden="true"></i> DOI: {{ pub.short_doi }}
+      </a>
+    {% endif %}
+    {% if pub.link %}
+      <a class="link" href="{{ pub.link }}">
+        <i class="fa fa-file" aria-hidden="true"></i> Project
       </a>
     {% endif %}
     {% if pub.video %}

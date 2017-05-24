@@ -9,6 +9,7 @@
   pdf: /papers/2017-EDAonAQPSystems-HILDA.pdf
   slides: /talks/AQP_UX-HILDA-2017.pdf
   doi: 10.1145/3077257.3077258
+  short_doi: 10/b7js
   awards:
     - Distinguished Long Talk
   tweet: Traditional exploratory visualization systems fail when the database is approximate.
@@ -38,6 +39,7 @@
   video: https://www.youtube.com/watch?v=cfdzi92r4sM
   slides: /talks/TrustButVerify-CHI-2017.pdf
   doi: 10.1145/3025453.3025456
+  short_doi: 10/b7jt
   tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
 
 - title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
@@ -56,6 +58,8 @@
   venue_location: Denver, CO, USA
   venue_url: https://chi2017.acm.org/
   pdf: https://idl.cs.washington.edu/files/2017-Voyager2-CHI.pdf
+  doi: 10.1145/3025453.3025768
+  short_doi: 10/b7jv
   video: https://vimeo.com/199084718
   link: https://idl.cs.washington.edu/papers/voyager2
   tweet: Voyager 2 blends manual and automated chart specification.
@@ -99,6 +103,8 @@
   pdf: http://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf
   video: https://vimeo.com/177767802
   link: https://vega.github.io/vega-lite/
+  doi: 10.1109/TVCG.2016.2599030
+  short_doi: 10/f92f32
   slides: /talks/VegaLite-InfoVis-2016.pdf
   awards:
     - Best Paper Award
@@ -117,7 +123,7 @@
   link: https://uwescience.github.io/sqlshare/
   pdf: https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf
   awards:
-    - SIGMOD Most Reproducible Paper Award
+    - Most Reproducible Paper Award
   tweet: Data analysts can use SQL to analyze data; if the system supports complex queries.
 
 - title: "Towards A General-Purpose Query Language for Visualization Recommendation"
