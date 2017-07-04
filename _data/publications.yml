@@ -1,3 +1,11 @@
+- title: "Text detection in screen images with a Convolutional Neural Network"
+  authors:
+    - Dominik Moritz
+  doi: http://dx.doi.org/10.21105/joss.00235
+  venue: The Journal of Open Source Software
+  link: https://github.com/domoritz/label_generator
+  tweet: Use deep learning to find text in screen images. Learned from thousands of papers.
+
 - title: "What Users Don't Expect about Exploratory Data Analysis on Approximate Query Processing Systems"
   year: 2017
   authors:
