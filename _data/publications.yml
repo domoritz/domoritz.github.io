@@ -2,7 +2,7 @@
   year: 2017
   authors:
     - Dominik Moritz
-  doi: http://dx.doi.org/10.21105/joss.00235
+  doi: 10.21105/joss.00235
   short_doi: 10/b89p
   venue: The Journal of Open Source Software
   link: https://github.com/domoritz/label_generator
