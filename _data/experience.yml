@@ -5,7 +5,11 @@
   location: Redmond
   mentors:
     - Danyel Fisher
-  description: Internship in progress. Working on scalable visualizations. 
+  description: Internship in progress. Working on scalable visualizations and visualization recommendation.
+  skills:
+    - Visualization
+    - PowerBI
+    - Visualization Recommendation
 - title: Research Intern
   years: 2016
   company: Microsoft Research
