@@ -81,6 +81,7 @@
     - JavaScript
 - title: Bachelor's Project
   years: 2012-2013
+  company: Hasso Plattner Institute
   location: Potsdam
   description: In a team of four students developed a tool to visualize software evolution with 3D Voronoi Treemaps. I focused on the theory and implementation of layout algorithms.
   skills:
