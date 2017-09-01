@@ -1,7 +1,7 @@
-- title: Mentor Undergraduate Researchers
+- title: "Mentor Undergraduate Researchers"
   location: University of Washington
   year: since 2015
-  description: Mentor students to work on Vega-Lite, Voyager, Polestar, and related projects.
+  description: Mentor students for working on Vega-Lite, Voyager, Polestar, and related projects.
   who:
     - Youying Lin (now at Google)
     - Ayush Saraf
@@ -24,8 +24,8 @@
   students: 15
   location: Hasso Plattner Institute
   description: One day preparation training high school students for programming competition.
-- title: "Math Club for High School Students"
+- title: "Math Club for Elementary School Students"
   year: 2009-2010
   students: 10
   location: Marie Curie Gymnasium
-  description: Led math club for about a year.
+  description: Led a math club for local elementary school students.

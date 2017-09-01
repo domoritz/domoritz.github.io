@@ -7,7 +7,7 @@
     - Danyel Fisher
   description: Internship in progress. Working on scalable visualizations and visualization recommendation.
   skills:
-    - Visualization
+    - Scalable Visualization
     - PowerBI
     - Visualization Recommendation
 - title: Research Intern
@@ -19,7 +19,7 @@
     - Danyel Fisher
     - Bolin Ding
     - Chi Wang
-  description: I developed and user tested a UI for an approximate query processing system.
+  description: Developed and user tested a UI for an approximate query processing system. Publiched a CHI paper, two workshop papers, and filed three patents.
   project: Pangloss
   skills:
     - Approximate Query Processing
@@ -38,7 +38,7 @@
     - Xiao Yu
     - Chris Olston
     - Sitaram Iyer
-  description: I improved the user experience of an internal search engine, worked with the knowledge graph team, and designed a summarization algorithm for search results. I also worked with the Knowledge Graph Team on an exploration of a new graph infrastructure that will enable integrated applications.
+  description: Improved the user experience of an internal search engine and designed a summarization algorithm for search results. Also worked with the Knowledge Graph Team on exploring a new graph infrastructure that enables integrated applications.
   project: DataSearch
   skills:
     - UX
@@ -74,8 +74,8 @@
   description: Two-month summer internship and subsequent one-year involvement in development and training for CKAN, the most deployed open data portal in the world.
   project: CKAN
   skills:
-    - Distributed teams,
-    - Sgile development
+    - Distributed teams
+    - Agile development
     - Large legacy systems
     - Python
     - JavaScript

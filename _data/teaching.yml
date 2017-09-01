@@ -1,15 +1,17 @@
 - title: "HCID 520: User Interface Software & Technology"
+  role: Teaching Assistant
   year: 2017
   professor: Jeffrey Heer
   students: 30 students
   location: University of Washington
-  description: Present sesssions, updated assignments, graded, office hours.
+  description: Presented sesssions, updated assignments, graded, held office hours.
 - title: "CSE 512: Data Visualization"
+  role: Teaching Assistant
   year: 2015
   professor: Jeffrey Heer
   students: 80 students
   location: University of Washington
-  description: Led visualization tools, CSS, and D3 tutorials, graded, office hours.
+  description: Led visualization tools, CSS, and D3 tutorials, graded, held office hours.
 - title: "Vega-Lite Workshop"
   year: 2017
   location: San Diego Supercomputer Center, UCSD

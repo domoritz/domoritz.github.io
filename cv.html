@@ -70,6 +70,7 @@ title: Dominik Moritz - CV
         font-weight: 500;
         border: none;
         color: #333;
+        font-family: Halvetica Neue, sans-serif;
       }
 
       h1, h2 {
@@ -111,8 +112,16 @@ title: Dominik Moritz - CV
         text-align: right;
       }
 
+      .publication {
+        margin-bottom: 15px;
+      }
+
+      .publication p {
+        margin-bottom: 0.1em;
+      }
+
       .muted, .muted a {
-        color: #828282;
+        color: #666;
       }
 
       .award {
@@ -176,11 +185,13 @@ title: Dominik Moritz - CV
   </div>
 </div>
 
+
 <h2>Research Area</h2>
 
 <p>
-My goal is to use a combination of large-scale systems for data analysis and interactive visualizations to support novel insights and fast exploration of multi-dimensional data. I hope to build visualization systems that use statistical analysis, both for driving visualization recommendation and guiding the user's exploration as well as for supporting richer exploratory analysis.
+I combine large-scale systems for data analysis and interactive visualizations to support novel insights and fast exploration of multi-dimensional data. To this end, I build visualization systems that use statistical analysis, both for driving visualization recommendation and guiding the user's exploration as well as for supporting richer exploratory analysis.
 </p>
+
 
 <h2>Education</h2>
 
@@ -197,6 +208,7 @@ My goal is to use a combination of large-scale systems for data analysis and int
   </p>
 {% endfor %}
 
+
 <h2>Notable Awards</h2>
 
 {% for award in site.data.awards %}
@@ -210,6 +222,7 @@ My goal is to use a combination of large-scale systems for data analysis and int
   </p>
 {% endfor %}
 
+
 <h2>Publications</h2>
 
 {% for pub in site.data.publications %}
@@ -218,13 +231,15 @@ My goal is to use a combination of large-scale systems for data analysis and int
       <span class="year">{{pub.year}}</span>
       <h3>{{ pub.title }}</h3>
     </div>
-    <p class="publication">
-      {% for author in pub.authors %}
-        {% include person person=author %}{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
-      <span class="muted">{{pub.venue}}{% if pub.venue_location%}, {{pub.venue_location}}{% endif %}</span>
-      {% if pub.awards %}<br><strong class="award">{{pub.awards}}</strong>{% endif %}
-    </p>
+    <div class="publication">
+      <p>
+        {% for author in pub.authors %}
+          {% include person person=author %}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+      <p class="muted">{{pub.venue}}{% if pub.venue_location%}, {{pub.venue_location}}{% endif %}</p>
+      {% if pub.awards %}<strong class="award">{{pub.awards}}</strong>{% endif %}
+    </div>
   {% endif %}
 {% endfor %}
 
@@ -238,7 +253,7 @@ My goal is to use a combination of large-scale systems for data analysis and int
   </div>
   <p>
     {% if exp.mentors %}
-      Mentors: {% for mentor in exp.mentors %}
+      Mentor{% if exp.mentors.size > 1 %}s{% endif %}: {% for mentor in exp.mentors %}
         {% include person person=mentor %}{% unless forloop.last %}, {% endunless %}
       {% endfor %}<br/>
     {% endif %}
@@ -258,6 +273,7 @@ My goal is to use a combination of large-scale systems for data analysis and int
   <p>{{ talk.location }}</p>
 {% endfor %}
 
+
 <h2>Teaching Experience</h2>
 
 {% for teach in site.data.teaching %}
@@ -268,6 +284,9 @@ My goal is to use a combination of large-scale systems for data analysis and int
   </div>
   <p>
     {% if teach.professor %}
+      {% if teach.role %}
+        {{ teach.role }} for
+      {% endif %}
       {% include person person=teach.professor %},
       {{ teach.students }}
       <br/>
@@ -275,6 +294,7 @@ My goal is to use a combination of large-scale systems for data analysis and int
     {{ teach.description }}
   </p>
 {% endfor %}
+
 
 <h2>Mentoring Experience</h2>
 
@@ -297,6 +317,7 @@ My goal is to use a combination of large-scale systems for data analysis and int
     {% endif %}
   </p>
 {% endfor %}
+
 
 <h2>Relevant Coursework</h2>
 
