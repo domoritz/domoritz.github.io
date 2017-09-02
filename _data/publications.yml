@@ -1,3 +1,13 @@
+- title: "Extracting Neighborhood Structure from Very Large DNA Graphs"
+  year: 2017
+  authors:
+    - C. Titus Brown
+    - Dominik Moritz
+    - Michael P. O'Brien
+    - Felix Reidl
+    - Blair D. Sullivan
+  venue: Siam Workshop on Network Science
+  pdf: http://www.siam.org/meetings/ns17/ns17_abstracts.pdf
 - title: "Text detection in screen images with a Convolutional Neural Network"
   year: 2017
   authors:
