@@ -1,6 +1,5 @@
 # Site settings
 title: Dominik Moritz
-author: Dominik Moritz
 email: domoritz@cs.washington.edu
 description: > # this means to ignore newlines until "baseurl:"
   Dominik Moritz: PhD student in Computer
@@ -9,9 +8,11 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.domoritz.de" # the base hostname & protocol for your site
 production_url: "https://www.domoritz.de"
-twitter_username: domoritz
-github_username:  domoritz
+github_username: domoritz
 permalink: /blog/:year/:month/:title.html
+
+twitter:
+  username: domoritz
 
 # Google Analytics
 google_analytics_tracking_id: UA-3992453-11
@@ -19,6 +20,11 @@ google_analytics_tracking_id: UA-3992453-11
 sass:
   style: compressed
 
-gems:
+jekyll-mentions:
+  base_url: https://twitter.com
+
+plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-mentions
