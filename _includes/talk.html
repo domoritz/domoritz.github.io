@@ -1,0 +1,27 @@
+<div class="talk">
+  <h3>{{ talk.title }}</h3>
+
+  <p class="description">
+    {{ talk.location }}
+  </p>
+
+  <div class="extra-links">
+    {% if talk.slides %}
+    <a href="{{ talk.slides }}">
+      <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Slides
+    </a>
+    {% endif %}
+
+    {% if talk.video %}
+    <a href="{{ talk.video }}">
+      <i class="fa fa-tv" aria-hidden="true"></i> Video
+    </a>
+    {% endif %}
+
+    {% if talk.url %}
+    <a href="{{ talk.url }}">
+      <i class="fa fa-external-link" aria-hidden="true"></i> Website
+    </a>
+    {% endif %}
+  </div>
+</div>

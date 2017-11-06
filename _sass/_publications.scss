@@ -1,4 +1,4 @@
-.publication {
+.publication, .talk {
   h3 {
     font-size: 1.3em;
     margin-bottom: 0em;
@@ -50,5 +50,15 @@
         border-bottom: 1px solid $link-color;
       }
     }
+  }
+}
+
+.talk {
+  .description {
+    font-size: 1.1em;
+  }
+
+  .extra-links {
+    margin-top: 0;
   }
 }

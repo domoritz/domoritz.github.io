@@ -1,14 +1,18 @@
 - title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: Microsoft, Redmond
+  year: 2017
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
   location: Turi (Apple), Seattle
   year: 2017
 - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
-  location: Tableau, Seattle
+  location: Tableau Research, Seattle
   year: 2017
 - title: "Vega-Lite: A Grammar of Interactive Graphics"
   location: OpenVis Conf, Boston
   url: https://openvisconf.com/#speakers
   year: 2017
   slides: /talks/VegaLite-OpenVisConf-2017.pdf
+  video: https://www.youtube.com/watch?v=9uaHRWj04D4
 - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
   location: Database Seminar, Microsoft Research, Redmond
   year: 2016
