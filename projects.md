@@ -112,10 +112,10 @@ Tagshot is a photo management tool in the browser. We designed and developed as 
 
 ### Himawari 8
 
-A chrome extension that shows the latest image from the Himawari 8 weather satellite when you open a new tab. The code is on [Github](https://github.com/domoritz/himawari-8-chrome) and you can install the extension from the [Chrome web store](https://chrome.google.com/webstore/detail/himawari-8-satellite-new/llelgapflianaapmnpncgakfjhfhnojm).
+A webextension that shows the latest image from the Himawari 8 weather satellite when you open a new tab. The code is on [Github](https://github.com/domoritz/himawari-8-chrome) and you can install the extension from the [Chrome web store](https://chrome.google.com/webstore/detail/himawari-8-satellite-new/llelgapflianaapmnpncgakfjhfhnojm) and the [Firefox addon gallery](https://addons.mozilla.org/en-US/firefox/addon/satellite-new-tab-page/).
 
 {:.center.two-thirds}
-{% include image name="himawari.png" caption="Himawari Chrome extension new tab page." %}
+{% include image name="himawari.png" caption="Himawari extension new tab page." %}
 
 ### Game of Life
 
@@ -151,6 +151,7 @@ The code is at [github.com/domoritz/leaflet-maskcanvas](https://github.com/domor
 For this project I combined the MaskCanvas layer and `heatmap.js` from my friend [Patrick](http://www.patrick-wied.at).
 You can learn more about it at [patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html](http://www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html)
 
+### Informaticup
 
 #### Informaticup 2011: Optimal ATM placement
 
