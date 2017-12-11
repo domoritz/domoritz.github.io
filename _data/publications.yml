@@ -1,3 +1,11 @@
+- title: "Value-Suppressing Uncertainty Palettes"
+  year: 2018
+  authors:
+    - Michael Correll
+    - Dominik Moritz
+    - Jeffrey Heer
+  venue: CHI 2018
+  tweet: Special color palettes that suppress differences for uncertain values.
 - title: "Extracting Neighborhood Structure from Very Large DNA Graphs"
   year: 2017
   authors:
