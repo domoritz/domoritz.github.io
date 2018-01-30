@@ -18,13 +18,13 @@ layout: default
   </article>
 
   <section class="post-sharing">
-    <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}&via={{ site.author }}&related={{ site.author }}" rel="nofollow" target="_blank" title="Share this post on Twitter"><i class="fa fa-twitter"></i> Tweet</a>
+    <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}&via={{ site.author }}&related={{ site.author }}" rel="nofollow" target="_blank" title="Share this post on Twitter"><i class="fab fa-twitter"></i> Tweet</a>
   </section>
 
   <div class="blog-links">
   {% if page.previous.url %}
     <div>
-      <i class="fa fa-md fa-chevron-left"></i>
+      <i class="fas fa-md fa-chevron-left"></i>
       <a href="{{ page.previous.url | relative_url }}" title="Previous Post: {{ page.previous.title }}">{{ page.previous.title }}</a>
     </div>
   {% else %}
@@ -33,7 +33,7 @@ layout: default
   {% if page.next.url %}
     <div>
       <a href="{{page.next.url | relative_url}}" title="Next Post: {{page.Next.title}}">{{ page.next.title }}</a>
-      <i class="fa fa-md fa-chevron-right"></i>
+      <i class="fas fa-md fa-chevron-right"></i>
     </div>
   {% else %}
     <span class="spacer"></span>

@@ -22,8 +22,8 @@ During my first year at UW, I received support from the [Fulbright program](http
 * **Office:** [Paul G. Allen Center (CSE)](http://www.washington.edu/maps/?q=cse) Room [486](https://norfolk.cs.washington.edu/directory/index.php?prev_floor=4&show_room=CSE486)
 
 {:.index-links}
-* [<i class="fa fa-twitter fa-lg"></i> Twitter](https://twitter.com/domoritz)
-* [<i class="fa fa-github fa-lg"></i> Github](https://github.com/domoritz)
-* [<i class="fa fa-facebook-square fa-lg"></i> Facebook](https://www.facebook.com/moritz.dominik)
-* [<i class="fa fa-linkedin fa-lg"></i> LinkedIn](https://www.linkedin.com/pub/dominik-moritz/24/b81/409)
-* [<i class="fa fa-google-plus fa-lg"></i> Google+](https://plus.google.com/110111947282446666823)
+* [<i class="fab fa-twitter fa-lg"></i> Twitter](https://twitter.com/domoritz)
+* [<i class="fab fa-github fa-lg"></i> Github](https://github.com/domoritz)
+* [<i class="fab fa-facebook-square fa-lg"></i> Facebook](https://www.facebook.com/moritz.dominik)
+* [<i class="fab fa-linkedin-in fa-lg"></i> LinkedIn](https://www.linkedin.com/pub/dominik-moritz/24/b81/409)
+* [<i class="fab fa-google-plus-g fa-lg"></i> Google+](https://plus.google.com/110111947282446666823)

@@ -1,5 +1,5 @@
 <div class="publication">
-  <h3 id="{{ pub.title | slugify }}">{% for award in pub.awards %}<i class="fa fa-trophy award-icon" title="{{ award }}"></i> {% endfor %}{{ pub.title }}</h3>
+  <h3 id="{{ pub.title | slugify }}">{% for award in pub.awards %}<i class="fas fa-trophy award-icon" title="{{ award }}"></i> {% endfor %}{{ pub.title }}</h3>
   <div class="authors">
     {% for author in pub.authors %}{% include person person=author %}{% unless forloop.last %}, {% endunless %}
     {% endfor %}
@@ -27,7 +27,7 @@
 
   {% if pub.tweet %}
     <a href="https://twitter.com/intent/tweet?text={{ pub.tweet }}&url={{ site.production_url }}/publications/%23{{ pub.title | slugify }}&via=domoritz&related=domoritz" class="tweet" target="_blank" rel="noopener">
-      <i class="fa fa-twitter"></i> <span class="message">{{ pub.tweet }}</span>
+      <i class="fab fa-twitter"></i> <span class="message">{{ pub.tweet }}</span>
     </a>
   {% endif %}
 
@@ -42,32 +42,32 @@
     <div class="extra-links">
     {% if pub.pdf %}
       <a href="{{ pub.pdf }}">
-        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Pdf
+        <i class="far fa-file-pdf" aria-hidden="true"></i> Pdf
       </a>
     {% endif %}
     {% if pub.doi %}
       <a href="http://www.doi2bib.org/#/doi/{{ pub.doi }}">
-        <i class="fa fa-book" aria-hidden="true"></i> Bibtex
+        <i class="fas fa-book" aria-hidden="true"></i> Bibtex
       </a>
     {% endif %}
     {% if pub.short_doi %}
       <a href="http://doi.org/{{ pub.short_doi }}">
-        <i class="fa fa-anchor" aria-hidden="true"></i> DOI: {{ pub.short_doi }}
+        <i class="fas fa-anchor" aria-hidden="true"></i> DOI: {{ pub.short_doi }}
       </a>
     {% endif %}
     {% if pub.link %}
       <a href="{{ pub.link }}">
-        <i class="fa fa-file" aria-hidden="true"></i> Project
+        <i class="fas fa-file" aria-hidden="true"></i> Project
       </a>
     {% endif %}
     {% if pub.video %}
       <a href="{{ pub.video }}">
-        <i class="fa fa-tv" aria-hidden="true"></i> Video
+        <i class="fas fa-tv" aria-hidden="true"></i> Video
       </a>
     {% endif %}
     {% if pub.slides %}
       <a href="{{ pub.slides }}">
-        <i class="fa fa-window-maximize" aria-hidden="true"></i> Slides
+        <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
       </a>
     {% endif %}
     </div>
