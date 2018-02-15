@@ -1,18 +1,28 @@
+- title: "Google Summer of Code"
+  year: 2018
+  description: We are selected as a mentoring organizatin for the Google Summer of Code.
+  location: University of Washington
 - title: "Mentor Undergraduate Researchers"
   location: University of Washington
   year: since 2015
   description: Mentor students for working on Vega-Lite, Voyager, Polestar, and related projects.
   who:
+    - Zening Qu (now PhD student at UW iSchool)
     - Youying Lin (now at Google)
     - Ayush Saraf
     - Zoe Lu (now at Facebook)
-    - Will Strimling
+    - Will Strimling (now at Twitter)
     - Swojit Mohapatra
     - Lingyue (Cynthia) Zhang
     - Tianyi Lin
     - Matthew Chun
     - Felix Ouk
     - Sira Horradarn
+    - Chanwut Kittivorawong
+    - Ishan Saksena
+- title: "Dubhacks Mentor and Judge"
+  year: 2017
+  location: University of Washington
 - title: "Dubhacks Mentor and Judge"
   year: 2016
   location: University of Washington
