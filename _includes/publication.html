@@ -46,7 +46,7 @@
       </a>
     {% endif %}
     {% if pub.doi %}
-      <a href="https://www.doi2bib.org/bib/{{ pub.doi }}">
+      <a href="https://www.doi2bib.org/bib/{{ pub.doi | cgi_escape }}">
         <i class="fas fa-book" aria-hidden="true"></i> Bibtex
       </a>
     {% endif %}
