@@ -7,7 +7,7 @@ title: "Hi, I am Dominik Moritz"
 <div class="intro" markdown="1">
 
 <span class="lead">
-I'm a PhD student at the [University of Washington](http://www.washington.edu/) in the [Paul G. Allen School of Computer Science & Engineering](http://www.cs.washington.edu/). I am advised by [Bill Howe](http://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/), the [iSchool](https://ischool.uw.edu/), and the [Database Group](http://db.cs.washington.edu/) and [Jeff Heer](http://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations. If you're interested in my research, have a look at my [publications]({{ "/publications/" | relative_url }}).
+I'm a PhD student at the [University of Washington](https://www.washington.edu/) in the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/). I am advised by [Bill Howe](https://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/), the [iSchool](https://ischool.uw.edu/), and the [Database Group](https://db.cs.washington.edu/) and [Jeff Heer](https://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations. If you're interested in my research, have a look at my [publications]({{ "/publications/" | relative_url }}).
 </span>
 </div>
 
