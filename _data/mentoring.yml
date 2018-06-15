@@ -2,6 +2,9 @@
   year: 2018
   description: We are selected as a mentoring organizatin for the Google Summer of Code.
   location: University of Washington
+  who:
+    - Yash Dev Lamba
+    - Souvik Sen
 - title: "Mentor Undergraduate Researchers"
   location: University of Washington
   year: since 2015
@@ -20,6 +23,9 @@
     - Sira Horradarn
     - Chanwut Kittivorawong
     - Ishan Saksena
+    - Akshat Shrivastava
+    - Halden Lin
+    - Melissa Diamond
 - title: "Dubhacks Mentor and Judge"
   year: 2017
   location: University of Washington
