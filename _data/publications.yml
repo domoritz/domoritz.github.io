@@ -8,6 +8,8 @@
   tweet: Special color palettes that suppress differences for uncertain values.
   pdf: /papers/2018-VSUPs-CHI.pdf
   link: https://github.com/uwdata/vsup
+  blog: https://medium.com/@uwdata/value-suppressing-uncertainty-palettes-426130122ce9
+
 - title: "Extracting Neighborhood Structure from Very Large DNA Graphs"
   year: 2017
   authors:
@@ -18,6 +20,7 @@
     - Blair D. Sullivan
   venue: Siam Workshop on Network Science
   pdf: http://www.siam.org/meetings/ns17/ns17_abstracts.pdf
+
 - title: "Text detection in screen images with a Convolutional Neural Network"
   year: 2017
   authors:
