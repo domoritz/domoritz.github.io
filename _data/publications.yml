@@ -1,3 +1,18 @@
+- title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
+  year: 2018
+  authors:
+    - Dominik Moritz
+    - Chenglong Wang
+    - Greg L. Nelson
+    - Halden Lin
+    - Adam M. Smith
+    - Bill Howe
+    - Jeffrey Heer
+  venue: Infovis 2018
+  venue_location: Berlin, Germany
+  link: https://uwdata.github.io/draco/
+  tweet: An extensible visualization recommendation system that learns effectiveness rules from data.
+
 - title: "Value-Suppressing Uncertainty Palettes"
   year: 2018
   authors:
