@@ -38,7 +38,7 @@
     </div>
   {% endif %}
 
-  {% if pub.link or pub.pdf or pub.video %}
+  {% if pub.link or pub.pdf or pub.video or pub.blog or pub.slides or pub.doi %}
     <div class="extra-links">
     {% if pub.pdf %}
       <a href="{{ pub.pdf }}">
@@ -57,7 +57,12 @@
     {% endif %}
     {% if pub.link %}
       <a href="{{ pub.link }}">
-        <i class="fas fa-file" aria-hidden="true"></i> Project
+        <i class="fas fa-external-link-alt" aria-hidden="true"></i> Project
+      </a>
+    {% endif %}
+    {% if pub.blog %}
+      <a href="{{ pub.blog }}">
+        <i class="fas fa-newspaper" aria-hidden="true"></i> Article
       </a>
     {% endif %}
     {% if pub.video %}
