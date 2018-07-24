@@ -56,9 +56,17 @@
 .talk {
   .description {
     font-size: 1.1em;
+
+    small {
+      color: #999;
+    }
   }
 
   .extra-links {
     margin-top: 0;
+  }
+
+  h3 small {
+    color: #999;
   }
 }
