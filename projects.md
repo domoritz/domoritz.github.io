@@ -12,6 +12,10 @@ Here are some projects I have worked on for school, work, or fun that you might 
 
 ## Research
 
+### Draco
+
+An extensible knowledge base for automated visualization design. [Website](https://uwdata.github.io/draco) and [Paper]({{ "/publications/http://127.0.0.1:4000/publications/#formalizing-visualization-design-knowledge-as-constraints-actionable-and-extensible-models-in-draco" |relative_ur).
+
 ### Vega stack
 
 With the Interactive Data Lab, we created the [Vega stack](https://vega.github.io/) and a number of tools for data exploration based on it.
