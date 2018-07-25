@@ -1,4 +1,5 @@
-- title: "Beyond Heuristics: Learning Visualization Design"
+- id: beyond-heuristics
+  title: "Beyond Heuristics: Learning Visualization Design"
   year: 2018
   authors:
     - Bahador Saket
@@ -9,7 +10,8 @@
     - Jeffrey Heer
   pdf: https://arxiv.org/pdf/1807.06641.pdf
 
-- title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
+- id: draco
+  title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
   year: 2018
   authors:
     - Dominik Moritz
@@ -27,7 +29,8 @@
   link: https://uwdata.github.io/draco/
   tweet: An extensible visualization recommendation system that learns effectiveness rules from data.
 
-- title: "Value-Suppressing Uncertainty Palettes"
+- id: vsup
+  title: "Value-Suppressing Uncertainty Palettes"
   year: 2018
   authors:
     - Michael Correll
@@ -90,7 +93,8 @@
   pdf: /papers/2017-Pangloss-Uncertainty.pdf
   tweet: Tools need to better support analysts who work with approximate data.
 
-- title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
+- id: trust-but-verify
+  title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
   year: 2017
   authors:
     - Dominik Moritz
@@ -107,7 +111,8 @@
   short_doi: 10/b7jt
   tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
 
-- title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
+- id: voyager-2
+  title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
   year: 2017
   authors:
     - Kanit Wongsuphasawat
@@ -129,7 +134,8 @@
   link: https://idl.cs.washington.edu/papers/voyager2
   tweet: Voyager 2 blends manual and automated chart specification.
 
-- title: "The Myria Big Data Management and Analytics System and Cloud Service"
+- id: myria
+  title: "The Myria Big Data Management and Analytics System and Cloud Service"
   year: 2017
   authors:
     - Jingjing Wang
@@ -154,7 +160,8 @@
   pdf: http://cidrdb.org/cidr2017/papers/p37-wang-cidr17.pdf
   tweet: Myria is a distributed DB for data science.
 
-- title: "Vega-Lite: A Grammar of Interactive Graphics"
+- id: vega-lite
+  title: "Vega-Lite: A Grammar of Interactive Graphics"
   year: 2017
   authors:
     - Arvind Satyanarayan
@@ -175,7 +182,8 @@
     - Best Paper Award
   tweet: Vega-Lite is a declarative language for visualization and interaction.
 
-- title: "SQLShare: Results from a Multi-Year SQL-as-a-Service Experiment"
+- id: sqlshare
+  title: "SQLShare: Results from a Multi-Year SQL-as-a-Service Experiment"
   year: 2016
   authors:
     - Shrainik Jain
@@ -191,7 +199,8 @@
     - Most Reproducible Paper Award
   tweet: Data analysts can use SQL to analyze data; if the system supports complex queries.
 
-- title: "Towards A General-Purpose Query Language for Visualization Recommendation"
+- id: compassql
+  title: "Towards A General-Purpose Query Language for Visualization Recommendation"
   year: 2016
   authors:
     - Kanit Wongsuphasawat
@@ -215,7 +224,8 @@
   pdf: https://uwescience.github.io/sqlshare/pdfs/ICDE16_research_5.pdf
   venue: ICDE 2016
 
-- title: Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web
+- id: dynamic-client-server
+  title: Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web
   year: 2015
   authors:
     - Dominik Moritz
@@ -226,7 +236,8 @@
   pdf: http://www.interactive-analysis.org/papers/2015/moritz.pdf
   tweet: Interactive visualizations in client-server systems can have reduced latency.
 
-- title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
+- id: voyager
+  title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
   year: 2015
   authors:
     - Kanit Wongsuphasawat
@@ -246,7 +257,8 @@
     - Invited to SIGGRAPH 2016
   tweet: Visualization recommendation promotes breadth and prevents early fixation.
 
-- title: "Perfopticon: Visual Query Analysis for Distributed Databases"
+- id: perfopticon
+  title: "Perfopticon: Visual Query Analysis for Distributed Databases"
   year: 2015
   description: Visualization of dataflow and distributed execution in Myria. Influenced the design of the [Distributed Dask web interface](https://distributed.readthedocs.io/en/latest/web.html).
   authors:
@@ -261,7 +273,8 @@
   pdf: https://idl.cs.washington.edu/files/2015-Perfopticon-EuroVis.pdf
   tweet: Visual performance debugging for queries in distributed database systems.
 
-- title: Demonstration of the Myria Big Data Management Service
+- id: myria-demo
+  title: Demonstration of the Myria Big Data Management Service
   year: 2014
   description: Demo paper about the [Myria system](http://myria.cs.washington.edu/).
   venue: SIGMOD 2014
@@ -285,7 +298,8 @@
     - Bill Howe
     - Dan Suciu
 
-- title: Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
+- id: stable-voronoi
+  title: Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
   year: 2013
   description: Publication of algorithms that I developed for my bachelor thesis.
   authors:
@@ -299,6 +313,7 @@
   link: https://hpi.de/de/computer-graphics-systems/publications/year/2014/102334/STMD2014.html
   tweet: Use Voronoi tesselation for stable treemaps.
 
-- title: Algorithms for the Visualization of Software System Evolution
+- id: bachelor-thesis
+  title: Algorithms for the Visualization of Software System Evolution
   year: 2013
   description: My bachelor thesis. Not published due to non disclosure agreement.

@@ -14,7 +14,7 @@ Here are some projects I have worked on for school, work, or fun that you might 
 
 ### Draco
 
-An extensible knowledge base for automated visualization design. [Website](https://uwdata.github.io/draco) and [Paper]({{ "/publications/#formalizing-visualization-design-knowledge-as-constraints-actionable-and-extensible-models-in-draco" | relative_ur }}).
+An extensible knowledge base for automated visualization design. [Website](https://uwdata.github.io/draco) and [Paper]({{ "/publications/#draco" | relative_ur }}).
 
 ### Vega stack
 
@@ -28,7 +28,7 @@ I am the co-author of [Vega-Lite](https://vega.github.io/vega-lite/), a high-lev
 
 #### Polestar and Voyager
 
-We built the data exploration tools [Polestar](https://github.com/vega/polestar) and [Voyager](https://github.com/vega/voyager) on top of Vega-Lite. We have [written a paper about these systems]({{ "/publications/#voyager-exploratory-analysis-via-faceted-browsing-of-visualization-recommendations" | relative_url }}).
+We built the data exploration tools [Polestar](https://github.com/vega/polestar) and [Voyager](https://github.com/vega/voyager) on top of Vega-Lite. We have [written a paper about these systems]({{ "/publications/#voyager" | relative_url }}).
 
 #### ipyvega
 
