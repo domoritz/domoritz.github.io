@@ -22,7 +22,7 @@ With the Interactive Data Lab, we created the [Vega stack](https://vega.github.i
 
 #### Vega-Lite
 
-I am the co-author of [Vega-Lite](https://vega.github.io/vega-lite/), a high-level visualization grammar. It provides a concise JSON syntax for supporting rapid generation of visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.
+I am the co-author of [Vega-Lite](https://vega.github.io/vega-lite/), a high-level visualization grammar. It provides a concise JSON syntax for supporting rapid generation of visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications. Read more in our [blog post](https://medium.com/@uwdata/introducing-vega-lite-2-0-de6661c12d58).
 
 {% include image name="vega-lite.png" caption="Vega-Lite examples." %}
 
