@@ -255,6 +255,8 @@
   link: https://vega.github.io/
   pdf: https://idl.cs.washington.edu/files/2015-Voyager-InfoVis.pdf
   video: https://vimeo.com/135417594
+  doi: 10.1109/TVCG.2015.2467191
+  short_doi: 10/bdsz
   awards:
     - Invited to SIGGRAPH 2016
   tweet: Visualization recommendation promotes breadth and prevents early fixation.
