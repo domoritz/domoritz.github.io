@@ -212,6 +212,8 @@
   venue: HILDA at SIGMOD 2016
   venue_location: San Francisco, CA, USA
   venue_url: http://www.hilda.io/2016
+  doi: 10.1145/2939502.2939506
+  short_doi: 10/cssd
   pdf: /papers/2016-Compassql-HILDA.pdf
   tweet: CompassQL is a query language for visualization recommendation.
 
