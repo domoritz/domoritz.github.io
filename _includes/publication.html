@@ -52,6 +52,11 @@
         <i class="fas fa-book" aria-hidden="true"></i> Bibtex
       </a>
     {% endif %}
+    {% if pub.arxiv %}
+      <a href="https://arxiv2bibtex.org/?q={{ pub.arxiv | cgi_escape }}">
+        <i class="fas fa-book" aria-hidden="true"></i> Bibtex
+      </a>
+    {% endif %}
     {% if pub.short_doi %}
       <a href="http://doi.org/{{ pub.short_doi }}">
         <i class="fas fa-anchor" aria-hidden="true"></i> DOI: {{ pub.short_doi }}
