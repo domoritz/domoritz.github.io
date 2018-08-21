@@ -5,7 +5,7 @@
     - Dominik Moritz
     - Danyel Fisher
   pdf: https://arxiv.org/pdf/1808.06019.pdf
-  arxiv: 1808.06019
+  arxiv: "1808.06019"
 
 - id: beyond-heuristics
   title: "Beyond Heuristics: Learning Visualization Design"
@@ -21,7 +21,7 @@
   venue_location: Berlin, Germany
   venue_url: https://c4pgv.dbvis.de/
   pdf: https://arxiv.org/pdf/1807.06641.pdf
-  arxiv: 1807.06641
+  arxiv: "1807.06641"
 
 - id: draco
   title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"

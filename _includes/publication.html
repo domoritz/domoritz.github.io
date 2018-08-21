@@ -51,8 +51,7 @@
       <a href="https://www.doi2bib.org/bib/{{ pub.doi | cgi_escape }}">
         <i class="fas fa-book" aria-hidden="true"></i> Bibtex
       </a>
-    {% endif %}
-    {% if pub.arxiv %}
+    {% elsif pub.arxiv %}
       <a href="https://arxiv2bibtex.org/?q={{ pub.arxiv | cgi_escape }}">
         <i class="fas fa-book" aria-hidden="true"></i> Bibtex
       </a>
@@ -60,6 +59,11 @@
     {% if pub.short_doi %}
       <a href="http://doi.org/{{ pub.short_doi }}">
         <i class="fas fa-anchor" aria-hidden="true"></i> DOI: {{ pub.short_doi }}
+      </a>
+    {% endif %}
+    {% if pub.arxiv %}
+      <a href="https://arxiv.org/abs/{{ pub.arxiv }}">
+        <i class="fas fa-anchor" aria-hidden="true"></i> arXiv: {{ pub.arxiv }}
       </a>
     {% endif %}
     {% if pub.link %}
