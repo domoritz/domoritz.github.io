@@ -1,3 +1,12 @@
+- id: million-time-series
+  title: "Visualizing a Million Time Series with the Density Line Chart"
+  year: 2018
+  authors:
+    - Dominik Moritz
+    - Danyel Fisher
+  pdf: https://arxiv.org/pdf/1808.06019.pdf
+  arxiv: arXiv:1808.06019
+
 - id: beyond-heuristics
   title: "Beyond Heuristics: Learning Visualization Design"
   year: 2018
