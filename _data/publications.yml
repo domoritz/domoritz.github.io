@@ -38,6 +38,8 @@
     - Best Paper Award
   venue: Infovis 2018
   venue_location: Berlin, Germany
+  doi: 10.1109/TVCG.2018.2865240
+  short_doi: 10/cs68
   pdf: /papers/2018-Draco-InfoVis.pdf
   link: https://uwdata.github.io/draco/
   tweet: An extensible visualization recommendation system that learns effectiveness rules from data.
