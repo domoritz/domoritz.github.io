@@ -12,6 +12,10 @@ Here are some projects I have worked on for school, work, or fun that you might 
 
 ## Research
 
+### Falcon
+
+An interactive crossfilter application for big data. Check it out at [github.com/uwdata/falcon](https://github.com/uwdata/falcon).
+
 ### Draco
 
 An extensible knowledge base for automated visualization design. [Website](https://uwdata.github.io/draco) and [Paper]({{ "/publications/#draco" | relative_ur }}).
