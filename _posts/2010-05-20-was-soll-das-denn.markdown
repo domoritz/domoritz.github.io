@@ -7,7 +7,7 @@ title: Was soll das denn?
 wordpress_id: 938
 ---
 
-"Traue keiner Statistik, die Du nicht selber gefälscht hast". Es ist bis heute nicht geklärt von wem das Zitat kommt. Wahr ist es trotzdem. Manchmal ist es offensichtlicher, als man denkt. ja geradezu frech. Ich habe eine Statistik auf [http://weblogs.mozillazine.org/asa/archives/2010/05/firefox_and_chrome_u.html](http://weblogs.mozillazine.org/asa/archives/2010/05/firefox_and_chrome_u.html) gesehen, die wirklich überaus ungelungen ist.
+"Traue keiner Statistik, die Du nicht selber gefälscht hast". Es ist bis heute nicht geklärt von wem das Zitat kommt. Wahr ist es trotzdem. Manchmal ist es offensichtlicher, als man denkt. Ja geradezu frech. Ich habe eine Statistik auf [http://weblogs.mozillazine.org/asa/archives/2010/05/firefox_and_chrome_u.html](http://weblogs.mozillazine.org/asa/archives/2010/05/firefox_and_chrome_u.html) gesehen, die wirklich überaus ungelungen ist.
 
 [schlechte statistik](http://farm2.static.flickr.com/1168/4622613463_09b644c84a_o.png)
 
