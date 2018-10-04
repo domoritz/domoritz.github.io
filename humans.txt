@@ -3,11 +3,6 @@
 	Twitter: @domoritz
 	From: Berlin, Germany
 
-/* THANKS */
-	Theme inspiration: Max Ogden
-	Twitter: @maxogden
-	From: Oakland, CA, USA
-
 /* SITE */
 	Language: English / German
 	Doctype: HTML5
