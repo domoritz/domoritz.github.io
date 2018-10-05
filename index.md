@@ -23,7 +23,7 @@ I'm a PhD candidate at the [University of Washington](https://www.washington.edu
 </div>
 
 {:.mugshot}
-<img src="{{ '/images/dominik.jpg' | absolute_url }}" alt="Image of me">
+<img src="{{ '/images/dominik_berlin.jpg' | absolute_url }}" alt="Image of me">
 
 </div>
 
