@@ -1,3 +1,14 @@
+- id: istc-chapter
+  title: "Advances in Visualization of Big Data."
+  year: 2019
+  authors:
+    - Leilani Battle
+    - Dominik Moritz
+    - Danyel Fisher
+    - Jeffrey Heer
+  description: "Chapter of the book \"Managing Heterogenous Data and Polystore Databases\" edited by Vijay Gadepally, Sam Madden, Michael Stonebraker and to be published by MIT Press."
+
+
 - id: million-time-series
   title: "Visualizing a Million Time Series with the Density Line Chart"
   year: 2018
