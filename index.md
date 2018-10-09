@@ -39,4 +39,3 @@ During my first year at UW, I received support from the [Fulbright program](http
 * [<i class="fab fa-github fa-lg"></i> Github](https://github.com/domoritz)
 * [<i class="fab fa-facebook-square fa-lg"></i> Facebook](https://www.facebook.com/moritz.dominik)
 * [<i class="fab fa-linkedin-in fa-lg"></i> LinkedIn](https://www.linkedin.com/pub/dominik-moritz/24/b81/409)
-* [<i class="fab fa-google-plus-g fa-lg"></i> Google+](https://plus.google.com/110111947282446666823)
