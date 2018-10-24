@@ -46,6 +46,8 @@
 
     a {
       margin-right: 1em;
+      display: inline-block;
+
       &:hover {
         text-decoration: none;
         border-bottom: 1px solid $link-color;
