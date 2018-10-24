@@ -56,6 +56,7 @@
   link: https://uwdata.github.io/draco/
   tweet: An extensible visualization recommendation system that learns effectiveness rules from data.
   blog: https://medium.com/@uwdata/64ce20287e9d
+  slides: /talks/Draco-Infovis-2018.pdf
 
 - id: vsup
   title: "Value-Suppressing Uncertainty Palettes"
