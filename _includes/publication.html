@@ -63,7 +63,12 @@
     {% endif %}
     {% if pub.arxiv %}
       <a href="https://arxiv.org/abs/{{ pub.arxiv }}">
-        <i class="fas fa-anchor" aria-hidden="true"></i> arXiv: {{ pub.arxiv }}
+        <i class="fas fa-archive" aria-hidden="true"></i> arXiv: {{ pub.arxiv }}
+      </a>
+    {% endif %}
+    {% if pub.osf %}
+      <a href="https://osf.io/{{ pub.osf }}">
+        <i class="fas fa-archive" aria-hidden="true"></i> OSF: {{ pub.osf }}
       </a>
     {% endif %}
     {% if pub.link %}

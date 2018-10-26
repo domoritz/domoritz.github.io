@@ -57,7 +57,7 @@
   tweet: An extensible visualization recommendation system that learns effectiveness rules from data.
   blog: https://medium.com/@uwdata/64ce20287e9d
   slides: /talks/Draco-Infovis-2018.pdf
-  osf: https://osf.io/3eg9c/
+  osf: 3eg9c
 
 - id: vsup
   title: "Value-Suppressing Uncertainty Palettes"
