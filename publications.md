@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 ---
 
-You can find my academic and professional experience in [my CV]({{ 'cv.html' | relative_url  }}). Talks are listed [below](#talks). A mirror of my papers is available on [OSF](https://osf.io/k7n9v/).
+You can find my academic and professional experience in [my CV]({{ 'cv.html' | relative_url  }}). Talks are listed [below](#talks).
 
 {% assign pubyears = site.data.publications | group_by:"year" %}
 {% for year in pubyears %}
