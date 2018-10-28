@@ -8,6 +8,11 @@
     - Jeffrey Heer
   description: "Chapter of the book \"Managing Heterogenous Data and Polystore Databases\" edited by Vijay Gadepally, Sam Madden, Michael Stonebraker and to be published by MIT Press."
 
+- id: altair
+  title: "Altair: Interactive Statistical Visualizations for Python"
+  venue: The Journal of Open Source Software
+  year: 2018
+  description: in preparation
 
 - id: million-time-series
   title: "Visualizing a Million Time Series with the Density Line Chart"
