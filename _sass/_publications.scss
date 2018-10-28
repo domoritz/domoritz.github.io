@@ -46,7 +46,7 @@
 
     a {
       margin-right: 1em;
-      display: inline-block;
+      white-space: nowrap;
 
       &:hover {
         text-decoration: none;
