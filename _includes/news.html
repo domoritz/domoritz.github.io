@@ -1,0 +1,4 @@
+<li>
+  {{ news.message | markdownify | remove: '<p>' | remove: '</p>' }}
+  <time datetime="{{ news.date }}">{{ news.date | date: "%b %Y" }}</time>
+</li>

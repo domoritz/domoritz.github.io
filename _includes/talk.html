@@ -1,18 +1,7 @@
 <div class="talk">
-  <h3>
-    {{ talk.title }}
-    {% if talk.upcoming %}
-      <small>
-        (Upcoming)
-      </small>
-    {% endif %}
-  </h3>
+  {{ talk.location }}{% if talk.city %},  {{ talk.city }}{% endif %}
 
-  <p class="description">
-    {{ talk.location }}
-  </p>
-
-  <div class="extra-links">
+  <span class="extra-links">
     {% if talk.slides %}
     <a href="{{ talk.slides }}">
       <i class="far fa-file-pdf" aria-hidden="true"></i> Slides
@@ -27,8 +16,12 @@
 
     {% if talk.url %}
     <a href="{{ talk.url }}">
-      <i class="fas fa-external-link-alt" aria-hidden="true"></i> Website
+      <i class="fas fa-link" aria-hidden="true"></i> Website
     </a>
     {% endif %}
-  </div>
+  </span>
+
+  <time datetime="{{ talk.date }}">
+    {{ talk.date | date: "%b %Y" }}
+  </time>
 </div>

@@ -51,15 +51,6 @@ nav {
   }
 }
 
-@include media-query($content-width + 2*$spacing-unit) {
-  nav .external {
-    font-size: 1.5em;
-    .name {
-      display: none;
-    }
-  }
-}
-
 @include media-query($on-laptop) {
   nav {
     &.container {
@@ -96,6 +87,7 @@ nav {
     }
     .external {
       flex: 0 1 100%;
+      justify-content: space-around;
     }
     .site-title {
       text-align: center;

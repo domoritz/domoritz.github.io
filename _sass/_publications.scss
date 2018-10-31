@@ -1,6 +1,6 @@
-.publication, .talk {
+.publication {
   h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 0em;
     font-weight: $bold-font-weight;
   }
@@ -12,6 +12,7 @@
 
   .authors {
     margin-bottom: 0.3em;
+    font-weight: 300;
     a {
       color: $text-color;
     }
@@ -42,7 +43,9 @@
   }
 
   .extra-links {
-    margin-top: 1em;
+    margin-top: 0.5em;
+    font-weight: 300;
+    font-size: 0.9em;
 
     a {
       margin-right: 1em;
@@ -56,20 +59,27 @@
   }
 }
 
-.talk {
-  .description {
-    font-size: 1.1em;
+.talk-title {
+  font-size: 1.1em;
+  font-weight: $bold-font-weight;
+}
 
-    small {
-      color: #999;
-    }
+.talk {
+  time {
+    float: right;
+    color: $grey-color;
   }
 
   .extra-links {
-    margin-top: 0;
-  }
+    font-weight: 300;
+    font-size: 0.8em;
 
-  h3 small {
-    color: #999;
+    a {
+      &:first-child {
+        margin-left: 2em;
+      }
+
+      margin-left: 1em;
+    }
   }
 }

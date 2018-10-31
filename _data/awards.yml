@@ -1,3 +1,9 @@
+- name: InfoVis Best Paper
+  years: 2018
+  description: "For \"Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco\"."
+- name: InfoVis Best Paper
+  years: 2016
+  description: "For \"Vega-Lite: A Grammar of Interactive Graphics\"."
 - name: Fulbright Fellowship
   years: 2013-2014
   sponsor: Bureau of Educational and Cultural Affairs

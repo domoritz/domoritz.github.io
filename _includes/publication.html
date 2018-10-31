@@ -23,7 +23,7 @@
 
   {% if pub.description %}
     <p class="description">
-      {{ pub.description | markdownify }}
+      {{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}
     </p>
   {% endif %}
 
@@ -45,6 +45,26 @@
     {% if pub.pdf %}
       <a href="{{ pub.pdf }}">
         <i class="far fa-file-pdf" aria-hidden="true"></i> Pdf
+      </a>
+    {% endif %}
+    {% if pub.link %}
+      <a href="{{ pub.link }}">
+        <i class="fas fa-link" aria-hidden="true"></i> Project
+      </a>
+    {% endif %}
+    {% if pub.blog %}
+      <a href="{{ pub.blog }}">
+        <i class="fas fa-newspaper" aria-hidden="true"></i> Article
+      </a>
+    {% endif %}
+    {% if pub.video %}
+      <a href="{{ pub.video }}">
+        <i class="fas fa-tv" aria-hidden="true"></i> Video
+      </a>
+    {% endif %}
+    {% if pub.slides %}
+      <a href="{{ pub.slides }}">
+        <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
       </a>
     {% endif %}
     {% if pub.doi %}
@@ -69,26 +89,6 @@
     {% if pub.osf %}
       <a href="https://osf.io/{{ pub.osf }}">
         <i class="fas fa-archive" aria-hidden="true"></i> OSF: {{ pub.osf }}
-      </a>
-    {% endif %}
-    {% if pub.link %}
-      <a href="{{ pub.link }}">
-        <i class="fas fa-external-link-alt" aria-hidden="true"></i> Project
-      </a>
-    {% endif %}
-    {% if pub.blog %}
-      <a href="{{ pub.blog }}">
-        <i class="fas fa-newspaper" aria-hidden="true"></i> Article
-      </a>
-    {% endif %}
-    {% if pub.video %}
-      <a href="{{ pub.video }}">
-        <i class="fas fa-tv" aria-hidden="true"></i> Video
-      </a>
-    {% endif %}
-    {% if pub.slides %}
-      <a href="{{ pub.slides }}">
-        <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
       </a>
     {% endif %}
     </div>

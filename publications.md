@@ -18,13 +18,13 @@ You can find my academic and professional experience in [my CV]({{ 'cv.html' | r
 
 # Talks
 
-These are talks I have given outside of regular conferences. Want me to give a talk? Send me an [email](mailto:{{ site.email }})!
+Want me to give a talk? Send me an [email](mailto:{{ site.email }})!
 
-{% assign talkyears = site.data.talks | group_by:"year" %}
-{% for year in talkyears %}
-## {{ year.name }}
-{:#y{{ year.name }}}
-{% for talk in year.items %}
+{% assign talktitles = site.data.talks | group_by:"title" %}
+{% for title in talktitles %}
+{:.talk-title}
+### {{ title.name }}
+{% for talk in title.items %}
   {% include talk.html talk=talk %}
 {% endfor %}
 {% endfor %}

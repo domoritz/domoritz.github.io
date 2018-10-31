@@ -13,6 +13,8 @@ title: CV
     <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}"/>
     <link rel="icon" type="image/jpeg" href="{{ '/favicon.png' | relative_url }}" sizes="250x250" />
 
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+
     {% seo %}
 
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
@@ -20,6 +22,10 @@ title: CV
       body {
         font-family: "Georgia", serif;
         font-size: 14px;
+      }
+
+      b, strong {
+        font-weight: 600;
       }
 
       /* It's not good to hide links but looks better in a CV. */
@@ -36,7 +42,7 @@ title: CV
         margin-left: 105px;
       }
 
-      .year-container {
+      .date-container {
         width: 100%;
         margin-left: 0;
         display: flex;
@@ -45,11 +51,15 @@ title: CV
         justify-content: space-between;
       }
 
-      .year-container h3 {
+      .date-container h3, .date-container .fill {
         flex: 1;
       }
 
-      .year-container .year {
+      .cv-talk-title {
+        margin-top: 1.2em;
+      }
+
+      .date-container .date, .date-container time {
         display: block;
         width: 85px;
         text-align: right;
@@ -57,7 +67,7 @@ title: CV
         flex-shrink: 0;
       }
 
-      .year-container .right {
+      .date-container .right {
         padding-left: 10px;
         color: #828282;
         font-size: .9em;
@@ -71,7 +81,8 @@ title: CV
       }
 
       h1, h2 {
-        margin: .9em 0 .1em 0;
+        color: #0A656C;  /* brand color */
+        margin: 1em 0 .2em 0;
       }
 
       h1 {
@@ -150,7 +161,14 @@ title: CV
       }
 
       @media print {
+
+        @page {
+          size: auto;
+          margin: 10mm 12mm 12mm 0mm;
+        }
+
         body {
+          margin: 0;
           font-size: 11px;
         }
 
@@ -197,8 +215,8 @@ My research explores the intersection of databases and data visualization, where
 <h2>Education</h2>
 
 {% for ed in site.data.education %}
-  <div class="year-container">
-    <span class="year">{{ed.years}}</span>
+  <div class="date-container">
+    <span class="date">{{ed.years}}</span>
     <h3>{{ ed.degree }}, {{ ed.university }}</h3>
     <span class="right">{{ ed.location }}</span>
   </div>
@@ -213,8 +231,8 @@ My research explores the intersection of databases and data visualization, where
 <h2>Notable Awards</h2>
 
 {% for award in site.data.awards %}
-  <div class="year-container">
-    <span class="year">{{award.years}}</span>
+  <div class="date-container">
+    <span class="date">{{ award.years }}</span>
     <h3>{{ award.name }}</h3>
     <span class="right">{{ award.sponsor }}</span>
   </div>
@@ -227,28 +245,27 @@ My research explores the intersection of databases and data visualization, where
 <h2>Publications</h2>
 
 {% for pub in site.data.publications %}
-  {% if pub.venue %}
-    <div class="year-container">
-      <span class="year">{{pub.year}}</span>
-      <h3>{{ pub.title }}</h3>
-    </div>
-    <div class="publication">
-      <p>
-        {% for author in pub.authors %}
-          {% include person person=author %}{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
-      <p class="muted">{{pub.venue}}{% if pub.venue_location%}, {{pub.venue_location}}{% endif %}</p>
-      {% if pub.awards %}<strong class="award">{{pub.awards}}</strong>{% endif %}
-    </div>
-  {% endif %}
+  <div class="date-container">
+    <span class="date">{{pub.year}}</span>
+    <h3>{{ pub.title }}</h3>
+  </div>
+  <div class="publication">
+    <p>
+      {% for author in pub.authors %}
+        {% include person person=author %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    {% if pub.description %}<p class="desc">{{ pub.description }}</p>{% endif %}
+    {% if pub.venue %}<p class="muted">{{ pub.venue }}{% if pub.venue_location%}, {{ pub.venue_location }}{% endif %}</p>{% endif %}
+    {% if pub.awards %}<strong class="award"><i class="fas fa-star" aria-hidden="true"></i> {{ pub.awards }}</strong>{% endif %}
+  </div>
 {% endfor %}
 
 <h2>Professional and Research Experience</h2>
 
 {% for exp in site.data.experience %}
-  <div class="year-container">
-    <span class="year">{{exp.years}}</span>
+  <div class="date-container">
+    <span class="date">{{exp.years}}</span>
     <h3>{% if exp.company %}{{exp.company}} - {% endif %}{{ exp.title }}</h3>
     <span class="right">{{ exp.location }}</span>
   </div>
@@ -266,20 +283,23 @@ My research explores the intersection of databases and data visualization, where
 
 <h2>Talks</h2>
 
-{% for talk in site.data.talks %}
-  <div class="year-container">
-    <span class="year">{{talk.year}}</span>
-    <h3>{{ talk.title }}</h3>
-  </div>
-  <p>{{ talk.location }}</p>
-{% endfor %}
+{% assign talktitles = site.data.talks | group_by:"title" %}
+{% for title in talktitles %}
+<h3 class="cv-talk-title">{{ title.name }}</h3>
+{% for talk in title.items %}
+  <div class="date-container">
+    <time datetime="{{ talk.date }}">{{ talk.date | date: "%b %Y" }}</time>
+    <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}</span>
 
+  </div>
+{% endfor %}
+{% endfor %}
 
 <h2>Teaching Experience</h2>
 
 {% for teach in site.data.teaching %}
-  <div class="year-container">
-    <span class="year">{{teach.year}}</span>
+  <div class="date-container">
+    <span class="date">{{teach.year}}</span>
     <h3>{{ teach.title }}</h3>
     <span class="right">{{ teach.location }}</span>
   </div>
@@ -307,8 +327,8 @@ My research explores the intersection of databases and data visualization, where
 <h2>Mentoring Experience</h2>
 
 {% for mentor in site.data.mentoring %}
-  <div class="year-container">
-    <span class="year">{{mentor.year}}</span>
+  <div class="date-container">
+    <span class="date">{{mentor.year}}</span>
     <h3>{{ mentor.title }}</h3>
     <span class="right">{{ mentor.location }}</span>
   </div>

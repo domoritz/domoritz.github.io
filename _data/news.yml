@@ -1,0 +1,12 @@
+- message: "I passed my general exam and am now a PhD candidate."
+  date: 2018-08-22
+- message: "[Draco](https://uwdata.github.io/draco/) receives the best paper award at InfoVIS 2018."
+  date: 2018-07-21
+- message: "I am organizing the [DSIA Workshop](https://www.interactive-analysis.org) at VIS 2018 in Berlin."
+  date: 2018-04-09
+- message: "Vega-Lite is featured by [Nature](https://www.nature.com/articles/d41586-018-01322-9?utm_source=twt_nnc&utm_medium=social&utm_campaign=naturenews&sf180719177=1) as a visualization tool for interactive and reproductible publishing."
+  date: 2018-01-30
+- message: "Vega-Lite 2.1 released with support for geographic maps."
+  date: 2018-01-26
+- message: "Vega-Lite is used for [illustrations](https://makingdatavisual.github.io/figurelist.html) in \"Making Data Visual\" by Danyel Fisher and Miriah Meyer."
+  date: 2018-01-24

@@ -4,35 +4,67 @@
 
   .intro {
     flex: 1;
+    font-size: 1.1em;
   }
 
-  .mugshot {
-    width: 220px;
-    height: 220px;
+  .me {
     margin-left: $spacing-unit;
     margin-bottom: $spacing-unit;
+
+    font-size: 0.9em;
+    text-align: center;
+
     img {
+      width: 220px;
+      height: 220px;
       border-radius: 6px;
     }
   }
 }
 
-.index-links {
-  list-style: none;
+.news-travel {
+  margin-top: 2 * $spacing-unit;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 4rem 10% 0 10%;
-  li {
-    display: flex;
-    a {
-      padding: 0.4em;
-      color: $text-color;
-      &:hover {
-        text-decoration: none;
-      }
+
+  font-size: 0.9em;
+
+  h2 {
+    font-size: 1.5em;
+    border-bottom: none;
+  }
+
+  & > div {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.news {
+  ul {
+    list-style: none;
+    margin-left: 0;
+
+    li {
+      margin-bottom: 1em;
     }
+
+    time {
+      display: block;
+      color: $grey-color;
+      font-size: 0.8em;
+    }
+  }
+}
+
+.travel {
+  padding-left: $spacing-unit;
+
+  .date {
+    white-space: nowrap;
+    color: $grey-color;
+    padding-right: 1em;
   }
 }
 
@@ -50,8 +82,13 @@
     }
   }
 
-  .index-links {
-    margin: 4rem 0 0 0;
+  .news-travel {
+    margin-top: $spacing-unit;
+    flex-direction: column;
+
+    .travel {
+      padding-left: 0;
+    }
   }
 }
 
