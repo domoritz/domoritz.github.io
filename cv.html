@@ -267,7 +267,7 @@ My research explores the intersection of databases and data visualization, where
         {% include person person=author %}{% unless forloop.last %}, {% endunless %}
       {% endfor %}
     </p>
-    {% if pub.description %}<p class="desc">{{ pub.description }}</p>{% endif %}
+    {% if pub.description %}<p class="desc">{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
     {% if pub.venue %}<p class="muted">{{ pub.venue }}{% if pub.venue_location%}, {{ pub.venue_location }}{% endif %}</p>{% endif %}
     {% if pub.awards %}<strong class="award"><i class="fas fa-star" aria-hidden="true"></i> {{ pub.awards }}</strong>{% endif %}
   </div>
