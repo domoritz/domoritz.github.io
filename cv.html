@@ -142,6 +142,17 @@ title: CV
         margin-left: 0;
       }
 
+      .refs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between
+      }
+
+      .refs > p {
+        width: 50%;
+      }
+
       /* Link back to homepage */
 
       .back {
@@ -296,6 +307,7 @@ My research explores the intersection of databases and data visualization, where
 {% endfor %}
 {% endfor %}
 
+
 <h2>Teaching Experience</h2>
 
 {% for teach in site.data.teaching %}
@@ -317,13 +329,6 @@ My research explores the intersection of databases and data visualization, where
   </p>
 {% endfor %}
 
-<h2>Service</h2>
-
-<p>
-  Reviewer for TVCG, CHI, Infovis, Eurovis, Pacificvis, and DSIA.
-  Program commitee for <a href="http://hilda.io/2018/">HILDA 2018</a>.
-  Organizer of <a href="https://www.interactive-analysis.org/">DSIA 2018</a>.
-</p>
 
 <h2>Mentoring Experience</h2>
 
@@ -348,6 +353,15 @@ My research explores the intersection of databases and data visualization, where
 {% endfor %}
 
 
+<h2>Service</h2>
+
+<p>
+  Reviewer for TVCG, CHI, Infovis, Eurovis, Pacificvis, and DSIA.
+  Program commitee for <a href="http://hilda.io/2018/">HILDA 2018</a>.
+  Organizer of <a href="https://www.interactive-analysis.org/">DSIA 2018</a>.
+</p>
+
+
 <h2>Relevant Coursework</h2>
 
 {% for institution in site.data.courses %}
@@ -358,6 +372,47 @@ My research explores the intersection of databases and data visualization, where
     </ul>
   </div>
 {% endfor %}
+
+
+<h2>References</h2>
+
+<div class="refs">
+  <p>
+    <strong>Jeffrey Heer</strong><br/>
+    Professor of Computer Science & Engineering<br/>
+    <i>University of Washington</i><br/>
+    <a href="mailto:jheer@uw.edu">jheer@uw.edu</a>
+  </p>
+
+  <p>
+    <strong>Bill Howe</strong><br/>
+    Professor at the Information School<br/>
+    <i>University of Washington</i><br/>
+    <a href="mailto:billhowe@uw.edu">billhowe@uw.edu</a>
+  </p>
+
+  <p>
+    <strong>Danyel Fisher</strong><br/>
+    Principal Design Researcher<br/>
+    <i>Honeycomb</i><br/>
+    Former Senior Researcher at Microsoft Research<br/>
+    <a href="mailto:danyel@gmail.com">danyel@gmail.com</a>
+  </p>
+
+  <p>
+    <strong>Tim Kraska</strong><br/>
+    Professor of Electrical Engineering & Computer Science<br/>
+    <i>Massachusetts Institute of Technology</i><br/>
+    <a href="mailto:kraska@mit.edu">kraska@mit.edu</a>
+  </p>
+
+  <p>
+    <strong>Steven Franconeri</strong><br/>
+    Professor of Psychology<br/>
+    <i>Northwestern University</i><br/>
+    <a href="mailto:franconeri@northwestern.edu">franconeri@northwestern.edu</a>
+  </p>
+</div>
 
       </section>
     </div>

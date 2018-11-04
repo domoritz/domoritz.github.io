@@ -3,7 +3,7 @@
   role: Instructor
   url: http://www.openvisconf.com/workshops/#vega
   year: 2018
-  description: Taught 3.5 hour tutorial at OpenVis Conf in Paris. 
+  description: Prepared and presented 3.5 hour tutorial at OpenVis Conf in Paris.
 - title: "HCID 520: User Interface Software & Technology"
   role: Teaching Assistant
   year: 2017
@@ -17,7 +17,7 @@
   professor: Jeffrey Heer
   students: 80 students
   location: University of Washington
-  description: Led visualization tools, CSS, and D3 tutorials, graded, held office hours.
+  description: Developed and presented tutorials on visualization tools, CSS, and D3. Graded assignments, held office hours.
 - title: "Vega-Lite Workshop"
   year: 2017
   location: San Diego Supercomputer Center, UCSD
