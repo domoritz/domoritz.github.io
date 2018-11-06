@@ -54,6 +54,7 @@
   venue_url: https://c4pgv.dbvis.de/
   pdf: https://arxiv.org/pdf/1807.06641.pdf
   arxiv: "1807.06641"
+  tweet: Apply ML methods to leverage empirical and curated visualization data for automated design.
 
 - id: draco
   title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
@@ -75,7 +76,7 @@
   short_doi: 10/cs68
   pdf: /papers/2018-Draco-InfoVis.pdf
   link: https://uwdata.github.io/draco/
-  tweet: An extensible visualization recommendation system that learns effectiveness rules from data.
+  tweet: Draco models visualization guidelines as logical constraints. Shareable design guidelines, formal reasoning, vis recommendation & more.
   blog: https://medium.com/@uwdata/64ce20287e9d
   slides: /talks/Draco-Infovis-2018.pdf
   osf: 3eg9c
