@@ -17,7 +17,7 @@
 - id: spacegraphcats
   title: Exploring neighborhoods in large metagenome assembly graphs reveals hidden sequence diversity
   year: 2018
-  author:
+  authors:
     - C. Titus Brown
     - Dominik Moritz
     - Michael O'Brien
