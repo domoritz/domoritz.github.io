@@ -14,6 +14,22 @@
   year: 2018
   description: in preparation
 
+- id: spacegraphcats
+  title: Exploring neighborhoods in large metagenome assembly graphs reveals hidden sequence diversity
+  year: 2018
+  author:
+    - C. Titus Brown
+    - Dominik Moritz
+    - Michael O'Brien
+    - Felix Reidl
+    - Taylor Reiter
+    - Blair Sullivan
+  doi: 10.1101/462788
+  short_doi: 10/cwrw
+  pdf: https://www.biorxiv.org/content/early/2018/11/05/462788.full.pdf
+  description: Preprint on bioRxiv.
+  link: https://www.biorxiv.org/content/early/2018/11/05/462788
+
 - id: million-time-series
   title: "Visualizing a Million Time Series with the Density Line Chart"
   year: 2018
