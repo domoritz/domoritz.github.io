@@ -287,7 +287,7 @@ My research explores the intersection of databases and data visualization, where
         {% include person person=mentor %}{% unless forloop.last %}, {% endunless %}
       {% endfor %}<br/>
     {% endif %}
-    {{ exp.description }}
+    {{ exp.description | markdownify | remove: '<p>' | remove: '</p>' }}
     <small class="muted">[{% for skill in exp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}]</small>
   </p>
 {% endfor %}
