@@ -19,7 +19,7 @@
     - Danyel Fisher
     - Bolin Ding
     - Chi Wang
-  description: Developed and user tested a UI for an approximate query processing system. Published a CHI paper, two workshop papers, and filed three patents.
+  description: Developed and user tested a UI for an approximate query processing system. Published a CHI paper, two workshop papers, and [filed](https://patents.google.com/patent/US20180260451A1) [three](https://patents.google.com/patent/US20180260985A1) [patents](https://patents.google.com/patent/US20180260450A1).
   project: Pangloss
   skills:
     - Approximate Query Processing
