@@ -43,9 +43,17 @@ title: CV
         margin-left: 105px;
       }
 
+      article {
+        margin-left: 0 !important;
+      }
+
+      article > * {
+        margin-left: 105px;
+      }
+
       .date-container {
         width: 100%;
-        margin-left: 0;
+        margin-left: 0 !important;
         display: flex;
         flex-direction: row;
         align-items: baseline;
@@ -79,6 +87,7 @@ title: CV
         border: none;
         color: #333;
         font-family: Halvetica Neue, sans-serif;
+        page-break-after: avoid;
       }
 
       h1, h2 {
@@ -106,7 +115,8 @@ title: CV
       }
 
       h3 {
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
         font-size: 1.1em;
         font-weight: bold;
       }
@@ -146,7 +156,7 @@ title: CV
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content:space-between
+        justify-content: space-between;
       }
 
       .refs > p {
@@ -173,10 +183,9 @@ title: CV
       }
 
       @media print {
-
         @page {
           size: auto;
-          margin: 10mm 12mm 12mm 0mm;
+          margin: 12mm 12mm 12mm 12mm;
         }
 
         body {
@@ -186,6 +195,10 @@ title: CV
 
         .no-print, .no-print * {
           display: none !important;
+        }
+
+        h1, h2 {
+          margin: .4em 0 .1em 0;
         }
       }
     </style>
@@ -227,8 +240,9 @@ My research explores the intersection of databases and data visualization, where
 <h2>Education</h2>
 
 {% for ed in site.data.education %}
+<article>
   <div class="date-container">
-    <span class="date">{{ed.years}}</span>
+    <span class="date">{{ ed.years }}</span>
     <h3>{{ ed.degree }}, {{ ed.university }}</h3>
     <span class="right">{{ ed.location }}</span>
   </div>
@@ -237,12 +251,14 @@ My research explores the intersection of databases and data visualization, where
       <span>{{ des | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% unless forloop.last %}<br/>{% endunless %}
     {% endfor %}
   </p>
+</article>
 {% endfor %}
 
 
 <h2>Notable Awards</h2>
 
 {% for award in site.data.awards %}
+<article>
   <div class="date-container">
     <span class="date">{{ award.years }}</span>
     <h3>{{ award.name }}</h3>
@@ -251,15 +267,17 @@ My research explores the intersection of databases and data visualization, where
   <p>
     {{ award.description }}
   </p>
+</article>
 {% endfor %}
 
 
 <h2>Publications</h2>
 
 {% for pub in site.data.publications %}
+<article>
   <div class="date-container">
-    <span class="date">{{pub.year}}</span>
-    <h3>{{ pub.title }}</h3>
+    <span class="date">{{ pub.year }}</span>
+    <h3>{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{%endif%}</h3>
   </div>
   <div class="publication">
     <p>
@@ -271,13 +289,31 @@ My research explores the intersection of databases and data visualization, where
     {% if pub.venue %}<p class="muted">{{ pub.venue }}{% if pub.venue_location%}, {{ pub.venue_location }}{% endif %}</p>{% endif %}
     {% if pub.awards %}<strong class="award"><i class="fas fa-star" aria-hidden="true"></i> {{ pub.awards }}</strong>{% endif %}
   </div>
+</article>
+{% endfor %}
+
+<h2>Patents</h2>
+
+{% for patent in site.data.patents %}
+  <div class="date-container">
+    <span class="date">{{ patent.date | date: "%b %Y" }}</span>
+    <h3><a href="{{ patent.url }}">{{ patent.title }}</a></h3>
+  </div>
+  <div class="patent">
+    <p>
+      {% for author in patent.authors %}
+        {% include person person=author %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+  </div>
 {% endfor %}
 
 <h2>Professional and Research Experience</h2>
 
 {% for exp in site.data.experience %}
+<article>
   <div class="date-container">
-    <span class="date">{{exp.years}}</span>
+    <span class="date">{{ exp.years }}</span>
     <h3>{% if exp.company %}{{exp.company}} - {% endif %}{{ exp.title }}</h3>
     <span class="right">{{ exp.location }}</span>
   </div>
@@ -290,6 +326,7 @@ My research explores the intersection of databases and data visualization, where
     {{ exp.description | markdownify | remove: '<p>' | remove: '</p>' }}
     <small class="muted">[{% for skill in exp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}]</small>
   </p>
+</article>
 {% endfor %}
 
 
@@ -297,20 +334,23 @@ My research explores the intersection of databases and data visualization, where
 
 {% assign talktitles = site.data.talks | group_by:"title" %}
 {% for title in talktitles %}
-<h3 class="cv-talk-title">{{ title.name }}</h3>
-{% for talk in title.items %}
-  <div class="date-container">
-    <time datetime="{{ talk.date }}">{{ talk.date | date: "%b %Y" }}</time>
-    <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}</span>
+<article>
+  <h3 class="cv-talk-title">{{ title.name }}</h3>
+  {% for talk in title.items %}
+    <div class="date-container">
+      <time datetime="{{ talk.date }}">{{ talk.date | date: "%b %Y" }}</time>
+      <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}</span>
 
-  </div>
-{% endfor %}
+    </div>
+  {% endfor %}
+</article>
 {% endfor %}
 
 
 <h2>Teaching Experience</h2>
 
 {% for teach in site.data.teaching %}
+<article></article>
   <div class="date-container">
     <span class="date">{{teach.year}}</span>
     <h3>{{ teach.title }}</h3>
@@ -325,8 +365,9 @@ My research explores the intersection of databases and data visualization, where
       {{ teach.students }}
       <br/>
     {% endif %}
-    {{ teach.description }}
+    {{ teach.description | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
+</article>
 {% endfor %}
 
 
@@ -356,21 +397,25 @@ My research explores the intersection of databases and data visualization, where
 <h2>Service</h2>
 
 <p>
-  Reviewer for TVCG, CHI, Infovis, Eurovis, Pacificvis, and DSIA.
+  Reviewer for ACM CHI, IEEE VIS, TVCG, Eurovis, Pacificvis, HILDA, and DSIA.
   Program commitee for <a href="http://hilda.io/2018/">HILDA 2018</a>.
   Organizer of <a href="https://www.interactive-analysis.org/">DSIA 2018</a>.
+  <br/>
+  Member of the <a href="https://frictionlessdata.io/">Frictionless Data</a> working group that aims to submit a specification to the <a href="https://www.ietf.org/">IETF</a>.
 </p>
 
 
 <h2>Relevant Coursework</h2>
 
 {% for institution in site.data.courses %}
+<article>
   <h3>{{ institution.title }}</h3>
   <div>
     <ul>
       {% for course in institution.courses %}<li>{{ course.title }}{% if course.with %}<span class="muted"> ({% include person person=course.with %})</span>{% endif %}</li>{% endfor %}
     </ul>
   </div>
+</article>
 {% endfor %}
 
 
