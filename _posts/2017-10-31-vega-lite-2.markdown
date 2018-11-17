@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Introducing Vega-Lite 2.0"
+description: A blog post to announce the release of Vega-Lite 2.
+---
+
+Ham, Arvind, Jeff and I wrote a [blog post about the release of Vega-Lite 2](https://medium.com/@uwdata/introducing-vega-lite-2-0-de6661c12d58).

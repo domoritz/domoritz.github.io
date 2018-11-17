@@ -23,7 +23,7 @@ I combine large-scale systems with interactive data visualization to develop too
 
 During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). Until 2013, I studied IT-Systems Engineering at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), Google, [Google Research](https://ai.google/research/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). Details are in my [CV]({{ "/cv.html" | relative_url }}).
 
-<span style="color:firebrick; font-weight: bold">I am on the research faculty market this year.</span>
+<span style="color:firebrick; font-weight: bold">I am on the research faculty market this year. Please get in touch if you are hiring.</span>
 
 <div class="news-travel" markdown="1">
 
