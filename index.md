@@ -8,7 +8,7 @@ title: "Hi, I'm Dominik Moritz"
 <div class="intro" markdown="1">
 I'm a PhD candidate at the [University of Washington](https://www.washington.edu/) in the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/). I am advised by [Jeff Heer](https://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/), the [iSchool](https://ischool.uw.edu/), and the [Database Group](https://db.cs.washington.edu/).
 
-I combine large-scale systems with interactive data visualization to develop tools that enhance people's ability to understand and communicate data. Systems I have developed have won awards at premier academic venues, and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities. Learn more about my research through my [publications]({{ "/publications/" | relative_url }}) or watch my [talks]({{ "/publications/#talks" | relative_url }}).
+I combine large-scale systems with interactive data visualization to develop tools that enhance people's ability to understand and communicate data. The Systems I develop have won awards at premier academic venues, and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities. Learn more about my research through my [publications]({{ "/publications/" | relative_url }}) or watch my [talks]({{ "/publications/#talks" | relative_url }}).
 </div>
 
 <div class="me" markdown="1">
