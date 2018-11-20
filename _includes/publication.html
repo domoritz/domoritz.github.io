@@ -1,6 +1,6 @@
 {% capture anchor %}{% if pub.id %}{{ pub.id }}{% else %}{{ (pub.title | slugify) }}{% endif %}{% endcapture %}
 
-<div class="publication">
+<div class="publication{% if pub.highlight %} highlight{% endif %}">
   <h3 id="{{ anchor }}">{% for award in pub.awards %}<i class="fas fa-trophy award-icon" title="{{ award }}"></i> {% endfor %}{{ pub.title }}</h3>
   <div class="authors">
     {% for author in pub.authors %}{% include person person=author %}{% unless forloop.last %}, {% endunless %}

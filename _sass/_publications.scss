@@ -1,4 +1,34 @@
+.hidden-pub-placeholder {
+  height: 40px;
+  margin: 1em 0 0 0;
+
+  background-color: #fff;
+  background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAiCAAAAAD+R0FPAAABFElEQVR4Ae2VBXLEQAwE9f+Pmpm9FDBqx7owRwVHXb0w0pncB9W/+F/8xWIV3pdyzyoNrCxuowc4ap/j7YAVxXMarpXOT243l1gQ2zo8VW1vevtIYkE8JY9QMu1vZK0pwuUaxo0VxaY6Ft+2XhnBO8TLHSiBJURndtnxcLndcnE1lrEjF/OT+e0RFrjpMfYis8ASDyJnLamW1KPeS7i6yEtlnF3EGg18PX2VsN/TjCU4s5C9v93KYlufWRJSkjKdkwWebrGZuhcLfXXdhRtcAgzdQvIk4K322FVQ27iQPLvSpBfmOSw9699mC0KOAlgKo9a6Z5Rtl2Yyz2GbKKRlJJ5TKsJGF9mM3PNL5fr/Kf0v/pbiO1KRf3SCO2uYAAAAAElFTkSuQmCC');
+  background-position: 0;
+  background-repeat: repeat-x;
+  background-size: 32px;
+
+  text-align: center;
+
+  button {
+    background: white;
+    padding: 5px;
+    cursor: pointer;
+    color: #666;
+    border: 1px solid #999;
+    border-radius: 3px;
+
+    div {
+      text-align: center;
+    }
+  }
+}
+
 .publication {
+  &.hidden {
+    display: none;
+  }
+
   h3 {
     font-size: 1.2em;
     margin-bottom: 0em;
@@ -18,13 +48,15 @@
     }
   }
 
-  .venue, .venue a {
+  .venue,
+  .venue a {
     color: $grey-color;
   }
 
   .awards {
     margin-top: 0.1em;
     font-weight: $bold-font-weight;
+    color: firebrick;
   }
 
   .tweet {

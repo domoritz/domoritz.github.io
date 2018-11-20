@@ -81,6 +81,7 @@
   blog: https://medium.com/@uwdata/64ce20287e9d
   slides: /talks/Draco-Infovis-2018.pdf
   osf: 3eg9c
+  highlight: true
 
 - id: vsup
   title: "Value-Suppressing Uncertainty Palettes"
@@ -166,6 +167,7 @@
   short_doi: 10/b7jt
   tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
   osf: tfwqj
+  highlight: true
 
 - id: voyager-2
   title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
@@ -189,6 +191,7 @@
   video: https://vimeo.com/199084718
   link: https://idl.cs.washington.edu/papers/voyager2
   tweet: Voyager 2 blends manual and automated chart specification.
+  highlight: true
 
 - id: myria
   title: "The Myria Big Data Management and Analytics System and Cloud Service"
@@ -234,10 +237,11 @@
   doi: 10.1109/TVCG.2016.2599030
   short_doi: 10/f92f32
   slides: /talks/VegaLite-InfoVis-2016.pdf
-  osf: mqzyx
+  odf: mqzyx
   awards:
     - Best Paper Award
   tweet: Vega-Lite is a declarative language for visualization and interaction.
+  highlight: true
 
 - id: sqlshare
   title: "SQLShare: Results from a Multi-Year SQL-as-a-Service Experiment"
@@ -294,6 +298,7 @@
   venue_url: http://www.interactive-analysis.org/
   pdf: http://www.interactive-analysis.org/papers/2015/moritz.pdf
   tweet: Interactive visualizations in client-server systems can have reduced latency.
+  highlight: true
 
 - id: voyager
   title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
@@ -317,6 +322,7 @@
   awards:
     - Invited to SIGGRAPH 2016
   tweet: Visualization recommendation promotes breadth and prevents early fixation.
+  highlight: true
 
 - id: perfopticon
   title: "Perfopticon: Visual Query Analysis for Distributed Databases"
@@ -335,6 +341,7 @@
   doi: 10.1111/cgf.12619
   short_doi: 10/f7kqsv
   tweet: Visual performance debugging for queries in distributed database systems.
+  highlight: true
 
 - id: myria-demo
   title: Demonstration of the Myria Big Data Management Service

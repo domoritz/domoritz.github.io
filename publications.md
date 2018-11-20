@@ -6,6 +6,8 @@ title: Publications
 
 You can find my academic and professional experience in [my CV]({{ 'cv.html' | relative_url  }}). Talks are listed [below](#talks).
 
+This list only shows highlights. You can click <a href="#all" class="show-all">here</a> to show all publications.
+
 {% assign pubyears = site.data.publications | group_by:"year" %}
 {% for year in pubyears %}
 ## {{ year.name }}
@@ -14,6 +16,8 @@ You can find my academic and professional experience in [my CV]({{ 'cv.html' | r
   {% include publication.html pub=pub %}
 {% endfor %}
 {% endfor %}
+
+<span class="stop-marker"></span>
 
 
 # Talks
@@ -28,3 +32,7 @@ Want me to give a talk? Send me an [email](mailto:{{ site.email }})!
   {% include talk.html talk=talk %}
 {% endfor %}
 {% endfor %}
+
+<script>
+  {% include pubfilter.js %}
+</script>
