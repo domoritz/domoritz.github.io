@@ -29,6 +29,7 @@
   pdf: https://www.biorxiv.org/content/early/2018/11/05/462788.full.pdf
   description: Preprint on bioRxiv.
   link: https://www.biorxiv.org/content/early/2018/11/05/462788
+  blog: http://ivory.idyll.org/blog/2018-spacegraphcats-paper.html
 
 - id: million-time-series
   title: "Visualizing a Million Time Series with the Density Line Chart"
@@ -233,6 +234,7 @@
   doi: 10.1109/TVCG.2016.2599030
   short_doi: 10/f92f32
   slides: /talks/VegaLite-InfoVis-2016.pdf
+  osf: mqzyx
   awards:
     - Best Paper Award
   tweet: Vega-Lite is a declarative language for visualization and interaction.
