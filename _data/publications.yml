@@ -24,10 +24,10 @@
     - Felix Reidl
     - Taylor Reiter
     - Blair Sullivan
+  venue: bioRxiv preprint
   doi: 10.1101/462788
   short_doi: 10/cwrw
   pdf: https://www.biorxiv.org/content/early/2018/11/05/462788.full.pdf
-  description: Preprint on bioRxiv.
   link: https://www.biorxiv.org/content/early/2018/11/05/462788
   blog: http://ivory.idyll.org/blog/2018-spacegraphcats-paper.html
 
@@ -37,6 +37,7 @@
   authors:
     - Dominik Moritz
     - Danyel Fisher
+  venue: arXiv
   pdf: https://arxiv.org/pdf/1808.06019.pdf
   arxiv: "1808.06019"
 
