@@ -70,7 +70,7 @@
     - Jeffrey Heer
   awards:
     - Best Paper Award
-  venue: Infovis 2018
+  venue: InfoVis 2018
   venue_location: Berlin, Germany
   venue_url: http://ieeevis.org/year/2018/welcome
   doi: 10.1109/TVCG.2018.2865240
@@ -227,7 +227,7 @@
     - Dominik Moritz
     - Kanit Wongsuphasawat
     - Jeffrey Heer
-  venue: Infovis 2016
+  venue: InfoVis 2016
   venue_url: http://ieeevis.org/
   venue_location: Baltimore, MD, USA
   link: http://idl.cs.washington.edu/papers/vega-lite
@@ -294,7 +294,7 @@
     - Dominik Moritz
     - Jeffrey Heer
     - Bill Howe
-  venue: The 1st Workshop on Data Systems for Interactive Analysis (DSIA) at Vis 2015
+  venue: The 1st Workshop on Data Systems for Interactive Analysis (DSIA) at VIS 2015
   venue_url: http://www.interactive-analysis.org/
   pdf: http://www.interactive-analysis.org/papers/2015/moritz.pdf
   tweet: Interactive visualizations in client-server systems can have reduced latency.
@@ -310,7 +310,7 @@
     - Jock Mackinlay
     - Bill Howe
     - Jeffrey Heer
-  venue: Infovis 2015
+  venue: InfoVis 2015
   venue_url: http://ieeevis.org/
   venue_location: Chicago, IL, USA
   link: https://idl.cs.washington.edu/papers/voyager
@@ -333,7 +333,7 @@
     - Daniel Halperin
     - Bill Howe
     - Jeffrey Heer
-  venue: Eurovis 2015
+  venue: EuroVis 2015
   venue_url: http://www.eurovis2015.it/
   venue_location: Cagliari, Italy
   link: https://idl.cs.washington.edu/papers/perfopticon

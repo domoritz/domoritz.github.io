@@ -71,7 +71,7 @@
     - Adrià Mercader
     - Sean Hammond
     - Stefan Wehrmeyer
-  description: Two-month summer internship and subsequent one-year involvement in development and training for [CKAN](https://ckan.org/), the most deployed open data portal in the world.
+  description: Two-month summer internship and subsequent one-year involvement in development and training for [CKAN](https://ckan.org/), the most deployed open data portal in the world. I developed the [new data store](https://docs.ckan.org/en/latest/maintaining/datastore.html), a [plugin API for CKAN](https://docs.ckan.org/en/latest/maintaining/data-viewer.html), and a [service to automatically ingest data](https://github.com/ckan/datapusher). I also consulted state governments on open data strategies.
   project: CKAN
   skills:
     - Distributed teams
