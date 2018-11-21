@@ -1,3 +1,13 @@
+- id: Falcon
+  title: "Falcon: Balancing Interactive Latency and Resolution Sensitivity for Scalable Linked Visualizations"
+  year: 2019
+  authors:
+    - Dominik Moritz
+    - Bill Howe
+    - Jeffrey Heer
+  venue: Submitted to CHI
+  highlight: true
+
 - id: istc-chapter
   title: "Advances in Visualization of Big Data"
   year: 2019

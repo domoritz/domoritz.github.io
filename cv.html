@@ -24,6 +24,7 @@ title: CV
         font-family: Merriweather, Georgia, serif;
         font-size: 12px;
         background-color: white;
+        line-height: 1.6;
       }
 
       b, strong {
@@ -209,6 +210,11 @@ title: CV
         text-decoration: none;
       }
 
+      .page-break {
+        margin-top: 2em;
+        page-break-before: always;
+      }
+
       @media print {
         @page {
           size: auto;
@@ -220,6 +226,10 @@ title: CV
           font-size: 11px;
         }
 
+        p {
+          margin-bottom: 14px;
+        }
+
         .no-print, .no-print * {
           display: none !important;
         }
@@ -229,7 +239,7 @@ title: CV
         }
 
         h1, h2 {
-          margin: .4em 0 .1em 0;
+          margin: .2em 0 .1em 0;
         }
 
         /* link to interactive talk/publications */
@@ -308,7 +318,7 @@ To enhance people’s ability to understand and communicate large and complex da
 {% endfor %}
 
 
-<h2>Publications <a href="{{ '/publications/' | absolute_url }}">[Interactive Version]</a></h2>
+<h2 class="page-break">Publications <a href="{{ '/publications/' | absolute_url }}">[Interactive Version]</a></h2>
 
 {% assign types = "Conference|Journal|Book Chapter|Demo|Workshop|Thesis" | split: "|" %}
 {% for type in types %}
@@ -355,7 +365,7 @@ To enhance people’s ability to understand and communicate large and complex da
   </div>
 {% endfor %}
 
-<h2>Professional and Research Experience</h2>
+<h2 class="page-break">Professional and Research Experience</h2>
 
 {% for exp in site.data.experience %}
 <article>
@@ -452,21 +462,7 @@ To enhance people’s ability to understand and communicate large and complex da
 </p>
 
 
-<h2>Relevant Coursework</h2>
-
-{% for institution in site.data.courses %}
-<article>
-  <h3>{{ institution.title }}</h3>
-  <div>
-    <ul>
-      {% for course in institution.courses %}<li>{{ course.title }}{% if course.with %}<span class="muted"> ({% include person person=course.with %})</span>{% endif %}</li>{% endfor %}
-    </ul>
-  </div>
-</article>
-{% endfor %}
-
-
-<h2>References</h2>
+<h2 class="page-break">References</h2>
 
 <div class="refs">
   <p>
