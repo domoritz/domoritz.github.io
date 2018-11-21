@@ -1,5 +1,5 @@
 - id: istc-chapter
-  title: "Advances in Visualization of Big Data."
+  title: "Advances in Visualization of Big Data"
   year: 2019
   authors:
     - Leilani Battle
@@ -7,15 +7,28 @@
     - Danyel Fisher
     - Jeffrey Heer
   description: "Chapter of the book \"Managing Heterogenous Data and Polystore Databases\" edited by Vijay Gadepally, Sam Madden, Michael Stonebraker and to be published by MIT Press."
+  tags:
+    - Visualization
+    - Big Data
+    - Book
+    - Data Science
 
 - id: altair
   title: "Altair: Interactive Statistical Visualizations for Python"
   venue: The Journal of Open Source Software
+  venue_url: https://joss.theoj.org/
+  venue_tags:
+    - JOSS
   year: 2018
   description: In preparation.
+  tags:
+    - Visualization
+    - Data Science
+    - Tool
+    - Vega-Lite
 
 - id: spacegraphcats
-  title: Exploring neighborhoods in large metagenome assembly graphs reveals hidden sequence diversity
+  title: "Exploring neighborhoods in large metagenome assembly graphs reveals hidden sequence diversity"
   year: 2018
   authors:
     - C. Titus Brown
@@ -25,11 +38,16 @@
     - Taylor Reiter
     - Blair Sullivan
   venue: bioRxiv preprint
+  venue_tags:
+    - bioRxiv
   doi: 10.1101/462788
   short_doi: 10/cwrw
   pdf: https://www.biorxiv.org/content/early/2018/11/05/462788.full.pdf
   link: https://www.biorxiv.org/content/early/2018/11/05/462788
   blog: http://ivory.idyll.org/blog/2018-spacegraphcats-paper.html
+  tags:
+    - Science
+    - Genomics
 
 - id: million-time-series
   title: "Visualizing a Million Time Series with the Density Line Chart"
@@ -38,8 +56,13 @@
     - Dominik Moritz
     - Danyel Fisher
   venue: arXiv
+  venue_tags:
+    - arXiv
   pdf: https://arxiv.org/pdf/1808.06019.pdf
   arxiv: "1808.06019"
+  tags:
+    - Big Data
+    - Visualization
 
 - id: beyond-heuristics
   title: "Beyond Heuristics: Learning Visualization Design"
@@ -51,12 +74,18 @@
     - Victor Dibia
     - Çağatay Demiralp
     - Jeffrey Heer
-  venue: VisGuides at VIS 2018
+  venue: VisGuides at VIS
+  venue_tags:
+    - VIS
+    - VisGuides
   venue_location: Berlin, Germany
   venue_url: https://c4pgv.dbvis.de/
   pdf: https://arxiv.org/pdf/1807.06641.pdf
   arxiv: "1807.06641"
   tweet: Apply ML methods to leverage empirical and curated visualization data for automated design.
+  tags:
+    - Machine Learning
+    - Recommendation
 
 - id: draco
   title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
@@ -71,7 +100,10 @@
     - Jeffrey Heer
   awards:
     - Best Paper Award
-  venue: InfoVis 2018
+  venue: InfoVis
+  venue_tags:
+    - VIS
+    - InfoVis
   venue_location: Berlin, Germany
   venue_url: http://ieeevis.org/year/2018/welcome
   doi: 10.1109/TVCG.2018.2865240
@@ -83,6 +115,11 @@
   slides: /talks/Draco-Infovis-2018.pdf
   osf: 3eg9c
   highlight: true
+  tags:
+    - Machine Learning
+    - Recommendation
+    - Visualization
+    - Vega-Lite
 
 - id: vsup
   title: "Value-Suppressing Uncertainty Palettes"
@@ -91,7 +128,9 @@
     - Michael Correll
     - Dominik Moritz
     - Jeffrey Heer
-  venue: CHI 2018
+  venue: CHI
+  venue_tags:
+    - CHI
   venue_location: Montréal, Canada
   venue_url: https://chi2018.acm.org/
   tweet: Special color palettes that suppress differences for uncertain values.
@@ -100,6 +139,9 @@
   short_doi: 10/crpf
   link: https://github.com/uwdata/vsup
   blog: https://medium.com/@uwdata/value-suppressing-uncertainty-palettes-426130122ce9
+  tags:
+    - Uncertainty
+    - Visualization
 
 - title: "Extracting Neighborhood Structure from Very Large DNA Graphs"
   year: 2017
@@ -109,8 +151,13 @@
     - Michael P. O'Brien
     - Felix Reidl
     - Blair D. Sullivan
-  venue: Siam Workshop on Network Science
+  venue: SIAM Workshop on Network Science
+  venue_tags:
+    - SIAM NS
   pdf: http://www.siam.org/meetings/ns17/ns17_abstracts.pdf
+  tags:
+    - Science
+    - Genomics
 
 - title: "Text detection in screen images with a Convolutional Neural Network"
   year: 2017
@@ -120,15 +167,24 @@
   doi: 10.21105/joss.00235
   short_doi: 10/b89p
   venue: The Journal of Open Source Software
+  venue_url: https://joss.theoj.org/
+  venue_tags:
+    - JOSS
   link: https://github.com/domoritz/label_generator
   tweet: Use deep learning to find text in screen images. Learned from millions of papers.
+  tags:
+    - Machine Learning
+    - Tool
 
 - title: "What Users Don't Expect about Exploratory Data Analysis on Approximate Query Processing Systems"
   year: 2017
   authors:
     - Dominik Moritz
     - Danyel Fisher
-  venue: HILDA at SIGMOD 2017
+  venue: HILDA at SIGMOD
+  venue_tags:
+    - SIGMOD
+    - HILDA
   venue_location: Chicago, IL, USA
   venue_url: http://www.hilda.io/2017
   pdf: /papers/2017-EDAonAQPSystems-HILDA.pdf
@@ -144,11 +200,16 @@
   authors:
     - Dominik Moritz
     - Danyel Fisher
-  venue: Designing for Uncertainty in HCI at CHI 2017
+  venue: Designing for Uncertainty in HCI at CHI
+  venue_tags:
+    - CHI
+    - Designing for Uncertainty
   venue_location: Denver, CO, USA
   venue_url: http://visualization.ischool.uw.edu/hci_uncertainty/
   pdf: /papers/2017-Pangloss-Uncertainty.pdf
   tweet: Tools need to better support analysts who work with approximate data.
+  tags:
+    - Uncertainty
 
 - id: trust-but-verify
   title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
@@ -158,7 +219,9 @@
     - Danyel Fisher
     - Bolin Ding
     - Chi Wang
-  venue: CHI 2017
+  venue: CHI
+  venue_tags:
+    - CHI
   venue_location: Denver, CO, USA
   venue_url: https://chi2017.acm.org/
   pdf: /papers/2017-TrustButVerify-CHI.pdf
@@ -169,6 +232,11 @@
   tweet: Optimistic Visualization gives data analysts confidence to use approximation for EDA.
   osf: tfwqj
   highlight: true
+  tags:
+    - Uncertainty
+    - Big Data
+    - Visualization
+    - Data Science
 
 - id: voyager-2
   title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
@@ -183,7 +251,9 @@
     - Jock Mackinlay
     - Bill Howe
     - Jeffrey Heer
-  venue: CHI 2017
+  venue: CHI
+  venue_tags:
+    - CHI
   venue_location: Denver, CO, USA
   venue_url: https://chi2017.acm.org/
   pdf: https://idl.cs.washington.edu/files/2017-Voyager2-CHI.pdf
@@ -193,6 +263,10 @@
   link: https://idl.cs.washington.edu/papers/voyager2
   tweet: Voyager 2 blends manual and automated chart specification.
   highlight: true
+  tags:
+    - Recommendation
+    - Visualization
+    - Vega-Lite
 
 - id: myria
   title: "The Myria Big Data Management and Analytics System and Cloud Service"
@@ -214,11 +288,16 @@
     - Dan Suciu
     - Andrew Whitaker
     - Shengliang Xu
-  venue: CIDR 2017
+  venue: CIDR
+  venue_tags:
+    - CIDR
   venue_location: Chaminade, CA, USA
   venue_url: http://cidrdb.org/cidr2017/
   pdf: http://cidrdb.org/cidr2017/papers/p37-wang-cidr17.pdf
   tweet: Myria is a distributed DB for data science.
+  tags:
+    - Big Data
+    - Data Science
 
 - id: vega-lite
   title: "Vega-Lite: A Grammar of Interactive Graphics"
@@ -228,7 +307,10 @@
     - Dominik Moritz
     - Kanit Wongsuphasawat
     - Jeffrey Heer
-  venue: InfoVis 2016
+  venue: InfoVis
+  venue_tags:
+    - VIS
+    - InfoVis
   venue_url: http://ieeevis.org/
   venue_location: Baltimore, MD, USA
   link: http://idl.cs.washington.edu/papers/vega-lite
@@ -243,6 +325,9 @@
     - Best Paper Award
   tweet: Vega-Lite is a declarative language for visualization and interaction.
   highlight: true
+  tags:
+    - Vega-Lite
+    - Visualization
 
 - id: sqlshare
   title: "SQLShare: Results from a Multi-Year SQL-as-a-Service Experiment"
@@ -252,7 +337,9 @@
     - Dominik Moritz
     - Bill Howe
     - Ed Lazowska
-  venue: SIGMOD 2016
+  venue: SIGMOD
+  venue_tags:
+    - SIGMOD
   venue_location: San Francisco, CA, USA
   venue_url: http://sigmod2016.org/
   link: https://uwescience.github.io/sqlshare/
@@ -260,6 +347,8 @@
   awards:
     - Most Reproducible Paper Award
   tweet: Data analysts can use SQL to analyze data; if the system supports complex queries.
+  tags:
+    - Data Science
 
 - id: compassql
   title: "Towards A General-Purpose Query Language for Visualization Recommendation"
@@ -271,13 +360,20 @@
     - Jock Mackinlay
     - Bill Howe
     - Jeffrey Heer
-  venue: HILDA at SIGMOD 2016
+  venue: HILDA at SIGMOD
+  venue_tags:
+    - SIGMOD
+    - HILDA
   venue_location: San Francisco, CA, USA
   venue_url: http://www.hilda.io/2016
   doi: 10.1145/2939502.2939506
   short_doi: 10/cssd
   pdf: /papers/2016-Compassql-HILDA.pdf
   tweet: CompassQL is a query language for visualization recommendation.
+  tags:
+    - Visualization
+    - Recommendation
+    - Vega-Lite
 
 - title: "High Variety Cloud Databases"
   year: 2016
@@ -287,6 +383,8 @@
     - Bill Howe
   pdf: https://uwescience.github.io/sqlshare/pdfs/ICDE16_research_5.pdf
   venue: ICDE 2016
+  venue_tags:
+    - ICDE
 
 - id: dynamic-client-server
   title: Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web
@@ -295,11 +393,18 @@
     - Dominik Moritz
     - Jeffrey Heer
     - Bill Howe
-  venue: The 1st Workshop on Data Systems for Interactive Analysis (DSIA) at VIS 2015
-  venue_url: http://www.interactive-analysis.org/
+  venue: DSIA at VIS
+  venue_tags:
+    - VIS
+    - DSIA
+  venue_url: https://www.interactive-analysis.org/year/2015/
+  venue_location: Chicago, IL, USA
   pdf: http://www.interactive-analysis.org/papers/2015/moritz.pdf
   tweet: Interactive visualizations in client-server systems can have reduced latency.
   highlight: true
+  tags:
+    - Visualization
+    - Big Data
 
 - id: voyager
   title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
@@ -311,7 +416,10 @@
     - Jock Mackinlay
     - Bill Howe
     - Jeffrey Heer
-  venue: InfoVis 2015
+  venue: InfoVis
+  venue_tags:
+    - VIS
+    - InfoVis
   venue_url: http://ieeevis.org/
   venue_location: Chicago, IL, USA
   link: https://idl.cs.washington.edu/papers/voyager
@@ -324,6 +432,10 @@
     - Invited to SIGGRAPH 2016
   tweet: Visualization recommendation promotes breadth and prevents early fixation.
   highlight: true
+  tags:
+    - Visualization
+    - Recommendation
+    - Vega-Lite
 
 - id: perfopticon
   title: "Perfopticon: Visual Query Analysis for Distributed Databases"
@@ -334,7 +446,9 @@
     - Daniel Halperin
     - Bill Howe
     - Jeffrey Heer
-  venue: EuroVis 2015
+  venue: EuroVis
+  venue_tags:
+    - EuroVis
   venue_url: http://www.eurovis2015.it/
   venue_location: Cagliari, Italy
   link: https://idl.cs.washington.edu/papers/perfopticon
@@ -343,12 +457,17 @@
   short_doi: 10/f7kqsv
   tweet: Visual performance debugging for queries in distributed database systems.
   highlight: true
+  tags:
+    - Big Data
+    - Visualization
 
 - id: myria-demo
   title: Demonstration of the Myria Big Data Management Service
   year: 2014
   description: Demo paper about the [Myria system](http://myria.cs.washington.edu/).
-  venue: SIGMOD 2014
+  venue: SIGMOD
+  venue_tags:
+    - SIGMOD
   venue_url: http://www.sigmod2014.org/
   venue_location: Snowbird, UT, USA
   link: http://myria.cs.washington.edu/
@@ -368,21 +487,28 @@
     - Magdalena Balazinska
     - Bill Howe
     - Dan Suciu
+  tags:
+    - Big Data
+    - Data Science
 
 - id: stable-voronoi
   title: Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
-  year: 2013
+  year: 2014
   description: Publication of algorithms that I developed for my bachelor thesis.
   authors:
     - Sebastian Schmechel
     - Jonas Trümper
     - Dominik Moritz
     - Jürgen Döllner
-  venue: Proceedings of the 5th International Conference on Information Visualization Theory and Applications (IVAPP 2014)
+  venue: International Conference on Information Visualization Theory and Applications (IVAPP)
+  venue_tags:
+    - IVAPP
   venue_url: http://www.ivapp.visigrapp.org/
   pdf: https://hpi.de/fileadmin/user_upload/fachgebiete/doellner/publications/2014/STMD2014/Visualization_of_Varying_Hierarchies_by_Stable_Layout_of_Voronoi_Treemaps.pdf
   link: https://hpi.de/de/computer-graphics-systems/publications/year/2014/102334/STMD2014.html
   tweet: Use Voronoi tesselation for stable treemaps.
+  tags:
+    - Visualization
 
 - id: bachelor-thesis
   title: Algorithms for the Visualization of Software System Evolution

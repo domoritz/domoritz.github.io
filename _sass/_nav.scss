@@ -1,7 +1,8 @@
 .page-header {
-  border-top: 5px solid #572c9f;
+  border-top: 6px solid $brand-color;
   border-bottom: 1px solid #d7d6ce;
   background-color: $header-background;
+  padding-top: 1px;  // makes spacing look nicer
 }
 
 nav {

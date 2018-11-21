@@ -11,24 +11,24 @@ $bold-font-weight: 500;
 $small-font-size:  0.9em;
 $base-line-height: 1.64;
 
-$spacing-unit:     30px;
+$spacing-unit:     32px;
 $content-width:    800px;
 
 $text-color:        #333;
 $background-color:  #fff;
-$brand-color:       #0A656C;
+$brand-color:       #572c9f; // #0A656C;
 $link-color:        #3477ad;
 $header-background: #ececec;
 $footer-background: #234;
 $footer-text:       darken(#fff, 10%);
 
 $grey-color:       #828282;
-$grey-color-light: #f8f8f8;
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-lightest: #f8f8f8;
+$grey-color-dark:  darken($grey-color, 20%);
+$grey-color-light:  lighten($grey-color, 20%);
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
 
 // Use media queries like this:
 // @include media-query($on-palm) {

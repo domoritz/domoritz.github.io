@@ -142,7 +142,7 @@ a {
  */
 blockquote {
   color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  border-left: 4px solid $grey-color-lightest;
   padding-left: $spacing-unit / 2;
   font-size: 18px;
   letter-spacing: -1px;
@@ -165,7 +165,7 @@ code {
 }
 
 pre {
-  background-color: $grey-color-light;
+  background-color: $grey-color-lightest;
   border-left: 0.25rem solid #c35;
   margin-bottom: 0.6rem;
   margin-top: 0.2rem;

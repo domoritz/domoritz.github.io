@@ -4,35 +4,48 @@ permalink: /publications/
 title: Publications
 ---
 
-You can find my academic and professional experience in [my CV]({{ 'cv.html' | relative_url  }}). Talks are listed [below](#talks).
+Also make sure to [check out my talks]({{ '/talks/' | relative_url  }}). You can find my academic and professional experience in [my CV]({{ '/cv/' | relative_url  }}).
 
-This list only shows highlights. You can click <a href="#all" class="show-all">here</a> to show all publications.
+<div id="facets" class="hidden">
+  <div class="facet" id="venue_tags">
+    <strong>Venue</strong>
+    <ul></ul>
+  </div>
+  <div class="facet" id="authors">
+    <strong>Author</strong>
+    <ul></ul>
+  </div>
+  <div class="facet" id="highlight">
+    <strong>Highlight</strong>
+    <ul></ul>
+  </div>
+  <div class="facet" id="awards">
+    <strong>Award</strong>
+    <ul></ul>
+  </div>
+  <div class="facet" id="tags">
+    <strong>Tag</strong>
+    <ul></ul>
+  </div>
+</div>
+
+<p id="clear-filters" class="hidden">
+  <i class="fas fa-times-circle" aria-hidden="true"></i> Clear current filters. <span id="count_hidden">X</span> of <span id="count_total">X</span> publications are hidden by the filters.
+</p>
+
+<!-- <input id="ft-search" type="search" placeholder="Search papers..." /> -->
 
 {% assign pubyears = site.data.publications | group_by:"year" %}
 {% for year in pubyears %}
 ## {{ year.name }}
-{:#y{{ year.name }}}
+{:#y{{ year.name }} .pub-year}
 {% for pub in year.items %}
   {% include publication.html pub=pub %}
 {% endfor %}
 {% endfor %}
 
-<span class="stop-marker"></span>
-
-
-# Talks
-
-Want me to give a talk? Send me an [email](mailto:{{ site.email }})!
-
-{% assign talktitles = site.data.talks | group_by:"title" %}
-{% for title in talktitles %}
-{:.talk-title}
-### {{ title.name }}
-{% for talk in title.items %}
-  {% include talk.html talk=talk %}
-{% endfor %}
-{% endfor %}
-
+<!-- <script src="https://cdn.jsdelivr.net/npm/itemsjs@1.0.40/dist/itemsjs.js"></script> -->
 <script>
+  {% include itemsjs.js %}
   {% include pubfilter.js %}
 </script>
