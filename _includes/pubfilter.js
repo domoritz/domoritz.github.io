@@ -1,16 +1,19 @@
 (function() {
-  var pubs = document.querySelectorAll(".publication");
-  var yearElements = document.querySelectorAll(".pub-year");
+  var pubElems = document.querySelectorAll(".publication");
+  var yearElems = document.querySelectorAll(".pub-year");
 
-  var clear = document.getElementById("clear-filters");
+  var clearElem = document.getElementById("clear-filters");
+  var highlightElem = document.getElementById("highlight");
 
   var data = [];
   var allYears = {};
 
-  pubs.forEach(function(element) {
+  pubElems.forEach(function(element) {
     var item = JSON.parse(element.getAttribute("data-pub"));
 
-    item.highlight = item.highlight ? "Yes" : "No";
+    if (item.highlight) {
+      item.highlight = "Yes";
+    }
 
     allYears[item.year] = 1;
 
@@ -35,7 +38,7 @@
         size: 5
       },
       highlight: {
-        size: 2
+        size: 1
       },
       tags: {
         size: 6
@@ -149,12 +152,12 @@
 
     setAggs(result.data.aggregations);
 
-    var counter = pubs.length - result.data.items.length;
+    var counter = pubElems.length - result.data.items.length;
 
     document.getElementById("count_hidden").innerText = counter;
-    document.getElementById("count_total").innerText = pubs.length;
+    document.getElementById("count_total").innerText = pubElems.length;
 
-    pubs.forEach(function(element) {
+    pubElems.forEach(function(element) {
       element.classList.add("hidden");
     });
 
@@ -164,7 +167,7 @@
       visibleYears[item.year] = 1;
     });
 
-    yearElements.forEach(function(element) {
+    yearElems.forEach(function(element) {
       element.classList.add("hidden");
     });
     Object.keys(allYears).forEach(function(year) {
@@ -175,15 +178,26 @@
 
     // show or hide notification about filtered papers
     if (Object.keys(query.filters).length || query.query) {
-      clear.classList.remove("hidden");
+      clearElem.classList.remove("hidden");
     } else {
-      clear.classList.add("hidden");
+      clearElem.classList.add("hidden");
     }
+
+    highlightElem.checked = !!query.filters.highlight;
 
     console.timeEnd("Search");
   }
 
-  clear.onclick = function() {
+  highlightElem.onchange = function() {
+    if (highlightElem.checked) {
+      query.filters.highlight = ["Yes"];
+    } else {
+      delete query.filters.highlight;
+    }
+    search(query);
+  };
+
+  clearElem.onclick = function() {
     query = { filters: {} };
     search(query);
   };
@@ -191,4 +205,5 @@
   search(query);
 
   document.getElementById("facets").classList.remove("hidden");
+  document.getElementById("only-highlight").classList.remove("hidden");
 })();

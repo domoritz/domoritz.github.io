@@ -15,10 +15,6 @@ Also make sure to [check out my talks]({{ '/talks/' | relative_url  }}). You can
     <strong>Author</strong>
     <ul></ul>
   </div>
-  <div class="facet" id="highlight">
-    <strong>Highlight</strong>
-    <ul></ul>
-  </div>
   <div class="facet" id="awards">
     <strong>Award</strong>
     <ul></ul>
@@ -28,6 +24,11 @@ Also make sure to [check out my talks]({{ '/talks/' | relative_url  }}). You can
     <ul></ul>
   </div>
 </div>
+
+<label id="only-highlight" class="hidden">
+  <input type="checkbox" id="highlight">
+  Show only highlights
+</label>
 
 <p id="clear-filters" class="hidden">
   <i class="fas fa-times-circle" aria-hidden="true"></i> Clear current filters. <span id="count_hidden">X</span> of <span id="count_total">X</span> publications are hidden by the filters.
@@ -44,8 +45,8 @@ Also make sure to [check out my talks]({{ '/talks/' | relative_url  }}). You can
 {% endfor %}
 {% endfor %}
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/itemsjs@1.0.40/dist/itemsjs.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/itemsjs@1.0.40/dist/itemsjs.min.js"></script> -->
 <script>
-  {% include itemsjs.js %}
+  {% include itemsjs.min.js %}
   {% include pubfilter.js %}
 </script>
