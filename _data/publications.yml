@@ -572,7 +572,7 @@
 - id: bachelor-thesis
   title: Algorithms for the Visualization of Software System Evolution
   year: 2013
-  description: My bachelor thesis. Not published due to non disclosure agreement.
+  description: My bachelor thesis. Not publicly available due to non disclosure agreement.
   authors:
     - Dominik Moritz
   type:
