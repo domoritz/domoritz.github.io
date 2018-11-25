@@ -34,6 +34,86 @@ title: CV
         color: #333;
       }
 
+      h1, h2, h3, h4 {
+        font-weight: 500;
+        border: none;
+        color: #333;
+        font-family: Halvetica Neue, sans-serif;
+        page-break-after: avoid;
+      }
+
+      h1, h2, .pub-type {
+        color: #0A656C;
+        margin: 1em 0 .2em 0;
+      }
+
+      h1 {
+        font-size: 2.6em;
+      }
+
+      h2 {
+        font-size: 2.2em;
+      }
+
+      h2 a {
+        font-size: 0.7em;
+        color: #828282;
+      }
+
+      .header-columns {
+        display: flex;
+        flex-direction: row;
+      }
+      .header-columns > div:first-child {
+        flex: 1;
+      }
+      .header-columns > div:last-child {
+        width: 190px;
+      }
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
+      .pub-type {
+        font-size: 1.3em;
+      }
+
+      .cv-pub h4 {
+        font-size: 1.1em;
+      }
+
+      .right-align {
+        text-align: right;
+      }
+
+      .cv-pub {
+        margin-bottom: 1.2em;
+      }
+
+      .muted, .muted a {
+        color: #666;
+      }
+
+      .award {
+        color: firebrick;
+        white-space: nowrap;
+      }
+
+      ul {
+        list-style: none;
+        margin-left: 0;
+      }
+
       .container {
         min-width: 480px;
         max-width: 800px;
@@ -49,6 +129,13 @@ title: CV
 
       article > * {
         margin-left: 105px;
+      }
+
+      .ref-container {
+        margin-left: 0;
+        float: left;
+        text-align: right;
+        width: 85px;
       }
 
       .date-container {
@@ -82,75 +169,7 @@ title: CV
         font-size: .9em;
       }
 
-      h1, h2, h3, h4 {
-        font-weight: 500;
-        border: none;
-        color: #333;
-        font-family: Halvetica Neue, sans-serif;
-        page-break-after: avoid;
-      }
-
-      h1, h2 {
-        color: #0A656C;
-        margin: 1em 0 .2em 0;
-      }
-
-      h1 {
-        font-size: 2.6em;
-      }
-
-      h2 {
-        font-size: 2.2em;
-      }
-
-      .header-columns {
-        display: flex;
-        flex-direction: row;
-      }
-      .header-columns > div:first-child {
-        flex: 1;
-      }
-      .header-columns > div:last-child {
-        width: 190px;
-      }
-
-      h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 1.1em;
-        font-weight: bold;
-      }
-
-      h4 {
-        margin: 0;
-        font-size: 1em;
-        font-weight: bold;
-      }
-
-      .right-align {
-        text-align: right;
-      }
-
-      .publication {
-        margin-bottom: 1.2em;
-      }
-
-      .publication p {
-        margin-bottom: 0.1em;
-      }
-
-      .muted, .muted a {
-        color: #666;
-      }
-
-      .award {
-        color: firebrick;
-      }
-
-      ul {
-        list-style: none;
-        margin-left: 0;
-      }
+      /* References */
 
       .refs {
         display: flex;
@@ -199,6 +218,11 @@ title: CV
 
         h1, h2 {
           margin: .4em 0 .1em 0;
+        }
+
+        /* link to interactive talk/publications */
+        h2 a {
+          display: none;
         }
       }
     </style>
@@ -270,25 +294,35 @@ To enhance people’s ability to understand and communicate large and complex da
 {% endfor %}
 
 
-<h2>Publications</h2>
+<h2>Publications <a href="{{ '/publications/' | absolute_url }}">[Interactive Version]</a></h2>
 
-{% for pub in site.data.publications %}
-<article>
-  <div class="date-container">
-    <span class="date">{{ pub.year }}</span>
-    <h3>{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{%endif%}</h3>
-  </div>
-  <div class="publication">
-    <p>
-      {% for author in pub.authors %}
-        {% include person person=author %}{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
-    </p>
-    {% if pub.description %}<p class="desc">{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
-    {% if pub.venue %}<p class="muted">{{ pub.venue }}{% if pub.venue_location%}, {{ pub.venue_location }}{% endif %}</p>{% endif %}
-    {% if pub.awards %}<strong class="award"><i class="fas fa-star" aria-hidden="true"></i> {{ pub.awards }}</strong>{% endif %}
-  </div>
-</article>
+{% assign types = "Conference|Journal|Book Chapter|Demo|Workshop|Thesis" | split: "|" %}
+{% for type in types %}
+  {% assign counter = 1 %}
+  {% for pub in site.data.publications %}
+    {% if pub.type[0] == type %}
+      {% assign counter = counter | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+
+  <h3 class="pub-type">
+    {{ type }}
+  </h3>
+
+  {% for pub in site.data.publications %}
+    {% if pub.type[0] == type %}
+      {% assign counter = counter | minus: 1 %}
+      <article class="cv-pub">
+        <div class="ref-container">{{ type | slice: 0 }}{{ counter }}</div>
+        <h4>{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{%endif%}</h4>
+        <div>
+          {% for author in pub.authors %}{% include person person=author %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+          {% if pub.venue or pub.description %}<i>{% if pub.description %}{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}{{ pub.venue }}</i>, {% endif %}{{ pub.year }}.
+          {% if pub.awards %}<br/><strong class="award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ pub.awards }}</strong>{% endif %}
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
 <h2>Patents</h2>
@@ -329,7 +363,7 @@ To enhance people’s ability to understand and communicate large and complex da
 {% endfor %}
 
 
-<h2>Talks</h2>
+<h2>Talks  <a href="{{ '/talks/' | absolute_url }}">[Interactive Version]</a></h2>
 
 {% assign talktitles = site.data.talks | group_by:"title" %}
 {% for title in talktitles %}

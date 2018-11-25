@@ -428,7 +428,7 @@
     - Dominik Moritz
     - Bill Howe
   pdf: https://uwescience.github.io/sqlshare/pdfs/ICDE16_research_5.pdf
-  venue: ICDE 2016
+  venue: ICDE
   venue_tags:
     - ICDE
   type:
@@ -573,5 +573,7 @@
   title: Algorithms for the Visualization of Software System Evolution
   year: 2013
   description: My bachelor thesis. Not published due to non disclosure agreement.
+  authors:
+    - Dominik Moritz
   type:
     - Thesis
