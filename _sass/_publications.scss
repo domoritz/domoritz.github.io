@@ -71,6 +71,10 @@
   vertical-align: text-bottom;
 }
 
+#only-highlight.hidden {
+  display: none;
+}
+
 @include media-query($on-laptop) {
   .bar-full {
     width: 80px !important;
