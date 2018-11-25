@@ -11,13 +11,12 @@
       {% if pub.venue_url %}
         <a href="{{ pub.venue_url }}">
       {% endif %}
-      {{ pub.venue }} {{ pub.year }}
+      {{ pub.venue }}<!--
       {% if pub.venue_location %}
-        in {{ pub.venue_location }}
+        --> in {{ pub.venue_location }}<!--
       {% endif %}
-      {% if pub.venue_url %}
-        </a>
-      {% endif %}
+      -->{% if pub.venue_url %}</a>{% endif %}
+      {{ pub.year }}
     </div>
   {% endif %}
 
