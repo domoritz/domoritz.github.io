@@ -12,6 +12,8 @@
     - Big Data
     - Book
     - Data Science
+  type:
+    - Book Chapter
 
 - id: altair
   title: "Altair: Interactive Statistical Visualizations for Python"
@@ -36,6 +38,8 @@
     - Data Science
     - Tool
     - Vega-Lite
+  type:
+    - Journal
 
 - id: spacegraphcats
   title: "Exploring neighborhoods in large metagenome assembly graphs reveals hidden sequence diversity"
@@ -58,6 +62,8 @@
   tags:
     - Science
     - Genomics
+  type:
+    - Preprint
 
 - id: million-time-series
   title: "Visualizing a Million Time Series with the Density Line Chart"
@@ -73,6 +79,8 @@
   tags:
     - Big Data
     - Visualization
+  type:
+    - Preprint
 
 - id: beyond-heuristics
   title: "Beyond Heuristics: Learning Visualization Design"
@@ -96,6 +104,8 @@
   tags:
     - Machine Learning
     - Recommendation
+  type:
+    - Workshop
 
 - id: draco
   title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
@@ -130,6 +140,9 @@
     - Recommendation
     - Visualization
     - Vega-Lite
+  type:
+    - Conference
+    - Journal
 
 - id: vsup
   title: "Value-Suppressing Uncertainty Palettes"
@@ -152,6 +165,8 @@
   tags:
     - Uncertainty
     - Visualization
+  type:
+    - Conference
 
 - title: "Extracting Neighborhood Structure from Very Large DNA Graphs"
   year: 2017
@@ -168,6 +183,8 @@
   tags:
     - Science
     - Genomics
+  type:
+    - Workshop
 
 - title: "Text detection in screen images with a Convolutional Neural Network"
   year: 2017
@@ -185,6 +202,8 @@
   tags:
     - Machine Learning
     - Tool
+  type:
+    - Journal
 
 - title: "What Users Don't Expect about Exploratory Data Analysis on Approximate Query Processing Systems"
   year: 2017
@@ -204,6 +223,8 @@
   awards:
     - Distinguished Long Talk
   tweet: Traditional exploratory visualization systems fail when the database is approximate.
+  type:
+    - Workshop
 
 - title: "Lessons from Pangloss: User Encounters with Uncertainty"
   year: 2017
@@ -220,6 +241,8 @@
   tweet: Tools need to better support analysts who work with approximate data.
   tags:
     - Uncertainty
+  type:
+    - Workshop
 
 - id: trust-but-verify
   title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
@@ -247,6 +270,8 @@
     - Big Data
     - Visualization
     - Data Science
+  type:
+    - Conference
 
 - id: voyager-2
   title: "Voyager 2: Augmenting Visual Analysis with Partial View Specifications"
@@ -277,6 +302,8 @@
     - Recommendation
     - Visualization
     - Vega-Lite
+  type:
+    - Conference
 
 - id: myria
   title: "The Myria Big Data Management and Analytics System and Cloud Service"
@@ -308,6 +335,8 @@
   tags:
     - Big Data
     - Data Science
+  type:
+    - Conference
 
 - id: vega-lite
   title: "Vega-Lite: A Grammar of Interactive Graphics"
@@ -338,6 +367,9 @@
   tags:
     - Vega-Lite
     - Visualization
+  type:
+    - Conference
+    - Journal
 
 - id: sqlshare
   title: "SQLShare: Results from a Multi-Year SQL-as-a-Service Experiment"
@@ -359,6 +391,8 @@
   tweet: Data analysts can use SQL to analyze data; if the system supports complex queries.
   tags:
     - Data Science
+  type:
+    - Conference
 
 - id: compassql
   title: "Towards A General-Purpose Query Language for Visualization Recommendation"
@@ -384,6 +418,8 @@
     - Visualization
     - Recommendation
     - Vega-Lite
+  type:
+    - Workshop
 
 - title: "High Variety Cloud Databases"
   year: 2016
@@ -395,6 +431,8 @@
   venue: ICDE 2016
   venue_tags:
     - ICDE
+  type:
+    - Conference
 
 - id: dynamic-client-server
   title: Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web
@@ -415,6 +453,8 @@
   tags:
     - Visualization
     - Big Data
+  type:
+    - Workshop
 
 - id: voyager
   title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
@@ -446,6 +486,9 @@
     - Visualization
     - Recommendation
     - Vega-Lite
+  type:
+    - Conference
+    - Journal
 
 - id: perfopticon
   title: "Perfopticon: Visual Query Analysis for Distributed Databases"
@@ -470,6 +513,8 @@
   tags:
     - Big Data
     - Visualization
+  type:
+    - Conference
 
 - id: myria-demo
   title: Demonstration of the Myria Big Data Management Service
@@ -500,6 +545,8 @@
   tags:
     - Big Data
     - Data Science
+  type:
+    - Demo
 
 - id: stable-voronoi
   title: Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
@@ -519,8 +566,12 @@
   tweet: Use Voronoi tesselation for stable treemaps.
   tags:
     - Visualization
+  type:
+    - Conference
 
 - id: bachelor-thesis
   title: Algorithms for the Visualization of Software System Evolution
   year: 2013
   description: My bachelor thesis. Not published due to non disclosure agreement.
+  type:
+    - Thesis

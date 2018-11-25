@@ -15,14 +15,19 @@ Also make sure to [check out my talks]({{ '/talks/' | relative_url  }}). You can
     <strong>Author</strong>
     <ul></ul>
   </div>
-  <div class="facet" id="awards">
-    <strong>Award</strong>
-    <ul></ul>
-  </div>
   <div class="facet" id="tags">
     <strong>Tag</strong>
     <ul></ul>
   </div>
+  <div class="facet" id="type">
+    <strong>Type</strong>
+    <ul></ul>
+  </div>
+  <div class="facet" id="awards">
+    <strong>Award</strong>
+    <ul></ul>
+  </div>
+
 </div>
 
 <label id="only-highlight" class="hidden">
@@ -31,7 +36,7 @@ Also make sure to [check out my talks]({{ '/talks/' | relative_url  }}). You can
 </label>
 
 <p id="clear-filters" class="hidden">
-  <i class="fas fa-times-circle" aria-hidden="true"></i> Clear current filters. <span id="count_hidden">X</span> of <span id="count_total">X</span> publications are hidden by the filters.
+  <i class="fas fa-times-circle" aria-hidden="true"></i> Clear all filters. <span id="count_hidden">X</span> of <span id="count_total">X</span> publications are hidden by the filters.
 </p>
 
 <!-- <input id="ft-search" type="search" placeholder="Search papers..." /> -->

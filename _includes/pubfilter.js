@@ -42,6 +42,9 @@
       },
       tags: {
         size: 6
+      },
+      type: {
+        size: 5
       }
     }
   });
