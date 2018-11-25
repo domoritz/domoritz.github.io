@@ -15,11 +15,21 @@
 
 - id: altair
   title: "Altair: Interactive Statistical Visualizations for Python"
+  year: 2018
+  authors:
+      - Jacob VanderPlas
+      - Brian E. Granger
+      - Jeffrey Heer
+      - Dominik Moritz
+      - Kanit Wongsuphasawat
+      - Eitan Lees
+      - Ilia Timofeev
+      - Ben Welsh
+      - Scott Sievert
   venue: The Journal of Open Source Software
   venue_url: https://joss.theoj.org/
   venue_tags:
     - JOSS
-  year: 2018
   description: In preparation.
   tags:
     - Visualization
