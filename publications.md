@@ -4,6 +4,7 @@ permalink: /publications/
 title: Publications
 ---
 
+{:.lead}
 Also make sure to [check out my talks]({{ '/talks/' | relative_url  }}). You can find my academic and professional experience in [my CV]({{ '/cv/' | relative_url  }}).
 
 <div id="facets" class="hidden">
