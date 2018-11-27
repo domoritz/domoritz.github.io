@@ -1,4 +1,77 @@
-iframe.video {
-  margin: 0 auto;
-  display: block;
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  .project {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 3px;
+    padding: 16px;
+    background: #fff;
+    box-shadow: #aaa 2px 2px 11px;
+
+    transition: all 1s ease;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: #aaa 4px 4px 26px;
+    }
+
+    .spacer {
+      flex: 1;
+    }
+
+    .title {
+      margin: 0 0 0.6em 0;
+      font-size: 1.3em;
+      font-weight: $bold-font-weight;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 0.85em;
+      margin: 0.7em 0;
+      line-height: 1.2;
+    }
+
+    .preview-image {
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-top: 60%;
+      border: 1px solid #f1f1f1;
+      background-size: cover;
+      background-position: top left;
+      transition: all 1.5s;
+
+      &:hover {
+        background-position: bottom right;
+      }
+    }
+
+    .links {
+      font-size: 0.8em;
+
+      a {
+        margin-right: 0.5em;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@include media-query($on-laptop) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include media-query($on-palm) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
