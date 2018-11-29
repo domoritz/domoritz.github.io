@@ -472,8 +472,7 @@
     - InfoVis
   venue_url: http://ieeevis.org/
   venue_location: Chicago, IL, USA
-  link: https://idl.cs.washington.edu/papers/voyager
-  link: https://vega.github.io/
+  link: https://github.com/vega/voyager
   pdf: https://idl.cs.washington.edu/files/2015-Voyager-InfoVis.pdf
   video: https://vimeo.com/135417594
   doi: 10.1109/TVCG.2015.2467191
@@ -506,6 +505,7 @@
   venue_location: Cagliari, Italy
   link: https://idl.cs.washington.edu/papers/perfopticon
   pdf: https://idl.cs.washington.edu/files/2015-Perfopticon-EuroVis.pdf
+  code: https://github.com/uwescience/myria-web
   doi: 10.1111/cgf.12619
   short_doi: 10/f7kqsv
   tweet: Visual performance debugging for queries in distributed database systems.
