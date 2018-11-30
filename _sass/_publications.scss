@@ -146,8 +146,16 @@
   }
 
   .award-icon {
-    color: #ffc000;
-    margin-right: 0.5em;
+    margin-right: 0.2em;
+    font-size: 1.2em;
+
+    &.fa-trophy {
+      color: #ffc000;
+    }
+
+    &.fa-award {
+      color: firebrick;
+    }
   }
 
   .authors {

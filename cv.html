@@ -319,7 +319,7 @@ To enhance people’s ability to understand and communicate large and complex da
         <div>
           {% for author in pub.authors %}{% include person person=author %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
           {% if pub.venue or pub.description %}<i>{% if pub.description %}{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}{{ pub.venue }}</i>{% if pub.venue %},{% endif %} {% endif %}{{ pub.year }}.
-          {% if pub.awards %}<br/><strong class="award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ pub.awards }}</strong>{% endif %}
+          {% for award in pub.awards %}<br/><strong class="award"><i class="fas fa-{% if award == "Best Paper Award" %}trophy{% else %}award{% endif %}" aria-hidden="true"></i> {{ award }}</strong>{% endfor %}
         </div>
       </article>
     {% endif %}
