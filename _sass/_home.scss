@@ -33,7 +33,6 @@
   }
 
   .button {
-    font-size: 0.9em;
     color: $brand-color;
     padding: 6px 16px;
     border-radius: 3px;
@@ -50,7 +49,7 @@
     font-size: 0.9em;
     display: flex;
     flex-direction: row;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 
     .project {
       flex-grow: 1;
@@ -67,7 +66,6 @@
       padding: 16px;
       border: 1px solid #ddd;
 
-      transition: all 1s ease;
       transition: box-shadow 0.2s ease;
 
       &:hover {
@@ -119,7 +117,7 @@
 
   .featured-publications {
     font-size: 0.95em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 
     .publication {
       margin-bottom: 0.7em;
@@ -195,6 +193,11 @@
         order: 1;
         margin-left: 0;
       }
+    }
+
+    .button {
+      font-size: 1.1em;
+      background-color: lighten($brand-color, 57%);
     }
 
     .featured-projects {
