@@ -6,7 +6,7 @@
     - Dominik Moritz
     - Danyel Fisher
     - Jeffrey Heer
-  description: "Chapter of the book \"Managing Heterogenous Data and Polystore Databases\" edited by Vijay Gadepally, Sam Madden, Michael Stonebraker and to be published by MIT Press."
+  description: "Chapter of the book \"Managing Heterogeneous Data and Polystore Databases\" edited by Vijay Gadepally, Sam Madden, Michael Stonebraker and to be published by MIT Press."
   tags:
     - Visualization
     - Big Data
@@ -572,7 +572,7 @@
 - id: bachelor-thesis
   title: Algorithms for the Visualization of Software System Evolution
   year: 2013
-  description: My bachelor thesis. Not publicly available due to non disclosure agreement.
+  description: My bachelor thesis. Not publicly available due to non-disclosure agreement.
   authors:
     - Dominik Moritz
   type:

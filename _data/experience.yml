@@ -5,7 +5,7 @@
   location: Redmond
   mentors:
     - Danyel Fisher
-  description: In collaboration with the PowerBI team, we developed visualization alternatives that scale to lare numbers of records. So far, we have submitted a paper and a patent on part of this project but there is more to come. As a side project, I worked on visualization recommendation using constraints.
+  description: In collaboration with the PowerBI team, we developed visualization alternatives that scale to large numbers of records. So far, we have submitted a paper and a patent on part of this project but there is more to come. As a side project, I worked on visualization recommendation using constraints.
   skills:
     - Scalable Visualization
     - PowerBI
@@ -43,7 +43,7 @@
   skills:
     - UX
     - Algorithm design
-    - Large scale systems
+    - Large-scale systems
     - Angular
     - C++
 - title: Engineering Intern
@@ -54,11 +54,11 @@
     - Ben Atkins
     - Shishi Chen
     - John Banning
-  description: Developed new algorithms to support complex queries in large scale production monitoring system.
+  description: Developed new algorithms to support complex queries in large-scale production monitoring system.
   project: Monarch
   skills:
     - Algorithm design
-    - Large scale software development
+    - Large-scale software development
     - Profiling
     - C++
 - title: Intern and Developer
