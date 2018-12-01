@@ -5,6 +5,9 @@ title: Projects
 class: projects
 ---
 
+{:.hidden}
+# Projects
+
 {:.lead}
 Here are some projects I have worked on for school, work, or fun. You can find the code for most of them on [GitHub](https://github.com/domoritz).
 

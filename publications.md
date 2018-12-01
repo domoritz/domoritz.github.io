@@ -5,6 +5,9 @@ title: Publications
 class: pubs
 ---
 
+{:.hidden}
+# Publications
+
 <div id="facets" class="hidden">
   <div class="facet" id="venue_tags">
     <strong>Venue</strong>
