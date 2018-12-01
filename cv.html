@@ -60,6 +60,11 @@ title: CV
         font-size: 0.7em;
         color: #828282;
       }
+      .live-link {
+        margin-bottom: 1em;
+        display: none;
+        opacity: 0.8;
+      }
 
       .header-columns {
         display: flex;
@@ -219,6 +224,10 @@ title: CV
           display: none !important;
         }
 
+        .live-link {
+          display: block;
+        }
+
         h1, h2 {
           margin: .4em 0 .1em 0;
         }
@@ -238,6 +247,8 @@ title: CV
     <div class="page-content">
       <section class="container">
 <h1>Dominik Moritz</h1>
+
+<small class="live-link">Last updated in <time datetime="{{ site.time }}">{{ site.time | date: '%B %Y'}}</time>. Get the latest version at <a href="https://www.domoritz.de/cv">www.domoritz.de/cv</a>.</small>
 
 <div class="header-columns">
   <div>
