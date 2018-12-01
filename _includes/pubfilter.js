@@ -1,6 +1,6 @@
 (function() {
   var pubElems = document.querySelectorAll(".publication");
-  var yearElems = document.querySelectorAll(".pub-year");
+  var yearElems = document.querySelectorAll(".year");
 
   var clearElem = document.getElementById("clear-filters");
   var highlightElem = document.getElementById("highlight");
