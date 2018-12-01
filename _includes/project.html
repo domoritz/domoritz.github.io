@@ -1,7 +1,7 @@
 <div class="project">
   <span class="title">{{ project.title }}</span>
-  {% if project.url || project.code || project.article %}
-    <a href="{{ project.url || project.code || project.article }}" class="preview-image" style="background-image: url('{{ "/images/projects/" | append: project.image | relative_url }}')"></a>
+  {% if project.url || project.code || project.article || project.paper %}
+    <a href="{{ project.url || project.code || project.article || project.paper }}" class="preview-image" style="background-image: url('{{ "/images/projects/" | append: project.image | relative_url }}')"></a>
   {% else %}
     <span class="preview-image" style="background-image: url('{{ "/images/projects/" | append: project.image | relative_url }}')"></span>
   {% endif %}

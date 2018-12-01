@@ -1,5 +1,5 @@
 <div class="talk">
-  {{ talk.location }}{% if talk.city %},  {{ talk.city }}{% endif %}
+  {{ talk.location }}{% if talk.city %}, <span class="city">{{ talk.city }}</span>{% endif %}
 
   <span class="extra-links">
     {% if talk.slides %}

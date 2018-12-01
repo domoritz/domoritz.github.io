@@ -2,10 +2,8 @@
 layout: page
 permalink: /publications/
 title: Publications
+class: pubs
 ---
-
-{:.lead}
-Also make sure to [check out my talks]({{ '/talks/' | relative_url  }}). You can find my academic and professional experience in [my CV]({{ '/cv/' | relative_url  }}).
 
 <div id="facets" class="hidden">
   <div class="facet" id="venue_tags">
@@ -45,7 +43,7 @@ Also make sure to [check out my talks]({{ '/talks/' | relative_url  }}). You can
 {% assign pubyears = site.data.publications | group_by:"year" %}
 {% for year in pubyears %}
 ## {{ year.name }}
-{:#y{{ year.name }} .pub-year}
+{:#y{{ year.name }} .year}
 {% for pub in year.items %}
   {% include publication.html pub=pub %}
 {% endfor %}

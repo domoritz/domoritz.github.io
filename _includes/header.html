@@ -3,12 +3,11 @@
   <nav class="container">
     <a class="site-title" href="{{ absolute_url }}/">{{ site.title }}</a>
 
-    <a href="{{ '/publications/' | relative_url }}" {% if current[1] == 'publications' %}class="active"{% endif %}><i class="fas fa-university"></i> Publications</a>
-    <a href="{{ '/projects/' | relative_url }}" {% if current[1] == 'projects' %}class="active"{% endif %}><i class="fas fa-terminal"></i> Projects</a>
-    <a href="{{ '/blog/' | relative_url }}" {% if current[1] == 'blog' %}class="active"{% endif %}><i class="fas fa-comment"></i> Blog</a>
-    <a href="{{ '/cv/' | relative_url }}"><i class="fas fa-user"></i> CV</a>
-
-    <span class="spacer"></span>
+    <a href="{{ '/projects/' | relative_url }}" {% if current[1] == 'projects' %}class="active"{% endif %}>Projects</a>
+    <a href="{{ '/publications/' | relative_url }}" {% if current[1] == 'publications' %}class="active"{% endif %}>Publications</a>
+    <a href="{{ '/talks/' | relative_url }}" {% if current[1] == 'talks' %}class="active"{% endif %}>Talks</a>
+    <a href="{{ '/blog/' | relative_url }}" {% if current[1] == 'blog' %}class="active"{% endif %}>Blog</a>
+    <a href="{{ '/cv/' | relative_url }}">CV</a>
 
     <span class="external">
       <a href="https://twitter.com/domoritz"><i class="fab fa-twitter"></i> Twitter</a>

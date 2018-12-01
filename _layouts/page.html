@@ -1,11 +1,6 @@
 ---
 layout: default
 ---
-<section class="container">
-  {% if page.title %}
-    <h1>{{page.title}}</h1>
-  {% endif %}
-  <article>
+<section class="container {{ page.class }}">
   {{ content }}
-  </article>
 </section>

@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Roboto", sans-serif;
+$base-font-family: "Fira Sans", sans-serif;
 $base-font-size:   100%;  // 16px by default
 $base-font-weight: 400;
 $bold-font-weight: 500;
@@ -30,13 +30,6 @@ $grey-color-light:  lighten($grey-color, 15%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -53,6 +46,7 @@ $on-laptop:        800px;
   "home",
   "publications",
   "projects",
+  "talks",
   "blog",
   "syntax-highlighting"
 ;

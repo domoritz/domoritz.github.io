@@ -1,14 +1,19 @@
 ---
 layout: page
-title: "Hi, I'm Dominik Moritz"
+title: "Home"
+class: home
 ---
 
-<div class="home-columns" markdown="1">
+# Hi, I'm Dominik Moritz
+
+<div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I'm a PhD candidate at the [University of Washington](https://www.washington.edu/) in the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/). I am advised by [Jeff Heer](https://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/), the [iSchool](https://ischool.uw.edu/), and the [Database Group](https://db.cs.washington.edu/).
+I'm a PhD candidate in the [Paul G. Allen School](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/). I work with [Jeff Heer](https://homes.cs.washington.edu/~jheer/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) in the [Interactive Data Lab](http://idl.cs.washington.edu/) and the [Database Group](https://db.cs.washington.edu/).
 
-I combine large-scale systems with interactive data visualization to develop tools that enhance people's ability to understand and communicate data. The systems I develop have won awards at premier academic venues and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities. Learn more about my research through my [publications]({{ "/publications/" | relative_url }}) or watch my [talks]({{ "/talks/" | relative_url }}).
+I research scalable interactive systems for visualization and analysis. My systems have won awards at premier academic venues and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities.
+
+<span style="color:firebrick; font-weight: 500; font-size: 0.9em;">I am on the research faculty market this year. Please get in touch if you are hiring.</span>
 </div>
 
 <div class="me" markdown="1">
@@ -21,9 +26,41 @@ I combine large-scale systems with interactive data visualization to develop too
 
 </div>
 
-During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). Until 2013, I studied IT-Systems Engineering at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), Google, [Google Research](https://ai.google/research/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). Details are in my [CV]({{ "/cv/" | relative_url }}).
+During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). In 2013, I received my B.S. from [Hasso Plattner Institute](https://hpi.de/). I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), [Google Research](https://ai.google/research/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). Details are in my [CV]({{ "/cv/" | relative_url }}).
 
-<span style="color:firebrick; font-weight: bold">I am on the research faculty market this year. Please get in touch if you are hiring.</span>
+## Featured Projects
+
+<div class="featured-projects">
+  {% for project in site.data.projects %}
+    {% if project.highlight %}
+      {% include project.html project=project %}
+    {% endif %}
+  {% endfor %}
+</div>
+<a href="{{ "/projects/" | relative_url }}" class="button">
+  <i class="fas fa-chevron-circle-right"></i>
+  Show More Projects
+</a>
+
+## Featured Publications
+
+<div class="featured-publications">
+  {% for pub in site.data.publications %}
+    {% if pub.highlight %}
+      <a href="{{ pub.pdf }}" class="publication">
+        <strong>{{ pub.title }}</strong>
+        <span class="authors">{% for author in pub.authors %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>.
+        <i>{{ pub.venue }}, {{ pub.year }}</i>.
+        {% for award in pub.awards %}<br/><span class="award"><i class="fas fa-{% if award == "Best Paper Award" %}trophy{% else %}award{% endif %}" aria-hidden="true"></i> {{ award }}</span>{% endfor %}
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<a href="{{ "/publications/" | relative_url }}" class="button">
+  <i class="fas fa-chevron-circle-right"></i>
+  Show All Publications
+</a>
 
 <div class="news-travel" markdown="1">
 

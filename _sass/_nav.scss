@@ -1,34 +1,45 @@
 .page-header {
   border-top: 6px solid $brand-color;
-  border-bottom: 1px solid #d7d6ce;
-  background-color: $header-background;
-  padding-top: 1px;  // makes spacing look nicer
+  padding-top: 6px;
+  margin-bottom: 40px;
 }
 
 nav {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
-  line-height: 64px;
+  line-height: 36px;
   justify-content: space-between;
 
+  & > *:last-child {
+    margin-left: auto;
+  }
+
   a {
-    color: #666;
-    padding: 0 0.6em;
+    color: #333;
+    padding: 12px 0.3em 0 0.3em;
+    margin: 0 0.3em;
     display: inline-block;
     text-decoration: none;
+    font-weight: $bold-font-weight;
+
+    opacity: 0.75;
+    border-bottom: 1px solid transparent;
+
+    transition: all 0.25s ease-in-out;
 
     &:last-child {
       padding-right: 0;
     }
     &.active {
-      font-weight: $bold-font-weight;
-      color: #444;
+      border-bottom-color: #333;
+      opacity: 1;
     }
     &:hover {
-      color: black;
       text-decoration: none;
-      transition: color .08s ease-in;
+      opacity: 1;
+      transition: all 0.25s ease-in-out;
+      border-bottom-color: #333;
     }
   }
 
@@ -38,39 +49,40 @@ nav {
     justify-content: center;
   }
 
-  .spacer {
-    flex: 1;
-  }
-
   .site-title {
     font-weight: $bold-font-weight;
-    margin-top: -2px;
+    margin-top: 8px;
     padding: 0;
+    margin-left: 0;
     margin-right: $spacing-unit;
     flex: 0 0 auto;
     font-size: 1.5em;
+    border: none;
+
+    color: #333;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.75;
+    }
   }
 }
 
 @include media-query($on-laptop) {
   nav {
-    &.container {
-      // 13 px is just right to not move title
-      // reduce padding by 8 pixels so that content is aligned
-      padding: 13px ($spacing-unit - 10);
-    }
-
     line-height: 42px;
 
-
     a {
-      padding: 0 10px;
+      padding: 0 9px;
+
+      &:nth-child(2) {
+        margin-left: -8px;
+      }
     }
 
     .site-title {
       flex: 0 1 100%;
       padding: 0;
-      margin-left: 10px;
     }
   }
 }
@@ -83,9 +95,10 @@ nav {
   nav {
     justify-content: space-around;
 
-    .spacer {
-      display: none;
+    & > *:last-child {
+      margin-left: initial;
     }
+
     .external {
       flex: 0 1 100%;
       justify-content: space-around;
@@ -94,8 +107,23 @@ nav {
       text-align: center;
     }
     // hide icons from internal links
-    &>a .fas {
+    & > a .fas {
       display: none;
+    }
+
+    a {
+      border-radius: 3px;
+
+      &:hover {
+        border-color: transparent;
+        background: lighten($brand-color, 55%);
+      }
+
+      &.active {
+        border-color: transparent;
+        background: lighten($brand-color, 50%);
+        border-radius: 3px;
+      }
     }
   }
 }

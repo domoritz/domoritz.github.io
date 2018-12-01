@@ -82,9 +82,6 @@
 }
 
 #clear-filters {
-  margin-top: 16px;
-  margin-bottom: 20px;
-
   color: $grey-color-dark;
   font-weight: $bold-font-weight;
   cursor: pointer;
@@ -108,134 +105,109 @@
   padding: 0.4em;
 }
 
-.pub-year {
-  font-size: 1.3em;
-  margin: 0.7em 0 0.5em 0;
-  border-bottom: none;
-  color: $grey-color;
-}
-
-.publication,
-.pub-year {
-  opacity: 1;
-  max-height: 600px;
-  overflow: hidden;
-  transition: all 0.6s ease;
-
-  &.hidden {
-    max-height: 0;
-    margin: 0;
-    opacity: 0;
+.pubs {
+  .pub-year {
+    font-size: 1.3em;
+    margin: 0.7em 0 0.5em 0;
+    border-bottom: none;
+    color: $grey-color;
   }
-}
 
-.publication {
-  margin-bottom: 2em;
-
-  h3 {
-    font-size: 1.2em;
-    margin: 0em;
-    font-weight: $bold-font-weight;
-
+  .publication,
+  .year {
+    opacity: 1;
     max-height: 600px;
     overflow: hidden;
+    transition: all 0.6s ease;
 
     &.hidden {
       max-height: 0;
+      margin: 0;
+      opacity: 0;
     }
   }
 
-  .award-icon {
-    margin-right: 0.2em;
-    font-size: 1.2em;
+  .publication {
+    margin-bottom: 2em;
 
-    &.fa-trophy {
-      color: #ffc000;
-    }
+    h3 {
+      font-size: 1.2em;
+      margin: 0em;
+      font-weight: $bold-font-weight;
 
-    &.fa-award {
-      color: firebrick;
-    }
-  }
+      max-height: 600px;
+      overflow: hidden;
 
-  .authors {
-    margin-bottom: 0.3em;
-    font-weight: 300;
-    a {
-      color: $text-color;
-    }
-  }
-
-  .venue,
-  .venue a {
-    color: $grey-color;
-  }
-
-  .awards {
-    margin-top: 0.1em;
-    font-weight: $bold-font-weight;
-    color: firebrick;
-  }
-
-  .tweet {
-    &:hover {
-      text-decoration: none;
-
-      .message {
-        text-decoration: underline;
+      &.hidden {
+        max-height: 0;
       }
     }
-    .message {
-      font-size: 0.9em;
-      font-style: italic;
+
+    .award-icon {
+      margin-right: 0.2em;
+      font-size: 1.2em;
+
+      &.fa-trophy {
+        color: #ffc000;
+      }
+
+      &.fa-award {
+        color: firebrick;
+      }
+    }
+
+    .authors {
+      margin-bottom: 0.3em;
+      font-weight: 300;
+      a {
+        color: $text-color;
+      }
+    }
+
+    .venue,
+    .venue a {
       color: $grey-color;
     }
-  }
 
-  p {
-    margin-bottom: 0;
-  }
+    .awards {
+      margin-top: 0.1em;
+      font-weight: $bold-font-weight;
+      color: firebrick;
+    }
 
-  .extra-links {
-    margin-top: 0.5em;
-    font-weight: 300;
-    font-size: 0.9em;
-
-    a {
-      margin-right: 1em;
-      white-space: nowrap;
-
+    .tweet {
       &:hover {
         text-decoration: none;
-        border-bottom: 1px solid $link-color;
+
+        .message {
+          text-decoration: underline;
+        }
+      }
+      .message {
+        font-size: 0.9em;
+        font-style: italic;
+        color: $grey-color;
       }
     }
-  }
-}
 
-.talk-title {
-  font-size: 1.1em;
-  font-weight: $bold-font-weight;
-}
+    p {
+      margin-bottom: 0;
+    }
 
-.talk {
-  clear: both;
+    .extra-links {
+      margin-top: 0.5em;
+      font-weight: 300;
+      font-size: 0.9em;
 
-  time {
-    float: right;
-    color: $grey-color;
-  }
+      a {
+        margin-right: 1em;
+        white-space: nowrap;
 
-  .extra-links {
-    font-weight: 300;
-    font-size: 0.8em;
-
-    a {
-      &:first-child {
-        margin-left: 2em;
+        &:hover {
+          text-decoration: none;
+          border-bottom: 1px solid $link-color;
+        }
       }
-
-      margin-left: 1em;
     }
   }
 }

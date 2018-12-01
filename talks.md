@@ -2,9 +2,8 @@
 layout: page
 permalink: /talks/
 title: Talks
+class: talks
 ---
-
-Want me to give a talk? Send me an [email](mailto:{{ site.email }})!
 
 {% assign talktitles = site.data.talks | group_by:"title" %}
 {% for title in talktitles %}

@@ -3,7 +3,6 @@
     font-size: 1.4em;
     font-weight: $base-font-weight;
     position: relative;
-    top: -1px;
     float: left;
     border: none;
     margin: 0;
@@ -23,7 +22,7 @@
       font-size: 0.8em;
       position: absolute;
       left: 0;
-      top: 0.1em;
+      top: 0.4em;
 
       .meta-year {
         visibility: hidden;
@@ -79,7 +78,6 @@
  */
 
 .post-header {
-  margin: 1.5*$spacing-unit 0;
   h1 {
     margin: 0;
   }
