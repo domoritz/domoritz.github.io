@@ -28,11 +28,14 @@
       - Ilia Timofeev
       - Ben Welsh
       - Scott Sievert
+  pdf: https://www.theoj.org/joss-papers/joss.01057/10.21105.joss.01057.pdf
+  link: https://github.com/altair-viz/altair
+  doi: 10.21105/joss.01057
+  short_doi: cxrt
   venue: The Journal of Open Source Software
   venue_url: https://joss.theoj.org/
   venue_tags:
     - JOSS
-  description: In preparation.
   tags:
     - Visualization
     - Data Science
