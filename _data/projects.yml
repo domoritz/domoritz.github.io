@@ -3,8 +3,8 @@
   code: https://github.com/uwdata/falcon
   demo: https://uwdata.github.io/falcon/flights
   image: falcon.png
-  description: "I created Falcon, an interactive system that enables real-time brushing and linking interactions among multiple visualizations of billion-record datasets."
-  highlight: true
+  description: "Falcon is an interactive system for real-time brushing and linking interactions among multiple visualizations of billion-record datasets."
+  highlight: 2
 
 - title: Dense Lines
   image: dense.png
@@ -16,8 +16,8 @@
 - title: Pangloss
   image: pangloss.png
   paper: /papers/2017-TrustButVerify-CHI.pdf
-  description: "With Danyel Fisher at MSR, I developed Pangloss, a fast big-data visualization system that uses approximation to answer queries quickly."
-  highlight: true
+  description: "Pangloss is a big-data visualization system that uses approximation to answer queries quickly. I developed Falcon with Danyel Fisher at MSR."
+  highlight: 3
 
 - title: VSUPs
   image: vsup.png
@@ -34,7 +34,7 @@
   article: https://medium.com/@uwdata/64ce20287e9d
   image: draco.png
   description: "I created Draco, a formal model of visualization design with shareable design guidelines, formal reasoning over the design space, and visualization recommendation."
-  highlight: true
+  highlight: 1
 
 - title: Vega-Lite
   url: https://vega.github.io/vega-lite
@@ -43,8 +43,8 @@
   demo: https://vega.github.io/editor/#/examples/vega-lite/interactive_seattle_weather
   video: https://www.youtube.com/watch?v=9uaHRWj04D4
   image: vl.png
-  description: "I am the co-author of Vega-Lite, a high-level visualization grammar that enables rapid specification of interactive, multi-view graphics."
-  highlight: true
+  description: "I am the co-author of Vega-Lite, a high-level visualization grammar for rapid specification of interactive, multi-view graphics."
+  highlight: 4
 
 - title: Vega
   url: https://vega.github.io/vega

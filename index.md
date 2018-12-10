@@ -31,7 +31,8 @@ During my first year at UW, I received support from the [Fulbright program](http
 ## Featured Projects
 
 <div class="featured-projects">
-  {% for project in site.data.projects %}
+  {% assign sorted_projects = site.data.projects | sort: 'highlight' %}
+  {% for project in sorted_projects %}
     {% if project.highlight %}
       {% include project.html project=project %}
     {% endif %}
