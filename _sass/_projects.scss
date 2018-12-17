@@ -69,14 +69,25 @@
   }
 
   @include media-query($on-laptop) {
-    .projects {
+    .grid {
       grid-template-columns: 1fr 1fr;
     }
   }
 
   @include media-query($on-palm) {
-    .projects {
+    .grid {
       grid-template-columns: 1fr;
+
+      .project {
+        display: block;
+
+        .preview-image {
+          width: 40%;
+          padding-top: 22%;
+          float: left;
+          margin-right: 18px;
+        }
+      }
     }
   }
 }
