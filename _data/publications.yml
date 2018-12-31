@@ -15,6 +15,21 @@
   type:
     - Book Chapter
 
+- id: Falcon
+  title: "Falcon: Balancing Interactive Latency and Resolution Sensitivity for Scalable Linked Visualizations"
+  year: 2019
+  authors:
+    - Dominik Moritz
+    - Bill Howe
+    - Jeffrey Heer
+  venue: CHI
+  venue_tags:
+    - CHI
+  venue_location: Glasgow, UK
+  venue_url: https://chi2019.acm.org/
+  highlight: true
+  link: https://github.com/uwdata/falcon
+
 - id: altair
   title: "Altair: Interactive Statistical Visualizations for Python"
   year: 2018
