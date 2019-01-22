@@ -18,6 +18,9 @@
 - id: Falcon
   title: "Falcon: Balancing Interactive Latency and Resolution Sensitivity for Scalable Linked Visualizations"
   year: 2019
+  doi: 10.1145/3290605
+  osf: szpqm
+  pdf: /papers/2019-Falcon-CHI.pdf
   authors:
     - Dominik Moritz
     - Bill Howe
