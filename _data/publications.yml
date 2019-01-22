@@ -151,6 +151,7 @@
   doi: 10.1109/TVCG.2018.2865240
   short_doi: 10/cs68
   pdf: /papers/2018-Draco-InfoVis.pdf
+  recording: https://vimeo.com/308980888
   link: https://uwdata.github.io/draco/
   tweet: Draco models visualization guidelines as logical constraints. Shareable design guidelines, formal reasoning, vis recommendation & more.
   blog: https://medium.com/@uwdata/64ce20287e9d
@@ -280,6 +281,7 @@
   venue_location: Denver, CO, USA
   venue_url: https://chi2017.acm.org/
   pdf: /papers/2017-TrustButVerify-CHI.pdf
+  recording: https://www.youtube.com/watch?v=4ntnRzqiG7Y
   video: https://www.youtube.com/watch?v=cfdzi92r4sM
   slides: /talks/TrustButVerify-CHI-2017.pdf
   doi: 10.1145/3025453.3025456
@@ -374,7 +376,6 @@
     - InfoVis
   venue_url: http://ieeevis.org/
   venue_location: Baltimore, MD, USA
-  link: http://idl.cs.washington.edu/papers/vega-lite
   pdf: http://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf
   video: https://vimeo.com/177767802
   link: https://vega.github.io/vega-lite/
@@ -528,6 +529,7 @@
   link: https://idl.cs.washington.edu/papers/perfopticon
   pdf: https://idl.cs.washington.edu/files/2015-Perfopticon-EuroVis.pdf
   code: https://github.com/uwescience/myria-web
+  video: https://vimeo.com/127110709
   doi: 10.1111/cgf.12619
   short_doi: 10/f7kqsv
   tweet: Visual performance debugging for queries in distributed database systems.

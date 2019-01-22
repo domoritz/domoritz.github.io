@@ -10,6 +10,7 @@
 - title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
   location: IEEE VIS
   city: Berlin
+  recording: https://vimeo.com/308980888
   date: 2018-10-23
 - title: "Automated Visualization Design with Draco"
   location: Tableau Research
@@ -59,7 +60,7 @@
   location: Microsoft
   city: Redmond
   date: 2017-11-07
-  video: https://www.youtube.com/watch?v=Nsrz4YdaZ_A
+  recording: https://www.youtube.com/watch?v=Nsrz4YdaZ_A
 - title: "Vega-Lite: A Grammar of Interactive Graphics"
   location: Turi (Apple)
   city: Seattle
@@ -74,7 +75,7 @@
   url: https://openvisconf.com/#speakers
   date: 2017-04-24
   slides: /talks/VegaLite-OpenVisConf-2017.pdf
-  video: https://www.youtube.com/watch?v=9uaHRWj04D4
+  recording: https://www.youtube.com/watch?v=9uaHRWj04D4
 - title: "Vega-Lite: A Grammar of Interactive Graphics"
   location: IEEE Infovis
   city: Baltimore
@@ -91,7 +92,7 @@
   location: ACM CHI
   city: San Jose
   date: 2016-05-10
-  video: https://www.youtube.com/watch?v=4ntnRzqiG7Y
+  recording: https://www.youtube.com/watch?v=4ntnRzqiG7Y
 - title: "Vega-Lite: A Declarative Format for Visualization"
   location: Plotcon
   city: New York City
@@ -109,7 +110,7 @@
   location: IEEE Infovis
   city: Chicago
   date: 2015-10-26
-  video: https://vimeo.com/236170947
+  recording: https://vimeo.com/236170947
 - title: "Perfopticon: Visual Query Analysis for Distributed Databases"
   location: Eurovis
   city: Cagliari

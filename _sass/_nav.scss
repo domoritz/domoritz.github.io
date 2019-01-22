@@ -26,7 +26,7 @@ nav {
     opacity: 0.75;
     border-bottom: 1px solid transparent;
 
-    transition: all 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
 
     &:last-child {
       padding-right: 0;
@@ -37,9 +37,11 @@ nav {
     }
     &:hover {
       text-decoration: none;
+
       opacity: 1;
-      transition: all 0.25s ease-in-out;
       border-bottom-color: #333;
+
+      transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
     }
   }
 

@@ -17,6 +17,8 @@
 - title: Pangloss
   image: pangloss.jpg
   paper: /papers/2017-TrustButVerify-CHI.pdf
+  video: https://www.youtube.com/watch?v=cfdzi92r4sM
+  recording: https://www.youtube.com/watch?v=4ntnRzqiG7Y
   description: "Pangloss is a big-data visualization system that uses approximation to answer queries quickly. I developed Falcon with Danyel Fisher at MSR."
   highlight: 3
 
@@ -33,6 +35,7 @@
   code: https://github.com/uwdata/draco
   paper: /papers/2018-Draco-InfoVis.pdf
   article: https://medium.com/@uwdata/64ce20287e9d
+  recording: https://vimeo.com/308980888
   image: draco.jpg
   description: "I created Draco, a formal model of visualization design with shareable design guidelines, formal reasoning over the design space, and visualization recommendation."
   highlight: 1
@@ -42,7 +45,7 @@
   code: https://github.com/vega/vega-lite
   paper: /papers/2017-VegaLite-InfoVis.pdf
   demo: https://vega.github.io/editor/#/examples/vega-lite/interactive_seattle_weather
-  video: https://www.youtube.com/watch?v=9uaHRWj04D4
+  recording: https://www.youtube.com/watch?v=9uaHRWj04D4
   image: vl.jpg
   description: "I am the co-author of Vega-Lite, a high-level visualization grammar for rapid specification of interactive, multi-view graphics."
   highlight: 4
@@ -124,6 +127,7 @@
 - title: Perfopticon
   paper: /papers/2015-Perfopticon-EuroVis.pdf
   code: https://github.com/uwescience/myria-web
+  video: https://vimeo.com/127110709
   image: perfopticon.jpg
   description: "I led the development of an interactive tool to investigate quety execution in distirbuted database systems."
 

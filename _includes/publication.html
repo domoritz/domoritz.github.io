@@ -61,6 +61,11 @@
         <i class="fas fa-film" aria-hidden="true"></i> Video
       </a>
     {% endif %}
+    {% if pub.recording %}
+      <a href="{{ pub.recording }}">
+        <i class="fas fa-video" aria-hidden="true"></i> Recording
+      </a>
+    {% endif %}
     {% if pub.slides %}
       <a href="{{ pub.slides }}">
         <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
