@@ -2,6 +2,7 @@
   url: https://github.com/uwdata/falcon
   code: https://github.com/uwdata/falcon
   demo: https://uwdata.github.io/falcon/flights
+  paper: /papers/2019-Falcon-CHI.pdf
   image: falcon.jpg
   description: "Falcon is an interactive system for real-time brushing and linking interactions among multiple visualizations of billion-record datasets."
   highlight: 2
