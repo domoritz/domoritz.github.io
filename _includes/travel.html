@@ -3,10 +3,14 @@
 
 <tr>
   <td class="date">
-    {% if month_start == month_end %}
-      {{ travel.start | date: "%b %-d" }}–{{ travel.end | date: "%-d, %y" }}
+    {% if travel.start and travel.end %}
+      {% if month_start == month_end %}
+        {{ travel.start | date: "%b %-d" }}–{{ travel.end | date: "%-d, '%y" }}
+      {% else %}
+        {{ travel.start | date: "%b %-d" }}–{{ travel.end | date: "%%b -d, '%y" }}
+      {% endif %}
     {% else %}
-      {{ travel.start | date: "%b %-d" }}–{{ travel.end | date: "%%b -d, %y" }}
+      in the future
     {% endif %}
   </td>
   <td>
