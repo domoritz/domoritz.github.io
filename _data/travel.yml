@@ -1,7 +1,11 @@
 - title: University of British Columbia
   where: Vancouver
+- title: University of Illinois
+  where: Urbana-Champaign
 - title: Carnegie Mellon University
   where: Pittsburgh
+  start: 2019-03-18
+  end: 2019-03-19
 - title: University of Wisconsin
   where: Madison
   start: 2019-04-05
