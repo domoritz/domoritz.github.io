@@ -2,6 +2,9 @@
   where: Vancouver
 - title: University of Illinois
   where: Urbana-Champaign
+- title: UCSD
+  start: 2019-13-03
+  end: 2019-14-03
 - title: Carnegie Mellon University
   where: Pittsburgh
   start: 2019-03-18
@@ -10,8 +13,8 @@
   where: Madison
   start: 2019-04-05
   end: 2019-04-05
-- title: University of Tornoto
-  where: Toronoto
+- title: University of Toronto
+  where: Toronto
   start: 2019-03-07
   end: 2019-03-08
 - title: University of Pennsylvania
