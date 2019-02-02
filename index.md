@@ -81,7 +81,12 @@ During my first year at UW, I received support from the [Fulbright program](http
 
 <table>
 <tbody>
-{% for travel in site.data.travel %}
+{% assign future_travel = site.data.travel | where_exp:'item','item.start == null' %}
+{% for travel in future_travel %}
+  {% include travel.html travel=travel %}
+{% endfor %}
+{% assign sorted_travel = site.data.travel | where_exp:'item','item.start' | sort: 'start' | reverse %}
+{% for travel in sorted_travel %}
   {% include travel.html travel=travel %}
 {% endfor %}
 </tbody>
