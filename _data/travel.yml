@@ -1,4 +1,7 @@
 - title: University of Chicago
+  where: Chicago
+  start: 2019-04-15
+  end: 2019-04-16
 - title: University of British Columbia
   where: Vancouver
   start: 2019-04-09
@@ -25,8 +28,8 @@
   end: 2019-02-28
 - title: University of Pennsylvania
   where: Philadelphia
-  start: 2019-02-11
-  end: 2019-02-13
+  start: 2019-02-12
+  end: 2019-02-12
 - title: Visit Streamlit, Observable, OmniSci, and UC Berkeley
   where: Bay Area
   start: 2018-12-18
