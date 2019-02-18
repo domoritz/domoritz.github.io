@@ -32,6 +32,8 @@
   venue_url: https://chi2019.acm.org/
   highlight: true
   link: https://github.com/uwdata/falcon
+  type:
+    - Conference
 
 - id: altair
   title: "Altair: Interactive Statistical Visualizations for Python"
