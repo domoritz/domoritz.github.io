@@ -1,8 +1,10 @@
+- title: New York University (NYU)
+  where: New York
 - title: University of Chicago
   where: Chicago
   start: 2019-04-15
   end: 2019-04-16
-- title: University of British Columbia
+- title: University of British Columbia (UBC)
   where: Vancouver
   start: 2019-04-09
   end: 2019-04-10
@@ -10,19 +12,19 @@
   where: Madison
   start: 2019-04-05
   end: 2019-04-05
-- title: Carnegie Mellon University
+- title: Carnegie Mellon University (CMU)
   where: Pittsburgh
   start: 2019-03-18
   end: 2019-03-19
-- title: University of California
+- title: University of California (UCSD)
   where: San Diego
   start: 2019-03-13
-  end: 2019-03-14
+  end: 2019-03-15
 - title: University of Toronto
   where: Toronto
   start: 2019-03-07
   end: 2019-03-08
-- title: University of Illinois
+- title: University of Illinois (UIUC)
   where: Urbana-Champaign
   start: 2019-02-28
   end: 2019-02-28
