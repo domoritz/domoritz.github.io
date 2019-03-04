@@ -2,8 +2,10 @@
   where: Glasgow
   start: 2019-05-04
   end: 2019-05-09
-- title: Apple Research
+- title: Apple (Turi)
   where: Seattle
+  start: 2019-03-22
+  end: 2019-03-22
 - title: Microsoft Research
   where: Redmond
   start: 2019-03-27
