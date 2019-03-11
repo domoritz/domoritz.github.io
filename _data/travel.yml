@@ -4,8 +4,8 @@
   end: 2019-05-09
 - title: Apple (Turi)
   where: Seattle
-  start: 2019-03-22
-  end: 2019-03-22
+  start: 2019-03-26
+  end: 2019-03-26
 - title: Microsoft Research
   where: Redmond
   start: 2019-03-27
@@ -14,6 +14,10 @@
   where: New York
   start: 2019-04-01
   end: 2019-04-02
+- title: Northwestern
+  where: Evanston
+  start: 2019-04-17
+  end: 2019-04-17
 - title: University of Chicago
   where: Chicago
   start: 2019-04-15
