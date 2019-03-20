@@ -12,7 +12,8 @@ class: talks
 {% for title in talktitles %}
 {:.talk-title}
 ### {{ title.name }}
-{% for talk in title.items %}
+{% assign sorted_talks = title.items | sort: 'date' | reverse %}
+{% for talk in sorted_talks  %}
   {% include talk.html talk=talk %}
 {% endfor %}
 {% endfor %}

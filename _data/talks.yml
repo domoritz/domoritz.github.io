@@ -10,7 +10,7 @@
   location: New York University (NYU)
   city: New York
   date: 2019-04-01
-- title: "Falcon: Balancing Interactive Latency and Resolution Sensitivity for Scalable Linked Visualizations"
+- title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
   location: Northwestern
   city: Evanston
   date: 2019-04-17
@@ -30,6 +30,7 @@
   location: Carnegie Mellon University (CMU)
   city: Pittsburgh
   date: 2019-03-18
+  url: https://www.cs.cmu.edu/calendar/mon-2019-03-18-1200/scs-faculty-candidate
 - title: "Visualization for People + Systems"
   location: University of California (UCSD)
   city: San Diego
@@ -46,6 +47,7 @@
   location: University of Pennsylvania
   city: Philadelphia
   date: 2019-02-12
+  url: https://events.seas.upenn.edu/event/cis-seminar-visualization-for-people-systems/
 - title: "Raising the Abstraction of Data Visualization"
   location: IBM Research
   city: Bangalore

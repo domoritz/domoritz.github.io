@@ -383,7 +383,8 @@ To enhance people’s ability to understand and communicate large and complex da
 {% for title in talktitles %}
 <article>
   <h3 class="cv-talk-title">{{ title.name }}</h3>
-  {% for talk in title.items %}
+  {% assign sorted_talks = title.items | sort: 'date' | reverse %}
+  {% for talk in sorted_talks %}
     <div class="date-container">
       <time datetime="{{ talk.date }}">{{ talk.date | date: "%b %Y" }}</time>
       <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}</span>
