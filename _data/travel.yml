@@ -1,5 +1,3 @@
-- title: Tableau
-  where: Seattle
 - title: CHI
   where: Glasgow
   start: 2019-05-04
@@ -11,14 +9,10 @@
   where: Cambridge
   start: 2019-04-25
   end: 2019-04-25
-- title: Apple (Turi)
+- title: Tableau
   where: Seattle
-  start: 2019-03-26
-  end: 2019-03-26
-- title: Microsoft Research
-  where: Redmond
-  start: 2019-03-27
-  end: 2019-03-28
+  start: 2019-04-23
+  end: 2019-04-23
 - title: New York University (NYU)
   where: New York
   start: 2019-04-01
@@ -39,6 +33,14 @@
   where: Madison
   start: 2019-04-05
   end: 2019-04-05
+- title: Microsoft Research
+  where: Redmond
+  start: 2019-03-27
+  end: 2019-03-28
+- title: Apple (Turi)
+  where: Seattle
+  start: 2019-03-26
+  end: 2019-03-26
 - title: Carnegie Mellon University (CMU)
   where: Pittsburgh
   start: 2019-03-18
