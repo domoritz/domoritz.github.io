@@ -18,7 +18,8 @@
 - id: falcon
   title: "Falcon: Balancing Interactive Latency and Resolution Sensitivity for Scalable Linked Visualizations"
   year: 2019
-  doi: 10.1145/3290605
+  doi: 10.1145/3290605.3300924
+  short_doi: c5cv
   osf: szpqm
   pdf: /papers/2019-Falcon-CHI.pdf
   authors:
