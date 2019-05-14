@@ -412,6 +412,8 @@
   venue_url: http://sigmod2016.org/
   link: https://uwescience.github.io/sqlshare/
   pdf: https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf
+  doi: 10.1145/2882903.2882957
+  short_doi: 10/c5rw
   awards:
     - Most Reproducible Paper Award
   tweet: Data analysts can use SQL to analyze data; if the system supports complex queries.
