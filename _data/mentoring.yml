@@ -1,4 +1,11 @@
 - title: "Google Summer of Code"
+  year: 2019
+  description: The IDL was selected as a mentoring organization for the Google Summer of Code 2019.I mentored two students from India to work on the Vega editor.
+  location: University of Washington
+  who:
+    - Aman Sharma
+    - Siddhant Manchanda
+- title: "Google Summer of Code"
   year: 2018
   description: The IDL was selected as a mentoring organization for the Google Summer of Code 2018. Together with Kanit "Ham" Wongsuphasawat I mentored two students from India to work on Vega-Lite.
   location: University of Washington
