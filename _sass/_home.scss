@@ -24,10 +24,14 @@
       font-size: 0.9em;
       text-align: center;
 
-      img {
+      picture, img {
         width: 220px;
         height: 220px;
         border-radius: 6px;
+      }
+
+      ul {
+        margin-top: 16px;
       }
     }
   }

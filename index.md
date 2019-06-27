@@ -17,7 +17,12 @@ I research scalable interactive systems for visualization and analysis. My syste
 </div>
 
 <div class="me" markdown="1">
-<img src="{{ '/images/dominik_berlin.jpg' | absolute_url }}" alt="Image of me">
+<picture>
+  <source srcset='/images/dominik_berlin.webp' type='image/webp' />
+  <img
+    src='/images/dominik_berlin.jpg'
+    alt='Dominik Moritz'/>
+</picture>
 
 {:.no-list}
 * <a href="mailto:{{ site.email }}">{{ site.email }}</a>
