@@ -13,6 +13,8 @@ I'm a PhD candidate in the [Paul G. Allen School](https://www.cs.washington.edu/
 
 I research scalable interactive systems for visualization and analysis. My systems have won awards at premier academic venues and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities.
 
+</div>
+
 <div class="me" markdown="1">
 <picture>
   <source srcset='/images/dominik_berlin.webp' type='image/webp' />
