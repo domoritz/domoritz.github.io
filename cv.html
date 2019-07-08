@@ -274,6 +274,31 @@ title: CV
 To enhance people’s ability to understand and communicate large and complex data, I develop methods that richly integrate the capabilities of both people and machines. I combine methods from <strong>visualization</strong>, <strong>data management</strong>, <strong>programming languages</strong>, and <strong>human-computer interaction</strong> to enable effective methods for data analysis and communication. My systems have won awards at premier academic venues, and are used by journalists, data enthusiasts, developers, educators, and the data science community.
 </p>
 
+
+<h2>Positions</h2>
+
+{% for pos in site.data.positions %}
+<article>
+  <div class="date-container">
+    <span class="date">{{ pos.years }}</span>
+    <h3>{{ pos.title }}{% if pos.company %} at {{pos.company}}{% endif %}</h3>
+    <span class="right">{{ pos.location }}</span>
+  </div>
+  <!-- <p>
+    {% if pos.mentors %}
+      Mentor{% if pos.mentors.size > 1 %}s{% endif %}: {% for mentor in pos.mentors %}
+        {% include person person=mentor %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}<br/>
+    {% endif %}
+    {{ pos.description | markdownify | remove: '<p>' | remove: '</p>' }}
+    {% if pos.skills %}
+    <small class="muted">[{% for skill in pos.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}]</small>
+    {% endif %}
+  </p> -->
+</article>
+{% endfor %}
+
+
 <h2>Education</h2>
 
 {% for ed in site.data.education %}
@@ -353,27 +378,6 @@ To enhance people’s ability to understand and communicate large and complex da
       {% endfor %}
     </p>
   </div>
-{% endfor %}
-
-<h2>Professional and Research Experience</h2>
-
-{% for exp in site.data.experience %}
-<article>
-  <div class="date-container">
-    <span class="date">{{ exp.years }}</span>
-    <h3>{% if exp.company %}{{exp.company}} - {% endif %}{{ exp.title }}</h3>
-    <span class="right">{{ exp.location }}</span>
-  </div>
-  <p>
-    {% if exp.mentors %}
-      Mentor{% if exp.mentors.size > 1 %}s{% endif %}: {% for mentor in exp.mentors %}
-        {% include person person=mentor %}{% unless forloop.last %}, {% endunless %}
-      {% endfor %}<br/>
-    {% endif %}
-    {{ exp.description | markdownify | remove: '<p>' | remove: '</p>' }}
-    <small class="muted">[{% for skill in exp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}]</small>
-  </p>
-</article>
 {% endfor %}
 
 

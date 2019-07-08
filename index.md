@@ -13,6 +13,7 @@ I'm a PhD candidate in the [Paul G. Allen School](https://www.cs.washington.edu/
 
 I research scalable interactive systems for visualization and analysis. My systems have won awards at premier academic venues and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities.
 
+In September 2019, I will start as a researcher at [Apple](https://www.apple.com/), working on data visualization and interactive systems for artificial intelligence. In 2020, I will start as an assistant professor at [Carnegie Mellon University](https://hcii.cmu.edu/).
 </div>
 
 <div class="me" markdown="1">

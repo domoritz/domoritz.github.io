@@ -1,8 +1,33 @@
+- title: Assistant Professor
+  years: 2020-
+  company: Carnegie Mellon University
+  location: Pittsburgh, PA
+  description: In the Fall of 2020, I will start as an assistant professor in the Human-Computer-Interaction Institute. 
+- title: Machine Learning Researcher
+  years: 2019-2020
+  company: Apple (Turi)
+  location: Seattle, WA
+  skills:
+    - Machine Learning
+- title: Researcher
+  years: 2019
+  company: Streamlit
+  location: San Fracisco, WA
+  skills:
+    - Machine Learning
+    - Python
+- title: Research Assistant
+  years: 2013-2019
+  company: University of Washington
+  location: Seattle, WA
+  mentors:
+    - Jeffrey Heer
+    - Bill Howe
 - title: Research Intern
   years: 2017
   company: Microsoft Research
   group: HCI
-  location: Redmond
+  location: Redmond, WA
   mentors:
     - Danyel Fisher
   description: In collaboration with the PowerBI team, we developed visualization alternatives that scale to large numbers of records. So far, we have submitted a paper and a patent on part of this project but there is more to come. As a side project, I worked on visualization recommendation using constraints.
@@ -14,7 +39,7 @@
   years: 2016
   company: Microsoft Research
   group: VIBE/HCI and DMX
-  location: Redmond
+  location: Redmond, WA
   mentors:
     - Danyel Fisher
     - Bolin Ding
@@ -29,7 +54,7 @@
   years: 2015
   company: Google Research
   group: Structured Data Team
-  location: Mountain View
+  location: Mountain View, CA
   mentors:
     - Sudip Roy
     - Alon Halevy
@@ -49,7 +74,7 @@
 - title: Engineering Intern
   years: 2014
   company: Google
-  location: New York City
+  location: New York City, NY
   mentors:
     - Ben Atkins
     - Shishi Chen
