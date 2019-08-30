@@ -5,6 +5,7 @@ jobs:
     name: Send purge command
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
     - name: Send purge command
       uses: jakejarvis/cloudflare-purge-action@master
       env:
