@@ -1,3 +1,18 @@
+- id: thesis
+  title: "Interactive Systems for Scalable Visualization and Analysis"
+  authors:
+    - Dominik Moritz
+  year: 2019
+  description: PhD thesis.
+  pdf: /assets/dominik_thesis.pdf
+  tags:
+    - Visualization
+    - Big Data
+    - Vega-Lite
+    - Machine Learning
+    - Recommendation
+    - Data Science
+
 - id: istc-chapter
   title: "Advances in Visualization of Big Data"
   year: 2019
