@@ -2,7 +2,7 @@
   years: 2020-
   company: Carnegie Mellon University
   location: Pittsburgh, PA
-  description: In the Fall of 2020, I will start as an assistant professor in the Human-Computer-Interaction Institute. 
+  description: In the Fall of 2020, I will start as an assistant professor in the Human-Computer-Interaction Institute.
 - title: Machine Learning Researcher
   years: 2019-2020
   company: Apple (Turi)
@@ -12,7 +12,7 @@
 - title: Researcher
   years: 2019
   company: Streamlit
-  location: San Fracisco, WA
+  location: San Fracisco, CA
   skills:
     - Machine Learning
     - Python
