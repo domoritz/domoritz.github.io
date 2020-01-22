@@ -1,3 +1,17 @@
+- id: dziban
+  title: Dziban: "Balancing Agency & Automation in Visualization Design via Anchored Recommendations"
+  authors:
+    - Halden Lin
+    - Dominik Moritz
+    - Jeffrey Heer
+  year: 2020
+  venue: CHI
+  venue_tags:
+    - CHI
+  venue_url: https://chi2020.acm.org/
+  type:
+    - Conference
+
 - id: spacegraphcats
   year: 2020
   pdf: https://www.biorxiv.org/content/10.1101/462788v3.full.pdf
