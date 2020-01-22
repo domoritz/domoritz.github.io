@@ -1,3 +1,17 @@
+- id: spacegraphcats
+  year: 2019
+  pdf: https://www.biorxiv.org/content/10.1101/462788v3.full.pdf
+  title: "Exploring neighborhoods in large metagenome assembly graphs reveals hidden sequence diversity"
+  authors:
+    - C. Titus Brown
+    - Dominik Moritz
+    - Michael O'Brien
+    - Felix Reidl
+    - Taylor Reiter
+    - Blair Sullivan
+  doi: https://doi.org/10.1101/462788
+  short_doi: cwrw
+
 - id: thesis
   title: "Interactive Systems for Scalable Visualization and Analysis"
   authors:
