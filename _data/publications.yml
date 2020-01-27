@@ -5,10 +5,12 @@
     - Dominik Moritz
     - Jeffrey Heer
   year: 2020
+  doi: 10.1145/3313831.3376880
   venue: CHI
   venue_tags:
     - CHI
   venue_url: https://chi2020.acm.org/
+  pdf: /papers/2020-Dziban-CHI.pdf
   type:
     - Conference
 
