@@ -1,6 +1,6 @@
 # Site settings
 title: Dominik Moritz
-email: domoritz@cs.washington.edu
+email: domoritz@cmu.edu
 description: > # this means to ignore newlines until "baseurl:"
   Research Scientist at Apple. To be assistant professor at Carnegie Mellon University. I create interactive data visualization and analysis tools. PhD from University of Washington.
 baseurl: "" # the subpath of your site, e.g. /blog
