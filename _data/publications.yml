@@ -1,3 +1,22 @@
+- id: benchmarking
+  title: "Database Benchmarking for SupportingReal-Time Interactive Querying of Large Data"
+  authors:
+    - Leilani Battle
+    - Philipp Eichmann
+    - Marco Angelini
+    - Tiziana Catarci
+    - Giuseppe Santucci
+    - Yukun Zheng
+    - Carsten Binnig
+    - Jean-Daniel Fekete
+    - Dominik Moritz
+  venue: SIGMOD
+  venue_location: Portland
+  venue_tags:
+    - SIGMOD
+  type:
+    - Conference
+  pdf: /papers/2020-DatabaseBenchmarking-SIGMOD.pdf
 - id: dziban
   title: "Dziban: Balancing Agency & Automation in Visualization Design via Anchored Recommendations"
   authors:
@@ -13,7 +32,6 @@
   pdf: /papers/2020-Dziban-CHI.pdf
   type:
     - Conference
-
 - id: spacegraphcats
   year: 2020
   pdf: https://www.biorxiv.org/content/10.1101/462788v3.full.pdf
