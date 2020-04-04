@@ -9,7 +9,7 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I'm a research scientist at [Apple](https://www.apple.com/) , working on data visualization and interactive systems for artificial intelligence. In 2020, I will start as an assistant professor at [Carnegie Mellon University](https://hcii.cmu.edu/).
+I'm a research scientist at [Apple](https://www.apple.com/) , working on data visualization and interactive systems for artificial intelligence. In 2020, I will start as an assistant professor at [Carnegie Mellon University](https://hcii.cmu.edu/) where I co-started the [Data Interaction Group](https://dig.cmu.edu/).
 
 I received my PhD from the [Paul G. Allen School](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/), where I worked with [Jeff Heer](https://homes.cs.washington.edu/~jheer/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) in the [Interactive Data Lab](http://idl.cs.washington.edu/) and the [Database Group](https://db.cs.washington.edu/).
 
