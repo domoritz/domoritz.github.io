@@ -12,9 +12,6 @@ permalink: /blog/:year/:month/:title.html
 twitter:
   username: domoritz
 
-# Google Analytics
-google_analytics_tracking_id: UA-3992453-11
-
 sass:
   style: compressed
 
