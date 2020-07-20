@@ -336,7 +336,7 @@ To enhance people’s ability to understand and communicate large and complex da
 {% assign types = "Conference|Journal|Book Chapter|Demo|Workshop|Thesis" | split: "|" %}
 {% for type in types %}
   {% assign counter = 1 %}
-  {% for pub in site.data.publications %}
+  {% for pub in site.publications %}
     {% if pub.type[0] == type %}
       {% assign counter = counter | plus: 1 %}
     {% endif %}
@@ -346,7 +346,7 @@ To enhance people’s ability to understand and communicate large and complex da
     {{ type }}
   </h3>
 
-  {% for pub in site.data.publications %}
+  {% for pub in site.publications %}
     {% if pub.type[0] == type %}
       {% assign counter = counter | minus: 1 %}
       <article class="cv-pub">

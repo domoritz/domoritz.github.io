@@ -15,6 +15,10 @@ twitter:
 sass:
   style: compressed
 
+collections:
+  publications:
+    output: false
+
 jekyll-mentions:
   base_url: https://twitter.com
 

@@ -50,7 +50,7 @@ During my first year at UW, I received support from the [Fulbright program](http
 ## Featured Publications
 
 <div class="featured-publications">
-  {% for pub in site.data.publications %}
+  {% for pub in site.publications %}
     {% if pub.highlight %}
       <a href="{{ pub.pdf }}" class="publication">
         <strong>{{ pub.title }}</strong>
