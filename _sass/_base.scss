@@ -16,7 +16,6 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-weight: $base-font-weight;
   color: $text-color;
   background-color: $background-color;
 
@@ -35,9 +34,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-
-  // nicer text underlines
-  text-decoration-skip: ink;
 }
 
 
@@ -94,9 +90,9 @@ figure > img {
 }
 
 figcaption {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 
@@ -174,7 +170,7 @@ pre {
   padding: 1rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   line-height: 1.4rem;
 
   > code {
@@ -192,7 +188,7 @@ pre {
  * Text styling
  */
 strong, b {
-  font-weight: $bold-font-weight;
+  font-weight: 600;
 }
 
 
@@ -208,5 +204,22 @@ iframe {
 /* Content */
 
 .lead {
-  font-size: 1.3em;
+  font-size: 1.3rem;
+}
+
+/* Print */
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  @page {
+    size: portrait;
+    margin: 12mm 12mm 12mm 12mm;
+  }
 }

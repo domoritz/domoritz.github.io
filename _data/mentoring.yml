@@ -1,3 +1,11 @@
+- title: "Apple Summer Internship"
+  year: 2020
+  description: 
+  location: Apple
+  who:
+    - Aspen Hopkins
+    - Jochen Görtler
+    - Stephon Fonrose
 - title: "Vega Ecosystem"
   year: 2019-2020
   description: Hung worked with me on a renderer service for Vega-Lite and Vega visualizations. He integrated the renderer into the popular Vega online editor.

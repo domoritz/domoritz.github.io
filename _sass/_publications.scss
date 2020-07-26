@@ -33,7 +33,7 @@
 
       &.in-query {
         color: black;
-        font-weight: $bold-font-weight;
+        font-weight: 500;
       }
 
       & > span {
@@ -83,7 +83,7 @@
 
 #clear-filters {
   color: $grey-color-dark;
-  font-weight: $bold-font-weight;
+  font-weight: 500;
   cursor: pointer;
 
   &:hover {
@@ -133,7 +133,7 @@
     h3 {
       font-size: 1.2em;
       margin: 0em;
-      font-weight: $bold-font-weight;
+      font-weight: 500;
 
       max-height: 600px;
       overflow: hidden;
@@ -148,7 +148,7 @@
       font-size: 1.2em;
 
       &.fa-trophy {
-        color: #ffc000;
+        color: $yellow-color;
       }
 
       &.fa-award {
@@ -171,7 +171,7 @@
 
     .awards {
       margin-top: 0.1em;
-      font-weight: $bold-font-weight;
+      font-weight: 500;
       color: firebrick;
     }
 

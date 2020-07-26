@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: "en-US" }}">
   {% include head.html %}
   <body>
     {% include header.html %}
@@ -9,7 +9,6 @@
     </div>
 
     {% include footer.html %}
-
     {% include scripts.html %}
   </body>
 </html>
