@@ -15,7 +15,7 @@ In the [first assignment](http://courses.cs.washington.edu/courses/cse512/14wi/a
 
 <iframe src="https://www.domoritz.de/vis-a1/" width="100%" height="600px"></iframe>
 
-I created the static visualization with D3. The code is on [GitHub](https://github.io/domoritz/vis-a1).
+I created the static visualization with D3. The code is on [GitHub](https://github.com/domoritz/vis-a1).
 
 For the [second assignment](http://courses.cs.washington.edu/courses/cse512/14wi/a2.html), we could choose between different datasets to visualize. I chose the FAA flight data and wanted to answer the question whether airlines overestimate the flight times in order to avoid having bad on-time records. TL;DR, the answer is yes.
 
