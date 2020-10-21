@@ -19,10 +19,9 @@
     position: relative;
 
     .post-meta {
-      font-size: 0.8rem;
       position: absolute;
       left: 0;
-      top: 0.4rem;
+      top: 0.3rem;
 
       .meta-year {
         visibility: hidden;
@@ -62,13 +61,11 @@
 
 
 .post-meta {
-  font-size: $small-font-size;
   color: $grey-color;
 }
 
 .post-link {
   display: block;
-  font-size: 24px;
 }
 
 
@@ -226,5 +223,9 @@
     float: none;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .post-list .post-block .post-meta {
+    top: auto;
   }
 }
