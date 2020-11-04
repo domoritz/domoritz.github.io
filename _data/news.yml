@@ -1,11 +1,13 @@
+- message: "My dissertation won the IEEE VGTC Outstanding Dissertation Award."
+  date: 2020-10-27
+- message: "Starting faculty position at CMU HCII."
+  date: 2020-09-01
 - message: "Adam and I founded the [Data Interaction Group at CMU](https://dig.cmu.edu/)."
   date: 2019-11-11
 - message: "I started working at Apple."
   date: 2019-09-23
 - message: "I submitted my dissertation."
   date: 2019-09-06
-- message: "I am starting at Apple in September and as an assistant professor at CMU in 2020."
-  date: 2019-07-01
 - message: "I passed my final exam (thesis defense)."
   date: 2019-06-12
 - message: "I passed my general exam and am now a PhD candidate."
