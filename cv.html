@@ -159,6 +159,7 @@ To enhance people's ability to understand and communicate large and complex data
   {% endfor %}
 {% endfor %}
 
+
 <h2>Patents</h2>
 
 {% for patent in site.data.patents %}
@@ -173,6 +174,30 @@ To enhance people's ability to understand and communicate large and complex data
       {% endfor %}
     </p>
   </div>
+{% endfor %}
+
+
+<h2>Mentoring</h2>
+
+{% for mentor in site.data.mentoring %}
+  <div class="date-container">
+    <span class="date">{{ mentor.year | replace: "-", "–" }}</span>
+    <h3>{{ mentor.title }}</h3>
+    <span class="right">{{ mentor.location }}</span>
+  </div>
+  <p>
+    <span class="muted">
+      {{ mentor.description }}
+    </span>
+    {% if mentor.who %}
+      <h4>Mentored:</h4>
+      <ul>
+      {% for person in mentor.who %}
+        <li class="muted">{% include person person=person %}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  </p>
 {% endfor %}
 
 
@@ -204,11 +229,8 @@ To enhance people's ability to understand and communicate large and complex data
     <span class="right">{{ teach.location }}</span>
   </div>
   <p>
-    {% if teach.professor %}
-      {% if teach.role %}
-        {{ teach.role }} for
-      {% endif %}
-      {% include person person=teach.professor %},
+    {% if teach.students %}
+      {% if teach.role %}{{ teach.role }}{% endif %}{% if teach.professor %} for {% include person person=teach.professor %}{% endif %},
       {{ teach.students }}
       <br/>
     {% endif %}
@@ -217,30 +239,6 @@ To enhance people's ability to understand and communicate large and complex data
     </span>
   </p>
 </article>
-{% endfor %}
-
-
-<h2>Mentoring Experience</h2>
-
-{% for mentor in site.data.mentoring %}
-  <div class="date-container">
-    <span class="date">{{ mentor.year | replace: "-", "–" }}</span>
-    <h3>{{ mentor.title }}</h3>
-    <span class="right">{{ mentor.location }}</span>
-  </div>
-  <p>
-    <span class="muted">
-      {{ mentor.description }}
-    </span>
-    {% if mentor.who %}
-      <h4>Mentored:</h4>
-      <ul>
-      {% for person in mentor.who %}
-        <li class="muted">{% include person person=person %}</li>
-      {% endfor %}
-      </ul>
-    {% endif %}
-  </p>
 {% endfor %}
 
 

@@ -1,3 +1,10 @@
+- title: "Interactive Data Science"
+  location: Carnegie Mellon University
+  role: Instructor
+  url: https://dig.cmu.edu/ids2020
+  year: 2020
+  students: 75 students
+  description: Prepared and taught lectures. Prepared and graded assignments. Co-taught with Adam Perer.
 - title: "Vega-Lite: A Grammar of Interactive Graphics"
   location: OpenVis Conf Workshop
   role: Instructor
