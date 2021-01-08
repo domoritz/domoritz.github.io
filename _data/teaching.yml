@@ -33,7 +33,8 @@
   location: UC Davis
 - title: "SQL Workshop"
   year: 2014
-  students: 20
+  role: Instructor
+  students: 20 participants
   location: UW eScience Institute
   description: One day workshop for scientists as part of Software Carpentry workshop series.
 - title: VHDL
