@@ -35,7 +35,8 @@ To enhance people's ability to understand and communicate large and complex data
 
 <h2>Positions</h2>
 
-{% for pos in site.data.positions %}
+{% assign filtered_positions = site.data.positions | where_exp:'item','item.hidden == null' %}
+{% for pos in filtered_positions %}
 <article>
   <div class="date-container">
     <span class="date">{{ pos.years | replace: "-", "–" }}</span>

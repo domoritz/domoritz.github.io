@@ -2,7 +2,7 @@
   years: 2020-present
   company: Carnegie Mellon University
   location: Pittsburgh, PA
-  description: In the Fall of 2020, I will start as a professor in the Human-Computer-Interaction Institute.
+  description: In the Fall of 2020, I started as a professor in the Human-Computer-Interaction Institute.
 - title: Research Scientist
   years: 2019-present
   company: Apple
@@ -130,6 +130,7 @@
     - Benchmarking
     - Logic programs
     - C++
+  hidden: true
 - title: Google Summer of Code
   years: 2012
   location: Remote
@@ -137,11 +138,13 @@
   skills:
     - Open source development
     - JavaScript
+  hidden: true
 - title: Intern
   years: 2012
   company: Potsdam Institute for Climate Impact Research (PIK)
   location: Potsdam
   description: Developed a search engine for scientific research on climate change.
+  hidden: true
 - title: Intern
   company: Max Born Institute for Nonlinear Optics and Short Pulse Spectroscopy
   years: 2008
@@ -149,8 +152,10 @@
   description: Conduct experiments with lasers.
   mentors:
     Michael Wörner
+  hidden: true
 - title: Intern
   company: Fraunhofer Institute for Telecommunications (HHI)
   location: Berlin
   description: Conduct experiments in cleanroom.
   years: 2006
+  hidden: true
