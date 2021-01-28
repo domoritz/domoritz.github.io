@@ -1,4 +1,4 @@
-name: notfoundbot
+name: Not Found Bot
 on:
   schedule:
     - cron: "0 5 * * *"
