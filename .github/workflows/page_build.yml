@@ -12,5 +12,5 @@ jobs:
         CF_EMAIL: ${{ secrets.CF_EMAIL }}
         CF_KEY: ${{ secrets.CF_KEY }}
         CF_ZONE: ${{ secrets.CF_ZONE }}
-      run: http get https://api.cloudflare.com/client/v4/zones/$CF_ZONE/purge_cache X-Auth-Email:$CF_EMAIL
+      run: http post https://api.cloudflare.com/client/v4/zones/$CF_ZONE/purge_cache X-Auth-Email:$CF_EMAIL
           X-Auth-Key:$CF_KEY purge_everything:=true
