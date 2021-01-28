@@ -5,6 +5,8 @@ jobs:
     name: Send purge command
     runs-on: ubuntu-latest
     steps:
+    - name: Install HTTPie
+      run: sudo apt-get install httpie
     - name: Send purge command
       env:
         CF_EMAIL: ${{ secrets.CF_EMAIL }}
