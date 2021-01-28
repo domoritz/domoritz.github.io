@@ -6,11 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Send purge command
-      uses: swinton/httpie.action@master
       env:
         CF_EMAIL: ${{ secrets.CF_EMAIL }}
         CF_KEY: ${{ secrets.CF_KEY }}
         CF_ZONE: ${{ secrets.CF_ZONE }}
-      with:
-        args: https://api.cloudflare.com/client/v4/zones/$CF_ZONE/purge_cache X-Auth-Email:$CF_EMAIL
+      run: http get https://api.cloudflare.com/client/v4/zones/$CF_ZONE/purge_cache X-Auth-Email:$CF_EMAIL
           X-Auth-Key:$CF_KEY purge_everything:=true
