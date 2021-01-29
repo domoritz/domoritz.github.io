@@ -16,7 +16,7 @@ My next idea was to use the flatbed scanner we already have in our multifunction
 
 ## A pipeline for scanning and segmenting dozens of photo albums
 
-The following pipeline to work well for us. In short, we scan full pages, crop them with `multicrop`, then convert them to JPEG, and set the correct dates.
+The following pipeline worked well for us. In short, we scan full pages, crop them with `multicrop`, then convert them to JPEG, and set the correct dates.
 
 First, we put as many pictures on the flatbed scanner as we can fit. Ideally, they are ordered from top-right, over to the left, to the bottom left when you put them on the scanner. This way they are in the correct order in the scanned image. Now, we scan the full page in 600 DPI (that's my scanner's max and it worked well) as TIFF. Scanning the full page means we don't need a preview and can go through a photo album in half an hour.
 
