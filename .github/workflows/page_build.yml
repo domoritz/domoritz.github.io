@@ -1,5 +1,7 @@
 on: page_build
+
 name: Purge cache on page build
+
 jobs:
   sendPurgeCommand:
     name: Send purge command

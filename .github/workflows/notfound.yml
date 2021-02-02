@@ -1,7 +1,9 @@
 name: Not Found Bot
+
 on:
   schedule:
     - cron: "0 5 * * *"
+
 jobs:
   check:
     runs-on: ubuntu-latest
