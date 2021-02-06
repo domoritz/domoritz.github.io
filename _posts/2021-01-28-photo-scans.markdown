@@ -37,10 +37,10 @@ find . -type f -name "*.tiff" -exec rename "s/\s/_/g" {} \;
 Then I crop images with Multicrop, which is documented [here](http://www.fmwconcepts.com/imagemagick/multicrop/index.php). I don't want to process the images one by one so I use [GNU parallel](https://www.gnu.org/software/parallel/) to run 6 processes at the same time (might be different for you).
 
 ```bash
-find . -name "*.tiff" | parallel -j 6 --eta -q multicrop -c 50,50 -u 2 -i yes {} {/.}_split.tiff
+find . -name "*.tiff" | parallel -j 6 --eta -q multicrop -c 50,50 -u 2 -m save -i yes {} {/.}_split.tiff
 ```
 
-`-c 50,50` says where to find the background color for segmentation. 50 pixels off the top right corner worked well for me. `-u 2` uses a slightly better (but slower) algorithm to detect rotations. `-i yes` trims the segmented images a bit so that we don't get a white border.
+`-c 50,50` says where to find the background color for segmentation. 50 pixels off the top right corner worked well for me. `-u 2` uses a slightly better (but slower) algorithm to detect rotations. `-m save` saves the mask (for debugging purposes). `-i yes` trims the segmented images a bit so that we don't get a white border.
 
 Multicrop runs some algorithms to find a mask such as this one.
 
