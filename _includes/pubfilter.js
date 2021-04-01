@@ -50,7 +50,22 @@
     searchableFields: ["authors", "awards", "tags", "type", "title", "content"]
   });
 
-  var query = { filters: {} };
+  // get default search from URL
+  var hash = decodeURIComponent(window.location.hash.substr(1));
+
+  var result = hash.split('&').reduce(function (res, item) {
+      var [key, value] = item.split('=');
+      if (key && value) {
+        if (key in res) {
+          res[key].push(value)
+        } else {
+          res[key] = [value];
+        }
+      }
+      return res;
+  }, {});
+
+  var query = { filters: result };
 
   function setAggs(aggs) {
     document.querySelectorAll("#facets > .facet").forEach(function(facet) {
