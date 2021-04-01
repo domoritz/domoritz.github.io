@@ -6,7 +6,7 @@
   var highlightElem = document.getElementById("highlight");
 
   var data = [];
-  var allYears = {};
+  var allYears = new Set();
 
   pubElems.forEach(function(element) {
     var item = JSON.parse(element.getAttribute("data-pub"));
@@ -15,7 +15,7 @@
       item.highlight = "Yes";
     }
 
-    allYears[item.year] = 1;
+    allYears.add(item.year);
 
     item.element = element;
 
@@ -46,7 +46,8 @@
       type: {
         size: 5
       }
-    }
+    },
+    // searchableFields: ["authors", "awards", "tags", "type", "title", "content"]
   });
 
   var query = { filters: {} };
@@ -151,7 +152,7 @@
   function search(query) {
     console.time("Search");
 
-    var result = engine.search(Object.assign({ per_page: 1000 }, query));
+    var result = engine.search(Object.assign({ per_page: data.length }, query));
 
     setAggs(result.data.aggregations);
 
@@ -173,7 +174,7 @@
     yearElems.forEach(function(element) {
       element.classList.add("hidden");
     });
-    Object.keys(allYears).forEach(function(year) {
+    allYears.forEach(function(year) {
       if (year in visibleYears) {
         document.getElementById("y" + year).classList.remove("hidden");
       }
