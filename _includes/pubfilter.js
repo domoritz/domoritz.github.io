@@ -216,6 +216,7 @@
 
   clearElem.onclick = function() {
     query = { filters: {} };
+    ftSearch.value = "";
     search(query);
   };
 
