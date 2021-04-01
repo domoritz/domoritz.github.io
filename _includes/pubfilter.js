@@ -47,7 +47,7 @@
         size: 5
       }
     },
-    // searchableFields: ["authors", "awards", "tags", "type", "title", "content"]
+    searchableFields: ["authors", "awards", "tags", "type", "title", "content"]
   });
 
   var query = { filters: {} };
@@ -134,20 +134,18 @@
     });
   }
 
-  // full text search is broken
-  // var ftSearch = document.getElementById("ft-search");
-  // ftSearch.oninput = function() {
-  //   var val = ftSearch.value;
+  var ftSearch = document.getElementById("ft-search");
+  ftSearch.oninput = function() {
+    var val = ftSearch.value;
 
-  //   if (val) {
-  //     query.query = val;
-  //   } else {
-  //     delete query.val;
-  //   }
+    if (val) {
+      query.query = val;
+    } else {
+      delete query.query;
+    }
 
-  //   console.log(query);
-  //   search(query);
-  // }
+    search(query);
+  }
 
   function search(query) {
     console.time("Search");

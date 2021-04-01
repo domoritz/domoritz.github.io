@@ -41,7 +41,7 @@ class: pubs
   <i class="fas fa-times-circle" aria-hidden="true"></i> Clear all filters. <span id="count_hidden">X</span> of <span id="count_total">X</span> publications are hidden by the filters.
 </p>
 
-<!-- <input id="ft-search" type="search" placeholder="Search papers..." /> -->
+<input id="ft-search" type="search" placeholder="Search papers..." />
 
 {% assign pubyears = site.publications | group_by:"year"  %}
 {% assign sorted_pubyears = pubyears | reverse %}
