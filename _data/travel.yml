@@ -1,0 +1,123 @@
+- title: IEEE VIS
+  where: Online
+  start: 2020-10-25
+  end: 2020-10-30
+- title: U.S. Kavli Frontiers of Science Symposium
+  where: Seattle
+  start: 2020-03-18
+  end: 2020-03-21
+- title: NeurIPS
+  where: Vancouver
+  start: 2019-12-09
+  end: 2019-12-13
+- title: OSDC
+  where: San Francisco
+  start: 2019-10-29
+  end: 2019-11-01
+- title: VIS
+  where: Vancouver
+  start: 2019-10-20
+  end: 2019-10-25
+- title: Remote Week
+  where: Bay Area
+  start: 2019-06-24
+  end: 2019-06-27
+- title: CHI
+  where: Glasgow
+  start: 2019-05-04
+  end: 2019-05-09
+- title: Scotland
+  start: 2019-04-30
+  end: 2019-05-03
+- title: MIT
+  where: Cambridge
+  start: 2019-04-26
+  end: 2019-04-26
+- title: Google
+  where: Cambridge
+  start: 2019-04-25
+  end: 2019-04-25
+- title: Tableau
+  where: Seattle
+  start: 2019-04-23
+  end: 2019-04-23
+- title: New York University (NYU)
+  where: New York
+  start: 2019-04-01
+  end: 2019-04-02
+- title: Northwestern
+  where: Evanston
+  start: 2019-04-17
+  end: 2019-04-17
+- title: University of Chicago
+  where: Chicago
+  start: 2019-04-15
+  end: 2019-04-16
+- title: University of British Columbia (UBC)
+  where: Vancouver
+  start: 2019-04-09
+  end: 2019-04-10
+- title: University of Wisconsin
+  where: Madison
+  start: 2019-04-05
+  end: 2019-04-05
+- title: Microsoft Research
+  where: Redmond
+  start: 2019-03-27
+  end: 2019-03-28
+- title: Apple (Turi)
+  where: Seattle
+  start: 2019-03-26
+  end: 2019-03-26
+- title: Carnegie Mellon University (CMU)
+  where: Pittsburgh
+  start: 2019-03-18
+  end: 2019-03-19
+- title: University of California (UCSD)
+  where: San Diego
+  start: 2019-03-13
+  end: 2019-03-15
+- title: University of Toronto
+  where: Toronto
+  start: 2019-03-07
+  end: 2019-03-08
+- title: University of Illinois (UIUC)
+  where: Urbana-Champaign
+  start: 2019-02-28
+  end: 2019-02-28
+- title: University of Pennsylvania
+  where: Philadelphia
+  start: 2019-02-12
+  end: 2019-02-12
+- title: Visit Streamlit, Observable, OmniSci, and UC Berkeley
+  where: Bay Area
+  start: 2018-12-18
+  end: 2018-12-23
+- title: TVM and Deep Learning Compiler Conference
+  where: Seattle
+  start: 2018-12-12
+  end: 2018-12-12
+- title: VIS
+  where: Berlin
+  start: 2018-10-21
+  end: 2018-10-26
+- title: Information+
+  where: Potsdam
+  start: 2018-10-20
+  end: 2018-10-21
+- title: "Progressive Data Analysis and Visualization"
+  where: Schloss Dagstuhl
+  start: 2018-10-07
+  end: 2018-10-12
+- title: "OpenVis Conf"
+  where: "Paris"
+  start: 2018-05-16
+  end: 2018-05-14
+- title: "NC State"
+  where: "Raleigh"
+  start: 2018-04-24
+  end: 2018-04-27
+- title: "Connecting Visualization and Data Management Research"
+  where: Schloss Dagstuhl
+  start: 2017-11-11
+  end: 2017-11-17

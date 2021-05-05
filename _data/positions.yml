@@ -1,0 +1,161 @@
+- title: Professor
+  years: 2020-present
+  company: Carnegie Mellon University
+  location: Pittsburgh, PA
+  description: In the Fall of 2020, I started as a professor in the Human-Computer-Interaction Institute.
+- title: Research Scientist
+  years: 2019-present
+  company: Apple
+  location: Seattle, WA and Pittsburgh, PA
+  skills:
+    - Machine Learning
+- title: Researcher
+  years: 2019
+  company: Streamlit
+  location: San Fracisco, CA
+  skills:
+    - Machine Learning
+    - Python
+- title: Research Assistant
+  years: 2013-2019
+  company: University of Washington
+  location: Seattle, WA
+  mentors:
+    - Jeffrey Heer
+    - Bill Howe
+- title: Research Intern
+  years: 2017
+  company: Microsoft Research
+  group: HCI
+  location: Redmond, WA
+  mentors:
+    - Danyel Fisher
+  description: In collaboration with the PowerBI team, we developed visualization alternatives that scale to large numbers of records. So far, we have submitted a paper and a patent on part of this project but there is more to come. As a side project, I worked on visualization recommendation using constraints.
+  skills:
+    - Scalable Visualization
+    - PowerBI
+    - Visualization Recommendation
+- title: Research Intern
+  years: 2016
+  company: Microsoft Research
+  group: VIBE/HCI and DMX
+  location: Redmond, WA
+  mentors:
+    - Danyel Fisher
+    - Bolin Ding
+    - Chi Wang
+  description: Developed and user tested a UI for an approximate query processing system. Published a CHI paper, two workshop papers, and [filed](https://patents.google.com/patent/US20180260451A1) [three](https://patents.google.com/patent/US20180260985A1) [patents](https://patents.google.com/patent/US20180260450A1).
+  project: Pangloss
+  skills:
+    - Approximate Query Processing
+    - Visualization
+    - UX
+- title: Research Intern
+  years: 2015
+  company: Google Research
+  group: Structured Data Team
+  location: Mountain View, CA
+  mentors:
+    - Sudip Roy
+    - Alon Halevy
+    - Alkis Polyzotis
+    - Natasha Noy
+    - Xiao Yu
+    - Chris Olston
+    - Sitaram Iyer
+  description: Improved the user experience of an internal search engine and designed a summarization algorithm for search results. Also worked with the Knowledge Graph team on exploring a new graph infrastructure that enables integrated applications.
+  project: DataSearch
+  skills:
+    - UX
+    - Algorithm design
+    - Large-scale systems
+    - Angular
+    - C++
+- title: Engineering Intern
+  years: 2014
+  company: Google
+  location: New York City, NY
+  mentors:
+    - Ben Atkins
+    - Shishi Chen
+    - John Banning
+  description: Developed new algorithms to support complex queries in large-scale production monitoring system.
+  project: Monarch
+  skills:
+    - Algorithm design
+    - Large-scale software development
+    - Profiling
+    - C++
+- title: Intern and Developer
+  years: 2012-2013
+  company: Open Knowledge Foundation
+  location: London and Berlin
+  mentors:
+    - David Raznick
+    - Rufus Pollock
+    - Adrià Mercader
+    - Sean Hammond
+    - Stefan Wehrmeyer
+  description: Two-month summer internship and subsequent one-year involvement in development and training for [CKAN](https://ckan.org/), the most deployed open data portal in the world. I developed the [new data store](https://docs.ckan.org/en/latest/maintaining/datastore.html), a [plugin API for CKAN](https://docs.ckan.org/en/latest/maintaining/data-viewer.html), and a [service to automatically ingest data](https://github.com/ckan/datapusher). I also consulted state governments on open data strategies.
+  project: CKAN
+  skills:
+    - Distributed teams
+    - Agile development
+    - Large legacy systems
+    - Python
+    - JavaScript
+- title: Bachelor's Project
+  years: 2012-2013
+  company: Hasso Plattner Institute
+  location: Potsdam
+  description: In a team of four students developed a tool to visualize software evolution with 3D Voronoi Treemaps. I focused on the theory and implementation of layout algorithms.
+  skills:
+    - Legacy code
+    - Visualization
+    - Complex algorithms
+    - C++
+- title: Undergraduate Research Assistant
+  years: 2012-2013
+  company: University of Potsdam
+  group: Knowledge Representation and Reasoning Group
+  location: Potsdam
+  mentors:
+    - Benjamin Kaufmann
+    - Torsten Schaub
+    - Martin Gebser
+  description: Worked on theory and implementation of an extension of the Clasp Answer Set Programming solver for pseudo-boolean constraints.
+  project: Clasp Answer Set Solver
+  skills:
+    - Research
+    - Benchmarking
+    - Logic programs
+    - C++
+  hidden: true
+- title: Google Summer of Code
+  years: 2012
+  location: Remote
+  description: Extend open data platform for information about people.
+  skills:
+    - Open source development
+    - JavaScript
+  hidden: true
+- title: Intern
+  years: 2012
+  company: Potsdam Institute for Climate Impact Research (PIK)
+  location: Potsdam
+  description: Developed a search engine for scientific research on climate change.
+  hidden: true
+- title: Intern
+  company: Max Born Institute for Nonlinear Optics and Short Pulse Spectroscopy
+  years: 2008
+  location: Berlin
+  description: Conduct experiments with lasers.
+  mentors:
+    Michael Wörner
+  hidden: true
+- title: Intern
+  company: Fraunhofer Institute for Telecommunications (HHI)
+  location: Berlin
+  description: Conduct experiments in cleanroom.
+  years: 2006
+  hidden: true

@@ -1,0 +1,33 @@
+- title: University of Washington
+  courses:
+    - title: Distributed Systems
+      with: Tom Anderson
+    - title: Data Visualization
+      with: Jeffrey Heer
+    - title: Programming Languages
+      with: Zach Tatlock
+    - title: Databases
+      with: Magdalena Balazinska
+    - title: Computer Vision
+      with: Ali Farhadi
+    - title: Machine Learning
+      with: Sham Kakade
+    - title: Statistical Methods for Machine Learning
+      with: Pedro Domingos
+    - title: Constraint Programming
+      with: Alan Borning
+    - title: User Studies
+      with: Mike Ernst
+- title: University of Potsdam
+  courses:
+    - title: Declarative Problem Solving
+    - title: Applied Logic
+    - title: Artificial Intelligence
+- title: Hasso Plattner Institute
+  courses:
+    - title: Databases I and II
+    - title: Designing Interactive Systems
+    - title: Computer Graphics
+    - title: Software Engineering
+    - title: Operating Systems
+    - title: Computational Geometry

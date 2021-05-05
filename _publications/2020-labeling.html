@@ -1,0 +1,33 @@
+---
+layout: publication
+year: 2020
+title: "Fast and Flexible Overlap Detection for Chart Labeling with Occupancy Bitmap"
+authors:
+  - Chanwut Kittivorawong
+  - Dominik Moritz
+  - Kanit Wongsuphasawat
+  - Jeffrey Heer
+venue: VIS
+venue_location: Salt Lake City, UT
+venue_tags:
+  - VIS
+venue_url: http://ieeevis.org/year/2020/welcome
+type:
+  - Conference
+  - Short Paper
+doi: 10.1109/VIS47514.2020.00027
+pdf: https://www.domoritz.de/papers/2020-OccupancyBitmap-VIS.pdf
+video: https://vimeo.com/468653243
+---
+
+Legible labels should not overlap with other marks in a chart. The
+state-of-the-art labeling algorithm detects overlaps using a set of points to
+approximate each mark’s shape. This approach is inefficient for large marks or
+many marks as it requires too many points to detect overlaps. In response, we
+present a Bitmap-Based label placement algorithm, which leverages occupancy
+bitmap to accelerate overlap detection. To create an occupancy bitmap, we
+rasterize marks onto a bitmap based on the area they occupy in the chart. With
+the bitmap, we can efficiently place labels without overlapping existing marks,
+regardless of the number and geometric complexity of the marks. This
+Bitmap-Based algorithm offers significant performance improvements over the
+state-of-the-art approach while placing a similar number of labels.

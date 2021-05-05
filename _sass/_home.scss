@@ -1,0 +1,236 @@
+.home {
+  h1 {
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    border-bottom: none;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: row;
+
+    .intro {
+      flex: 1;
+      font-size: 1.1em;
+    }
+
+    .me {
+      margin-left: $spacing-unit;
+      margin-bottom: $spacing-unit;
+
+      font-size: 0.9em;
+      text-align: center;
+
+      picture, img {
+        width: 220px;
+        height: 220px;
+        border-radius: 6px;
+      }
+
+      ul {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .button {
+    color: $brand-color;
+    padding: 6px 16px;
+    border-radius: 3px;
+    border: 1px solid lighten($brand-color, 20%);
+
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+      background-color: lighten($brand-color, 50%);
+    }
+  }
+
+  .featured-projects {
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5em;
+
+    .project {
+      flex-grow: 1;
+      flex-basis: 0;
+
+      display: flex;
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      border-radius: 3px;
+      padding: 16px;
+      border: 1px solid #ddd;
+
+      transition: box-shadow 0.2s ease;
+
+      &:hover {
+        box-shadow: #aaa 2px 2px 11px;
+      }
+
+      .spacer {
+        flex: 1;
+      }
+
+      .title {
+        margin: 0 0 0.6em 0;
+        font-size: 1.3em;
+        font-weight: bold;
+        line-height: 1;
+      }
+
+      p {
+        font-size: 0.85em;
+        margin: 0.7em 0;
+        line-height: 1.2;
+      }
+
+      .preview-image {
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-top: 60%;
+        border: 1px solid #f1f1f1;
+        background-size: cover;
+        background-position: top left;
+        transition: background 1.5s;
+
+        &:hover {
+          background-position: bottom right;
+        }
+      }
+
+      .links {
+        font-size: 0.8em;
+
+        a {
+          margin-right: 0.5em;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .featured-publications {
+    font-size: 0.95em;
+    margin-bottom: 1.5em;
+
+    .publication {
+      margin-bottom: 0.7em;
+      display: block;
+      color: $text-color;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      .fa-trophy {
+        color: $yellow-color;
+      }
+
+      .fa-award {
+        color: firebrick;
+      }
+
+      .authors {
+        font-weight: 300;
+      }
+    }
+  }
+
+  .news-travel {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 0.9em;
+
+    & > div {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+  }
+
+  .news {
+    ul {
+      list-style: none;
+      margin-left: 0;
+
+      li {
+        margin-bottom: 1em;
+      }
+
+      time {
+        display: block;
+        color: $grey-color;
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  .travel {
+    padding-left: $spacing-unit;
+
+    .date {
+      white-space: nowrap;
+      color: $grey-color;
+      padding-right: 1em;
+    }
+  }
+
+  @include media-query($on-palm) {
+    .columns {
+      flex-direction: column;
+      align-items: center;
+
+      .intro {
+        order: 2;
+      }
+      .me {
+        order: 1;
+        margin-left: 0;
+      }
+    }
+
+    .button {
+      font-size: 1.1em;
+      background-color: lighten($brand-color, 57%);
+    }
+
+    .featured-projects {
+      flex-direction: column;
+
+      .project {
+        display: block;
+        margin-bottom: 16px;
+
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+
+        .preview-image {
+          width: 40%;
+          padding-top: 22%;
+          float: left;
+          margin-right: 18px;
+        }
+      }
+    }
+
+    .news-travel {
+      margin-top: $spacing-unit;
+      flex-direction: column;
+
+      .travel {
+        padding-left: 0;
+      }
+    }
+  }
+}

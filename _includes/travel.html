@@ -1,0 +1,23 @@
+{% assign month_start = travel.start | date: "%m" %}
+{% assign month_end = travel.end | date: "%m" %}
+
+<tr>
+  <td class="date">
+    {% if travel.start and travel.end %}
+      {% if month_start == month_end %}
+        {% if travel.start == travel.end %}
+          {{ travel.start | date: "%b %-d, '%y" }}
+        {% else %}
+          {{ travel.start | date: "%b %-d" }}–{{ travel.end | date: "%-d, '%y" }}
+        {% endif %}
+      {% else %}
+        {{ travel.start | date: "%b %-d" }}–{{ travel.end | date: "%b %-d, '%y" }}
+      {% endif %}
+    {% else %}
+      in the future
+    {% endif %}
+  </td>
+  <td>
+    {{ travel.title }}{% if travel.where %}, {{ travel.where }}{% endif %}
+  </td>
+</tr>

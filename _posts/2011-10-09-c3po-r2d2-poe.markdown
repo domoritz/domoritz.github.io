@@ -1,0 +1,15 @@
+---
+comments: true
+date: 2011-10-09 23:52:31
+layout: post
+slug: c3po-r2d2-poe
+title: C3PO-r2d2-POE
+wordpress_id: 1684
+tags:
+- chaos computer club
+- star wars
+---
+
+Der CCC hat ja eine [Analyse des "Bundestrojaners"](http://ccc.de/de/updates/2011/staatstrojaner) durchgeführt und ist dabei auf einige Sicherheitslücken gestoßen. Falls es sich wirklich um das Produkt der Behörden handelt, it es mehr als Peinlich, was die da gebastelt haben. Ok, das die Daten nicht vollständig verschlüsselt sind kann ja mal passieren, aber Daten über die USA schicken und beliebige Software ohne Verifikation nachzuinstallieren ist doch schon etwas schwach.
+
+Und jetzt mal ehrlich, was soll bitte der String _C3PO-r2d2-POE_ bei der Verifizierung der Kommunikation. Gab es da einen Clown zum Frühstück oder was soll die Star-Wars Referenz???

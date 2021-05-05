@@ -1,0 +1,213 @@
+#facets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &.hidden {
+    display: none;
+  }
+
+  .facet {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    min-width: 125px;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  ul {
+    min-width: 0;
+    list-style: none;
+    margin-left: 0;
+
+    li {
+      min-width: 0;
+      white-space: nowrap;
+      font-size: 0.85em;
+      cursor: pointer;
+
+      color: $grey-color-dark;
+
+      &.in-query {
+        color: black;
+        font-weight: 500;
+      }
+
+      & > span {
+        display: flex;
+        align-items: center;
+
+        .limited {
+          padding-right: 0.3em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .cnt {
+          color: $grey-color-light;
+        }
+      }
+
+      .bar-full {
+        border-bottom: 2px solid #ddd;
+        width: 100px;
+        max-width: 100%;
+        margin-bottom: 3px;
+
+        .bar {
+          border-bottom: 2px solid $brand-color;
+          margin-bottom: -2px;
+        }
+      }
+    }
+  }
+}
+
+#only-highlight input {
+  vertical-align: text-bottom;
+}
+
+#only-highlight.hidden {
+  display: none;
+}
+
+@include media-query($on-laptop) {
+  .bar-full {
+    width: 80px !important;
+  }
+}
+
+#clear-filters {
+  color: $grey-color-dark;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    color: $text-color;
+  }
+
+  &.hidden {
+    opacity: 0;
+  }
+
+  i {
+    color: firebrick;
+  }
+}
+
+#ft-search {
+  width: 350px;
+  font-size: 1.1em;
+  padding: 0.4em;
+}
+
+.pubs {
+  .pub-year {
+    font-size: 1.3em;
+    margin: 0.7em 0 0.5em 0;
+    border-bottom: none;
+    color: $grey-color;
+  }
+
+  .publication,
+  .year {
+    opacity: 1;
+    max-height: 600px;
+    overflow: hidden;
+    transition: all 0.6s ease;
+
+    &.hidden {
+      max-height: 0;
+      margin: 0;
+      opacity: 0;
+    }
+  }
+
+  .publication {
+    margin-bottom: 2em;
+
+    h3 {
+      font-size: 1.2em;
+      margin: 0em;
+      font-weight: 500;
+
+      max-height: 600px;
+      overflow: hidden;
+
+      &.hidden {
+        max-height: 0;
+      }
+    }
+
+    .award-icon {
+      margin-right: 0.2em;
+      font-size: 1.2em;
+
+      &.fa-trophy {
+        color: $yellow-color;
+      }
+
+      &.fa-award {
+        color: firebrick;
+      }
+    }
+
+    .authors {
+      margin-bottom: 0.3em;
+      font-weight: 300;
+      a {
+        color: $text-color;
+      }
+    }
+
+    .venue,
+    .venue a {
+      color: $grey-color;
+    }
+
+    .awards {
+      margin-top: 0.1em;
+      font-weight: 500;
+      color: firebrick;
+    }
+
+    .tweet {
+      &:hover {
+        text-decoration: none;
+
+        .message {
+          text-decoration: underline;
+        }
+      }
+      .message {
+        font-size: 0.9em;
+        font-style: italic;
+        color: $grey-color;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .extra-links {
+      margin-top: 0.5em;
+      font-weight: 300;
+      font-size: 0.9em;
+
+      a {
+        margin-right: 1em;
+        white-space: nowrap;
+
+        &:hover {
+          text-decoration: none;
+          border-bottom: 1px solid $link-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+- name: IEEE VGTC Outstanding Dissertation Award
+  years: 2020
+  description: "For my thesis on \"Interactive Systems for Scalable Visualization and Analysis\"."
+- name: InfoVis Best Paper
+  years: 2018
+  description: "For \"Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco\"."
+- name: InfoVis Best Paper
+  years: 2016
+  description: "For \"Vega-Lite: A Grammar of Interactive Graphics\"."
+- name: Fulbright Fellowship
+  years: 2013-2014
+  sponsor: Bureau of Educational and Cultural Affairs
+  description: Highly competitive, merit-based grant for international educational exchange for students, scholars, teachers and scientists.
+- name: DAAD Scholarship
+  years: 2013
+  sponsor: German Academic Exchange Service (DAAD)
+  description: Scholarship to study at a North American university for one academic year, covering tuition and living expenses.
+- name: Studienstiftung des Deutschen Volkes
+  years: 2010-2015
+  sponsor: Studienstiftung des Deutschen Volkes, Bonn
+  description: The German National Academic Foundation grants prestigious scholarships to students with outstanding academic achievements. Merit-based grant for B.S. and M.S. studies.
+- name: Hasso Plattner Scholarship
+  years: 2013
+  sponsor: Hasso Plattner Institute, Potsdam
+  description: One-year scholarship awarded to the highest performing graduates of each year.

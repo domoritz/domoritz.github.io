@@ -1,0 +1,200 @@
+- title: "Declarative and Scalable Visualization Design"
+  location: Robust AI Meetup
+  city: Zoom
+  date: 2020-05-07
+- title: "Visualization for People + Systems"
+  location: GAMES Webinar
+  city: Online
+  date: 2019-11-14
+  url: http://games-cn.org/games-webinar-20191114-118/
+- title: "Declarative Visualization Design with Vega-Lite and Altair"
+  location: Open Data Science Conference West (ODSC)
+  city: San Francisco
+  date: 2019-10-31
+  url: https://odsc.com/training/portfolio/title-coming-soon-46/
+- title: "Altair: Declarative Visualization in Python"
+  location: Symposium on Data Science and Statistics (SDSS)
+  city: Bellevue
+  date: 2019-05-30
+  url: https://ww2.amstat.org/meetings/sdss/2019/onlineprogram/Program.cfm?date=05-30-19
+- title: "Visualization for People + Systems"
+  location: MIT
+  city: Boston
+  date: 2019-04-26
+- title: "Visualization for People + Systems"
+  location: Google
+  city: Boston
+  date: 2019-04-25
+- title: "Visualization for People + Systems"
+  location: Tableau
+  city: Seattle
+  date: 2019-04-23
+- title: "Visualization for People + Systems"
+  location: Apple (Turi)
+  city: Seattle
+  date: 2019-03-26
+- title: "Visualization for People + Systems"
+  location: Microsoft Research
+  city: Redmond
+  date: 2019-03-27
+  url: https://www.microsoft.com/en-us/research/video/visualization-for-people-systems/
+  recording: https://www.youtube.com/watch?v=ww0HGwC18Qo
+- title: "Visualization for People + Systems"
+  location: New York University (NYU)
+  city: New York
+  date: 2019-04-01
+- title: "Visualization for People + Systems"
+  location: Northwestern
+  city: Evanston
+  date: 2019-04-17
+- title: "Visualization for People + Systems"
+  location: University of Chicago
+  city: Chicago
+  date: 2019-04-15
+- title: "Visualization for People + Systems"
+  location: University of British Columbia (UBC)
+  city: Vancouver
+  date: 2019-04-09
+- title: "Visualization for People + Systems"
+  location: University of Wisconsin
+  city: Madison
+  date: 2019-04-05
+- title: "Visualization for People + Systems"
+  location: Carnegie Mellon University (CMU)
+  city: Pittsburgh
+  date: 2019-03-18
+  url: https://www.cs.cmu.edu/calendar/mon-2019-03-18-1200/scs-faculty-candidate
+- title: "Visualization for People + Systems"
+  location: University of California (UCSD)
+  city: San Diego
+  date: 2019-03-13
+- title: "Visualization for People + Systems"
+  location: University of Toronto
+  city: Toronto
+  date: 2019-03-07
+- title: "Visualization for People + Systems"
+  location: University of Illinois (UIUC)
+  city: Urbana-Champaign
+  date: 2019-02-28
+- title: "Visualization for People + Systems"
+  location: University of Pennsylvania
+  city: Philadelphia
+  date: 2019-02-12
+  url: https://events.seas.upenn.edu/event/cis-seminar-visualization-for-people-systems/
+- title: "Raising the Abstraction of Data Visualization"
+  location: IBM Research
+  city: Bangalore
+  date: 2019-01-04
+- title: "Data Visualization with Vega-Lite and Altair for Machine Learning"
+  location: TVM Conference
+  city: Seattle
+  date: 2018-12-12
+  url: https://sampl.cs.washington.edu/tvmconf/
+- title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
+  location: IEEE VIS
+  city: Berlin
+  recording: https://vimeo.com/308980888
+  date: 2018-10-23
+- title: "Automated Visualization Design with Draco"
+  location: Tableau Research
+  city: Seattle
+  date: 2018-09-10
+- title: "Automated Visualization Design with Draco"
+  location: Microsoft Excel
+  city: Redmond
+  date: 2018-08-14
+- title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
+  location: Microsoft Research
+  city: Redmond
+  date: 2018-07-24
+- title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
+  location: UW Database Affiliates Workshop
+  city: Seattle
+  date: 2018-07-13
+- title: "Declarative Visualization with Vega-Lite and Altair"
+  location: Data Stories Podcast
+  url: http://datastori.es/121-declarative-visualization-with-vega-lite-and-altair-with-dominik-moritz-jacob-vanderplas-kanit-ham-wongsuphasawat/
+  date: 2018-05-25
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: UW ACM Student
+  city: Seattle
+  date: 2018-05-07
+- title: "Declarative Visualization Design with Vega-Lite"
+  location: Tintash
+  city: Lahore
+  date: 2018-01-16
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: Technical University Berlin
+  city: Berlin
+  date: 2017-12-12
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: DeepMind (Google)
+  city: London
+  date: 2017-11-22
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: City University
+  city: London
+  date: 2017-11-21
+- title: "Visualization Grammars"
+  location: Dagstuhl Seminar on Connecting Visualization and Data Management Research
+  url: https://www.dagstuhl.de/de/programm/kalender/semhp/?semnr=17461
+  date: 2017-11-14
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: Microsoft
+  city: Redmond
+  date: 2017-11-07
+  recording: https://www.youtube.com/watch?v=Nsrz4YdaZ_A
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: Turi (Apple)
+  city: Seattle
+  date: 2017-06-13
+- title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
+  location: Tableau Research
+  city: Seattle
+  date: 2017-07-27
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: OpenVis Conf
+  city: Boston
+  url: https://openvisconf.com/#speakers
+  date: 2017-04-24
+  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+  recording: https://www.youtube.com/watch?v=9uaHRWj04D4
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: IEEE Infovis
+  city: Baltimore
+  date: 2017-10-25
+- title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
+  location: Database Seminar, Microsoft Research
+  city: Redmond
+  date: 2016-09-28
+- title: "What Users Don't Expect about Exploratory Data Analysis on AQP Systems "
+  location: HILDA at ACM SIGMOD
+  city: Chicago
+  date: 2017-05-14
+- title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
+  location: ACM CHI
+  city: San Jose
+  date: 2016-05-10
+  recording: https://www.youtube.com/watch?v=4ntnRzqiG7Y
+- title: "Vega-Lite: A Declarative Format for Visualization"
+  location: Plotcon
+  city: New York City
+  url: https://plotcon-2016.plot.ly/schedule
+  date: 2016-11-15
+- title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
+  location: SIGGRAPH
+  city: Anaheim
+  date: 2016-07-26
+- title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
+  location: Tableau Research
+  city: Seattle
+  date: 2016-01-15
+- title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
+  location: IEEE Infovis
+  city: Chicago
+  date: 2015-10-26
+  recording: https://vimeo.com/236170947
+- title: "Perfopticon: Visual Query Analysis for Distributed Databases"
+  location: Eurovis
+  city: Cagliari
+  date: 2015-05-27

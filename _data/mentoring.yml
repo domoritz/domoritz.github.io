@@ -1,0 +1,106 @@
+- title: "PhD Students"
+  year: 2020-2021
+  description: PhD Students I am (co-)advising at CMU.
+  location: CMU
+  who:
+    - Will Epperson
+    - Carol Xinyi Zheng
+- title: "Thesis Commitee"
+  year: 2020-2021
+  location: CMU
+  who:
+    - Mary Beth Kery
+    - Katherine Ye 
+- title: "Research Assistants"
+  year: 2020-2021
+  location: CMU
+  who:
+    - Harshil Rastogi
+    - Leila Huang
+    - Sujun Cheng
+    - Shreya Manjunath
+    - Shreya Bahl
+    - Lukas Hermann
+- title: "Apple Summer Internship"
+  year: 2020
+  description: Summer interns in my group at Apple.
+  location: Apple
+  who:
+    - Aspen Hopkins
+    - Jochen Görtler
+    - Stephon Fonrose
+- title: "Vega Ecosystem"
+  year: 2019-2020
+  description: Hung worked with me on a renderer service for Vega-Lite and Vega visualizations. He integrated the renderer into the popular Vega online editor.
+  location: Vega Organization
+  who:
+    - Hung Ngo
+- title: "Google Summer of Code"
+  year: 2019
+  description: The IDL was selected as a mentoring organization for the Google Summer of Code 2019. I mentored two students from India to work on the Vega editor.
+  location: University of Washington
+  who:
+    - Aman Sharma
+    - Siddhant Manchanda
+- title: "Google Summer of Code"
+  year: 2018
+  description: The IDL was selected as a mentoring organization for the Google Summer of Code 2018. Together with Kanit "Ham" Wongsuphasawat I mentored two students from India to work on Vega-Lite.
+  location: University of Washington
+  url: https://summerofcode.withgoogle.com/organizations/5646868357316608/
+  who:
+    - Yash Dev Lamba
+    - Souvik Sen
+- title: "CSE Mentoring Program"
+  year: 2017-2018
+  location: University of Washington
+  description: Together with Sarah Chasins, I mentored a group of first-year students for over a year. Sarah and I gave advice on finding classes, research projects, collaborators, and advisors, as well as managing conferences.
+  who:
+    - Yasaman Sefidgar
+    - Rashmi Mudduluru
+    - Qisheng Li
+- title: "Mentor Undergraduate Researchers"
+  location: University of Washington
+  year: 2015-2019
+  description: Mentor students for working on Vega-Lite, Voyager, Polestar, and related projects.
+  who:
+    - Zening Qu (now Ph.D. student at UW iSchool)
+    - Youying Lin (now at Google)
+    - Ayush Saraf
+    - Zoe "Zoe" Lu (now at Facebook)
+    - Will Strimling (now PM at Twitter)
+    - Swojit Mohapatra
+    - Lingyue "Cynthia" Zhang
+    - Tianyi Lin
+    - Matthew Chun
+    - Felix Ouk
+    - Sira Horradarn
+    - Chanwut "Mick" Kittivorawong
+    - Ishan Saksena
+    - Akshat Shrivastava
+    - Halden Lin
+    - Melissa Diamond
+    - Saba Noorassa
+- title: "Dubhacks Mentor and Judge"
+  year: 2017
+  location: University of Washington
+  hidden: true
+- title: "Dubhacks Mentor and Judge"
+  year: 2016
+  location: University of Washington
+  hidden: true
+- title: "Hack HPI Mentor and Judge"
+  year: 2016
+  location: Hasso Plattner Institute
+  hidden: true
+- title: "Preparation for Programming Competition"
+  year: 2012
+  students: 15
+  location: Hasso Plattner Institute
+  description: One day preparation training high school students for programming competition.
+  hidden: true
+- title: "Math Club for Elementary School Students"
+  year: 2009-2010
+  students: 10
+  location: Marie Curie Gymnasium
+  description: Led a math club for local elementary school students.
+  hidden: true

@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Introducing Vega-Lite"
+description: A blog post to announce Vega-Lite.
+---
+
+Ham, Jeff and I wrote a [blog post to announce Vega-Lite](https://medium.com/hci-design-at-uw/introducing-vega-lite-438f9215f09e).

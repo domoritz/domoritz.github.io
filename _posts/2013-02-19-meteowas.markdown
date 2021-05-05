@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Meteo-was"
+description: "Namen für Steine aus dem Weltall"
+date: 2013-02-19 17:03
+---
+
+Vor einer Woche ist in Russland ein [Meteor eingeschlagen](http://www.bbc.co.uk/news/world-europe-21468116). Nahezu Zeitgleich ist der Asteroid 2012 DA14 [an der Erde vorbeigerauscht](http://www.bbc.co.uk/news/science-environment-21442863) und kam uns dabei näher, als es geostationäre Satelliten sind. Die NASA versichert uns, dass diese beiden Ereignisse vollkommen unabhängig sind.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The <a href="https://twitter.com/hashtag/RussianMeteor?src=hash">#RussianMeteor</a> &amp; asteroid <a href="https://twitter.com/hashtag/2012DA14?src=hash">#2012DA14</a> are not related. They fly in 2 different directions. N to S; other S to N. <a href="http://t.co/141W5zMw">http://t.co/141W5zMw</a></p>&mdash; NASA (@NASA) <a href="https://twitter.com/NASA/status/302468860630675458">February 15, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Was mich aber viel mehr erstaunt hat, sind die unterschiedlichen Bezeichnungen für die Steine die vom Himmel fallen. Bisher hatte ich angenommen, dass es da nur Meteoriten und Asteroiden gibt.
+
+## Was ist also nun der Unterschied zwischen all diesen Dingen?
+
+**Asteroid:** Alles, was kleiner als ein Planet ist und die Sonne umrundet. Pluto ist übrigens keiner, weil er ein [Zwergplanet](https://de.wikipedia.org/wiki/Zwergplanet) ist.
+
+**Interplanetarer Staub:** So wie Staub auf der Erde, nur halt im Weltraum.
+
+**Komet:** Ein Asteroid aus Eis. Ein Asteroid besteht aus dem Kern, einer kleinen Atmosphäre aus Gas und Staub, der [*Koma*](https://de.wikipedia.org/wiki/Komet#Koma) und dem Schweif. Letzterer entsteht übrigens nicht durch den Fahrtwind, sondern weist immer von der Sonne weg.
+
+**Meteor:** Ein Leuchtender Streif den wir im Himmel sehen, wenn ein Stein sich in der Ionisierung die Atmosphäre zum Leuchten bringt. Allgemein wird ein Meteor auch auch als Sternschnuppe bezeichnet.
+
+**Bolid(e) oder Feuerkugel:** Ein besonders heller Meteor entstanden durch einen die Explosion des Meteoroiden. Der Meteor von letzter Woche war auch so ein Bolide.
+
+**Meteoroid:** Kleines Stein- oder Metallfragment, dass von einem Asteroid oder Komet stammt. Grundsätzlich gesehen ist alles, was größer als Staub und kleiner als Asteroiden ist ein Meteoroid. So ganz genau festgelegt sind die Grenzen aber nicht.
+
+**Meteorit:** Der Teil eines Meteoroiden oder Asteroiden, der den Weg durch die Atmosphäre überlebt und auf der Erde einschlägt.
+
+**Tektite:** Bis zu einigen Zentimetern große, natürliche Glasstücke, die beim Einschlag eines Meteoriten entstehen. Bei dem Einschlag erhitzt sich das umgebende, quarzhaltige Material schlagartig, fliegt umher und erstarrt letztendlich zu Glas.
+

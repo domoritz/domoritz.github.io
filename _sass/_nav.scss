@@ -1,0 +1,133 @@
+.page-header {
+  border-top: 6px solid $brand-color;
+  padding-top: 6px;
+  margin-bottom: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  line-height: 36px;
+  justify-content: space-between;
+
+  & > *:last-child {
+    margin-left: auto;
+  }
+
+  a {
+    color: #333;
+    padding: 12px 0.3em 0 0.3em;
+    margin: 0 0.3em;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+
+    opacity: 0.75;
+    border-bottom: 1px solid transparent;
+
+    transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+
+    &:last-child {
+      padding-right: 0;
+    }
+    &.active {
+      border-bottom-color: #333;
+      opacity: 1;
+    }
+    &:hover {
+      text-decoration: none;
+
+      opacity: 1;
+      border-bottom-color: #333;
+
+      transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out;
+    }
+  }
+
+  .external {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .site-title {
+    font-weight: 500;
+    margin-top: 8px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: $spacing-unit;
+    flex: 0 0 auto;
+    font-size: 1.5em;
+    border: none;
+
+    color: #333;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+@include media-query($on-laptop) {
+  nav {
+    line-height: 42px;
+
+    a {
+      padding: 0 9px;
+
+      &:nth-child(2) {
+        margin-left: -8px;
+      }
+    }
+
+    .site-title {
+      flex: 0 1 100%;
+      padding: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@include media-query($on-palm) {
+  .site-title {
+    margin-top: 0.5em;
+  }
+
+  nav {
+    justify-content: space-around;
+
+    & > *:last-child {
+      margin-left: initial;
+    }
+
+    .external {
+      flex: 0 1 100%;
+      justify-content: space-around;
+    }
+    .site-title {
+      text-align: center;
+    }
+    // hide icons from internal links
+    & > a .fas {
+      display: none;
+    }
+
+    a {
+      border-radius: 3px;
+      margin: 0;
+
+      &:hover {
+        border-color: transparent;
+        background: lighten($brand-color, 55%);
+      }
+
+      &.active {
+        border-color: transparent;
+        background: lighten($brand-color, 50%);
+        border-radius: 3px;
+      }
+    }
+  }
+}

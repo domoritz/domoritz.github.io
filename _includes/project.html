@@ -1,0 +1,35 @@
+<div class="project">
+  <span class="title">{{ project.title }}</span>
+  {% if project.url || project.code || project.article || project.paper %}
+    <a href="{{ project.url || project.code || project.article || project.paper }}" class="preview-image" style="background-image: url('{{ "/images/projects/" | append: project.image | relative_url }}')"></a>
+  {% else %}
+    <span class="preview-image" style="background-image: url('{{ "/images/projects/" | append: project.image | relative_url }}')"></span>
+  {% endif %}
+  <p>
+    {{ project.description | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+  <div class="spacer"></div>
+  <div class="links">
+    {% if project.article %}
+      <a href="{{ project.article }}"><i class="fas fa-newspaper"></i> Post</a>
+    {% endif %}
+    {% if project.demo %}
+      <a href="{{ project.demo }}"><i class="fas fa-play"></i> Demo</a>
+    {% endif %}
+    {% if project.url %}
+      <a href="{{ project.url }}"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
+    {% endif %}
+    {% if project.code %}
+      <a href="{{ project.code }}"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+    {% endif %}
+    {% if project.paper %}
+      <a href="{{ project.paper }}"><i class="far fa-file-pdf"></i> Paper</a>
+    {% endif %}
+    {% if project.video %}
+      <a href="{{ project.video }}"><i class="fas fa-film"></i> Video</a>
+    {% endif %}
+    {% if project.recording %}
+      <a href="{{ project.recording }}"><i class="fas fa-video"></i> Recording</a>
+    {% endif %}
+  </div>
+</div>

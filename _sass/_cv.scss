@@ -1,0 +1,224 @@
+#cv {
+  line-height: 1.5;
+  overflow: scroll;
+
+  /* It's not good to hide links but looks better in a CV. */
+  a {
+    color: $text-color;
+  }
+
+  strong, h1, h2, h3, h4 {
+    font-weight: 500;
+
+    &, a {
+      color: $dark-text-color;
+    }
+  }
+
+  h1, h2, h3, h4 {
+    border: none;
+    page-break-after: avoid;
+  }
+
+  h1, h2, .pub-type {
+    color: $brand-color;
+    margin: 1rem 0 .2rem 0;
+  }
+
+  h1, h1>a:hover {
+    margin-top: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h2 a {
+    font-size: 0.7em;
+    color: $grey-color;
+  }
+
+  .live-link {
+    margin-bottom: 1rem;
+    display: none;
+    opacity: 0.8;
+  }
+
+  .header-columns {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-columns > div:first-child {
+    flex: 1;
+  }
+  .header-columns > div:last-child {
+    width: 200px;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .pub-type {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .right-align {
+    text-align: right;
+  }
+
+  .pub {
+    margin-bottom: 1.2rem;
+
+    .fill {
+      fill: 1;
+      display: block;
+    }
+
+    .extra-links {
+      font-size: 0.75rem;
+
+      a {
+        color: $grey-color;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .muted, .muted a {
+    color: $grey-color;;
+  }
+
+  .award {
+    color: $yellow-color;
+    white-space: nowrap;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+
+  .container {
+    min-width: 480px;
+    max-width: 800px;
+  }
+
+  .container > * {
+    margin-left: 100px;
+  }
+
+  article {
+    margin-left: 0 !important;
+  }
+
+  article > * {
+    margin-left: 100px;
+  }
+
+  .ref-container {
+    margin-left: 0;
+    float: left;
+    text-align: right;
+    width: 80px;
+  }
+
+  .date-container {
+    width: 100%;
+    margin-left: 0 !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & > strong {
+      display: block;
+    }
+
+    .fill, h3 {
+      flex: 1;
+    }
+  }
+
+  .cv-talk-title {
+    margin-top: 0.7rem;
+  }
+
+  .date-container .date, .date-container time {
+    display: block;
+    width: 80px;
+    text-align: right;
+    padding-right: 20px;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+  }
+
+  .date-container .right {
+    padding-left: 10px;
+    color: $grey-color;
+    font-size: .75rem;
+  }
+  
+  /* Link back to homepage */
+
+  .back {
+    min-width: 480px;  /* same as container */
+    padding: 0.6rem 1rem;
+    background-color: $grey-color-dark;
+    color: #fff;
+  }
+
+  .back a {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .back a:hover {
+    text-decoration: none;
+  }
+
+  @media print {
+    font-size: 0.9rem;
+
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .pub-type {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .live-link {
+      display: block;
+    }
+
+    h1, h2 {
+      margin: .4rem 0 .1rem 0;
+    }
+
+    /* link to interactive talk/publications */
+    h2 a {
+      display: none;
+    }
+  }
+}

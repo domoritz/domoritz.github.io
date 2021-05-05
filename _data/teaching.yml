@@ -1,0 +1,43 @@
+- title: "Interactive Data Science"
+  location: Carnegie Mellon University
+  role: Instructor
+  url: https://dig.cmu.edu/ids2020
+  year: 2020
+  students: 75 students
+  description: Prepared and taught lectures. Prepared and graded assignments. Co-taught with Adam Perer.
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: OpenVis Conf Workshop
+  role: Instructor
+  url: http://www.openvisconf.com/workshops/#vega
+  year: 2018
+  description: Prepared and presented 3.5 hour tutorial at OpenVis Conf in Paris.
+- title: "HCID 520: User Interface Software & Technology"
+  role: Teaching Assistant
+  year: 2017
+  professor: Jeffrey Heer
+  students: 30 students
+  location: University of Washington
+  description: Presented sesssions, updated assignments, graded, held office hours.
+- title: "CSE 512: Data Visualization"
+  role: Teaching Assistant
+  year: 2015
+  professor: Jeffrey Heer
+  students: 80 students
+  location: University of Washington
+  description: Developed and presented tutorials on visualization tools, CSS, and D3. Graded assignments, held office hours.
+- title: "Vega-Lite Workshop"
+  year: 2017
+  location: San Diego Supercomputer Center, UCSD
+- title: "Vega-Lite Workshop"
+  year: 2016
+  location: UC Davis
+- title: "SQL Workshop"
+  year: 2014
+  role: Instructor
+  students: 20 participants
+  location: UW eScience Institute
+  description: One day workshop for scientists as part of Software Carpentry workshop series.
+- title: VHDL
+  year: 2012
+  location: Hasso Plattner Institute
+  description: Prepared course material for class on [VHSIC](https://en.wikipedia.org/wiki/VHSIC) Hardware Description Language.

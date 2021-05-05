@@ -1,0 +1,29 @@
+# Site settings
+title: Dominik Moritz
+email: domoritz@cmu.edu
+description: > # this means to ignore newlines until "baseurl:"
+   Professor at Carnegie Mellon University and Research Scientist at Apple. I create interactive data visualization and analysis tools. PhD from University of Washington.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.domoritz.de" # the base hostname & protocol for your site
+production_url: "https://www.domoritz.de"
+github_username: domoritz
+permalink: /blog/:year/:month/:title.html
+
+twitter:
+  username: domoritz
+
+sass:
+  style: compressed
+
+collections:
+  publications:
+    output: false
+
+jekyll-mentions:
+  base_url: https://twitter.com
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-mentions

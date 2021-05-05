@@ -1,0 +1,6 @@
+---
+---
+User-agent: *
+Disallow: /octopress/
+
+Sitemap: {{ site.url }}/sitemap.xml

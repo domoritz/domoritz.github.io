@@ -1,0 +1,28 @@
+/**
+ * Layout classes
+ */
+
+.container {
+  max-width: $content-width + 2 * $spacing-unit;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  flex-flow: initial;
+}
+
+.page-content {
+  padding-bottom: 3em;
+  flex: 1 1 auto;
+}
+
+@include media-query($on-palm) {
+  .container {
+    max-width: $content-width + $spacing-unit;
+    margin: 0 auto;
+    padding: 0 $spacing-unit/2;
+  }
+}

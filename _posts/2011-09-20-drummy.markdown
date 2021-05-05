@@ -1,0 +1,26 @@
+---
+comments: true
+date: 2011-09-20 19:05:47
+layout: post
+slug: drummy
+title: Drummy
+wordpress_id: 1670
+tags:
+- Drummy
+- Open Source
+- Qt
+---
+
+So, mal wieder etwas neues! Ich habe in den letzten Wochen an einem Programm gearbeitet, das es Schlagzeugspielern ermöglicht Tabs mit Ihrem Schlagzeug aufzunehmen. Die Idee dazu kam von einem ehemaligen Mitschüler, der selber Schlagzeug spielt und selber die Tabs zu bestimmten Songs erstellen wollte. Es gibt ein [relativ verbreitetes](http://www.911tabs.com/drum_tabs/) und halbwegs standardisiertes Format das in einer einfachen Textdatei gespeichert oder auf einer Website verbreitet werden kann. Man benötigt keine besonderen Tools, da man die Tabs mit einem normalen Texteditor schreiben kann. Das Problem ist allerdings, dass das nicht in Echtzeit geht und es sehr schwer ist die Tabs aus dem Gedächtnis aufzuschreiben.
+
+Für genau diesen Zweck habe ich ein Programm geschrieben mit dem Schlagzeug Tabs in Echtzeit aufgenommen werden können. Das Programm habe ich in C++ mit der Hilfe von [Qt](http://qt.nokia.com/) geschrieben, sodass ich das Programm für Windows, Mac und Linux kompilieren kann. Auf der Projektseite habe ich bereits Downloadpakete für die drei Betriebssysteme postiert. Und wer will kann sich Drummy auch aus den Quellen bauen. Momentan befindet sich Drummy noch in der Betaphase und ich baue sehr auf Feedback.
+
+Drummy habe ich bisher nach Englisch und Deutsch übersetzt. Eine Auflistung der wichtigsten Features gibt es [hier](http://domoritz.github.io/drummy/#features).
+
+{% include image url="https://domoritz.github.io/drummy/img/promo.png" %}
+
+Das gesamte Projekt inklusive des gesamten Quelltextes gibt es [auf GitHub](https://github.com/domoritz/drummy). Ich habe in den Letzten Tagen noch einmal viel Arbeit in [eine ansehnliche Website zu dem Projekt](http://domoritz.github.com/drummy/) gesteckt. Die Website habe ich von Hand geschrieben, die Bilder mit [Gimp](http://www.gimp.org/) erstellt und alles mit [Boilerplate](http://html5boilerplate.com) gebacken. Ich bin noch nicht ganz fertig und es fehlt beispielsweise noch eine Anständige Doku und ein Tutorial, aber das Grundgerüst steht.
+
+Also los, an alle Schlagzeugspieler und solche, die Tabs aufnehmen wollen. Greift euch Drummy!
+
+[Zur offiziellen Website und den Downloads](http://domoritz.github.io/drummy/).

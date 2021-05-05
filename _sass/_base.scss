@@ -1,0 +1,225 @@
+/**
+ * Basic styling
+ */
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background-color;
+
+  text-rendering: optimizeLegibility;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: auto;
+
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertycal rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+/**
+ * Hyphenation and paragraph styles
+ */
+p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+        margin-bottom: 0;
+  }
+}
+
+ul.no-list {
+  margin-left: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+/**
+ * Links
+ */
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+      opacity: .8;
+      text-decoration: underline;
+  }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: $grey-color;
+  border-left: 4px solid $grey-color-lightest;
+  padding-left: $spacing-unit / 2;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+
+  > :last-child {
+      margin-bottom: 0;
+  }
+}
+
+
+
+/**
+ * Code formatting
+ */
+
+code {
+  color: #c35;
+  font-family: Consolas,monospace;
+}
+
+pre {
+  background-color: $grey-color-lightest;
+  border-left: 0.25rem solid #c35;
+  margin-bottom: 0.6rem;
+  margin-top: 0.2rem;
+  overflow-x: auto;
+  padding: 1rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+
+  > code {
+    color: $text-color;
+    background: none;
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+
+/**
+ * Text styling
+ */
+strong, b {
+  font-weight: 600;
+}
+
+
+/**
+ * Iframe
+ */
+iframe {
+  border: none;
+  max-width: 100%;
+}
+
+
+/* Content */
+
+.lead {
+  font-size: 1.3rem;
+}
+
+/* Print */
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  @page {
+    size: portrait;
+    margin: 12mm 12mm 12mm 12mm;
+  }
+}

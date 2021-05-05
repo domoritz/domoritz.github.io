@@ -1,0 +1,34 @@
+footer {
+  padding: $spacing-unit 0;
+
+  font-size: $small-font-size;
+
+  background-color: $footer-background;
+  color: $footer-text;
+
+  a {
+    color: #fff;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .footer-col {
+    padding: $spacing-unit/2 0;
+  }
+  .site-desc {
+    width: 500px;
+
+    @include media-query($on-laptop) {
+      flex: 1 100%;
+    }
+  }
+}

@@ -1,0 +1,223 @@
+- title: Falcon
+  url: https://github.com/uwdata/falcon
+  code: https://github.com/uwdata/falcon
+  demo: https://uwdata.github.io/falcon/flights
+  paper: /papers/2019-Falcon-CHI.pdf
+  image: falcon.jpg
+  description: "Falcon is an interactive system for real-time brushing and linking interactions among multiple visualizations of billion-record datasets."
+  highlight: 2
+
+- title: Dense Lines
+  image: dense.jpg
+  paper: https://arxiv.org/pdf/1808.06019.pdf
+  demo: https://domoritz.github.io/line-density
+  code: https://github.com/domoritz/line-density
+  description: "Danyel Fisher and I developed a visualization technique to show millions of time series at once."
+
+- title: Pangloss
+  image: pangloss.jpg
+  paper: /papers/2017-TrustButVerify-CHI.pdf
+  video: https://www.youtube.com/watch?v=cfdzi92r4sM
+  recording: https://www.youtube.com/watch?v=4ntnRzqiG7Y
+  description: "Pangloss is a big-data visualization system that uses approximation to answer queries quickly. I developed Falcon with Danyel Fisher at MSR."
+  highlight: 3
+
+- title: VSUPs
+  image: vsup.jpg
+  code: https://github.com/uwdata/vsup
+  article: https://medium.com/@uwdata/value-suppressing-uncertainty-palettes-426130122ce9
+  paper: /papers/2018-VSUPs-CHI.pdf
+  demo: https://uwdata.github.io/vsup/examples/polling.html
+  description: "To visualize values and uncertaity together, Michael Correll and I created Value-Suppressing Uncertainty Palettes (VSUPs for short)."
+
+- title: Draco
+  url: https://uwdata.github.io/draco
+  code: https://github.com/uwdata/draco
+  paper: /papers/2018-Draco-InfoVis.pdf
+  article: https://medium.com/@uwdata/64ce20287e9d
+  recording: https://vimeo.com/308980888
+  image: draco.jpg
+  description: "I created Draco, a formal model of visualization design with shareable design guidelines, formal reasoning over the design space, and visualization recommendation."
+  highlight: 1
+
+- title: Vega-Lite
+  url: https://vega.github.io/vega-lite
+  code: https://github.com/vega/vega-lite
+  paper: /papers/2017-VegaLite-InfoVis.pdf
+  demo: https://vega.github.io/editor/#/examples/vega-lite/interactive_seattle_weather
+  recording: https://www.youtube.com/watch?v=9uaHRWj04D4
+  image: vl.jpg
+  description: "I am the co-author of Vega-Lite, a high-level visualization grammar for rapid specification of interactive, multi-view graphics."
+  highlight: 4
+
+- title: Vega
+  url: https://vega.github.io/vega
+  code: https://github.com/vega/vega
+  image: vg.jpg
+  description: "I contribute to Vega, a declarative visualization grammar that introduces novel primitives for interactive visualization design."
+
+- title: Voyager
+  code: http://github.com/vega/voyager
+  demo: http://vega.github.io/voyager
+  paper: /papers/2015-Voyager-InfoVis.pdf
+  image: voyager.jpg
+  description: "I co-created Voyager. The system accelerates exploratory data analysis by augmenting visual analysis tools with visualization recommendations."
+
+- title: CompassQL
+  code: http://github.com/vega/compassql
+  paper: /papers/2016-CompassQL-HILDA.pdf
+  image: compassql.jpg
+  description: "Query language and engine that unifies visualization specifications and recommendations."
+
+- title: Polestar
+  demo: https://vega.github.io/polestar
+  image: polestar.jpg
+  description: "As a control condition for Voyager, I co-created Polestar, a Tableau-like data exploration tool."
+
+- title: Vega-Editor
+  code: http://github.com/vega/editor
+  demo: http://vega.github.io/editor
+  image: editor.jpg
+  description: "I maintain the Vega and Vega-Lite online editor."
+
+- title: Vega Embed
+  code: http://github.com/vega/vega-embed
+  demo: https://beta.observablehq.com/@domoritz/hello-vega-embed
+  image: embed.gif
+  description: "I maintain Vega-Embed, a library to embed Vega and Vega-Lite visualizations on the web."
+
+- title: JSON Schema Generator
+  image: schema.png
+  code: https://github.com/vega/ts-json-schema-generator
+  description: "I maintain a tool to generate JSON schema from Typescript code. The tool uses the TypeScript compiler to parse into an AST and then generates an equivalent JSON schema. We use this tool to generate the [schema for Vega-Lite](https://github.com/vega/schema/)."
+
+- title: Vega Tooltip
+  code: http://github.com/vega/vega-tooltip
+  demo: https://vega.github.io/vega-tooltip
+  image: tooltip.jpg
+  description: "I maintain the library to add tooltips to charts."
+
+- title: Vega Themes
+  code: http://github.com/vega/vega-themes
+  image: themes.jpg
+  description: "I maintain a collection of reusable themes for Vega and Vega-Lite."
+
+- title: IPython Vega
+  code: https://github.com/vega/ipyvega
+  image: ipyvega.jpg
+  description: "I maintain the Jupyter Notebook extesion for Vega and Vega-Lite."
+
+- title: JupyterLab
+  code: https://github.com/jupyterlab/jupyterlab
+  image: jupyterlab.png
+  description: "I contribute code to support Vega and Vega-Lite in JupyterLab."
+
+- title: Altair
+  url: https://altair-viz.github.io/
+  code: https://github.com/altair-viz/altair
+  image: altair.jpg
+  description: "I contribute to Altair, a popular Python wrapper for Vega-Lite."
+
+- title: Myria
+  url: http://myria.cs.washington.edu/
+  code: https://github.com/uwescience/myria
+  image: myria.png
+  description: "I developed new operators and debugging tools for Myria, a distributed database systems from the [UW database group](http://db.cs.washington.edu/)."
+
+- title: Perfopticon
+  paper: /papers/2015-Perfopticon-EuroVis.pdf
+  code: https://github.com/uwescience/myria-web
+  video: https://vimeo.com/127110709
+  image: perfopticon.jpg
+  description: "I led the development of an interactive tool to investigate quety execution in distirbuted database systems."
+
+- title: Google Dataset Search
+  paper: https://ai.google/research/pubs/pub45390
+  image: goods.png
+  description: "During my internship with Google Research in Mountain View, I worked on the UX for [Goods](https://ai.google/research/pubs/pub45390). The project later became [Google Dataset Search](https://toolbox.google.com/datasetsearch)."
+
+- title: Google Monarch
+  image: monarch.jpg
+  description: "During my internship at Google in NYC during the summer of 2014, I implemented a new out-of-core join and aggregation operators for a large-scale time series database inside Monarch. Monarch processes production monitoring data from various systems at Google.
+  <br><br>
+  Not much about this system is public but there is a [talk from John Banning about the system](https://vimeo.com/173607638)."
+
+- title: CKAN
+  url: https://ckan.org/
+  code: https://github.com/ckan/ckan
+  image: ckan.jpg
+  description: "CKAN is the world's leading open-source data portal platform used by [data.gov.uk](http://data.gov.uk), [data.gov](http://catalog.data.gov/) and [publicdata.eu](http://publicdata.eu/) among many others. I developed the new data store, a data ingestion service, and a preview extension API."
+
+- title: Text detection with NN
+  code: https://github.com/domoritz/label_generator
+  paper: http://www.theoj.org/joss-papers/joss.00235/10.21105.joss.00235.pdf
+  image: text-detection.png
+  description: "For a class project, I extracted 500k labeled images of figures from roughly 1M papers. For each image I created a mask that shows where the text in the image is. I then used the images to train a neural network that would find text in images."
+
+- title: Himawari 8
+  demo: https://www.domoritz.de/himawari-8-chrome/
+  code: https://github.com/domoritz/himawari-8-chrome
+  image: himawari.jpg
+  description: "A webextension that shows the latest image from the Himawari 8 weather satellite when you open a new tab. You can install the extension from the [Chrome web store](https://chrome.google.com/webstore/detail/himawari-8-satellite-new/llelgapflianaapmnpncgakfjhfhnojm) and the [Firefox addon gallery](https://addons.mozilla.org/en-US/firefox/addon/satellite-new-tab-page/)."
+
+- title: Game of Life
+  code: https://github.com/search?q=user%3Adomoritz+gameoflife
+  image: gol.png
+  description: "I implemented Conway's Game of Life in Python, Go, Rust, and C#. All projects are on [GitHub](https://github.com/search?q=user%3Adomoritz+gameoflife)."
+
+- title: LocateControl
+  code: https://github.com/domoritz/leaflet-locatecontrol
+  image: locate.jpg
+  description: "A simple Leaflet map control to find your current location on a leaflet map. Very popular and used on [the OpenStreetMap home page](http://osm.org/)."
+
+- title: MaskCanvas
+  code: https://github.com/domoritz/leaflet-maskcanvas
+  demo: http://domoritz.github.io/vbb-coverage/
+  image: vbb.jpg
+  description: "Visualize coverage on a Leaflet map. The data is store in a quad-tree to make queries to the data super fast."
+
+- title: Heatmap layer
+  url: http://www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html
+  image: heatmap.jpg
+  description: "For this project I combined the MaskCanvas layer and `heatmap.js` from my friend [Patrick](http://www.patrick-wied.at)."
+
+- title: Space Clean Up
+  code: https://github.com/matthias-springer/space-cleanup
+  image: scu.jpg
+  description: "A bomberman clone written in Squeak Smalltalk."
+
+- title: MapLink
+  image: maplink.jpg
+  paper: /papers/2013-MapLink.pdf
+  video: https://www.youtube.com/watch?v=U9-zceFffSY
+  description: "For [Patrick Baudisch's](http://www.patrickbaudisch.com/) [HCI class at HPI](https://hpi.de/baudisch/teaching.html), we had to implement an application that usually requires large screens on a iPod nano (enough for 4 buttons). We implemented a GIS application to geo-reference images by simply aligning points. We introduced the concept of an X-Ray layer to align points on small devices."
+
+- title: Singing VHDL board
+  image: s76d.jpg
+  description: "Together with another student at HPI, I built a music player in VHDL, a hardware description language."
+  code: https://github.com/domoritz/S76D
+  video: https://www.youtube.com/watch?v=qsjFVgriZzY
+  article: /blog/2012/03/singing_vhdl_board.html
+
+- title: SoSat
+  image: sosat.jpg
+  description: "A SAT solver that uses different statistical optimization algorithms to solve SAT problems encoded in the DIMACS format. This solver is written in Python and uses [Numpy](http://www.numpy.org/) to speed up calculations. The two main algorithms in this solver are an *ant colony optimization algorithm* and a *genetic algorithm*. To support these algorithms, there are some pre-processing algorithms."
+  code: https://github.com/domoritz/SoSAT
+  paper: https://github.com/domoritz/SoSAT/raw/master/paper.pdf
+
+- title: Tagshot
+  image: tagshot.jpg
+  code: https://github.com/tagshot/tagshot
+  description: "Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags."
+  article: /blog/2012/03/tagshot-und-andere-projekte.html
+
+- title: Optimal ATM placement
+  article: /blog/2011/01/informaticup-2011.html
+  image: hatfield.jpg
+  description: "Our contribution to the Informaticup 2011. The algorithms we devleloped compute optimal placements of ATMs in a city. We won the competition and were invited to present our work in Bonn."
+
+- title: Shopping tour optimizer
+  article: /blog/2012/03/shoppingtour-optimizer.html
+  video: https://www.youtube.com/watch?v=HSMU7a_TlgI
+  image: shopping.jpg
+  description: "Our contribution to the Informaticup 2012. We developed algorithms to find the optimal tour to buy items at stores."
