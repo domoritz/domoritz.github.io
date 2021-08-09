@@ -4,7 +4,7 @@ email: domoritz@cmu.edu
 description: > # this means to ignore newlines until "baseurl:"
    Professor at Carnegie Mellon University and Research Scientist at Apple. I create interactive data visualization and analysis tools. PhD from University of Washington.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.domoritz.de" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 production_url: "https://www.domoritz.de"
 github_username: domoritz
 permalink: /blog/:year/:month/:title.html
