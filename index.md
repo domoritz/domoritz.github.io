@@ -9,7 +9,9 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I am head of AI at [Vahan Inc]()
+I am head of AI at [Vahan Inc](https://vahan.ai/). 
+
+
 
 #I'm faculty at the [Human-Computer Interaction Institute](https://hcii.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/) and an ML researcher at [Apple](https://www.apple.com/) <i class="fab fa-apple"></i>. I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
 
@@ -23,7 +25,7 @@ My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata
   <source srcset='/images/dominik_berlin.webp' type='image/webp' />
   <img
     src='/images/dominik_berlin.jpg'
-    alt='Dominik Moritz'>
+    alt='Anuj Gupta'>
 </picture>
 
 {:.no-list}
@@ -73,6 +75,7 @@ During my first year at UW, I received support from the [Fulbright program](http
 
 <div class="news-travel" markdown="1">
 
+<!---
 <div class="news" markdown="1">
 ## Latest News
 
@@ -83,7 +86,9 @@ During my first year at UW, I received support from the [Fulbright program](http
 </ul>
 
 </div>
+-->
 
+<!---
 <div class="travel" markdown="1">
 ## Latest Travel
 
@@ -101,5 +106,6 @@ During my first year at UW, I received support from the [Fulbright program](http
 </table>
 
 </div>
+-->
 
 </div>
