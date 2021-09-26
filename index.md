@@ -15,13 +15,13 @@ I am Head of Artificial Intelligence at [Vahan Inc](https://vahan.ai/). At Vahan
 I have over 10+ yrs of experience working in AI in various roles. During last 6 years of my career I have incubated and led mutiple successful AI teams - both at early stage startups and large organizations including Fortune 50. 
 
 
-<!--
+<!---
 I'm faculty at the [Human-Computer Interaction Institute](https://hcii.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/) and an ML researcher at [Apple](https://www.apple.com/) <i class="fab fa-apple"></i>. I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
 
 I received my PhD from the [Paul G. Allen School](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/), where I worked with [Jeff Heer](https://homes.cs.washington.edu/~jheer/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) in the [Interactive Data Lab](http://idl.cs.washington.edu/) and the [Database Group](https://db.cs.washington.edu/).
 
 My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata.github.io/draco/) at premier academic venues and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities.
--->
+--->
 
 </div>
 
@@ -33,12 +33,12 @@ My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata
     alt='Anuj Gupta'>
 </picture>
 
-<!-->
+<!---
 {:.no-list}
 * <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 * NSH 2602B
 </div>
--->
+--->
 
 </div>
 
