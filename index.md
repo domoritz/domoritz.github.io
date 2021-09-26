@@ -9,7 +9,10 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I am head of AI at [Vahan Inc](https://vahan.ai/). 
+#I am Head of Artificial Intelligence at [Vahan Inc](https://vahan.ai/). At Vahan we are using AI, Systems and Data to radically transform the Blue Collar Workers (BCW) space. Using AI we help our clients screen & recruit BCW at a large scale and at high velocity and in turn save BCW from exploitation at the hands of middlemen.
+
+
+I have over 10+ yrs of exp working in AI. During my career I have incubated and led mutiple successful AI teams - both at early stage startups and large organizations including Fortune 50. 
 
 
 
