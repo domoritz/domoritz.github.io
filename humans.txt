@@ -1,10 +1,10 @@
 /* TEAM */
-	Author/Theme: Dominik Moritz
-	Twitter: @domoritz
-	From: Berlin, Germany
+	Author/Theme: Anuj Gupta
+	Twitter: @anujgupta82
+	From: India
 
 /* SITE */
-	Language: English / German
+	Language: English
 	Doctype: HTML5
 	IDE: Sublime Text, VIM, VSCode
 	Software: Jekyll
