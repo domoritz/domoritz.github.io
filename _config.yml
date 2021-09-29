@@ -2,15 +2,15 @@
 title: Anuj Gupta
 email: anujgupta82[at]gmail[dot]com
 description: > # this means to atignore newlines until "baseurl:"
-   Faculty at Carnegie Mellon University and Research Scientist at Apple. I create interactive data visualization and analysis tools. PhD from University of Washington.
+   Head of Machine Learning at Vahan. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.domoritz.de" # the base hostname & protocol for your site
 production_url: "https://www.domoritz.de"
-github_username: domoritz
+github_username: anujgupta82
 permalink: /blog/:year/:month/:title.html
 
 twitter:
-  username: domoritz
+  username: anujgupta82
 
 sass:
   style: compressed
