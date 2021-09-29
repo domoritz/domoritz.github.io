@@ -9,10 +9,11 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I am Head of Artificial Intelligence at [Vahan Inc](https://vahan.ai/). At Vahan we are using AI, Systems and Data to radically transform the Blue Collar Workers (BCW) space. Using AI we help our clients screen & recruit BCW at a large scale and at high velocity and in turn save BCW from exploitation at the hands of middlemen.
+I am Head of Artificial Intelligence at [Vahan Inc](https://vahan.ai/). At Vahan we are using AI, Systems and Data to radically transform the Blue Collar Workers (BCW) space. Using tech we help our clients screen & recruit BCW at a large scale and at high velocity and in turn save BCW from exploitation at the hands of middlemen.
 
 
-I have over 10+ yrs of experience working in AI in various roles. During last 6 years of my career I have incubated and led mutiple successful AI teams - both at early stage startups and large organizations including Fortune 50. 
+I have over 10+ yrs of experience working in AI in various roles. During last 6 years of my career, as a senior leader I have incubated and led mutiple successful AI teams - both at early stage startups and large organizations including Fortune 50. 
+
 
 
 <!---
@@ -41,7 +42,7 @@ My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata
 
 </div>
 
-</div>
+
 
 <!---
 During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). In 2013, I received my B.S. from [Hasso Plattner Institute](https://hpi.de/). I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), [Google Research](https://ai.google/research/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). Details are in my [CV]({{ "/cv/" | relative_url }}).
