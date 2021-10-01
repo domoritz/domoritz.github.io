@@ -14,8 +14,10 @@ I am Head of Artificial Intelligence at [Vahan Inc](https://vahan.ai/). At Vahan
 
 I have over 10+ yrs of experience working in AI in various roles. During last 6 years of my career, as a senior leader I have incubated and led mutiple successful AI teams - both at early stage startups and large organizations including Fortune 50. 
 
+<br>
+<br>
 
-# The Website is still work in progress 
+### The Website is still work in progress 
 
 <!---
 I'm faculty at the [Human-Computer Interaction Institute](https://hcii.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/) and an ML researcher at [Apple](https://www.apple.com/) <i class="fab fa-apple"></i>. I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
