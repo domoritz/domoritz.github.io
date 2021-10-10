@@ -8,6 +8,8 @@ class: pubs
 {:.hidden}
 # Publications
 
+<!-- this is facet summary feature which I kiied - anuj Oct 10, 2021
+
 <div id="facets" class="hidden">
   <div class="facet" id="venue_tags">
     <strong>Venue</strong>
@@ -30,7 +32,7 @@ class: pubs
     <ul></ul>
   </div>
 
-</div>
+</div> -->
 
 <div class="p1 db">
   <input id="ft-search" type="search" placeholder="Search papers..." />
