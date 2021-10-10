@@ -32,11 +32,14 @@ class: pubs
     <ul></ul>
   </div>
 
-</div> -->
+</div> 
+-->
 
+<!--  htis is search feature which I kiied - anuj Oct 10, 2021
 <div class="p1 db">
   <input id="ft-search" type="search" placeholder="Search papers..." />
-</div>
+</div> 
+-->
 
 <label id="only-highlight" class="hidden">
   <input type="checkbox" id="highlight">
