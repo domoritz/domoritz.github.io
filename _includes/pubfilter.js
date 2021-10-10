@@ -20,7 +20,7 @@
     item.element = element;
 
     item.authors = (item.authors || []).filter(function(d) {
-      return d !== "Dominik Moritz";
+      return d !== "Anuj Gupta";
     });
 
     data.push(item);
