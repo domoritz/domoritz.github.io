@@ -8,7 +8,7 @@ class: pubs
 {:.hidden}
 <!-- # Publications
 
-## this is facet summary feature which I kiied - anuj Oct 10, 2021
+this is facet summary feature which I kiied - anuj Oct 10, 2021
 
 <div id="facets" class="hidden">
   <div class="facet" id="venue_tags">
@@ -35,7 +35,7 @@ class: pubs
 </div>  -->
 
 
-## this is search feature which I kiied - anuj Oct 10, 2021
+<!-- this is search feature which I kiied - anuj Oct 10, 2021
 <div class="p1 db">
   <input id="ft-search" type="search" placeholder="Search papers..." />
 </div> 
@@ -43,7 +43,7 @@ class: pubs
 <label id="only-highlight" class="hidden">
   <input type="checkbox" id="highlight">
   Show only highlights
-</label>
+</label> -->
 
 
 <p id="clear-filters" class="hidden">
