@@ -6,7 +6,7 @@ class: pubs
 ---
 
 {:.hidden}
-# Publications
+<!-- # Publications
 
 ## this is facet summary feature which I kiied - anuj Oct 10, 2021
 
@@ -32,7 +32,7 @@ class: pubs
     <ul></ul>
   </div>
 
-</div> 
+</div>  -->
 
 
 ## this is search feature which I kiied - anuj Oct 10, 2021
