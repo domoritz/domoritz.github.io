@@ -39,11 +39,12 @@ this is facet summary feature which I kiied - anuj Oct 10, 2021
 <div class="p1 db">
   <input id="ft-search" type="search" placeholder="Search papers..." />
 </div> 
+</label> -->
 
 <label id="only-highlight" class="hidden">
   <input type="checkbox" id="highlight">
   Show only highlights
-</label> -->
+
 
 
 <p id="clear-filters" class="hidden">
