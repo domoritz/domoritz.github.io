@@ -5,7 +5,7 @@ title: Publications
 class: pubs
 ---
 
-{:.hidden}
+# {:.hidden}
 # Publications
 
 <!-- this is facet summary feature which I kiied - anuj Oct 10, 2021
