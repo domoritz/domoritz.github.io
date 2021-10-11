@@ -5,7 +5,7 @@ title: Publications
 class: pubs
 ---
 
-# {:.hidden}
+{:.hidden}
 # Publications
 
 <!-- this is facet summary feature which I kiied - anuj Oct 10, 2021
@@ -35,7 +35,7 @@ class: pubs
 </div> 
 -->
 
-<!--  htis is search feature which I kiied - anuj Oct 10, 2021
+<!--  this is search feature which I kiied - anuj Oct 10, 2021
 <div class="p1 db">
   <input id="ft-search" type="search" placeholder="Search papers..." />
 </div> 
@@ -46,9 +46,9 @@ class: pubs
 </label>
 -->
 
-<p id="clear-filters" class="hidden">
+<!-- <p id="clear-filters" class="hidden">
   <i class="fas fa-times-circle" aria-hidden="true"></i> Clear all filters. <span id="count_hidden">X</span> of <span id="count_total">X</span> publications are hidden by the filters.
-</p>
+</p> -->
 
 {% assign pubyears = site.publications | group_by:"year"  %}
 {% assign sorted_pubyears = pubyears | reverse %}
