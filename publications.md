@@ -41,9 +41,9 @@ this is facet summary feature which I kiied - anuj Oct 10, 2021
 </div> 
 </label> -->
 
-<label id="only-highlight" class="hidden">
+<!-- <label id="only-highlight" class="hidden">
   <input type="checkbox" id="highlight">
-  Show only highlights
+  Show only highlights -->
 
 
 
