@@ -35,10 +35,10 @@ this is facet summary feature which I kiied - anuj Oct 10, 2021
 </div>  -->
 
 
-this is search feature which I kiied - anuj Oct 10, 2021
+<!-- this is search feature which I kiied - anuj Oct 10, 2021
 <div class="p1 db">
   <input id="ft-search" type="search" placeholder="Search papers..." />
-</div> 
+</div>  -->
 
 
 <!-- <label id="only-highlight" class="hidden">
