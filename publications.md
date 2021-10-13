@@ -53,7 +53,7 @@ this is facet summary feature which I kiied - anuj Oct 10, 2021
   <i class="fas fa-times-circle" aria-hidden="true"></i> Clear all filters. <span id="count_hidden">X</span> of <span id="count_total">X</span> publications are hidden by the filters.
 </p>
 
-{% assign pubyears = site.publications | group_by:"year"  %}
+<!-- {% assign pubyears = site.publications | group_by:"year"  %}
 {% assign sorted_pubyears = pubyears | reverse %}
 {% for year in sorted_pubyears %}
 ## {{ year.name }}
@@ -61,7 +61,9 @@ this is facet summary feature which I kiied - anuj Oct 10, 2021
 {% for pub in year.items %}
   {% include publication.html pub=pub %}
 {% endfor %}
-{% endfor %}
+{% endfor %} -->
+
+{% include publication.html pub=pub %}
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/itemsjs@1.0.40/dist/itemsjs.min.js"></script> -->
 <script>
