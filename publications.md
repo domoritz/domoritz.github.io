@@ -59,7 +59,7 @@ this is facet summary feature which I kiied - anuj Oct 10, 2021
 
 {:#y{{ year.name }} .year}
 {% for pub in year.items %}
-  {- % include publication.html pub=pub %}
+  - {% include publication.html pub=pub %}
 {% endfor %}
 {% endfor %}
 
