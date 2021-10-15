@@ -8,6 +8,45 @@
 
 
 
+
+
+
+- title: "When – and when not – to use Deep Learning, Machine Learning and AI"
+  Role : Moderator for panel discussion
+  location: Anthill Inside, 2017
+  city: Bengaluru, India
+  date: 2017-07-29
+  url: https://hasgeek.com/anthillinside/2017/
+  #recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
+  #slides: https://www.slideshare.net/anujgupta5095/building-continuous-learning-systems
+
+
+
+
+- title: "Building Continuous Learning Systems"
+  location: PyData 2016
+  city: Washington, D.C.
+  date: 2016-10-08
+  url: https://pydata.org/dc2016/
+  recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
+  slides: https://www.slideshare.net/anujgupta5095/building-continuous-learning-systems
+
+
+- title: "Authenticated Byzantine Generals in Dual Failure Model"
+  location: ICDCN 2010
+  city: Kolkata, India
+  date: 2010-01-03
+  url: http://www.cucse.org/ICDCN2010.htm
+
+- title: "On Composability of Reliable Unicast and Broadcast"
+  location: ICDCN 2010
+  city: Kolkata, India
+  date: 2010-01-03
+  url: http://www.cucse.org/ICDCN2010.htm
+#  recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
+#  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+
+
   
 # - title: "Visualization for People + Systems"
 #   location: GAMES Webinar
