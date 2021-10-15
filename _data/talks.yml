@@ -1,9 +1,17 @@
 - title: "Book Intro: Practical Natural Language Processing"
-  location: PyData 2016
-  city: Bay Area (Online)
+  location: Bay Area NLP meetup
+  city: Online
   date: 2020-08-01
   url: https://www.meetup.com/Bay-Area-NLP/events/271950857/
   recording: https://www.youtube.com/watch?v=RyXIFJUxMoM
+#  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+
+- title: "The New Business of AI"
+  location: IIM Calcutta
+  city: Online
+  date: 2020-08-16
+  url: https://www.facebook.com/iimcalcutta/photos/pgdba-iim-calcutta-presents-a-webinar-and-panel-discussion-the-new-business-of-a/10157514351750665/
+  recording: https://www.youtube.com/watch?v=xp8FrseEs-g
 #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
 - title: "Sarcasm Detection : Achilles Heel of sentiment analysis"
