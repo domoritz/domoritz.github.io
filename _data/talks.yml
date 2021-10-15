@@ -7,8 +7,45 @@
 #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
 
+- title: "Hubs and Spokes of AI"
+  Role : Moderator for panel discussion
+  location: Anthill Inside, 2018
+  city: Bengaluru, India
+  date: 2018-07-25
+  url: https://hasgeek.com/anthillinside/2018/
+
+- title: "Sarcasm: Achilles Heel of sentiment analysis"
+  location: Anthill Inside
+  city: Bengaluru, India
+  date: 2018-07-25
+  url: https://hasgeek.com/anthillinside/2018/
+
+- title: "Synthetic Gradients"
+  location: Anthill Inside
+  city: Bengaluru, India
+  date: 2017-07-29
+  url: https://hasgeek.com/anthillinside/2017/
 
 
+- title: "CNNs for Text Classification"
+  location: Nvidia Developer Conference, 2017
+  city: Chennai, India
+  date: 2017-11-22
+  url: https://www.bostonindia.in/blog/2017/11/06/nvidia-developer-connect.aspx
+
+- title: "Recent Advances in NLP"
+  location: PyData Delhi 2017
+  city: Delhi, India
+  date: 2017-09-03
+  url: https://pydata.org/delhi2017/
+
+
+- title: "Products and AI"
+  Role : Panellist for panel discussion
+  location: Anthill Inside, 2017
+  city: Bengaluru, India
+  date: 2017-07-29
+  url: https://hasgeek.com/anthillinside/2017/
 
 
 - title: "When – and when not – to use Deep Learning, Machine Learning and AI"
@@ -20,9 +57,6 @@
   #recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
   #slides: https://www.slideshare.net/anujgupta5095/building-continuous-learning-systems
 
-
-
-
 - title: "Building Continuous Learning Systems"
   location: PyData 2016
   city: Washington, D.C.
@@ -30,7 +64,6 @@
   url: https://pydata.org/dc2016/
   recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
   slides: https://www.slideshare.net/anujgupta5095/building-continuous-learning-systems
-
 
 - title: "Authenticated Byzantine Generals in Dual Failure Model"
   location: ICDCN 2010
