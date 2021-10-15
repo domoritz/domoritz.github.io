@@ -1,11 +1,10 @@
-- title: "Building Continuous Learning Systems"
+- title: "Book Intro: Practical Natural Language Processing"
   location: PyData 2016
-  city: Washington, D.C.
-  date: 2016-10-08
-  url: https://pydata.org/dc2016/
-  recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
+  city: Bay Area (Online)
+  date: 2020-08-01
+  url: https://www.meetup.com/Bay-Area-NLP/events/271950857/
+  recording: https://www.youtube.com/watch?v=RyXIFJUxMoM
 #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
-
 
 - title: "Sarcasm Detection : Achilles Heel of sentiment analysis"
   location: Open Data Science Conference (ODSC)
