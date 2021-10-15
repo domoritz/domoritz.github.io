@@ -7,7 +7,7 @@
 #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
 
-- title: "Detecting Sarcasm"
+- title: "Sarcasm Detection : Achilles Heel of sentiment analysis"
   location: Open Data Science Conference (ODSC)
   city: Bengaluru, India
   date: 2018-09-01
@@ -22,11 +22,12 @@
   date: 2018-07-25
   url: https://hasgeek.com/anthillinside/2018/
 
-- title: "Sarcasm: Achilles Heel of sentiment analysis"
+- title: "Sarcasm Detection: Achilles Heel of sentiment analysis"
   location: Anthill Inside
   city: Bengaluru, India
   date: 2018-07-25
   url: https://hasgeek.com/anthillinside/2018/
+  recording: https://www.youtube.com/watch?v=M2oDqA_PBk8
 
 - title: "Synthetic Gradients"
   location: Anthill Inside
