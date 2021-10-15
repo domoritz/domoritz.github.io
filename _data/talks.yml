@@ -2,7 +2,9 @@
   location: Loc
   city: Zoom
   date: YYYY-MM-DD
-  
+  url: https://www.microsoft.com/en-us/research/video/visualization-for-people-systems/
+  recording: https://www.youtube.com/watch?v=ww0HGwC18Qo
+
   
 # - title: "Visualization for People + Systems"
 #   location: GAMES Webinar
