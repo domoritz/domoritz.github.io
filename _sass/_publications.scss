@@ -28,6 +28,7 @@
       white-space: nowrap;
       font-size: 0.85em;
       cursor: pointer;
+      
 
       color: $grey-color-dark;
 
@@ -137,8 +138,10 @@
 
       max-height: 600px;
       overflow: hidden;
-
-      color: $yellow-color;
+      
+      /* added this to try n add color to publication title and make it bold*/
+      color: firebrick;
+      font-weight: bold;
 
       &.hidden {
         max-height: 0;
