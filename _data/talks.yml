@@ -2,6 +2,16 @@
   location: Loc
   city: Zoom
   date: YYYY-MM-DD
+  url: https://www.microsoft.com/en-us/research/video/visualization-for-people-systems/
+  recording: https://www.youtube.com/watch?v=ww0HGwC18Qo
+  blog: https://medium.com/@uwdata/64ce20287e9d
+  link: https://uwdata.github.io/draco/
+  osf: 3eg9c
+  pdf: https://www.domoritz.de/papers/2018-Draco-InfoVis.pdf
+  short_doi: 10/cs68
+  slides: https://www.domoritz.de/talks/Draco-Infovis-2018.pdf
+
+
 # - title: "Visualization for People + Systems"
 #   location: GAMES Webinar
 #   city: Online
