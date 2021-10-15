@@ -32,7 +32,7 @@ class: talks
 
 {% include publication.html pub=pub %}
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/itemsjs@1.0.40/dist/itemsjs.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/itemsjs@1.0.40/dist/itemsjs.min.js"></script> 
 <script>
   {% include itemsjs.min.js %}
   {% include pubfilter.js %}
