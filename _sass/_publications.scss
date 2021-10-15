@@ -138,6 +138,8 @@
       max-height: 600px;
       overflow: hidden;
 
+      color: firebrick;
+
       &.hidden {
         max-height: 0;
       }
