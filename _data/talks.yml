@@ -1,10 +1,12 @@
-- title: "Title of the talk"
-  location: Loc
-  city: Zoom
-  date: YYYY-MM-DD
-  url: https://www.microsoft.com/en-us/research/video/visualization-for-people-systems/
-  recording: https://www.youtube.com/watch?v=ww0HGwC18Qo
-  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+- title: "Building Continuous Learning Systems"
+  location: PyData 2016
+  city: Washington, D.C.
+  date: 2016-10-08
+  url: https://pydata.org/dc2016/
+  recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
+#  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+
+
 
   
 # - title: "Visualization for People + Systems"
@@ -85,11 +87,13 @@
 #   location: University of Pennsylvania
 #   city: Philadelphia
 #   date: 2019-02-12
+
 #   url: https://events.seas.upenn.edu/event/cis-seminar-visualization-for-people-systems/
 # - title: "Raising the Abstraction of Data Visualization"
 #   location: IBM Research
 #   city: Bangalore
 #   date: 2019-01-04
+
 # - title: "Data Visualization with Vega-Lite and Altair for Machine Learning"
 #   location: TVM Conference
 #   city: Seattle
@@ -128,35 +132,43 @@
 #   location: Tintash
 #   city: Lahore
 #   date: 2018-01-16
+
 # - title: "Vega-Lite: A Grammar of Interactive Graphics"
 #   location: Technical University Berlin
 #   city: Berlin
 #   date: 2017-12-12
+
 # - title: "Vega-Lite: A Grammar of Interactive Graphics"
 #   location: DeepMind (Google)
 #   city: London
 #   date: 2017-11-22
+
 # - title: "Vega-Lite: A Grammar of Interactive Graphics"
 #   location: City University
 #   city: London
 #   date: 2017-11-21
+
 # - title: "Visualization Grammars"
 #   location: Dagstuhl Seminar on Connecting Visualization and Data Management Research
 #   url: https://www.dagstuhl.de/de/programm/kalender/semhp/?semnr=17461
 #   date: 2017-11-14
+
 # - title: "Vega-Lite: A Grammar of Interactive Graphics"
 #   location: Microsoft
 #   city: Redmond
 #   date: 2017-11-07
 #   recording: https://www.youtube.com/watch?v=Nsrz4YdaZ_A
+
 # - title: "Vega-Lite: A Grammar of Interactive Graphics"
 #   location: Turi (Apple)
 #   city: Seattle
 #   date: 2017-06-13
+
 # - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
 #   location: Tableau Research
 #   city: Seattle
 #   date: 2017-07-27
+
 # - title: "Vega-Lite: A Grammar of Interactive Graphics"
 #   location: OpenVis Conf
 #   city: Boston
@@ -164,41 +176,50 @@
 #   date: 2017-04-24
 #   slides: /talks/VegaLite-OpenVisConf-2017.pdf
 #   recording: https://www.youtube.com/watch?v=9uaHRWj04D4
+
 # - title: "Vega-Lite: A Grammar of Interactive Graphics"
 #   location: IEEE Infovis
 #   city: Baltimore
 #   date: 2017-10-25
+
 # - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
 #   location: Database Seminar, Microsoft Research
 #   city: Redmond
 #   date: 2016-09-28
+
 # - title: "What Users Don't Expect about Exploratory Data Analysis on AQP Systems "
 #   location: HILDA at ACM SIGMOD
 #   city: Chicago
 #   date: 2017-05-14
+
 # - title: "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data"
 #   location: ACM CHI
 #   city: San Jose
 #   date: 2016-05-10
 #   recording: https://www.youtube.com/watch?v=4ntnRzqiG7Y
+
 #- title: "Vega-Lite: A Declarative Format for Visualization"
 #  location: Plotcon
 #  city: New York City
 #  url: https://plotcon-2016.plot.ly/schedule
 #  date: 2016-11-15
+
 #- title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
 #  location: SIGGRAPH
 #  city: Anaheim
 #  date: 2016-07-26
+
 #- title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
 #  location: Tableau Research
 #  city: Seattle
 #  date: 2016-01-15
+
 #- title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
 #  location: IEEE Infovis
 #  city: Chicago
 #  date: 2015-10-26
 #  recording: https://vimeo.com/236170947
+
 #- title: "Perfopticon: Visual Query Analysis for Distributed Databases"
 #  location: Eurovis
 #  city: Cagliari
