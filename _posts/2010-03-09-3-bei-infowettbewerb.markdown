@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-03-09 18:25:45
 layout: post
@@ -15,4 +15,4 @@ Am Samstag den 9.3.2010 fand an der Uni Potsdam von 9 bis 18:30 Uhr der Informat
 
 Für mich ist die Platzierung eigentlich nur nebensächlich, trotzdem habe ich mich natürlich sehr über den dritten Preis gefreut. Ich war zum ersten mal bei dem Wettbewerb und wusste noch gar nicht, was mich erwartet. Alles in Allem hat mir der Wettbewerb sehr viel Spaß gemacht und ich habe viele nette Leute kennen gelernt. Ich fand die Gruppenarbeiten von allen teilen am besten, da ich dort mit anderen gemeinsam doch sehr schwierige Probleme gelöst habe und auch sonst waren wir ein klasse Team.
 
-Mehr Infos (und die Siegerfotos) gibt es hier: [http://www.informatikdidaktik.de/HyFISCH/Veranstaltungen/InfoWettbewerb/2010](http://www.informatikdidaktik.de/HyFISCH/Veranstaltungen/InfoWettbewerb/2010)
+Mehr Infos (und die Siegerfotos) gibt es hier: [http://www.informatikdidaktik.de/HyFISCH/Veranstaltungen/InfoWettbewerb/2010](http://www.informatikdidaktik.de/HyFISCH/Veranstaltungen/InfoWettbewerb/2010) -->

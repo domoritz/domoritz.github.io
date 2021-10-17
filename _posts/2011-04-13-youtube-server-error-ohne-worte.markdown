@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-04-13 20:50:53
 layout: post
@@ -32,4 +32,4 @@ EsZvHPTD9LwHAKiq_EXG6fi_VdVlZZ_KbDz2KXn2AewPXTxhTfPUokPwDIkA
 _uEzjxoaZReSNCH3laBooH7mPctUfy7h0Az_vteySES6WG6dmoFLocAPRC6U
 PwqWSo84BOc_MnrZnWGcKJOKeskrvMzZ56lKusX2V7fYvKzZXjYlDUL7rVwV
 [...]
-```
+``` -->

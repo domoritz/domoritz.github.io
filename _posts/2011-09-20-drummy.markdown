@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-09-20 19:05:47
 layout: post
@@ -23,4 +23,4 @@ Das gesamte Projekt inklusive des gesamten Quelltextes gibt es [auf GitHub](http
 
 Also los, an alle Schlagzeugspieler und solche, die Tabs aufnehmen wollen. Greift euch Drummy!
 
-[Zur offiziellen Website und den Downloads](http://domoritz.github.io/drummy/).
+[Zur offiziellen Website und den Downloads](http://domoritz.github.io/drummy/). -->

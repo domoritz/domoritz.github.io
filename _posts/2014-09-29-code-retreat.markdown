@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Code retreats improve coding abilities"
 description: "Game of Life in Python and Go"
@@ -15,4 +15,4 @@ This summer, I was at Google in NYC for an awesome internship. However, in this 
 We used [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) throughout the day and I've grown to like it a lot. I just wanted to share my simple [implementation in Python](https://github.com/domoritz/gameoflife-python) and my [first program in Go](https://github.com/domoritz/gameoflife-go).
 
 **Update:** I have since implement the Game of Live in Rust and C# and might add more in the future. The [code is on GitHub](https://github.com/domoritz?utf8=%E2%9C%93&tab=repositories&q=gameoflife).
-
+ -->

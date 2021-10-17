@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Datenbestandsanalyse GovData"
 description: "Was wir jetzt schon über die Daten im neuen Datenportal sagen können."
@@ -97,4 +97,4 @@ Aggregiert aus `result.resources.format`.
        'shp': 4
        'doc': 3
        'tms': 3
-```
+``` -->

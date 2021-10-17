@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2008-09-10 17:02:44
 layout: post
@@ -25,4 +25,4 @@ _
 __"Dass ich erkenne, was die Welt, im Innersten zusammenhält"_ (Faust)
 
 
-
+ -->

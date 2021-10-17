@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-03-13 19:44:34
 layout: post
@@ -13,4 +13,4 @@ tags:
 
 > Technik, die kleine hässliche Schwester der Magie.
 
-- Fil
+- Fil -->

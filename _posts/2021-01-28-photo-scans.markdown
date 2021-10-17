@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Scanning Photo Albums"
 description: How we are scanning dozens of photo albums and process them with open source tools
@@ -117,4 +117,4 @@ Setting dates for Combi_28_split-00*.*
     2 image files updated
 ```
 
-That's it. I am really happy with the results. I was especially impressed with the quality of the segmentations and hope that you find this post useful if you want to scan your family photos.
+That's it. I am really happy with the results. I was especially impressed with the quality of the segmentations and hope that you find this post useful if you want to scan your family photos. -->

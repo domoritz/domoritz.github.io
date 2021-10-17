@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-07-25 20:07:05
 layout: post
@@ -12,4 +12,4 @@ tags:
 
 > Be nice to nerds. Chances are you'll end up working for one.
 
-Bill Gates
+Bill Gates -->

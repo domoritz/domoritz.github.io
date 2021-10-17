@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-04-03 23:13:22
 layout: post
@@ -15,4 +15,4 @@ Für alle, sie gerne mal eine website zerstören, kann ich dieses kleine Javascr
 javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://erkie.github.com/asteroids.min.js';void(0);
 ```
 
-Dank geht an [Erik Rothoff Andersson](http://erkie.github.com/)
+Dank geht an [Erik Rothoff Andersson](http://erkie.github.com/) -->

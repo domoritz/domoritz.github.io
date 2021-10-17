@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2009-09-30 20:55:53
 layout: post
@@ -27,4 +27,4 @@ mehr Informationen:
   * [http://mashable.com/2009/05/28/google-wave-guide/](http://mashable.com/2009/05/28/google-wave-guide/)
   * [http://www.youtube.com/watch?v=uOFzWZrsPV0](http://www.youtube.com/watch?v=uOFzWZrsPV0)
 
-
+ -->

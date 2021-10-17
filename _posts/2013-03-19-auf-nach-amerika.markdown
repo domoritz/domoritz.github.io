@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Auf nach Amerika"
 description: "Mit Fulbright Stipendium an die UW"
@@ -22,4 +22,4 @@ Die ganze Vorbereitung war schon sehr aufwändig und ich viele Stunden Zeit in d
 
 Ich habe mich von der Fulbright Kommission platzieren lassen, wobei ich aber einen großen Teil der Bewerbung an der UW selber machen musste. Die Nominierung ist an die Uni gebunden, sodass ich bei einer Absage auch das Stipendium verloren hätte. Vor etwa einer Woche habe ich dann die Zusage aus Washington bekommen, sodass jetzt alles in trockenen Tüchern ist. Am letzten Wochenende war ich beim Fulbright Vorbereitungstreffen und habe die anderen Stipendiaten aus Deutschland und Fulbrighter aus den USA - die zur Zeit in Europa sind - kennen gelernt, den Aufenthalt vorbereitet und über die Unterschiede sowie Gemeinsamkeiten Europas und der USA diskutiert.
 
-Ich freue mich also sehr auf mein Jahr in den USA und bin begeistert, dass ich dabei vom Fulbright Programm unterstützt werde.
+Ich freue mich also sehr auf mein Jahr in den USA und bin begeistert, dass ich dabei vom Fulbright Programm unterstützt werde. -->

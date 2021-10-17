@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: How fast is fast enough?
 description: Rule of thumb for latency in interactive visualization.
@@ -10,4 +10,4 @@ The paper also found that some interactions are more latency sensitive than othe
 
 As a rule of thumb, I am proposing that we require that **latency should be lower than the shortest time between any two user queries**. This rule is motivated by the fact that responses arrive before the user can send the next query. As an extreme example, in [crossfiltering](https://vega.github.io/vega/examples/crossfilter-flights/) every movement of the brush fires a new query and delayed responses would display outdated information.
 
-I think this rule could provide a reasonable upper bound but not necessarily a lower bound. For example, just because it takes me a ten seconds to write a search query on Google, I would not want to wait ten seconds.
+I think this rule could provide a reasonable upper bound but not necessarily a lower bound. For example, just because it takes me a ten seconds to write a search query on Google, I would not want to wait ten seconds. -->

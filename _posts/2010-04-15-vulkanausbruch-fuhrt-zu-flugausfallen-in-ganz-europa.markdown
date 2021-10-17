@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-04-15 17:49:57
 layout: post
@@ -15,4 +15,4 @@ Aus diesem Grund wurden in vielen nordischen Ländern, Großbritannien Flughäfe
 
 In Großbritannien ist der gesamte Luftraum seit einer halben Stunde gesperrt und soll bis morgen früh auch gesperrt bleiben.
 
-Aktuelle Infos: [http://www.focus.de/reisen/fliegen/-live-ticker-der-vulkan-spuckt-weiter_aid_498899.html](http://www.focus.de/reisen/fliegen/-live-ticker-der-vulkan-spuckt-weiter_aid_498899.html)
+Aktuelle Infos: [http://www.focus.de/reisen/fliegen/-live-ticker-der-vulkan-spuckt-weiter_aid_498899.html](http://www.focus.de/reisen/fliegen/-live-ticker-der-vulkan-spuckt-weiter_aid_498899.html) -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2009-07-09 15:48:58
 layout: post
@@ -18,4 +18,4 @@ Chrome OS soll eine Verbindung aus Chrome Webbrowser und Linux werden. Also eige
 Mehr Infos:
 
 [http://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html](http://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html)[
-http://chrome.blogspot.com/2009/07/google-chrome-os-faq.html](http://chrome.blogspot.com/2009/07/google-chrome-os-faq.html)
+http://chrome.blogspot.com/2009/07/google-chrome-os-faq.html](http://chrome.blogspot.com/2009/07/google-chrome-os-faq.html) -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-02-13 13:34:56
 layout: post
@@ -16,4 +16,4 @@ Morgen ist es so weit. Der ultimative Kampf Mensch gegen Computer. Naja, soweit 
 1996 hatte es IBM bereits mit dem Deep Blue den Schachchampion Garry Kasparov zu besiegen. Nun soll der nächste Vergleich stattfinden. DIe größten Schwierigkeiten liegen in dem verstehen der Antworten, dem Vorlesen der Frage (text to speech) und natürlich dem Finden der passenden Antwort. Watson hat keinen Internetzugang, dafür aber eine Wissensdatenbank in seinen 16 TB RAM.
 
 
-Mehr Infos zu Watson und der Technik dahinter gibt es auf der Website von IBM extra zu dem Projekt. [http://www-943.ibm.com/innovation/us/watson/](http://www-943.ibm.com/innovation/us/watson/)
+Mehr Infos zu Watson und der Technik dahinter gibt es auf der Website von IBM extra zu dem Projekt. [http://www-943.ibm.com/innovation/us/watson/](http://www-943.ibm.com/innovation/us/watson/) -->

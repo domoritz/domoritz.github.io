@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2009-08-11 13:41:20
 layout: post
@@ -27,4 +27,4 @@ Sehr interessant war, dass wir losliefen, als das gesamte Felsmassiv in dicken N
 
 Als der Nebel weg war, erreichten wir die Rotwandhütte. Von dort aus geht es nach links den Berg hoch bis zum Einstieg zum Klettersteig. Dies ist der erste etwas steilere Abschnitt der Tour und wir mussten bei der Höhenlust ganz schön hecheln. Aber da der Nebel langsam weg war, hatten wir eine grandiose Aussicht auf die umliegenden Berge. Der Einstieg ist auf der Bergspitze etwas hinter einem Felsvorsprung versteckt.
 
-Danach ging es gesichert über viele Grade und Felstürme den Masaré-Klettersteig entlang. Interessant war, dass der Nebel auf einer Seite der Berge war und auf der anderen nicht. Er zog dann über die Bergspitzen hinweg, an denen wir vorbei liefen.
+Danach ging es gesichert über viele Grade und Felstürme den Masaré-Klettersteig entlang. Interessant war, dass der Nebel auf einer Seite der Berge war und auf der anderen nicht. Er zog dann über die Bergspitzen hinweg, an denen wir vorbei liefen. -->

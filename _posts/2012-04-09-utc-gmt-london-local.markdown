@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: UTC vs GMT vs London Local Time
 description: Über die Verwirrungen durch Zeitstandards
@@ -25,4 +25,4 @@ London Local time ist die Zeit, welche in London gilt. Das heißt im Winter UTC 
 
 Unix time richtet sich an der UTC aus und wird in Sekunden seit Donnerstag, 1. Januar 1970 angegeben. Die Umrechnung in UTC ist nicht trivial, da Schaltjahre, Schaltsekunden und eventuell die Sommerzeit mit eingerechnet werden müssen.
 
-Also nun noch der ultimative Tipp, wenn man Zeiten ganz klar ausdrücken will. Zeit in Lokaler Zeit angeben oder auf UTC verweisen. Für die Umrechnung empfehle ich [Wolfram Alpha](http://www.wolframalpha.com).
+Also nun noch der ultimative Tipp, wenn man Zeiten ganz klar ausdrücken will. Zeit in Lokaler Zeit angeben oder auf UTC verweisen. Für die Umrechnung empfehle ich [Wolfram Alpha](http://www.wolframalpha.com). -->

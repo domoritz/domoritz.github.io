@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: Simple Sudoku Solver
 description: A simple Sudoku solver with forward checking in Python
@@ -201,4 +201,4 @@ def solve(state):
 
 
 print_field(solve(state))
-```
+``` -->

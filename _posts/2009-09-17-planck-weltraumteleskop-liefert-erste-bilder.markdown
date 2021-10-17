@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2009-09-17 20:13:46
 layout: post
@@ -25,4 +25,4 @@ technische Daten (Quelle: Wikipedia)
 * Bahn: Lissajous-Bahn, 0,28 Mio km x 0,28 Mio km um L2 Erde-Sonne
 * Gesamtkosten: 600 Mio. Euro
 
-Zur News bei der BBC: [http://news.bbc.co.uk/2/hi/science/nature/8260711.stm](http://news.bbc.co.uk/2/hi/science/nature/8260711.stm)
+Zur News bei der BBC: [http://news.bbc.co.uk/2/hi/science/nature/8260711.stm](http://news.bbc.co.uk/2/hi/science/nature/8260711.stm) -->

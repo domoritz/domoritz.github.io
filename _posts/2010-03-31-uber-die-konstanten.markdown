@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-03-31 15:43:29
 layout: post
@@ -13,4 +13,4 @@ Nachdem ich das alles durchgemacht habe, frage ich mich, ob wir uns nicht an all
 
 Wir sind Gewohnheitstiere, die Konstanz brauchen. Vielleicht auch eine Verbesserung, aber große Umbrüche bereiten uns Unbehaglichkeit. Vielleicht ist es gerade das, was viele in der heutigen schnellen Gesellschaft so unglücklich macht.  Ich für mich denke, dass ich versuchen in keine Gewohnheit zu verfallen. Die Frage ist, welche Konstanten und wie viel wir brauchen und vielleicht sogar vertragen. Was sind wir ohne Konstanten? Und wozu machen uns die Konstanten?
 
-Vielleicht kann man durch Distanz erreichen, über seine Konstanten im Leben nachzudenken. Ich werde es auf jeden Fall versuchen.
+Vielleicht kann man durch Distanz erreichen, über seine Konstanten im Leben nachzudenken. Ich werde es auf jeden Fall versuchen. -->

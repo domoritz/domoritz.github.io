@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-06-23 22:10:05
 layout: post
@@ -34,4 +34,4 @@ Für mich besonders wichtig waren diese Aussagen:
 
 Sehr interessant ist die [Broschüre direkt vom PIK](http://www.pik-potsdam.de/infothek/buecher_broschueren/broschuere_cms_100.pdf).
 
-Die Einladung zu dem Vortragsabend habe ich übrigens vom Verein "Alumni der Studienstiftung" bekommen.
+Die Einladung zu dem Vortragsabend habe ich übrigens vom Verein "Alumni der Studienstiftung" bekommen. -->

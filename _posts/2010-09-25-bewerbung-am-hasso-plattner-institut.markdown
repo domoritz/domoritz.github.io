@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-09-25 15:06:33
 layout: post
@@ -33,4 +33,4 @@ So viel dazu. Falls noch fragen sind, einfach posten. Ich freue mich jedenfalls 
 Der NC im Wintersemester 2010/11 lag bei 1,8. Ich weiß aber auch von welchen, die noch mit schlechteren Noten angenommen wurden. Wichtig ist auch das Entscheidungsschreiben!!! Also, wie Hubert im Kommentar unten geschrieben hat, ob man z.B. schon mal beim Bwinf dabei war. Offizielle Zahlen gibt es übrigens [hier](http://www.uni-potsdam.de/formulare/zugang/auswahlgrenzen.pdf).
 
 *[PUCK]: Potsdamer Universitätschipkarte
-*[NC]: numerus clausus
+*[NC]: numerus clausus -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-03-22 12:46:33
 layout: post
@@ -19,4 +19,4 @@ Ich weiß, dass man das Theme wechseln kann, aber trotzdem finde ich es schade, 
 
 Trotz des Themes ist Ubuntu auf jeden Fall eine tolle Sache und ich finde es immer noch klasse. Vielleicht bin ich ja der Einzige, dem es nicht gefällt.
 
-Tolles Linux, aber das Theme hätt's nun wirklich nicht gebraucht.
+Tolles Linux, aber das Theme hätt's nun wirklich nicht gebraucht. -->

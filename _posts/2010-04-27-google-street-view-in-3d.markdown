@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-04-27 12:40:02
 layout: post
@@ -16,4 +16,4 @@ Am 1.April 2010 hat Google ein neues Feature für Google Street View herausgebra
 
 Hier kannst du es einmal ausprobieren
 
-[View Larger Map](http://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&sll=51.53198,-0.177275&sspn=0.001176,0.003484&ie=UTF8&hq=abbey+road+studios&hnear=Westminster,+London,+UK&layer=c&cbll=51.531989,-0.177284&panoid=GhsvCcHRmYodZk25IuyyEg&cbp=13,329.14,,0,7.91&ll=51.532154,-0.177979&spn=0,0.192947&z=12)
+[View Larger Map](http://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&sll=51.53198,-0.177275&sspn=0.001176,0.003484&ie=UTF8&hq=abbey+road+studios&hnear=Westminster,+London,+UK&layer=c&cbll=51.531989,-0.177284&panoid=GhsvCcHRmYodZk25IuyyEg&cbp=13,329.14,,0,7.91&ll=51.532154,-0.177979&spn=0,0.192947&z=12) -->

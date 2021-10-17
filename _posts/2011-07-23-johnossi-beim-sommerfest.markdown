@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-07-23 15:20:58
 layout: post
@@ -18,4 +18,4 @@ Ein Zitat von dem Abend: von John Engelbert: _Does anyone here has a cigarette?_
 
 > Studying kills.
 
-{% include image name="johnossi.jpg" caption="Johnossi auf der Bühne am HPI." %}
+{% include image name="johnossi.jpg" caption="Johnossi auf der Bühne am HPI." %} -->

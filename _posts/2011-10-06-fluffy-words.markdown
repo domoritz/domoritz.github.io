@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-10-06 00:08:07
 layout: post
@@ -12,4 +12,4 @@ tags:
 
 > Substitute _damn_ every time you’re inclined to write _very_; your editor will delete it and the writing will be just as it should be.
 
-Mark Twain
+Mark Twain -->

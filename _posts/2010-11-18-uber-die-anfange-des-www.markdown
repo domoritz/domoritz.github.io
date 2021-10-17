@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-11-18 19:11:45
 layout: post
@@ -16,4 +16,4 @@ zum Proposal: [http://www.w3.org/Proposal.html](http://www.w3.org/Proposal.html)
 
 Noch eine Anmerkung. Das WWW ist nicht das Internet. Das Internet ist viel älter und ist das Netzwerk, was hinter Email, WWW, FTP usw. steckt.
 
-*[CERN]: Organisation Européenne pour la Recherche Nucléaire
+*[CERN]: Organisation Européenne pour la Recherche Nucléaire -->

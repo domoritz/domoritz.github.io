@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2009-07-17 20:24:02
 layout: post
@@ -17,4 +17,4 @@ So und nun zu den Beispielen für 3D Würfel:
 
 [http://www.fofronline.com/experiments/cube/multiCubes.html](http://www.fofronline.com/experiments/cube/multiCubes.html) (in Verbindung mit Javascript und einem tollen Effekt)
 
-Anleitung: [http://www.fofronline.com/2009-04/3d-cube-using-css-transformations/](http://www.fofronline.com/2009-04/3d-cube-using-css-transformations/)
+Anleitung: [http://www.fofronline.com/2009-04/3d-cube-using-css-transformations/](http://www.fofronline.com/2009-04/3d-cube-using-css-transformations/) -->

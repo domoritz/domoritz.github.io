@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-03-29 22:44:57
 layout: post
@@ -141,4 +141,4 @@ print "Benötigte Generationen:", anzahl
 
 
 [http://www.obitko.com/tutorials/genetic-algorithms/index.php](http://www.obitko.com/tutorials/genetic-algorithms/index.php)
-[http://www.ai-junkie.com/ga/intro/gat1.html](http://www.ai-junkie.com/ga/intro/gat1.html)
+[http://www.ai-junkie.com/ga/intro/gat1.html](http://www.ai-junkie.com/ga/intro/gat1.html) -->

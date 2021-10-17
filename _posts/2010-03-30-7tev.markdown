@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-03-30 18:04:59
 layout: post
@@ -22,4 +22,4 @@ Doch warum muss die Energie immer höher werden?
 
 Das Prinzip ist, dass man um ein Teilchen zu erzeugen (Materie lässt sich aus Energie erzeugen). Um neue Teilchen zu entdecken, muss man sie erzeugen. Wenn man neue, schwerere Teilchen erzeugen möchte, muss man mehr Energie zur Verfügung stellen. 7Tev entspricht dabei einer Energie von 1,12 mikro Joules und einer Masse von 1.2x10^-23 kg (zum Vergleich, ein Proton wiegt etwa 1.67x10^-27 kg, also ein 10000stel). Das klingt wenig (ist es auch), aber für Teilchenphysiker sind dies unglaubliche Werte.
 
-Mehr zum LHC: [http://news.bbc.co.uk/2/hi/science/nature/7543089.stm](http://news.bbc.co.uk/2/hi/science/nature/7543089.stm)
+Mehr zum LHC: [http://news.bbc.co.uk/2/hi/science/nature/7543089.stm](http://news.bbc.co.uk/2/hi/science/nature/7543089.stm) -->

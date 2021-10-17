@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2009-11-24 19:16:27
 layout: post
@@ -11,4 +11,4 @@ Am 23.11.2009 war es so weit. Das erste Mal wurden im LHC zwei Strahlen gleichze
 
 Es gibt auch schon die ersten Bilder der Kollisionen.
 
-[Zum Artikel.](http://press.web.cern.ch/press/PressReleases/Releases2009/PR17.09E.html)
+[Zum Artikel.](http://press.web.cern.ch/press/PressReleases/Releases2009/PR17.09E.html) -->

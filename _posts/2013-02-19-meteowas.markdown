@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Meteo-was"
 description: "Namen für Steine aus dem Weltall"
@@ -29,4 +29,4 @@ Was mich aber viel mehr erstaunt hat, sind die unterschiedlichen Bezeichnungen f
 **Meteorit:** Der Teil eines Meteoroiden oder Asteroiden, der den Weg durch die Atmosphäre überlebt und auf der Erde einschlägt.
 
 **Tektite:** Bis zu einigen Zentimetern große, natürliche Glasstücke, die beim Einschlag eines Meteoriten entstehen. Bei dem Einschlag erhitzt sich das umgebende, quarzhaltige Material schlagartig, fliegt umher und erstarrt letztendlich zu Glas.
-
+ -->

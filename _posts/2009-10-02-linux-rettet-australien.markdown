@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2009-10-02 16:08:29
 layout: post
@@ -11,4 +11,4 @@ tags:
 - Strom
 ---
 
-Ok, vielleicht etwas übertrieben, aber trotzdem: [http://www.heise.de/newsticker/Linux-springt-bei-Stromversorger-in-die-Bresche--/meldung/146250](http://www.heise.de/newsticker/Linux-springt-bei-Stromversorger-in-die-Bresche--/meldung/146250)
+Ok, vielleicht etwas übertrieben, aber trotzdem: [http://www.heise.de/newsticker/Linux-springt-bei-Stromversorger-in-die-Bresche--/meldung/146250](http://www.heise.de/newsticker/Linux-springt-bei-Stromversorger-in-die-Bresche--/meldung/146250) -->

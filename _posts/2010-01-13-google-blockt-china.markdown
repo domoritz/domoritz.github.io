@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-01-13 18:57:05
 layout: post
@@ -28,4 +28,4 @@ Mehr Informationen:
   * [http://www.heise.de/newsticker/meldung/Google-pokert-mit-Rueckzugsdrohung-aus-China-903819.html](http://www.heise.de/newsticker/meldung/Google-pokert-mit-Rueckzugsdrohung-aus-China-903819.html)
 
 UPDATE vom 23.3: [www.google.cn](http://www.google.cn) wird jetzt auf [www.google.com.hk/](http://www.google.com.hk/) weitergeleitet. Außerdem gibt es eine Übersicht über die Lage: [http://www.google.com/prc/report.html](http://www.google.com/prc/report.html).
-Auf der Seite www.google.com.hk steht übrigens: 欢迎您来到谷歌搜索在中国的新家 (Willkommen bei der Google Suche im neuen Zuhause). Mehr im [Blogpost](http://googleblog.blogspot.com/2010/03/new-approach-to-china-update.html).
+Auf der Seite www.google.com.hk steht übrigens: 欢迎您来到谷歌搜索在中国的新家 (Willkommen bei der Google Suche im neuen Zuhause). Mehr im [Blogpost](http://googleblog.blogspot.com/2010/03/new-approach-to-china-update.html). -->

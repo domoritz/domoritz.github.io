@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Data visualizations"
 description: "CSE512 at UW and other projects"
@@ -23,4 +23,4 @@ For the [second assignment](http://courses.cs.washington.edu/courses/cse512/14wi
 
 The data in this plot is based on 1.4GB of flight records for one month each year since 1987. I created the plot with Tableau.
 
-Not as part of the class but during the [Open Data Day](http://opendataday.org/), I worked on a [live map of bus locations in Seattle](https://domoritz.github.io/live-bus-seattle).
+Not as part of the class but during the [Open Data Day](http://opendataday.org/), I worked on a [live map of bus locations in Seattle](https://domoritz.github.io/live-bus-seattle). -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2009-04-23 16:24:22
 layout: post
@@ -12,4 +12,4 @@ tags:
 
 Soeben wurde die finale Version von Ubuntu 9.05 (Codename Jaunty Jackalope (lebhafter Hase mit Geweih)) veröffentlicht. Leider will die Internetgeschwindigkeit momentan nicht so, wie ich will. Ich werde gleich den Router neustarten und dann hoffentlich eine bessere Verbindung haben.
 
-Es ist einfach genial. Langsam funktioniert alles. Seit dieser version funktioniert endlich mein WLAN richtig. Vorher war es immer so, dass ich  in Ubuntu Netzwerke generell deaktiviert  und dann die Karte angeschaltet habe (Hardwareschalter) und dann Netzwerke wieder reaktivieren musste. Anders ging es nicht. Jetzt wird die WLAN Verbindung automatisch aufgebaut. Nach einigem Rumprobieren und Nachinstallieren funktioniert auch die osd-notifications (Nachrichtenfenster auf dem Bildschirm) einwandfrei  (ich musste ein Pakete für osd-notify neu installieren) . In Jackalope kann ich sogar im Multimonitorbetrieb ohne komplizierte Konfiguration arbeiten. Einfach nur genial.
+Es ist einfach genial. Langsam funktioniert alles. Seit dieser version funktioniert endlich mein WLAN richtig. Vorher war es immer so, dass ich  in Ubuntu Netzwerke generell deaktiviert  und dann die Karte angeschaltet habe (Hardwareschalter) und dann Netzwerke wieder reaktivieren musste. Anders ging es nicht. Jetzt wird die WLAN Verbindung automatisch aufgebaut. Nach einigem Rumprobieren und Nachinstallieren funktioniert auch die osd-notifications (Nachrichtenfenster auf dem Bildschirm) einwandfrei  (ich musste ein Pakete für osd-notify neu installieren) . In Jackalope kann ich sogar im Multimonitorbetrieb ohne komplizierte Konfiguration arbeiten. Einfach nur genial. -->

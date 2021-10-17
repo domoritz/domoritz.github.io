@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-04-02 15:50:30
 layout: post
@@ -45,4 +45,4 @@ Bei den Gedanken zu dem Problem kam ich zu folgenden Punkten, wie man kritisiert
   4. **Bedenke auch die Situation desjenigen, der dich kritisiert** (Metakommunikation!)
 
 
-Soviel dazu. Das ist hier meine ganz eigene Meinung und muss nicht geteilt werden.
+Soviel dazu. Das ist hier meine ganz eigene Meinung und muss nicht geteilt werden. -->

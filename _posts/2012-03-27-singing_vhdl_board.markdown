@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2012-03-27 13:59:57
 layout: post
@@ -28,4 +28,4 @@ Der Player besteht aus vier Hauptkomponenten. Als erstes gibt es einen MMC/SD Ka
 
 Besonders interessant fand ich bei der Entwicklung den MMC Kartenleser. Dabei hat uns besonders das Datenblatt von Samsung geholfen, dass du [hier](http://html.alldatasheet.com/html-pdf/141187/SAMSUNG/MC2GH512NMCA-2SA00/616/2/MC2GH512NMCA-2SA00.html) finden kannst. Der Sourcecode ist auf [Github](https://github.com/domoritz/S76D). Wer also auch einen SD/MMC Kartenleser in VHDL bauen will, kann sich dann inspirieren lassen.
 
-Das Programm ist noch nicht ganz fertig und wir arbeiten gerade noch an der Tastatursteuerung per PS/3 Tastatur. Stay tuned.
+Das Programm ist noch nicht ganz fertig und wir arbeiten gerade noch an der Tastatursteuerung per PS/3 Tastatur. Stay tuned. -->

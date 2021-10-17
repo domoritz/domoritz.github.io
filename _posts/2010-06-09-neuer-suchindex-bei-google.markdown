@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2010-06-09 13:09:15
 layout: post
@@ -10,4 +10,4 @@ tags:
 - Index
 ---
 
-Gestern hat Google offiziell den neuen Suchindex, auch bekannt als Caffeine, vorgestellt. Mehr dazu hier: [http://googleblog.blogspot.com/2010/06/our-new-search-index-caffeine.html](http://googleblog.blogspot.com/2010/06/our-new-search-index-caffeine.html)
+Gestern hat Google offiziell den neuen Suchindex, auch bekannt als Caffeine, vorgestellt. Mehr dazu hier: [http://googleblog.blogspot.com/2010/06/our-new-search-index-caffeine.html](http://googleblog.blogspot.com/2010/06/our-new-search-index-caffeine.html) -->

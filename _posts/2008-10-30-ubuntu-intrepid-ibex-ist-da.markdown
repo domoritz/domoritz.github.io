@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2008-10-30 17:11:40
 layout: post
@@ -17,4 +17,4 @@ So, die Installation des Systems läuft. Und bisher bin ich begeistert. Internet
 
 <UPDATE>
 Der gute erste Eindruck bleibt. Auch, wenn mit dem Standardgrafiktreiber der erweiterte Monitor etwas verunstaltet war und auch Grafikfehler (bei angeschlossenem Monitor) auftraten. Mit dem proprietären Treiber funktioniert es übrigens, dass ich die Auflösung des externen Monitors benutze und die Bilschirme Klone. Mit dem Normalen fglrx Traiber konnte ich nur 1280x1024 nutzen (Notebook:1280x800, Externer: 1680x1050). Ach so, der Fehler mit der Netztwerkkarte bleibt. Ich muss immer erst unter Windows die Wlankarte aktivieren, um sie unter ubuntu zu benutzen.
-</UPDATE>
+</UPDATE> -->

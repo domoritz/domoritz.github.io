@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2012-03-17 15:17:39
 layout: post
@@ -21,4 +21,4 @@ Wir nutzen für die Lösung des Problems zwei Algorithmen. Einerseits benutzten 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HSMU7a_TlgI" frameborder="0" allowfullscreen></iframe>
 
-Code is [auf GitHub](https://github.com/domoritz/informaticup-2012).
+Code is [auf GitHub](https://github.com/domoritz/informaticup-2012). -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2011-02-17 16:29:44
 layout: post
@@ -21,4 +21,4 @@ Geplante Obsoleszenz, Produkte sollen nach einer bestimmten Zeit kaputt gehen od
 
 English version: [http://vimeo.com/17750184](http://vimeo.com/17750184)
 
-
+ -->

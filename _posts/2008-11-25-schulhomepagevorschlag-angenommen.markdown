@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 date: 2008-11-25 21:16:46
 layout: post
@@ -27,4 +27,4 @@ Ohne Registrierung sind nur öffentliche Inhalte zugänglich (Zugriffsebene "öf
   * Jeder kann an der Schulwebsite mitarbeiten und trotzdem bleiben die Inhalte geprüft
 
 
-Dank an Matthias
+Dank an Matthias -->
