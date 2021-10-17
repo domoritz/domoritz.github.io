@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /book/
-title: NLP Book
+permalink: /workshops/
+title: Workshop & Bootcamps conducted
 ---
 
