@@ -2,9 +2,9 @@
 title: Anuj Gupta
 email: anujgupta82[at]gmail[dot]com
 description: > # this means to atignore newlines until "baseurl:"
-   Head of Machine Learning at Vahan. 
+   Personal Website 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.domoritz.de" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 production_url: "https://www.domoritz.de"
 github_username: anujgupta82
 permalink: /blog/:year/:month/:title.html
