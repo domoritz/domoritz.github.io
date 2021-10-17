@@ -16,7 +16,7 @@ Curently I am Heading Artificial Intelligence fucntion at [Vahan Inc](https://va
 <br>
 <br>
 
-### The Website is still work in progress 
+
 
 <!---
 I'm faculty at the [Human-Computer Interaction Institute](https://hcii.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/) and an ML researcher at [Apple](https://www.apple.com/) <i class="fab fa-apple"></i>. I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
