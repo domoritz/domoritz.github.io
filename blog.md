@@ -8,6 +8,9 @@ title: Blog posts
 
 <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | absolute_url }}">via RSS</a></p>
 
+
+-- This page is work in progress --
+
 <!-- <div class="post-list">
   {% for post in site.posts %}
     {% assign currentdate = post.date | date: "%Y" %}
