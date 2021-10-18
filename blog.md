@@ -8,7 +8,7 @@ title: Blog posts
 
 <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | absolute_url }}">via RSS</a></p>
 
-<div class="post-list">
+<!-- <div class="post-list">
   {% for post in site.posts %}
     {% assign currentdate = post.date | date: "%Y" %}
     {% if currentdate != date %}
@@ -24,4 +24,4 @@ title: Blog posts
       {% if post.description %}<p class="post-subtitle">{{ post.description }}</p>{% endif %}
     </div>
   {% endfor %}
-</div>
+</div> -->
