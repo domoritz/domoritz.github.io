@@ -1,117 +1,125 @@
 - title: "Bootcamp for NLP"
   location: Anthill Inside
   city: Bangalore
-  date: 28-29 July, 2018
+  date: 28 July, 2018
   url: https://anthillinside.in/2018-july-nlp-bootcamp/
 #  recording: https://www.youtube.com/watch?v=wUK_k1GHEtw
 #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
-
-- title: "Practical Natural Language Processing Book | NLP, ML/AI in Industry| GPT-3 & more"
-  location: Deep Neural Notebooks podcast
-  city: Online
-  date: 2020-09-16
-  url: https://mukulkhanna.github.io/dnn-10-practical-natural-language-processing-book-nlp-ml-ai-in-the-industry-gpt-3-and-mor/index.html
-  recording: https://www.youtube.com/watch?v=ptTlH-ma8rg
+- title: "Bootcamp for NLP"
+  location: Hasgeek
+  city: Bangalore
+  date: 27 July, 2019
+  url: https://hasgeek.com/fifthelephant/2019-july-nlp-bootcamp/
+#  recording: https://www.youtube.com/watch?v=wUK_k1GHEtw
 #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
-- title: "Book Intro: Practical Natural Language Processing"
-  location: Bay Area NLP meetup
-  city: Online
-  date: 2020-08-01
-  url: https://www.meetup.com/Bay-Area-NLP/events/271950857/
-  recording: https://www.youtube.com/watch?v=RyXIFJUxMoM
-#  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
-- title: "The New Business of AI"
-  location: IIM Calcutta
-  city: Online
-  date: 2020-08-16
-  url: https://www.facebook.com/iimcalcutta/photos/pgdba-iim-calcutta-presents-a-webinar-and-panel-discussion-the-new-business-of-a/10157514351750665/
-  recording: https://www.youtube.com/watch?v=xp8FrseEs-g
-#  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+# - title: "Practical Natural Language Processing Book | NLP, ML/AI in Industry| GPT-3 & more"
+#   location: Deep Neural Notebooks podcast
+#   city: Online
+#   date: 2020-09-16
+#   url: https://mukulkhanna.github.io/dnn-10-practical-natural-language-processing-book-nlp-ml-ai-in-the-industry-gpt-3-and-mor/index.html
+#   recording: https://www.youtube.com/watch?v=ptTlH-ma8rg
+# #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
-- title: "Sarcasm Detection : Achilles Heel of sentiment analysis"
-  location: Open Data Science Conference (ODSC)
-  city: Bengaluru, India
-  date: 2018-09-01
-  url: https://confengine.com/conferences/odsc-india-2018
-  recording: https://www.youtube.com/watch?v=FoR_-ELAcfE
+# - title: "Book Intro: Practical Natural Language Processing"
+#   location: Bay Area NLP meetup
+#   city: Online
+#   date: 2020-08-01
+#   url: https://www.meetup.com/Bay-Area-NLP/events/271950857/
+#   recording: https://www.youtube.com/watch?v=RyXIFJUxMoM
+# #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
+# - title: "The New Business of AI"
+#   location: IIM Calcutta
+#   city: Online
+#   date: 2020-08-16
+#   url: https://www.facebook.com/iimcalcutta/photos/pgdba-iim-calcutta-presents-a-webinar-and-panel-discussion-the-new-business-of-a/10157514351750665/
+#   recording: https://www.youtube.com/watch?v=xp8FrseEs-g
+# #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
-- title: "Hubs and Spokes of AI"
-  Role : Moderator for panel discussion
-  location: Anthill Inside, 2018
-  city: Bengaluru, India
-  date: 2018-07-25
-  url: https://hasgeek.com/anthillinside/2018/
-
-- title: "Sarcasm Detection: Achilles Heel of sentiment analysis"
-  location: Anthill Inside
-  city: Bengaluru, India
-  date: 2018-07-25
-  url: https://hasgeek.com/anthillinside/2018/
-  recording: https://www.youtube.com/watch?v=M2oDqA_PBk8
-  slides: https://www.slideshare.net/anujgupta5095/sarcasm-detection-achilles-heel-of-sentiment-analysis
-
-- title: "Synthetic Gradients"
-  location: Anthill Inside
-  city: Bengaluru, India
-  date: 2017-07-29
-  url: https://hasgeek.com/anthillinside/2017/
+# - title: "Sarcasm Detection : Achilles Heel of sentiment analysis"
+#   location: Open Data Science Conference (ODSC)
+#   city: Bengaluru, India
+#   date: 2018-09-01
+#   url: https://confengine.com/conferences/odsc-india-2018
+#   recording: https://www.youtube.com/watch?v=FoR_-ELAcfE
 
 
-- title: "CNNs for Text Classification"
-  location: Nvidia Developer Conference, 2017
-  city: Chennai, India
-  date: 2017-11-22
-  url: https://www.bostonindia.in/blog/2017/11/06/nvidia-developer-connect.aspx
+# - title: "Hubs and Spokes of AI"
+#   Role : Moderator for panel discussion
+#   location: Anthill Inside, 2018
+#   city: Bengaluru, India
+#   date: 2018-07-25
+#   url: https://hasgeek.com/anthillinside/2018/
 
-- title: "Recent Advances in NLP"
-  location: PyData Delhi 2017
-  city: Delhi, India
-  date: 2017-09-03
-  url: https://pydata.org/delhi2017/
+# - title: "Sarcasm Detection: Achilles Heel of sentiment analysis"
+#   location: Anthill Inside
+#   city: Bengaluru, India
+#   date: 2018-07-25
+#   url: https://hasgeek.com/anthillinside/2018/
+#   recording: https://www.youtube.com/watch?v=M2oDqA_PBk8
+#   slides: https://www.slideshare.net/anujgupta5095/sarcasm-detection-achilles-heel-of-sentiment-analysis
+
+# - title: "Synthetic Gradients"
+#   location: Anthill Inside
+#   city: Bengaluru, India
+#   date: 2017-07-29
+#   url: https://hasgeek.com/anthillinside/2017/
 
 
-- title: "Products and AI"
-  Role : Panellist for panel discussion
-  location: Anthill Inside, 2017
-  city: Bengaluru, India
-  date: 2017-07-29
-  url: https://hasgeek.com/anthillinside/2017/
+# - title: "CNNs for Text Classification"
+#   location: Nvidia Developer Conference, 2017
+#   city: Chennai, India
+#   date: 2017-11-22
+#   url: https://www.bostonindia.in/blog/2017/11/06/nvidia-developer-connect.aspx
+
+# - title: "Recent Advances in NLP"
+#   location: PyData Delhi 2017
+#   city: Delhi, India
+#   date: 2017-09-03
+#   url: https://pydata.org/delhi2017/
 
 
-- title: "When – and when not – to use Deep Learning, Machine Learning and AI"
-  Role : Moderator for panel discussion
-  location: Anthill Inside, 2017
-  city: Bengaluru, India
-  date: 2017-07-29
-  url: https://hasgeek.com/anthillinside/2017/
-  #recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
-  #slides: https://www.slideshare.net/anujgupta5095/building-continuous-learning-systems
+# - title: "Products and AI"
+#   Role : Panellist for panel discussion
+#   location: Anthill Inside, 2017
+#   city: Bengaluru, India
+#   date: 2017-07-29
+#   url: https://hasgeek.com/anthillinside/2017/
 
-- title: "Building Continuous Learning Systems"
-  location: PyData 2016
-  city: Washington, D.C.
-  date: 2016-10-08
-  url: https://pydata.org/dc2016/
-  recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
-  slides: https://www.slideshare.net/anujgupta5095/building-continuous-learning-systems
 
-- title: "Authenticated Byzantine Generals in Dual Failure Model"
-  location: ICDCN 2010
-  city: Kolkata, India
-  date: 2010-01-03
-  url: http://www.cucse.org/ICDCN2010.htm
+# - title: "When – and when not – to use Deep Learning, Machine Learning and AI"
+#   Role : Moderator for panel discussion
+#   location: Anthill Inside, 2017
+#   city: Bengaluru, India
+#   date: 2017-07-29
+#   url: https://hasgeek.com/anthillinside/2017/
+#   #recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
+#   #slides: https://www.slideshare.net/anujgupta5095/building-continuous-learning-systems
 
-- title: "On Composability of Reliable Unicast and Broadcast"
-  location: ICDCN 2010
-  city: Kolkata, India
-  date: 2010-01-03
-  url: http://www.cucse.org/ICDCN2010.htm
-#  recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
-#  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+# - title: "Building Continuous Learning Systems"
+#   location: PyData 2016
+#   city: Washington, D.C.
+#   date: 2016-10-08
+#   url: https://pydata.org/dc2016/
+#   recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
+#   slides: https://www.slideshare.net/anujgupta5095/building-continuous-learning-systems
+
+# - title: "Authenticated Byzantine Generals in Dual Failure Model"
+#   location: ICDCN 2010
+#   city: Kolkata, India
+#   date: 2010-01-03
+#   url: http://www.cucse.org/ICDCN2010.htm
+
+# - title: "On Composability of Reliable Unicast and Broadcast"
+#   location: ICDCN 2010
+#   city: Kolkata, India
+#   date: 2010-01-03
+#   url: http://www.cucse.org/ICDCN2010.htm
+# #  recording: https://www.youtube.com/watch?v=VtBvmrmMJaI
+# #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
 
   
