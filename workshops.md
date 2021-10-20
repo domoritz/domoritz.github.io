@@ -6,8 +6,6 @@ class: workshops
 ---
 
 
--- This page is work in progress --
-
 {:.hidden}
 # Workshops
 
@@ -20,3 +18,7 @@ class: workshops
   {% include workshop.html workshop=workshop %}
 {% endfor %}
 {% endfor %}
+
+
+
+-- This page is work in progress --
