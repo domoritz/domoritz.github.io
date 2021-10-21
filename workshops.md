@@ -18,5 +18,3 @@ class: workshops
   {% include talk.html talk=talk %}
 {% endfor %}
 {% endfor %}
-
--- This page is work in progress --
