@@ -29,6 +29,14 @@ For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
 -->
 
 <p align="center">
-  <img height="500px" class="center-block" src="/images/PNLPbook.png">
+
+<picture>
+  <source srcset='/images/PNLPbook.webp' type='image/webp' />
+  <img
+    height="500px"
+    src='/images/PNLPbook.png'
+    alt='Anuj Gupta'>
+</picture>
+
 </p>
 
