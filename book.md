@@ -11,7 +11,7 @@ I co-authored this book with [Sowmya Vajjala](https://www.linkedin.com/in/sowmya
 **Endorsed by:**
 [Zachary Lipton](http://zacklipton.com/) (Asst Prof of Operations Research and Machine Learning at Carnegie Mellon University and a Visiting Scientist at Amazon AI), [Sebastian Ruder](https://ruder.io/) (Research Scientist, DeepMind), [Marc Najork](http://marc.najork.org/) ( Research Engineering Director, Google Research.), [Monojit Choudhury](https://www.microsoft.com/en-us/research/people/monojitc/) (Principal Researcher, Microsoft Research), [Vinayak Hegde](https://www.linkedin.com/in/vinayakh/) (CTO-in-Residence at Microsoft for Startups), [Mengting Wan](https://mengtingwan.github.io/) (Senior Applied Scientist at Microsoft/Airbnb), [Siddharth Sharma](https://www.linkedin.com/in/siddharth-sharma-31140210/) (Aenior ML engineer, Facebook), & [Ed Harris](https://www.linkedin.com/in/e10is/) (CEO & Co-founder at SharpestMinds (YC W18)).
 
-**Foreword by ** [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/) (Prof, CS@UCSD)
+**Foreword by** [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/) (Prof, CS@UCSD)
 
 
 For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
@@ -23,7 +23,7 @@ For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
   </div>
   <div class="col-md-4" markdown="1">
   <!-- ![Alt Text](../img/folder/blah.jpg) -->
-  <img height="600px" class="center-block" src="/images/PNLPbook.png">
+  <img height="500px" class="center-block" src="/images/PNLPbook.png">
   </div>
 </div>
 
