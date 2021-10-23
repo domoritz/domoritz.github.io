@@ -22,10 +22,12 @@ For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
     lo bhai
   </div>
   <div class="col-md-4" markdown="1">
-  <!-- ![Alt Text](../img/folder/blah.jpg) -->
+  <!-- ![Alt Text](../img/folder/blah.jpg) 
   <img height="500px" class="center-block" src="/images/PNLPbook.png">
   </div>
-</div> -->
+</div> 
+-->
 
 
+  <img height="500px" class="center-block" src="/images/PNLPbook.png">
 
