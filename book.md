@@ -8,14 +8,7 @@ title: NLP Book
 
 <div class="row">
   <div class="col-md-8" markdown="1">
-  Some text.
-  </div>
-  <div class="col-md-4" markdown="1">
-  <!-- ![Alt Text](../img/folder/blah.jpg) -->
-  <img height="600px" class="center-block" src="/images/PNLPbook.png">
-  </div>
-</div>
-
+  
 I co-authored this book with [Sowmya Vajjala](https://www.linkedin.com/in/sowmya-vajjala-2a38734/), [Bodhisattwa P. Majumder](http://www.majumderb.com/), [Harshit Surana](http://harshitsurana.com/). I t was published by [O'Reilly Media](http://shop.oreilly.com/product/0636920262329.do) in June, 2020.
 
 **Endorsed by:**
@@ -25,6 +18,12 @@ I co-authored this book with [Sowmya Vajjala](https://www.linkedin.com/in/sowmya
 
 
 For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
+  </div>
+  <div class="col-md-4" markdown="1">
+  <!-- ![Alt Text](../img/folder/blah.jpg) -->
+  <img height="600px" class="center-block" src="/images/PNLPbook.png">
+  </div>
+</div>
 
 
-# ![figure](/images/PNLPbook.png)
+
