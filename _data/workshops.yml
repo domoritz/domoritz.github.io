@@ -1,4 +1,4 @@
-- title: "Bootcamp for NLP"
+- title: "Bootcamp for Natural Language Processing"
   location: Anthill Inside
   city: Bangalore
   date: 28 July, 2018
@@ -6,22 +6,34 @@
 #  recording: https://www.youtube.com/watch?v=wUK_k1GHEtw
 #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
-- title: "Bootcamp for NLP"
+- title: "Bootcamp for Natural Language Processing"
+  location: Anthill Inside
+  city: Bangalore
+  date: 26 May, 2018
+  url: https://anthillinside.in/2018-july-nlp-bootcamp/
+
+- title: "Bootcamp for Natural Language Processing"
   location: Hasgeek
   city: Bangalore
   date: 27 July, 2019
   url: https://hasgeek.com/fifthelephant/2019-july-nlp-bootcamp/
 #  recording: https://www.youtube.com/watch?v=wUK_k1GHEtw
-#  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+  slides: https://www.slideshare.net/anujgupta5095/nlp-bootcamp-2018-representation-learning-of-text-for-nlp
 
 
-# - title: "Practical Natural Language Processing Book | NLP, ML/AI in Industry| GPT-3 & more"
-#   location: Deep Neural Notebooks podcast
-#   city: Online
-#   date: 2020-09-16
-#   url: https://mukulkhanna.github.io/dnn-10-practical-natural-language-processing-book-nlp-ml-ai-in-the-industry-gpt-3-and-mor/index.html
+- title: "Learning representations of text for NLP"
+  location: Hasgeek
+  city: Bangalore
+  date: 28th April, 2017
+  url: https://hasgeek.com/fifthelephant/2017/sub/learning-representations-of-text-for-nlp-KMNmLpf6pydMExBQQkn65t
 #   recording: https://www.youtube.com/watch?v=ptTlH-ma8rg
 # #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+
+- title: "Natural Language Processing Bootcamp"
+  location: Open Data Science Conference (ODSC)
+  city: Bangalore
+  date: 8th November, 2019
+  url: https://hasgeek.com/fifthelephant/2017/sub/learning-representations-of-text-for-nlp-KMNmLpf6pydMExBQQkn65t
 
 # - title: "Book Intro: Practical Natural Language Processing"
 #   location: Bay Area NLP meetup
