@@ -9,8 +9,8 @@
 - title: "Bootcamp for Natural Language Processing"
   location: Anthill Inside
   city: Bangalore
-  date: 26 May, 2018
-  url: https://anthillinside.in/2018-july-nlp-bootcamp/
+  date: 19 May, 2018
+  url: https://anthillinside.in/2018-nlp-bootcamp/
 
 - title: "Bootcamp for Natural Language Processing"
   location: Hasgeek
@@ -22,12 +22,18 @@
 
 
 - title: "Learning representations of text for NLP"
+  location: Anthil Inside
+  city: Bangalore
+  date: 28th July, 2017
+  url: https://anthillinside.in/2017/nlp-workshop/
+#   recording: https://www.youtube.com/watch?v=ptTlH-ma8rg
+# #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
+
+title: "Learning representations of text for NLP"
   location: Hasgeek
   city: Bangalore
   date: 28th April, 2017
   url: https://hasgeek.com/fifthelephant/2017/sub/learning-representations-of-text-for-nlp-KMNmLpf6pydMExBQQkn65t
-#   recording: https://www.youtube.com/watch?v=ptTlH-ma8rg
-# #  slides: /talks/VegaLite-OpenVisConf-2017.pdf
 
 - title: "Natural Language Processing Bootcamp"
   location: Open Data Science Conference (ODSC)
