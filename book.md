@@ -35,7 +35,7 @@ For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
   <img
     height="500px"
     src='/images/PNLPbook.jpg'
-    alt='Anuj Gupta'>
+    alt='PNLP Book'>
 </picture>
 
 </p>
