@@ -16,7 +16,7 @@ I co-authored this book with [Sowmya Vajjala](https://www.linkedin.com/in/sowmya
 
 For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
 
-
+<!-- 
 <div class="col">
   <div class="col-md-8" markdown="1">
     lo bhai
@@ -25,7 +25,7 @@ For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
   <!-- ![Alt Text](../img/folder/blah.jpg) -->
   <img height="500px" class="center-block" src="/images/PNLPbook.png">
   </div>
-</div>
+</div> -->
 
 
 
