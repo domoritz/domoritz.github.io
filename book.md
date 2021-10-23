@@ -17,9 +17,9 @@ I co-authored this book with [Sowmya Vajjala](https://www.linkedin.com/in/sowmya
 For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
 
 
-<div class="row">
+<div class="col">
   <div class="col-md-8" markdown="1">
-  
+    lo bhai
       </div>
   <div class="col-md-4" markdown="1">
   <!-- ![Alt Text](../img/folder/blah.jpg) -->
