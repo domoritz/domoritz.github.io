@@ -13,8 +13,8 @@ class: workshops
 {% for title in workshoptitles %}
 {:.workshop-title}
 ### {{ title.name }}
-{% assign sorted_talks = title.items | sort: 'date' | reverse %}
-{% for talk in sorted_talks  %}
-  {% include talk.html talk=talk %}
+{% assign sorted_workshops = title.items | sort: 'date' | reverse %}
+{% for talk in sorted_workshops  %}
+  {% include workshop.html workshop=workshop %}
 {% endfor %}
 {% endfor %}
