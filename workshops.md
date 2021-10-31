@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /workshops/
-title: Workshop & Bootcamps conducted
+title: Workshops & Bootcamps
 class: workshops
 ---
 
