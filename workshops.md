@@ -7,7 +7,7 @@ class: workshops
 
 
 {:.hidden}
-# Talks
+# Workshops
 
 {% assign talktitles = site.data.workshops | group_by:"title" %}
 {% for title in talktitles %}
