@@ -1,0 +1,27 @@
+<div class="workshop">
+  {{ workshop.location }}{% if workshop.city %}, <span class="city">{{ workshop.city }}</span>{% endif %}
+
+  <span class="extra-links">
+    {% if workshop.slides %}
+    <a href="{{ workshop.slides }}">
+      <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
+    </a>
+    {% endif %}
+
+    {% if workshop.recording %}
+    <a href="{{ workshop.recording }}">
+      <i class="fas fa-video" aria-hidden="true"></i> Recording
+    </a>
+    {% endif %}
+
+    {% if workshop.url %}
+    <a href="{{ workshop.url }}">
+      <i class="fas fa-link" aria-hidden="true"></i> Website
+    </a>
+    {% endif %}
+  </span>
+
+  <time datetime="{{ workshop.date }}">
+    {{ workshop.date | date: "%b %Y" }}
+  </time>
+</div>
