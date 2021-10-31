@@ -9,9 +9,9 @@ class: workshops
 {:.hidden}
 # Workshops
 
-{% assign talktitles = site.data.workshops | group_by:"title" %}
-{% for title in talktitles %}
-{:.talk-title}
+{% assign workshoptitles = site.data.workshops | group_by:"title" %}
+{% for title in workshoptitles %}
+{:.workshop-title}
 ### {{ title.name }}
 {% assign sorted_talks = title.items | sort: 'date' | reverse %}
 {% for talk in sorted_talks  %}
