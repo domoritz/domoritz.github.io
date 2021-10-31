@@ -14,7 +14,7 @@ class: workshops
 {:.workshop-title}
 ### {{ title.name }}
 {% assign sorted_workshops = title.items | sort: 'date' | reverse %}
-{% for talk in sorted_workshops  %}
+{% for workshop in sorted_workshops  %}
   {% include workshop.html workshop=workshop %}
 {% endfor %}
 {% endfor %}
