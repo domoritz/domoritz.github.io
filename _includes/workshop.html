@@ -19,6 +19,12 @@
       <i class="fas fa-link" aria-hidden="true"></i> Website
     </a>
     {% endif %}
+
+    {% if workshop.gitrepo %}
+    <a href="{{ workshop.gitrepo }}">
+      <i class="fas fa-window-maximize" aria-hidden="true"></i> Github Repository
+    </a>
+    {% endif %}
   </span>
 
   <time datetime="{{ workshop.date }}">
