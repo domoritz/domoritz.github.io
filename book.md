@@ -6,8 +6,10 @@ title: NLP Book
 
 <span style="color:blue">
 ## A Comprehensive Guide to Building Real-World NLP Systems
-
 </span>.
+
+## GitLab Orange Heading
+{: .gitlab-orange}
 
 I co-authored this book with [Sowmya Vajjala](https://www.linkedin.com/in/sowmya-vajjala-2a38734/), [Bodhisattwa P. Majumder](http://www.majumderb.com/), [Harshit Surana](http://harshitsurana.com/). It was published by [O'Reilly Media](http://shop.oreilly.com/product/0636920262329.do) in June, 2020.
 
