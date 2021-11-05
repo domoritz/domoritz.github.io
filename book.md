@@ -30,6 +30,7 @@ For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
 
 <p align="center">
 
+<kbd>
 <picture>
   <source srcset='/images/PNLPbook.webp' type='image/webp' />
   <img
@@ -37,6 +38,7 @@ For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
     src='/images/PNLPbook.jpg'
     alt='PNLP Book'>
 </picture>
+</kbd>
 
 </p>
 
