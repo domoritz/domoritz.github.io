@@ -4,9 +4,7 @@ permalink: /book/
 title: NLP Book
 ---
 
-<span style="color:blue">
-## A Comprehensive Guide to Building Real-World NLP Systems
-</span>.
+## <span style="color:blue">A Comprehensive Guide to Building Real-World NLP Systems</span>
 
 ## GitLab Orange Heading
 {: .gitlab-orange}
