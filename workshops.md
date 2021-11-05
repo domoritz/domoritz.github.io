@@ -18,3 +18,5 @@ class: workshops
   {% include workshop.html workshop=workshop %}
 {% endfor %}
 {% endfor %}
+
+
