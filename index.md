@@ -9,9 +9,11 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I am a senior executive and thought leader in the area of machine learning. My interests lie at the intersection of Maths and CS. I have incubated and led mutlple succesful AI teams in my career, including both at early stage startups as well as Fortune 50. I have worked with founders and CXOs to successfully deliver AI products. I co-authored a best-selling [book on NLP](http://www.practicalnlp.ai/) with O'Reilly Media in 2020. The book focuses on going from 0 to 1 and from 1 to 10 of building NLP & ML systems in industry. 
+I am a senior executive, advisor, investor and thought leader working in the area of machine learning. My interests lie at the intersection of Maths and CS. I have incubated and led mutlple succesful AI teams in my career at both - early stage startups as well as Fortune 50. I have worked very closely with founders and CXOs to successfully deliver AI products and owned AI function end-to-end: from strategy, team building, deep techniical direction and people realted matters. I recently co-authored a best-selling [book on NLP](http://www.practicalnlp.ai/) with O'Reilly Media in 2020. The book focuses on going from 0 to 1 and from 1 to 10 of building machine learning systems in industry. 
 
 Curently I am Heading the Artificial Intelligence fucntion at [Vahan Inc](https://vahan.ai/) [(YC S'19)](https://news.crunchbase.com/news/why-yc-went-8725-miles-away-from-mountain-view-to-find-the-next-big-startup/). At Vahan we are using AI, Systems and Data to radically transform the Blue Collar Workers (BCW) space. Using tech we help gig economy companies screen & recruit BCW at large scale and at high velocity. This also goes a long way to save BCW from exploitation at the hands of middlemen and bring positive change to many lives.
+
+I am very active in AI community - both in India and abroad. I am a major keynote speaker, pannelist and mentor. 
 
 <br>
 <br>
@@ -125,6 +127,9 @@ During my first year at UW, I received support from the [Fulbright program](http
 </table>
 
 </div>
--->
 
 </div>
+
+-->
+
+
