@@ -19,6 +19,10 @@ One of my favorite examples of this is Google's approach to “searching for spe
 <img src='images/Google-Doc-Draw-Characters.gif' width="40" height="40" />
 
 <picture>
+<img src="{{ 'images/Google-Doc-Draw-Characters.gif' | relative_url }}" width="700" alt="Four images in finder">
+</picture>
+
+<picture>
 <img src="{{ 'images/split.png' | relative_url }}" width="700" alt="Four images in finder">
 </picture>
 
