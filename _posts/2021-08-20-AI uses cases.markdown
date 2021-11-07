@@ -14,17 +14,11 @@ One often comes across organizations trying to apply AI to problems when it is r
 
 One of my favorite examples of this is Google's approach to “searching for special characters in Google Docs”. Here is the problem statement: Most users who create docs or decks once in a while use special characters. But it is very hard to find the right special character when you need it. Given the large number of special characters that exist, one cannot show all of them to the user. To facilitate quick accessibility, one requires the ability to search for them. However, there is one particular problem with special characters - most users cannot remember them by name (try recalling names of 10 or more special characters yourself). This renders “textual search” useless. So, how does one solve this? Visual search!
 
-![Alt Text]('images/Google-Doc-Draw-Characters.gif')
-
-<img src='images/Google-Doc-Draw-Characters.gif' width="40" height="40" />
 
 <picture>
-<img src="{{ 'images/Google-Doc-Draw-Characters.gif' | relative_url }}" width="700" alt="Four images in finder">
+<img src="{{ 'images/Google-Doc-Draw-Characters.gif' | relative_url }}" width="500" alt="Special Characters Search in Google Docs">
 </picture>
 
-<picture>
-<img src="{{ 'images/split.png' | relative_url }}" width="700" alt="Four images in finder">
-</picture>
 
 Google used a very simple but powerful observation - most users can very easily recall how the special character that they need looks like, unlike their name. So, they provided a small sketch pad for users to draw what they remember and use the concepts from computer vision (Sketch-RNN) to suggest a few closest options based on the visual match. The same concept was later used to power Auto draw [https://experiments.withgoogle.com/autodraw]
 
