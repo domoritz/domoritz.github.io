@@ -2,7 +2,7 @@
 comments: true
 date: 2021-08-08 19:25:54
 layout: post
-slug: sketchup
+slug: Learnings
 title: Learnings from AI Trenches
 tags:
 - machine learning

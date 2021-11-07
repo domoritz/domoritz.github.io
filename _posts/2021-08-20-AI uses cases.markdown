@@ -2,7 +2,7 @@
 comments: true
 date: 2021-08-20 10:05:24
 layout: post
-slug: sketchup
+slug: UseCases
 title: Hobbiton - Uses cases where AI can deliver great returns
 tags:
 - machine learning

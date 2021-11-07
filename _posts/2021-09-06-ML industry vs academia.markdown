@@ -2,9 +2,8 @@
 comments: true
 date: 2021-09-06 21:15:14
 layout: post
-slug: sketchup
+slug: difference
 title: Why Machine Learning in Industry is different from that in Academia
-wordpress_id: 27
 tags:
 - machine learning
 - industry

@@ -2,7 +2,7 @@
 comments: true
 date: 2021-10-03 22:12:17
 layout: post
-slug: sketchup
+slug: ROI
 title: ROI in AI - Expectations vs Reality
 tags:
 - machine learning
