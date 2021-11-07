@@ -1,6 +1,6 @@
 ---
 comments: true
-date: 2021-08-08 19:25:54
+date: 2021-09-08 19:25:54
 layout: post
 slug: making_AI_work
 title: Making AI work for you
