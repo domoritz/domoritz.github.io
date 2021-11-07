@@ -18,6 +18,10 @@ One of my favorite examples of this is Google's approach to “searching for spe
 
 <img src='images/Google-Doc-Draw-Characters.gif' width="40" height="40" />
 
+<picture>
+<img src="{{ 'images/split.png' | relative_url }}" width="700" alt="Four images in finder">
+</picture>
+
 Google used a very simple but powerful observation - most users can very easily recall how the special character that they need looks like, unlike their name. So, they provided a small sketch pad for users to draw what they remember and use the concepts from computer vision (Sketch-RNN) to suggest a few closest options based on the visual match. The same concept was later used to power Auto draw [https://experiments.withgoogle.com/autodraw]
 
 I often use this example to drive home the point that one often needs to think from first principles when thinking of AI-powered use cases. For the above-mentioned example, the more you think the more you will realize:
