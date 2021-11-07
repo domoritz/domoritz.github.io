@@ -22,6 +22,10 @@ So most leaders expect the ROI curve in AI to be a vertical takeoff. This expect
 
 This is where most Orgs/Teams make THE mistake. The true ROI curve in AI is very very different from their expectations. As shown in the figure below, it follows a S shape curve. 
 
+
+{:.center.two-thirds}
+{% include image name="ROI_blog.jpeg" %} 
+
 1) Initial lower part of S: One needs to invest a lot of time and energy with very little ROI - finding the right use case [https://lnkd.in/e6-ikYb9], right quality and quantity of data and labels (more on this in another post), right modeling approach, right metrics etc. This can take anywhere between 1-3 years. 
 
 2) Middle part of S: This is where one gets the highest ROI per unit effort. This is because most of the hard work has been done in the first 1-3 years. All key stakeholders have a better understanding of the AI journey. This phase is all  about building the 2nd/3rd version of AI systems 
