@@ -36,7 +36,7 @@ For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
   <img
     height="500px"
     src='/images/PNLPbook.jpg'
-    style="border:2px solid black"
+    style="border:1px solid grey"
     alt='PNLP Book'>
 </picture>
 </kbd>
