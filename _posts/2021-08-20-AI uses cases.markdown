@@ -16,7 +16,7 @@ One of my favorite examples of this is Google's approach to “searching for spe
 
 ![Alt Text]('/images/Google-Doc-Draw-Characters.gif')
 
-
+<img src='images/Google-Doc-Draw-Characters.gif' width="40" height="40" />
 
 Google used a very simple but powerful observation - most users can very easily recall how the special character that they need looks like, unlike their name. So, they provided a small sketch pad for users to draw what they remember and use the concepts from computer vision (Sketch-RNN) to suggest a few closest options based on the visual match. The same concept was later used to power Auto draw [https://experiments.withgoogle.com/autodraw]
 
