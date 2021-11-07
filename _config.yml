@@ -5,9 +5,13 @@ description: > # this means to atignore newlines until "baseurl:"
    Personal Website 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-production_url: "https://www.domoritz.de"
+production_url: "https://www.anujgupta82.github.io"
 github_username: anujgupta82
 permalink: /blog/:year/:month/:title.html
+
+# Google Analytics
+google_analytics: G-DELSE55VHS
+
 
 twitter:
   username: anujgupta82
