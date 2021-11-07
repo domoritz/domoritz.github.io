@@ -16,7 +16,7 @@ One of my favorite examples of this is Google's approach to “searching for spe
 
 
 <picture>
-<img src="{{ 'images/Google-Doc-Draw-Characters.gif' | relative_url }}" width="500" alt="Special Characters Search in Google Docs" align="center">
+<img src="{{ 'images/Google-Doc-Draw-Characters.gif' | relative_url }}" width="500" alt="Special Characters Search in Google Docs" align="center"/>
 </picture>
 
 
