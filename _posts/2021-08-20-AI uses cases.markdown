@@ -14,7 +14,7 @@ One often comes across organizations trying to apply AI to problems when it is r
 
 One of my favorite examples of this is Google's approach to “searching for special characters in Google Docs”. Here is the problem statement: Most users who create docs or decks once in a while use special characters. But it is very hard to find the right special character when you need it. Given the large number of special characters that exist, one cannot show all of them to the user. To facilitate quick accessibility, one requires the ability to search for them. However, there is one particular problem with special characters - most users cannot remember them by name (try recalling names of 10 or more special characters yourself). This renders “textual search” useless. So, how does one solve this? Visual search!
 
-![Alt Text]('/images/Google-Doc-Draw-Characters.gif')
+![Alt Text]('images/Google-Doc-Draw-Characters.gif')
 
 <img src='images/Google-Doc-Draw-Characters.gif' width="40" height="40" />
 
