@@ -3,6 +3,7 @@
   company: Carnegie Mellon University
   location: Pittsburgh, PA
   description: In the Fall of 2020, I started on the faculty at the Human-Computer-Interaction Institute.
+  short_desc: "Human Computer Interaction Institute, [Data Interaction Group](https://dig.cmu.edu)"
 - title: Research Scientist
   years: 2019-present
   company: Apple
@@ -10,6 +11,7 @@
   description: I am managing the Machine Intelligence visualization team.
   skills:
     - Machine Learning
+  short_desc: Machine Intelligence visualization team
 - title: Researcher
   years: 2019
   company: Streamlit
@@ -17,6 +19,7 @@
   skills:
     - Machine Learning
     - Python
+  short_desc: developed caching and visualization
 - title: Research Assistant
   years: 2013-2019
   company: University of Washington
@@ -24,6 +27,7 @@
   mentors:
     - Jeffrey Heer
     - Bill Howe
+  short_desc: "[Interactive Data Lab](https://idl.cs.washington.edu) and [UW Database Group](https://db.cs.washington.edu)"
 - title: Research Intern
   years: 2017
   company: Microsoft Research
@@ -31,6 +35,7 @@
   location: Redmond, WA
   mentors:
     - Danyel Fisher
+  short_desc: mentored by Danyel Fisher working with PowerBI team
   description: In collaboration with the PowerBI team, we developed visualization alternatives that scale to large numbers of records. So far, we have submitted a paper and a patent on part of this project but there is more to come. As a side project, I worked on visualization recommendation using constraints.
   skills:
     - Scalable Visualization
@@ -45,6 +50,7 @@
     - Danyel Fisher
     - Bolin Ding
     - Chi Wang
+  short_desc: mentored by Danyel Fisher working with database research team
   description: Developed and user tested a UI for an approximate query processing system. Published a CHI paper, two workshop papers, and [filed](https://patents.google.com/patent/US20180260451A1) [three](https://patents.google.com/patent/US20180260985A1) [patents](https://patents.google.com/patent/US20180260450A1).
   project: Pangloss
   skills:
@@ -54,7 +60,7 @@
 - title: Research Intern
   years: 2015
   company: Google Research
-  group: Structured Data Team
+  group: Structured Data team
   location: Mountain View, CA
   mentors:
     - Sudip Roy
@@ -64,6 +70,7 @@
     - Xiao Yu
     - Chris Olston
     - Sitaram Iyer
+  short_desc: Structured Data research team
   description: Improved the user experience of an internal search engine and designed a summarization algorithm for search results. Also worked with the Knowledge Graph team on exploring a new graph infrastructure that enables integrated applications.
   project: DataSearch
   skills:
@@ -80,6 +87,7 @@
     - Ben Atkins
     - Shishi Chen
     - John Banning
+  short_desc: Monarch monitoring system team
   description: Developed new algorithms to support complex queries in large-scale production monitoring system.
   project: Monarch
   skills:
@@ -97,6 +105,7 @@
     - Adrià Mercader
     - Sean Hammond
     - Stefan Wehrmeyer
+  short_desc: datastore, previews, automatic data ingestion
   description: Two-month summer internship and subsequent one-year involvement in development and training for [CKAN](https://ckan.org/), the most deployed open data portal in the world. I developed the [new data store](https://docs.ckan.org/en/latest/maintaining/datastore.html), a [plugin API for CKAN](https://docs.ckan.org/en/latest/maintaining/data-viewer.html), and a [service to automatically ingest data](https://github.com/ckan/datapusher). I also consulted state governments on open data strategies.
   project: CKAN
   skills:
@@ -134,6 +143,7 @@
   hidden: true
 - title: Google Summer of Code
   years: 2012
+  company: Google
   location: Remote
   description: Extend open data platform for information about people.
   skills:

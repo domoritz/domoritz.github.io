@@ -40,9 +40,12 @@ To enhance people's ability to understand and communicate large and complex data
 <article>
   <div class="date-container">
     <span class="date">{{ pos.years | replace: "-", "–" }}</span>
-    <strong class="fill">{{ pos.title }}{% if pos.company %} at {{pos.company}}{% endif %}</strong>
+    <strong class="fill">{{pos.company}}</strong>
     <span class="right">{{ pos.location }}</span>
   </div>
+  <span>
+    {{pos.title}}{% if pos.short_desc %}, {{ pos.short_desc | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
+  </span>
   <!-- <p>
     {% if pos.mentors %}
       Mentor{% if pos.mentors.size > 1 %}s{% endif %}: {% for mentor in pos.mentors %}
