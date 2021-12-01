@@ -1,10 +1,11 @@
 - title: "PhD Students"
-  year: 2020-2021
+  year: 2020-2022
   description: PhD Students I am (co-)advising at CMU.
   location: CMU
   who:
-    - Will Epperson
+    - Frank Elavsky
     - Carol Xinyi Zheng
+    - Will Epperson
 - title: "Thesis Commitee"
   year: 2020-2021
   location: CMU
@@ -12,15 +13,24 @@
     - Mary Beth Kery
     - Katherine Ye 
 - title: "Research Assistants"
-  year: 2020-2021
+  year: 2020-2022
   location: CMU
   who:
+    - Yiwei Wu
+    - Canzhou Qu
     - Harshil Rastogi
     - Leila Huang
     - Sujun Cheng
     - Shreya Manjunath
     - Shreya Bahl
     - Lukas Hermann
+- title: "Apple Summer Internship"
+  year: 2021
+  description: Summer interns in my group at Apple.
+  location: Apple
+  who:
+    - Alex Bäuerle
+    - Ángel Alexander Cabrera
 - title: "Apple Summer Internship"
   year: 2020
   description: Summer interns in my group at Apple.
