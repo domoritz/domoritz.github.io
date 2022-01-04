@@ -31,7 +31,7 @@ nav {
     &:last-child {
       padding-right: 0;
     }
-    &.active {
+    &[aria-current] {
       border-bottom-color: #333;
       opacity: 1;
     }
@@ -123,7 +123,7 @@ nav {
         background: lighten($brand-color, 55%);
       }
 
-      &.active {
+      &[aria-current] {
         border-color: transparent;
         background: lighten($brand-color, 50%);
         border-radius: 3px;
