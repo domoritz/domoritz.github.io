@@ -14,8 +14,17 @@ comments: true
       {% if page.author %} • {{ page.author }}{% endif %}
       {% if page.meta %} • {{ page.meta }}{% endif %}
       </p>
+      
      {{ page.title }}
-      {{page.url}}
+
+     {{page.url}}
+
+     {{ absolute_url }}
+
+     {{ site.author }}
+
+     {{ site.twitter.username }}
+
     </header>
 
     <p class="post-sharing">
