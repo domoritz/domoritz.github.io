@@ -6,21 +6,25 @@ comments: true
 <section class="container post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.description %}<p class="post-subtitle">{{ page.description }}</p>{% endif %}
+    {% if page.description %}
+      <p class="post-subtitle">{{ page.description }}</p>
+    {% endif %}
     <p class="post-meta">
       Published on {{ page.date | date: "%b %-d, %Y" }}
+
+
       {% if page.author %} • {{ page.author }}{% endif %}
       {% if page.meta %} • {{ page.meta }}{% endif %}
       </p>
+
+      <section class="post-sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}&via={{ site.author }}&related={{ site.author }}" title="Share this post on Twitter"><i class="fab fa-twitter"></i> Tweet</a>
+      </section>
   </header>
 
   <article class="post-content">
     {{ content }}
   </article>
-
-  <section class="post-sharing">
-    <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}&via={{ site.author }}&related={{ site.author }}" title="Share this post on Twitter"><i class="fab fa-twitter"></i> Tweet</a>
-  </section>
 
   <div class="blog-links">
   {% if page.previous.url %}
