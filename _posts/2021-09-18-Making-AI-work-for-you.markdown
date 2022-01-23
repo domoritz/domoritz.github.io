@@ -31,3 +31,5 @@ I am often asked why is AI is a hard technology? (both in terms of time and mone
 8. Talent: DS/ML team alone cannot pull off all the above. You need good and diverse talent for this - ML/DS folks who can evaluate the various approaches depending on the situation and can take the most suitable one to build the right model (and not blindly apply DL), Data engineers to build data pipelines to collect all data, a product manager who can figure out right use case, build instrumentation, UX to handle mistakes, a AI leader who understands this entire life cycle and work very closely with business and speak their language. This talent doesn't come cheap.
 
 For AI effort to fail - going wrong on just one of the above is enough. 
+
+[#Learnings_From_AI_Trenches](https://www.linkedin.com/search/results/content/?keywords=%23learnings_from_ai_trenches&origin=CLUSTER_EXPANSION&sid=%2CBE)

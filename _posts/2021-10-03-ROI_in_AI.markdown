@@ -18,7 +18,7 @@ This is also driven by:
 1) Articles on AI in popular media with lofty claims (remember the humanoid dancing in Tesla AI day or Sophia - not many people understand these are mere marketing and perception gimmicks)
 2) The thought that AI at the end of the day is a code - so it cannot be very different from software engineering. The issues are mere initial hiccups which is always the case with any new tech, so is the case with AI
 
-So most leaders expect the ROI curve in AI to be a vertical takeoff. This expectation is further fueled by the fact that AI doesn't come cheap - data, data engg & AI teams, talent cost, hardware cost, data collection & labeling cost and time etc, MLOps etc [Read my previous write up on the economics of AI](https://lnkd.in/eCqRgq7v)
+So most leaders expect the ROI curve in AI to be a vertical takeoff. This expectation is further fueled by the fact that AI doesn't come cheap - data, data engg & AI teams, talent cost, hardware cost, data collection & labeling cost and time etc, MLOps etc Read my previous write up titled [the economics of AI](https://lnkd.in/eCqRgq7v)
 
 This is where most Orgs/Teams make THE mistake. The true ROI curve in AI is very very different from their expectations. As shown in the figure below, it follows a S shape curve. 
 
@@ -33,3 +33,5 @@ This is where most Orgs/Teams make THE mistake. The true ROI curve in AI is very
 3. Later upper part of S: This is where the ROI again starts to stagnate. This phase is where your team is building the 6th/7th version of the system and trying to push systems performance to the upper 90s. This often requires completely new approaches, new algorithms. Its not just adding a couple of lines of code!  
 
 Another thing most folks don't necessarily understand is that each of the 3 different phases of the curve requires a very different strategy - type of goals, kind of skillsets, focus areas, etc
+
+[#Learnings_From_AI_Trenches](https://www.linkedin.com/search/results/content/?keywords=%23learnings_from_ai_trenches&origin=CLUSTER_EXPANSION&sid=%2CBE)

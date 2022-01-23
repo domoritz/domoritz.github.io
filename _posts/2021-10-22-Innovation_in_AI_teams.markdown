@@ -1,9 +1,9 @@
 ---
 comments: true
-date: 2021-08-08 19:25:54
+date: 2021-10-22 19:25:54
 layout: post
 slug: Learnings
-title: Learnings from AI Trenches
+title: Innovation in AI teams
 tags:
 - machine learning
 - Learnings
@@ -30,3 +30,5 @@ So what about coming up with newer techniques? Rarely AI teams embedded in produ
  
 To read more on this read my earlier post “Why machine learning in the industry is different from that is academia”
 (https://www.linkedin.com/posts/activity-6836567604467970048-nQu8/)
+
+[#Learnings_From_AI_Trenches](https://www.linkedin.com/search/results/content/?keywords=%23learnings_from_ai_trenches&origin=CLUSTER_EXPANSION&sid=%2CBE)

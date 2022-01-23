@@ -34,3 +34,5 @@ I often use this example to drive home the point that one often needs to think f
 - The solution (powered by AI in this case) really helped to solve the user’s pain point and deliver happiness.
 
 Having said that - it is not that this application of AI changed the fate of google docs. More on changing the trajectory of products using AI in a separate post. Stay tuned!
+
+[#Learnings_From_AI_Trenches](https://www.linkedin.com/search/results/content/?keywords=%23learnings_from_ai_trenches&origin=CLUSTER_EXPANSION&sid=%2CBE)

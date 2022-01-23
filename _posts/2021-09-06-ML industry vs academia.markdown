@@ -32,3 +32,5 @@ Also, note that the value is delivered by a system and not just the model. Model
 8. Does the (medium-long term) returns from the AI system >> overall investment in building and maintaining the AI system? [In short-medium most AI efforts are cost negative]
 
 The success of AI system depends on all the above. It is this that makes building AI systems in industry an ‘Art’ unlike the science of building ‘models’ in academia. In industry, the science of model building is necessary but not sufficient. 
+
+[#Learnings_From_AI_Trenches](https://www.linkedin.com/search/results/content/?keywords=%23learnings_from_ai_trenches&origin=CLUSTER_EXPANSION&sid=%2CBE)
