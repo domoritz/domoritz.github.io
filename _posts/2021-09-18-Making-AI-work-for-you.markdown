@@ -9,6 +9,7 @@ tags:
 - Learnings
 - AI Trenches
 - making AI work
+
 ---
 
 I am often asked why is AI is a hard technology? (both in terms of time and money). There are multiple reasons for it: 
