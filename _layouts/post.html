@@ -11,15 +11,12 @@ comments: true
     {% endif %}
     <p class="post-meta">
       Published on {{ page.date | date: "%b %-d, %Y" }}
-
-
       {% if page.author %} • {{ page.author }}{% endif %}
       {% if page.meta %} • {{ page.meta }}{% endif %}
       </p>
-
-      <section class="post-sharing">
+    <p class="post-sharing">
         <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}&via={{ site.author }}&related={{ site.author }}" title="Share this post on Twitter"><i class="fab fa-twitter"></i> Tweet</a>
-      </section>
+    </p>
   </header>
 
   <article class="post-content">
