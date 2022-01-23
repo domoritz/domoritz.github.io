@@ -3,7 +3,7 @@ comments: true
 date: 2021-10-22 19:25:54
 layout: post
 slug: Learnings
-title: Innovation in AI teams
+title: Innovation in AI Teams
 tags:
 - machine learning
 - Learnings
