@@ -4,7 +4,7 @@ email: anujgupta82[at]gmail[dot]com
 description: > # this means to atignore newlines until "baseurl:"
    Personal Website 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://www.anujgupta82.github.io" # the base hostname & protocol for your site
 production_url: "https://www.anujgupta82.github.io"
 github_username: anujgupta82
 permalink: /blog/:year/:month/:title.html
@@ -15,6 +15,12 @@ google_analytics: G-DELSE55VHS
 
 twitter:
   username: anujgupta82
+
+# Disqus Comments
+disqus:
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  shortname: anujgupta82_disqus_shortname
 
 sass:
   style: compressed
