@@ -8,6 +8,7 @@ url: "https://www.anujgupta82.github.io" # the base hostname & protocol for your
 production_url: "https://www.anujgupta82.github.io"
 github_username: anujgupta82
 permalink: /blog/:year/:month/:title.html
+author: "Anuj Gupta"
 
 # Google Analytics
 google_analytics: G-DELSE55VHS
