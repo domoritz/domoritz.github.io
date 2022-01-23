@@ -15,8 +15,8 @@ A lot of companies and teams are betting big on DeepTech like AI to drive the ne
 Most leaders/companies start AI in their teams/product lines much later. Traditional corporate wisdom has always advocated “quick” wins because that is how one establishes themselves and gets the key stakeholders super excited. So they advocate the same in AI!
 
 This is also driven by: 
-1) Articles on AI in popular media with lofty claims (remember the humanoid dancing in Tesla AI day or Sophia - not many people understand these are mere marketing and perception gimmicks)
-2) The thought that AI at the end of the day is a code - so it cannot be very different from software engineering. The issues are mere initial hiccups which is always the case with any new tech, so is the case with AI
+1. Articles on AI in popular media with lofty claims (remember the humanoid dancing in Tesla AI day or Sophia - not many people understand these are mere marketing and perception gimmicks)
+2. The thought that AI at the end of the day is a code - so it cannot be very different from software engineering. The issues are mere initial hiccups which is always the case with any new tech, so is the case with AI
 
 So most leaders expect the ROI curve in AI to be a vertical takeoff. This expectation is further fueled by the fact that AI doesn't come cheap - data, data engg & AI teams, talent cost, hardware cost, data collection & labeling cost and time etc, MLOps etc Read my previous write up titled [the economics of AI](https://lnkd.in/eCqRgq7v)
 
