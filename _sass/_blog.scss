@@ -93,7 +93,7 @@
 }
 
 .post-sharing {
-  margin-top: 2 * $spacing-unit;
+  margin-top: 0.5 * $spacing-unit;
 
   .twitter {
     background-color: #1b95e0;
@@ -106,6 +106,8 @@
       text-decoration: none;
     }
   }
+
+  margin-bottom: 0.5 * $spacing-unit;
 }
 
 .blog-links {
