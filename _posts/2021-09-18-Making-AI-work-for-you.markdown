@@ -14,7 +14,7 @@ tags:
 
 I am often asked why is AI is a hard technology? (both in terms of time and money). There are multiple reasons for it: 
 
-1. Finding the right use case: finding a problem that is important to its users and can be solved well by AI. I talked earlier on this here (https://lnkd.in/eiAYU9eq)
+1. Finding the right use case: finding a problem that is important to its users and can be solved well by AI. I talked earlier on this [here](https://lnkd.in/eiAYU9eq)
 
 2. Having the right data: most companies have tonnes of data but seldom have the data for the problem at hand. In AI its not just the quantity of data that matters but also the quality of data. Do you have the training data that resembles the production data very closely? Does it have enough data points that represent various outliers, mean data points, data points near the actual decision boundary etc 
 
