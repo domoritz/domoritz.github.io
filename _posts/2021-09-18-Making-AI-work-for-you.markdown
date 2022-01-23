@@ -3,7 +3,7 @@ comments: true
 date: 2021-09-18 19:25:54
 layout: post
 slug: making_AI_work
-title: Making AI work for you
+title: Making AI Work For You
 tags:
 - machine learning
 - Learnings
