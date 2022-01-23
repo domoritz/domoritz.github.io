@@ -19,6 +19,8 @@ title: Blog posts
       {% assign date = currentdate %}
     {% endif %}
 
+
+  {% if post.categories contains ‘Unwanted Category’ %}
     <div class="post-block">
       <h3>
         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -26,5 +28,6 @@ title: Blog posts
       <span class="post-meta" title="{{ post.date | date: "%b %-d Y" }}">{{ post.date | date: "%b %-d" }} <span class="meta-year">{{ currentdate }}</span></span>
       {% if post.description %}<p class="post-subtitle">{{ post.description }}</p>{% endif %}
     </div>
+  {% endif %}
   {% endfor %}
 </div>
