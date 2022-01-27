@@ -32,7 +32,7 @@ When it comes to AI teams working in the product settings, the innovation here i
 
 So what about coming up with newer techniques? Rarely AI teams embedded in product teams do this. Why? Because in most cases, known techniques with a comprehensive dataset with rigorous evaluation itself can take your AI solution very very far on business metrics. From there on it is mostly a game of diminishing returns. Read about “later part of S curve” in my earlier post on “ROI in AI” (https://www.linkedin.com/posts/activity-6842736295173775360-etDf/). This is not true only if AI is the backbone of your product and your core value proposition. 
  
-To read more on this read my earlier post “Why machine learning in the industry is different from that is academia”
+To read more on AI in industry vs Acedemia, please read my earlier post “Why machine learning in the industry is different from that is academia”
 (https://www.linkedin.com/posts/activity-6836567604467970048-nQu8/)
 
 [#Learnings_From_AI_Trenches](https://www.linkedin.com/search/results/content/?keywords=%23learnings_from_ai_trenches&origin=CLUSTER_EXPANSION&sid=%2CBE)
