@@ -33,7 +33,7 @@ My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata
 
 During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). In 2013, I received my B.S. from [Hasso Plattner Institute](https://hpi.de/). I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), [Google Research](https://ai.google/research/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). Details are in my [CV]({{ "/cv/" | relative_url }}).
 
-## Featured Projects
+## Featured <a href="{{ "/projects/" | relative_url }}">Projects</a>
 
 <div class="featured-projects">
   {% assign sorted_projects = site.data.projects | sort: 'highlight' %}
@@ -48,7 +48,7 @@ During my first year at UW, I received support from the [Fulbright program](http
   Show More Projects
 </a>
 
-## Featured Publications
+## Featured <a href="{{ "/publications/" | relative_url }}">Publications</a>
 
 <div class="featured-publications">
   {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
