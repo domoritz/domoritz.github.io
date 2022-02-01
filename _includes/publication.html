@@ -51,6 +51,15 @@
         <i class="fas fa-link" aria-hidden="true" aria-hidden="true"></i> Project
       </a>
     {% endif %}
+    {% if pub.html %}
+      <a href="{{ pub.html }}">
+        <i class="fab fa-html5" aria-hidden="true" aria-hidden="true"></i> HTML
+      </a>
+    {% elsif pub.arxiv %}
+      <a href="https://ar5iv.org/html/{{ pub.arxiv | cgi_escape }}">
+        <i class="fab fa-html5" aria-hidden="true" aria-hidden="true"></i> HTML
+      </a>
+    {% endif %}
     {% if pub.blog %}
       <a href="{{ pub.blog }}">
         <i class="fas fa-newspaper" aria-hidden="true" aria-hidden="true"></i> Article
