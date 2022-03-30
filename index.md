@@ -8,12 +8,13 @@ class: home
 
 <div class="columns" markdown="1">
 
-<div class="intro" markdown="1">
-I am a senior executive, advisor, investor and thought leader working in the area of machine learning. My interests lie at the intersection of Maths and CS. I have incubated and led mutlple succesful AI teams in my career at both - early stage startups as well as Fortune 50. I have worked very closely with founders and CXOs to successfully deliver AI products and owned AI function end-to-end: from strategy, team building, deep techniical direction and people realted matters. I recently co-authored a best-selling [book on NLP](http://www.practicalnlp.ai/) with O'Reilly Media in 2020. The book focuses on going from 0 to 1 and from 1 to 10 of building machine learning systems in industry. 
+<div class="intro" markdown="1" style="text-align: justify"> 
 
-Curently I am Heading the Artificial Intelligence fucntion at [Vahan Inc](https://vahan.ai/) [(YC S'19)](https://news.crunchbase.com/news/why-yc-went-8725-miles-away-from-mountain-view-to-find-the-next-big-startup/). At Vahan we are using AI, Systems and Data to radically transform the Blue Collar Workers (BCW) space. Using tech we help gig economy companies screen & recruit BCW at large scale and at high velocity. This also goes a long way to save BCW from exploitation at the hands of middlemen and bring positive change to many lives.
+I am a senior executive, advisor, investor and thought leader working in the area of machine learning. My interests lie at the intersection of Mathematics and Computer Science. In my career, I have incubated and led mutlple succesful AI teams at both - early stage startups as well as Fortune 50. I have worked very closely with founders and CXOs to successfully deliver AI products. I have owned AI function end-to-end: from vision, strategy, team building, deep techniical direction, execution and people realted matters. I have co-authored a best-selling [book on NLP](http://www.practicalnlp.ai/) with O'Reilly Media in 2020. The book focuses on various phases of building AI systems when you are part of product teams. The book has been translated in mutiple languages and is currently used by over 40 universities globally for their AI curriculum. 
 
-I am very active in AI community - both in India and abroad. I am a major keynote speaker, pannelist and mentor. 
+Curently I am heading the AI fucntion at [Vahan Inc](https://vahan.ai/) [(YC S'19)](https://news.crunchbase.com/news/why-yc-went-8725-miles-away-from-mountain-view-to-find-the-next-big-startup/). At Vahan we are using AI, systems and data to radically transform the Blue Collar Workers (BCW) space. Using deep tech, we help gig economy companies screen & recruit BCW at scale and high velocity. This goes a long way not just in providing jobs but also saves BCW from exploitation at the hands of middlemen and bring positive change to many lives.
+
+I have been a major contributor in AI community - both in India and abroad. I am a major keynote speaker, pannelist and mentor. 
 
 <br>
 <br>
