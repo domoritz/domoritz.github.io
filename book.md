@@ -15,7 +15,6 @@ I co-authored this book with [Sowmya Vajjala](https://www.linkedin.com/in/sowmya
 
 **Foreword by** [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/) (Prof, CS@UCSD)
 
-For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
 
 </div>
 
@@ -46,5 +45,6 @@ For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
 
 </p>
 
+For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
 
 
