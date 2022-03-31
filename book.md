@@ -6,6 +6,8 @@ title: NLP Book
 
 ## <span style="color:firebrick">A Comprehensive Guide to Building Real-World NLP Systems</span>
 
+<div class="intro" markdown="1" style="text-align: justify" font-family="Times New Roman"> 
+
 I co-authored this book with [Sowmya Vajjala](https://www.linkedin.com/in/sowmya-vajjala-2a38734/), [Bodhisattwa P. Majumder](http://www.majumderb.com/), [Harshit Surana](http://harshitsurana.com/); published by [O'Reilly Media](http://shop.oreilly.com/product/0636920262329.do) in June, 2020. The book has been translated into multiple languages including English, Japnese, Chinese simplified and Chinese complex. The book is being used by over 40 universities globally for their AI curriculum. 
 
 **Endorsed by:**
@@ -13,8 +15,9 @@ I co-authored this book with [Sowmya Vajjala](https://www.linkedin.com/in/sowmya
 
 **Foreword by** [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/) (Prof, CS@UCSD)
 
-
 For more details please visit [www.practicalnlp.ai](http://www.practicalnlp.ai)
+
+</div>
 
 <!-- 
 <div class="col">
