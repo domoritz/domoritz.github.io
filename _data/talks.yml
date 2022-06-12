@@ -1,3 +1,18 @@
+- title: "Apache Arrow on the Web and Beyond"
+  location: Thread Conference
+  date: 2022-06-23
+- title: "Hello Swift Charts"
+  location: WWDC 2022
+  date: "2022-06-06"
+  recording: https://developer.apple.com/wwdc22/10136
+- title: "Enhancing Decision-Making through Interactive Data Analysis"
+  date: 2021-09-27
+  location: CMU ENAiBLE
+  url: https://www.cs.cmu.edu/partnerships/events/enaible/enaible-speaker-series-09-27-2021
+  recording: https://www.youtube.com/watch?v=DepWqeuKvj0
+- title: "Scalable Interactive Systems for Visualization and Analysis"
+  date: 2021-08-01
+  location: Sigma Computing
 - title: "Declarative and Scalable Visualization Design"
   location: Robust AI Meetup
   city: Zoom
