@@ -1,3 +1,6 @@
+- name: ACM CHI Best Paper Award
+  years: 2022
+  description: "For \"Neo: Generalizing Confusion Matrix Visualization to Hierarchical and Multi-Output Labels\"."
 - name: IEEE VGTC Outstanding Dissertation Award
   years: 2020
   description: "For my thesis on \"Interactive Systems for Scalable Visualization and Analysis\"."
