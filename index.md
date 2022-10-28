@@ -16,7 +16,7 @@ His interests lie at the intersection of Mathematics and Computer Science. Durin
 
 Together with his team, he has led and built commercially successful AI  products/features directly contributing to revenue. He has setup and owned AI function end-to-end, right from vision, strategy, roadmap, incubating & grooming high-performance AI teams, execution; delivering KPIs at CXO level. He has led AI teams sizes of 5-50 people spanning multiple geographies; responsible for the entire lifecycle of AI team & projects. Worked very closely with founders and his CXO peers from Business/Product/Engineering/Sales/HR driving KPIs at organization level.
 
-He also co-authored a [major book in machine learning](http://www.practicalnlp.ai/). The book gives a pragmatic view of how to do AI right when you are part of product teams rather than research labs. The book was #1 new release on Amazon.com. It is endorsed by AI leaders from UCSD, CMU, DeepMind, Google AI, Microsoft Research, Amazon research, Meta, Spotify, Airbnb to name a few. The book is already translated into 4 languages and is being used by over 40 universities around the globe.
+He also co-authored a [major book in machine learning](http://www.practicalnlp.ai/). The book gives a pragmatic view of how to do AI right when you are part of product teams rather than research labs. The book was #1 new release on Amazon.com. It is [endorsed](https://www.practicalnlp.ai/testimonial.html#testimonials) by AI leaders from UCSD, CMU, DeepMind, Google AI, Microsoft Research, Amazon research, Meta, Spotify, Airbnb to name a few. The book is already translated into 4 languages and is being used by over 40 universities around the globe.
 
 
 <!---   Shorter version
