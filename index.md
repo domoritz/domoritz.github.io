@@ -10,11 +10,21 @@ class: home
 
 <div class="intro" markdown="1" style="text-align: justify" font-family="Times New Roman"> 
 
+Anuj Gupta is a seasoned executive with 18+ yrs of experience in running end-to-end AI efforts at CXO level. He is also advising/consulting with a bunch of organizations including startups. He directly works with founders/CXO and help them get AI piece right in their organization. Curently I am heading the AI fucntion at [Vahan Inc](https://vahan.ai/) [(YC S'19)](https://news.crunchbase.com/news/why-yc-went-8725-miles-away-from-mountain-view-to-find-the-next-big-startup/).
+
+His interests lie at the intersection of Mathematics and Computer Science. During his career, he has incubated and led multiple successful AI teams across startups (early stage, late stage, unicorns, IPO) as well as Fortune 50. 
+
+Together with his team, he has led and built commercially successful AI  products/features directly contributing to revenue. He has setup and owned AI function end-to-end, right from vision, strategy, roadmap, incubating & grooming high-performance AI teams, execution; delivering KPIs at CXO level. He has led AI teams sizes of 5-50 people spanning multiple geographies; responsible for the entire lifecycle of AI team & projects. Worked very closely with founders and his CXO peers from Business/Product/Engineering/Sales/HR driving KPIs at organization level.
+
+He also co-authored a [major book in machine learning](http://www.practicalnlp.ai/). The book gives a pragmatic view of how to do AI right when you are part of product teams rather than research labs. The book was #1 new release on Amazon.com. It is endorsed by AI leaders from UCSD, CMU, DeepMind, Google AI, Microsoft Research, Amazon research, Meta, Spotify, Airbnb to name a few. The book is already translated into 4 languages and is being used by over 40 universities around the globe.
+
+<!---
 I am a senior executive, advisor, investor and thought leader working in the area of machine learning. My interests lie at the intersection of Mathematics and Computer Science. In my career, I have incubated and led mutlple succesful AI teams at both - early stage startups as well as Fortune 50. I have worked very closely with founders & counterpart CXOs to successfully deliver AI products. I have owned AI function end-to-end: from vision, strategy, team building, deep techniical direction, execution and people realted matters. I have co-authored a best-selling [book on NLP](http://www.practicalnlp.ai/) with O'Reilly Media in 2020. The book focuses on various phases of building AI systems when you are part of product teams. The book has been translated in mutiple languages and is currently used by over 40 universities globally for their AI curriculum. 
 
 Curently I am heading the AI fucntion at [Vahan Inc](https://vahan.ai/) [(YC S'19)](https://news.crunchbase.com/news/why-yc-went-8725-miles-away-from-mountain-view-to-find-the-next-big-startup/). At Vahan we are using AI, systems and data to radically transform the Blue Collar Workers (BCW) space. Using deep tech, we help gig economy companies screen & recruit BCW at scale and high velocity. This goes a long way not just in providing jobs but also saves BCW from exploitation at the hands of middlemen and bring positive change to many lives.
 
 I have been a major contributor in AI community - both in India and abroad. I am a major keynote speaker, pannelist and mentor. 
+--->
 
 <br>
 <br>
