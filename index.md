@@ -4,7 +4,7 @@ title: "Home"
 class: home
 ---
 
-# Hi, this is Anuj Gupta
+# Hello World!
 
 <div class="columns" markdown="1">
 
