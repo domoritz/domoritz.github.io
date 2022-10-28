@@ -4,7 +4,7 @@ title: "Home"
 class: home
 ---
 
-# Hi, I'm Anuj Gupta
+# Hi, this is Anuj Gupta
 
 <div class="columns" markdown="1">
 
@@ -18,6 +18,23 @@ Together with his team, he has led and built commercially successful AI  product
 
 He also co-authored a [major book in machine learning](http://www.practicalnlp.ai/). The book gives a pragmatic view of how to do AI right when you are part of product teams rather than research labs. The book was #1 new release on Amazon.com. It is endorsed by AI leaders from UCSD, CMU, DeepMind, Google AI, Microsoft Research, Amazon research, Meta, Spotify, Airbnb to name a few. The book is already translated into 4 languages and is being used by over 40 universities around the globe.
 
+
+<!---   Shorter version
+Anuj Gupta, briefly:
+- Seasoned executive with 18+ yrs of experience running end-to-end AI efforts at CXO level
+- Advising/consulting with a bunch of organizations including startups; directly working with founders/CXO, helping them get AI piece right in their organization.
+- Curently I am heading the AI fucntion at Vahan Inc
+- Incubated and led multiple successful AI function across startups (early stage, late stage, unicorns, IPO) as well as Fortune 50. end-to-end ownership of these functions including vision, strategy, roadmap, incubating & grooming high-performance AI teams, execution. 
+- Co-authored a major book in machine learning. Endorsed by top AI leaders globally. 
+
+
+
+
+
+
+<br>
+<br>
+
 <!---
 I am a senior executive, advisor, investor and thought leader working in the area of machine learning. My interests lie at the intersection of Mathematics and Computer Science. In my career, I have incubated and led mutlple succesful AI teams at both - early stage startups as well as Fortune 50. I have worked very closely with founders & counterpart CXOs to successfully deliver AI products. I have owned AI function end-to-end: from vision, strategy, team building, deep techniical direction, execution and people realted matters. I have co-authored a best-selling [book on NLP](http://www.practicalnlp.ai/) with O'Reilly Media in 2020. The book focuses on various phases of building AI systems when you are part of product teams. The book has been translated in mutiple languages and is currently used by over 40 universities globally for their AI curriculum. 
 
@@ -26,17 +43,6 @@ Curently I am heading the AI fucntion at [Vahan Inc](https://vahan.ai/) [(YC S'1
 I have been a major contributor in AI community - both in India and abroad. I am a major keynote speaker, pannelist and mentor. 
 --->
 
-<br>
-<br>
-
-
-<!---
-I'm faculty at the [Human-Computer Interaction Institute](https://hcii.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/) and an ML researcher at [Apple](https://www.apple.com/) <i class="fab fa-apple"></i>. I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
-
-I received my PhD from the [Paul G. Allen School](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/), where I worked with [Jeff Heer](https://homes.cs.washington.edu/~jheer/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) in the [Interactive Data Lab](http://idl.cs.washington.edu/) and the [Database Group](https://db.cs.washington.edu/).
-
-My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata.github.io/draco/) at premier academic venues and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities.
---->
 
 </div>
 
