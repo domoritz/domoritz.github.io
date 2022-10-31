@@ -8,7 +8,7 @@ class: home
 
 <div class="columns" markdown="1">
 
-<div class="intro" markdown="1" style="text-align: justify" font-family="Times New Roman"> 
+<div class="intro" markdown="1" style="text-align: justify" font-family="sans-serif"> 
 
 Anuj Gupta is a seasoned executive with 18+ yrs of experience in running end-to-end AI efforts at CXO level. Currently, he is heading the AI function at [Vahan Inc](https://vahan.ai/) [(YC S'19)](https://news.crunchbase.com/news/why-yc-went-8725-miles-away-from-mountain-view-to-find-the-next-big-startup/). He is also advising/consulting with a bunch of organizations & startups. He actively works with founders/CXOs directly, helping them get AI piece right in their organization. 
 
