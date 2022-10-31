@@ -5,9 +5,14 @@
 
 // Our variables
 $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Times New Roman", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$base-font-size:   100%;  // 16px by default
+$font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+//$base-font-size:   100%;  // 16px by default
+$base-font-size:   100%;
 $small-font-size:  0.9rem;
 $base-line-height: 0.99;
+
 
 $spacing-unit:     32px;
 $content-width:    900px;
