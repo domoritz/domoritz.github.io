@@ -1,7 +1,8 @@
 /* TEAM */
 	Author/Theme: Dominik Moritz
 	Twitter: @domoritz
-	From: Berlin, Germany
+	Mastodon: @dom@vis.social
+	From: Pittsburgh, PA
 
 /* SITE */
 	Language: English / German
