@@ -1,5 +1,5 @@
 - title: "PhD Students"
-  year: 2020-2022
+  year: 2020-2023
   description: PhD Students I am (co-)advising at CMU.
   location: CMU
   who:
@@ -11,11 +11,17 @@
   location: CMU
   who:
     - Mary Beth Kery
-    - Katherine Ye 
+    - Katherine Ye
 - title: "Research Assistants"
-  year: 2020-2022
+  year: 2020-2023
   location: CMU
   who:
+    - Syeda Sheherbano Rizvi
+    - Lan Lyu
+    - Péter Gyarmati
+    - Fernie Qin
+    - Donny Bertucci
+    - Wilson Chen
     - Junran Yang
     - Zehua Zeng
     - Yiwei Wu
@@ -26,6 +32,13 @@
     - Shreya Manjunath
     - Shreya Bahl
     - Lukas Hermann
+- title: "Apple Summer Internship"
+  year: 2022
+  description: Summer interns in my group at Apple.
+  location: Apple
+  who:
+    - Samantha Robertson
+    - Zijie J. Wang
 - title: "Apple Summer Internship"
   year: 2021
   description: Summer interns in my group at Apple.
