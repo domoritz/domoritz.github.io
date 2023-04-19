@@ -18,6 +18,7 @@ tags:
   - Scalable Visualization
   - Vega
 pdf: https://arxiv.org/pdf/2208.06631.pdf
+link: https://vegafusion.io
 ---
 
 The Vega grammar has been broadly adopted by a growing ecosystem of browser-based visualization tools. However, the reference Vega renderer does not scale well to large datasets (e.g., millions of rows or hundreds of megabytes) because it requires the entire dataset to be loaded into browser memory. We introduce VegaFusion, which brings automatic server-side scaling to the Vega ecosystem. VegaFusion accepts generic Vega specifications and partitions the required computation between the client and an out-of-browser, natively-compiled server-side process. Large datasets can be processed server-side to avoid loading them into the browser and to take advantage of multi-threading, more powerful server hardware and caching. We demonstrate how VegaFusion can be integrated into the existing Vega ecosystem, and show that VegaFusion greatly outperforms the reference implementation. We demonstrate these benefits with VegaFusion running on the same machine as the client as well as on a remote machine.
