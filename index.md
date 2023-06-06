@@ -26,7 +26,7 @@ My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata
 
 {:.no-list}
 * <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-* NSH 2604B
+* NSH 2504B
 </div>
 
 </div>
