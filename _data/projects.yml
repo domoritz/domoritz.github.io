@@ -2,12 +2,14 @@
   url: https://uwdata.github.io/mosaic/
   image: mosaic.png
   description: "Mosaic is an extensible framework for linking databases and interactive views."
+  highlight: 2
 
 - title: Swift Charts
   url: https://developer.apple.com/documentation/Charts
   video: https://developer.apple.com/wwdc22/10136
   image: swiftcharts.png
   description: "Swift Charts is a framework for informative, delightful, and accessible charts on Apple's platforms."
+  highlight: 4
 
 - title: Audio Graphs
   code: https://developer.apple.com/documentation/accessibility/audio_graphs
@@ -27,7 +29,6 @@
   paper: https://www.vldb.org/pvldb/vol15/p3574-kohn.pdf
   image: duckdb.png
   description: "DuckDB-Wasm: Efficient Analytical SQL in the Browser."
-  highlight: 4
 
 - title: Falcon
   url: https://github.com/uwdata/falcon
@@ -36,7 +37,6 @@
   paper: /papers/2019-Falcon-CHI.pdf
   image: falcon.jpg
   description: "Falcon is an interactive system for real-time brushing and linking interactions among multiple visualizations of billion-record datasets."
-  highlight: 2
 
 - title: Dense Lines
   image: dense.jpg
