@@ -1,3 +1,8 @@
+- title: Mosaic
+  url: https://uwdata.github.io/mosaic/
+  image: mosaic.png
+  description: "Mosaic is an extensible framework for linking databases and interactive views."
+
 - title: Swift Charts
   url: https://developer.apple.com/documentation/Charts
   video: https://developer.apple.com/wwdc22/10136
