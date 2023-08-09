@@ -4,6 +4,7 @@ updates:
   directory: "/"
   schedule:
     interval: weekly
-    time: "04:00"
-    timezone: America/Vancouver
-  open-pull-requests-limit: 10
+- package-ecosystem: github-actions
+  directory: '/'
+  schedule:
+    interval: weekly
