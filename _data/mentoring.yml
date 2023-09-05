@@ -3,9 +3,10 @@
   description: PhD Students I am (co-)advising at CMU.
   location: CMU
   who:
-    - Frank Elavsky
-    - Carol Xinyi Zheng
     - Will Epperson
+    - Carol Xinyi Zheng
+    - Frank Elavsky
+    - Hwei-Shin Harriman
 - title: "Thesis Commitee"
   year: 2020-2023
   location: CMU
