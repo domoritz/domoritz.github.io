@@ -39,10 +39,14 @@
     </div>
   {% endif %}
 
-  {% if pub.link or pub.pdf or pub.video or pub.blog or pub.slides or pub.doi %}
+  {% if pub.link or pub.pdf or pub.video or pub.blog or pub.slides or pub.doi or pub.arxiv %}
     <div class="extra-links">
     {% if pub.pdf %}
       <a href="{{ pub.pdf }}">
+        <i class="far fa-file-pdf" aria-hidden="true"></i> PDF
+      </a>
+    {% elsif pub.arxiv %}
+      <a href="https://arxiv.org/pdf/{{ pub.arxiv | cgi_escape }}.pdf">
         <i class="far fa-file-pdf" aria-hidden="true"></i> PDF
       </a>
     {% endif %}
