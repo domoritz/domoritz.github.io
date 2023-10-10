@@ -1,3 +1,6 @@
+- name: IEEE VIS Best Paper Honorable Mentions
+  years: 2023
+  description: "Three awards for two full and one short paper."
 - name: ACM CHI Best Paper Award
   years: 2022
   description: "For \"Neo: Generalizing Confusion Matrix Visualization to Hierarchical and Multi-Output Labels\"."
