@@ -22,7 +22,7 @@ footer {
   }
 
   .footer-col {
-    padding: $spacing-unit/2 0;
+    padding: calc($spacing-unit/2) 0;
   }
   .site-desc {
     width: 500px;

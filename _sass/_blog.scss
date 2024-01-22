@@ -155,15 +155,15 @@
 /* Images */
 
 .half {
-  max-width: $content-width / 2;
+  max-width: calc($content-width / 2);
 }
 
 .third {
-  max-width: $content-width / 3;
+  max-width: calc($content-width / 3);
 }
 
 .two-thirds {
-  max-width: $content-width / 3 * 2;
+  max-width: calc($content-width / 3 * 2);
 }
 
 .right {
