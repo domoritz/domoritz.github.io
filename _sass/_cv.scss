@@ -80,6 +80,11 @@
 
   .pub {
     margin-bottom: 1.2rem;
+    margin-left: 0 !important;
+
+    & > * {
+      margin-left: 100px;
+    }
 
     .fill {
       fill: 1;
@@ -116,14 +121,6 @@
   }
 
   .container > * {
-    margin-left: 100px;
-  }
-
-  article {
-    margin-left: 0 !important;
-  }
-
-  article > * {
     margin-left: 100px;
   }
 
