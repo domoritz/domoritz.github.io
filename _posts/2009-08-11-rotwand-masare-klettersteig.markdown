@@ -20,7 +20,7 @@ In diesen Sommerferien haben mein Vater und ich zusammen den Rotwand-Maseré-Kle
   * maximale Höhe: 2806m (Rotwand)
   * minimale Höhe:  2125m (Paolinahütte)
   * Dauer insgesamt: 8 Stunden (8-16 Uhr)
-  * weitere Infos: [http://www.gps-tour.info/de/touren/detail.22486.html](http://www.gps-tour.info/de/touren/detail.22486.html)
+  * weitere Infos: [http://www.gps-tour.info/de/touren/detail.22486.html](https://www.gps-tour.info/de/touren/detail.22486.html)
 
 
 Sehr interessant war, dass wir losliefen, als das gesamte Felsmassiv in dicken Nebel gehüllt war und sonst kam andere Wanderer unterwegs waren. Man konnte gerade den Weg erkennen. Unvermittelt kamen Felsen und neue Wege aus dem Nebel hervor. Als sich der Nebel langsam lichtete tauchten die Spitzen der angrenzenden Berge auf. Das war schon eine ganz eigene Stimmung so ganz alleine auf den Bergen zu laufen, ohne die Tiefe abschätzen zu können. Auf dem Weg um das Bergmassiv kamen wir an dem Cristomannos-Denkmal (2349 m) vorbei. Das ist ein großer Metalladler.
