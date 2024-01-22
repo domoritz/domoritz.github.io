@@ -17,7 +17,7 @@ Hier ein paar interessante Links zum Thema:
 
 [http://www.heise.de/tp/r4/artikel/28/28687/1.html](http://www.heise.de/tp/r4/artikel/28/28687/1.html)
 
-[sehr gutes Video zum LHC und den Physikalischen Hintergründen](http://mediaplayer.group.cam.ac.uk/component/option,com_mediadb/task,view/idstr,CUSP-PC-M2007-CERN/Itemid,29)
+[sehr gutes Video zum LHC und den Physikalischen Hintergründen](https://web.archive.org/web/20080913124939/http://mediaplayer.group.cam.ac.uk:80/component/option,com_mediadb/task,view/idstr,CUSP-PC-M2007-CERN/Itemid,29)
 
 Bei dem etwa 3 Milliarden Euro teuren Versuch geht es unter anderem um den Nachweis von Higgs-Bosonen und damit um die elementaren Grundlagen des Universums. Man kann das LHC ohne Übertreibung als das größte Experiment der Menschheit bezeichnen.
 Vielleicht kommt man mithilfe des LHC der Wahrheit des Urknalls etwas näher.
