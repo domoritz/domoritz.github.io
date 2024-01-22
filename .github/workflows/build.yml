@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: helaili/jekyll-action@v2
+      - uses: ruby/setup-ruby@v1
         with:
-          build_only: true
+          ruby-version: '3'
+      - name: Update Gem
+        run: gem update --system
+      - name: Install Gems
+        run: bundle install
+      - name: Build Jekyll
+        run: bundle exec jekyll build

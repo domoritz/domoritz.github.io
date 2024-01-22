@@ -38,7 +38,6 @@ To enhance people's ability to understand and communicate large and complex data
 
 {% assign filtered_positions = site.data.positions | where_exp:'item','item.hidden == null' %}
 {% for pos in filtered_positions %}
-<article>
   <div class="date-container">
     <span class="date">{{ pos.years | replace: "-", "–" }}</span>
     <strong class="fill">{{pos.company}}</strong>
@@ -58,14 +57,12 @@ To enhance people's ability to understand and communicate large and complex data
     <small class="muted">[{% for skill in pos.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}]</small>
     {% endif %}
   </p> -->
-</article>
 {% endfor %}
 
 
 <h2>Education</h2>
 
 {% for ed in site.data.education %}
-<article>
   <div class="date-container">
     <span class="date">{{ ed.years | replace: "-", "–" }}</span>
     <strong class="fill">{{ ed.degree }}, {{ ed.university }}</strong>
@@ -76,14 +73,12 @@ To enhance people's ability to understand and communicate large and complex data
       <span>{{ des | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% unless forloop.last %}<br/>{% endunless %}
     {% endfor %}
   </p>
-</article>
 {% endfor %}
 
 
 <h2>Notable Awards</h2>
 
 {% for award in site.data.awards %}
-<article>
   <div class="date-container">
     <span class="date">{{ award.years | replace: "-", "–" }}</span>
     <strong class="fill">{{ award.name }}</strong>
@@ -92,7 +87,6 @@ To enhance people's ability to understand and communicate large and complex data
   <p class="muted">
     {{ award.description }}
   </p>
-</article>
 {% endfor %}
 
 
@@ -116,17 +110,21 @@ To enhance people's ability to understand and communicate large and complex data
   {% for pub in sorted_pubs %}
     {% if pub.type[0] == type %}
       {% assign counter = counter | minus: 1 %}
-      <article class="pub">
+      <div class="pub">
         <div class="ref-container">{{ type | slice: 0 }}{{ counter }}</div>
         <strong class="fill">{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{%endif%}</strong>
         <div>
           {% for author in pub.authors %}{% include person person=author %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
           {% if pub.venue or pub.description %}<i>{% if pub.description %}{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}{{ pub.venue }}</i>{% if pub.venue %},{% endif %} {% endif %}{{ pub.year }}.
 
-          {% if pub.link or pub.pdf or pub.video or pub.blog or pub.slides or pub.doi %}
+          {% if pub.link or pub.pdf or pub.arxiv or pub.video or pub.blog or pub.slides or pub.doi %}
             <div class="extra-links">
             {% if pub.pdf %}
               <a href="{{ pub.pdf }}">
+                <i class="far fa-file-pdf" aria-hidden="true"></i> PDF
+              </a>
+            {% elsif pub.arxiv %}
+              <a href="https://arxiv.org/pdf/{{ pub.arxiv | cgi_escape }}.pdf">
                 <i class="far fa-file-pdf" aria-hidden="true"></i> PDF
               </a>
             {% endif %}
@@ -159,7 +157,7 @@ To enhance people's ability to understand and communicate large and complex data
 
           {% for award in pub.awards %}<strong class="award"><i class="fas fa-{% if award == "Best Paper Award" %}trophy{% else %}award{% endif %}" aria-hidden="true"></i> {{ award }}</strong>{% endfor %}
         </div>
-      </article>
+      </div>
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -211,7 +209,6 @@ To enhance people's ability to understand and communicate large and complex data
 
 {% assign talktitles = site.data.talks | group_by:"title" %}
 {% for title in talktitles %}
-<article>
   <h3 class="cv-talk-title">{{ title.name }}</h3>
   {% assign sorted_talks = title.items | sort: 'date' | reverse %}
   {% for talk in sorted_talks %}
@@ -221,14 +218,12 @@ To enhance people's ability to understand and communicate large and complex data
 
     </div>
   {% endfor %}
-</article>
 {% endfor %}
 
 
 <h2>Teaching</h2>
 
 {% for teach in site.data.teaching %}
-<article>
   <div class="date-container">
     <span class="date">{{ teach.year }}</span>
     <strong class="fill">{{ teach.title }}</strong>
@@ -244,7 +239,6 @@ To enhance people's ability to understand and communicate large and complex data
       {{ teach.description | markdownify | remove: '<p>' | remove: '</p>' }}
     </span>
   </p>
-</article>
 {% endfor %}
 
 
@@ -264,14 +258,14 @@ To enhance people's ability to understand and communicate large and complex data
 <!-- <h2>Relevant Coursework</h2>
 
 {% for institution in site.data.courses %}
-<article>
+<div>
   <h3>{{ institution.title }}</h3>
   <div>
     <ul>
       {% for course in institution.courses %}<li>{{ course.title }}{% if course.with %}<span class="muted"> ({% include person person=course.with %})</span>{% endif %}</li>{% endfor %}
     </ul>
   </div>
-</article>
+</div>
 {% endfor %} -->
 
 
