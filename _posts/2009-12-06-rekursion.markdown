@@ -15,8 +15,8 @@ Ich habe im Internet ein paar nette Sachen zu Rekursion gefunden. Das erste ist 
 > Rekursion ist ein häufig verwendeter Begriff den keiner versteht. Näheres steht unter "Rekursion".
 
 
-[zum Artikel](http://www.stupidedia.org/stupi/Rekursion)
+[zum Artikel](https://www.stupidedia.org/stupi/Rekursion)
 
-Das zweite ist auch etwas sehr interessantes. Gebt einfach einmal bei Google "recursion" ein. Dass steht da "Did you mean: recursion". Probiere es einfach mal aus. [Link](http://www.google.com/search?hl=en&q=recursion)
+Das zweite ist auch etwas sehr interessantes. Gebt einfach einmal bei Google "recursion" ein. Dass steht da "Did you mean: recursion". Probiere es einfach mal aus. [Link](https://www.google.com/search?hl=en&q=recursion)
 
 Nachdem es bisher etwas spaßiger war, jetzt noch eine etwas ernstere, aber tolle Seite, die Anfängern das System des Backtracking näher bringt. Auf der Seite [http://www.matheprisma.uni-wuppertal.de/Module/BackTr/index.htm](http://www.matheprisma.uni-wuppertal.de/Module/BackTr/index.htm) lernt man erst einmal spielerisch, was Backtracking ist und wozu man es überhaupt braucht und dann geht es an konkrete Anwendungsbeispiele. Alles wird mit kurzen Texten verständlich erklärt und mit Animationen und Programmen verdeutlicht. Alles in allem eine coole Seite.

@@ -7,4 +7,4 @@ title: Livedaten der Londoner U-Bahn
 wordpress_id: 970
 ---
 
-Nur mal am Rande. [Hier](http://traintimes.org.uk/map/tube/) gibt es eine Karte von London, auf der du die Londoner U-Bahnzüge live verfolgen kannst. Viel Spaß!
+Nur mal am Rande. [Hier](https://traintimes.org.uk/map/tube/) gibt es eine Karte von London, auf der du die Londoner U-Bahnzüge live verfolgen kannst. Viel Spaß!

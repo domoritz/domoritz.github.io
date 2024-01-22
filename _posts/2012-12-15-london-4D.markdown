@@ -5,7 +5,7 @@ description: Über meine zwei Monate in London
 date: 2012-12-15 23:52
 ---
 
-Lange ist es her, dass ich hier im Blog mal wieder etwas von mir gegeben habe. Die gute Nachricht, dass ich noch lebe, ist damit raus. Dafür, dass ich hier im Blog nichts geschrieben habe, habe ich auf [Twitter](http://twitter.com/domoritz) kurze Infos von mir gegeben und auch auf Github einiges an Code produziert.
+Lange ist es her, dass ich hier im Blog mal wieder etwas von mir gegeben habe. Die gute Nachricht, dass ich noch lebe, ist damit raus. Dafür, dass ich hier im Blog nichts geschrieben habe, habe ich auf [Twitter](https://twitter.com/domoritz) kurze Infos von mir gegeben und auch auf Github einiges an Code produziert.
 
 Also, wie gesagt, ich lebe noch und ich studiere auch immer noch am [HPI](http://www.hpi.uni-potsdam.de). Mittlerweile aber im 5 Semester. Noch dieses und das nächste Semester und ich habe einen Bachelorabschluss. Im nächsten Jahr werde ich dann in den USA studieren. Mehr dazu muss noch bis zu einem späteren Artikel warten.
 

@@ -140,5 +140,5 @@ print "Benötigte Generationen:", anzahl
 ### Noch zwei ganz nette Seiten zum Thema
 
 
-[http://www.obitko.com/tutorials/genetic-algorithms/index.php](http://www.obitko.com/tutorials/genetic-algorithms/index.php)
+[http://www.obitko.com/tutorials/genetic-algorithms/index.php](https://www.obitko.com/tutorials/genetic-algorithms/index.php)
 [http://www.ai-junkie.com/ga/intro/gat1.html](http://www.ai-junkie.com/ga/intro/gat1.html)

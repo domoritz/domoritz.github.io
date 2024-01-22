@@ -25,6 +25,6 @@ mehr Informationen:
 
   * [http://news.bbc.co.uk/2/hi/technology/8280864.stm](http://news.bbc.co.uk/2/hi/technology/8280864.stm)
   * [http://mashable.com/2009/05/28/google-wave-guide/](http://mashable.com/2009/05/28/google-wave-guide/)
-  * [http://www.youtube.com/watch?v=uOFzWZrsPV0](http://www.youtube.com/watch?v=uOFzWZrsPV0)
+  * [http://www.youtube.com/watch?v=uOFzWZrsPV0](https://www.youtube.com/watch?v=uOFzWZrsPV0)
 
 
