@@ -3,9 +3,10 @@
   description: PhD Students I am (co-)advising at CMU.
   location: CMU
   who:
-    - Frank Elavsky
-    - Carol Xinyi Zheng
     - Will Epperson
+    - Carol Xinyi Zheng
+    - Frank Elavsky
+    - Hwei-Shin Harriman
 - title: "Thesis Commitee"
   year: 2020-2023
   location: CMU
@@ -13,6 +14,10 @@
     - Mary Beth Kery
     - Kai Ye
     - Tomas Cabezon Pedroso
+- title: "Thesis Commitee"
+  year: 2023
+  location: Columbia University
+  who:
     - Jeffrey Tao
 - title: "Research Assistants"
   year: 2020-2023
@@ -34,6 +39,13 @@
     - Shreya Manjunath
     - Shreya Bahl
     - Lukas Hermann
+- title: "Apple Summer Internship"
+  year: 2023
+  description: Summer interns in my group at Apple.
+  location: Apple
+  who:
+    - Angie Boggust
+    - Venkatesh Sivaraman
 - title: "Apple Summer Internship"
   year: 2022
   description: Summer interns in my group at Apple.

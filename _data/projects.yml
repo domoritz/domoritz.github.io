@@ -1,5 +1,7 @@
 - title: Mosaic
   url: https://uwdata.github.io/mosaic/
+  code: https://github.com/uwdata/mosaic
+  paper: https://www.domoritz.de/papers/2023-Mosaic-VIS.pdf
   image: mosaic.png
   description: "Mosaic is an extensible framework for linking databases and interactive views."
   highlight: 2

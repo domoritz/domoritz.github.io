@@ -23,6 +23,6 @@
   .container {
     max-width: $content-width + $spacing-unit;
     margin: 0 auto;
-    padding: 0 $spacing-unit/2;
+    padding: 0 calc($spacing-unit/2);
   }
 }

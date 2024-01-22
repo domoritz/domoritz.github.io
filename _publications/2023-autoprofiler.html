@@ -1,0 +1,56 @@
+---
+layout: publication
+year: 2023
+title: "Dead or Alive: Continuous Data Profiling for Interactive Data Science"
+authors:
+  - Will Epperson
+  - Vaishnavi Gorantla
+  - Dominik Moritz
+  - Adam Perer
+highlight: true
+type:
+  - Conference
+venue: VIS
+venue_location: Melbourne
+venue_url: https://ieeevis.org/year/2023/welcome
+venue_tags:
+  - VIS
+tags:
+  - Visualization
+  - Profiling
+  - Jupyter
+  - EDA
+link: https://github.com/cmudig/AutoProfiler
+awards:
+  - Best Paper Honorable Mention
+arxiv: "2308.03964"
+pdf: https://www.domoritz.de/papers/2023-AutoProfiler-VIS.pdf
+video: https://www.youtube.com/watch?v=eMphMxjoIUA
+---
+
+Profiling data by plotting distributions and analyzing summary statistics is a
+critical step throughout data analysis. Currently, this process is manual and
+tedious since analysts must write extra code to examine their data after every
+transformation. This inefficiency may lead to data scientists profiling their
+data infrequently, rather than after each transformation, making it easy for
+them to miss important errors or insights. We propose continuous data profiling
+as a process that allows analysts to immediately see interactive visual
+summaries of their data throughout their data analysis to facilitate fast and
+thorough analysis. Our system, AutoProfiler, presents three ways to support
+continuous data profiling: (1) it automatically displays data distributions and
+summary statistics to facilitate data comprehension; (2) it is live, so
+visualizations are always accessible and update automatically as the data
+updates; (3) it supports follow up analysis and documentation by authoring code
+for the user in the notebook. In a user study with 16 participants, we evaluate
+two versions of our system that integrate different levels of automation: both
+automatically show data profiles and facilitate code authoring, however, one
+version updates reactively ("live") and the other updates only on demand
+("dead"). We find that both tools, dead or alive, facilitate insight discovery
+with 91% of user-generated insights originating from the tools rather than
+manual profiling code written by users. Participants found live updates
+intuitive and felt it helped them verify their transformations while those with
+on-demand profiles liked the ability to look at past visualizations. We also
+present a longitudinal case study on how AutoProfiler helped domain scientists
+find serendipitous insights about their data through automatic, live data
+profiles. Our results have implications for the design of future tools that
+offer automated data analysis support.
