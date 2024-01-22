@@ -17,5 +17,5 @@ Chrome OS soll eine Verbindung aus Chrome Webbrowser und Linux werden. Also eige
 
 Mehr Infos:
 
-[http://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html](http://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html)[
+[http://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html](https://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html)[
 http://chrome.blogspot.com/2009/07/google-chrome-os-faq.html](http://chrome.blogspot.com/2009/07/google-chrome-os-faq.html)
