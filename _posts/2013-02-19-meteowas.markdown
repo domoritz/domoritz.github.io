@@ -5,7 +5,7 @@ description: "Namen für Steine aus dem Weltall"
 date: 2013-02-19 17:03
 ---
 
-Vor einer Woche ist in Russland ein [Meteor eingeschlagen](http://www.bbc.co.uk/news/world-europe-21468116). Nahezu Zeitgleich ist der Asteroid 2012 DA14 [an der Erde vorbeigerauscht](http://www.bbc.co.uk/news/science-environment-21442863) und kam uns dabei näher, als es geostationäre Satelliten sind. Die NASA versichert uns, dass diese beiden Ereignisse vollkommen unabhängig sind.
+Vor einer Woche ist in Russland ein [Meteor eingeschlagen](https://www.bbc.co.uk/news/world-europe-21468116). Nahezu Zeitgleich ist der Asteroid 2012 DA14 [an der Erde vorbeigerauscht](https://www.bbc.co.uk/news/science-environment-21442863) und kam uns dabei näher, als es geostationäre Satelliten sind. Die NASA versichert uns, dass diese beiden Ereignisse vollkommen unabhängig sind.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The <a href="https://twitter.com/hashtag/RussianMeteor?src=hash">#RussianMeteor</a> &amp; asteroid <a href="https://twitter.com/hashtag/2012DA14?src=hash">#2012DA14</a> are not related. They fly in 2 different directions. N to S; other S to N. <a href="http://t.co/141W5zMw">http://t.co/141W5zMw</a></p>&mdash; NASA (@NASA) <a href="https://twitter.com/NASA/status/302468860630675458">February 15, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

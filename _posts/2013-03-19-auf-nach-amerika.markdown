@@ -10,7 +10,7 @@ tags:
 - Fulbright
 ---
 
-Ab Herbst gehe ich für ein Jahr an die [University of Washington](https://www.washington.edu/) in Seattle um dort am [Department of Computer Science and Engieering](http://www.cs.washington.edu/) zu studieren. Vor einigen Tagen kam die Zusage von der University of Washington (oder auch liebevoll UDub). Während des akademischen Jahres, für das ich in den USA bleibe, werde ich von einem [Fulbright](https://en.wikipedia.org/wiki/Fulbright_Program) Jahresstipendium unterstützt. Mit Zurückhaltung würde ich sagen, dass das eines der wichtigsten Erlebnisse meines Lebens wird.
+Ab Herbst gehe ich für ein Jahr an die [University of Washington](https://www.washington.edu/) in Seattle um dort am [Department of Computer Science and Engieering](https://www.cs.washington.edu/) zu studieren. Vor einigen Tagen kam die Zusage von der University of Washington (oder auch liebevoll UDub). Während des akademischen Jahres, für das ich in den USA bleibe, werde ich von einem [Fulbright](https://en.wikipedia.org/wiki/Fulbright_Program) Jahresstipendium unterstützt. Mit Zurückhaltung würde ich sagen, dass das eines der wichtigsten Erlebnisse meines Lebens wird.
 
 {% include image name="seattle.png" %}
 
