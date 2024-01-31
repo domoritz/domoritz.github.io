@@ -2,7 +2,7 @@ name: Not Found Bot
 
 on:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "0 5 1 * *"
 
 jobs:
   check:
