@@ -1845,8 +1845,7 @@ th {
     .toc__menu li>ul li {
         display: block
     }
-}
-
+} 
 .page__footer {
     clear: both;
     float: left;
@@ -1868,7 +1867,8 @@ th {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.page__footer::after {
+.page__footer::after 
+{
     clear: both;
     content: "";
     display: table
