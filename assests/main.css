@@ -499,27 +499,6 @@ body:hover .visually-hidden button {
     display: none !important
 }
 
-/* .contentimages{
-    
-    overflow:hidden;
-    position: relative;
-}
-.contentimages .slide{
-    position: relative;
-    top: 50%;
-    transform: translateY(-30%);
-    border: 4px solid white;
-    cursor:pointer;
-    background: rgba(0, 42, 255, 0.2);
-}
-.content .slide:hover{
-    background: rgba(247, 247, 15, 0.2);
-}
-.slide span{
-    font-size: 35px;
-    color: white;
-    line-height: 40px;
-} */
 .contentimages {
     position: relative;
     overflow: hidden;
@@ -560,6 +539,7 @@ body:hover .visually-hidden button {
     font-size: 20px;
     color: white;
 }
+
 /* make the width for iphone 12 pro */
 
 .image-container {
@@ -1427,7 +1407,7 @@ th {
     animation-delay: 0.15s;
     z-index: 20;
     /* background-image: linear-gradient(to right, rgba(255,126,95,0.7), rgba(254,180,123,0.7)), url('/images/anuj_gupta_pro.jpg'); */
-    background:#4f608d
+    background: #4f608d
 }
 
 .masthead__inner-wrap {
@@ -1677,11 +1657,11 @@ th {
     min-width: 250px;
     /* background: rgb(100, 220, 220);
      */
-     /* border:solid;
+    /* border:solid;
      border-color: #000000;
      border-radius: 5cap; */
-   
-     /* background: linear-gradient( to right, #512d24, #796352); */
+
+    /* background: linear-gradient( to right, #512d24, #796352); */
 
 
 }
@@ -1694,7 +1674,7 @@ th {
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-   
+
 }
 
 .greedy-nav a:hover {
@@ -1832,7 +1812,7 @@ th {
 }
 
 .nav__list a:hover {
-    text-decoration:dotted
+    text-decoration: dotted
 }
 
 .nav__list .active {
@@ -1945,7 +1925,7 @@ th {
     animation: intro 0.3s both;
     -webkit-animation-delay: 0.45s;
     animation-delay: 0.45s;
-    background:#4f608d;
+    background: #4f608d;
     /* background: linear-gradient( to right, #d97d65, #d9894c); */
 
     /* background-color: rgb(100, 220, 220); */
