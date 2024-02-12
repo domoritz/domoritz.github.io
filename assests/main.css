@@ -67,7 +67,7 @@ audio:not([controls]) {
 }
 
 a {
-    color: #52adc8
+    color: #230451
 }
 
 a:hover,
@@ -170,8 +170,11 @@ body {
     padding: 0;
     padding-bottom: 9em;
     color: #494e52;
-    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-    line-height: 1.5
+    /* font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; */
+    line-height: 1.5;
+    font-family: math;
+    background: #dedfda;
+    /* background-image: linear-gradient(100px, rgba(235, 49, 2, 0.7), rgba(254,180,123,0.7)), url('/images/anuj_gupta_pro.jpg'); */
 }
 
 body.overflow--hidden {
@@ -186,8 +189,9 @@ h5,
 h6 {
     margin: 2em 0 0.5em;
     line-height: 1.2;
-    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-    font-weight: bold
+    /* font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; */
+    font-weight: bold;
+    font-family: math;
 }
 
 h1 {
@@ -540,7 +544,7 @@ body:hover .visually-hidden button {
     /* Adjust this value as needed */
 }
  .right{
-    margin-left: 300px;
+    margin-left: 248px;
     margin-top:-250px;
 }
 .left{
@@ -1059,7 +1063,7 @@ th {
 }
 
 .btn--info:hover {
-    background-color: #428aa0
+    background-color: #52a042
 }
 
 .btn--warning {
@@ -1416,13 +1420,14 @@ th {
 
 .masthead {
     position: relative;
-    border-bottom: 1px solid #f2f3f3;
+    /* border-bottom: 1px solid #f2f3f3; */
     -webkit-animation: intro 0.3s both;
     animation: intro 0.3s both;
     -webkit-animation-delay: 0.15s;
     animation-delay: 0.15s;
     z-index: 20;
-    background-color: rgb(100, 220, 220);
+    /* background-image: linear-gradient(to right, rgba(255,126,95,0.7), rgba(254,180,123,0.7)), url('/images/anuj_gupta_pro.jpg'); */
+    background:#4f608d
 }
 
 .masthead__inner-wrap {
@@ -1637,7 +1642,7 @@ th {
 }
 
 .pagination--pager:hover {
-    color: #3e8296
+    color: #96703e
 }
 
 .pagination--pager:first-child {
@@ -1670,7 +1675,14 @@ th {
 .greedy-nav {
     position: relative;
     min-width: 250px;
-    background: rgb(100, 220, 220);
+    /* background: rgb(100, 220, 220);
+     */
+     /* border:solid;
+     border-color: #000000;
+     border-radius: 5cap; */
+   
+     /* background: linear-gradient( to right, #512d24, #796352); */
+
 
 }
 
@@ -1682,10 +1694,11 @@ th {
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
+   
 }
 
 .greedy-nav a:hover {
-    color: #5c6266
+    color: #635c66
 }
 
 .greedy-nav button {
@@ -1695,7 +1708,7 @@ th {
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: #7a8288;
+    background-color: #ff0040;
     color: #fff;
     cursor: pointer
 }
@@ -1819,7 +1832,7 @@ th {
 }
 
 .nav__list a:hover {
-    text-decoration: underline
+    text-decoration:dotted
 }
 
 .nav__list .active {
@@ -1828,7 +1841,7 @@ th {
     padding-right: 0.5em;
     color: #fff;
     font-weight: bold;
-    background: #7a8288;
+    background: #0584e5;
     border-radius: 4px
 }
 
@@ -1932,7 +1945,10 @@ th {
     animation: intro 0.3s both;
     -webkit-animation-delay: 0.45s;
     animation-delay: 0.45s;
-    background-color: rgb(100, 220, 220);
+    background:#4f608d;
+    /* background: linear-gradient( to right, #d97d65, #d9894c); */
+
+    /* background-color: rgb(100, 220, 220); */
     border-top: 1px solid #bdc1c4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -3531,7 +3547,8 @@ select:focus {
 .sidebar h5,
 .sidebar h6 {
     margin-bottom: 0;
-    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif
+    /* font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif */
+    font-family: math;
 }
 
 .sidebar h3,
@@ -3541,8 +3558,9 @@ select:focus {
 
 .sidebar p,
 .sidebar li {
-    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    /* font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; */
     font-size: .75em;
+    font-family: math;
     line-height: 1.5
 }
 
@@ -3585,8 +3603,10 @@ select:focus {
 }
 
 .author__avatar img {
-    max-width: 175px;
-    border-radius: 50%
+    max-width: 195px;
+    border-radius: 100%;
+    /* border-color: #006567; */
+    /* background-color:#000 */
 }
 
 @media (min-width: 57.8125em) {
