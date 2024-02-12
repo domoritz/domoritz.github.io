@@ -6013,8 +6013,8 @@ showImg(indexValue);
 // Function to start automatic scrolling
 function startAutoScroll() {
     intervalId = setInterval(function () {
-        side_slide(1); // Auto-scroll to the next image
-    }, 3000); // Adjust the interval (in milliseconds) as needed
+        side_slide(3); // Auto-scroll to the next image
+    }, 1000); // Adjust the interval (in milliseconds) as needed
 }
 
 // Function to stop automatic scrolling
