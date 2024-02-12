@@ -92,7 +92,7 @@ sub {
 }
 
 img {
-    max-width: 100%;
+    max-width: 40%;
     width: auto\9;
     height: auto;
     vertical-align: middle;
@@ -493,6 +493,74 @@ body:hover .visually-hidden a,
 body:hover .visually-hidden input,
 body:hover .visually-hidden button {
     display: none !important
+}
+
+/* .contentimages{
+    
+    overflow:hidden;
+    position: relative;
+}
+.contentimages .slide{
+    position: relative;
+    top: 50%;
+    transform: translateY(-30%);
+    border: 4px solid white;
+    cursor:pointer;
+    background: rgba(0, 42, 255, 0.2);
+}
+.content .slide:hover{
+    background: rgba(247, 247, 15, 0.2);
+}
+.slide span{
+    font-size: 35px;
+    color: white;
+    line-height: 40px;
+} */
+.contentimages {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    /* Adjust this value as needed */
+}
+
+.slide {
+    position:absolute;
+    cursor: pointer;
+    background: rgba(104, 106, 105, 0.2);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    /* Adjust this value as needed */
+}
+ .right{
+    margin-left: 300px;
+    margin-top:-250px;
+}
+.left{
+    /* margin-left: 300px; */
+    margin-top:-250px;
+}
+
+.slide:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.slide span {
+    font-size: 20px;
+    color: white;
+}
+/* make the width for iphone 12 pro */
+
+.image-container {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .screen-reader-text:focus,
@@ -1408,8 +1476,9 @@ th {
 .masthead__menu-item--lg {
     padding-right: 2em;
     font-weight: 900;
-   
+
 }
+
 .breadcrumbs {
     max-width: 925px;
     margin-left: auto;
@@ -1601,12 +1670,12 @@ th {
 .greedy-nav {
     position: relative;
     min-width: 250px;
-    background:rgb(100, 220, 220);
-    
+    background: rgb(100, 220, 220);
+
 }
 
 .greedy-nav a {
-    display:block;
+    display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
     color: #000000;
@@ -1845,7 +1914,8 @@ th {
     .toc__menu li>ul li {
         display: block
     }
-} 
+}
+
 .page__footer {
     clear: both;
     float: left;
@@ -1862,13 +1932,12 @@ th {
     animation: intro 0.3s both;
     -webkit-animation-delay: 0.45s;
     animation-delay: 0.45s;
-    background-color:rgb(100, 220, 220);
+    background-color: rgb(100, 220, 220);
     border-top: 1px solid #bdc1c4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.page__footer::after 
-{
+.page__footer::after {
     clear: both;
     content: "";
     display: table
@@ -2698,7 +2767,6 @@ select:focus {
 
 .page__content p {
     margin: 0 0 1.3em
-   
 }
 
 .page__content a {
@@ -2706,7 +2774,7 @@ select:focus {
 }
 
 .page__content a:hover {
-    text-decoration:#171516
+    text-decoration: #171516
 }
 
 .page__content a:hover img {
@@ -3088,26 +3156,29 @@ select:focus {
 .archive a {
     text-decoration: none
 }
-.distance{
+
+.distance {
     margin-top: 10px;
     margin-bottom: -4px;
 }
+
 .distance .cell {
     /* want to disttance betwewnthe block
       */
     padding: 10px;
 
 }
- .newcell{
+
+.newcell {
     margin-top: -15px;
-    
-   
+
+
 }
 
 .archive a:hover {
-   color: #000000;
+    color: #000000;
 
-    
+
 }
 
 .archive a:hover img {
@@ -3190,7 +3261,8 @@ select:focus {
 .list__item .comment__date {
     margin: 0 0 4px
 }
-.list__item .newtitle{
+
+.list__item .newtitle {
     margin-top: 10px;
 }
 
@@ -9479,9 +9551,11 @@ screen and (max-height: 300px) {
     right: 0;
     padding-top: 0
 }
-.foot-color{
+
+.foot-color {
     text-c
 }
+
 @media print {
 
     .masthead,
