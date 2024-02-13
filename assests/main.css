@@ -169,7 +169,7 @@ body {
     margin: 0;
     padding: 0;
     padding-bottom: 9em;
-    color: #494e52;
+    color: #000000;
     /* font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; */
     line-height: 1.5;
     font-family: math;
@@ -1407,7 +1407,7 @@ th {
     animation-delay: 0.15s;
     z-index: 20;
     /* background-image: linear-gradient(to right, rgba(255,126,95,0.7), rgba(254,180,123,0.7)), url('/images/anuj_gupta_pro.jpg'); */
-    background: #4f608d
+    background: #a293a8
 }
 
 .masthead__inner-wrap {
@@ -1925,7 +1925,7 @@ th {
     animation: intro 0.3s both;
     -webkit-animation-delay: 0.45s;
     animation-delay: 0.45s;
-    background: #4f608d;
+    background: #a293a8;
     /* background: linear-gradient( to right, #d97d65, #d9894c); */
 
     /* background-color: rgb(100, 220, 220); */
@@ -2739,6 +2739,9 @@ select:focus {
     margin-top: 0;
     line-height: 1
 }
+.pageh1{
+    margin-bottom: -25px;
+}
 
 .page__title+.page__meta,
 .page__title+.comment__date {
@@ -3154,7 +3157,7 @@ select:focus {
 }
 
 .distance {
-    margin-top: -10px;
+    margin-top: auto;
     margin-bottom: -4px;
 }
 
@@ -9566,4 +9569,8 @@ screen and (max-height: 300px) {
     .page__footer {
         display: none
     }
+}
+
+.aapp {
+    margin-top: 100px;
 }
