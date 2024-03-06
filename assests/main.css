@@ -3258,7 +3258,7 @@ select:focus {
 
 .list__item .page__meta,
 .list__item .comment__date {
-    margin: 0 0 4px
+    margin: 10px 0 10px
 }
 
 .list__item .newtitle {
