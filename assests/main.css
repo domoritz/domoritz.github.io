@@ -3158,7 +3158,7 @@ select:focus {
 
 .distance {
     margin-top: auto;
-    margin-bottom: -4px;
+    margin-bottom: 10px;
 }
 
 .distance .cell {
@@ -9573,4 +9573,9 @@ screen and (max-height: 300px) {
 
 .aapp {
     margin-top: 100px;
+}
+.workshop-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; /* Adjust as needed */
 }
