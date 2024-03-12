@@ -3212,7 +3212,7 @@ select:focus {
 
 .archive__item-excerpt {
     margin-top: 0;
-    font-size: .90em
+    font-size: 16px
 }
 
 .archive__item-excerpt+p {
@@ -9579,3 +9579,19 @@ screen and (max-height: 300px) {
     vertical-align: top;
     margin-right: 20px; /* Adjust as needed */
 }
+.alphabet-list {
+    list-style-type: none; /* Remove default list style */
+  }
+  
+  .alphabet-list li {
+    position: relative; /* Make the list item position relative */
+    padding-left: 20px; /* Add some padding to create space for the marker */
+  }
+  
+  .alphabet-list li:before {
+    content: counter(alphabet-list-counter, lower-alpha) '. '; /* Use a counter to generate alphabetical sequence */
+    counter-increment: alphabet-list-counter; /* Increment the counter */
+    position: absolute; /* Position the marker absolutely */
+    left: 0; /* Position it at the beginning of the list item */
+  }
+  
