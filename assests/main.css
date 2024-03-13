@@ -513,22 +513,24 @@ body:hover .visually-hidden button {
 }
 
 .slide {
-    position:absolute;
+    position: absolute;
     cursor: pointer;
     background: rgba(104, 106, 105, 0.2);
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
-    
+
     /* Adjust this value as needed */
 }
- .right{
+
+.right {
     margin-left: 248px;
-    margin-top:-250px;
+    margin-top: -250px;
 }
-.left{
+
+.left {
     /* margin-left: 300px; */
-    margin-top:-250px;
+    margin-top: -250px;
 }
 
 .slide:hover {
@@ -2739,7 +2741,8 @@ select:focus {
     margin-top: 0;
     line-height: 1
 }
-.pageh1{
+
+.pageh1 {
     margin-bottom: -25px;
 }
 
@@ -9574,24 +9577,56 @@ screen and (max-height: 300px) {
 .aapp {
     margin-top: 100px;
 }
+
 .workshop-info {
     display: inline-block;
     vertical-align: top;
-    margin-right: 20px; /* Adjust as needed */
+    margin-right: 20px;
+    /* Adjust as needed */
 }
+
 .alphabet-list {
-    list-style-type: none; /* Remove default list style */
-  }
-  
-  .alphabet-list li {
-    position: relative; /* Make the list item position relative */
-    padding-left: 20px; /* Add some padding to create space for the marker */
-  }
-  
-  .alphabet-list li:before {
-    content: counter(alphabet-list-counter, lower-alpha) '. '; /* Use a counter to generate alphabetical sequence */
-    counter-increment: alphabet-list-counter; /* Increment the counter */
-    position: absolute; /* Position the marker absolutely */
-    left: 0; /* Position it at the beginning of the list item */
-  }
-  
+    list-style-type: none;
+    /* Remove default list style */
+}
+
+.alphabet-list li {
+    position: relative;
+    /* Make the list item position relative */
+    padding-left: 20px;
+    /* Add some padding to create space for the marker */
+}
+
+.alphabet-list li:before {
+    content: counter(alphabet-list-counter, lower-alpha) '. ';
+    /* Use a counter to generate alphabetical sequence */
+    counter-increment: alphabet-list-counter;
+    /* Increment the counter */
+    position: absolute;
+    /* Position the marker absolutely */
+    left: 0;
+    /* Position it at the beginning of the list item */
+}
+.blog-post-card {
+    background-color: #dedfda;
+    border: 1px solid #dedfda;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0,0.6); */
+    transition: all 0.3s ease; 
+ 
+    width: 100%;
+    height: 107px;
+    /* data should also hidden witht the card  */
+    overflow: hidden;
+    /* display specific content */
+    display: flex;
+}
+
+.blog-post-card.expanded {
+    width: 100%; 
+    height: auto; 
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3); 
+} 
+

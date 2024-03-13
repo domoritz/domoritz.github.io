@@ -5977,6 +5977,9 @@ $(window).resize(function () {
                 midClick: !0
             })
     });
+function expandCard(card) {
+    card.classList.toggle('expanded');
+}
 
 // var indexValue=1;
 // showImg(indexValue);
@@ -6046,3 +6049,4 @@ function showImg(e) {
 
 // Start automatic scrolling when the page loads
 startAutoScroll();
+
