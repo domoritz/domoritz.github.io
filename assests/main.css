@@ -9612,7 +9612,7 @@ screen and (max-height: 300px) {
     border: 1px solid #dedfda;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     /* box-shadow: 0 4px 6px rgba(0, 0, 0,0.6); */
     transition: all 0.3s ease; 
  
