@@ -9580,28 +9580,39 @@ screen and (max-height: 300px) {
 
 
 .workshop-info {
-    display: flex;
+    /* display: flex;
+    justify-content: space-between; */
     /* vertical-align: top; */
     /* margin-right: 1000px; */
     /* margin-left: 400px; */
     /* Adjust as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .vertical_side{
-    align-items: right;
+    /* align-items: right; */
+    flex-grow: 1; /* Allow flex items to grow */
+    text-align: right;
 }
 
 .vertical_side p {
     display: inline;
     
 }
-
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .workshop-info {
-        margin-right: 0;
-        /* Reset margin for smaller screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .vertical_side {
+        text-align: left; /* Align text to the left for smaller screens */
     }
 }
+
+
 
 .alphabet-list {
     list-style-type: none;
