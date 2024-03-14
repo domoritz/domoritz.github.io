@@ -3591,13 +3591,18 @@ select:focus {
 .author__avatar img {
     max-width: 195px;
     border-radius: 100%;
-    /* border-color: #006567; */
-    /* background-color:#000 */
+    /* border: 211px dotted #0c0c0c;  */
+    /* border-color: #006567;  */
+    /* border-color: #000; */
+    background-color: #000 ;
+    /* add the widht od the border
+     */
+     
 }
 
 @media (min-width: 57.8125em) {
     .author__avatar img {
-        padding: 5px;
+        padding: 2px;
         border: 1px solid #f2f3f3
     }
 }
@@ -9647,7 +9652,9 @@ screen and (max-height: 300px) {
     transition: all 0.3s ease;
 
     width: 100%;
-    height: 107px;
+    /* height: 107px; */
+    /* write the height in the % */
+    height: 106px;
     /* data should also hidden witht the card  */
     overflow: hidden;
     /* display specific content */
@@ -9665,6 +9672,7 @@ screen and (max-height: 300px) {
 .blog-post-card:hover {
     background-color: #f5f5f5;
     border: 1px solid #f5f5f5;
+    cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
