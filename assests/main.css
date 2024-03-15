@@ -9591,6 +9591,7 @@ screen and (max-height: 300px) {
     /* margin-right: 1000px; */
     /* margin-left: 400px; */
     /* Adjust as needed */
+    margin-bottom: -10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
