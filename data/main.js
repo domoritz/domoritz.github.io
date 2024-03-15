@@ -6010,41 +6010,69 @@ function expandCard(card) {
 var indexValue = 0; // Changed indexValue to start from 0
 var intervalId; // Variable to store interval ID
 
-// Call showImg initially
-showImg(indexValue);
+// // Call showImg initially
+// showImg(indexValue);
 
-// Function to start automatic scrolling
-function startAutoScroll() {
-    intervalId = setInterval(function () {
-        side_slide(3); // Auto-scroll to the next image
-    }, 1000); // Adjust the interval (in milliseconds) as needed
+// // Function to start automatic scrolling
+// function startAutoScroll() {
+//     intervalId = setInterval(function () {
+//         side_slide(3); // Auto-scroll to the next image
+//     }, 1000); // Adjust the interval (in milliseconds) as needed
+// }
+
+// // Function to stop automatic scrolling
+// function stopAutoScroll() {
+//     clearInterval(intervalId);
+// }
+
+// // Function to handle manual sliding
+// function side_slide(e) {
+//     stopAutoScroll(); // Stop auto-scrolling when manually sliding
+//     showImg(indexValue += e);
+// }
+
+// // Function to show images
+// function showImg(e) {
+//     var i;
+//     const img = document.querySelectorAll('img');
+//     if (e >= img.length) {
+//         indexValue = 0; // Reset to the first image if reached the end
+//     }
+//     if (e < 0) {
+//         indexValue = img.length - 1; // Go to the last image if reached the beginning
+//     }
+//     for (i = 1; i < img.length; i++) {
+//         img[i].style.display = "none";
+//     }
+//     img[indexValue].style.display = "block";
+// }
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-// Function to stop automatic scrolling
-function stopAutoScroll() {
-    clearInterval(intervalId);
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-// Function to handle manual sliding
-function side_slide(e) {
-    stopAutoScroll(); // Stop auto-scrolling when manually sliding
-    showImg(indexValue += e);
-}
-
-// Function to show images
-function showImg(e) {
-    var i;
-    const img = document.querySelectorAll('img');
-    if (e >= img.length) {
-        indexValue = 0; // Reset to the first image if reached the end
-    }
-    if (e < 0) {
-        indexValue = img.length - 1; // Go to the last image if reached the beginning
-    }
-    for (i = 1; i < img.length; i++) {
-        img[i].style.display = "none";
-    }
-    img[indexValue].style.display = "block";
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
 
 // Start automatic scrolling when the page loads
