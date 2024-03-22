@@ -11,6 +11,8 @@
         content="academicpages is a ready-to-fork GitHub Pages template for academic personal websites">
     <meta name="description" content="About me">
     <meta property="og:description" content="About me">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="application/ld+json">
             {
                 "@context": "http://schema.org",
@@ -1191,7 +1193,7 @@
                                 <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
                                 Published:
                             </strong>
-                            <time datetime="2013-08-14T00:00:00-07:00">Nov 12, 2016
+                            <time datetime="2013-08-14T00:00:00-07:00">Dec 11, 2016
 
                             </time>
                         </p>
@@ -1260,7 +1262,71 @@
                         </div>
                     </article>
                 </div>
+                <div class="list__item">
+                    <div class="blog-post-card small " onclick="expandCard(this)">
+                        <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                            <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                                <a>Deploying Machine Learning models</a>
+                            </h2>
+                            <!-- <p class="page__meta">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                less than 1 minute read
+                            </p> -->
+                            <p class="page__date">
+                                <strong>
+                                    <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                    Published:
+                                </strong>
+                                <time datetime="2013-08-14T00:00:00-07:00">Nov 04, 2016
 
+                                </time>
+                            </p>
+                            <p class="archive__item-excerpt" itemprop="description">
+                            <div class="archive__item-excerpt">
+                                <p>
+                                    I have often heard Data scientist/ML people asking "I have a ML model thats doing
+                                    well on test data, how do I deploy it in production environment ?" Recently I have
+                                    been exploring the same, so sharing some of my findings and ways to achieve the
+                                    same. Here focus will be on deployment and not developing a model - hence, for
+                                    simplicity, we will assume we have a pre-trainied, fine tuned <strong><a
+                                            href="http://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html">scikit
+                                            model</a></strong>
+                                    ready to be deployed.
+                                </p>
+                                <p>
+                                    This is a 3 part blog series. We will see how to deploy a ML model as a
+                                    microservice. We will see 3 different ways of doing the same using:
+                                    <li>
+                                        Flask
+                                    </li>
+                                    <li>
+                                        Falcon
+                                    </li>
+                                    <li>
+                                        Jupyter notebook as service (Wow!)
+                                    </li>
+                                </p>
+                                <p>
+                                    <strong>Microservice - what and why ?</strong>
+                                    <br>
+                                    Microserivce is an architecture pattern. It can best be thought as being completely
+                                    opposite of Monolithic architecture
+                                    <strong><a
+                                            href="https://www.thoughtworks.com/insights/blog/monoliths-are-bad-design-and-you-know-it">problems</a></strong>.
+                                    The central idea is to break the system/applications into small chunks(services)
+                                    based on functionality. Each chunk does a specicifc job and does only that. These
+                                    services talk to each other using HTTP/REST (synchronous or asynchronous). Want to
+                                    take a deep dive ? I suggest read <strong><a
+                                            href="https://www.quora.com/What-is-Microservices-Architecture">quora
+                                            answer</a></strong>
+                                    and <strong><a href="https://www.martinfowler.com/articles/microservices.html
+                                        ">Martin
+                                            Fowler's article</a></strong> .
+                                </p>
+                            </div>
+                    </div>
+                    </article>
+                </div>
             </div>
             <h2 id="2013" class="archive__subtitle">2014</h2>
             <div class="list__item">
@@ -1285,15 +1351,18 @@
                             <p>Training neural nets is all about <a
                                     href="http://deeplearning.stanford.edu/wiki/index.php/Deriving_gradients_using_the_backpropagation_idea">
                                     computin gradients </a> In case you are new to this idea, refer to this awesome
-                                <a href="http://karpathy.github.io/neuralnets/">post</a> by Andrej Karpathy. Briefly,
+                                <a href="http://karpathy.github.io/neuralnets/">post</a> by Andrej Karpathy.
+                                Briefly,
                                 deep down
                                 every
-                                ML problem is an optimization problem. We want to "learn" (find) the weights which will
+                                ML problem is an optimization problem. We want to "learn" (find) the weights which
+                                will
                                 result in least average loss. The way we do it is - start with arbitrary wieghts and
                                 keep
                                 adjusting them in small quantities until we get them right i.e. arrive at a set of
                                 values
-                                for which loss function has least value. Gradients tells us by how much should we adjust
+                                for which loss function has least value. Gradients tells us by how much should we
+                                adjust
                                 each of the weights.
 
                             </p>
@@ -1304,13 +1373,13 @@
                                     <a href="https://www.youtube.com/watch?v=yFPLyDwVifc">Video by Andrew NG</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.offconvex.org/2016/12/20/backprop/"> Blog by Sanjeev Arora</a>
+                                    <a href="http://www.offconvex.org/2016/12/20/backprop/"> Blog by Sanjeev
+                                        Arora</a>
                                 </li>
 
                             </p>
 
-                            <p class="center two-thirds"><a href="/images/logistic.png"><img
-                                        src="/images/logistic.png"></a></p>
+
                             <div class="archive__item-excerpt">
 
                                 <ul>
@@ -1328,16 +1397,96 @@
                                             </li>
                                         </ul>
                                         </p>
+                                        <p>
+
+                                            Through out this post we assume:
+                                        <ul>
+                                            <li> There is no bias term.
+                                            </li>
+                                            <li>`.` is matrix multiplication, `*` is element wise product and `X` is
+                                                normal multiplication.</li>
+
+                                            <li>
+                                                All activations are <strong><a
+                                                        href="https://www.quora.com/What-is-the-sigmoid-function-and-what-is-its-use-in-machine-learnings-neural-networks">sigmoid
+                                                        a.k.a logistic</a></strong>. It is defined as \( f(u) =
+                                                \frac{1}{1+e^{-u}} \). If you plot it, it comes as:.
+                                            </li>
+                                        </ul>
+
+                                        </p>
+                                        <p class="center two-thirds"><a href="/images/logistic.png"><img
+                                                    src="/images/logistic.png"></a></p>
 
 
                                     </li>
+                                    <p> <strong>Sigmoid function</strong> </p>
+                                    <p>
+                                        It easy to see it is smooth and differentiable and bound between 0 and 1 [No?
+                                        not straight forward - need to fix this]. </p>
+                                    <p>
+
+                                        \[
+                                        \begin{align}
+                                        \frac{d}{dx}\sigma(x) &= \frac{d}{dx} \left[ \frac{1}{1+e^{-x}}\right]
+                                        \label{refB} \tag{B}\\
+                                        &= \frac{d}{dx} (1+e^{-x})^{-1} \\
+                                        &= -(1+e^{-x})^{-2}(-e^{-x}) \\
+                                        &= \frac{e^{-x}}{(1+e^{-x})^2} \\
+                                        &= \frac{1}{(1+e^{-x})} \cdot \frac{e^{-x}}{(1+e^{-x})} \\
+                                        &= \frac{1}{(1+e^{-x})} \cdot \frac{1 + e^{-x} -1}{(1+e^{-x})} \\
+                                        &= \frac{1}{(1+e^{-x})} \cdot \left( 1 - \frac{e^{-x}}{(1+e^{-x})} \right) \\
+                                        &= \sigma(x)(1-\sigma(x)) \label{refC} \tag{C}
+                                        \end{align}
+                                        \]
+
+                                        <!-- Equation (D) -->
+                                        \[
+                                        \begin{align}
+                                        \frac{d}{dx}\sigma(ax) = a(\sigma(ax))(1-\sigma(ax)) \label{refD} \tag{D}
+                                        \end{align}
+                                        \]
+
+                                    </p>
 
 
                                 </ul>
                             </div>
 
                             <div class="archive__item-excerpt">
-                                For AI effort to fail - going wrong on just one of the above is enough.
+                                <p> We will be using the above result a lot, so make sure you understand it. If it is
+                                    not
+                                    clear, have a look at this<strong> <a
+                                            href="http://kawahara.ca/how-to-compute-the-derivative-of-a-sigmoid-function-fully-worked-example/">post
+                                            .</a></strong>
+                                </p>
+                                <p>
+                                <ul>To compute the gradients, we will start with the simplest case and increase the
+
+                                    complexity gradually. To keep things simple we will complete it in 7 parts
+                                    <li type="number">
+                                        1 layer network, 1 training example
+                                        (scalar).
+                                    </li>
+                                    <li> 1 layer network, 1 training example
+                                        (vector)</li>
+                                    <li>1 layer network, batch training (>1 training examples where each is a
+                                        vector)</li>
+                                    <li>2 layer network with 1 node hidden layer, 1 training example
+                                        (vector </li>
+                                    <li>2 layer network with 2 node hidden layer, 1 training example
+                                        (vector)</li>
+                                    <li>2 layer network, batch training (>1 training examples where each is a vector)
+                                    </li>
+                                    <li>Generalization and take home</li>
+                                </ul>
+                                <p> Since we will be dealing with matrices, a key step in every equation is to check if
+                                    all matrix dimensions are consistent.</p>
+
+                                </p>
+
+
+
 
                             </div>
                         </div>
