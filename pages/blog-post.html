@@ -1111,8 +1111,158 @@
                 </div>
 
             </div>
-
             <h2 id="2013" class="archive__subtitle">2016</h2>
+
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Great resources on CNN</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            less than 1 minute read
+                        </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Dec 16, 2016
+
+                            </time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+
+
+                            <p>I am new to the world of CNNs. While I have worked with neural nets in the area of text,
+                                when it comes to CNNs I have little knowledge. There are some awesome resources on the
+                                internet to learn on CNNs from ground zero. </p>
+                            <p>
+                                <strong><a href=" https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner">Basics
+                                        of
+                                        CNN</a></strong>
+                                Guide-To-Understanding-Convolutional-Neural-Networks
+                                3 part blog series. Builds the initial intuition very well.
+
+
+
+                            <p>Another good resource is this <strong><a
+                                        href="https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/">Blog by
+                                        Ujjwal
+                                    </a></strong></p>
+
+                            </p>
+                            <p>Adam Harley's
+                                <strong><a href="http://scs.ryerson.ca/~aharley/neural-networks/">
+                                        Blog</a></strong> on basic of CNNs.
+                                Its bit lengthy but if you are confortable with the key ideas discussed in first 2 blogs
+                                by Adesh and Ujjwal, this is a great post.
+                            </p>
+
+                            <div class="archive__item-excerpt">
+
+                                Wanna get a feel of CNNs in action ? check this <a
+                                    href="http://scs.ryerson.ca/~aharley/vis/conv/flat.html"> <strong>awesome
+                                        visualization by Adam
+                                        Harley</strong></a>. I highly recomend to play
+                                with it.
+
+
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Dynamic Plotting in Python</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            less than 1 minute read
+                        </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Nov 12, 2016
+
+                            </time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+
+
+                            <p>
+                                In my work I am often want to visualize how the data or some aspect of model changes.
+                                This requires to have plots/graph which get Dynamically or Live updates - I have a bunch
+                                of values. One or more of these values keep on changing with time. I want to visualize
+                                these changes using plots.
+                            </p>
+                            <p>
+
+                                When I looking for a solution, I did not come across an elegent one. So tried piecing
+                                together a solution myself.</p>
+
+
+
+                            <p>
+                                For simplicity, imagine we have M data points with a set of initial values. Further,
+                                these vaues get updated/changed, so we have a set pf new M values. This happens N times.
+                                This can be captured via a matrix 2D matrix A of (m x n) dimension where each row is a
+                                set of values.
+                            </p>
+
+                            </p>
+                            <p>
+                                We record the initial set of values, Then these values get updated, then the update
+                                happens again, and again. Row 1 stores the initial values, row 2 stores the subsequent
+                                updated values, row 3 stores values after next update, so on and so forth. In esence,
+                                the matrix A stores the entire history of values.
+                            </p>
+                            <p>
+                                Now we will like to plot these values. Where the graph starts with values in first row,
+                                then gets updated to values in 2nd row, then gets updated tp values in 3rd row, so on
+                                and so forth. <a
+                                    href="https://github.com/anujgupta82/Musings/blob/master/Dynamic%20or%20Live%20update%20of%20a%20Plot.ipynb"><strong>This
+                                        notebook</strong></a>
+                                is about how to plot such graphs
+                            </p>
+                            <div class="archive__item-excerpt">
+
+                                <p>
+                                    This is especially useful in machine learning, where you want to visualize how a
+                                    particular property of model/data evolves with time (training)
+
+                                    Our matrix is of MxN dimensions, initialised randonly.
+                                </p>
+                                <p class="center two-thirds"><a href="/images/image_1.png"><img
+                                            src="/images/image_1.png"></a></p>
+                                <p>gunicorn server up and running
+                                    Lets hit the server with a POST request. Open another terminal window and type in:
+                                </p>
+                                <p>
+
+                                    All the code in the snippets above can be found in the following <strong><a
+                                            href="https://github.com/anujgupta82/Musings/blob/master/Dynamic%20or%20Live%20update%20of%20a%20Plot.ipynb">jupyter
+                                            notebook</a></strong>.
+                                    If you face any issue with the code, please open a <strong><a
+                                            href="https://github.com/anujgupta82/Musings/issues"></a>New
+                                        issue</strong> on Github.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+            <h2 id="2013" class="archive__subtitle">2014</h2>
             <div class="list__item">
                 <div class="blog-post-card small " onclick="expandCard(this)">
                     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
