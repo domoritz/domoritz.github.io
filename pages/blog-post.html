@@ -1262,73 +1262,1911 @@
                         </div>
                     </article>
                 </div>
-                <div class="list__item">
-                    <div class="blog-post-card small " onclick="expandCard(this)">
-                        <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                            <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
-                                <a>Deploying Machine Learning models</a>
-                            </h2>
-                            <!-- <p class="page__meta">
-                                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                less than 1 minute read
-                            </p> -->
-                            <p class="page__date">
-                                <strong>
-                                    <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
-                                    Published:
-                                </strong>
-                                <time datetime="2013-08-14T00:00:00-07:00">Nov 04, 2016
 
-                                </time>
-                            </p>
-                            <p class="archive__item-excerpt" itemprop="description">
-                            <div class="archive__item-excerpt">
-                                <p>
-                                    I have often heard Data scientist/ML people asking "I have a ML model thats doing
-                                    well on test data, how do I deploy it in production environment ?" Recently I have
-                                    been exploring the same, so sharing some of my findings and ways to achieve the
-                                    same. Here focus will be on deployment and not developing a model - hence, for
-                                    simplicity, we will assume we have a pre-trainied, fine tuned <strong><a
-                                            href="http://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html">scikit
-                                            model</a></strong>
-                                    ready to be deployed.
-                                </p>
-                                <p>
-                                    This is a 3 part blog series. We will see how to deploy a ML model as a
-                                    microservice. We will see 3 different ways of doing the same using:
-                                    <li>
-                                        Flask
-                                    </li>
-                                    <li>
-                                        Falcon
-                                    </li>
-                                    <li>
-                                        Jupyter notebook as service (Wow!)
-                                    </li>
-                                </p>
-                                <p>
-                                    <strong>Microservice - what and why ?</strong>
-                                    <br>
-                                    Microserivce is an architecture pattern. It can best be thought as being completely
-                                    opposite of Monolithic architecture
-                                    <strong><a
-                                            href="https://www.thoughtworks.com/insights/blog/monoliths-are-bad-design-and-you-know-it">problems</a></strong>.
-                                    The central idea is to break the system/applications into small chunks(services)
-                                    based on functionality. Each chunk does a specicifc job and does only that. These
-                                    services talk to each other using HTTP/REST (synchronous or asynchronous). Want to
-                                    take a deep dive ? I suggest read <strong><a
-                                            href="https://www.quora.com/What-is-Microservices-Architecture">quora
-                                            answer</a></strong>
-                                    and <strong><a href="https://www.martinfowler.com/articles/microservices.html
-                                        ">Martin
-                                            Fowler's article</a></strong> .
-                                </p>
-                            </div>
-                    </div>
-                    </article>
-                </div>
             </div>
             <h2 id="2013" class="archive__subtitle">2014</h2>
+
+
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Deploying ML models - Part 2</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            less than 1 minute read
+                        </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Nov 09, 2014
+
+                            </time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+                            <p><strong>Deploy ML model using Falcon</strong></p>
+                            <h3>Falcon</h3>
+
+                            <p>In the last blog, we used flask to deploy our ML model. Today, we will be exploring a
+                                different framework to achieve the same - Falcon. Falcon is pretty simple to work with.
+                                Lets get coding :</p>
+
+                            <h4>Install Falcon</h4>
+
+                            <p>Load your virtual environment and execute</p>
+
+                            <pre><code>pip install falcon
+                            </code></pre>
+
+                            <p>I used python 2.7 and falcon==1.1.0. This will get falcon installed.</p>
+
+                            <h4>Bare bones Example</h4>
+
+                            <p>The code consists if 2 files - <a
+                                    href="https://github.com/anujgupta82/Musings/blob/master/falcon/app.py">app.py</a>
+                                (contains app structure and end points) and <a
+                                    href="https://github.com/anujgupta82/Musings/blob/master/falcon/functionality.py">functionality.py</a>
+                                (contains the code to support the functionality).</p>
+
+
+                            <h4>app.py</h4>
+
+                            <pre><code>import functionality
+
+                            api = application = falcon.API()
+
+                            hello_world = functionality.hello_world()
+
+                            api.add_route('/hi', hello_world)
+                            </code></pre>
+
+                            <p>All this code does is:</p>
+                            <ul>
+                                <li>Imports the falcon package and creates a basic application.</li>
+                                <li>Accesses the hello_world object from functionality.py and creates an endpoint 'hi'
+                                    where, when data is sent via a POST request, an appropriate function of the
+                                    hello_world object is invoked.</li>
+                            </ul>
+
+                            <h4>functionality.py</h4>
+
+                            <pre><code>import falcon
+                            import json
+
+                            class hello_world(object):
+                            def __init__(self):
+                                print "init"
+
+                            def on_post(self, req, resp):
+                                print "post: hello_world"
+                                result = {}
+
+                                result['msg'] = "hello world"
+                                resp.status = falcon.HTTP_200
+                                resp.body = json.dumps(result, encoding='utf-8')
+                            </code></pre>
+
+                            <p>Here, the code does the following:</p>
+                            <ul>
+                                <li>Creates a class <code>hello_world</code> with <code>on_post()</code>, which takes a
+                                    request and response object.</li>
+                                <li>Consumes the request object and sets the attributes of the response object.</li>
+                            </ul>
+
+                            <h4>Show time:</h4>
+
+                            <p><strong>Prerequisite:</strong> You need to install the gunicorn server. Load your virtual
+                                environment and execute:</p>
+
+                            <pre><code>pip install gunicorn
+                            </code></pre>
+
+                            <p>I used Python 2.7 and gunicorn==19.6.0</p>
+
+                            <p><strong>Run the following steps in terminal:</strong></p>
+
+                            <ol>
+                                <li> Use cd to navigate to the directory where app.py is saved.</li>
+
+                                <li>gunicorn app</li>
+                            </ol>
+                            <p>
+                                This should get the gunicorn server up and running :
+                            </p>
+
+                            <p class="center two-thirds"><a href="/images/ml_models_2/image_1.png"><img
+                                        src="/images/ml_models_2/image_1.png"></a></p>
+                            <p>gunicorn server up and running</p>
+                            <p>Lets hit the server with a POST request. Open another terminal window and type in:</p>
+
+                            <pre><code>curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:8000/hi
+</code></pre>
+
+                            <p>On the client terminal, you should see a <code>200 OK</code> followed by a JSON
+                                containing our "hello world" message.</p>
+
+                            <p class="center two-thirds"><a href="/images/ml_models_2/image_2.png"><img
+                                        src="/images/ml_models_2/image_2.png"></a></p>
+                            <p>On the server terminal you should see our print statement in on_post().
+                            </p>
+
+                            <p class="center two-thirds"><a href="/images/ml_models_2/image_3.png"><img
+                                        src="/images/ml_models_2/image_3.png"></a></p>
+
+                            <p>Congrats, your first application in Falcon is up and working!</p>
+
+                            <p>Wanna read more on Falcon? Head to <a
+                                    href="http://falcon.readthedocs.io/en/stable/user/tutorial.html">Falcon’s page</a>.
+                            </p>
+
+                            <h3>FALCON VS FLASK:</h3>
+
+                            <p>I am told Falcon is lightweight. I am not an expert on this topic, here are a couple of
+                                links if you wish to take a deep dive into Flask vs Falcon: <a
+                                    href="http://klen.github.io/py-frameworks-bench/">Python web frameworks
+                                    benchmarking</a>, <a
+                                    href="https://www.reddit.com/r/Python/comments/4rq19c/your_choice_of_rest_framework_flask_vs_falcon/">reddit
+                                    thread</a>, <a href="https://news.ycombinator.com/item?id=8835776">hacker news</a>,
+                                <a href="https://www.slant.co/versus/1398/1744/~flask_vs_falcon">slant</a>.
+                            </p>
+
+                            <p>We have a model that is up and running as a service. Now you can go ahead and add more
+                                functionality like resetting the model, training the model if not already trained, and a
+                                lot more.</p>
+
+                            <p>If you face any issue with the code, please open a "<a
+                                    href="https://github.com/anujgupta82/Musings/issues">New issue</a>" on Github. All
+                                the above code files are available <a
+                                    href="https://github.com/anujgupta82/Musings/tree/master/falcon">here</a>.</p>
+
+
+                        </div>
+                </div>
+                </article>
+            </div>
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Deploying ML models - Part 1</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            less than 1 minute read
+                        </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Nov 04, 2014
+
+                            </time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+                            <p><strong>Deploy ML model using Flask</strong></p>
+                            <p><strong>Flask</strong></p>
+                            <p>Flask is a lightweight Python web framework to create microservices. Wanna read
+                                <a
+                                    href="https://code.tutsplus.com/tutorials/an-introduction-to-pythons-flask-framework--net-28822">more</a>
+                                ? I am a ML guy, and this sounds complex :-( Rather than reading lets code a simple one
+                                quickly !
+                            </p>
+                            <h4>Install Flask</h4>
+
+                            <p>To install Flask, use the following command:</p>
+
+                            <pre><code>pip install flask</code></pre>
+
+                            <p>I used Python 2.7 and Flask version 0.11.1</p>
+
+                            <h4>Bare Bones Example</h4>
+
+                            <p>Open an editor and copy-paste the code from my <a
+                                    href="https://github.com/anujgupta82/Musings/blob/master/flask/simple_app.py">GitHub
+                                    repository</a>:</p>
+                            <pre>
+                                <code>from flask import Flask
+
+                                        app = Flask(__name__)
+                                        
+                                        @app.route('/1')   # path to resource on server
+                                        def index_1():        # action to take
+                                          return "Hello_world 1"
+                                        
+                                        @app.route('/2')
+                                        def index_2():
+                                          return "Hello_world 2"
+                                        
+                                        if __name__ == '__main__':
+                                          app.run(debug=True)
+                                </code>
+                            </pre>
+
+                            <p>To run this:</p>
+
+                            <ol>
+                                <li>Save it as <code>simple_app.py</code></li>
+                                <li>Install Flask in your virtual environment using <code>pip install Flask</code></li>
+                                <li>Open terminal, go to the directory where <code>simple_app.py</code> is saved. Run
+                                    the following two commands:</li>
+                            </ol>
+
+                            <pre><code>export FLASK_APP=simple_app.py
+                                        flask run
+                                        </code></pre>
+
+                            <p>This should have the Flask server up and running on <a
+                                    href="http://127.0.0.1:5000">http://127.0.0.1:5000</a></p>
+
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_1.png"><img
+                                        src="/images/ml_models_1/image_1.png"></a></p>
+
+                            <p>Flask Server up and running</p>
+
+
+                            <p>If you see the code carefully it says - we have 2 resources with relative URIs as
+                                <code>/1</code> and <code>/2</code>. Let's access them. Go to your browser and type <a
+                                    href="http://127.0.0.1:5000/1">http://127.0.0.1:5000/1</a>
+                            </p>
+
+                            <p>This should fire the function <code>index_1()</code> function and give the following
+                                output on the command prompt:</p>
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_2.png"><img
+                                        src="/images/ml_models_1/image_2.png"></a></p>
+                            <p>Output from function index_1</p>
+
+                            <p>Like wise <a href="http://127.0.0.1:5000/2">http://127.0.0.1:5000/2</a> should work. This
+                                is a simple flask application. (Oh yeah! this sounds easy, lets move on)</p>
+
+                            <h4>REST (in peace)</h4>
+
+                            <p>There are a couple of terms that are part and parcel of micro services. Lets quickly
+                                understand something about them:</p>
+
+                            <ol>
+                                <li><strong>API:</strong> Application Program Interface - set of routines, protocols,
+                                    and tools for building software applications.</li>
+                                <li><strong>API Endpoint:</strong> It's one end of a communication channel, so often
+                                    this would be represented as the URL of a server or service. In our example
+                                    "<code>http://127.0.0.1:5000/1</code>".</li>
+                                <li><strong>REST:</strong> underlying architectural principle of the web.
+                                    Read these awesome <a
+                                        href="https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming/671132#671132">stackoverflow
+                                        answer</a> and this brilliant <a
+                                        href="http://web.archive.org/web/20130116005443/http://tomayko.com/writings/rest-to-my-wife">post</a>
+                                    from Ryan Tomayko and this <a
+                                        href="https://martinfowler.com/articles/richardsonMaturityModel.html">post</a>
+                                    from Martin Fowler to understand the same.</li>
+                            </ol>
+
+                            <p>In nutshell, you need to have - GET, POST, PUT, DELETE.</p>
+
+                            <p>Lets add this to our <a
+                                    href="https://github.com/anujgupta82/Musings/blob/master/flask/RESTful_app.py">code</a>.
+                                To see this in action, run the server (like previously), go to terminal and type:</p>
+
+                            <p>To see this in action, run the server (like previously), go to the terminal and type:</p>
+
+                            <pre><code>curl -i http://localhost:5000/tasks
+                            </code></pre>
+
+                            <p>or</p>
+
+                            <pre><code>curl -i -X GET http://localhost:5000/tasks
+                                </code></pre>
+
+                            <p>Both commands will give the same output:</p>
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_3.png"><img
+                                        src="/images/ml_models_1/image_3.png"></a></p>
+                            <p>Your server terminal will show "200" (success) for both the requests.
+                            </p>
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_4.png"><img
+                                        src="/images/ml_models_1/image_4.png"></a></p>
+
+                            <h4>RESTful App</h4>
+
+                            <p>Lets add other parts of RESTful to out code. Here it is. To see this in action, run the
+                                server (like previously), go to terminal and type:</p>
+
+                            <ol>
+                                <li start="1"><strong>Get All tasks:</strong></li>
+                            </ol>
+
+                            <pre><code>curl -i http://localhost:5000/tasks/
+                                        </code></pre>
+
+                            <ol start="2">
+                                <li><strong>Get a specific task:</strong></li>
+                            </ol>
+
+                            <pre><code>curl -i http://localhost:5000/tasks/2
+                                        </code></pre>
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_5.png"><img
+                                        src="/images/ml_models_1/image_5.png"></a></p>
+
+                            <p>Since there is no task with id=4, lets see what happens when we try to get that:</p>
+
+                            <pre><code>curl -i http://localhost:5000/tasks/4</code></pre>
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_6.png"><img
+                                        src="/images/ml_models_1/image_6.png"></a></p>
+                            <p>Error. Task with id=4 does not exists</p>
+                            <ol start="3">
+                                <li><strong>Add a task:</strong></li>
+                            </ol>
+
+                            <pre><code>curl -i -H "Content-Type: application/json" -X POST -d '{"title":"Read a book"}' http://localhost:5000/tasks/</code></pre>
+
+                            <ol start="4">
+                                <li><strong>Update a specific task:</strong></li>
+                            </ol>
+
+                            <pre><code>curl -i -H "Content-Type: application/json" -X PUT -d '{"done":true}' http://localhost:5000/tasks/2</code></pre>
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_7.png"><img
+                                        src="/images/ml_models_1/image_7.png"></a></p>
+
+                            <ol start="5">
+                                <li><strong>Delete a specific task: </strong></li>
+                            </ol>
+                            <p>Delete a specific task:</p>
+                            <pre><code>curl -i -X DELETE http://localhost:5000/tasks/2</code></pre>
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_8.png"><img
+                                        src="/images/ml_models_1/image_8.png"></a></p>
+                            <p>task with id=2 successfully deleted</p>
+                            <p>ML APP</p>
+
+                            <p>Its all great until now, what about the core issue – ML model as microservice ? Here we
+                                go:</p>
+
+                            <pre><code>from flask import Flask, jsonify, request, abort
+                            import pickle
+                            import numpy as np
+
+                            app = Flask(__name__)
+                            model_file_path = "./../models/final_model.pkl"
+                            model = None
+
+                            def get_prediction(X):
+                            X_i = X.reshape(1, 2)
+                            print "X_i.shape"
+                            print X_i.shape#load the model if not already done
+                            
+                            global model
+                            if model == None:
+                                model = pickle.load(open(model_file_path, 'rb'))#make prediction and return the same
+                                prediction = model.predict(X_i)[0]
+
+                            return prediction
+
+                            @app.route('/predict', methods=['POST'])
+                            def predict():
+                            if not request.json or not 'X1' in request.json or not 'X2' in request.json:
+                                abort(404)
+
+                            X1 = request.json['X1']
+                            X2 = request.json['X2']
+
+                            X1_ = np.float64(X1)
+                            X2_ = np.float64(X2)
+                            X = np.array([X1_, X2_])
+                            prediction = get_prediction(X)
+
+                            return jsonify({'prediction':prediction})
+
+                            if __name__ == '__main__':
+                            app.run(debug=True)
+                            </code></pre>
+
+                            <p>To run this code, get the server up and running and then fire the command below from
+                                another terminal.</p>
+
+                            <pre><code>curl -i -H "Content-Type: application/json" -X POST -d '{"X1":"61.1", "X2":"17.3"}' http://localhost:5000/predict
+</code></pre>
+
+                            <p>Complete code is <a
+                                    href="https://github.com/anujgupta82/Musings/blob/master/flask/ML_app.py">here</a>.
+                                It has lot of print statements. You should see these statements printing the relevant
+                                stuff on the server terminal.</p>
+
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_9.png"><img
+                                        src="/images/ml_models_1/image_9.png"></a></p>
+                            <p>Model prediction</p>
+                            <p class="center two-thirds"><a href="/images/ml_models_1/image_10.png"><img
+                                        src="/images/ml_models_1/image_10.png"></a></p>
+                            <p>Lets understand some key aspects of this code. Here, <code>predict()</code> handles any
+                                POST request coming on <code>/predict</code> on the server. We extract the payload –
+                                components of input vector – these cannot be sent from client as numpy arrays. These
+                                components come in as unicode strings. Hence, we transform them explicitly into
+                                <code>numpy.float64</code> and then make a numpy array on the server side. There is an
+                                elegant way to do it, which we will see in short while.
+                            </p>
+
+                            <p>Once we have the payload in right format, we invoke the function –
+                                <code>get_prediction()</code>. Its main job is load the model into memory if not already
+                                loaded, and fire the model on input for getting the prediction.
+                            </p>
+
+                            <p>We have a model that is up and running as service. Now you can go ahead and add more
+                                functionality like resetting the model, training the model if not already trained, and
+                                lot more.</p>
+
+                            <p>If you face any issue with the code, please open a "<a
+                                    href="https://github.com/anujgupta82/Musings/issues">New issue</a>" on Github. All
+                                the above 4 code files are available <a
+                                    href="https://github.com/anujgupta82/Musings/tree/master/flask">here</a>.</p>
+
+                            <!-- ============================= -->
+
+
+
+
+                        </div>
+                </div>
+                </article>
+            </div>
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Deploying Machine Learning models</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            less than 1 minute read
+                        </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Nov 04, 2014
+
+                            </time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+                            <p><strong>Quick ways to deploy and test ML models</strong></p>
+
+                            <h3>Introduction</h3>
+
+                            <p>I have often heard Data scientist/ML people asking "I have a ML model thats doing well on
+                                test data, how do I deploy it in production environment ?" Recently I have been
+                                exploring the same, so sharing some of my findings and ways to achieve the same. Here
+                                focus will be on deployment and not developing a model - hence, for simplicity, we will
+                                assume we have a pre-trainied, fine tuned <a
+                                    href="http://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html">scikit
+                                    model</a> ready to be deployed.</p>
+
+                            <p>This is a 3 part blog series. We will see how to deploy a ML model as a microservice. We
+                                will see 3 different ways of doing the same using:</p>
+
+                            <ol>
+                                <li>Flask</li>
+                                <li>Falcon</li>
+                                <li>Jupyter notebook as service (Wow!)</li>
+                            </ol>
+
+                            <h3>Microservice - what and why ?</h3>
+
+                            <p>Microserivce is an architecture pattern. It can best be thought as being completely
+                                opposite of Monolithic architecture (<a
+                                    href="https://www.thoughtworks.com/insights/blog/monoliths-are-bad-design-and-you-know-it">problems</a>).
+                                The central idea is to break the system/applications into small chunks(services) based
+                                on functionality. Each chunk does a specicifc job and does only that. These services
+                                talk to each other using HTTP/REST (synchronous or asynchronous). Want to take a deep
+                                dive ? I suggest read <a
+                                    href="https://www.quora.com/What-is-Microservices-Architecture">quora
+                                    answer</a> and
+                                <a href="https://www.martinfowler.com/articles/microservices.html">Martin Fowler's
+                                    article</a>.
+                            </p>
+
+
+
+
+
+
+                        </div>
+                </div>
+                </article>
+            </div>
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Gradients - summary</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            less than 1 minute read
+                        </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Sep 14, 2014
+
+                            </time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+                            <p><strong>Take home on Computing Gradients that go into training Neural Nets</strong></p>
+                            <p><strong>Generalization</strong></p>
+                            <p>In this post, based on our conclusions in last post, we will try and generalise a
+                                strategy to compute gradients for arbit networks, as shown in figure below:
+                            </p>
+
+                            <p class="center two-thirds"><a href="/images/NN_generic.jpeg"><img
+                                        src="/images/NN_generic.jpeg"></a>
+                            </p>
+
+
+                            <p>Imagine we have a (Feed forward) network with 1 input layer \(L_0\), 1 output layer
+                                \(L_3\), and 2 hidden layers \(L_1\), \(L_2\) respectively. Further, let \(l_i\) be the
+                                output of layer \(L_i\). Also, by design, \(l_1 = X\) [input] and \(l_3 = \hat{y}\)
+                                [output]. Let \(W_{ij}\) be weights between layers \(L_i\) and \(L_j\). We have 3 weight
+                                matrices - \(W_{01}\), \(W_{12}\), and \(W_{23}\).</p>
+
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Tables</th>
+                                        <th style="text-align:center;">Are</th>
+                                        <th style="text-align:right;">Cool</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>col 1 is</td>
+                                        <td style="text-align:center;">left-aligned</td>
+                                        <td style="text-align:right;">$1600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>col 2 is</td>
+                                        <td style="text-align:center;">centered</td>
+                                        <td style="text-align:right;">$12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>col 3 is</td>
+                                        <td style="text-align:center;">right-aligned</td>
+                                        <td style="text-align:right;">$1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Lunch order</th>
+                                        <th>Spicy</th>
+                                        <th style="text-align:right;">Owes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Joan</td>
+                                        <td>saag paneer</td>
+                                        <td>medium</td>
+                                        <td style="text-align:right;">$11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sally</td>
+                                        <td>vindaloo</td>
+                                        <td>mild</td>
+                                        <td style="text-align:right;">$14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Erin</td>
+                                        <td>lamb madras</td>
+                                        <td>HOT</td>
+                                        <td style="text-align:right;">$5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>First Header</th>
+                                        <th style="text-align:center;">Second Header</th>
+                                        <th style="text-align:right;">Third Header</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Content</td>
+                                        <td colspan="2">*Long Cell*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Content</td>
+                                        <td style="text-align:center;font-weight:bold;">Cell</td>
+                                        <td>Cell</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>New section</td>
+                                        <td>More</td>
+                                        <td>Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>And more</td>
+                                        <td>With an escaped '|'</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>foo</th>
+                                        <th>bar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>baz</td>
+                                        <td>bim</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                </div>
+                </article>
+            </div>
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Gradients - Part 4b</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            less than 1 minute read
+                        </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Sep 11, 2014
+
+                            </time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+                            <p><strong>Part 4 of computing gradients for training Neural Nets</strong></p>
+                            <p><strong>2 layer network, single training example (vector)</strong></p>
+                            <p>This is in continuation of last
+                                post where we derived
+                                gradients for 2 layer network where hidden layer has only 1 node.
+                            </p>
+                            <h4>1 hidden layer with \(\geq\) 2 nodes</h4>
+                            <p>We will derive gradients for hidden layer with 2 nodes. 3 or more nodes is a straight
+                                forward extension.
+                            </p>
+
+                            <p class="center two-thirds"><a href="/images/NN_4_2.jpeg"><img
+                                        src="/images/NN_4_2.jpeg"></a></p>
+
+                            <p>Neural net with 2 layer, 2 nodes in hidden layer. Input is a vector</p>
+
+                            <p>First layer (\(l_1\)) has weight matrix <span>$$[W_1]_{\scriptscriptstyle 3 \times
+                                    2}$$:</span></p>
+
+                            $$
+                            \begin{equation}
+                            W_1 = \begin{bmatrix}
+                            w_{1}^{11} & w_{1}^{12} \\
+                            w_{1}^{21} & w_{1}^{22} \\
+                            w_{1}^{31} & w_{1}^{32} \\
+                            \end{bmatrix}
+                            \end{equation}
+                            $$
+
+                            <p>Second layer (\(l_2\)) has weight matrix <span>$$[W_2]_{\scriptscriptstyle 3 \times
+                                    2}$$:</span></p>
+
+                            $$
+                            \begin{equation}
+                            W_2 = \begin{bmatrix}
+                            w_{2}^{1} \\
+                            w_{2}^{2} \\
+                            \end{bmatrix}
+                            \end{equation}
+                            $$
+                            <h5>Input & Output definitions</h5>
+
+                            <p>Exactly same as previous setting. Input is \((\vec{X},y)\): \(\vec{X}\) is a vector,
+                                while \(y\) is a scalar.</p>
+
+                            <p>\(X = [x^1 ~~x^2 ~~x^3]\) &nbsp; &nbsp; &nbsp; \(x^i = i^{th}\) component of \(\vec{X}\).
+                            </p>
+
+                            <p>Thus, in matrix form \(x,y\) are \([X]_{\scriptscriptstyle 1\times 3}\) and
+                                \([y]_{\scriptscriptstyle 1\times 1}\).</p>
+
+                            <p>Let \( l_1 \) be output of layer 1 (hidden layer in this case). In matrix format,
+                                \([l_1]_{\scriptscriptstyle 1\times 1}\)</p>
+
+                            $$
+                            \begin{align}
+                            l_1 & = \sigma ([X] . [W_1]) \label{ref130} \tag{30} \\
+                            & = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref131} \tag{31} \\
+                            \end{align}
+                            $$
+                            <p> \( l_1 \) has 2 components - \( l_1^1 \) and \( l_1^2 \), given by:</p>
+
+                            $$
+                            \begin{equation}
+                            l_1=\begin{bmatrix}
+                            l_{1}^{1} & l_{1}^{2} \\
+                            \end{bmatrix}
+                            \label{ref132} \tag{32}
+                            \end{equation}
+                            $$
+
+                            $$
+                            \begin{align}
+                            l_1^1 = \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}}
+                            \label{ref133} \tag{33} \\
+                            l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^{12} + x^2 \times w_1^{22} + x^3 \times w_1^{32})}}
+                            \label{ref134} \tag{34} \\
+                            \end{align}
+                            $$
+                            <p>Let \( \hat{y} \) be predicted output. Then as per diagram, it is also the output of
+                                layer 2 (\( l_2 \)). In matrix format, \([\hat{y}]_{\scriptscriptstyle 1\times 1}\)</p>
+
+                            $$
+                            \begin{align}
+                            \hat{y} & = \sigma ([l_1] . [W_2]) \label{ref135} \tag{35} \\
+                            & = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref136} \tag{36} \\
+                            & = \frac{1}{1 + e^{-(l_1^1 w_2^1 + l_1^2 w_2^2)}} \label{ref137} \tag{37} \\
+                            \end{align}
+                            $$
+
+                            <p><strong>Loss</strong></p>
+                            <p>Like before, we will use half of squared error loss. \( L = \frac{1}{2} (y - \hat{y})^{2}
+                                \)</p>
+
+                            <p><strong>Gradients</strong></p>
+                            <p>There are 2 set of gradients: \(\nabla_{W_1} L\) and \(\nabla_{W_2} L\). Let us first
+                                compute \(\nabla_{W_2} L\)</p>
+
+                            <p><strong>\([\nabla_{W_2} L]_{\scriptscriptstyle 2\times 1}\)</strong></p>
+
+                            $$
+                            \begin{equation}
+                            \nabla_{W_2} L = \frac{\partial L}{\partial W_2} \\
+                            \nabla_{W_2} L = \begin{bmatrix}
+                            \frac{\partial L}{\partial w_{2}^{1}} \\
+                            \frac{\partial L}{\partial w_{2}^{2}} \\
+                            \end{bmatrix}
+                            \label{ref140} \tag{40}
+                            \end{equation}
+                            $$
+
+                            <p>Lets, first compute \(\frac{\partial L}{\partial w_{2}^{1}}\):</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_2^1} & = \frac{\partial L}{\partial \hat{y}} \times
+                            \frac{\partial \hat{y}}{\partial w_2^1} \label{ref141} \tag{41}\\
+                            \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times
+                            (-1) \label{ref142} \tag{42}\\
+
+                            \frac{\partial \hat{y}}{\partial w_2^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)}
+                            \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times l_1^1 \dots && \text{using
+                            \eqref{ref137}} \\
+                            & = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) \times l_1^1 \dots &&
+                            \text{using \eqref{ref136}} \label{ref143} \tag{43}\\
+                            & = \hat{y} \times (1- \hat{y}) \times l_1^1 \dots && \text{using \eqref{ref135}}
+                            \label{ref144} \tag{44}\\
+                            \end{align}
+                            $$
+
+                            <p>Substituting \eqref{ref143} & \eqref{ref144} in \eqref{ref141}, we get</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_2^1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times
+                            \big{(} \hat{y} \times (1- \hat{y}) \times l_1^1 \big{)}\\ \\
+                            &= -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1^1 \\
+                            &= (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times l_1^1 \label{ref145} \tag{45} \\
+                            \end{align}
+                            $$
+
+                            <p>Let,</p>
+
+                            \begin{align}
+                            \Delta l_{2} = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \label{ref146} \tag{46} \\
+                            \end{align}
+
+                            <p>Then, eq \eqref{ref145} reduces to:</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_2^1} &= \Delta l_{2} \times l_1^1 \label{ref147} \tag{47} \\
+                            \end{align}
+                            $$
+
+                            <p>Likewise,</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_2^2} & = \Delta l_{2} \times l_1^2 \label{ref148} \tag{48} \\
+                            \end{align}
+                            $$
+
+                            <p>Using eq \eqref{ref147} and \eqref{ref148} in \eqref{ref140}, we get:</p>
+
+                            $$
+                            \begin{equation}
+                            \nabla_{W_2} L = \begin{bmatrix}
+                            \Delta l_{2} \times l_1^1 \\
+                            \Delta l_{2} \times l_1^2 \\
+                            \end{bmatrix}
+                            \label{ref149} \tag{49}
+                            \end{equation}
+                            $$
+                            <p>$$
+                                \frac{\partial L}{\partial W_2} = \left[ \begin{array}{c} l_1^1 \\ l_1^2 \end{array}
+                                \right]_{\scriptscriptstyle 2 \times 1}. \left[ \Delta l_{2} \right]_{\scriptscriptstyle
+                                1 \times 1}
+                                $$</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial W_2} &= [l_{1}]^\intercal . \Delta l_{2} \label{ref1491}
+                            \tag{49.1} \\
+                            \end{align}
+                            $$
+
+                            <p>\([\nabla_{W_1} L]_{\scriptscriptstyle 3\times 2}\)</p>
+
+                            $$
+                            \begin{equation}
+                            \nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
+                            \nabla_{W_1} L = \begin{bmatrix}
+                            \frac{\partial L}{\partial w_{1}^{11}} & \frac{\partial L}{\partial w_{1}^{12}}\\
+                            \frac{\partial L}{\partial w_{1}^{21}} & \frac{\partial L}{\partial w_{1}^{22}}\\
+                            \frac{\partial L}{\partial w_{1}^{31}} & \frac{\partial L}{\partial w_{1}^{32}}\\
+                            \end{bmatrix}
+                            \label{ref150} \tag{50}
+                            \end{equation}
+                            $$
+
+                            <p>Let's first focus on \(\frac{\partial L}{\partial w_{1}^{11}}\):</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{11}} & = \frac{\partial L}{\partial \hat{y}} \times
+                            \frac{\partial \hat{y}}{\partial l_1^1} \times \frac{\partial l_1^1}{\partial
+                            w_1^{11}}\label{ref151} \tag{51}\\
+                            \frac{\partial L}{\partial \hat{y}} &= -(y - \hat{y}) \label{ref152} \tag{52}\\
+
+                            \frac{\partial \hat{y}}{\partial l_1^1} &= \bigg( \frac{1}{1 + e^{-[l_1] . [W_2]}} \bigg)
+                            \times \bigg(1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \bigg) \times w_2^1 \\
+                            & = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) \times w_2^1 \dots
+                            \text{(using \eqref{ref137})} \label{ref153} \tag{53}\\
+                            & = \hat{y} \times (1- \hat{y}) \times w_2^1 \dots \text{(using \eqref{ref135})}
+                            \label{ref154} \tag{54}\\
+
+                            \frac{\partial l_1^1}{\partial w_1^{11}} &= \bigg( \frac{1}{1 + e^{-(x^1 \times w_1^{11} +
+                            x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \bigg) \times \bigg( 1 - \bigg( \frac{1}{1 +
+                            e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \bigg) \bigg) \times
+                            x^1 \dots \text{(using \eqref{ref133})} \label{ref155} \tag{55}\\
+                            &= (l_1^1) \times (1-l_1^1) \times x^1 \label{ref156} \tag{56}
+                            \end{align}
+                            $$
+                            <p>Using eq \eqref{ref152}, \eqref{ref154} and \eqref{ref156} in eq \eqref{ref151}</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{11}} & = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y})
+                            \times w_2^1 \times l_1^1 \times (1-l_1^1) \times x^1 \\
+                            & = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times w_2^1 \times l_1^1 \times
+                            (1-l_1^1) \times x^1 \label{ref157} \tag{57} \\
+                            \end{align}
+                            $$
+
+                            <p>Now, using eq \eqref{ref146} in \eqref{ref157}</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{11}} & = \Delta l_{2} \times w_2^1 \times l_1^1 \times
+                            (1-l_1^1) \times x^1 \label{ref158} \tag{58} \\
+                            \end{align}
+                            $$
+                            <p>Further, let</p>
+
+                            $$
+                            \begin{align}
+                            \Delta l_{1}^{1} = \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \label{ref159}
+                            \tag{59}
+                            \end{align}
+                            $$
+
+                            <p>Then,</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{11}} & = \Delta l_{1}^{1} \times x^1 \label{ref160} \tag{60}
+                            \end{align}
+                            $$
+
+                            <p>Likewise,</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{21}} & = \Delta l_{2} * w_2^1 \times (l_1^1) \times
+                            (1-l_1^1) \times x^2 \\
+                            &= \Delta l_{1}^{1} \times x^2 \label{ref161} \tag{61}
+                            \end{align}
+                            $$
+                            <p>$$
+                                \begin{align}
+                                \frac{\partial L}{\partial w_1^{31}} & = \Delta l_{2} * w_2^1 \times (l_1^1) \times
+                                (1-l_1^1) \times x^3 \\
+                                &= \Delta l_{1}^{1} \times x^3 \label{ref162} \tag{62} \\
+                                \end{align}
+                                $$</p>
+
+                            <p>Before we proceed further, Eq \eqref{ref160}, \eqref{ref161} and \eqref{ref162} are key
+                                take home equations.</p>
+
+                            <p>Now, lets focus on \(\frac{\partial L}{\partial w_{1}^{12}}\):</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{12}} & = \frac{\partial L}{\partial \hat{y}} \times
+                            \frac{\partial \hat{y}}{\partial l_1^2} \times \frac{\partial l_1^2}{\partial
+                            w_1^{12}}\label{ref163} \tag{63}\\
+                            \frac{\partial L}{\partial \hat{y}} &= -(y - \hat{y}) \label{ref164} \tag{64}\\
+
+                            \frac{\partial \hat{y}}{\partial l_1^2} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)}
+                            \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * w_2^2 \\
+                            & = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * w_2^2 \dots && \text{using
+                            \eqref{ref137}} \label{ref165} \tag{65}\\
+                            & = \hat{y} \times (1- \hat{y}) * w_2^2 \dots && \text{using \eqref{ref135}} \label{ref166}
+                            \tag{66}\\
+
+                            \frac{\partial l_1^2}{\partial w_1^{12}} &= \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{12} +
+                            x^2 \times w_1^{22} + x^3 \times w_1^{32})}} \big{)} \times \big{(} 1 - \big{(} \frac{1}{1 +
+                            e^{-(x^1 \times w_1^{12} + x^2 \times w_1^{22} + x^3 \times w_1^{32})}} \big{)} \big{)}
+                            \times x^1 \dots && \text{using \eqref{ref133}} \label{ref167} \tag{67}\\
+                            &= (l_1^2) \times (1-l_1^2) \times x^1 \label{ref168} \tag{68}
+                            \end{align}
+                            $$
+
+                            <p>$$
+                                \begin{align}
+                                \frac{\partial L}{\partial w_1^{12}} & = -(y - \hat{y}) \times \hat{y} \times (1-
+                                \hat{y}) * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^1 \\
+                                & = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) * w_2^2 \times (l_1^2) \times
+                                (1-l_1^2) \times x^1 \label{ref169} \tag{69}
+                                \end{align}
+                                $$</p>
+
+                            <p>Now, using eq \eqref{ref146} in \eqref{ref169} </p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{12}} & = \Delta l_{2} * w_2^2 \times (l_1^2) \times
+                            (1-l_1^2) \times x^1 \label{ref170} \tag{70} \\
+                            \end{align}
+                            $$
+
+                            <p>Further, let</p>
+
+                            $$
+                            \begin{align}
+                            \Delta l_{1}^{2} = \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \label{ref171}
+                            \tag{71}
+                            \end{align}
+                            $$
+                            <p>Then, </p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{12}} & = \Delta l_{1}^{2} \times x^1 \label{ref172} \tag{72}
+                            \end{align}
+                            $$
+
+                            <p>Likewise, </p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{22}} & = \Delta l_{2} \times w_2^2 \times (l_1^2) \times
+                            (1-l_1^2) \times x^2 \\
+                            &= \Delta l_{1}^{2} \times x^2 \label{ref173} \tag{73}
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1^{32}} & = \Delta l_{2} \times w_2^2 \times (l_1^2) \times
+                            (1-l_1^2) \times x^3 \\
+                            &= \Delta l_{1}^{2} \times x^3 \label{ref174} \tag{73} \\
+                            \end{align}
+                            $$
+
+                            <p>Now, we have the pieces. We just need to assemble them.</p>
+
+                            <p>Using Eq \eqref{ref160}, \eqref{ref161}, \eqref{ref162} and \eqref{ref172},
+                                \eqref{ref173}, \eqref{ref174} in \eqref{ref150}</p>
+
+                            $$
+                            \begin{equation}
+                            \nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
+                            \nabla_{W_1} L = \begin{bmatrix}
+                            \Delta l_{1}^{1} \times x^1 & \Delta l_{1}^{2} \times x^1\\
+                            \Delta l_{1}^{1} \times x^2 & \Delta l_{1}^{2} \times x^2\\
+                            \Delta l_{1}^{1} \times x^3 & \Delta l_{1}^{2} \times x^3\\
+                            \end{bmatrix}
+                            \label{ref175} \tag{75}
+                            \end{equation}
+                            $$
+
+                            <p>Using the notation used in Eq \eqref{ref132}, let </p>
+
+                            $$
+                            \begin{equation}
+                            \Delta l_1=\begin{bmatrix}
+                            \Delta l_{1}^{1} & \Delta l_{1}^{2} \\
+                            \end{bmatrix}
+                            \label{ref176} \tag{76}
+                            \end{equation}
+                            $$
+
+                            <p>Using Eq \eqref{ref176} in \eqref{ref175}, we get:</p>
+
+                            $$
+                            \begin{align}
+                            \left[ \frac{\partial L}{\partial W_1} \right]_{\scriptscriptstyle 3 \times 2} = \left[
+                            \begin{array}{c} x^1 \\ x^2 \\ x^3 \end{array} \right]_{\scriptscriptstyle 3 \times 1} .
+                            \left[ \Delta l_{1}^{1} \quad \Delta l_{1}^{2} \right]_{\scriptscriptstyle 1 \times 2}
+                            \label{ref177} \tag{77}
+                            \end{align}
+                            $$
+                            <p>Note that,</p>
+
+                            $$
+                            \begin{align}
+                            \Delta l_1 = \left[ \Delta l_{1}^{1} \quad \Delta l_{1}^{2} \right] \tag{76}
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \Delta l_{1}^{1} = \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \tag{59}
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \Delta l_{1}^{2} = \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \tag{71}
+                            \end{align}
+                            $$
+
+                            <p>Thus,</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \label{ref178} \tag{78} \\
+                            \end{align}
+                            $$
+
+                            <p>Therefore, </p>
+
+                            $$
+                            \begin{align}
+                            \Delta l_1 &= \left[ \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \quad \Delta l_{2}
+                            * w_2^2 \times (l_1^2) \times (1-l_1^2) \right] \\
+                            &= (\left[ \Delta l_{2} \right]_{\scriptscriptstyle 1 \times 1} . \left[ W_2 ^\intercal
+                            \right]_{\scriptscriptstyle 1 \times 2}) \times (l_1) \times (1-l_1) \label{ref179} \tag{79}
+                            \end{align}
+                            $$
+                            <p><strong>To summarize the key equations:</strong></p>
+
+                            \begin{align}
+                            \Delta l_{2} &= (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \tag{46} \\
+                            \end{align}
+
+                            \begin{align}
+                            \Delta l_{1} &= (\left[ \Delta l_{2} \right] . \left[ W_2 ^\intercal \right]) \times (l_1)
+                            \times (1-l_1) \tag{79}\\
+                            \end{align}
+
+                            <p>$$
+                                \begin{align}
+                                \frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \tag{78} \\
+                                \end{align}
+                                $$</p>
+
+                            <p>$$
+                                \begin{align}
+                                \frac{\partial L}{\partial W_2} &= [l_{1}]^\intercal . \Delta l_{2} \tag{49.1} \\
+                                \end{align}
+                                $$</p>
+                            <p>Now, using these 4 equations - \eqref{ref146}, \eqref{ref179}, \eqref{ref1491}, and
+                                \eqref{ref178}, one can directly code (bare bones) training algorithm. The following
+                                code is borrowed from the <a
+                                    href="http://iamtrask.github.io/2015/07/27/python-network-part2/#viewSource">blog
+                                    post</a> of Andrew Trask</p>
+                            <pre><code>import numpy as np
+
+                                        X = np.array([0,0,1])
+                                        y = np.array([0])
+                                        
+                                        alpha = 0.5  # learning rate - hyperparameter
+                                        
+                                        W_1 = np.random.random((3,2))
+                                        W_2 = np.random.random((2,1))
+                                        
+                                        for i in range(1000):
+                                        
+                                            layer_1 = 1/(1+np.exp(-(np.dot(X,W_1))))
+                                            layer_2 = 1/(1+np.exp(-(np.dot(layer_1,W_2))))
+                                        
+                                            layer_2_delta = (layer_2 - y)*(layer_2*(1-layer_2))
+                                            layer_1_delta = layer_2_delta.dot(W_2.T)*(layer_1*(1-layer_1))
+                                        
+                                            W_1 = W_1 - alpha * (layer_1.T).dot(layer_2_delta)
+                                            W_2 = W_2 - alpha * (X.T).dot(layer_1_delta)
+                                        </code></pre>
+                            </code></pre>
+
+
+
+
+
+
+
+
+
+                        </div>
+                </div>
+                </article>
+            </div>
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Gradients - Part 4a</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            less than 1 minute read
+                        </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Sep 04, 2014
+
+                            </time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+                            <p><strong>Part 4 of computing gradients for training Neural Nets</strong></p>
+                            <p><strong>2 layer network, single training example (vector)</strong></p>
+                            <p>In this post we will consider 2 type of networks. In first network, hidden layer has only
+                                1 node while in second
+                                network, hidden layer has more
+                                than 1 node. Lets start with the case of hidden layer with only 1 node. This part is bit
+                                lengthy, but fundamentally not very different from earlier parts. Keep calm and read on
+                                :-)
+                            </p>
+                            <p>1 hidden layer with 1 node</p>
+                            <p class="center two-thirds"><a href="/images/NN_4_1.jpeg"><img
+                                        src="/images/NN_4_1.jpeg"></a></p>
+
+                            <p>Neural net with 2 layer, 1 node in hidden layer. Input is a vector</p>
+
+                            <p>First layer (\(l_1\)) has weight matrix \([W_1]_{3 \times 1}\)</p>
+                            $$
+                            \begin{equation}
+                            W_1=\begin{bmatrix}
+                            w_{1}^{1} \\
+                            w_{1}^{2} \\
+                            w_{1}^{3} \\
+                            \end{bmatrix}
+                            \end{equation}
+                            $$
+
+                            <p>Second layer (\(l_2\)) has weight matrix \([W_2]_{1 \times 1}\) which is a scalar</p>
+
+                            $$
+                            \begin{equation}
+                            W_2=\begin{bmatrix}
+                            w_{2} \\
+                            \end{bmatrix}
+                            \end{equation}
+                            $$
+
+                            <h5>Input & Output definitions</h5>
+
+                            <p>Input is \((\vec{X},y)\) : \(\vec{X}\) is a vector, while \(y\) is a scalar.</p>
+
+                            <p>\(X = [x^1 ~~x^2 ~~x^3]\) &nbsp; &nbsp; &nbsp; \(x^i = i^{th}\) component of \(\vec{X}\).
+                            </p>
+
+                            <p>Thus, in matrix form \(x,y\) are \([X]_{1\times 3}\) and \([y]_{1\times 1}\).</p>
+
+                            <p>Let \( l_1 \) be output of layer 1. In matrix format, \([l_1]_{1\times 1}\)</p>
+
+                            $$
+                            \begin{align}
+                            l_1 & = \sigma ([X] . [W_1]) \label{ref0} \tag{1.1} \\
+                            & = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref10} \tag{1.2} \\
+                            & = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}}
+                            \label{ref101} \tag{1.3}
+                            \end{align}
+                            $$
+
+                            <p>\( \hat{y} \) is predicted output. In matrix format, \([\hat{y}]_{1\times 1}\)</p>
+
+                            $$
+                            \begin{align}
+                            \hat{y} & = \sigma ([l_1] . [W_2]) \label{ref11} \tag{2.1} \\
+                            & = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref112} \tag{2.2} \\
+                            & = \frac{1}{1 + e^{-(l_1 w_2)}} \label{ref113} \tag{2.3} \\
+                            \end{align}
+                            $$
+                            <h5>Loss</h5>
+                            <p>Like before, we will use half of squared error loss. \( L = \frac{1}{2} (y - \hat{y})^{2}
+                                \)</p>
+
+                            <h5>Gradients</h5>
+                            <p>There are 2 sets of gradients: \(\nabla_{W_1} L\) and \(\nabla_{W_2} L\). Let us first
+                                compute \(\nabla_{W_2} L\)</p>
+
+                            <p><strong>\([\nabla_{W_2} L]_{1\times 1}\)</strong></p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial W_2} & = \frac{\partial L}{\partial \hat{y}} \times
+                            \frac{\partial \hat{y}}{\partial W_2} \label{ref12} \tag{3}\\
+                            \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times
+                            (-1) \label{ref13} \tag{4}\\
+                            \frac{\partial \hat{y}}{\partial W_2} &= \bigg( \frac{1}{1 + e^{-[l_1] . [W_2]}} \bigg)
+                            \times \bigg(1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \bigg) \times l_1 \\
+                            & = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) \times l_1 \dots &&
+                            \text{using \eqref{ref11}} \label{ref14} \tag{5}\\
+                            & = \hat{y} \times (1- \hat{y}) \times l_1 \dots && \text{using \eqref{ref11}} \label{ref15}
+                            \tag{6}\\
+                            \end{align}
+                            $$
+
+                            <p>Substituting \eqref{ref13} & \eqref{ref15} in \eqref{ref12}, we get</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial W_2} &= \bigg( (-1) \times (y - \hat{y}) \bigg) \times \bigg(
+                            \hat{y} \times (1- \hat{y}) \times l_1 \bigg)\\
+                            &= \bigg( -(y - \hat{y}) \bigg) \times \bigg( \hat{y} \times (1- \hat{y}) \times l_1
+                            \bigg)\\
+                            &= (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times l_1 \label{ref16} \tag{7} \\
+                            \end{align}
+                            $$
+
+
+                            <p>Let,</p>
+
+                            \begin{align}
+                            \Delta l_{2} &= (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \label{ref17} \tag{8} \\
+                            \end{align}
+
+                            <p>Then, using eq \eqref{ref17}, eq \eqref{ref16} reduces to:</p>
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial W_2} &= \Delta l_{2} \times l_1 \\
+                            & = \Delta l_{2} * l_1 \\
+                            & = [l_1]^\intercal . \Delta l_{2} \label{ref18} \tag{9} \\
+                            \end{align}
+                            $$
+
+                            <p><strong>\([\nabla_{W_1} L]_{\scriptscriptstyle 3\times 1}\)</strong></p>
+
+                            <p>Now let us compute \(\nabla_{W_1} L\)</p>
+
+                            $$
+                            \begin{equation}
+                            \nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
+                            \nabla_{W_1} L = \begin{bmatrix}
+                            \frac{\partial L}{\partial w_{1}^{1}} \\
+                            \frac{\partial L}{\partial w_{1}^{2}} \\
+                            \frac{\partial L}{\partial w_{1}^{3}} \\
+                            \end{bmatrix}
+                            \label{ref20} \tag{10}
+                            \end{equation}
+                            $$
+                            <p>First, let's compute only \(\frac{\partial L}{\partial w_{1}^{1}}\)</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_{1}^{1}} & = \frac{\partial L}{\partial \hat{y}} \times
+                            \frac{\partial \hat{y}}{\partial l_1} \times \frac{\partial l_1}{\partial w_1^1}
+                            \label{ref21} \tag{11}\\
+                            \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times
+                            (-1) \label{ref22} \tag{12}\\
+
+                            \frac{\partial \hat{y}}{\partial l_1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)}
+                            \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * w_2 \\
+                            & = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * w_2 \dots && \text{using
+                            \eqref{ref11}} \label{ref23} \tag{13}\\
+                            & = \hat{y} \times (1- \hat{y}) * w_2 \dots && \text{using \eqref{ref11}} \label{ref24}
+                            \tag{14}\\
+
+                            \frac{\partial l_1}{\partial w_1^1} &= \big{(} \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} \times
+                            \big{(}1- \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} * x^1 \label{ref25} \tag{15}\\
+                            & = l_1 \times (1- l_1) * x^1 \dots && \text{using \eqref{ref11}} \label{ref26} \tag{16}\\
+
+                            \end{align}
+                            $$
+
+                            <p>Combining, eq \eqref{ref22}, \eqref{ref24}, and \eqref{ref26}:</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_{1}^{1}} & = \big(-(y - \hat{y}) \big) \times \big( \hat{y}
+                            \times (1- \hat{y}) \times w_2 \big) \times \big( l_1 \times (1- l_1) \times x^1 \big) \\
+                            & = \big((\hat{y} - y)\hat{y}(1- \hat{y}) \times w_2 \big) \times \big( l_1 \times (1- l_1)
+                            \times x^1 \big) \\
+                            & = \big(\Delta l_{2} \times w_2 \times l_1 \times (1- l_1) \big) \times x^1 \dots &&
+                            \text{using \eqref{ref17}} \label{ref27} \tag{17}\\
+                            \end{align}
+                            $$
+                            <p>Let,</p>
+
+                            \begin{align}
+                            \Delta l_{1} = \Delta l_{2} \times w_2 \times l_1 \times (1- l_1) \label{ref28} \tag{18}
+                            \end{align}
+
+                            Then, eq \eqref{ref27} reduces to:
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_{1}^{1}} & = \Delta l_{1} \times x^1 \label{ref29} \tag{19} \\
+                            \end{align}
+                            $$
+
+                            Likewise,
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_{1}^{2}} & = \Delta l_{1} \times x^2 \label{ref30} \tag{20} \\
+                            \frac{\partial L}{\partial w_{1}^{3}} & = \Delta l_{1} \times x^3 \label{ref31} \tag{21} \\
+                            \end{align}
+                            $$
+
+                            <p>Using eq \eqref{ref29}, \eqref{ref30}, and \eqref{ref31} in \eqref{ref20}:</p>
+
+                            $$
+                            \begin{equation}
+                            \nabla_{W_1} L = \begin{bmatrix}
+                            \Delta l_{1} \times x^1 \\
+                            \Delta l_{1} \times x^2 \\
+                            \Delta l_{1} \times x^3 \\
+                            \end{bmatrix}
+                            \label{ref32} \tag{22}
+                            \end{equation}
+                            $$
+
+                            $$
+                            \frac{\partial L}{\partial W_1} = \left[ \begin{array}{c} x^1 \\ x^2 \\ x^3 \end{array}
+                            \right]_{\scriptscriptstyle 3 \times 1}. \left[ \Delta l_{1} \right]_{\scriptscriptstyle 1
+                            \times 1}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \\
+                            \end{align}
+                            $$
+                        </div>
+                </div>
+                </article>
+            </div>
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Gradients - Part 3</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            less than 1 minute read
+                        </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Aug 30, 2014
+
+                            </time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+                            <p><strong>1 layer network, multiple training examples (each example is a
+                                    vector)</strong></p>
+                            <p><strong>Multiple training examples correspond to the scenario of batch training. Each
+                                    input is still a vector. Our neural net still has 1 layer.
+                                    For simplicity, assume we have 4 examples, each having 3 components.
+                                </strong></p>
+                            <p class="center two-thirds"><a href="/images/NN_2_2.jpeg"><img
+                                        src="/images/NN_2_2.jpeg"></a></p>
+                            <h4>Weights</h4>
+
+                            <p>W, weight matrix is $$[W]_{\scriptscriptstyle 3 \times 1}$$</p>
+
+                            $$
+                            \begin{equation}
+                            W=\begin{bmatrix}
+                            w_{1} \\
+                            w_{2} \\
+                            w_{3} \\
+                            \end{bmatrix}
+                            \end{equation}
+                            $$
+
+                            <h4>Input & Output definitions</h4>
+
+                            <p>Input <strong>X</strong> now is a matrix \( [X]_{\scriptscriptstyle 4 \times 3} \).
+                                \(X_i\) is the \(i^{th}\) sample. So, we now have <strong>4</strong> examples \(X_1
+                                \ldots X_4\), each of which is a vector with <strong>3</strong> components.
+                                \(x_{i}^{j}\) is the \(j^{th}\) component of the \(i^{th}\) sample. So</p>
+
+                            $$
+                            \begin{equation}
+                            X=\begin{bmatrix}
+                            x_{1}^{1} & x_{1}^{2} & x_{1}^{3} \\
+                            x_{2}^{1} & x_{2}^{2} & x_{2}^{3} \\
+                            x_{3}^{1} & x_{3}^{2} & x_{3}^{3} \\
+                            x_{4}^{1} & x_{4}^{2} & x_{4}^{3} \\
+                            \end{bmatrix}
+                            \end{equation}
+                            $$
+
+                            <p>\(\vec{y}\) is a vector.</p>
+
+
+                            $$
+                            \begin{equation}
+                            y=\begin{bmatrix}
+                            y_{1} \\
+                            y_{2} \\
+                            y_{3} \\
+                            y_{4} \\
+                            \end{bmatrix}
+                            \end{equation}
+                            $$
+                            <p>$$y_i$$ = True label for $$i^{th}$$ example.</p>
+
+                            <p>Likewise, $$\vec{\hat{y}}$$ is a vector where</p>
+
+
+                            $$
+                            \begin{equation}
+                            \hat{y}=\begin{bmatrix}
+                            \hat{y}_{1} \\
+                            \hat{y}_{2} \\
+                            \hat{y}_{3} \\
+                            \hat{y}_{4} \\
+                            \end{bmatrix}
+                            \end{equation}
+                            $$
+
+                            <p>$$\hat{y}_i$$ = predicted label for $$i^{th}$$ example. The value of $$\hat{y}_i$$
+                                is computed using \eqref{ref10}:</p>
+
+                            $$
+                            \hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times
+                            w_3)}} \label{ref10} \tag{0}
+                            $$
+
+                            <h4>Loss</h4>
+
+                            <p>Like before, we will use half of squared error loss, but in this case, it is the total
+                                gap in all 4 predictions. Therefore,</p>
+
+                            $$ L = \sum\limits_{i=1}^{4} \frac{1}{2} (y_i - \hat{y}_i)^{2} $$
+
+                            <h4>Gradients</h4>
+
+                            <p>Let's compute gradients.</p>
+
+                            $$
+                            \begin{equation}
+                            \nabla_{W} L = \frac{\partial L}{\partial W} \\
+                            \nabla_{W} L = \begin{bmatrix}
+                            \frac{\partial L}{\partial w_{1}} \\
+                            \frac{\partial L}{\partial w_{2}} \\
+                            \frac{\partial L}{\partial w_{3}} \\
+                            \end{bmatrix}
+                            \label{ref11} \tag{1}
+                            \end{equation}
+                            $$
+
+                            <p>First, let's compute only \( \frac{\partial L}{\partial w_{1}} \)</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1} &= \frac{\partial (\sum\limits_{i=1}^{4} \frac{1}{2} (y_i -
+                            \hat{y}_i)^{2})}{\partial w_1} \\
+                            & = \sum\limits_{i=1}^{4} \frac{\partial (\frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial w_1}
+                            \\
+                            & = \sum\limits_{i=1}^{4} \frac{\partial (\frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial
+                            \hat{y}_i} \times \frac{\partial \hat{y}_i}{w_1} \tag{2} \label{ref12}
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \frac{\partial (\frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial \hat{y}_i} = (-1) \times (y_i -
+                            \hat{y}_i) \tag{3} \label{ref13}
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \frac{\partial \hat{y}_i}{w_1} &= \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 +
+                            x_{i}^{3} \times w_3)(1 - \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3}
+                            \times w_3)) \times x_{i}^{1} \\
+                            & = \sigma( X_i . [W])(1 - \sigma( X_i . [W])) \times x_{i}^{1} \tag{4} \label{ref14}
+                            \end{align}
+                            $$
+
+                            <p>Using \eqref{ref13} and \eqref{ref14} in \eqref{ref12}, we get:</p>
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1} &= \sum\limits_{i=1}^{4} -(y_i - \hat{y}_i) \cdot
+                            [\sigma(X_i \cdot [W])(1 - \sigma(X_i \cdot [W])) \times x_{i}^{1}] \label{ref15} \tag{5} \\
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1} &= -(y_1 - \hat{y}_1) \cdot [\sigma(X_1 \cdot [W])(1 -
+                            \sigma(X_1 \cdot [W])) \times x_{1}^{1}] \\
+                            &\quad -(y_2 - \hat{y}_2) \cdot [\sigma(X_2 \cdot [W])(1 - \sigma(X_2 \cdot [W])) \times
+                            x_{2}^{1}] \\
+                            &\quad -(y_3 - \hat{y}_3) \cdot [\sigma(X_3 \cdot [W])(1 - \sigma(X_3 \cdot [W])) \times
+                            x_{3}^{1}] \\
+                            &\quad -(y_4 - \hat{y}_4) \cdot [\sigma(X_4 \cdot [W])(1 - \sigma(X_4 \cdot [W])) \times
+                            x_{4}^{1}] \\
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1} &= (\hat{y}_1 - y_1) \cdot [\sigma(X_1 \cdot [W])(1 -
+                            \sigma(X_1 \cdot [W])) \times x_{1}^{1}] + \\
+                            &\quad (\hat{y}_2 - y_2) \cdot [\sigma(X_2 \cdot [W])(1 - \sigma(X_2 \cdot [W])) \times
+                            x_{2}^{1}] + \\
+                            &\quad (\hat{y}_3 - y_3) \cdot [\sigma(X_3 \cdot [W])(1 - \sigma(X_3 \cdot [W])) \times
+                            x_{3}^{1}] + \\
+                            &\quad (\hat{y}_4 - y_4) \cdot [\sigma(X_4 \cdot [W])(1 - \sigma(X_4 \cdot [W])) \times
+                            x_{4}^{1}] \\
+                            \end{align}
+                            \label{ref16} \tag{6}
+                            $$
+                            $$
+                            \begin{align}
+                            \Delta l_{1}^{i} &= ((\hat{y}_i - y_i) \cdot [\sigma(X_i \cdot [W])(1 - \sigma(X_i \cdot
+                            [W]))]) \quad \forall i \in (1,4) \label{ref17} \tag{7} \\
+                            \end{align}
+                            $$
+
+                            Using \eqref{ref17} in \eqref{ref16}, we get:
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1} &= \Delta l_{1}^{1} \times x_{1}^{1} + \Delta l_{1}^{2}
+                            \times x_{2}^{1} + \Delta l_{1}^{3} \times x_{3}^{1} + \Delta l_{1}^{4} \times x_{4}^{1}
+                            \label{ref18} \tag{8} \\
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_2} &= \Delta l_{1}^{1} \times x_{1}^{2} + \Delta l_{1}^{2}
+                            \times x_{2}^{2} + \Delta l_{1}^{3} \times x_{3}^{2} + \Delta l_{1}^{4} \times x_{4}^{2}
+                            \label{ref19} \tag{9} \\
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_3} &= \Delta l_{1}^{1} \times x_{1}^{3} + \Delta l_{1}^{2}
+                            \times x_{2}^{3} + \Delta l_{1}^{3} \times x_{3}^{3} + \Delta l_{1}^{4} \times x_{4}^{3}
+                            \label{ref20} \tag{10} \\
+                            \end{align}
+                            $$
+
+                            $$
+                            \begin{equation}
+                            \frac{\partial L}{\partial W} = \begin{bmatrix}
+                            \Delta l_{1}^{1} \times x_{1}^{1} + \Delta l_{1}^{2} \times x_{2}^{1} + \Delta l_{1}^{3}
+                            \times x_{3}^{1} + \Delta l_{1}^{4} \times x_{4}^{1} \\
+                            \Delta l_{1}^{1} \times x_{1}^{2} + \Delta l_{1}^{2} \times x_{2}^{2} + \Delta l_{1}^{3}
+                            \times x_{3}^{2} + \Delta l_{1}^{4} \times x_{4}^{2} \\
+                            \Delta l_{1}^{1} \times x_{1}^{3} + \Delta l_{1}^{2} \times x_{2}^{3} + \Delta l_{1}^{3}
+                            \times x_{3}^{3} + \Delta l_{1}^{4} \times x_{4}^{3} \\
+                            \end{bmatrix}
+                            \label{ref21} \tag{11}
+                            \end{equation}
+                            $$
+
+                            <p>Simplifying</p>
+                            $$
+                            \frac{\partial L}{\partial W} = \begin{bmatrix} x_{1}^{1} & x_{2}^{1} & x_{3}^{1} &
+                            x_{4}^{1} \\ x_{1}^{2} & x_{2}^{2} & x_{3}^{2} & x_{4}^{2} \\ x_{1}^{3} & x_{2}^{3} &
+                            x_{3}^{3} & x_{4}^{3} \end{bmatrix} \cdot \left[ \begin{array}{c} \Delta l_{1}^{1} \\ \Delta
+                            l_{1}^{2} \\ \Delta l_{1}^{3} \\ \Delta l_{1}^{4} \end{array} \right]
+                            $$
+
+                            $$
+                            \frac{\partial L}{\partial W} = \begin{bmatrix} x_{1}^{1} & x_{2}^{1} & x_{3}^{1} &
+                            x_{4}^{1} \\ x_{1}^{2} & x_{2}^{2} & x_{3}^{2} & x_{4}^{2} \\ x_{1}^{3} & x_{2}^{3} &
+                            x_{3}^{3} & x_{4}^{3} \end{bmatrix} \cdot \left[ \begin{array}{c} \Delta l_{1} \end{array}
+                            \right]
+                            $$
+
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial W} &= [X^{T}] \cdot \Delta l_{1} \\
+                            \end{align}
+                            $$
+
+
+
+                        </div>
+                </div>
+                </article>
+            </div>
+
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Gradients - Part 2</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        less than 1 minute read
+                    </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Aug 28, 2014</time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+                            <p><strong>Part 2 of computing gradients for training Neural Nets</strong></p>
+                            <p><strong>1 layer network, 1 input (vector)</strong>
+                            </p>
+                            <p>
+                                Our neural net still has 1 layer, but now the input is a vector.
+
+                            </p>
+                            <p class="center two-thirds"><a href="/images/NN_2_2.jpeg"><img
+                                        src="/images/NN_2_2.jpeg"></a></p>
+                            <p>Neural net with 1 layer, but input is vector</p>
+                            <p>Input is \( (\vec{X}, y) \): \( \vec{X} \) is a vector, while \( y \) is a scalar.</p>
+                            <p>Let \( X = [x^1 ~~x^2 ~~x^3] \) where \( x^i \) is the \( i^{th} \) component of \(
+                                \vec{X} \).</p>
+                            <p>Thus, in matrix form, \( \vec{x} \) and \( y \) are represented as:</p>
+                            <p>\( [X]_{1 \times 3} \) and \( [y]_{1 \times 1} \).</p>
+                            <p>Let \( W \), the weight matrix, be:</p>
+                            $$
+                            \begin{equation}
+                            W = \begin{bmatrix}
+                            w_{1} \\
+                            w_{2} \\
+                            w_{3} \\
+                            \end{bmatrix}
+                            \end{equation}
+                            $$
+                            <p>Let \( \hat{y} \) be the predicted output. In matrix format, \( [\hat{y}]_{1 \times 1} \)
+                                is given by:</p>
+                            $$
+                            \begin{align}
+                            \hat{y} & = \sigma([X] . [W]) \label{ref101} \tag{10.1} \\
+                            & = \frac{1}{1 + e^{-[X] . [W]}} \label{ref102} \tag{10.2} \\
+                            & = \frac{1}{1 + e^{-(x^1 w_1 + x^2 w_2 + x^3 w_3)}} \label{ref10.3} \tag{10.3}
+                            \end{align}
+                            $$
+                            <p>For the loss function, we use half of the squared error loss:</p>
+                            $$ L = \frac{1}{2}(y - \hat{y})^{2} $$
+                            <p>Let's first compute the gradients:</p>
+                            $$
+                            \begin{equation}
+                            \nabla_{W} L = \frac{\partial L}{\partial W} \\
+                            \nabla_{W} L = \begin{bmatrix}
+                            \frac{\partial L}{\partial w_{1}} \\
+                            \frac{\partial L}{\partial w_{2}} \\
+                            \frac{\partial L}{\partial w_{3}} \\
+                            \end{bmatrix}
+                            \tag*{11}
+                            \end{equation}
+                            $$
+                            <p>So, let's compute \( \frac{\partial L}{\partial w_{1}} \):</p>
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1} &= \frac{\partial L}{\partial \hat{y}} * \frac{\partial
+                            \hat{y}}{\partial w_1} \label{eq:ref12} \tag{12} \\
+                            \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times
+                            (-1) \label{eq:ref13} \tag{13} \\
+                            \frac{\partial \hat{y}}{\partial w_1} &= \left( \frac{1}{1 + e^{-[X] \cdot [W]}} \right)
+                            \times \left(1- \frac{1}{1 + e^{-[X] \cdot [W]}} \right) \times x_1 \dots \text{using
+                            \eqref{eq:ref102} \& \eqref{eq:ref103}} \label{eq:ref14} \tag{14}\\
+                            & = \sigma ([X] \cdot [W]) \times (1- \sigma ([X] \cdot [W])) \times x_1 \dots \text{using
+                            \eqref{eq:ref101}} & \label{eq:ref15} \tag{15}\\
+                            & = \hat{y} \times (1- \hat{y}) \times x_1 \dots \text{using \eqref{eq:ref101}} &
+                            \label{eq:ref16} \tag{16}\\
+                            \end{align}
+                            $$
+
+                            <p>Substituting \eqref{ref13} and \eqref{ref16} into \eqref{ref12}, we get:</p>
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_1} &= \left( (-1) \times (y - \hat{y}) \right) \times \left(
+                            \hat{y} \times (1 - \hat{y}) \times x_1 \right) \\
+                            & = -(y - \hat{y}) \times \hat{y} \times (1 - \hat{y}) \times x_1 \\
+                            & = (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times x_1
+                            \end{align}
+                            $$
+                            <p>Thus, in general:</p>
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial w_i} &= (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times
+                            x_i \label{ref17} \tag{17}
+                            \end{align}
+                            $$
+                            <p>Using \eqref{ref17} in \eqref{ref11}:</p>
+                            $$
+                            \begin{equation}
+                            \frac{\partial L}{\partial W} = \begin{bmatrix}
+                            (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times x_1 \\
+                            (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times x_2 \\
+                            (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times x_3 \\
+                            \end{bmatrix}
+                            \label{ref18} \tag{18}
+                            \end{equation}
+                            $$
+                            $$
+                            \begin{equation}
+                            = \begin{bmatrix}
+                            x^1 \\
+                            x^2 \\
+                            x^3 \\
+                            \end{bmatrix}
+                            * [(\hat{y} - y) \times \hat{y} \times (1 - \hat{y})]
+                            \label{ref19} \tag{19}
+                            \end{equation}
+                            $$
+                            <p>Let \( \Delta l_{1} = (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \).</p>
+                            <p>Using \( \eqref{ref20} \) in \( \eqref{ref19} \), we get:</p>
+                            $$
+                            \begin{align}
+                            \frac{\partial L}{\partial W} &= [X^{T}] . \Delta l_{1} \\
+                            \end{align}
+                            $$
+
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="list__item">
+                <div class="blog-post-card small " onclick="expandCard(this)">
+                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <h2 class="archive__item-title" itemprop="headline" style="margin-top: 5px;">
+                            <a>Gradients - Part 1</a>
+                        </h2>
+                        <!-- <p class="page__meta">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        less than 1 minute read
+                    </p> -->
+                        <p class="page__date">
+                            <strong>
+                                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                                Published:
+                            </strong>
+                            <time datetime="2013-08-14T00:00:00-07:00">Aug 26, 2014</time>
+                        </p>
+                        <p class="archive__item-excerpt" itemprop="description">
+                        <div class="archive__item-excerpt">
+                            <p><strong>Part 1 of computing gradients for training Neural Nets</strong></p>
+                            <p><strong>1 layer network, 1 training example (scalar)</strong></p>
+                            <p>
+                                Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
+
+                            </p>
+                            <p class="center two-thirds"><a href="/images/NN_1_1.jpeg"><img
+                                        src="/images/NN_1_1.jpeg"></a></p>
+
+
+                            <p>Input is (x,y): x, y both are scalars. (Later on everything will be a matrix, so just to
+                                be using the same notation. We will abuse the notation to express scalars as matrices of
+                                dimension \(1 \times 1\)). Thus, in matrix form x, y are
+                                \[ [X]_{\scriptscriptstyle 1\times 1} \] and \[ [y]_{\scriptscriptstyle 1\times 1} \].
+                                Let \(W\) be the weight matrix. In this case, it's
+                                \[ [W]_{\scriptscriptstyle 1\times 1} \].</p>
+
+
+                            <p>Let \( \hat{y} \) be the predicted output. Then,</p>
+                            \[ \hat{y} = \sigma (Wx) = \frac{1}{1 + e^{-[X] \cdot [W]}} \label{ref0} \tag{0} \]
+
+                            <p>Let loss be squared error loss. For ease of math, we take \( \frac{1}{2} \) of it.</p>
+                            \[ L = \frac{1}{2} (y - \hat{y})^{2} \]
+
+                            <p>Let's compute gradients,</p>
+                            \[ \nabla_{W} L = \frac{\partial L}{\partial W} \]
+
+
+                            <div>
+                                <p> \[ \frac{\partial L}{\partial W} = \frac{\partial L}{\partial \hat{y}} \times
+                                    \frac{\partial \hat{y}}{\partial W} \label{ref1} \tag{1} \] </p>
+                                <p> \[ \frac{\partial L}{\partial \hat{y}} = \frac{1}{2} \times 2 \times (y -
+                                    \hat{y})^{1} \times (-1) \label{ref2} \tag{2} \] </p>
+                                <p> \[ \frac{\partial \hat{y}}{\partial W} = \left( \frac{1}{1 + e^{-[X] \cdot [W]}}
+                                    \right) \times \left(1- \frac{1}{1 + e^{-[X] \cdot [W]}} \right) * X \dots
+                                    \text{using [Eq C, Part-0]} \label{ref3} \tag{3} \] </p>
+                                <p> \[ = \sigma (Wx) \times (1- \sigma (Wx)) * X \dots \text{using \(\eqref{ref0}\)} \]
+                                </p>
+                                <p> \[ = \hat{y} \times (1 - \hat{y}) * X \dots \text{using \(\eqref{ref0}\)}
+                                    \label{ref33} \] </p>
+                            </div>
+
+                            <div>
+                                <p> Substituting \(\eqref{ref2}\) & \(\eqref{ref3}\) in \(\eqref{ref1}\), we get </p>
+                                <p> \[ \frac{\partial L}{\partial W} = \left( (-1) \times (y - \hat{y}) \right) \times
+                                    \left( \hat{y} \times (1- \hat{y}) \times x \right) \] </p>
+                                <p> \[ = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x \] </p>
+                                <p> \[ = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times x \label{ref4} \tag{4}
+                                    \] </p>
+                            </div>
+
+                            <div>
+                                <p> Let, </p>
+                                <p> \[ \Delta l_{1} = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \label{ref5}
+                                    \tag{5} \] </p>
+                                <p> Then, eq \(\eqref{ref4}\) reduces to: </p>
+                                <p> \[ \frac{\partial L}{\partial W} = \Delta l_{1} \times x \] </p>
+                                <p> \[ = \Delta l_{1} * X \] </p>
+                                <p> \[ = [X^{T}] . \Delta l_{1} \label{ref6} \tag{6} \] </p>
+                            </div>
+
+
+
+
+                        </div>
+                    </article>
+                </div>
+
+            </div>
             <div class="list__item">
                 <div class="blog-post-card small " onclick="expandCard(this)">
                     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -1344,7 +3182,7 @@
                                 <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
                                 Published:
                             </strong>
-                            <time datetime="2013-08-14T00:00:00-07:00">Aug 08, 2016</time>
+                            <time datetime="2013-08-14T00:00:00-07:00">Aug 08, 2014</time>
                         </p>
                         <p class="archive__item-excerpt" itemprop="description">
                         <div class="archive__item-excerpt">
