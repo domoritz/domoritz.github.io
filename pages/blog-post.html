@@ -3050,20 +3050,23 @@
                             \end{equation}
                             $$
                             <p>So, let's compute \( \frac{\partial L}{\partial w_{1}} \):</p>
+
                             $$
                             \begin{align}
-                            \frac{\partial L}{\partial w_1} &= \frac{\partial L}{\partial \hat{y}} * \frac{\partial
-                            \hat{y}}{\partial w_1} \label{eq:ref12} \tag{12} \\
+                            \frac{\partial L}{\partial w_1} &= \frac{\partial L}{\partial \hat{y}} \times \frac{\partial
+                            \hat{y}}{\partial w_1} \label{eqref12} \tag{12} \\
                             \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times
-                            (-1) \label{eq:ref13} \tag{13} \\
+                            (-1) \label{eqref13} \tag{13} \\
                             \frac{\partial \hat{y}}{\partial w_1} &= \left( \frac{1}{1 + e^{-[X] \cdot [W]}} \right)
                             \times \left(1- \frac{1}{1 + e^{-[X] \cdot [W]}} \right) \times x_1 \dots \text{using
-                            \eqref{eq:ref102} \& \eqref{eq:ref103}} \label{eq:ref14} \tag{14}\\
+                            \eqref{eq:ref102} \& \eqref{eq:ref103}} \label{eqref14} \tag{14} \\
                             & = \sigma ([X] \cdot [W]) \times (1- \sigma ([X] \cdot [W])) \times x_1 \dots \text{using
-                            \eqref{eq:ref101}} & \label{eq:ref15} \tag{15}\\
-                            & = \hat{y} \times (1- \hat{y}) \times x_1 \dots \text{using \eqref{eq:ref101}} &
-                            \label{eq:ref16} \tag{16}\\
+                            \eqref{eq:ref101}} \label{eqref15} \tag{15} \\
+                            & = \hat{y} \times (1- \hat{y}) \times x_1 \dots \text{using \eqref{eq:ref101}}
+                            \label{eqref16} \tag{16}
                             \end{align}
+
+
                             $$
 
                             <p>Substituting \eqref{ref13} and \eqref{ref16} into \eqref{ref12}, we get:</p>
@@ -3079,7 +3082,7 @@
                             $$
                             \begin{align}
                             \frac{\partial L}{\partial w_i} &= (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times
-                            x_i \label{eq:ref17} \tag{17}
+                            x_i \label{eqref17} \tag{17}
                             \end{align}
                             $$
                             <p>Using \eqref{ref17} in \eqref{ref11}:</p>
@@ -3090,7 +3093,7 @@
                             (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times x_2 \\
                             (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times x_3 \\
                             \end{bmatrix}
-                            \label{eq:ref18} \tag{18}
+                            \label{eqref18} \tag{18}
                             \end{equation}
 
                             $$
@@ -3101,7 +3104,7 @@
                             x^3 \\
                             \end{bmatrix}
                             = [(\hat{y} - y) \times \hat{y} \times (1 - \hat{y})]
-                            \label{eq:ref19} \tag{19}
+                            \label{eqref19} \tag{19}
                             \end{equation}
                             $$
                             <p>Let \( \Delta l_{1} = (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \).</p>
