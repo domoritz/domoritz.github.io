@@ -2807,7 +2807,8 @@
 
                             $$
                             \hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times
-                            w_3)}} \label{ref10} \tag{0}
+                            w_3)}} \label{eq:ref10} \tag{0}
+
                             $$
 
                             <h4>Loss</h4>
@@ -2821,16 +2822,16 @@
 
                             <p>Let's compute gradients.</p>
 
-                            $$
-                            \begin{equation}
+                            $$\begin{equation}
                             \nabla_{W} L = \frac{\partial L}{\partial W} \\
                             \nabla_{W} L = \begin{bmatrix}
                             \frac{\partial L}{\partial w_{1}} \\
                             \frac{\partial L}{\partial w_{2}} \\
                             \frac{\partial L}{\partial w_{3}} \\
                             \end{bmatrix}
-                            \label{ref11} \tag{1}
+                            \label{eq:ref11} \tag{1}
                             \end{equation}
+
                             $$
 
                             <p>First, let's compute only \( \frac{\partial L}{\partial w_{1}} \)</p>
@@ -2842,15 +2843,17 @@
                             & = \sum\limits_{i=1}^{4} \frac{\partial (\frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial w_1}
                             \\
                             & = \sum\limits_{i=1}^{4} \frac{\partial (\frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial
-                            \hat{y}_i} \times \frac{\partial \hat{y}_i}{w_1} \tag{2} \label{ref12}
+                            \hat{y}_i} \times \frac{\partial \hat{y}_i}{w_1} \tag{2} \label{eq:ref12}
                             \end{align}
+
                             $$
 
                             $$
                             \begin{align}
-                            \frac{\partial (\frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial \hat{y}_i} = (-1) \times (y_i -
-                            \hat{y}_i) \tag{3} \label{ref13}
+                            \frac{\partial (\frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial \hat{y}_i} &= (-1) \times (y_i
+                            - \hat{y}_i) \tag{3} \label{eq:ref13}
                             \end{align}
+
                             $$
 
                             $$
@@ -2858,8 +2861,10 @@
                             \frac{\partial \hat{y}_i}{w_1} &= \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 +
                             x_{i}^{3} \times w_3)(1 - \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3}
                             \times w_3)) \times x_{i}^{1} \\
-                            & = \sigma( X_i . [W])(1 - \sigma( X_i . [W])) \times x_{i}^{1} \tag{4} \label{ref14}
+                            & = \sigma( X_i \cdot [W])(1 - \sigma( X_i \cdot [W])) \times x_{i}^{1} \tag{4}
+                            \label{eq:ref14}
                             \end{align}
+
                             $$
 
                             <p>Using \eqref{ref13} and \eqref{ref14} in \eqref{ref12}, we get:</p>
@@ -2867,21 +2872,9 @@
                             $$
                             \begin{align}
                             \frac{\partial L}{\partial w_1} &= \sum\limits_{i=1}^{4} -(y_i - \hat{y}_i) \cdot
-                            [\sigma(X_i \cdot [W])(1 - \sigma(X_i \cdot [W])) \times x_{i}^{1}] \label{ref15} \tag{5} \\
+                            [\sigma(X_i \cdot [W])(1 - \sigma(X_i \cdot [W])) \times x_{i}^{1}] \label{eq:ref15} \tag{5}
                             \end{align}
-                            $$
 
-                            $$
-                            \begin{align}
-                            \frac{\partial L}{\partial w_1} &= -(y_1 - \hat{y}_1) \cdot [\sigma(X_1 \cdot [W])(1 -
-                            \sigma(X_1 \cdot [W])) \times x_{1}^{1}] \\
-                            &\quad -(y_2 - \hat{y}_2) \cdot [\sigma(X_2 \cdot [W])(1 - \sigma(X_2 \cdot [W])) \times
-                            x_{2}^{1}] \\
-                            &\quad -(y_3 - \hat{y}_3) \cdot [\sigma(X_3 \cdot [W])(1 - \sigma(X_3 \cdot [W])) \times
-                            x_{3}^{1}] \\
-                            &\quad -(y_4 - \hat{y}_4) \cdot [\sigma(X_4 \cdot [W])(1 - \sigma(X_4 \cdot [W])) \times
-                            x_{4}^{1}] \\
-                            \end{align}
                             $$
 
                             $$
@@ -2895,13 +2888,27 @@
                             &\quad (\hat{y}_4 - y_4) \cdot [\sigma(X_4 \cdot [W])(1 - \sigma(X_4 \cdot [W])) \times
                             x_{4}^{1}] \\
                             \end{align}
-                            \label{ref16} \tag{6}
+
+                            $$
+
+                            $$\begin{align}
+                            \frac{\partial L}{\partial w_1} &= (\hat{y}_1 - y_1) \cdot [\sigma(X_1 \cdot [W])(1 -
+                            \sigma(X_1 \cdot [W])) \times x_{1}^{1}] + \label{eq:ref16-1} \tag{6} \\
+                            &\quad (\hat{y}_2 - y_2) \cdot [\sigma(X_2 \cdot [W])(1 - \sigma(X_2 \cdot [W])) \times
+                            x_{2}^{1}] + \label{eq:ref16-2} \\
+                            &\quad (\hat{y}_3 - y_3) \cdot [\sigma(X_3 \cdot [W])(1 - \sigma(X_3 \cdot [W])) \times
+                            x_{3}^{1}] + \label{eq:ref16-3} \\
+                            &\quad (\hat{y}_4 - y_4) \cdot [\sigma(X_4 \cdot [W])(1 - \sigma(X_4 \cdot [W])) \times
+                            x_{4}^{1}] \label{eq:ref16-4}
+                            \end{align}
+
                             $$
                             $$
                             \begin{align}
                             \Delta l_{1}^{i} &= ((\hat{y}_i - y_i) \cdot [\sigma(X_i \cdot [W])(1 - \sigma(X_i \cdot
-                            [W]))]) \quad \forall i \in (1,4) \label{ref17} \tag{7} \\
+                            [W]))]) \quad \forall i \in (1,4) \label{eq:ref17} \tag{7}
                             \end{align}
+
                             $$
 
                             Using \eqref{ref17} in \eqref{ref16}, we get:
@@ -2909,24 +2916,27 @@
                             \begin{align}
                             \frac{\partial L}{\partial w_1} &= \Delta l_{1}^{1} \times x_{1}^{1} + \Delta l_{1}^{2}
                             \times x_{2}^{1} + \Delta l_{1}^{3} \times x_{3}^{1} + \Delta l_{1}^{4} \times x_{4}^{1}
-                            \label{ref18} \tag{8} \\
+                            \label{eq:ref18} \tag{8}
                             \end{align}
+
                             $$
 
                             $$
                             \begin{align}
                             \frac{\partial L}{\partial w_2} &= \Delta l_{1}^{1} \times x_{1}^{2} + \Delta l_{1}^{2}
                             \times x_{2}^{2} + \Delta l_{1}^{3} \times x_{3}^{2} + \Delta l_{1}^{4} \times x_{4}^{2}
-                            \label{ref19} \tag{9} \\
+                            \label{eq:ref19} \tag{9}
                             \end{align}
+
                             $$
 
                             $$
                             \begin{align}
                             \frac{\partial L}{\partial w_3} &= \Delta l_{1}^{1} \times x_{1}^{3} + \Delta l_{1}^{2}
                             \times x_{2}^{3} + \Delta l_{1}^{3} \times x_{3}^{3} + \Delta l_{1}^{4} \times x_{4}^{3}
-                            \label{ref20} \tag{10} \\
+                            \label{eq:ref20} \tag{10}
                             \end{align}
+
                             $$
 
                             $$
@@ -2939,8 +2949,9 @@
                             \Delta l_{1}^{1} \times x_{1}^{3} + \Delta l_{1}^{2} \times x_{2}^{3} + \Delta l_{1}^{3}
                             \times x_{3}^{3} + \Delta l_{1}^{4} \times x_{4}^{3} \\
                             \end{bmatrix}
-                            \label{ref21} \tag{11}
+                            \label{eq:ref21} \tag{11}
                             \end{equation}
+
                             $$
 
                             <p>Simplifying</p>
@@ -3019,9 +3030,9 @@
                                 is given by:</p>
                             $$
                             \begin{align}
-                            \hat{y} & = \sigma([X] . [W]) \label{ref101} \tag{10.1} \\
-                            & = \frac{1}{1 + e^{-[X] . [W]}} \label{ref102} \tag{10.2} \\
-                            & = \frac{1}{1 + e^{-(x^1 w_1 + x^2 w_2 + x^3 w_3)}} \label{ref10.3} \tag{10.3}
+                            \hat{y} & = \sigma([X] \cdot [W]) \label{eq:ref101} \tag{10.1} \\
+                            & = \frac{1}{1 + e^{-[X] \cdot [W]}} \label{eq:ref102} \tag{10.2} \\
+                            & = \frac{1}{1 + e^{-(x^1 w_1 + x^2 w_2 + x^3 w_3)}} \label{eq:ref103} \tag{10.3}
                             \end{align}
                             $$
                             <p>For the loss function, we use half of the squared error loss:</p>
@@ -3068,7 +3079,7 @@
                             $$
                             \begin{align}
                             \frac{\partial L}{\partial w_i} &= (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times
-                            x_i \label{ref17} \tag{17}
+                            x_i \label{eq:ref17} \tag{17}
                             \end{align}
                             $$
                             <p>Using \eqref{ref17} in \eqref{ref11}:</p>
@@ -3079,18 +3090,18 @@
                             (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times x_2 \\
                             (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \times x_3 \\
                             \end{bmatrix}
-                            \label{ref18} \tag{18}
+                            \label{eq:ref18} \tag{18}
                             \end{equation}
+
                             $$
-                            $$
-                            \begin{equation}
-                            = \begin{bmatrix}
+                            $$\begin{equation}
+                            \begin{bmatrix}
                             x^1 \\
                             x^2 \\
                             x^3 \\
                             \end{bmatrix}
-                            * [(\hat{y} - y) \times \hat{y} \times (1 - \hat{y})]
-                            \label{ref19} \tag{19}
+                            = [(\hat{y} - y) \times \hat{y} \times (1 - \hat{y})]
+                            \label{eq:ref19} \tag{19}
                             \end{equation}
                             $$
                             <p>Let \( \Delta l_{1} = (\hat{y} - y) \times \hat{y} \times (1 - \hat{y}) \).</p>
@@ -3145,8 +3156,10 @@
 
 
                             <p>Let \( \hat{y} \) be the predicted output. Then,</p>
-                            \[ \hat{y} = \sigma (Wx) = \frac{1}{1 + e^{-[X] \cdot [W]}} \label{ref0} \tag{0} \]
 
+                            \[
+                            \hat{y} = \sigma (Wx) = \frac{1}{1 + e^{-[X] \cdot [W]}} \label{eq:ref0} \tag{0}
+                            \]
                             <p>Let loss be squared error loss. For ease of math, we take \( \frac{1}{2} \) of it.</p>
                             \[ L = \frac{1}{2} (y - \hat{y})^{2} \]
 
