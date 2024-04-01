@@ -184,24 +184,28 @@ To enhance people's ability to understand and communicate large and complex data
 
 {% assign filtered_mentoring = site.data.mentoring | where_exp:'item','item.hidden == null' %}
 {% for mentor in filtered_mentoring %}
-  <div class="date-container">
-    <span class="date">{{ mentor.year | replace: "-", "–" }}</span>
-    <h3>{{ mentor.title }}</h3>
-    <span class="right">{{ mentor.location }}</span>
-  </div>
-  <p>
-    <span class="muted">
-      {{ mentor.description }}
-    </span>
-    {% if mentor.who %}
-      <h4>Mentored:</h4>
-      <ul>
-      {% for person in mentor.who %}
-        <li class="muted">{% include person person=person %}</li>
-      {% endfor %}
-      </ul>
+  {% if mentor.names %}
+    <div class="date-container">
+      <span class="date">{{ mentor.year | replace: "-", "–" }}</span>
+      <h3>{{ mentor.relation }}</h3>
+      <span class="right">{{ mentor.location }}</span>
+    </div>
+    {% if mentor.note %}
+      <p class="muted">{{ mentor.note }}</p>
     {% endif %}
-  </p>
+    <ul>
+    {% for person in mentor.names %}
+      <li>{% include person person=person %}</li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <div class="date-container">
+      <span class="date">{{ mentor.year | replace: "-", "–" }}</span>
+      <h3>{% include person person=mentor.name %}</h3>
+      <span class="right">{{ mentor.location }}</span>
+    </div>
+    <p>{{ mentor.relation }}. {% if mentor.note %}<span class="muted">{{ mentor.note }}</span>{% endif %}</p>
+  {% endif %}
 {% endfor %}
 
 

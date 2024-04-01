@@ -1,122 +1,166 @@
-- title: "PhD Students"
-  year: 2020-2023
-  description: PhD Students I am (co-)advising at CMU.
+- name: Hwei-Shin Harriman
+  note: Co-advised with Josh Sunshine.
+  year: 2023-present
   location: CMU
-  who:
-    - Will Epperson
-    - Carol Xinyi Zheng
-    - Frank Elavsky
-    - Hwei-Shin Harriman
-- title: "Thesis Commitee"
-  year: 2020-2023
+  relation: PhD Student
+- name: Frank Elavsky
+  note: Co-advised with Patrick Carrington.
+  year: 2020-present
   location: CMU
-  who:
-    - Mary Beth Kery
-    - Kai Ye
-    - Tomas Cabezon Pedroso
-- title: "Thesis Commitee"
+  relation: PhD Student
+- name: Will Epperson
+  note: Co-advised with Adam Perer.
+  year: 2020-present
+  location: CMU
+  relation: PhD Student
+- name: Carol Xinyi Zheng
+  year: 2020-2022
+  location: CMU
+  relation: PhD Student
+
+- name: Mary Beth Kery
+  year: 2020
+  location: CMU
+  relation: Thesis Commitee
+- name: Kai Ye
+  year: 2020-2021
+  location: CMU
+  relation: Thesis Commitee
+- name: Tomas Cabezon Pedroso
+  year: 2023
+  location: CMU
+  relation: Thesis Commitee
+
+- name: Jeffrey Tao
   year: 2023
   location: Columbia University
-  who:
-    - Jeffrey Tao
-- title: "Research Assistants"
-  year: 2020-2023
+  relation: Thesis Commitee
+
+- name: Yanna Lin
+  year: 2024
   location: CMU
-  who:
+  relation: Visiting Researcher
+- name: Karim Benharrak
+  note: Co-advised with David Lindlbauer.
+  year: 2023
+  location: CMU
+  relation: Visiting Researcher
+
+- name: Péter Gyarmati
+  year: 2022-2024
+  note: Peter was at the University of Vienna. We worked on Draco2.
+  location: CMU
+  relation: Research Collaborator
+- name: Junran Yang
+  year: 2022-2024
+  note: Junran was at the University of Washington. We worked on Draco2, scalable visualization, and debugging visualizations.
+  location: CMU
+  relation: Research Collaborator
+- name: Zehua Zeng
+  year: 2022-2023
+  note: Zehua was at the University of Maryland. We worked on Draco2.
+  location: CMU
+  relation: Research Collaborator
+- name: Donny Bertucci
+  year: 2022-2023
+  note: Donny was at Oregon State and we worked together on Falcon.
+  location: CMU
+  relation: Research Collaborator
+- name: Lukas Hermann
+  year: 2020-2024
+  note: Lukas and I worked together on Vega visualizations. He now works at Databricks.
+  location: CMU
+  relation: Research Collaborator
+
+- names:
+    - Angie Boggust
+    - Venkatesh Sivaraman
+  year: 2023
+  location: Apple
+  relation: Apple Summer Internship
+- names:
+    - Samantha Robertson
+    - Zijie J. Wang
+  note: Summer interns in my group at Apple.
+  year: 2022
+  location: Apple
+  relation: Apple Summer Internship
+- names:
+    - Alex Bäuerle
+    - Ángel Alexander Cabrera
+  note: Summer interns in my group at Apple.
+  year: 2021
+  location: Apple
+  relation: Apple Summer Internship
+- names:
+    - Aspen Hopkins
+    - Jochen Görtler
+    - Stephon Fonrose
+  note: Summer interns in my group at Apple.
+  year: 2020
+  location: Apple
+  relation: Apple Summer Internship
+
+- names:
     - Syeda Sheherbano Rizvi
     - Lan Lyu
-    - Péter Gyarmati
     - Fernie Qin
-    - Donny Bertucci
-    - Wilson Chen
-    - Junran Yang
-    - Zehua Zeng
+  year: 2023
+  location: CMU
+  relation: Research Assistants
+- names:
     - Yiwei Wu
     - Canzhou Qu
+  year: 2021
+  location: CMU
+  relation: Research Assistants
+- names:
     - Harshil Rastogi
     - Leila Huang
     - Sujun Cheng
     - Shreya Manjunath
     - Shreya Bahl
-    - Lukas Hermann
-- title: "Visiting Researcher"
-  year: 2024
-  location: CMU
-  who:
-    - Yanna Lin
-- title: "Visiting Researcher"
-  year: 2023
-  location: CMU
-  who:
-    - Karim Benharrak
-- title: "Apple Summer Internship"
-  year: 2023
-  description: Summer interns in my group at Apple.
-  location: Apple
-  who:
-    - Angie Boggust
-    - Venkatesh Sivaraman
-- title: "Apple Summer Internship"
-  year: 2022
-  description: Summer interns in my group at Apple.
-  location: Apple
-  who:
-    - Samantha Robertson
-    - Zijie J. Wang
-- title: "Apple Summer Internship"
-  year: 2021
-  description: Summer interns in my group at Apple.
-  location: Apple
-  who:
-    - Alex Bäuerle
-    - Ángel Alexander Cabrera
-- title: "Apple Summer Internship"
   year: 2020
-  description: Summer interns in my group at Apple.
-  location: Apple
-  who:
-    - Aspen Hopkins
-    - Jochen Görtler
-    - Stephon Fonrose
-- title: "Vega Ecosystem"
+  location: CMU
+  relation: Research Assistants
+
+- name: Hung Ngo
   year: 2019-2020
-  description: Hung worked with me on a renderer service for Vega-Lite and Vega visualizations. He integrated the renderer into the popular Vega online editor.
-  location: Vega Organization
-  who:
-    - Hung Ngo
-- title: "Google Summer of Code"
-  year: 2019
-  description: The IDL was selected as a mentoring organization for the Google Summer of Code 2019. I mentored two students from India to work on the Vega editor.
-  location: University of Washington
-  who:
+  location: Vega
+  relation: Research Collaborator
+  note: Hung worked with me on a renderer service for Vega-Lite and Vega visualizations. He integrated the renderer into the popular Vega online editor.
+- names:
     - Aman Sharma
     - Siddhant Manchanda
-- title: "Google Summer of Code"
-  year: 2018
-  description: The IDL was selected as a mentoring organization for the Google Summer of Code 2018. Together with Kanit "Ham" Wongsuphasawat I mentored two students from India to work on Vega-Lite.
+  year: 2019
   location: University of Washington
-  url: https://summerofcode.withgoogle.com/organizations/5646868357316608/
-  who:
+  relation: Google Summer of Code
+  note: The IDL was selected as a mentoring organization for the Google Summer of Code 2019. I mentored two students from India to work on the Vega editor.
+- names:
     - Yash Dev Lamba
     - Souvik Sen
-- title: "CSE Mentoring Program"
-  year: 2017-2018
+  year: 2018
   location: University of Washington
-  description: Together with Sarah Chasins, I mentored a group of first-year students for over a year. Sarah and I gave advice on finding classes, research projects, collaborators, and advisors, as well as managing conferences.
-  who:
+  relation: Google Summer of Code
+  note: The IDL was selected as a mentoring organization for the Google Summer of Code 2018. Together with Kanit "Ham" Wongsuphasawat I mentored two students from India to work on Vega-Lite.
+  url: https://summerofcode.withgoogle.com/organizations/5646868357316608/
+
+
+- names:
     - Yasaman Sefidgar
     - Rashmi Mudduluru
     - Qisheng Li
-- title: "Mentor Undergraduate Researchers"
+  relation: CSE Mentoring Program
+  year: 2017-2018
   location: University of Washington
-  year: 2015-2019
-  description: Mentor students for working on Vega-Lite, Voyager, Polestar, and related projects.
-  who:
-    - Zening Qu (now Ph.D. student at UW iSchool)
-    - Youying Lin (now at Google)
+  note: Together with Sarah Chasins, I mentored a group of first-year students for over a year. Sarah and I gave advice on finding classes, research projects, collaborators, and advisors, as well as managing conferences.
+
+- names:
+    - Zening Qu
+    - Youying Lin
     - Ayush Saraf
-    - Zoe "Zoe" Lu (now at Facebook)
-    - Will Strimling (now PM at Twitter)
+    - Zoe "Zoe" Lu
+    - Will Strimling
     - Swojit Mohapatra
     - Lingyue "Cynthia" Zhang
     - Tianyi Lin
@@ -129,27 +173,7 @@
     - Halden Lin
     - Melissa Diamond
     - Saba Noorassa
-- title: "Dubhacks Mentor and Judge"
-  year: 2017
+  relation: Undergraduate Researchers
   location: University of Washington
-  hidden: true
-- title: "Dubhacks Mentor and Judge"
-  year: 2016
-  location: University of Washington
-  hidden: true
-- title: "Hack HPI Mentor and Judge"
-  year: 2016
-  location: Hasso Plattner Institute
-  hidden: true
-- title: "Preparation for Programming Competition"
-  year: 2012
-  students: 15
-  location: Hasso Plattner Institute
-  description: One day preparation training high school students for programming competition.
-  hidden: true
-- title: "Math Club for Elementary School Students"
-  year: 2009-2010
-  students: 10
-  location: Marie Curie Gymnasium
-  description: Led a math club for local elementary school students.
-  hidden: true
+  year: 2015-2019
+  note: Mentor students for working on Vega-Lite, Voyager, Polestar, and related projects.
