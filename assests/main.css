@@ -9787,15 +9787,18 @@ screen and (max-height: 300px) {
 }
 
 .button-column button {
+   
     margin-bottom: 10px; /* Adjust the spacing between buttons */
-    padding: 10px 200px; /* Adjust button padding */
+    padding: 10px 50px; /* Adjust button padding */
+    width: 700px; /* Set a fixed width for the buttons */
+    height: auto; /* Set auto height to accommodate varying text lengths */
     font-size: 16px; /* Adjust font size */
     background-color: #3a3b3c; /* Button background color */
     color: #fff; /* Text color */
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    transition: background-color 0.3s ease; 
 }
 
 .button-column button:hover {
