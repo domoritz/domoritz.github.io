@@ -9777,3 +9777,27 @@ screen and (max-height: 300px) {
         height: auto;
         /* Ensure card height adjusts based on content */
     }
+}
+
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align buttons in the center horizontally */
+}
+
+.button-column button {
+    margin-bottom: 10px; /* Adjust the spacing between buttons */
+    padding: 10px 200px; /* Adjust button padding */
+    font-size: 16px; /* Adjust font size */
+    background-color: #3a3b3c; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.button-column button:hover {
+    background-color: #a293a8; /* Darker shade of the button color on hover */
+}
