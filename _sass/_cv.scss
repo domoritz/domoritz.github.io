@@ -93,16 +93,26 @@
 
     .extra-links {
       font-size: 0.75rem;
+      margin-top: 0.2rem;
 
       a {
-        color: $grey-color;
+        color: $grey-color-light;
         margin-right: 4px;
+
+        // avoid the extra whitespace after the link text
+        display: inline-block;
+      }
+    }
+
+    &:hover {
+      .extra-links a {
+        color: $grey-color;
       }
     }
   }
 
   .muted, .muted a {
-    color: $grey-color;;
+    color: $grey-color;
   }
 
   .award {
@@ -211,6 +221,10 @@
 
     h1, h2 {
       margin: .4rem 0 .1rem 0;
+    }
+
+    .extra-links a {
+      color: $grey-color !important;
     }
 
     /* link to interactive talk/publications */

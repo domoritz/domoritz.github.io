@@ -23,6 +23,9 @@
       font-weight: 300;
       font-size: 0.8em;
 
+      // avoid the extra whitespace after the link text
+      display: inline-block;
+
       a {
         &:first-child {
           margin-left: 2em;

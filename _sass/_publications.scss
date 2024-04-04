@@ -203,6 +203,11 @@
         margin-right: 1em;
         white-space: nowrap;
 
+        // avoid the extra whitespace after the link text
+        display: inline-block;
+
+        border-bottom: 1px solid transparent;
+
         &:hover {
           text-decoration: none;
           border-bottom: 1px solid $link-color;
