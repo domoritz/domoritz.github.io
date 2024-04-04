@@ -60,9 +60,15 @@
         <i class="fab fa-html5" aria-hidden="true"></i> HTML
       </a>
     {% elsif pub.arxiv %}
+      {% if pub.year >= 2024 %}
+      <a href="https://arxiv.org/html/{{ pub.arxiv | cgi_escape }}v1">
+        <i class="fab fa-html5" aria-hidden="true"></i> HTML
+      </a>
+      {% else %}
       <a href="https://ar5iv.org/html/{{ pub.arxiv | cgi_escape }}">
         <i class="fab fa-html5" aria-hidden="true"></i> HTML
       </a>
+      {% endif %}
     {% endif %}
     {% if pub.blog %}
       <a href="{{ pub.blog }}">
