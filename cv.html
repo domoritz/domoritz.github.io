@@ -112,7 +112,7 @@ To enhance people's ability to understand and communicate large and complex data
       {% assign counter = counter | minus: 1 %}
       <div class="pub">
         <div class="ref-container">{{ type | slice: 0 }}{{ counter }}</div>
-        <strong class="fill">{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{%endif%}</strong>
+        <strong class="fill">{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% elseif pub.arxiv %}<a href="https://arxiv.org/pdf/{{ pub.arxiv | cgi_escape }}.pdf">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</strong>
         <div>
           {% for author in pub.authors %}{% include person person=author %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
           {% if pub.venue or pub.description %}<i>{% if pub.description %}{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}{{ pub.venue }}</i>{% if pub.venue %},{% endif %} {% endif %}{{ pub.year }}.
