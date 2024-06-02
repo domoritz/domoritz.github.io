@@ -9804,3 +9804,14 @@ screen and (max-height: 300px) {
 .button-column button:hover {
     background-color: #a293a8; /* Darker shade of the button color on hover */
 }
+
+
+.aiplaybook{
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition effect */
+
+}
+.aiplaybook:hover{
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition effect */
+}
