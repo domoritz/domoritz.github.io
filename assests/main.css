@@ -1107,12 +1107,12 @@ th {
     margin-left: -0.5em
 }
 
-.btn--block {
-    display: block;
+.btn--book {
+    display: book;
     width: 100%
 }
 
-.btn--block+.btn--block {
+.btn--block+.btn--book {
     margin-top: 0.25em
 }
 
@@ -2648,7 +2648,7 @@ select:focus {
     color: #52adc8
 }
 
-.help-block {
+.help-boook {
     display: block;
     margin-bottom: 1em;
     line-height: 1em
