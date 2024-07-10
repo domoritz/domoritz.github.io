@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding Return of Investment (ROI) in AI</title>
+    <style>
+      body {
+        font-family: "Times New Roman", serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 40px;
+        color: #333;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 2.9em;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      h2 {
+        font-size: 2.5em;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 10px;
+      }
+      h3 {
+        font-size: 2.2em;
+        margin-top: 30px;
+      }
+      h4 {
+        font-size: 1.6em;
+        margin-top: 25px;
+      }
+      p {
+        margin-bottom: 20px;
+        text-align: justify;
+        font-size: 1.2em;
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 40px;
+        margin-bottom: 20px;
+      }
+      ul li {
+        margin-bottom: 10px;
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+      }
+      .note {
+        font-style: italic;
+        color: #666;
+        text-align: center;
+        margin-top: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Understanding Return of Investment (ROI) in AI</h1>
+    <h2>
+      <span style="color: red">AI Maturity Continuum</span>: A Three Step
+      Framework to Understand Return On Investment (ROI) in AI
+    </h2>
+    <div style="display: flex">
+      <div style="flex: 3; padding: 10px; margin-right: 20px">
+        <p>
+          In recent years, the field of Artificial Intelligence (AI) has
+          witnessed remarkable progress, with many breakthroughs now accessible
+          through APIs and open-source solutions. Thanks to increased
+          accessibility and ease of implementation, it has led organizations,
+          ranging from fledgling startups to Fortune 100 MNCs, to actively
+          integrate AI into their products and services.
+        </p>
+        <p>
+          However, amidst this surge in adoption, significant challenges remain.
+          <b
+            >One major hurdle is the high failure rate of AI projects in the
+            industry</b
+          >. According to a recent survey, a staggering 96% of AI projects
+          encounter data issues during the training phase, preventing them from
+          progressing further. Another survey reveals that despite substantial
+          investments, 8 out of 10 companies reported minimal or no return on
+          investment (ROI) from their AI efforts.
+          <b
+            >These findings underscore the need for addressing critical issues
+            in AI implementation to ensure successful outcomes and maximize the
+            potential benefits of this rapidly evolving technology.</b
+          >
+        </p>
+        <p>
+          In this article, we present the
+          <b
+            >“AI Maturity Continuum”, a three-step framework tailored to help
+            you conceptualize the development and assess the capabilities of AI
+            systems</b
+          >. To elucidate this framework effectively, we will utilize the ROI
+          (Return On Investment) curve.
+        </p>
+      </div>
+      <div
+        style="
+          flex: 2;
+          padding: 5px;
+          border: 2px solid rgb(8, 8, 100);
+          border-radius: 5px;
+          background-color: rgba(204, 216, 232, 255);
+        "
+      >
+        <h3 style="color: rgb(18, 40, 153)">Summary</h3>
+        <ul>
+          <li style="color: rgb(18, 40, 153)">
+            The article introduces a three-step framework for developing AI
+            systems in industry the right way to maximize ROI from AI efforts
+          </li>
+          <li style="color: rgb(18, 40, 153)">
+            Interestingly, the shape of the ROI curve for AI systems differs
+            significantly from that of traditional software systems.
+          </li>
+          <li style="color: rgb(18, 40, 153)">
+            The reason for this lies in the distinct needs of developing AI
+            systems, best described by the three phases of the proposed
+            framework
+          </li>
+          <li style="color: rgb(18, 40, 153)">
+            The first phase involves laying the foundations and not focusing on
+            model building.
+          </li>
+          <li style="color: rgb(18, 40, 153)">
+            The second phase focuses on quickly moving from an AI system to a
+            very good AI system.
+          </li>
+          <li style="color: rgb(18, 40, 153)">
+            The third phase is about pushing boundaries, getting to the system.
+          </li>
+          <li style="color: rgb(18, 40, 153)">
+            We also explore how off-the-shelf LLMs such as ChatGPT affect the
+            ROI curve, enabling sales & testing the markets rapidly
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h3>
+      ROI CURVE OF
+      <span
+        style="
+          background-color: rgb(10, 28, 121);
+          color: white;
+          padding-left: 3px;
+          padding-right: 3px;
+        "
+        >TRADITIONAL SOFTWARE</span
+      >
+      SYSTEM
+    </h3>
+    <p>
+      Engineers started writing software in the 1970s. Over the past five
+      decades, humans have deeply understood and mastered every aspect of
+      software development right from requirements gathering to development, all
+      the way to on-premise deployment and maintenance. Given mankind’s mastery
+      of software development process, the ROI curve for standard software
+      projects/systems is illustrated in Figure 1.
+    </p>
+    <p>
+      In Fig 1, X-axis represents time, Y-axis represents ‘capability
+      of’/’returns from’ the software system developed. The shape of the ROI
+      curve is pretty intuitive to understand.
+    </p>
+    <p>
+      <img
+        src="/images//ROI/Fig1.png"
+        alt="Figure 1: ROI curve for traditional software systems"
+      />
+    </p>
+    <p>
+      Initially, starting a typical IT/software development project demands time
+      and effort—gathering requirements, scoping, budgeting, and assembling the
+      right team. During this inception phase, the capability/returns show slow
+      growth, resulting in the ROI curve with a flat slope. But once we are past
+      this initial stage, the ROI curve of the software system rises steeply.
+      Within a few days/weeks of starting the development, one starts to see the
+      gains materialize pretty quickly, creating a steep rise in the curve.
+      Powerful and efficient development tools, frameworks, programming
+      languages, agile methodology, tools, extensive software development
+      experience, cloud computing, collaborative development platforms coupled
+      with automation and DevOps have contributed significantly to the hockey
+      stick shape of this curve.
+    </p>
+
+    <h3>
+      ROI CURVE OF
+      <span
+        style="
+          background-color: rgb(10, 28, 121);
+          color: white;
+          padding-left: 3px;
+          padding-right: 3px;
+        "
+        >AI SYSTEM</span
+      >
+    </h3>
+    <p>
+      When it comes to the ROI curve of a typical AI project/system, its shape
+      is very different. Without further ado, this is what the ROI curve in AI
+      looks like:
+    </p>
+    <p>
+      <img
+        src="/images//ROI/fig2.png"
+        alt="Figure 2: ROI curve for a typical AI system"
+      />
+    </p>
+    <div
+      style="
+        background-color: rgba(204, 216, 232, 255);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-radius: 2px;
+        border: 1px solid rgb(10, 28, 121);
+      "
+    >
+      <p style="color: #4c77b0">
+        Immediately one sees distinct similarities and notable differences
+        between this curve and previous one. In contrast to Fig 1, the initial
+        segment of the curve remains remarkably flat for an extended duration,
+        resulting in a more elongated form. Subsequently, it ascends fast,
+        albeit not as sharply as in Fig 1. Most intriguingly, towards the
+        conclusion, the curve stagnates sharply.
+      </p>
+      <p style="color: #4c77b0">
+        This shape of ROI curve for AI surprises many industry practitioners,
+        especially those with extensive software engineering background.
+        Founders, CXOs, leaders, and managers often anticipate an AI system's
+        ROI curve to mirror that of software systems, resembling a hockey stick.
+        However, this is far from reality.
+      </p>
+      <p style="color: #4c77b0">
+        Reason? The long-standing, well-understood playbooks of software
+        development do not work for AI development. This greatly impacts the ROI
+        curve for AI. Let us try to understand this better and uncover why the
+        shape of the curve changes. To do so, we divide the curve into three
+        main segments: O-A, A-B, and B-M and then look at each segment in detail
+        as under. The attempt is to better understand AI development and write
+        its playbook.
+      </p>
+    </div>
+
+    <h2 style="color: rgb(10, 28, 121)">O-A</h2>
+
+    <p>
+      <img
+        src="/images//ROI/fig3.png"
+        alt="Figure 3: Phase O-A of ROI curve for a typical AI system"
+      />
+    </p>
+    <p>
+      In O-A phase, it is critical to set up strong foundations for an AI
+      system. Here are the steps involved:
+    </p>
+    <div style="display: flex; align-items: center; justify-content: center">
+      <ul
+        style="
+          list-style-type: decimal;
+          border: 2px solid black;
+          border-radius: 2px;
+          width: 650px;
+          margin-left: 20px;
+          font-size: 1.2em;
+          color: #4c77b0;
+        "
+      >
+        <li>Develop a better understanding of the (vague) business problem</li>
+        <li>
+          Convert the (often vague) business problem statement into a
+          well-defined business problem statement
+        </li>
+        <li>
+          Evaluate if the problem statement (in 2) is even an AI problem or not
+        </li>
+        <li>
+          Define the success metrics of the solution - both business and ML
+          metrics
+        </li>
+        <li>
+          Understand the kind & quantity of data needed to solve the AI problem.
+          <ul style="list-style-type: lower-alpha; margin-left: 20px">
+            <li>
+              Understand if your organization has the kind & quantity of data
+              needed in the preceding step
+            </li>
+            <li>
+              Get the data needed, preprocess & clean it, and create a v1
+              dataset from it
+            </li>
+          </ul>
+        </li>
+        <li>
+          Understand the broader kind of AI problem at hand - supervised,
+          unsupervised, reinforcement learning etc
+          <ul style="list-style-type: lower-alpha; margin-left: 20px">
+            <li>In case of supervised learning, get the v0 dataset labeled.</li>
+          </ul>
+        </li>
+        <li>
+          Understand the constraints your solution must adhere to:
+          <ul style="list-style-type: lower-alpha; margin-left: 20px">
+            <li>Cost of mistake/wrong prediction</li>
+            <li>Prediction time - Real-time or batch?</li>
+            <li>Compute location - cloud or edge?</li>
+          </ul>
+        </li>
+        <li>
+          Any other constraints the solution must adhere to
+          <ul style="list-style-type: lower-alpha; margin-left: 20px">
+            <li>Time to prediction, explainability of prediction etc</li>
+          </ul>
+        </li>
+        <li>
+          Build a model -
+          <b>often a simple model/baseline, even 3rd party API</b>
+        </li>
+        <li>
+          Quickly get to test the core business hypothesis - does your solution
+          solve a major pain point for the end user (or business unit) or not?
+          How likely is it to see PMF?
+          <ul style="list-style-type: lower-alpha; margin-left: 20px">
+            <li>If Yes, how much is the market willing to pay for it?</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <p>
+      Depending on the organization’s current level of AI maturity and the
+      expertise of the founding team, this phase can take up to weeks/months or
+      even years in some cases.
+    </p>
+
+    <h2 style="color: rgb(10, 28, 121)">Observations</h2>
+    <ul>
+      <li>
+        <p style="color: #4c77b0">
+          <b
+            >The most common mistake that a lot of teams/organizations make is
+            that from day 1, they get down to building ‘the’ model. They believe
+            anything less than state of the art Large Language Models (LLMs) is
+            unacceptable. This should never be the aim of this phase.</b
+          >
+        </p>
+        <p style="color: #4c77b0">
+          <b
+            >The purpose of O-A phase is to understand the fundamental aspects
+            of the problem - are we solving the right problem, is the problem at
+            hand is even an AI problem or can be solved using traditional
+            approaches, do we have the kind of data that is needed to solve the
+            problem well. Most importantly: is our overall
+            solution/product/service a pain killer or a vitamin for the market
+            and what kind of price market is willing to pay for it?</b
+          >
+        </p>
+        <p>
+          Why do we say so? Because AI is an expensive technology - massive
+          datasets, hardware for compute, AI talent; none of it comes cheap.
+          There is no point in building a state-of-the-art model for a problem
+          where each prediction costs you $3 but the market is not willing to
+          pay you more than $1 per prediction (or worst - market shows no
+          interest in your solution). There is no way you can build a viable
+          business from it.
+        </p>
+        <p>
+          Also, building a great model is hard and takes time. You need a very
+          good understanding of the problem, great team in terms of skillset,
+          even greater datasets and heavy compute (in case of deep learning).
+          You should not invest time & resources of this level, unless one is
+          very sure of being able to build a viable business from it.
+        </p>
+        <p>
+          Any seasoned entrepreneur will tell you - building a business from
+          scratch is by far the hardest thing. There are just too many variables
+          that determine its success . So why get obsessed with state-of-the-art
+          model upfront?
+        </p>
+      </li>
+      <li>
+        <p>
+          The objective of this phase must be to aack the hardest part of the
+          problem - it is not building the best model (unless you are a pure
+          research lab). The hardest part is to answer questions on business
+          direction:
+        </p>
+        <ul style="list-style-type: decimal">
+          <li>
+            <p>
+              Are we building something that solves a major pain point (pain
+              killer vs vitamin)
+            </p>
+          </li>
+          <li>
+            <p>
+              Does the AI system seem to meet its business objectives? Ex: Alexa
+              was a great AI product bt failed to meet its business goals i.e.
+              power more orders from Amazon.co
+            </p>
+          </li>
+          <li>
+            <p>
+              Would users/clients be willing to pay for it ? If yes, then how
+              much?
+            </p>
+          </li>
+          <li>
+            <p>
+              Do you think you can extract enough LTV to offset the high dev
+              cost, indirect costs and margins to build a long term profitable
+              business?
+            </p>
+          </li>
+        </ul>
+        <p>
+          This is a fundamental difference when doing AI in product companies vs
+          academia/ research labs. Academia/Research Labs are focused on
+          advancing state-of-the-art. To drive home the point check thought
+          experiment on the next page
+        </p>
+      </li>
+      <li>
+        <p>
+          In mature organizations, data is systematically organized for quick
+          access by internal consumers like AI teams. This is akin to a
+          well-organized pantry in a professional kitchen, enabling chefs to
+          create dishes swiftly. Conversely, in organizations lacking data
+          strategy, data is stored haphazardly, akin to dumping ingredients into
+          cold storage. Retrieving specific data becomes a time-consuming
+          project in its on, greatly hindering AI projects, a common oversight
+          among founders and executives.
+        </p>
+        <p style="color: #4c77b0">
+          <b
+            >In most organisations, that do not have data maturity, most AI
+            projects die in the O-A phase itself! </b
+          >Thus, if you are serious about
+          AI, getting your data strategy right is very important.
+        </p>
+      </li>
+      <li>
+        <p>
+          Many teams, founders, and executives often overlook the vital step of
+          establishing appropriate success metrics and measurement methods,
+          fixating solely on the model. It's crucial to systematically define AI
+          and business metrics, ensuring their correlation. Getting this right
+          from day one is akin to building a rocketship without a control panel,
+          especially in AI, where systems are stochastic and prone to errors,
+          impacting accuracy and effectiveness quantification.
+        </p>
+      </li>
+      <li>
+        <p>
+          You may wonder, we never talked about the model or underlying
+          algorithm. Use any model/algorithm that gets the job done - 3rd part
+          API, open source or even humans producing predictions in real time! As
+          we argued earlier, it is wrong to invest in building a great model in
+          this phase. Aim should be to quickly assemble a system and test the
+          markets quickly.
+        </p>
+      </li>
+      <li>
+        <p>
+          If you are not training your own v0 model, you can downplay the
+          dataset creation & labelling steps. But do keep in mind that once your
+          project goes beyond point A, you will need good dataset to train
+          models - it is always best to start this early to better understand
+          the risk to the project.
+        </p>
+      </li>
+    </ul>
+    <p style="background-color: #ccd8e8; color: #4c77b0 ; padding:1px 12px;">
+      <b
+        >This phase also explains why the age old corporate wisdom of getting
+        some “early wins” does not hold true in AI projects/systems. As evident,
+        O-A is a hard phase and getting early wins is super hard.</b
+      >
+    </p>
+    <p style="background-color: #e5f9f0; padding:1px 12px; font-weight: bolder;">
+      To summarize, the mantra for this phase should be “Quickly assemble a
+      system & test the market”.
+    </p>
+    <h2 style="color: rgb(10, 28, 121)">Thought Experiment</h2>
+    <div class="text-content" style="margin-bottom: 20px">
+      <p>
+        Imagine it's 1920, the World War I has just concluded. For the first
+        time in history, air bombers took to skies and influenced the outcome of
+        any war. You are Richard Branson, a young, energetic, and budding
+        entrepreneur looking for your next big bold idea in your quest to create
+        the next unicorn. Given your sharp acumen, you quickly realize that one
+        can modify air bombers to transport goods & people from one part of the
+        world to another and charge the end customer for the same. You could be
+        the first one in the world to usher in the era of commercial aviation.
+      </p>
+    </div>
+    <div class="text-content" style="margin-bottom: 20px">
+      <p>
+        Your big challenge - getting the first set of planes customized for
+        commercial needs. You have 2 options:
+      </p>
+      <ul style="margin-bottom: 20px">
+        <li style="font-size: 1.2em;">
+          Quickly assemble an airplane and test the markets, gather early
+          feedback, make amends in your offerings
+        </li>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+          "
+        >
+          <p>or</p>
+        </div>
+
+        <li style="font-size: 1.2em;">
+          You will start building the state-of-the-art engine? Strap your
+          customer to THE engine you have built and fire it off?
+        </li>
+      </ul>
+      <p>
+        <img src="/images/ROI/pic8.png" alt="Thougt experiment" style="width: full; height: 400px;"/>
+      </p>
+      <p>
+        If your answer is going to be (a), then why should it be any different
+        while developing AI systems? Why this obsession with state-of-the-art
+        LLMs from Day 1! Just as an airplane has over thousands of parts so does
+        an AI system. One needs to get the whole AI system right to create the
+        business wins. Getting to THE AI system is a journey. State of the art
+        Model is necessary not but not sufficient.
+      </p>
+    </div>
+
+    <h2 style="color: rgb(10, 28, 121)">A-B</h2>
+    <p>
+      <img
+        src="/images//ROI/fig4.png"
+        alt="Figure 4: Phase A-B of ROI curve for a typical AI system"
+      />
+    </p>
+    <p>
+      This is the middle part of the curve in Fig.2 - from A to B. Here you get
+      the highest progress/capability per unit effort.
+    </p>
+    <p>
+      A lot of hard work is already done into O-A. You have already put in place
+      a lot of key ingredients - refining problem statement, collecting data,
+      operationalizing metrics & measure methodology, early validation from
+      stakeholders (internal/external). In the next phase one focuses mainly on
+      improving the model - going from a model to the model. Key steps in this
+      phase:
+    </p>
+    <div style="display: flex; align-items: center; justify-content: center">
+      <ul
+        style="
+          list-style-type: decimal;
+          border: 2px solid black;
+          border-radius: 2px;
+          width: 650px;
+          font-size: 1.2em;
+          color: #4c77b0;
+        "
+      >
+        <li>You try various algorithms and build various models.</li>
+        <li>Rigorously benchmark the performance of every model built</li>
+        <li>
+          Once your system crosses the acceptable performance level (L1), you
+          take your AI system to production and expose predictions to end userz
+        </li>
+        <li>
+          As you keep improving, you keep pushing out best model so far to
+          production.
+        </li>
+        <li>
+          Test the new model and system thoroughly, replace the existing model
+          with the new model, and monitor the gain in ML metrics and business
+          metrics
+        </li>
+      </ul>
+    </div>
+
+    <p>
+      Keep Iterating previous steps. You will start moving quickly from a model
+      to much better models. At some point, your gains will start to saturate.
+      This is when you know that you are at point B. Depending on the problem at
+      hand and AI maturity within the Org/Team, this phase can typically last
+      from 3-12 months.
+    </p>
+
+    <h2 style="color: rgb(10, 28, 121)">Observations</h2>
+    <ul>
+      <li>
+        <p style="color: #0c3a81">
+          <b
+            >This phase starts, when your product/offering s value proposition
+            starts to find traction in the market. The carefully orchestrated
+            demos with which you tested the market landed well. Early customers
+            have started to come, some even paid customers.</b
+          >
+        </p>
+        <p>
+          Now, given the traction, it is crucial that you must greatly ramp up
+          the AI capabilities of your system. This is a great time to usher A-B
+          phase. This is where you focus on the core model!
+        </p>
+      </li>
+      <li><p>Note that this phase has a lot of iterations within it.</p></li>
+      <li>
+        <p style="color: #0c3a81">
+          <b
+            >This phase is all about going from a model (simpler approaches) to
+            the model (complex approaches). Why not try the best algorithm
+            upfront? Occam's razor - a fundamental tenet of AI. The objective is
+            to find the simplest model that works the best.</b
+          >
+        </p>
+      </li>
+      <li>
+        <p style="color: #0c3a81">
+          <b
+            >Since comparing 2 or more candidate models is a key part of this
+            phase, the ground work we did on metrics, measure methodology &
+            rigorous test sets in the previous phase forms the bed rock of this
+            phase & comes super handy. Without that it becomes hard to
+            critically compare various models.</b
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          At each step, you closely analyze the kind of mistakes your model is
+          making. Often, it is in this analysis lies the genesis of the next
+          model.
+        </p>
+      </li>
+      <li>
+        <p>
+          As you get to better models, you keep taking them to production. This
+          is where you go from 1st version of your AI system to maybe 3rd or 4th
+          version of your AI system
+        </p>
+      </li>
+      <li>
+        <p>
+          At some point, your gains will start to saturate, thats when you know
+          you are close to point B.
+        </p>
+      </li>
+    </ul>
+    <div style="display: flex; justify-content: center; align-items: center">
+      <p
+        style="
+          background-color: #e5f9f0;
+          width: 420px;
+          font-weight: bold;
+          margin: auto;
+        "
+      >
+        Briefly, this phase is all about “Make it Better”.
+      </p>
+    </div>
+
+    <h2 style="color: #0c3a81">B-M</h2>
+    <p>
+      <img
+        src="/images//ROI/fig5.png"
+        alt="Figure 5: Phase B-M of ROI curve for a typical AI system"
+      />
+    </p>
+    <p>
+      This is the tail end of the journey. The curve starts to tapper - your
+      gains again start to move very slowly. This phase is about pushing the
+      system to its limits:
+    </p>
+    <div style="display: flex; align-items: center; justify-content: center">
+      <ul
+        style="
+          list-style-type: decimal;
+          border: 2px solid black;
+          border-radius: 2px;
+          width: 650px;
+          font-size: 1.2em;
+          color: #4c77b0;
+        "
+      >
+        <li>
+          Your team is building 20/30/40th model; 5th/7th/10th version of
+          system.
+        </li>
+        <li>You try to push systems performance to its limits.</li>
+        <li>
+          Your team is looXing into every single edge case that your AI system
+          is getting wrong.
+        </li>
+        <li>
+          Your team is tweaXing n trying new approaches/algorithms/neural
+          network architectures and not just applying known AI algorithms.
+        </li>
+        <li>
+          Your team is tinXering with the very underlying mathematics of the AI
+          algorithms and coming up with new mathematical formulations.
+        </li>
+        <li>
+          After a lot of efforts, typically the model performance improves only
+          by 1-2%
+        </li>
+      </ul>
+    </div>
+    <p>
+      This phase is typically can last from 6 to 24 months depending on the
+      difficulty of the problem at hand.
+    </p>
+    <h2 style="color: rgb(10, 28, 121)">Observations:</h2>
+
+    <ul>
+      <li>
+        <p>
+          <b
+            >This phase mostly happens only when the AI problem at hand is at
+            the very core of your business and your business is doing very well
+            - you have a lot of traction, a lot of paying customers, who not
+            only love your product but also refer it to others (network
+            effect).</b
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <b
+            >Even 1 2% gain in the AI capability will move your business numbers
+            significantly. Say, 10 20% growth in revenue or the number of paying
+            customers etc.</b
+          >
+        </p>
+      </li>
+      <li><p>Most AI projects seldom get to this stage.</p></li>
+      <li>
+        <p>
+          This phase is all about first principles approach to model building -
+          opening and rebuilding the very underlying math of the model grounds
+          up.
+        </p>
+      </li>
+      <li>
+        <p style="color: #0c3a81">
+          Notably, our ROI curve beyond M never touches L2 (100% automation).
+          This is because today’s AI is far from AGI - missing the ability to
+          learn from its mistakes and keep improving. No matter what use case
+          you are solving for, and how good a model your team builds, you will
+          always have a long tail of edge cases your system will keep getting
+          wrong. AI lives in long tail of these edge cases. This has huge
+          implications on your company’s profit margins, but we will cover this
+          some other day.
+        </p>
+      </li>
+      <li>
+        <p style="color: #0c3a81">
+          AI lives in the long tail of edge cases: progress comes very slowly.
+          Why? Complexity of handling edge cases. More advanced the model,
+          greater its accuracy; necessitating higher-quality and more accurate
+          data for further enhancements
+        </p>
+      </li>
+      <li>
+        <p style="color: #0c3a81">
+          Instead of exponential improvement in performance, paradoxically one
+          sees exponential increase in the expenses and efforts required for
+          further. Ex: Self Driving Cars
+        </p>
+      </li>
+    </ul>
+    <div style="display: flex; justify-content: center; align-items: center">
+      <p
+        style="
+          background-color: #e5f9f0;
+          width: 580px;
+          font-weight: bold;
+          margin: auto;
+        "
+      >
+        In one line, this phase is about “Pushing your AI system to its limits”.
+      </p>
+    </div>
+    <p style="color: #0c3a81">
+      Interestingly, depending on which of the three phases your AI project is
+      in, it has huge implications on the kind of AI talent you need for that
+      phase. We will cover this in another article.
+    </p>
+
+    <p>
+      <img
+        style="border: 1px solid rgb(10, 28, 121)"
+        src="/images//ROI//fig6.png"
+        alt="Fig6"
+      />
+    </p>
+
+    <h2 style="color: #0c3a81">Impact of chatGPT/LLMs</h2>
+    <div
+      style="
+        background-color: #ccd8e8;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border: 2px solid #4c77b0;
+        border-radius: 2px;
+      "
+    >
+      <p>
+        Let us now understand how LLMs (chatGPT, Claude, Cohere etc) or any off
+        the shelf foundational models has impacted this curve. Now owing to
+        commoditization of chatGPT/ LLMs, (via APIs), one gets high degree of
+        “intelligence” off the shelf (but not 100% - even these systems make a
+        lot of mistakes) without any training what so ever.
+      </p>
+      <p>
+        This means, using any of these off the shelf solutions, today a smart
+        Product Manager (PM) with an hungry Business Leader (BL) can assemble a
+        v0 solution without necessarily involving an AI team. They along with a
+        street smart aspiring engineer can do enough prompt engineering to
+        quickly assemble together an AI system within 7-10 days which good
+        enough to demo in the market. Recall, this was the very objective of O-A
+        phase.
+      </p>
+      <p>
+        They can now use the demo sell their ‘solution’ aggressively and test
+        the market - are your users loving the solution? Are they willing to pay
+        for it? How much are they willing to pay etc which is one of the most
+        impotent parts of the first phase O-A.
+      </p>
+    </div>
+    <p>
+      <img src="/images//ROI//fig7.png" />
+    </p>
+    <p>
+      Let us understand the above in terms of the curve. Using chatGPT/off the
+      shelf LLMs via API - one can get fairly high intelligence. This is
+      represented by point ‘X’ in Figure 7. And since one can get to it very
+      quickly, we have a straight line from pt ‘O’ to pt ‘X’. In most cases,
+      this much intelligence is good enough to start selling your
+      product/offerings in the market
+    </p>
+    <p>
+      At some point in time, as your paying customers go up, they will be more
+      demanding in term of model accuracy. Now chatGPTs of the world are generic
+      systems trained on generic data, hence no matter how much prompt
+      engineering you do, they will take you only so far. To improve your
+      systems further, your next logical choice will be to fine tune open source
+      foundational models on your data. This will require you to gather data,
+      build your own datasets. What after that? trained your own foundational
+      models from scratch. Note this exactly the journey we saw from O-A-B-M in
+      Fig 4. only difference now will be the accuracies/ML metric values will be
+      much higher, hence the curve now takes the same shape beyond ‘X’.
+    </p>
+    <p>
+      It is important to call out that today AI is niche technology and is a
+      rapidly evolving landscape. In times to come, owing to commoditization,
+      both cost and time to develop AI systems will come down drastically. Then
+      the curve could look very different.
+    </p>
+    <p>
+      The ROI curve discussed describes whats is the right way to develop AI
+      systems today. This is unlikely to change in next 12-18 months. After
+      that? who knows. We will keeping replenishing this writeup as the AI
+      landscape changes.
+    </p>
+    <p>Adios until then.</p>
+  </body>
+</html>

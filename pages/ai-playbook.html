@@ -283,20 +283,22 @@
             />
             <br> -->
 
-            <button style="margin-top: 10px; border-radius: 5px; ">
-              <a
-                href="https://gradient-advisors.ai/resources/GA%20-%20ROI%20in%20AI.pdf"
-                style=" color: #000; text-decoration: none ; padding: 5px;"
-                >ROI in AI</a
-              >
-            </button>
-            <button style="margin-top: 10px; border-radius: 5px; ">
-              <a
-                href="https://gradient-advisors.ai/resources/AI-PM%20.pdf"
-                style=" color: #000; text-decoration: none ; padding: 5px; padding-left: 10px; padding-right: 10px;"
-                >AI-PM</a
-              >
-            </button>
+            <div style="display: flex; align-items: center;">
+              <div class="dropdown" style="margin-right: 15px;">
+                  <button onclick="toggleDropdown('dropdown-content1')" style="margin-top: 10px; border-radius: 5px;">ROI in AI</button>
+                  <div id="dropdown-content1" style="display: none; position: absolute; background-color: #f9f9f9; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;border-radius: 5px;">
+                      <a href="https://gradient-advisors.ai/resources/GA%20-%20ROI%20in%20AI.pdf" target="_blank" style="padding: 2px 22px; text-decoration: none; display: block; color: #000;">PDF</a>
+                      <a href="/pages//book_roi.html" target="_blank" style="padding: 2px 22px; text-decoration: none; display: block; color: #000;">Visit</a>
+                  </div>
+              </div>
+              <div class="dropdown">
+                  <button onclick="toggleDropdown('dropdown-content2')" style="margin-top: 10px; border-radius: 5px;">AI-PM</button>
+                  <div id="dropdown-content2" style="display: none; position: absolute; background-color: #f9f9f9; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;border-radius: 5px;">
+                      <a href="https://gradient-advisors.ai/resources/GA__ROI_in_AI.pdf" target="_blank" style="padding:  2px 20px; text-decoration: none; display: block; color: #000;">PDF</a>
+                      <a href="/pages//book_ai_pm.html" target="_blank" style="padding:  2px 20px; text-decoration: none; display: block; color: #000;">Visit</a>
+                  </div>
+              </div>
+          </div>
           </section>
         </div>
       </article>
@@ -344,5 +346,15 @@
       </footer>
     </div>
     <script src="/data/main.js"></script>
+    <script>
+      function toggleDropdown(id) {
+          var content = document.getElementById(id);
+          if (content.style.display === "none") {
+              content.style.display = "block";
+          } else {
+              content.style.display = "none";
+          }
+      }
+  </script>
   </body>
 </html>
