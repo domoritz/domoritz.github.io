@@ -13,7 +13,9 @@ I'm a professor at the [Human-Computer Interaction Institute](https://hcii.cmu.e
 
 I received my PhD from the [Paul G. Allen School](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/), where I worked with [Jeff Heer](https://homes.cs.washington.edu/~jheer/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) in the [Interactive Data Lab](http://idl.cs.washington.edu/) and the [Database Group](https://db.cs.washington.edu/).
 
-My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata.github.io/draco/) at premier academic venues and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities.
+My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata.github.io/draco/) [at](https://arxiv.org/pdf/2110.12536) [premier](https://www.domoritz.de/papers/2023-LineBias-VIS.pdf) [academic](https://www.domoritz.de/papers/2023-AutoProfiler-VIS.pdf) [venues](https://arxiv.org/pdf/2404.03085) and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities.
+
+Find me on [GitHub](https://github.com/domoritz), the [Fediverse](https://vis.social/@dom), [Bluesky](https://bsky.app/profile/domoritz.de), [LinkedIn](https://www.linkedin.com/in/dominik-moritz-409b8124/), or [Twitter](https://twitter.com/domoritz).
 </div>
 
 <div class="me" markdown="1">
@@ -31,7 +33,7 @@ My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata
 
 </div>
 
-During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). In 2013, I received my B.S. from [Hasso Plattner Institute](https://hpi.de/). I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), [Google Research](https://ai.google/research/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). Details are in my [CV]({{ "/cv/" | relative_url }}).
+During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). In 2013, I received my B.S. from [Hasso Plattner Institute](https://hpi.de/). I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), [Google Research](https://ai.google/research/), [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/), and others. Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 ## Featured <a href="{{ "/projects/" | relative_url }}">Projects</a>
 

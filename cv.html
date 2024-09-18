@@ -13,16 +13,17 @@ title: CV
 <div class="header-columns">
   <div>
     <p>
-      Professor at CMU HCII and Research Scientist at Apple<br/>
+      Professor at CMU HCII and Research Manager at Apple.<br/>
     </p>
   </div>
   <div>
-    <p class="right-align">
-      <a href="{{ absolute_url }}/">https://www.domoritz.de</a><br/>
-      <a href="mailto:domoritz@cmu.edu">domoritz@cmu.edu</a><br/>
-      <a href="https://twitter.com/domoritz">@domoritz</a><br/>
-      <a href="https://vis.social/@dom">@dom@vis.social</a>
-    </p>
+    <ul class="right-align">
+      <li><i class="fa-solid fa-globe muted"></i> <a href="{{ absolute_url }}/">https://www.domoritz.de</a></li>
+      <li><i class="fa-solid fa-envelope muted"></i> <a href="mailto:domoritz@cmu.edu">domoritz@cmu.edu</a></li>
+      <li><i class="fa-brands fa-bluesky muted"></i> <a href="https://bsky.app/profile/domoritz.de">@domoritz.de</a></li>
+      <li><i class="fa-brands fa-twitter muted"></i> <a href="https://twitter.com/domoritz">@domoritz</a></li>
+      <li><i class="fa-brands fa-mastodon muted"></i> <a href="https://vis.social/@dom">@dom@vis.social</a></li>
+    </ul>
   </div>
 </div>
 
@@ -43,9 +44,9 @@ To enhance people's ability to understand and communicate large and complex data
     <strong class="fill">{{pos.company}}</strong>
     <span class="right">{{ pos.location }}</span>
   </div>
-  <span>
+  <div>
     {{pos.title}}{% if pos.short_desc %}, {{ pos.short_desc | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
-  </span>
+  </div>
   <!-- <p>
     {% if pos.mentors %}
       Mentor{% if pos.mentors.size > 1 %}s{% endif %}: {% for mentor in pos.mentors %}

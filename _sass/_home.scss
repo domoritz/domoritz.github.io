@@ -62,15 +62,15 @@
       display: flex;
       flex-direction: column;
 
-      &:not(:last-child) {
-        margin-right: 16px;
-      }
-
       border-radius: 3px;
       padding: 16px;
       border: 1px solid #ddd;
 
       transition: box-shadow 0.2s ease;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
 
       &:hover {
         box-shadow: #aaa 2px 2px 11px;
