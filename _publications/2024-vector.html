@@ -1,0 +1,46 @@
+---
+layout: publication
+year: 2024
+title: "Opening the Black Box of 3D Reconstruction Error Analysis with VECTOR"
+authors:
+  - Racquel Fygenson
+  - Kazi Jawad
+  - Zongzhan Li
+  - Francois Ayoub
+  - Robert G Deen
+  - Scott Davidoff
+  - Dominik Moritz
+  - Mauricio Hess-Flores
+type:
+  - Conference
+  - Short Paper
+venue: VIS
+venue_location: St. Pete Beach, Florida
+venue_tags:
+  - VIS
+tags:
+  - SLAM
+  - 3D Reconstruction
+venue_url: https://ieeevis.org/year/2024/welcome
+arxiv: "2408.03503"
+pdf: https://arxiv.org/pdf/2408.03503
+html: https://arxiv.org/html/2408.03503v1
+---
+
+Reconstruction of 3D scenes from 2D images is a technical challenge that impacts
+domains from Earth and planetary sciences and space exploration to augmented and
+virtual reality. Typically, reconstruction algorithms first identify common
+features across images and then minimize reconstruction errors after estimating
+the shape of the terrain. This bundle adjustment (BA) step optimizes around a
+single, simplifying scalar value that obfuscates many possible causes of
+reconstruction errors (e.g., initial estimate of the position and orientation of
+the camera, lighting conditions, ease of feature detection in the terrain).
+Reconstruction errors can lead to inaccurate scientific inferences or endanger a
+spacecraft exploring a remote environment. To address this challenge, we present
+VECTOR, a visual analysis tool that improves error inspection for stereo
+reconstruction BA. VECTOR provides analysts with previously unavailable
+visibility into feature locations, camera pose, and computed 3D points. VECTOR
+was developed in partnership with the Perseverance Mars Rover and Ingenuity Mars
+Helicopter terrain reconstruction team at the NASA Jet Propulsion Laboratory. We
+report on how this tool was used to debug and improve terrain reconstruction for
+the Mars 2020 mission.
