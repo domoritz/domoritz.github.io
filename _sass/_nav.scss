@@ -1,3 +1,6 @@
+@use "_vars" as *;
+@use "sass:color";
+
 .page-header {
   border-top: 6px solid $brand-color;
   padding-top: 6px;
@@ -120,12 +123,12 @@ nav {
 
       &:hover {
         border-color: transparent;
-        background: lighten($brand-color, 55%);
+        background: color.adjust($brand-color, $lightness: 55%);
       }
 
       &[aria-current] {
         border-color: transparent;
-        background: lighten($brand-color, 50%);
+        background: color.adjust($brand-color, $lightness: 50%);
         border-radius: 3px;
       }
     }

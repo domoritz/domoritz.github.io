@@ -1,3 +1,6 @@
+@use "_vars" as *;
+@use "sass:color";
+
 .home {
   h1 {
     margin-top: 0;
@@ -40,12 +43,12 @@
     color: $brand-color;
     padding: 6px 16px;
     border-radius: 3px;
-    border: 1px solid lighten($brand-color, 20%);
+    border: 1px solid color.adjust($brand-color, $lightness: 20%);
 
     &:hover {
       opacity: 1;
       text-decoration: none;
-      background-color: lighten($brand-color, 50%);
+      background-color: color.adjust($brand-color, $lightness: 50%);
     }
   }
 
@@ -201,7 +204,7 @@
 
     .button {
       font-size: 1.1em;
-      background-color: lighten($brand-color, 57%);
+      background-color: color.adjust($brand-color, $lightness: 57%);
     }
 
     .featured-projects {

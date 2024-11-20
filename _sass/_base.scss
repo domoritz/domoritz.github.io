@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "_vars" as *;
+
 /**
  * Basic styling
  */
@@ -16,7 +19,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  color: $text-color;
+  color: color.adjust($text-color, $lightness: -10%);
   background-color: $background-color;
 
   text-rendering: optimizeLegibility;
