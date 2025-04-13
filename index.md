@@ -20,9 +20,9 @@ Find me on [GitHub](https://github.com/domoritz), the [Fediverse](https://vis.so
 
 <div class="me" markdown="1">
 <picture>
-  <source srcset='/images/dominik_berlin.webp' type='image/webp' />
+  <source srcset='/images/dominik_cmu.avif' type='image/avif' />
   <img
-    src='/images/dominik_berlin.jpg'
+    src='/images/dominik_cmu.jpg'
     alt='Dominik Moritz'>
 </picture>
 
