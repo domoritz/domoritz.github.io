@@ -1,0 +1,21 @@
+---
+layout: publication
+year: 2025
+title: "Mosaic: An Architecture for Linking Databases and Scalable Interactive Visualizations"
+authors:
+  - Jeffrey Heer
+  - Dominik Moritz
+  - Ron Pechuk
+venue: SIGMOD
+venue_location: Berlin, Germany
+venue_url: https://2025.sigmod.org
+type:
+  - Demo
+awards:
+  - Best Demo Honorable Mention
+tags:
+  - Data visualization
+  - DuckDB
+---
+
+Real-time interaction and visualization over large data volumes requires careful coordination of data queries and visual updates. Mosaic is an architecture for optimizing scalable and interoperable visualizations backed by a database, providing a platform for developing and deploying optimizations that span both visualization clients and backing databases. Mosaic applications consist of data-consuming clients that publish data needs as declarative queries, parameterized by shared filtering selections. These queries are managed and automatically optimized by a coordinator that proxies access to a scalable data store. For example, by analyzing selection predicates and client queries, the coordinator automatically constructs materialized views to perform selection updates over pre-aggregated data at interactive rates. Given only a high-level specification, Mosaic automatically enables orders-of-magnitude performance improvements over standard update queries.

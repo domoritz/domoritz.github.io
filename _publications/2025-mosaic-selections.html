@@ -1,0 +1,19 @@
+---
+layout: publication
+year: 2025
+title: "Mosaic Selections: Managing and Optimizing User Selections for Scalable Data Visualization Systems"
+authors:
+  - Jeffrey Heer
+  - Dominik Moritz
+  - Ron Pechuk
+venue: IEEE VIS
+venue_location: Vienna, Austria
+venue_url: https://ieeevis.org/year/2025/welcome
+type:
+  - Conference
+tags:
+  - Data visualization
+  - Interactive
+---
+
+Though powerful tools for analysis and communication, interactive visualizations often fail to support real-time interaction with large datasets with millions or more records. To highlight and filter data, users indicate values or intervals of interest. Such selections may span multiple components, combine in complex ways, and require optimizations to ensure low-latency updates. We describe Mosaic Selections, a model for representing, managing, and optimizing user selections, in which one or more filter predicates are added to queries that request data for visualizations and input widgets. By analyzing both queries and selection predicates, Mosaic Selections enable automatic optimizations, including pre-aggregating data to rapidly compute selection updates. We contribute a formal description of our selection model and optimization methods, and their implementation in the open-source Mosaic architecture. Benchmark results demonstrate orders-of-magnitude latency improvements for selection-based optimizations over unoptimized queries and existing optimizers for the Vega language. The Mosaic Selection model provides infrastructure for flexible, interoperable filtering across multiple visualizations, alongside automatic optimizations to scale to millions and even billions of records.
