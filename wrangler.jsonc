@@ -1,0 +1,16 @@
+{
+  "name": "my-worker",
+  "compatibility_date": "2025-08-01",
+  "placement": {
+    "mode": "smart"
+  },
+  "assets": {
+    "directory": "_site"
+  },
+  "routes": [
+    {
+      "pattern": "www.domoritz.de",
+      "custom_domain": true
+    }
+  ]
+}
