@@ -1,3 +1,6 @@
+- name: 10-Years InfoVis Test-of-Time Award
+  years: 2025
+  description: "For \"Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendationsn\"."
 - name: ACM CHI Best Paper Honorable Mention
   years: 2025
   description: "For \"Exploring Empty Spaces: Human-in-the-Loop Data Augmentation\"."
