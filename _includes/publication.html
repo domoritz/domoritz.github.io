@@ -1,7 +1,7 @@
 {% capture anchor %}{% if pub.id %}{{ pub.id }}{% else %}{{ (pub.title | slugify) }}{% endif %}{% endcapture %}
 
 <div class="publication" data-pub='{{ pub | jsonify | escape }}'>
-  <h3 id="{{ anchor }}">{% for award in pub.awards %}<i class="fas fa-{% if award == "Best Paper" %}trophy{% else %}award{% endif %} award-icon" title="{{ award }}"></i> {% endfor %}{{ pub.title }}</h3>
+  <h3 id="{{ anchor }}">{% for award in pub.awards %}<i class="fas fa-{% if award == "Best Paper" %}trophy{% elsif award contains "Test-of-Time" %}clock{% else %}award{% endif %} award-icon" title="{{ award }}"></i> {% endfor %}{{ pub.title }}</h3>
   <div class="authors">
     {% for author in pub.authors %}{% include person person=author %}{% unless forloop.last %}, {% endunless %}
     {% endfor %}
@@ -34,7 +34,7 @@
 
   {% if pub.awards %}
     <div class="awards">
-      {% for award in pub.awards %}{{ award }}{% unless forloop.last %}, {% endunless %}
+      {% for award in pub.awards %}{{ award }}{% unless forloop.last %}<br/>{% endunless %}
       {% endfor %}
     </div>
   {% endif %}

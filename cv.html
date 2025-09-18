@@ -156,7 +156,7 @@ To enhance people's ability to understand and communicate large and complex data
             </div>
           {% endif %}
 
-          {% for award in pub.awards %}<strong class="award"><i class="fas fa-{% if award == "Best Paper" %}trophy{% else %}award{% endif %}" aria-hidden="true"></i> {{ award }}</strong>{% endfor %}
+          {% for award in pub.awards %}<strong class="award"><i class="fas fa-{% if award == "Best Paper" %}trophy{% elsif award contains "Test-of-Time" %}clock{% else %}award{% endif %}" aria-hidden="true"></i> {{ award }}</strong>{% endfor %}
         </div>
       </div>
     {% endif %}
