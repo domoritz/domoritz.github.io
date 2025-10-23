@@ -1,3 +1,18 @@
+- title: Generative AI Human Interface Guidelines
+  url: https://developer.apple.com/design/human-interface-guidelines/generative-ai
+  description: "Generative AI empowers you to enhance your app or game with dynamic content and offer intelligent features that unlock new levels of creativity, connection, and productivity"
+  image: generative-ai.png
+
+- title: Charting Data Human Interface Guidelines
+  url: https://developer.apple.com/design/human-interface-guidelines/patterns/charting-data
+  description: "Presenting data in a chart can help you communicate information with clarity and appeal"
+  image: charting-data.png
+
+- title: Charts Human Interface Guidelines
+  url: https://developer.apple.com/design/human-interface-guidelines/components/content/charts
+  description: "Organize data in a chart to communicate information with clarity and visual appeal"
+  image: charts.png
+
 - title: Mosaic
   url: https://idl.uw.edu/mosaic/
   code: https://github.com/uwdata/mosaic
@@ -60,7 +75,7 @@
   article: https://medium.com/@uwdata/value-suppressing-uncertainty-palettes-426130122ce9
   paper: /papers/2018-VSUPs-CHI.pdf
   demo: https://uwdata.github.io/vsup/examples/polling.html
-  description: "To visualize values and uncertaity together, Michael Correll and I created Value-Suppressing Uncertainty Palettes (VSUPs for short)."
+  description: "To visualize values and uncertainty together, Michael Correll and I created Value-Suppressing Uncertainty Palettes (VSUPs for short)."
 
 - title: Draco
   url: https://uwdata.github.io/draco
@@ -137,7 +152,7 @@
 - title: IPython Vega
   code: https://github.com/vega/ipyvega
   image: ipyvega.jpg
-  description: "I maintain the Jupyter Notebook extesion for Vega and Vega-Lite."
+  description: "I maintain the Jupyter Notebook extension for Vega and Vega-Lite."
 
 - title: JupyterLab
   code: https://github.com/jupyterlab/jupyterlab
@@ -161,7 +176,7 @@
   code: https://github.com/uwescience/myria-web
   video: https://vimeo.com/127110709
   image: perfopticon.jpg
-  description: "I led the development of an interactive tool to investigate quety execution in distirbuted database systems."
+  description: "I led the development of an interactive tool to investigate query execution in distributed database systems."
 
 - title: Google Dataset Search
   paper: https://ai.google/research/pubs/pub45390
@@ -246,7 +261,7 @@
 - title: Optimal ATM placement
   article: /blog/2011/01/informaticup-2011.html
   image: hatfield.jpg
-  description: "Our contribution to the Informaticup 2011. The algorithms we devleloped compute optimal placements of ATMs in a city. We won the competition and were invited to present our work in Bonn."
+  description: "Our contribution to the Informaticup 2011. The algorithms we developed compute optimal placements of ATMs in a city. We won the competition and were invited to present our work in Bonn."
 
 - title: Shopping tour optimizer
   article: /blog/2012/03/shoppingtour-optimizer.html
