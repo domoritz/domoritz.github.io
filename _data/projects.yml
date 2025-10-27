@@ -28,6 +28,11 @@
   description: "Swift Charts is a framework for informative, delightful, and accessible charts on Apple's platforms."
   highlight: 4
 
+- title: Visualizing the Apple Women's Health Study
+  description: "A four-part series of interactive articles to help people understand the key concepts within the Apple Women's Health Study data."
+  url: https://awhs-updates.hsph.harvard.edu/cycle-length-variability/
+  image: awhs.png
+
 - title: Audio Graphs
   code: https://developer.apple.com/documentation/accessibility/audio_graphs
   video: https://developer.apple.com/videos/play/wwdc2021/10122/
