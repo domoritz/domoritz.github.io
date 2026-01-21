@@ -10,7 +10,7 @@
   relation: PhD Student
 - name: Will Epperson
   note: Co-advised with Adam Perer.
-  year: 2020-present
+  year: 2020-2025
   location: CMU
   relation: PhD Student
 - name: Carol Xinyi Zheng
@@ -29,6 +29,10 @@
 - name: Tomas Cabezon Pedroso
   year: 2023
   location: CMU
+  relation: Thesis Commitee
+- name: Junran Yang
+  year: 2025
+  location: University of Washington
   relation: Thesis Commitee
 
 - name: Trevor Manz
@@ -55,8 +59,8 @@
   relation: Visiting Researcher
 
 - name: Péter Gyarmati
-  year: 2022-2024
-  note: Peter was at the University of Vienna. We worked on Draco2.
+  year: 2022-present
+  note: Peter was at the University of Vienna. We worked on Draco2, visualization recommendation, and AI agents.
   location: CMU
   relation: Research Collaborator
 - name: Junran Yang
@@ -80,6 +84,13 @@
   location: CMU
   relation: Research Collaborator
 
+- names:
+    - Nikhil Prakash
+    - Alex Oesterling
+    - Angie Boggust
+  year: 2025
+  location: Apple
+  relation: Apple Summer Internship
 - names:
     - Catherine Yeh
     - Kushin Mukherjee
@@ -117,10 +128,23 @@
   relation: Apple Summer Internship
 
 - names:
+    - Yuvvan Talreja
+    - Esther Suh
+    - ...
+  year: 2025
+  location: CMU
+  relation: Research Assistants
+- names:
     - Syeda Sheherbano Rizvi
     - Lan Lyu
     - Fernie Qin
   year: 2023
+  location: CMU
+  relation: Research Assistants
+- names:
+    - Kazi Jawad
+    - ...
+  year: 2022
   location: CMU
   relation: Research Assistants
 - names:
