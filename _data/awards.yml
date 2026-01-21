@@ -1,19 +1,19 @@
-- name: 10-Years InfoVis Test-of-Time Award
+- name: 10-Years InfoVis Test-of-Time
   years: 2025
   description: "For \"Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendationsn\"."
 - name: ACM CHI Best Paper Honorable Mention
   years: 2025
   description: "For \"Exploring Empty Spaces: Human-in-the-Loop Data Augmentation\"."
-- name: Visualization Significant New Researcher Award
+- name: Visualization Significant New Researcher
   years: 2024
   description: "For impactful work in the development of software infrastructure that has influenced both research and practice."
-- name: ACM CHI Best Paper Honorable Mention Award
+- name: ACM CHI Best Paper Honorable Mention
   years: 2024
   description: "For \"Talaria: Interactively Optimizing Machine Learning Models for Efficient Inference\"."
 - name: IEEE VIS Best Paper Honorable Mentions
   years: 2023
   description: "Three awards for two full and one short paper."
-- name: ACM CHI Best Paper Award
+- name: ACM CHI Best Paper
   years: 2022
   description: "For \"Neo: Generalizing Confusion Matrix Visualization to Hierarchical and Multi-Output Labels\"."
 - name: IEEE VGTC Outstanding Dissertation Award
