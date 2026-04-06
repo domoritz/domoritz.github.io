@@ -3,7 +3,7 @@
   role: Instructor
   url: https://dig.cmu.edu/vis2025
   year: 2025
-  description: Prepared and taught lectures. Prepared and graded assignments.
+  description: Prepared and taught lectures. Prepared and graded assignments. Updated course materials to provide more scaffolding for developing with Svelte and D3.
 - title: "Programming Usable Interfaces (PUI)"
   location: Carnegie Mellon University
   role: Instructor
@@ -22,7 +22,7 @@
   url: https://dig.cmu.edu/vis2021
   year: 2021
   students: 35 students
-  description: Prepared and taught lectures. Prepared and graded assignments. Co-taught with Adam Perer.
+  description: Prepared and taught lectures. Prepared and graded assignments. Co-taught with Adam Perer. Interated lectures on accessiblity.
 - title: "Interactive Data Science"
   location: Carnegie Mellon University
   role: Instructor
