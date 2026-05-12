@@ -1,0 +1,38 @@
+---
+layout: publication
+year: 2026
+title: "Constructive Circuit Amplification: Improving Math Reasoning in LLMs via Targeted Sub-Network Updates"
+authors:
+  - Nikhil Prakash
+  - Donghao Ren
+  - Dominik Moritz
+  - Yannick Assogba
+venue: "ICLR Workshops (Re-Align; Principled Design for Trustworthy AI)"
+venue_url: https://iclr.cc/Conferences/2026/
+venue_tags:
+  - ICLR
+  - Workshop
+type:
+  - Workshop
+tags:
+  - Machine Learning
+  - Interpretability
+arxiv: "2512.16914"
+link: https://machinelearning.apple.com/research/constructive-circuit-amplification
+---
+
+Prior studies investigating the internal workings of LLMs have uncovered sparse
+subnetworks, often referred to as circuits, that are responsible for performing
+specific tasks. Additionally, it has been shown that model performance
+improvement through fine-tuning often results from the strengthening of existing
+circuits in the model. Taken together, these findings suggest the possibility
+of intervening directly on such circuits to make precise, task-targeted updates.
+Motivated by these findings, we propose a novel method called Constructive
+Circuit Amplification which identifies pivotal tokens from model reasoning
+traces as well as model components responsible for the desired task, and
+updates only those components. Applied to mathematical reasoning, it improves
+accuracy by up to +11.4% across multiple models while modifying as little as
+1.59% of model components, with minimal impact on other abilities as measured
+by MMLU, TriviaQA, and TruthfulQA. These results demonstrate that targeted
+capabilities can be reliably enhanced by selectively updating a sparse set of
+model components.
