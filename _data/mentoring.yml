@@ -21,32 +21,32 @@
 - name: Mary Beth Kery
   year: 2020
   location: CMU
-  relation: Thesis Commitee
+  relation: Thesis Committee
 - name: Kai Ye
   year: 2020-2021
   location: CMU
-  relation: Thesis Commitee
+  relation: Thesis Committee
 - name: Tomas Cabezon Pedroso
   year: 2023
   location: CMU
-  relation: Thesis Commitee
+  relation: Thesis Committee
 - name: Junran Yang
   year: 2025
   location: University of Washington
-  relation: Thesis Commitee
+  relation: Thesis Committee
 
 - name: Trevor Manz
   year: 2024
   location: Harvard Medical School
-  relation: Thesis Commitee
+  relation: Thesis Committee
 - name: Yiru Chen
   year: 2024
   location: Columbia University
-  relation: Thesis Commitee
+  relation: Thesis Committee
 - name: Jeffrey Tao
   year: 2023
   location: Columbia University
-  relation: Thesis Commitee
+  relation: Thesis Committee
 
 - name: Yanna Lin
   year: 2024
@@ -215,4 +215,4 @@
   relation: Undergraduate Researchers
   location: University of Washington
   year: 2015-2019
-  note: Mentor students for working on Vega-Lite, Voyager, Polestar, and related projects.
+  note: Mentored students working on Vega-Lite, Voyager, Polestar, and related projects.

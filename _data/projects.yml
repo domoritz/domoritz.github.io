@@ -226,7 +226,7 @@
   code: https://github.com/domoritz/leaflet-maskcanvas
   demo: http://domoritz.github.io/vbb-coverage/
   image: vbb.jpg
-  description: "Visualize coverage on a Leaflet map. The data is store in a quad-tree to make queries to the data super fast."
+  description: "Visualize coverage on a Leaflet map. The data is stored in a quad-tree to make queries to the data super fast."
 
 - title: Heatmap layer
   url: http://www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html
@@ -242,7 +242,7 @@
   image: maplink.jpg
   paper: /papers/2013-MapLink.pdf
   video: https://www.youtube.com/watch?v=U9-zceFffSY
-  description: "For [Patrick Baudisch's](http://www.patrickbaudisch.com/) [HCI class at HPI](https://hpi.de/baudisch/teaching.html), we had to implement an application that usually requires large screens on a iPod nano (enough for 4 buttons). We implemented a GIS application to geo-reference images by simply aligning points. We introduced the concept of an X-Ray layer to align points on small devices."
+  description: "For [Patrick Baudisch's](http://www.patrickbaudisch.com/) [HCI class at HPI](https://hpi.de/baudisch/teaching.html), we had to implement an application that usually requires large screens on an iPod nano (enough for 4 buttons). We implemented a GIS application to geo-reference images by simply aligning points. We introduced the concept of an X-Ray layer to align points on small devices."
 
 - title: Singing VHDL board
   image: s76d.jpg
@@ -260,7 +260,7 @@
 - title: Tagshot
   image: tagshot.jpg
   code: https://github.com/tagshot/tagshot
-  description: "Tagshot is a photo management tool in the browser. We designed and developed as a class project. Our goal was to create a tool that let's users efficiently manage large numbers of photos and in particular add tags."
+  description: "Tagshot is a photo management tool in the browser. We designed and developed it as a class project. Our goal was to create a tool that lets users efficiently manage large numbers of photos and in particular add tags."
   article: /blog/2012/03/tagshot-und-andere-projekte.html
 
 - title: Optimal ATM placement

@@ -4,11 +4,11 @@ title: "Scanning Photo Albums"
 description: How we are scanning dozens of photo albums and process them with open source tools
 ---
 
-As a millennial, most of my childhood is not recorded in digital photos but in videos on VHS tapes and photos albums that my parents have. I like flipping through digital photos and so I decided that it's time to get all the pictures into digital form. Now the question is how? In this post I am showing that a simple flatbed scanner and some open source command line tools (Fred's ImageMagick Scripts, ImageMagick/GraphicsMagick, Parallel, Exiftool, and standard UNIX tools) are fast and produce good quality images.
+As a millennial, most of my childhood is not recorded in digital photos but in videos on VHS tapes and photo albums that my parents have. I like flipping through digital photos and so I decided that it's time to get all the pictures into digital form. Now the question is how? In this post I am showing that a simple flatbed scanner and some open source command line tools (Fred's ImageMagick Scripts, ImageMagick/GraphicsMagick, Parallel, Exiftool, and standard UNIX tools) are fast and produce good quality images.
 
 ## Photo scanner apps are not good enough
 
-My first idea was to use the good camera on my phone. I have seen apps such as [Google Photo Scan](https://www.google.com/photos/scan/) that promise to avoid glare and other artifacts that you get if you just took a photo. I tried a few apps but none of them  worked. It takes forever to scan a single photo, there are artifacts on the images, and since pictures are not flat, the scans often come out distorted.
+My first idea was to use the good camera on my phone. I have seen apps such as [Google Photo Scan](https://www.google.com/photos/scan/) that promise to avoid glare and other artifacts that you get if you just took a photo. I tried a few apps but none of them worked. It takes forever to scan a single photo, there are artifacts on the images, and since pictures are not flat, the scans often come out distorted.
 
 ## Scanning and segmenting images with Image Capture almost worked
 
@@ -20,7 +20,7 @@ The following pipeline worked well for us. In short, we scan full pages, crop th
 
 First, we put as many pictures on the flatbed scanner as we can fit. Ideally, they are ordered from top-right, over to the left, to the bottom left when you put them on the scanner. This way they are in the correct order in the scanned image. Now, we scan the full page in 600 DPI (that's my scanner's max and it worked well) as TIFF. Scanning the full page means we don't need a preview and can go through a photo album in half an hour.
 
-Now we have a folder full of scans such as this one scan.
+Now we have a folder full of scans such as this one.
 
 <picture>
 <img src="{{ 'images/scan.jpg' | relative_url }}" width="300" alt="Four family pictures scanned in a single image">
