@@ -1,6 +1,7 @@
 {% capture anchor %}{% if pub.id %}{{ pub.id }}{% else %}{{ (pub.title | slugify) }}{% endif %}{% endcapture %}
 
-<div class="publication" data-pub='{{ pub | jsonify | escape }}'>
+{% capture pub_json %}{"title":{{ pub.title | jsonify }},"year":{{ pub.year | jsonify }}{% if pub.authors %},"authors":{{ pub.authors | jsonify }}{% endif %}{% if pub.awards %},"awards":{{ pub.awards | jsonify }}{% endif %}{% if pub.tags %},"tags":{{ pub.tags | jsonify }}{% endif %}{% if pub.type %},"type":{{ pub.type | jsonify }}{% endif %}{% if pub.venue_tags %},"venue_tags":{{ pub.venue_tags | jsonify }}{% endif %}{% if pub.highlight %},"highlight":{{ pub.highlight | jsonify }}{% endif %},"content":{{ pub.content | strip_html | normalize_whitespace | jsonify }}}{% endcapture %}
+<div class="publication" data-pub='{{ pub_json | escape }}'>
   <h3 id="{{ anchor }}">{% for award in pub.awards %}<i class="fas fa-{% if award == "Best Paper" %}trophy{% elsif award contains "Test-of-Time" %}clock{% else %}award{% endif %} award-icon" title="{{ award }}"></i> {% endfor %}{{ pub.title }}</h3>
   <div class="authors">
     {% for author in pub.authors %}{% include person person=author %}{% unless forloop.last %}, {% endunless %}
