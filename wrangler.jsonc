@@ -14,5 +14,8 @@
       "pattern": "www.domoritz.de",
       "custom_domain": true
     }
-  ]
+  ],
+  "observability": {
+    "enabled": false
+  }
 }
