@@ -1,6 +1,5 @@
 ---
 ---
 User-agent: *
-Disallow: /octopress/
-
+Disallow:
 Sitemap: {{ site.url }}/sitemap.xml
