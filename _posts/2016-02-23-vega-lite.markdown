@@ -1,7 +1,87 @@
 ---
 layout: post
 title: "Introducing Vega-Lite"
-description: A blog post to announce Vega-Lite.
+description: Announcing the 1.0 release of Vega-Lite, a high-level format for rapidly creating visualizations for analysis and presentation.
 ---
 
-Ham, Jeff and I wrote a [blog post to announce Vega-Lite](https://medium.com/hci-design-at-uw/introducing-vega-lite-438f9215f09e).
+*Originally published at [Medium](https://medium.com/hci-design-at-uw/introducing-vega-lite-438f9215f09e).*
+
+Today we are excited to announce the official 1.0 release of [Vega-Lite](https://vega.github.io/vega-lite/), a high-level format for *rapidly creating visualizations for analysis and presentation*. With Vega-Lite, one can concisely describe a visualization as a set of encodings that map from data fields to the properties of graphical marks, using a [JSON](https://en.wikipedia.org/wiki/JSON) format. Vega-Lite also supports data transformations such as aggregation, binning, filtering, and sorting, along with visual transformations including stacked layouts and faceting into small multiples.
+
+## A High-level Language for Visualization
+
+As you might have guessed, Vega-Lite is built on top of [Vega](http://vega.github.io/vega/), a visualization grammar built using [D3](http://d3js.org). Vega and D3 provide a lot of flexibility for custom visualization designs; however, that power comes with a cost. With [Vega](https://github.com/vega/vega/wiki/Tutorial) or [D3](https://bl.ocks.org/mbostock/3885304), a basic bar chart requires dozens of lines of code and specification of low-level components such as [scales](https://medium.com/@mbostock/introducing-d3-scale-61980c51545f) and axes. In contrast, Vega-Lite is a *higher-level language* that simplifies the creation of common charts. In Vega-Lite, a bar chart is simply an encoding with two fields.
+
+<figure>
+<img src="{{ '/images/posts/vega-lite/bar-chart-spec.avif' | relative_url }}" alt="A Vega-Lite specification for a Bar Chart">
+<figcaption>A Vega-Lite specification for a Bar Chart</figcaption>
+</figure>
+
+## The Design of Vega-Lite
+
+Vega-Lite was inspired by other high-level visualization languages such as Wilkinson’s [Grammar of Graphics](http://www.amazon.com/The-Grammar-Graphics-Statistics-Computing/dp/0387245448), Wickham’s [ggplot2](http://ggplot2.org/) for R, and the VizQL formalism underlying [Tableau](http://tableau.com/). Motivated by the design of these languages as well as the underlying Vega and D3 systems, we arrived at a number of principles to guide the design of Vega-Lite.
+
+**Favor composition over templates.** While chart templates (as found in spreadsheet programs) can be convenient, they limit the visualization types that can be created. Instead, Vega-Lite uses a compositional approach, describing a visualization based on the properties of graphical marks. This approach not only supports an expressive range of graphics, it also helps users rapidly refine and move between chart types. For example, you can create a histogram by mapping a binned field and the count of all records to a bar mark. You can then quickly edit the specification to create other types of visualizations, such as binned scatterplots.
+
+<figure>
+<img src="{{ '/images/posts/vega-lite/histogram.avif' | relative_url }}" alt="Mapping a binned field and its count to a bar mark produces a histogram">
+<figcaption>Mapping a binned field and its count to a bar mark produces a histogram.</figcaption>
+</figure>
+
+<figure>
+<img src="{{ '/images/posts/vega-lite/binned-scatterplot.avif' | relative_url }}" alt="The binning transformation can be used to create a binned scatterplot as well">
+<figcaption>The binning transformation can be used to create a binned scatterplot as well.</figcaption>
+</figure>
+
+<figure>
+<img src="{{ '/images/posts/vega-lite/stacked-bar.avif' | relative_url }}" alt="A stacked bar chart with a custom color palette">
+<figcaption>A stacked bar chart with a custom color palette.</figcaption>
+</figure>
+
+**Provide sensible defaults, but allow customization.** Vega-Lite’s compiler automatically chooses default properties of a visualization based on a set of carefully designed rules. However, one can specify additional properties to customize the visualization. For example, the stacked bar chart on the left has a custom color palette. Vega-Lite uses a concise syntax, enabling rapid creation of visualizations without unduly restricting subsequent customization.
+
+<figure>
+<img src="{{ '/images/posts/vega-lite/voyager-polestar.avif' | relative_url }}" alt="Applications powered by Vega-Lite: Voyager, a recommendation-powered visualization browser (left), and Polestar, a visualization specification tool (right)">
+<figcaption>Applications powered by Vega-Lite: <a href="http://vega.github.io/voyager/">Voyager</a>, a recommendation-powered visualization browser (left), and <a href="https://github.com/vega/polestar">Polestar</a>, a visualization specification tool (right).</figcaption>
+</figure>
+
+**Support programmatic generation, sharing, and reuse.** Like Vega, Vega-Lite can serve as a standalone file format for visualizations. In particular, Vega-Lite is designed to be a convenient format for automatic visualization generation by visual analysis tools. Examples of applications that use Vega-Lite are [Voyager](http://vega.github.io/voyager/), a recommendation-powered visualization browser for data exploration, and [Polestar](https://github.com/vega/polestar), a web-based visual specification interface inspired by Tableau. Moreover, one can reuse Vega-Lite specifications across datasets with similar schemas.
+
+<figure>
+<img src="{{ '/images/posts/vega-lite/vega-editor.avif' | relative_url }}" alt="The online Vega editor shows the Vega-Lite specification and the compiled Vega specification side-by-side">
+<figcaption>The online <a href="https://vega.github.io/vega-editor/?mode=vega-lite&amp;spec=bar">Vega editor</a> shows the Vega-Lite specification and the compiled Vega specification side-by-side.</figcaption>
+</figure>
+
+**Leverage Vega’s performance, flexibility across platforms, and expressivity.** Vega-Lite specifications are compiled into Vega specifications and rendered using Vega’s runtime, which supports both browser-side and server-side rendering via SVG or Canvas. Vega-Lite directly benefits from [Vega’s architecture](http://idl.cs.washington.edu/papers/reactive-vega-architecture). While Vega-Lite focuses on commonly-used charts, one can create more advanced designs by starting with Vega-Lite and then further customizing the resulting Vega specification.
+
+## The Future of Vega-Lite
+
+With the 1.0 release, Vega-Lite provides a useful tool for visualization on the web. That said, we are even more excited about what comes next.
+
+**Composition and Interaction.** A powerful aspect of modular approaches to visualization is the ability to create sophisticated graphics by composing simple ones. A static visualization typically provides at most a handful of insights into the data. The true power of visualization lies in the ability to interact with data and see it from multiple perspectives. So, we are building new methods for composite, interactive visualizations in Vega-Lite. In the coming months, Vega-Lite will add support for both layering and composing views side-by-side. We are also developing ways to describe not just visual encodings, but *interaction techniques* using a concise, composable, high-level syntax. For example, we will support linked views with cross-filtering.
+
+<figure>
+<img src="{{ '/images/posts/vega-lite/crossfilter.avif' | relative_url }}" alt="Brushing and Linking in the Vega cross-filter example, inspired by Mike Bostock’s Crossfilter.js library">
+<figcaption>Brushing and Linking in the <a href="http://vega.github.io/vega-editor/?mode=vega&amp;spec=crossfilter">Vega cross-filter example</a>, inspired by Mike Bostock’s C<a href="http://square.github.io/crossfilter/">rossfilter.js</a> library. Vega-Lite will support describing this kind of interaction techniques in the near future.</figcaption>
+</figure>
+
+**Scalability.** As Vega-Lite is a declarative language, we can reason about its behavior and automatically optimize and distribute computation. For example, a server could pre-aggregate data and send data in a compressed binary format to the browser. As a result, visualizations of large data sets can load more quickly and be more responsive. Moreover, this optimization should be possible without any changes to a Vega-Lite specification!
+
+<figure>
+<img src="{{ '/images/posts/vega-lite/lyra.avif' | relative_url }}" alt="Lyra, a visualization design tool">
+<figcaption><a href="http://idl.cs.washington.edu/projects/lyra/">Lyra</a>, a visualization design tool.</figcaption>
+</figure>
+
+**Design Tools.** Creating visualizations with Vega-Lite should be easy, but we hope to make it even easier. We are developing a design validator that helps identify potentially ineffective visualizations. For example, a horizontal bar chart with an x-axis starting at a non-zero value is a valid specification, but it might cause readers to misinterpret the relative differences between values. We will also introduce support for theming in both Vega and Vega-Lite to customize the default look-and-feel. Plus, the next version of [Lyra](http://idl.cs.washington.edu/projects/lyra/), a visualization design tool, will use Vega-Lite’s rule-based system for rapidly creating visualizations.
+
+## Learn and Use Vega-Lite
+
+If you are interested in taking Vega-Lite for a spin, you can start visualizing and join the community today by:
+
+- Reading the [Vega-Lite getting started tutorial](https://vega.github.io/vega-lite/tutorials/getting_started.html).
+- Playing with Vega-Lite in [the online Vega Editor](http://vega.github.io/vega-editor/?mode=vega-lite&spec=bar).
+- Building your own applications with [Vega-Lite](https://github.com/vega/vega-lite).
+- Subscribing to [Vega mailing list](https://groups.google.com/forum/#!forum/vega-js) and following us on [Twitter](http://twitter.com/uwdata) and [Medium](https://medium.com/@uwdata).
+- [Contributing](https://github.com/vega/vega-lite/blob/master/CONTRIBUTING.md) to the project.
+
+*This post was authored by* [*Kanit “Ham” Wongsuphasawat*](http://twitter.com/kanitw)*,* [*Dominik Moritz*](http://twitter.com/domoritz) *and* [*Jeffrey Heer*](http://twitter.com/jeffrey_heer)*. We would like to thank all of the* [*Vega-Lite contributors*](https://github.com/vega/vega-lite/graphs/contributors) *and the* [*UW Interactive Data Lab*](http://idl.cs.washington.edu/people) *for their assistance in the development of Vega-Lite.*
