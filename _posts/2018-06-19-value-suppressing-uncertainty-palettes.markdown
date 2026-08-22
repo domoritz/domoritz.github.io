@@ -51,4 +51,4 @@ VSUPs encourage people to be cautious about their judgments when uncertainty is 
 
 There are more details about VSUPs, including an empirical evaluation of their effectiveness, in our [paper repository](https://github.com/uwdata/papers-vsup/). If you’d like to start making VSUPs for yourself, we’ve got [a module](https://github.com/uwdata/vsup) that plays nice with [D3.js](https://d3js.org/)!
 
-*This article was written by Michael Correll, Dominik Moritz, and Jeffrey Heer, describing a paper we presented at CHI 2018. For more,* [*read the paper*](http://idl.cs.washington.edu/papers/uncertainty-palettes)*.*
+*This article was written by Michael Correll, Dominik Moritz, and Jeffrey Heer, describing a paper we presented at CHI 2018. For more,* [*read the paper*](https://idl.uw.edu/papers/uncertainty-palettes)*.*

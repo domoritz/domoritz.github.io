@@ -6,7 +6,7 @@ description: Announcing Vega-Lite 2, which adds view composition, interaction, a
 
 *Originally published at [Medium](https://medium.com/@uwdata/introducing-vega-lite-2-0-de6661c12d58).*
 
-We are excited to announce the official version 2 release of [Vega-Lite](https://vega.github.io/vega-lite/), a high-level language for *rapidly creating interactive visualizations*.
+We are excited to announce the official version 2 release of [Vega-Lite](https://vega.github.io/vega-lite-v2/), a high-level language for *rapidly creating interactive visualizations*.
 
 Vega-Lite enables concise descriptions of visualizations as a set of encodings that map data fields to the properties of graphical marks. Vega-Lite uses a portable [JSON](https://en.wikipedia.org/wiki/JSON) format that compiles to full specifications in the larger [Vega language](https://vega.github.io/vega/). Vega-Lite includes support for data transformations such as aggregation, binning, filtering, and sorting, as well as visual transformations such as stacking and faceting into small multiples.
 
@@ -23,7 +23,7 @@ Most importantly, these operators can be combined! Authors can create rich multi
 <figcaption>Three charts that show different weather measures throughout the year in Seattle and New York. you can create this chart in Vega-Lite with layering and repeating views. <a href="https://vega.github.io/editor/#/examples/vega-lite/repeat_layer">Try it out!</a></figcaption>
 </figure>
 
-The *layer*, *facet*, *concat*, and *repeat* operators comprise a *view algebra* for creating a wide range of multi-view visualizations. For more about details about flexible chart composition, see the [Vega-Lite documentation](https://vega.github.io/vega-lite/docs/composition.html).
+The *layer*, *facet*, *concat*, and *repeat* operators comprise a *view algebra* for creating a wide range of multi-view visualizations. For more about details about flexible chart composition, see the [Vega-Lite documentation](https://vega.github.io/vega-lite-v2/docs/composition.html).
 
 ## Interaction
 
@@ -45,7 +45,7 @@ View composition and interactive selections can be combined. Below, we use an in
 <figcaption>A crossfilter interaction in Vega-Lite 2. <a href="https://vega.github.io/editor/#/examples/vega-lite/interactive_layered_crossfilter">Try it out!</a></figcaption>
 </figure>
 
-More details about Vega-Lite’s interaction primitives can be found in [the documentation](https://vega.github.io/vega-lite/docs/selection.html). For a more formal treatment, see the (best paper winning) [InfoVis 2016 research paper on the Vega-Lite language design](https://idl.cs.washington.edu/papers/vega-lite).
+More details about Vega-Lite’s interaction primitives can be found in [the documentation](https://vega.github.io/vega-lite-v2/docs/selection.html). For a more formal treatment, see the (best paper winning) [InfoVis 2016 research paper on the Vega-Lite language design](https://idl.uw.edu/papers/vega-lite).
 
 For a tour of these and other features, watch our *OpenVis Conf* talk:
 
@@ -62,6 +62,6 @@ In addition to the developments above, we have attempted to make Vega-Lite more 
 
 We are excited to see what others will build with Vega-Lite! We are especially encouraged that [Jupyter Lab](https://github.com/jupyterlab/jupyterlab) (the next generation of [Jupyter Notebooks](http://jupyter.org/)) will ship with Vega and Vega-Lite by default. We are also working with the [Altair](https://altair-viz.github.io/) team to release a new version of the Altair Python API for Vega-Lite. Look for that in the months to come to create interactive, multi-view visualizations directly within the Jupyter data science environment!
 
-Feeling inspired? Check out the [example gallery](https://vega.github.io/vega-lite/examples/) and [applications that use Vega-Lite](https://vega.github.io/vega-lite/applications.html). Read tutorials and documentation at [vega.github.io/vega-lite/](https://vega.github.io/vega-lite/). Source code is available on GitHub at [https://github.com/vega/vega-lite](https://github.com/vega/vega-lite). For updates, [follow the Vega project on Twitter at @vega_vis](https://twitter.com/vega_vis).
+Feeling inspired? Check out the [example gallery](https://vega.github.io/vega-lite-v2/examples/) and [applications that use Vega-Lite](https://vega.github.io/vega-lite-v2/applications.html). Read tutorials and documentation at [vega.github.io/vega-lite/](https://vega.github.io/vega-lite/). Source code is available on GitHub at [https://github.com/vega/vega-lite](https://github.com/vega/vega-lite). For updates, [follow the Vega project on Twitter at @vega_vis](https://twitter.com/vega_vis).
 
 *This post was written by* [*Dominik Moritz*](https://twitter.com/domoritz)*,* [*Kanit “Ham” Wongsuphasawat*](https://twitter.com/kanitw)*,* [*Arvind Satyanarayan*](https://twitter.com/arvindsatya1)*, and* [*Jeffrey Heer*](https://twitter.com/jeffrey_heer)*.*
