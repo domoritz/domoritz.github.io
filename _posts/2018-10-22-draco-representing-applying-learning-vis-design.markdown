@@ -19,7 +19,7 @@ In this article, we explain how to encode design guidelines in Draco, how Draco 
 The first ingredient of Draco is a formal language to describe visualizations. Here we use [Vega-Lite](https://vega.github.io/vega-lite/), a high-level language for describing a variety of statistical graphics. With Vega-Lite, one can concisely describe a visualization as a set of encodings that map from data fields to the properties of graphical marks (such as *x*, *y*, *size*, or *color* properties). Vega-Lite includes data transformations such as filtering, sorting, binning, and aggregation along with visual operations including stacked layouts and faceting data into [small multiples](https://en.wikipedia.org/wiki/Small_multiple). By combining these basic building blocks, Vega-Lite users can construct an [expressive range of graphics](https://vega.github.io/vega-lite/examples/).
 
 <figure>
-<img src="{{ '/images/posts/draco/bar-chart-facts.avif' | relative_url }}" alt="An example of a bar chart, its Vega-Lite specification (in Vega-Lite JSON), and its equivalent specification using Draco constraints (in ASP)">
+<img src="{{ '/images/posts/draco/bar-chart-vega-lite-and-asp.avif' | relative_url }}" alt="An example of a bar chart, its Vega-Lite specification (in Vega-Lite JSON), and its equivalent specification using Draco constraints (in ASP)">
 <figcaption><em>Figure 1: An example of a bar chart, its Vega-Lite specification (in Vega-Lite JSON), and its equivalent specification using Draco constraints (in ASP). The specification defines the marktype and encodings, which includes a specification of the fields, data type, and data transformations.</em></figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ So far we have discussed how we can specify visualizations and design guidelines
 For example, we can translate a Vega-Lite visualization specification into a set of Draco facts. We can then use a constraint solver to check the specification against all design rules and notify the user if the chart violates any particular guideline. We can use the soft constraint weights to determine the severity of any violations. This support is similar to spelling and grammar checkers in word processors, allowing us to automatically alert a visualization creator to potential issues that might hamper accurate chart reading.
 
 <figure>
-<img src="{{ '/images/posts/draco/encoding-search.avif' | relative_url }}" alt="Our implementation of the encoding search process using constraints">
+<img src="{{ '/images/posts/draco/encoding-search-pipeline.avif' | relative_url }}" alt="Our implementation of the encoding search process using constraints">
 <figcaption><em>Figure 2: Our implementation of the encoding search process using constraints. Draco compiles a user query (including the dataset, the partial specification, and the task) into a set of rules and combines them with the existing knowledge base to form an ASP program. Draco then calls Clingo to solve the program to obtain the optimal answer set. Finally, Draco translates the answer set into a Vega-Lite specification.</em></figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ In this way, Draco can serve as a “design assistant” that makes suggestions 
 Draco’s “knowledge” of visualization design is encoded in the hard and soft constraints. While it is comparatively easy for an expert to specify what visualizations are non-sensible and what design rules exist, trading off between potentially competing design rules is much more challenging. Moreover, in general such trade-offs are far from universal: particular domains or organizations may have different conventions or preferences.
 
 <figure>
-<img src="{{ '/images/posts/draco/learning-to-rank.avif' | relative_url }}" alt="Overview of Learning-to-Rank in Draco">
+<img src="{{ '/images/posts/draco/learning-to-rank-overview.avif' | relative_url }}" alt="Overview of Learning-to-Rank in Draco">
 <figcaption><em>Figure 3: Overview of Learning-to-Rank in Draco. Given visualization pairs in which one chart is preferable to the other, we learn soft constraint weights that best match the observed pairs.</em></figcaption>
 </figure>
 

@@ -19,7 +19,7 @@ A powerful aspect of modular approaches to visualization is the ability to creat
 Most importantly, these operators can be combined! Authors can create rich multi-view graphics within one declarative specification. The example below compares weather data in New York and Seattle, *layering* data for individual years and averages within a *repeated* template for different measurements.
 
 <figure>
-<img src="{{ '/images/posts/vega-lite-2/weather-composition.avif' | relative_url }}" alt="Three charts that show different weather measures throughout the year in Seattle and New York">
+<img src="{{ '/images/posts/vega-lite-2/weather-layer-repeat-charts.avif' | relative_url }}" alt="Three charts that show different weather measures throughout the year in Seattle and New York">
 <figcaption>Three charts that show different weather measures throughout the year in Seattle and New York. you can create this chart in Vega-Lite with layering and repeating views. <a href="https://vega.github.io/editor/#/examples/vega-lite/repeat_layer">Try it out!</a></figcaption>
 </figure>
 
@@ -34,14 +34,14 @@ In Vega-Lite 2.0, visualization authors specify the *type* of selection they wou
 The plot below uses an interval selection, which causes the chart to include an interactive brush (shown in grey). The brush selection parameterizes the red guideline, which visualizes the average value within the selected interval.
 
 <figure>
-<img src="{{ '/images/posts/vega-lite-2/moving-average.avif' | relative_url }}" alt="An interactive moving average in Vega-Lite 2">
+<img src="{{ '/images/posts/vega-lite-2/interactive-moving-average.avif' | relative_url }}" alt="An interactive moving average in Vega-Lite 2">
 <figcaption>An interactive moving average in Vega-Lite 2. <a href="https://vega.github.io/editor/#/examples/vega-lite/selection_layer_bar_month">Try it out!</a></figcaption>
 </figure>
 
 View composition and interactive selections can be combined. Below, we use an interval selection over a set of histograms showing the distributions of different flight statistics. The selection parameterizes a filter for the yellow bars, creating a coordinated interaction commonly referred to as *brushing & linking* or *cross-filtering.* As a viewer adjusts the selection, they can immediately see how the other distributions change in response.
 
 <figure>
-<img src="{{ '/images/posts/vega-lite-2/crossfilter.avif' | relative_url }}" alt="A crossfilter interaction in Vega-Lite 2">
+<img src="{{ '/images/posts/vega-lite-2/flight-crossfilter.avif' | relative_url }}" alt="A crossfilter interaction in Vega-Lite 2">
 <figcaption>A crossfilter interaction in Vega-Lite 2. <a href="https://vega.github.io/editor/#/examples/vega-lite/interactive_layered_crossfilter">Try it out!</a></figcaption>
 </figure>
 
