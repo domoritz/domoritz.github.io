@@ -1,7 +1,67 @@
 ---
 layout: post
 title: "Introducing Vega-Lite 2.0"
-description: A blog post to announce the release of Vega-Lite 2.
+description: Announcing Vega-Lite 2, which adds view composition, interaction, and support for Vega 3.
 ---
 
-Ham, Arvind, Jeff and I wrote a [blog post about the release of Vega-Lite 2](https://medium.com/@uwdata/introducing-vega-lite-2-0-de6661c12d58).
+*Originally published at [Medium](https://medium.com/@uwdata/introducing-vega-lite-2-0-de6661c12d58).*
+
+We are excited to announce the official version 2 release of [Vega-Lite](https://vega.github.io/vega-lite-v2/), a high-level language for *rapidly creating interactive visualizations*.
+
+Vega-Lite enables concise descriptions of visualizations as a set of encodings that map data fields to the properties of graphical marks. Vega-Lite uses a portable [JSON](https://en.wikipedia.org/wiki/JSON) format that compiles to full specifications in the larger [Vega language](https://vega.github.io/vega/). Vega-Lite includes support for data transformations such as aggregation, binning, filtering, and sorting, as well as visual transformations such as stacking and faceting into small multiples.
+
+In addition to an expressive range of *static* visualizations, Vega-Lite 2.0 adds support for *flexible combinations of charts* and *interactions* such as panning, zooming, interactive filtering, and linked selection. Version 2 introduces three major additions: **view composition**, **interaction**, and **Vega 3 support**.
+
+## View Composition
+
+A powerful aspect of modular approaches to visualization is the ability to create sophisticated graphics by composing simple ones. Vega-Lite has four operators to compose charts: **layer**, **facet**, **concat** and **repeat**. With *layer*, you can stack charts on top of each other and Vega-Lite automatically determines how to align the axes and share scales. *Facet* subdivides the data into groups and creates a chart for each partition. *Concat* combines arbitrary charts into dashboard layouts. Finally, *repeat* is a data-driven way to concatenate charts.
+
+Most importantly, these operators can be combined! Authors can create rich multi-view graphics within one declarative specification. The example below compares weather data in New York and Seattle, *layering* data for individual years and averages within a *repeated* template for different measurements.
+
+<figure>
+<img src="{{ '/images/posts/vega-lite-2/weather-layer-repeat-charts.avif' | relative_url }}" alt="Three charts that show different weather measures throughout the year in Seattle and New York">
+<figcaption>Three charts that show different weather measures throughout the year in Seattle and New York. you can create this chart in Vega-Lite with layering and repeating views. <a href="https://vega.github.io/editor/#/examples/vega-lite/repeat_layer">Try it out!</a></figcaption>
+</figure>
+
+The *layer*, *facet*, *concat*, and *repeat* operators comprise a *view algebra* for creating a wide range of multi-view visualizations. For more about details about flexible chart composition, see the [Vega-Lite documentation](https://vega.github.io/vega-lite-v2/docs/composition.html).
+
+## Interaction
+
+Multi-view visualizations provide a valuable way to get an overview of many variables at once. However, to investigate further and see data from multiple perspectives, interaction is critical. Vega-Lite version 2 introduces ways to describe not only visual encodings, but also to specify *interaction techniques* using a concise and composable syntax for selections.
+
+In Vega-Lite 2.0, visualization authors specify the *type* of selection they would like (e.g., a point or interval selection), along with possible transformations. The Vega-Lite compiler then automatically synthesizes appropriate input handling logic to implement the interaction. Once defined, interactive selections can be used to parameterize the visualization, for example to filter data, highlight points, and determine scale ranges to pan or zoom a plot.
+
+The plot below uses an interval selection, which causes the chart to include an interactive brush (shown in grey). The brush selection parameterizes the red guideline, which visualizes the average value within the selected interval.
+
+<figure>
+<img src="{{ '/images/posts/vega-lite-2/interactive-moving-average.avif' | relative_url }}" alt="An interactive moving average in Vega-Lite 2">
+<figcaption>An interactive moving average in Vega-Lite 2. <a href="https://vega.github.io/editor/#/examples/vega-lite/selection_layer_bar_month">Try it out!</a></figcaption>
+</figure>
+
+View composition and interactive selections can be combined. Below, we use an interval selection over a set of histograms showing the distributions of different flight statistics. The selection parameterizes a filter for the yellow bars, creating a coordinated interaction commonly referred to as *brushing & linking* or *cross-filtering.* As a viewer adjusts the selection, they can immediately see how the other distributions change in response.
+
+<figure>
+<img src="{{ '/images/posts/vega-lite-2/flight-crossfilter.avif' | relative_url }}" alt="A crossfilter interaction in Vega-Lite 2">
+<figcaption>A crossfilter interaction in Vega-Lite 2. <a href="https://vega.github.io/editor/#/examples/vega-lite/interactive_layered_crossfilter">Try it out!</a></figcaption>
+</figure>
+
+More details about Vega-Lite’s interaction primitives can be found in [the documentation](https://vega.github.io/vega-lite-v2/docs/selection.html). For a more formal treatment, see the (best paper winning) [InfoVis 2016 research paper on the Vega-Lite language design](https://idl.uw.edu/papers/vega-lite).
+
+For a tour of these and other features, watch our *OpenVis Conf* talk:
+
+<figure>
+<iframe class="video" src="https://www.youtube-nocookie.com/embed/9uaHRWj04D4" title="Vega-Lite OpenVis Conf talk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figcaption>Vega-Lite OpenVis Conf talk</figcaption>
+</figure>
+
+## Vega 3 Support
+
+Finally, another major change in Vega-Lite 2.0 is that it now targets the new [Vega 3.0 language](https://vega.github.io/vega/). Among other advances, Vega 3 introduces a more performant reactive dataflow runtime and richer support for interaction, layouts, data transformation, binned scales, and more.
+
+In addition to the developments above, we have attempted to make Vega-Lite more consistent and powerful. As one example, data transforms are now specified using an array notation, giving authors more control over the execution order of filters, formula calculations, binning, and aggregation.
+
+We are excited to see what others will build with Vega-Lite! We are especially encouraged that [Jupyter Lab](https://github.com/jupyterlab/jupyterlab) (the next generation of [Jupyter Notebooks](http://jupyter.org/)) will ship with Vega and Vega-Lite by default. We are also working with the [Altair](https://altair-viz.github.io/) team to release a new version of the Altair Python API for Vega-Lite. Look for that in the months to come to create interactive, multi-view visualizations directly within the Jupyter data science environment!
+
+Feeling inspired? Check out the [example gallery](https://vega.github.io/vega-lite-v2/examples/) and [applications that use Vega-Lite](https://vega.github.io/vega-lite-v2/applications.html). Read tutorials and documentation at [vega.github.io/vega-lite/](https://vega.github.io/vega-lite/). Source code is available on GitHub at [https://github.com/vega/vega-lite](https://github.com/vega/vega-lite). For updates, [follow the Vega project on Twitter at @vega_vis](https://twitter.com/vega_vis).
+
+*This post was written by* [*Dominik Moritz*](https://twitter.com/domoritz)*,* [*Kanit “Ham” Wongsuphasawat*](https://twitter.com/kanitw)*,* [*Arvind Satyanarayan*](https://twitter.com/arvindsatya1)*, and* [*Jeffrey Heer*](https://twitter.com/jeffrey_heer)*.*
