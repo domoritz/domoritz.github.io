@@ -19,6 +19,6 @@ CKAN ist ein Datenmanagement System, welches von Regierungen und Organisationen 
 {:.half.center}
 {% include image url="http://farm8.staticflickr.com/7424/8723159396_1e444664f5.jpg" caption="Screenshot of CKAN." %}
 
-CKAN wird hauptsächlich von Entwicklern der [Open Knowledge Foundation](http://okfn.org/) entwickelt. Seit [letztem Sommer](/blog/2012/12/london-4D/) bin ich auch an der Entwicklung beteiligt. Ich habe mich in CKAN hauptsächlich mit dem [Datastore](http://ckan.org/2012/10/26/introducing-the-new-datastore/) und den [Vorschauen](http://ckan.org/2013/03/13/custom-previews/) beschäftigt und bin nicht wenig Stolz, dass wir CKAN 2.0 endlich released haben.
+CKAN wird hauptsächlich von Entwicklern der [Open Knowledge Foundation](http://okfn.org/) entwickelt. Seit [letztem Sommer]({% post_url 2012-12-15-london-4D %}) bin ich auch an der Entwicklung beteiligt. Ich habe mich in CKAN hauptsächlich mit dem [Datastore](http://ckan.org/2012/10/26/introducing-the-new-datastore/) und den [Vorschauen](http://ckan.org/2013/03/13/custom-previews/) beschäftigt und bin nicht wenig Stolz, dass wir CKAN 2.0 endlich released haben.
 
 Die neue Version CKAN 2.0 wird schon von [publicdata.eu](https://publicdata.eu/), [offenedaten.de](https://web.archive.org/web/20131023080007/https://offenedaten.de/), [data.sa.gov.au](https://data.sa.gov.au/), vielen weiteren und bald auch [data.gov](https://data.gov/) verwendet. Mit dem offiziellen Release werden auch in der nächsten Zeit noch einige neue CKAN 2.0 Seiten entstehen.

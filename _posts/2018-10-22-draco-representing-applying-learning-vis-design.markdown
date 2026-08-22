@@ -127,7 +127,7 @@ To get started using Draco, please visit the [Draco project website](https://uwd
 
 We are just at the start of exploring and improving Draco’s capabilities, and welcome your thoughts and contributions!
 
-*This article was authored by* [*Dominik Moritz*](https://www.domoritz.de/) *and* [*Jeffrey Heer.*](http://jheer.org/)
+*This article was authored by* [*Dominik Moritz*]({{ '/' | relative_url }}) *and* [*Jeffrey Heer.*](http://jheer.org/)
 
 *Draco Project Website and Software:* [*https://uwdata.github.io/draco/*](https://uwdata.github.io/draco/)
 
