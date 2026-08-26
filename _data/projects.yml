@@ -13,6 +13,13 @@
   description: "Organize data in a chart to communicate information with clarity and visual appeal"
   image: charts.avif
 
+- title: Embedding Atlas
+  url: https://apple.github.io/embedding-atlas/
+  code: https://github.com/apple/embedding-atlas
+  paper: https://arxiv.org/pdf/2505.06386
+  image: embedding-atlas.avif
+  description: "Embedding Atlas is a scalable, interactive visualization tool for large embeddings with density-based clustering, automatic labeling, and coordinated views of metadata."
+
 - title: Mosaic
   url: https://idl.uw.edu/mosaic/
   code: https://github.com/uwdata/mosaic
