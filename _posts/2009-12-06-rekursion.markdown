@@ -15,7 +15,7 @@ Ich habe im Internet ein paar nette Sachen zu Rekursion gefunden. Das erste ist 
 > Rekursion ist ein häufig verwendeter Begriff den keiner versteht. Näheres steht unter "Rekursion".
 
 
-[zum Artikel](https://www.stupidedia.org/stupi/Rekursion)
+[zum Artikel](https://web.archive.org/web/20100108043033/http://www.stupidedia.org:80/stupi/Rekursion)
 
 Das zweite ist auch etwas sehr interessantes. Gebt einfach einmal bei Google "recursion" ein. Dass steht da "Did you mean: recursion". Probiere es einfach mal aus. [Link](https://www.google.com/search?hl=en&q=recursion)
 
