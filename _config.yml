@@ -19,6 +19,10 @@ collections:
   publications:
     output: false
 
+# Jekyll skips dotfiles unless they are listed here
+include:
+  - .env
+
 jekyll-mentions:
   base_url: https://twitter.com
 
