@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-labelledby="title desc">
+  <title id="title">After the conference: the paper pages read Bluesky directly</title>
+  <desc id="desc">Two columns. The conference website has a paper page that now knows the URL of its announcement post and reads the thread from Bluesky directly. Logging in on the page is switched off too, and attendees keep replying in the Bluesky app. The discussion service is gone.</desc>
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b6b6b"/>
+    </marker>
+    <style>
+      .col { fill: #f8f8f8; stroke: #e2e2e2; }
+      .col-bsky { fill: #eef5ff; stroke: #cfe0f7; }
+      .gone { fill: none; stroke: #c9c9c9; stroke-dasharray: 6 5; }
+      .box { fill: #fff; stroke: #b9b9b9; stroke-width: 1.2; }
+      .box-bsky { fill: #fff; stroke: #1185fe; stroke-width: 1.2; }
+      .head { font-size: 15px; font-weight: 700; fill: #333; }
+      .name { font-size: 14px; font-weight: 700; fill: #333; }
+      .sub { font-size: 11.5px; fill: #6b6b6b; }
+      .gone-text { font-size: 12px; fill: #9a9a9a; font-style: italic; }
+      .arrow { fill: none; stroke: #6b6b6b; stroke-width: 1.4; marker-end: url(#arrow2); }
+      .label { font-size: 11px; fill: #414141; paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect class="col" x="8" y="40" width="262" height="210" rx="10"/>
+  <rect class="gone" x="330" y="40" width="250" height="210" rx="10"/>
+  <rect class="col col-bsky" x="650" y="40" width="242" height="210" rx="10"/>
+
+  <text class="head" x="139" y="66" text-anchor="middle">Conference website</text>
+  <text class="sub" x="139" y="82" text-anchor="middle">static pages</text>
+  <text class="gone-text" x="455" y="150" text-anchor="middle">discussion service switched off</text>
+  <text class="head" x="771" y="66" text-anchor="middle">Bluesky</text>
+
+  <rect class="box" x="22" y="100" width="234" height="64" rx="6"/>
+  <text class="name" x="37" y="123">Paper page</text>
+  <text class="sub" x="37" y="141">shows the thread under the abstract</text>
+  <text class="sub" x="37" y="157">now knows the URL of its post</text>
+
+  <rect class="box-bsky" x="664" y="100" width="214" height="64" rx="6"/>
+  <text class="name" x="679" y="123">@papers.ieeevis.org</text>
+  <text class="sub" x="679" y="141">the announcements,</text>
+  <text class="sub" x="679" y="157">with all replies</text>
+
+  <rect class="box-bsky" x="664" y="184" width="214" height="50" rx="6"/>
+  <text class="name" x="679" y="206">An attendee's own account</text>
+  <text class="sub" x="679" y="224">replies in the Bluesky app</text>
+
+  <path class="arrow" d="M 256 132 H 662"/>
+  <text class="label" x="455" y="126" text-anchor="middle">reads the thread directly</text>
+
+</svg>
