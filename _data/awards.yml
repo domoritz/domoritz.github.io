@@ -1,6 +1,9 @@
 - name: 10-Years InfoVis Test-of-Time
   years: 2025
   description: "For \"Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations\"."
+- name: VISxGenAI Challenge Winner
+  years: 2025
+  description: "For \"A Composable Agentic System for Automated Visual Data Reporting\"."
 - name: ACM CHI Best Paper Honorable Mention
   years: 2025
   description: "For \"Exploring Empty Spaces: Human-in-the-Loop Data Augmentation\"."
