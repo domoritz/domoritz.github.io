@@ -21,7 +21,7 @@
     {% endif %}
   </span>
 
-  <time datetime="{{ talk.date }}">
+  <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">
     {{ talk.date | date: "%b %Y" }}
   </time>
 </div>

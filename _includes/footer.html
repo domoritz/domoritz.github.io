@@ -2,7 +2,7 @@
   <div class="container">
     <div class="footer-col">
       Hello from Pittsburgh.<br/>
-      <abbr title="Last build on {{site.time | date: '%Y-%m-%d'}}">{{ site.time | date: '%B %Y'}}</abbr>
+      <time datetime="{{ site.time | date: '%Y-%m-%d' }}" title="Last build on {{ site.time | date: '%Y-%m-%d' }}">{{ site.time | date: '%B %Y' }}</time>
     </div>
     <div class="footer-col">
       <a href="https://github.com/domoritz/domoritz.github.io/edit/master/{{page.path}}">Edit this page</a>

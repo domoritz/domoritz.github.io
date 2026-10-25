@@ -8,7 +8,7 @@ title: CV
 
 <h1><a href="{{ absolute_url }}/">Dominik Moritz</a></h1>
 
-<small class="live-link">Last updated in <time datetime="{{ site.time }}">{{ site.time | date: '%B %Y'}}</time>. Get the latest version at <a href="{{ '/cv' | absolute_url }}">www.domoritz.de/cv</a>.</small>
+<small class="live-link">Last updated in <time datetime="{{ site.time | date: '%Y-%m' }}">{{ site.time | date: '%B %Y'}}</time>. Get the latest version at <a href="{{ '/cv' | absolute_url }}">www.domoritz.de/cv</a>.</small>
 
 <div class="header-columns">
   <div>
@@ -168,7 +168,7 @@ To enhance people's ability to understand and communicate large and complex data
 
 {% for patent in site.data.patents %}
   <div class="date-container">
-    <span class="date">{{ patent.date | date: "%b %Y" }}</span>
+    <time datetime="{{ patent.date | date: '%Y-%m-%d' }}">{{ patent.date | date: "%b %Y" }}</time>
     <h3><a href="{{ patent.url }}">{{ patent.title }}</a></h3>
   </div>
   <div class="patent">
@@ -218,7 +218,7 @@ To enhance people's ability to understand and communicate large and complex data
   {% assign sorted_talks = title.items | sort: 'date' | reverse %}
   {% for talk in sorted_talks %}
     <div class="date-container">
-      <time datetime="{{ talk.date }}">{{ talk.date | date: "%b %Y" }}</time>
+      <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: "%b %Y" }}</time>
       <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}</span>
 
     </div>

@@ -17,7 +17,7 @@
         --> in {{ pub.venue_location }}<!--
       {% endif %}
       -->{% if pub.venue_url %}</a>{% endif %}
-      {{ pub.year }}
+      <time datetime="{{ pub.year }}">{{ pub.year }}</time>
     </div>
   {% endif %}
 
