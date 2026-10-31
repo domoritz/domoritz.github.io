@@ -4,7 +4,6 @@
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 from io import BytesIO
-import json
 from pathlib import Path
 import tempfile
 from urllib.parse import urlparse
@@ -16,7 +15,6 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "images/papers"
-MANIFEST = ROOT / "_data/publication_previews.json"
 
 
 def main():
@@ -34,7 +32,6 @@ def main():
             with pymupdf.open(stream=svg.convert_to_pdf(), filetype="pdf") as document:
                 pixmap = document[0].get_pixmap(alpha=False)
                 Image.open(BytesIO(pixmap.tobytes("png"))).convert("RGB").save(fallback, "AVIF", quality=55, speed=6)
-    manifest = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
     cache = Path(tempfile.gettempdir()) / "domoritz-paper-pdfs"
     cache.mkdir(exist_ok=True)
     failures = []
@@ -42,17 +39,14 @@ def main():
     def render(path):
         slug = path.stem
         target = OUTPUT / f"{slug}.avif"
-        previous = manifest.get(slug, {})
-        if target.exists() and previous and not args.force and not args.source:
-            return slug, previous, None
+        if target.exists() and not args.force and not args.source:
+            return slug, None, None
         pub = yaml.safe_load(path.read_text().split("---", 2)[1])
         if pub.get("preview_image") and not args.source:
-            return slug, (pub["preview_image"], (ROOT / pub["preview_image"]).read_bytes(), None), None
+            return slug, ((ROOT / pub["preview_image"]).read_bytes(), None), None
         sources = []
         if args.source:
             sources.append(args.source)
-        if previous.get("source"):
-            sources.append(previous["source"])
         if pub.get("pdf"):
             sources.append(pub["pdf"])
         if pub.get("arxiv"):
@@ -70,7 +64,6 @@ def main():
                 cached = cache / f"{slug}.pdf"
                 if local.is_file():
                     data = local.read_bytes()
-                    source = "/" + local.relative_to(ROOT).as_posix()
                 elif cached.exists() and not args.force and not args.source:
                     data = cached.read_bytes()
                 else:
@@ -83,7 +76,7 @@ def main():
                         raise ValueError("response is not a PDF")
                     cached.write_bytes(data)
                 # MuPDF rendering is serialized below: it is not thread-safe.
-                return slug, (source, data, pub.get("preview_page", 1)), None
+                return slug, (data, pub.get("preview_page", 1)), None
             except Exception as error:
                 errors.append(f"{source}: {error}")
         return slug, None, "; ".join(errors)
@@ -99,27 +92,24 @@ def main():
                 failures.append((slug, error))
                 print(f"SKIP {slug}: {error}", flush=True)
                 continue
-            if isinstance(result, dict):
+            if result is None:
                 continue
-            source, data, page_number = result
+            data, page_number = result
             if page_number is None:
                 with Image.open(BytesIO(data)) as original:
                     image = original.convert("RGB")
                     image = image.resize((144, round(image.height * 144 / image.width)), Image.Resampling.LANCZOS)
-                source_field = "source_image"
             else:
                 with pymupdf.open(stream=data, filetype="pdf") as document:
                     page = document[page_number - 1]
                     # 2x resolution for a thumbnail up to 64 CSS pixels wide.
                     pixmap = page.get_pixmap(matrix=pymupdf.Matrix(144 / page.rect.width, 144 / page.rect.width), alpha=False)
                     image = Image.open(BytesIO(pixmap.tobytes("png"))).convert("RGB")
-                source_field = "source"
             target = OUTPUT / f"{slug}.avif"
             image.save(target, "AVIF", quality=55, speed=6)
-            manifest[slug] = {"src": f"/images/papers/{slug}.avif", "width": image.width, "height": image.height, source_field: source}
             print(f"OK {slug}: {target.stat().st_size} bytes", flush=True)
-    MANIFEST.write_text(json.dumps(dict(sorted(manifest.items())), indent=2) + "\n")
-    print(f"{len(manifest)} previews available; {len(failures)} entries skipped.")
+    preview_count = sum(path.name != "fallback.avif" for path in OUTPUT.glob("*.avif"))
+    print(f"{preview_count} previews available; {len(failures)} entries skipped.")
     # Entries without a linked PDF use the fallback; linked PDFs that fail need attention.
     if any(error != "no public PDF linked" for _, error in failures):
         raise SystemExit(1)

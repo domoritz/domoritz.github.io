@@ -1,6 +1,4 @@
-{% assign preview = site.data.publication_previews[include.pub.slug] %}
-{% if preview %}
-  <img class="publication-preview" src="{{ preview.src | relative_url }}" width="{{ preview.width }}" height="{{ preview.height }}" alt="" loading="lazy" decoding="async">
-{% else %}
-  <img class="publication-preview" src="{{ '/images/papers/fallback.avif' | relative_url }}" width="144" height="200" alt="" loading="lazy" decoding="async">
-{% endif %}
+{% assign preview_path = '/images/papers/' | append: include.pub.slug | append: '.avif' %}
+{% assign preview_file = site.static_files | where: 'path', preview_path | first %}
+{% unless preview_file %}{% assign preview_path = '/images/papers/fallback.avif' %}{% endunless %}
+<img class="publication-preview" src="{{ preview_path | relative_url }}" width="144" height="200" alt="" loading="lazy" decoding="async">

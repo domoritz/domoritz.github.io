@@ -3,8 +3,9 @@
 ## Paper previews
 
 Publication lists and Featured Publications share first-page AVIF thumbnails.
-The images and `_data/publication_previews.json` are checked in, so site builds
-do not fetch or render PDFs. To generate previews for new papers:
+Images are checked in as `images/papers/<publication-filename>.avif`, so site builds
+do not fetch or render PDFs. Links and rendering sources come from each publication's
+front matter. To generate previews for new papers:
 
 ```sh
 python -m venv /tmp/paper-previews-venv
@@ -18,7 +19,7 @@ Existing previews are reused; use `--force` to refresh them, or
 Entries without previews use a shared generic AVIF paper image in both lists.
 The generator also renders this fallback from its checked-in SVG source.
 Downloads are cached in the system
-temporary directory. Commit the generated images and manifest together.
+temporary directory. Commit the generated images with their publication entries.
 For papers in a combined proceedings PDF, set `preview_page` in the publication
 front matter to the paper's page number (starting at 1).
 For a supplied cover image without a public PDF, set `preview_image` to its

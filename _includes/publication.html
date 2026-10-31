@@ -2,9 +2,10 @@
 
 {% capture pub_json %}{"title":{{ pub.title | jsonify }},"year":{{ pub.year | jsonify }}{% if pub.authors %},"authors":{{ pub.authors | jsonify }}{% endif %}{% if pub.awards %},"awards":{{ pub.awards | jsonify }}{% endif %}{% if pub.tags %},"tags":{{ pub.tags | jsonify }}{% endif %}{% if pub.type %},"type":{{ pub.type | jsonify }}{% endif %}{% if pub.venue_tags %},"venue_tags":{{ pub.venue_tags | jsonify }}{% endif %}{% if pub.highlight %},"highlight":{{ pub.highlight | jsonify }}{% endif %},"content":{{ pub.content | strip_html | normalize_whitespace | jsonify }}}{% endcapture %}
 <div class="publication" data-pub='{{ pub_json | escape }}'>
-  {% assign preview = site.data.publication_previews[pub.slug] %}
-  {% if preview.source %}
-    <a class="publication-preview-link" href="{{ preview.source }}" aria-label="Read {{ pub.title | escape }} (PDF)">
+  {% assign pdf_url = pub.pdf %}
+  {% if pdf_url == nil and pub.arxiv %}{% capture pdf_url %}https://arxiv.org/pdf/{{ pub.arxiv }}{% endcapture %}{% endif %}
+  {% if pdf_url %}
+    <a class="publication-preview-link" href="{{ pdf_url | relative_url }}" aria-label="Read {{ pub.title | escape }} (PDF)">
       {% include publication-preview.html pub=pub %}
     </a>
   {% else %}
