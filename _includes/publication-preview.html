@@ -1,0 +1,4 @@
+{% assign preview = site.data.publication_previews[include.pub.slug] %}
+{% if preview %}
+  <img class="publication-preview" src="{{ preview.src | relative_url }}" width="{{ preview.width }}" height="{{ preview.height }}" alt="" loading="lazy" decoding="async">
+{% endif %}

@@ -58,10 +58,13 @@ During my first year at UW, I received support from the [Fulbright program](http
   {% for pub in sorted_publications %}
     {% if pub.highlight %}
       <a href="{{ pub.pdf }}" class="publication">
+        {% include publication-preview.html pub=pub %}
+        <div class="publication-details">
         <strong>{{ pub.title }}</strong>
         <span class="authors">{% for author in pub.authors %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>.
         <i>{% if pub.venue %}{{ pub.venue }}, {% endif %}{{ pub.year }}</i>.
         {% for award in pub.awards %}<br/><span class="award"><i class="fas fa-{% if award == "Best Paper" %}trophy{% elsif award contains "Test-of-Time" %}clock{% else %}award{% endif %}" aria-hidden="true"></i> {{ award }}</span>{% endfor %}
+        </div>
       </a>
     {% endif %}
   {% endfor %}
