@@ -1,7 +1,12 @@
-// The text sets the row height. Previews fit within it without adding height.
+// Keep every preview the same size, independently of the amount of text.
 .publication:has(.publication-preview) {
   position: relative;
   padding-left: 76px;
+  min-height: 84px;
+
+  &.hidden {
+    min-height: 0;
+  }
 
   .publication-preview,
   .publication-preview-link {
@@ -9,30 +14,14 @@
     top: 0;
     left: 0;
     width: 60px;
-    height: 100%;
-    max-height: 84px;
+    height: 84px;
   }
 
   .publication-preview {
     display: block;
     object-fit: contain;
     object-position: top left;
-    filter: drop-shadow(0 1px 2px #0002);
-  }
-
-  .publication-preview-link .publication-preview {
-    height: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .publication:has(.publication-preview) {
-    padding-left: 52px;
-
-    .publication-preview,
-    .publication-preview-link {
-      width: 40px;
-      max-height: 56px;
-    }
+    background: white;
+    box-shadow: 0 1px 3px #0002;
   }
 }
