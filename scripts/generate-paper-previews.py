@@ -102,7 +102,7 @@ def main():
             else:
                 with pymupdf.open(stream=data, filetype="pdf") as document:
                     page = document[page_number - 1]
-                    # 2x resolution for a thumbnail up to 64 CSS pixels wide.
+                    # 2x resolution for a thumbnail 72 CSS pixels wide.
                     pixmap = page.get_pixmap(matrix=pymupdf.Matrix(144 / page.rect.width, 144 / page.rect.width), alpha=False)
                     image = Image.open(BytesIO(pixmap.tobytes("png"))).convert("RGB")
             target = OUTPUT / f"{slug}.avif"
