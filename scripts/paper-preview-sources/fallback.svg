@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="144" height="200" viewBox="0 0 144 200">
-  <path d="M5 2h108l26 26v170H5Z" fill="#fff" stroke="#c4cbd1" stroke-width="2"/>
-  <path d="M113 2v26h26" fill="#edf0f2" stroke="#c4cbd1" stroke-width="2" stroke-linejoin="round"/>
-  <g fill="#c4cbd1">
-    <rect x="23" y="48" width="84" height="6" rx="2"/>
-    <rect x="23" y="60" width="64" height="6" rx="2"/>
+  <rect width="144" height="200" fill="#fff"/>
+  <g fill="none" stroke="#a8adb1" stroke-width="1.8">
+    <path d="M28 24h88M38 29h68"/>
   </g>
-  <g stroke="#e0e4e8" stroke-width="3" stroke-linecap="round">
-    <path d="M24 85h94M24 95h94M24 105h94M24 115h80M24 135h94M24 145h94M24 155h94M24 165h64"/>
+  <g fill="none" stroke="#c5c9cc" stroke-width="0.7">
+    <path d="M44 37h56M51 41h42"/>
+    <path d="M18 53h108M18 57h108M18 61h108M18 65h82"/>
+    <path d="M18 77h50M18 81h50M18 85h50M18 89h50M18 93h50M18 97h50M18 101h34M18 109h50M18 113h50M18 117h50M18 121h50M18 125h50M18 129h42M18 141h50M18 145h50M18 149h50M18 153h50M18 157h50M18 161h50M18 165h50M18 169h38M18 177h50M18 181h50M18 185h28"/>
+    <path d="M76 77h50M76 81h50M76 85h50M76 89h50M76 93h50M76 97h38M76 109h50M76 113h50M76 117h50M76 121h50M76 125h50M76 129h50M76 133h32M76 145h50M76 149h50M76 153h50M76 157h50M76 161h50M76 165h50M76 169h44M76 177h50M76 181h50M76 185h36"/>
   </g>
 </svg>
