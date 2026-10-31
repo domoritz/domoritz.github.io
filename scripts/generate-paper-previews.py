@@ -28,6 +28,12 @@ def main():
     if args.source and not args.only:
         parser.error("--source requires --only")
     OUTPUT.mkdir(parents=True, exist_ok=True)
+    fallback = OUTPUT / "fallback.avif"
+    if args.force or not fallback.exists():
+        with pymupdf.open(ROOT / "scripts/paper-preview-sources/fallback.svg") as svg:
+            with pymupdf.open(stream=svg.convert_to_pdf(), filetype="pdf") as document:
+                pixmap = document[0].get_pixmap(alpha=False)
+                Image.open(BytesIO(pixmap.tobytes("png"))).convert("RGB").save(fallback, "AVIF", quality=55, speed=6)
     manifest = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
     cache = Path(tempfile.gettempdir()) / "domoritz-paper-pdfs"
     cache.mkdir(exist_ok=True)
@@ -114,7 +120,7 @@ def main():
             print(f"OK {slug}: {target.stat().st_size} bytes", flush=True)
     MANIFEST.write_text(json.dumps(dict(sorted(manifest.items())), indent=2) + "\n")
     print(f"{len(manifest)} previews available; {len(failures)} entries skipped.")
-    # Entries without a linked PDF are expected; linked PDFs that fail need attention.
+    # Entries without a linked PDF use the fallback; linked PDFs that fail need attention.
     if any(error != "no public PDF linked" for _, error in failures):
         raise SystemExit(1)
 
