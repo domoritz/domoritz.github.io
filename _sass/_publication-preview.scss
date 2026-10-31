@@ -1,8 +1,8 @@
 // Keep every preview the same size, independently of the amount of text.
 .publication:has(.publication-preview) {
   position: relative;
-  padding-right: 88px;
-  min-height: 100px;
+  padding-right: 112px;
+  min-height: 134px;
 
   &.hidden {
     min-height: 0;
@@ -13,8 +13,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 72px;
-    height: 100px;
+    width: 96px;
+    height: 134px;
   }
 
   .publication-preview {

@@ -15,6 +15,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "images/papers"
+IMAGE_WIDTH = 192  # 2x the displayed width of 96 CSS pixels.
 
 
 def main():
@@ -30,7 +31,9 @@ def main():
     if args.force or not fallback.exists():
         with pymupdf.open(ROOT / "scripts/paper-preview-sources/fallback.svg") as svg:
             with pymupdf.open(stream=svg.convert_to_pdf(), filetype="pdf") as document:
-                pixmap = document[0].get_pixmap(alpha=False)
+                page = document[0]
+                scale = IMAGE_WIDTH / page.rect.width
+                pixmap = page.get_pixmap(matrix=pymupdf.Matrix(scale, scale), alpha=False)
                 Image.open(BytesIO(pixmap.tobytes("png"))).convert("RGB").save(fallback, "AVIF", quality=55, speed=6)
     cache = Path(tempfile.gettempdir()) / "domoritz-paper-pdfs"
     cache.mkdir(exist_ok=True)
@@ -64,7 +67,7 @@ def main():
                 cached = cache / f"{slug}.pdf"
                 if local.is_file():
                     data = local.read_bytes()
-                elif cached.exists() and not args.force and not args.source:
+                elif cached.exists() and not args.source:
                     data = cached.read_bytes()
                 else:
                     url = source.replace("http://", "https://", 1)
@@ -98,12 +101,12 @@ def main():
             if page_number is None:
                 with Image.open(BytesIO(data)) as original:
                     image = original.convert("RGB")
-                    image = image.resize((144, round(image.height * 144 / image.width)), Image.Resampling.LANCZOS)
+                    image = image.resize((IMAGE_WIDTH, round(image.height * IMAGE_WIDTH / image.width)), Image.Resampling.LANCZOS)
             else:
                 with pymupdf.open(stream=data, filetype="pdf") as document:
                     page = document[page_number - 1]
-                    # 2x resolution for a thumbnail 72 CSS pixels wide.
-                    pixmap = page.get_pixmap(matrix=pymupdf.Matrix(144 / page.rect.width, 144 / page.rect.width), alpha=False)
+                    scale = IMAGE_WIDTH / page.rect.width
+                    pixmap = page.get_pixmap(matrix=pymupdf.Matrix(scale, scale), alpha=False)
                     image = Image.open(BytesIO(pixmap.tobytes("png"))).convert("RGB")
             target = OUTPUT / f"{slug}.avif"
             image.save(target, "AVIF", quality=55, speed=6)
