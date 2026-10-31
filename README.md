@@ -19,6 +19,9 @@ Entries without public PDFs stay text-only. Downloads are cached in the system
 temporary directory. Commit the generated images and manifest together.
 For papers in a combined proceedings PDF, set `preview_page` in the publication
 front matter to the paper's page number (starting at 1).
+For a supplied cover image without a public PDF, set `preview_image` to its
+repository-relative path. Keep these originals in `scripts/paper-preview-sources/`,
+which is excluded from the built site; the preview is displayed without a PDF link.
 
 ## Write
 

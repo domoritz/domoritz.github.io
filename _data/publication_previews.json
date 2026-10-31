@@ -1,4 +1,10 @@
 {
+  "2013-bachelor-thesis": {
+    "src": "/images/papers/2013-bachelor-thesis.avif",
+    "width": 144,
+    "height": 205,
+    "source_image": "scripts/paper-preview-sources/2013-bachelor-thesis.png"
+  },
   "2014-myria-demo": {
     "src": "/images/papers/2014-myria-demo.avif",
     "width": 144,

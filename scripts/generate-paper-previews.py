@@ -40,6 +40,8 @@ def main():
         if target.exists() and previous and not args.force and not args.source:
             return slug, previous, None
         pub = yaml.safe_load(path.read_text().split("---", 2)[1])
+        if pub.get("preview_image") and not args.source:
+            return slug, (pub["preview_image"], (ROOT / pub["preview_image"]).read_bytes(), None), None
         sources = []
         if args.source:
             sources.append(args.source)
@@ -94,15 +96,22 @@ def main():
             if isinstance(result, dict):
                 continue
             source, data, page_number = result
-            with pymupdf.open(stream=data, filetype="pdf") as document:
-                page = document[page_number - 1]
-                # 2x resolution for a thumbnail up to 64 CSS pixels wide.
-                pixmap = page.get_pixmap(matrix=pymupdf.Matrix(144 / page.rect.width, 144 / page.rect.width), alpha=False)
-                image = Image.open(BytesIO(pixmap.tobytes("png"))).convert("RGB")
-                target = OUTPUT / f"{slug}.avif"
-                image.save(target, "AVIF", quality=55, speed=6)
-                manifest[slug] = {"src": f"/images/papers/{slug}.avif", "width": image.width, "height": image.height, "source": source}
-                print(f"OK {slug}: {target.stat().st_size} bytes", flush=True)
+            if page_number is None:
+                with Image.open(BytesIO(data)) as original:
+                    image = original.convert("RGB")
+                    image = image.resize((144, round(image.height * 144 / image.width)), Image.Resampling.LANCZOS)
+                source_field = "source_image"
+            else:
+                with pymupdf.open(stream=data, filetype="pdf") as document:
+                    page = document[page_number - 1]
+                    # 2x resolution for a thumbnail up to 64 CSS pixels wide.
+                    pixmap = page.get_pixmap(matrix=pymupdf.Matrix(144 / page.rect.width, 144 / page.rect.width), alpha=False)
+                    image = Image.open(BytesIO(pixmap.tobytes("png"))).convert("RGB")
+                source_field = "source"
+            target = OUTPUT / f"{slug}.avif"
+            image.save(target, "AVIF", quality=55, speed=6)
+            manifest[slug] = {"src": f"/images/papers/{slug}.avif", "width": image.width, "height": image.height, source_field: source}
+            print(f"OK {slug}: {target.stat().st_size} bytes", flush=True)
     MANIFEST.write_text(json.dumps(dict(sorted(manifest.items())), indent=2) + "\n")
     print(f"{len(manifest)} previews available; {len(failures)} entries skipped.")
     # Entries without a linked PDF are expected; linked PDFs that fail need attention.

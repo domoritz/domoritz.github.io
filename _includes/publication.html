@@ -4,9 +4,13 @@
 <div class="publication" data-pub='{{ pub_json | escape }}'>
   {% assign preview = site.data.publication_previews[pub.slug] %}
   {% if preview %}
+    {% if preview.source %}
     <a class="publication-preview-link" href="{{ preview.source }}" aria-label="Read {{ pub.title | escape }} (PDF)">
       {% include publication-preview.html pub=pub %}
     </a>
+    {% else %}
+      {% include publication-preview.html pub=pub %}
+    {% endif %}
   {% endif %}
   <div class="publication-details">
   <h3 id="{{ anchor }}">{% for award in pub.awards %}<i class="fas fa-{% if award == "Best Paper" %}trophy{% elsif award contains "Test-of-Time" %}clock{% else %}award{% endif %} award-icon" title="{{ award }}"></i> {% endfor %}{{ pub.title }}</h3>
