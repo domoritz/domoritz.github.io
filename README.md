@@ -9,9 +9,10 @@ do not fetch or render PDFs. Links and rendering sources come from each publicat
 front matter. To generate previews for new papers:
 
 ```sh
-uv run --with-requirements scripts/requirements-paper-previews.txt scripts/generate-paper-previews.py
+uv run scripts/generate-paper-previews.py
 ```
 
+`uv` installs the dependencies declared in the script automatically.
 The generator prefers local PDFs, then downloads linked PDFs or arXiv papers.
 Existing previews are reused; use `--force` to refresh them, or
 `--only 2023-mosaic --source papers/2023-Mosaic-VIS.pdf` to supply a PDF explicitly.

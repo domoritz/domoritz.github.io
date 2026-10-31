@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "PyMuPDF>=1.26,<3",
+#     "Pillow>=11.3,<14",
+#     "PyYAML>=6,<7",
+# ]
+# ///
 """Render public papers' first pages to small, static AVIF thumbnails."""
 
 import argparse

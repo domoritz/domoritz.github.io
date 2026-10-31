@@ -1,3 +1,0 @@
-PyMuPDF>=1.26,<3
-Pillow>=11.3,<14
-PyYAML>=6,<7
