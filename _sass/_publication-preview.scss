@@ -29,8 +29,8 @@
     transition: transform 180ms ease, box-shadow 180ms ease;
   }
 
-  &:hover .publication-preview,
-  &:focus-within .publication-preview {
+  .publication-preview-link:hover .publication-preview,
+  .publication-preview-link:focus-visible .publication-preview {
     transform: translateY(-4px) rotate(-2deg);
     box-shadow: 2px 10px 18px #0004;
   }
@@ -63,8 +63,8 @@
       transition: none;
     }
 
-    &:hover .publication-preview,
-    &:focus-within .publication-preview {
+    .publication-preview-link:hover .publication-preview,
+    .publication-preview-link:focus-visible .publication-preview {
       transform: none;
     }
   }
