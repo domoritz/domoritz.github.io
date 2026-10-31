@@ -9,9 +9,7 @@ do not fetch or render PDFs. Links and rendering sources come from each publicat
 front matter. To generate previews for new papers:
 
 ```sh
-python -m venv /tmp/paper-previews-venv
-/tmp/paper-previews-venv/bin/pip install -r scripts/requirements-paper-previews.txt
-/tmp/paper-previews-venv/bin/python scripts/generate-paper-previews.py
+uv run --with-requirements scripts/requirements-paper-previews.txt scripts/generate-paper-previews.py
 ```
 
 The generator prefers local PDFs, then downloads linked PDFs or arXiv papers.
