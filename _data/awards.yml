@@ -1,3 +1,9 @@
+- name: IEEE VIS Best Paper
+  years: 2026
+  description: "For \"Skeleton: Visual Authoring of Non-visual Data Experiences\"."
+- name: 10-Years InfoVis Test-of-Time Award
+  years: 2026
+  description: "For \"Vega-Lite: A Grammar of Interactive Graphics\"."
 - name: 10-Years InfoVis Test-of-Time
   years: 2025
   description: "For \"Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations\"."
