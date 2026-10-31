@@ -3,6 +3,7 @@
 ## Paper previews
 
 The Publications page shows pre-rendered AVIF paper thumbnails.
+Previews are hidden on mobile (600px and below) to leave the text full width.
 Images are checked in as `images/papers/<publication-filename>.avif`, so site builds
 do not fetch or render PDFs. Links and rendering sources come from each publication's
 front matter. To generate previews for new papers:

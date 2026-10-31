@@ -1,3 +1,5 @@
+@use "_vars" as *;
+
 // Keep every preview the same size, independently of the amount of text.
 .publication:has(.publication-preview) {
   position: relative;
@@ -40,6 +42,18 @@
 
   &.hidden {
     overflow: hidden;
+  }
+}
+
+@include media-query($on-palm) {
+  .publication:has(.publication-preview) {
+    padding-right: 0;
+    min-height: 0;
+
+    .publication-preview,
+    .publication-preview-link {
+      display: none;
+    }
   }
 }
 
