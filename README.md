@@ -2,7 +2,7 @@
 
 ## Paper previews
 
-Publication lists and Featured Publications share first-page AVIF thumbnails.
+The Publications page shows pre-rendered AVIF paper thumbnails.
 Images are checked in as `images/papers/<publication-filename>.avif`, so site builds
 do not fetch or render PDFs. Links and rendering sources come from each publication's
 front matter. To generate previews for new papers:
@@ -16,7 +16,7 @@ python -m venv /tmp/paper-previews-venv
 The generator prefers local PDFs, then downloads linked PDFs or arXiv papers.
 Existing previews are reused; use `--force` to refresh them, or
 `--only 2023-mosaic --source papers/2023-Mosaic-VIS.pdf` to supply a PDF explicitly.
-Entries without previews use a shared generic AVIF paper image in both lists.
+Entries without previews use a shared generic AVIF paper image.
 The generator also renders this fallback from its checked-in SVG source.
 Downloads are cached in the system
 temporary directory. Commit the generated images with their publication entries.
