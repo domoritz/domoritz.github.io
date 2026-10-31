@@ -1,0 +1,71 @@
+@use "_vars" as *;
+
+// Keep every preview the same size, independently of the amount of text.
+.publication:has(.publication-preview) {
+  position: relative;
+  padding-right: 112px;
+  min-height: 134px;
+
+  &.hidden {
+    min-height: 0;
+  }
+
+  .publication-preview,
+  .publication-preview-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 96px;
+    height: 134px;
+  }
+
+  .publication-preview {
+    display: block;
+    object-fit: contain;
+    object-position: top left;
+    background: white;
+    box-shadow: 0 2px 6px #0003;
+    transform-origin: center bottom;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+  }
+
+  &:hover .publication-preview,
+  &:focus-within .publication-preview {
+    transform: translateY(-4px) rotate(-2deg);
+    box-shadow: 2px 10px 18px #0004;
+  }
+}
+
+// Let the lifted paper and its shadow extend beyond the row.
+.pubs .publication {
+  overflow: visible;
+
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+@include media-query($on-palm) {
+  .publication:has(.publication-preview) {
+    padding-right: 0;
+    min-height: 0;
+
+    .publication-preview,
+    .publication-preview-link {
+      display: none;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publication:has(.publication-preview) {
+    .publication-preview {
+      transition: none;
+    }
+
+    &:hover .publication-preview,
+    &:focus-within .publication-preview {
+      transform: none;
+    }
+  }
+}

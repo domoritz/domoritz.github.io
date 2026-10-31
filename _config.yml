@@ -19,6 +19,9 @@ collections:
   publications:
     output: false
 
+exclude:
+  - scripts
+
 # Jekyll skips dotfiles unless they are listed here
 include:
   - .env
