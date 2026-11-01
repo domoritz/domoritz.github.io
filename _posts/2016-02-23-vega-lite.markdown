@@ -10,7 +10,7 @@ Today we are excited to announce the official 1.0 release of [Vega-Lite](https:/
 
 ## A High-level Language for Visualization
 
-As you might have guessed, Vega-Lite is built on top of [Vega](http://vega.github.io/vega/), a visualization grammar built using [D3](http://d3js.org). Vega and D3 provide a lot of flexibility for custom visualization designs; however, that power comes with a cost. With [Vega](https://github.com/vega/vega/wiki/Tutorial) or [D3](https://bl.ocks.org/mbostock/3885304), a basic bar chart requires dozens of lines of code and specification of low-level components such as [scales](https://medium.com/@mbostock/introducing-d3-scale-61980c51545f) and axes. In contrast, Vega-Lite is a *higher-level language* that simplifies the creation of common charts. In Vega-Lite, a bar chart is simply an encoding with two fields.
+As you might have guessed, Vega-Lite is built on top of [Vega](https://vega.github.io/vega/), a visualization grammar built using [D3](https://d3js.org/). Vega and D3 provide a lot of flexibility for custom visualization designs; however, that power comes with a cost. With [Vega](https://github.com/vega/vega/wiki/Tutorial) or [D3](https://bl.ocks.org/mbostock/3885304), a basic bar chart requires dozens of lines of code and specification of low-level components such as [scales](https://medium.com/@mbostock/introducing-d3-scale-61980c51545f) and axes. In contrast, Vega-Lite is a *higher-level language* that simplifies the creation of common charts. In Vega-Lite, a bar chart is simply an encoding with two fields.
 
 <figure>
 <img src="{{ '/images/posts/vega-lite/bar-chart-spec-and-chart.avif' | relative_url }}" alt="A Vega-Lite specification for a Bar Chart">
@@ -19,7 +19,7 @@ As you might have guessed, Vega-Lite is built on top of [Vega](http://vega.githu
 
 ## The Design of Vega-Lite
 
-Vega-Lite was inspired by other high-level visualization languages such as Wilkinson’s [Grammar of Graphics](http://www.amazon.com/The-Grammar-Graphics-Statistics-Computing/dp/0387245448), Wickham’s [ggplot2](http://ggplot2.org/) for R, and the VizQL formalism underlying [Tableau](http://tableau.com/). Motivated by the design of these languages as well as the underlying Vega and D3 systems, we arrived at a number of principles to guide the design of Vega-Lite.
+Vega-Lite was inspired by other high-level visualization languages such as Wilkinson’s [Grammar of Graphics](https://www.amazon.com/The-Grammar-Graphics-Statistics-Computing/dp/0387245448), Wickham’s [ggplot2](http://ggplot2.org/) for R, and the VizQL formalism underlying [Tableau](http://tableau.com/). Motivated by the design of these languages as well as the underlying Vega and D3 systems, we arrived at a number of principles to guide the design of Vega-Lite.
 
 **Favor composition over templates.** While chart templates (as found in spreadsheet programs) can be convenient, they limit the visualization types that can be created. Instead, Vega-Lite uses a compositional approach, describing a visualization based on the properties of graphical marks. This approach not only supports an expressive range of graphics, it also helps users rapidly refine and move between chart types. For example, you can create a histogram by mapping a binned field and the count of all records to a bar mark. You can then quickly edit the specification to create other types of visualizations, such as binned scatterplots.
 
@@ -45,7 +45,7 @@ Vega-Lite was inspired by other high-level visualization languages such as Wilki
 <figcaption>Applications powered by Vega-Lite: <a href="http://vega.github.io/voyager/">Voyager</a>, a recommendation-powered visualization browser (left), and <a href="https://github.com/vega/polestar">Polestar</a>, a visualization specification tool (right).</figcaption>
 </figure>
 
-**Support programmatic generation, sharing, and reuse.** Like Vega, Vega-Lite can serve as a standalone file format for visualizations. In particular, Vega-Lite is designed to be a convenient format for automatic visualization generation by visual analysis tools. Examples of applications that use Vega-Lite are [Voyager](http://vega.github.io/voyager/), a recommendation-powered visualization browser for data exploration, and [Polestar](https://github.com/vega/polestar), a web-based visual specification interface inspired by Tableau. Moreover, one can reuse Vega-Lite specifications across datasets with similar schemas.
+**Support programmatic generation, sharing, and reuse.** Like Vega, Vega-Lite can serve as a standalone file format for visualizations. In particular, Vega-Lite is designed to be a convenient format for automatic visualization generation by visual analysis tools. Examples of applications that use Vega-Lite are [Voyager](https://vega.github.io/voyager/), a recommendation-powered visualization browser for data exploration, and [Polestar](https://github.com/vega/polestar), a web-based visual specification interface inspired by Tableau. Moreover, one can reuse Vega-Lite specifications across datasets with similar schemas.
 
 <figure>
 <img src="{{ '/images/posts/vega-lite/vega-editor-compiled-spec.avif' | relative_url }}" alt="The online Vega editor shows the Vega-Lite specification and the compiled Vega specification side-by-side">
@@ -79,7 +79,7 @@ With the 1.0 release, Vega-Lite provides a useful tool for visualization on the 
 If you are interested in taking Vega-Lite for a spin, you can start visualizing and join the community today by:
 
 - Reading the [Vega-Lite getting started tutorial](https://vega.github.io/vega-lite-v1/tutorials/getting_started.html).
-- Playing with Vega-Lite in [the online Vega Editor](http://vega.github.io/vega-editor/?mode=vega-lite&spec=bar).
+- Playing with Vega-Lite in [the online Vega Editor](https://vega.github.io/vega-editor/?mode=vega-lite&spec=bar).
 - Building your own applications with [Vega-Lite](https://github.com/vega/vega-lite).
 - Subscribing to [Vega mailing list](https://groups.google.com/forum/#!forum/vega-js) and following us on [Twitter](http://twitter.com/uwdata) and [Medium](https://medium.com/@uwdata).
 - [Contributing](https://github.com/vega/vega-lite/blob/master/CONTRIBUTING.md) to the project.

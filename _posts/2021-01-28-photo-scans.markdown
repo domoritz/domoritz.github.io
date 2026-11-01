@@ -28,13 +28,13 @@ Now we have a folder full of scans such as this one.
 
 Note that all scans have the name `Combi_{}.tiff`. The rest of my scripts assume this name and so if you follow this post, make sure to set the right name in Image Capture.
 
-The next step is to segment the images. [Fred's ImageMagick Scripts](http://www.fmwconcepts.com/imagemagick/multicrop/index.php) are really good for this task. I downloaded and installed (copied into my path and made them executable) the `multicrop`, `unrotate`, and `autotrim` scripts. To avoid problems with spaces, I first replace all spaces with `_`.
+The next step is to segment the images. [Fred's ImageMagick Scripts](https://www.fmwconcepts.com/imagemagick/multicrop/index.php) are really good for this task. I downloaded and installed (copied into my path and made them executable) the `multicrop`, `unrotate`, and `autotrim` scripts. To avoid problems with spaces, I first replace all spaces with `_`.
 
 ```bash
 find . -type f -name "*.tiff" -exec rename "s/\s/_/g" {} \;
 ```
 
-Then I crop images with Multicrop, which is documented [here](http://www.fmwconcepts.com/imagemagick/multicrop/index.php). I don't want to process the images one by one so I use [GNU parallel](https://www.gnu.org/software/parallel/) to run 6 processes at the same time (might be different for you).
+Then I crop images with Multicrop, which is documented [here](https://www.fmwconcepts.com/imagemagick/multicrop/index.php). I don't want to process the images one by one so I use [GNU parallel](https://www.gnu.org/software/parallel/) to run 6 processes at the same time (might be different for you).
 
 ```bash
 find . -name "*.tiff" | parallel -j 6 --eta -q multicrop -c 50,50 -u 2 -m save -i yes {} {/.}_split.tiff
