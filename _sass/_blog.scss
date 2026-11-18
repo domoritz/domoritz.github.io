@@ -214,6 +214,13 @@ iframe.video {
     display: block;
     margin-right: $spacing-unit;
 
+    // Figures that set --aspect (image width / height) share the row
+    // in proportion to it, so that all images have the same height.
+    &[style*="--aspect"] {
+      flex: var(--aspect) 1 0;
+      min-width: 0;
+    }
+
     img {
       width: 100%;
       height: auto;
@@ -225,8 +232,9 @@ iframe.video {
   .flex-rows {
     flex-direction: column;
     margin-right: 0;
-    figure {
+    figure, figure[style*="--aspect"] {
       margin-right: 0;
+      flex: none;
     }
   }
 
