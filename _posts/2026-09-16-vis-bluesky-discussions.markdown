@@ -4,6 +4,8 @@ title: "Paper discussions on Bluesky at VIS 2026"
 description: How VIS 2026 puts a Bluesky thread under every paper.
 ---
 
+**Update (November 2026):** After the conference, I wrote down [my reflections on how the discussions went]({% post_url 2026-11-18-vis-bluesky-retrospective %}).
+
 Every paper page at [IEEE VIS 2026](https://ieeevis.org/year/2026/) has a discussion under the abstract, and that discussion is a thread on [Bluesky](https://bsky.app) (or more correctly, on the [AT Protocol](https://atproto.com)). Anyone can read it on the page, and attendees can comment and like there too, whether or not they have a Bluesky account. I am on the organizing committee as part of the tech team, and I built the pieces behind this feature. This post explains why we are trying this at VIS and how it works. I hope that other conferences can learn from this writeup and get inspired to do something similar.
 
 <figure>
@@ -77,3 +79,5 @@ Once the conference is over, the middle column in the architecture diagram above
 VIS is trying this for the first time in 2026, and we do not know whether people will use it. Will people ask questions on the paper pages, will authors answer, and will threads keep going after the conference? People are [glad to see VIS on Bluesky](https://bsky.app/profile/chezvoila.com/post/3mvnakgshxk2d) already. I will share what I learn and hope we continue this experiment in future years. Also, nothing here is specific to VIS. Any conference with a program database and a website can announce its papers and embed the threads, and I am happy to help others try.
 
 Lastly, building this system was a team effort. The general chairs backed the experiment, the tech team opened their server and program database to it and helped with implementation, and the web team reviewed and merged the changes to the site. Special thanks to [Lukas](https://lukashermann.com) for letting me bounce off ideas and telling me about AT Proto. Thanks to everyone who is supporting this experiment, and I hope it leads to more persistent and engaging discussions at VIS and beyond.
+
+**Update:** Read [my reflections after the conference]({% post_url 2026-11-18-vis-bluesky-retrospective %}) to see how the experiment went.
