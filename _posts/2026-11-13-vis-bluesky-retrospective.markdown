@@ -39,8 +39,8 @@ Besides a persistent space for paper discussions, a goal of using Bluesky was to
 
 <figure>
 <div class="flex-rows">
-<figure><img src="{{ '/images/posts/vis-bluesky/progressivis-page.avif' | relative_url }}" alt="The discussion section of the ProgressiVis paper page: sign-in options for Bluesky and for VIS attendees, a sort toggle for most liked or newest, and questions from VIS attendees (one under their name, one under a pseudonym) with answers from the author's Bluesky account, marked with an Author badge"></figure>
-<figure><img src="{{ '/images/posts/vis-bluesky/progressivis-bluesky.avif' | relative_url }}" alt="The same thread in Bluesky: the announcement post from IEEE VIS Papers mentioning the author and linking to the paper page, followed by replies from a Bluesky user, a question relayed by the IEEE VIS Discuss account under the attendee's name, and the author's answers"></figure>
+<figure><img src="{{ '/images/posts/vis-bluesky/progressivis-page.avif' | relative_url }}" alt="The discussion on the ProgressiVis paper page in Safari, signed in with a Bluesky account: a comment box with a Comment as @domoritz.de button and a Hide my name toggle, sorted by most liked. A question from Gennady Andrienko as a VIS attendee, a question from ptbremer.bsky.social with a follow-up, and a question under the pseudonym p-5749, each answered by Jean-Daniel Fekete with an Author badge."></figure>
+<figure><img src="{{ '/images/posts/vis-bluesky/progressivis-bluesky.avif' | relative_url }}" alt="The same thread in the Bluesky app on an iPhone: the announcement post from IEEE VIS Papers mentioning the authors and linking to the paper page, followed by comments from Bernice Rogowitz and Gennady Andrienko, relayed by the IEEE VIS Discuss account, and Jean-Daniel Fekete's answer."></figure>
 </div>
 <figcaption markdown="span">The discussion of [ProgressiVis](https://ieeevis.org/year/2026/program/content/74603add-599a-4fcb-8da9-036f7f00a71c/) on the paper page (left) and [on Bluesky](https://bsky.app/profile/papers.ieeevis.org/post/3mzzwmo4bfx2j) (right).</figcaption>
 </figure>
