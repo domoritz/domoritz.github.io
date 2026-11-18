@@ -80,4 +80,4 @@ VIS is trying this for the first time in 2026, and we do not know whether people
 
 Lastly, building this system was a team effort. The general chairs backed the experiment, the tech team opened their server and program database to it and helped with implementation, and the web team reviewed and merged the changes to the site. Special thanks to [Lukas](https://lukashermann.com) for letting me bounce off ideas and telling me about AT Proto. Thanks to everyone who is supporting this experiment, and I hope it leads to more persistent and engaging discussions at VIS and beyond.
 
-**Update:** Read [my reflections after the conference]({% post_url 2026-11-18-vis-bluesky-retrospective %}) to see how the experiment went.
+Read [my reflections after the conference]({% post_url 2026-11-18-vis-bluesky-retrospective %}) to see how the experiment went.
