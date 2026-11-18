@@ -37,6 +37,14 @@ Besides a persistent space for paper discussions, a goal of using Bluesky was to
 
 ### The Q&A integration was well received, and had benefits over mic-only Q&A
 
+<figure>
+<div class="flex-rows">
+<figure><img src="{{ '/images/posts/vis-bluesky/progressivis-page.avif' | relative_url }}" alt="The discussion section of the ProgressiVis paper page: sign-in options for Bluesky and for VIS attendees, a sort toggle for most liked or newest, and questions from VIS attendees (one under their name, one under a pseudonym) with answers from the author's Bluesky account, marked with an Author badge"></figure>
+<figure><img src="{{ '/images/posts/vis-bluesky/progressivis-bluesky.avif' | relative_url }}" alt="The same thread in Bluesky: the announcement post from IEEE VIS Papers mentioning the author and linking to the paper page, followed by replies from a Bluesky user, a question relayed by the IEEE VIS Discuss account under the attendee's name, and the author's answers"></figure>
+</div>
+<figcaption markdown="span">The discussion of [ProgressiVis](https://ieeevis.org/year/2026/program/content/74603add-599a-4fcb-8da9-036f7f00a71c/) on the paper page (left) and [on Bluesky](https://bsky.app/profile/papers.ieeevis.org/post/3mzzwmo4bfx2j) (right).</figcaption>
+</figure>
+
 Lane Harrison was [loving the Bluesky Q&A integration](https://bsky.app/profile/laneh.bsky.social/post/3mzxucdv2vc24): "Good for sessions, good for post-talk discussion and connection, too." Threads made room for things that don't fit into a few minutes at the mic. Tamara had [more of a comment than a question, "which is legit on Bluesky"](https://bsky.app/profile/munzner.bsky.social/post/3mzybq3wjmk2s). Danielle Szafir [followed up on a hallway chat](https://bsky.app/profile/danielle-szafir.bsky.social/post/3mzyfqvgety2q) after a talk, and people pointed to [related work](https://bsky.app/profile/ptbremer.bsky.social/post/3n226es3guq27) and [materials](https://bsky.app/profile/alark.bsky.social/post/3n25deto6vc2m). Authors also got time to think about their answers, as I had hoped in my first post. For example, Jean-Daniel Fekete answered every question on [ProgressiVis](https://bsky.app/profile/papers.ieeevis.org/post/3mzzwmo4bfx2j), including one with [a reference to Knuth](https://bsky.app/profile/jdfekete.bsky.social/post/3n22c3zenlc2k).
 
 ### Value for people who were not there

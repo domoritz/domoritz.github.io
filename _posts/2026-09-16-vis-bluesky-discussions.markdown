@@ -8,10 +8,10 @@ Every paper page at [IEEE VIS 2026](https://ieeevis.org/year/2026/) has a discus
 
 <figure>
 <div class="flex-rows">
-<figure><img src="{{ '/images/posts/vis-bluesky/discussion-embed.avif' | relative_url }}" alt="The discussion section of the ProgressiVis paper page: sign-in options for Bluesky and for VIS attendees, a sort toggle for most liked or newest, and questions from VIS attendees (one under their name, one under a pseudonym) with answers from the author's Bluesky account, marked with an Author badge"></figure>
-<figure><img src="{{ '/images/posts/vis-bluesky/announcement-post.avif' | relative_url }}" alt="The same thread in Bluesky: the announcement post from IEEE VIS Papers mentioning the author and linking to the paper page, followed by replies from a Bluesky user, a question relayed by the IEEE VIS Discuss account under the attendee's name, and the author's answers"></figure>
+<figure><img src="{{ '/images/posts/vis-bluesky/discussion-embed.avif' | relative_url }}" alt="Mockup of the discussion on a VIS paper page in a browser: John Snow notes that the paper forgot dots, Florence Nightingale replies with an Author badge, W. E. B. Du Bois asks a question as a VIS attendee, William Playfair answers as an author, and Charles Joseph Minard comments. Each comment has a donut like button and a reply button."></figure>
+<figure><img src="{{ '/images/posts/vis-bluesky/announcement-post.avif' | relative_url }}" alt="Mockup of the same thread in the Bluesky app on a phone: the announcement post from IEEE VIS Papers mentioning the authors and linking to the paper page, followed by replies from John Snow, Florence Nightingale, and a comment from W. E. B. Du Bois relayed by the IEEE VIS Discuss account."></figure>
 </div>
-<figcaption markdown="span">The discussion of [ProgressiVis](https://ieeevis.org/year/2026/program/content/74603add-599a-4fcb-8da9-036f7f00a71c/) on the paper page (left) and [on Bluesky](https://bsky.app/profile/papers.ieeevis.org/post/3mzzwmo4bfx2j) (right) during the conference. Comments made on the page appear on Bluesky as replies from [@discuss.ieeevis.org](https://bsky.app/profile/discuss.ieeevis.org), prefixed with the commenter's name or pseudonym.</figcaption>
+<figcaption markdown="span">The same discussion on the paper page (left) and in the Bluesky app (right). Comments made on the page appear on Bluesky as replies from [@discuss.ieeevis.org](https://bsky.app/profile/discuss.ieeevis.org), prefixed with the commenter's name or pseudonym. This is a mockup with made-up comments. The [retrospective]({% post_url 2026-11-13-vis-bluesky-retrospective %}) shows a real discussion.</figcaption>
 </figure>
 
 ## Why do we host conference discussions on Bluesky?
