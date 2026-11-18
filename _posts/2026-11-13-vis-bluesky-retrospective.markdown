@@ -45,7 +45,7 @@ Besides a persistent space for paper discussions, a goal of using Bluesky was to
 <figcaption markdown="span">The discussion of [ProgressiVis](https://ieeevis.org/year/2026/program/content/74603add-599a-4fcb-8da9-036f7f00a71c/) on the paper page (left) and [on Bluesky](https://bsky.app/profile/papers.ieeevis.org/post/3mzzwmo4bfx2j) (right).</figcaption>
 </figure>
 
-VIS was a day shorter than usual this year, so there was very little time for questions after each paper. The Bluesky Q&A gave people a way to ask more questions. Because it is asynchronous, it also gives authors more time to think about their answers and engage more deeply.
+VIS was a day shorter than usual this year, which left little time for questions after each talk. Online, people could ask more questions, and authors had time to think about their answers.
 
 Lane Harrison was [loving the Bluesky Q&A integration](https://bsky.app/profile/laneh.bsky.social/post/3mzxucdv2vc24): "Good for sessions, good for post-talk discussion and connection, too." Threads made room for things that don't fit into a few minutes at the mic. Tamara had [more of a comment than a question, "which is legit on Bluesky"](https://bsky.app/profile/munzner.bsky.social/post/3mzybq3wjmk2s). Danielle Szafir [followed up on a hallway chat](https://bsky.app/profile/danielle-szafir.bsky.social/post/3mzyfqvgety2q) after a talk, and people pointed to [related work](https://bsky.app/profile/ptbremer.bsky.social/post/3n226es3guq27) and [materials](https://bsky.app/profile/alark.bsky.social/post/3n25deto6vc2m). Jean-Daniel Fekete, for example, answered every question on [ProgressiVis](https://bsky.app/profile/papers.ieeevis.org/post/3mzzwmo4bfx2j), including one with [a reference to Knuth](https://bsky.app/profile/jdfekete.bsky.social/post/3n22c3zenlc2k).
 
@@ -61,7 +61,7 @@ Discussions worked best when someone actively ran them. Jason Dykes chaired a se
 
 The same goes for authors. Some answered every question, like Jean-Daniel Fekete on ProgressiVis or the [HiLSVA](https://bsky.app/profile/kuangshiai.bsky.social/post/3mzxshiqzm223) authors, and some [came back days later](https://bsky.app/profile/arvindcheenu.bsky.social/post/3n276yqih5a2z). But in about three quarters of the paper threads with questions, I could not find an answer from the authors.
 
-We also changed the system based on feedback from chairs. Session chairs run their sessions from a "Run of Show" page with the schedule and instructions for each talk. Some chairs asked to see the Bluesky discussion right there, so that they would not have to jump between the Run of Show and the paper page on the VIS website. On Thursday, we added each talk's discussion to the Run of Show, with the most liked questions first and updates every few seconds. After the conference, we added support for discussions with many posts: a session chair can now pin the question to ask next and mark questions as answered, which moves them to the bottom of the list.
+We also changed the system based on feedback. Session chairs follow a page with the schedule and instructions for their session. Some asked to see the discussion there, so they would not have to switch to each paper's page. We added it during the conference, with the most liked questions first. After the conference, we also added a way for chairs to pin the next question and to mark questions as answered.
 
 ### Bluesky as a platform for discussion rocks
 
