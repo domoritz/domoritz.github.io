@@ -61,7 +61,7 @@ Discussions worked best when someone actively ran them. Jason Dykes chaired a se
 
 The same goes for authors. Some answered every question, like Jean-Daniel Fekete on ProgressiVis or the [HiLSVA](https://bsky.app/profile/kuangshiai.bsky.social/post/3mzxshiqzm223) authors, and some [came back days later](https://bsky.app/profile/arvindcheenu.bsky.social/post/3n276yqih5a2z). But in about three quarters of the paper threads with questions, I could not find an answer from the authors.
 
-Session chairs run their sessions with a tool our tech team built for them, and some chairs asked us to show the Bluesky discussion in it so they don't have to switch to the paper page. We added that during the conference. After the conference, we also added a way for chairs to pin the question they want to ask next and to mark questions as answered.
+We also improved our tools for session chairs based on their feedback. Chairs run their sessions with a tool that our tech team built. Several chairs asked to see the Bluesky discussion in this tool instead of opening the paper page on the VIS website, and we added it during the conference. After the conference, we also added a way for chairs to pin the question to ask next and to mark questions as answered.
 
 ### Bluesky as a platform for discussion rocks
 
