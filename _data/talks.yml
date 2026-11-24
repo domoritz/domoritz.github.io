@@ -1,7 +1,18 @@
+- title: "Vega-Lite: A Grammar of Interactive Graphics"
+  location: IEEE VIS 2026, InfoVis 10-Year Test of Time Award Talk
+  city: Boston
+  date: 2026-11-10
+  url: https://ieeevis.org/year/2026/program/session/conf-conference12_1/
+  recording: https://www.youtube.com/watch?v=4lMlBtyzxqE&t=27520s
 - title: "Interactive Visualization at the Speed of Thought"
   date: 2026-09-14
   location: CMU-DB Affiliates Visit Day 2026 Keynote
   url: https://db.cs.cmu.edu/affiliates/visit2026/
+- title: "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations"
+  location: IEEE VIS 2025, InfoVis 10-Year Test of Time Award Talk
+  city: Vienna
+  date: 2025-11-04
+  url: https://ieeevis.org/year/2025/info/awards/test-of-time-awards
 - title: "Protocols Over Implementations"
   date: 2025-10-09
   location: University of Cambridge, LTL Seminar
